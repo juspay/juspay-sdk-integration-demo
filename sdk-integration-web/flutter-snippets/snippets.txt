@@ -1,0 +1,214 @@
+# block:start:add-dependency
+
+  hypersdk:
+    git:
+      url: https://bitbucket.org/juspay/hyper-sdk-flutter.git
+      ref: v1.1
+
+# block:end:add-dependency
+
+# block:start:assets-plugin-maven-url
+
+buildscript {
+    repositories {
+        google()
+        maven {
+            url "https://maven.juspay.in/jp-build-packages/hypersdk-asset-download/releases/"
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.0'  // ← 3.6.0 is minimum version
+        # block:start:assets-class-path
+        classpath 'in.juspay:hypersdk-asset-plugin:1.0.3'
+        # block:end:assets-class-path
+    }
+}
+
+# block:end:assets-plugin-maven-url
+
+#block:start:apply-plugin
+
+apply plugin: 'hypersdk-asset-plugin'
+
+// or 
+
+plugins {
+  ...
+  id 'hypersdk-asset-plugin'
+}
+
+#block:end:apply-plugin
+
+#block:start:add-merchant-config
+
+clientId = <clientId> shared by Juspay Team
+
+#block:end:add-merchant-config
+
+#block:start:adding-plugin-installation-script
+
+post_install do |installer|
+ fuse_path = "./Pods/HyperSDK/Fuse.rb"
+ clean_assets = true
+ if File.exist?(fuse_path)
+   if system("ruby", fuse_path.to_s, clean_assets.to_s)
+   end
+ end
+end
+
+#block:end:adding-plugin-installation-script
+
+#block:start:import-hyper-sdk
+
+import 'package:hyper_sdk_flutter/hyper_sdk_flutter.dart';
+
+#block:end:import-hyper-sdk
+
+#block:start:create-hyper-services-instance
+
+final juspay = Juspay(
+    onShowLoader: () {
+        // show the loader
+    },
+    onHideLoader: () {
+        // stop the processing loader 
+    },
+    onInitiateResult: () {
+        // handle initiate response -- log it
+        // do what you want here
+    },
+    onProcessResult: (){
+        // handle process response -- log it
+        // do what you want here
+    }
+);
+
+#block:end:create-hyper-services-instance
+
+#block:start:create-initiate-payload
+{
+  "requestId" : "8cbc3fad-8b3f-40c0-ae93-2d7e75a8624a",
+  "service" : "in.juspay.hyperpay",
+  "payload" : {
+    "action" : "initiate",
+    "merchantId" : "<Merchant Id>",   
+    "clientId" : "<Client Id>",
+    "environment" : "sandbox"|"production"
+  }
+}
+#block:end:create-initiate-payload
+
+#block:start:initiate-sdk
+
+await juspay.initiate(initiatePayload);
+
+#block:end:initiate-sdk
+
+#block:start:fetch-process-payload
+
+{
+    "requestId":"dbba45aaf8dc408da474b7943b9e1d9f",
+    "service":"in.juspay.hyperpay",
+    "payload":{
+        "clientId":"picasso",
+        "amount":"10.0",
+        "merchantId":"acmecorp",
+        "clientAuthToken":"tkn_adbf808e1d2b4d95b41144d0960b5a7e",
+        "clientAuthTokenExpiry":"2022-01-24T17:40:22Z",
+        "environment":"production",
+        "action":"paymentPage",
+        "customerId":"dummyCustId",
+        "currency":"INR",
+        "customerPhone":"9876543210",
+        "customerEmail":"dummyemail@gmail.com",
+        "orderId":"yourUniqueOrderId"
+    }
+}
+
+#block:end:fetch-process-payload
+
+#block:start:process-sdk
+
+await juspay.process(processPayload);
+
+#block:end:process-sdk
+
+#block:start:handle-process-result
+
+final juspay = Juspay(
+    onShowLoader: () {},
+    onHideLoader: () {
+    // stop the processing loader
+    },
+    onInitiateResult: (dynamic args) {
+    // handle initiate response -- log it maybe?
+    // do what you want here
+    },
+    onProcessResult: (dynamic args) {
+    var error = args["error"] ?? false;
+    var innerPayload = args["payload"] ?? {};
+    var status = innerPayload["status"] ?? " ";
+    var pi = innerPayload["paymentInstrument"] ?? " ";
+    var pig = innerPayload["paymentInstrumentGroup"] ?? " ";
+
+    if (!error) {
+        switch (status) {
+        case "charged": {
+            // Successful Transaction
+            // check order status via S2S API
+        } break;
+        case "cod_initiated": {
+            // User opted for cash on delivery option displayed on payment page
+        } break;
+        }
+    } else {
+        var errorCode = args["errorCode"] ?? " ";
+        var errorMessage = args["errorMessage"] ?? " ";
+        switch (status) {
+        case "backpressed": {
+            // user back-pressed from PP without initiating any txn
+        } break;
+        case "user_aborted": {
+            // user initiated a txn and pressed back
+            // check order status via S2S API
+        } break;
+        case "pending_vbv": {
+        } break;
+        case "authorizing": {
+            // txn in pending state
+            // check order status via S2S API
+        } break;
+        case "authorization_failed": {
+        } break;
+        case "authentication_failed": {
+        } break;
+        case "api_failure": {
+            // txn failed
+            // check order status via S2S API
+        } break;
+        case "new": {
+            // order created but txn failed
+            // check order status via S2S API
+        } break;
+        }
+    }
+});
+
+#block:end:handle-process-result
+
+#block:start:onBackPressed
+
+onWillPop: () async {
+    if (Platform.isAndroid) {
+        var backpressResult = await juspay.onBackPress();
+        if (backpressResult.toLowerCase() == "true") {
+        return false;
+        } else {
+        return true;
+        }
+    } else {
+        return true;
+    }
+}
+
+#block:end:onBackPressed

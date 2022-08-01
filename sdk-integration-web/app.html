@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Juspay SDK Integration</title>
+    <!-- block:start:add-hyper-service-script -->
+    <script
+      clientId="yourClientId"
+      src="https://public.releases.juspay.in/hyper-sdk-web/HyperServices.js"
+      service="in.juspay.hyperpay"
+    ></script>
+    <!-- block:end:add-hyper-service-script -->
+  </head>
+  <body>
+    <button onclick="startPayments()">Start Payments</button>
+
+    <div id="juspayDiv"></div>
+
+    <script>
+      // Calling merchant backend which will call JUSPAY Session API and send Payment link to be opened in browser
+      // block:start:call-session-api
+      function startPayments() {
+        var requestPayload = JSON.stringify({
+          amount: "1.0",
+        });
+        var requestOptions = {
+          method: "POST",
+          headers: {
+            Authorization: "Basic <merchant api auth token>",
+            "Content-Type": "application/json",
+          },
+          body: requestPayload,
+        };
+
+        fetch("https://api.<merchantwebsite>.com/makePayment", requestOptions)
+          .then((response) => response.json())
+          .then((result) => {
+            //block:start:open-payment-page
+
+            // Redirecting to payment link which is received from merchant server after Session API S2S call
+            // window.location.replace(result.link);
+            // OR
+            // Opening payment page in an iframe
+            var paymentPageDiv = window.querySelector("#juspayDiv");
+            var juspayIframe = document.createElement("iframe");
+            juspayIframe.src = result.link;
+            // JUSPAY payment page needs a minimum width of 700px to open web payment page,
+            // on iframe widths less than 700px mobile web payment page will open
+            juspayIframe.width = "1000";
+            juspayIframe.height = "920";
+            paymentPageDiv.appendChild(juspayIframe);
+
+            //block:end:open-payment-page
+          })
+          .catch((error) => console.log("error", error));
+      }
+      // block:end:call-session-api
+    </script>
+  </body>
+</html>
