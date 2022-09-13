@@ -37,7 +37,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
     implementation 'com.google.android.material:material:1.1.0'
     //block:start:add-sdk-implementation
-    implementation 'in.juspay:hypersdk:2.0.4-rc.64'
+    implementation 'in.juspay:hypersdk:2.1.2'
     //block:end:add-sdk-implementation
     implementation("com.squareup.okhttp3:okhttp:4.9.3")
     testImplementation 'junit:junit:4.+'
