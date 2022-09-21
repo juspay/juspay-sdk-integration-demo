@@ -135,8 +135,8 @@
                 frm.find(".card_number_div").addClass("invalid");
               }
               break;
-        }
-      }
+        },
+      },
   })
 
 // block:end:cards-form
