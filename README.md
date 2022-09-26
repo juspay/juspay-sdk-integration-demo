@@ -10,7 +10,8 @@
 
 ### Contribution guidelines ###
 
-* So if you want to add any new product and/or platform. please follow the below steps.
+* If you want to add any new product and/or platform. please follow the below steps.
+
 1. All the code content of a particular platform of a product is kept in a branch "productName" + "-" + "platformName".
     Let suppose you are adding code for platform android in the product payment-page then the name of the branch will be 
         payment-page-android
