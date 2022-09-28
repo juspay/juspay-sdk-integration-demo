@@ -10,6 +10,8 @@
           bank_error_message,
           gateway_id
         ) {},
+        card_encoding_key: ":card_encoding_key",
+        card_encoding_version: "YYYY-MM-DD",
         card_bin_digit_count: 6,
      
       /* Fingerprint will work only if customer_id and client_auth_token are present in set-up as shown below */
@@ -135,8 +137,10 @@
                 frm.find(".card_number_div").addClass("invalid");
               }
               break;
-        },
+        }
       },
   })
+
+</script>
 
 // block:end:cards-form
