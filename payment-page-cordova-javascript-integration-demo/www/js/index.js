@@ -64,8 +64,8 @@ function createInitiatePayload() {
     service: "in.juspay.hyperpay",
     payload: {
       action: "initiate",
-      merchantId: "picasso",
-      clientId: "picasso",
+      merchantId: "<MERCHANT_ID>",
+      clientId: "<CLIENT_ID>",
       environment: "production",
     },
   };
@@ -224,7 +224,7 @@ document.getElementById("checkoutButton").addEventListener("click", () => {
   SpinnerDialog.show(null, "Processing");
 
   var myHeaders = new Headers();
-  myHeaders.append("x-merchantid", "picasso");
+  myHeaders.append("x-merchantid", "<MERCHANT_ID>");
   myHeaders.append("Content-Type", "application/json");
   myHeaders.append(
     "Authorization",
@@ -237,7 +237,7 @@ document.getElementById("checkoutButton").addEventListener("click", () => {
     customer_id: "testing-customer-onehjcd",
     customer_email: "test@mail.com",
     customer_phone: "9876543210",
-    payment_page_client_id: "picasso",
+    payment_page_client_id: "<CLIENT_ID>",
     action: "paymentPage",
     return_url: "https://shop.merchant.com",
     description: "Complete your payment",

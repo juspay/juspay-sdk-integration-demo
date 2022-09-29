@@ -22,8 +22,8 @@
 var hyperSDKRef;
 document.addEventListener("deviceready", onDeviceReady, false);
 const apiKey = "9E8BE20E66349BCA430C6FAC272B39";
-const merchantId = "picasso";
-const clientId = "picasso";
+const merchantId = "<MERCHANT_ID>";
+const clientId = "<CLIENT_ID>";
 var authorization = window.btoa(unescape(encodeURIComponent(apiKey)));
 var totalPayable;
 const targetDivProducts = document.getElementById("productPage");
@@ -67,8 +67,8 @@ function createInitiatePayload() {
     service: "in.juspay.hyperpay",
     payload: {
       action: "initiate",
-      merchantId: "picasso",
-      clientId: "picasso",
+      merchantId: "<MERCHANT_ID>",
+      clientId: "<CLIENT_ID>",
       environment: "production",
     },
   };
@@ -223,46 +223,24 @@ var hyperSDKCallback = function (response) {
 // block:end:create-hyper-callback
 
 document.getElementById("checkoutButton").addEventListener("click", () => {
-  //   const event = new Date("27 October 2022 17:48 UTC");
-  //   console.log(event.toString());
-  //   // expected output: Wed Oct 05 2011 16:48:00 GMT+0200 (CEST)
-  //   // (note: your timezone may vary)
-
-  //   console.log(event.toISOString());
-  //   // expected output: 2011-10-05T14:48:00.000Z
-
-  //   var processPayload = {
-  //       clientId: "picasso",
-  //       amount: "10.0",
-  //       merchantId: "picasso",
-  //       clientAuthToken: "tkn_adbf808e1d2b4d95b41144d0960b5a7e",
-  //       clientAuthTokenExpiry: event.toISOString(),
-  //       environment: "production",
-  //       action: "paymentPage",
-  //       customerId: "dummyCustId",
-  //       currency: "INR",
-  //       customerPhone: "9876543210",
-  //       customerEmail: "dummyemail@gmail.com",
-  //       orderId: "Test" + Math.floor(Math.random() * 1000000000),
-  //   };
   console.log("Process started")
   SpinnerDialog.show(null, "Processing");
 
   var myHeaders = new Headers();
-  myHeaders.append("x-merchantid", "picasso");
+  myHeaders.append("x-merchantid", "<MERCHANT_ID>");
   myHeaders.append("Content-Type", "application/json");
   myHeaders.append(
     "Authorization",
-    "Basic OUU4QkUyMEU2NjM0OUJDQTQzMEM2RkFDMjcyQjM5Og=="
+    "Basic OUU4Qxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
   );
 
   var raw = JSON.stringify({
     order_id: "Test" + Math.floor(Math.random() * 1000000000),
     amount: totalPayable,
-    customer_id: "testing-customer-onehjcd",
+    customer_id: "testing-customer-one",
     customer_email: "test@mail.com",
     customer_phone: "9876543210",
-    payment_page_client_id: "picasso",
+    payment_page_client_id: "<CLIENT_ID>",
     action: "paymentPage",
     return_url: "https://shop.merchant.com",
     description: "Complete your payment",
