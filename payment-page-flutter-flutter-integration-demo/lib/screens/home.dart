@@ -96,7 +96,7 @@ class _HomeScreenState extends State<HomeScreen> {
           "action": "initiate",
           "merchantId": "<merchant-id>",
           "clientId": "<client-id>",
-          "environment": "sandbox" // "sandbox"|"production"
+          "environment": "production" 
         }
       };
       // block:end:get-initiate-payload
