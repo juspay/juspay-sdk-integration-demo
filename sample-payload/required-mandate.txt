@@ -8,7 +8,7 @@ curl --location --request POST 'https://api.juspay.in/session' \
 "customer_id":"yourUniqueCustId",
 "customer_phone":"9876543210",
 "customer_email":"dummyemail@gmail.com",
-"payment_page_client_id":"picasso",
+"payment_page_client_id":"<YOUR_CLIENT_ID>",
 "action":"paymentPage",
 "options.create_mandate":"REQUIRED",
 "mandate.max_amount":"1000.00",
