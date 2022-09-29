@@ -100,7 +100,7 @@ class CheckoutActivity : AppCompatActivity() {
         val requestBody: RequestBody = RequestBody.create(mediaType, payload.toString())
         val authorization = "Basic " + Base64.getEncoder().encodeToString(apiKey.toByteArray())
         val request: Request = Request.Builder()
-            .url("https://sandbox.juspay.in/session")
+            .url("https://api.juspay.in/session")
             .method("POST", requestBody)
             .addHeader("x-merchantid", merchantId)
             .addHeader("Authorization", authorization)
