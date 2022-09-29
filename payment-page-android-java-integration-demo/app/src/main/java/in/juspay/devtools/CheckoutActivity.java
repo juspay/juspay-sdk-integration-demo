@@ -113,7 +113,7 @@ public class CheckoutActivity extends AppCompatActivity {
         String authorization = "Basic " + Base64.getEncoder().encodeToString(apiKey.getBytes());
         Request request =
                 new Request.Builder()
-                        .url("https://sandbox.juspay.in/session")
+                        .url("https://api.juspay.in/session")
                         .method("POST", requestBody)
                         .addHeader("x-merchantid", merchantId)
                         .addHeader("Authorization", authorization)
