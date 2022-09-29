@@ -30,11 +30,11 @@ allprojects {
         mavenCentral()
 
         // Adding the build package
-        // block:start:build-package
+        //block:start:hyper-sdk-maven-url
         maven {
             url "https://maven.juspay.in/jp-build-packages/hyper-sdk/"
         }
-        // block:end:build-package
+        //block:end:hyper-sdk-maven-url
     }
 }
 
