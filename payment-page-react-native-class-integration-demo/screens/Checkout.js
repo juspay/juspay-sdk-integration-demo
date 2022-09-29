@@ -117,7 +117,7 @@ class Checkout extends React.Component {
         requestId: 'dbba45aaf8dc408da474b7943b9e1d9f',
         service: 'in.juspay.hyperpay',
         payload: {
-          clientId: 'picasso',
+          clientId: '<client_id>',
           amount: '10.0',
           merchantId: 'acmecorp',
           clientAuthToken: 'tkn_adbf808e1d2b4d95b41144d0960b5a7e',

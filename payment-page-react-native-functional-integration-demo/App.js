@@ -30,9 +30,9 @@ const App = () => {
       service: 'in.juspay.hyperpay',
       payload: {
         action: 'initiate',
-        merchantId: 'picasso',
-        clientId: 'picasso',
-        environment: 'sandbox',
+        merchantId: '<MERCHANT_ID>',
+        clientId: '<CLIENT_ID>',
+        environment: 'production',
       },
     };
 
