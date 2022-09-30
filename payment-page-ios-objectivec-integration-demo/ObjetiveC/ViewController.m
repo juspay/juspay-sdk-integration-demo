@@ -29,9 +29,9 @@
 - (NSDictionary *)createInitiatePayload {
     NSDictionary *innerPayload = @{
         @"action": @"initiate",
-        @"merchantId": @"<your_merchant_id>",
-        @"clientId": @"<your_client_id>",
-        @"environment": @"prod"
+        @"merchantId": @"<MERCHANT_ID>",
+        @"clientId": @"<CLIENT_ID>",
+        @"environment": @"production"
     };
 
     NSDictionary *sdkPayload = @{

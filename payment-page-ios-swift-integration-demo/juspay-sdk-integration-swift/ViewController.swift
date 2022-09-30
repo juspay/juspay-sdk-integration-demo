@@ -31,9 +31,9 @@ class ViewController: UIViewController {
     func createInitiatePayload() -> [String: Any] {
         let innerPayload : [String: Any] = [
             "action": "initiate",
-            "merchantId": "<your_merchant_id>",
-            "clientId": "<your_client_id>",
-            "environment": "prod"
+            "merchantId": "<MERCHANT_ID>",
+            "clientId": "<CLIENT_ID>",
+            "environment": "production"
         ];
         
         let sdkPayload : [String: Any] = [
