@@ -12,8 +12,4 @@ curl --location --request POST 'https://api.juspay.in/orders' \
 --data-urlencode 'product_id=prod-141833' \
 --data-urlencode 'return_url=http://shop.merchant.com/payments/handleResponse' \
 --data-urlencode 'description=Sample description' \
---data-urlencode 'metadata.PAYTM:PROMO_CAMP_ID=xyz' \
---data-urlencode 'metadata.PAYTM:CUST_ID=1234' \
---data-urlencode 'metadata.PAYU:offer_key=1234' \
 --data-urlencode 'options.get_client_auth_token=true' \
---data-urlencode 'metadata.subvention_amount=90'
