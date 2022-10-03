@@ -115,30 +115,7 @@
 
       iframe_element_callback: function(event) {
       /* The event information will be available in the event object */
-          console.log(event);
-          switch (event.target_element) {
-            case "card_number":
-              if (event.empty) {
-                frm.find(".card_number_div").addClass("invalid");
-              } else if (event.valid) {
-                juspay_form.get_card_fingerprint({ /* This function will give card fingerprint in Pay-v3 callback once complete card number has been entered */
-                  success_handler: function (response) {
-                    console.log("got success_handler response", response);
-                  },
-                  error_handler: function (response) {
-                    console.log("got error_handler response", response);
-                  },
-                });
-
-                frm.find(".card_number_div").removeClass("invalid");
-              } else if (event.partially_valid) {
-                frm.find(".card_number_div").removeClass("invalid");
-              } else {
-                frm.find(".card_number_div").addClass("invalid");
-              }
-              break;
-        }
-      },
+      }
   })
 
 </script>
