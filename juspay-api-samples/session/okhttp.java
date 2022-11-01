@@ -26,7 +26,8 @@ public JSONObject createSession() {
     MediaType mediaType = MediaType.parse("application/json");
     RequestBody requestBody = RequestBody.create(mediaType, payload.toString());
 
-    String authorization = "Basic " + Base64.getEncoder().encodeToString(apiKey.concat(":").getBytes());
+    String authorization = "Basic " + Base64.getEncoder()
+      .encodeToString(apiKey.concat(":").getBytes());
 
     Request request =
         new Request.Builder()
