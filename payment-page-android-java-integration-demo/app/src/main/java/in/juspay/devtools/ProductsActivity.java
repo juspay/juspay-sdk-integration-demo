@@ -59,7 +59,7 @@ public class ProductsActivity extends AppCompatActivity {
     //block:start:call-initiate
     //This function initiate the Juspay SDK
     private void initiatePaymentsSDK() {
-        if(!hyperServicesHolder.isInitialised()
+        if(!hyperServicesHolder.isInitialised())
             initiatePayload = createInitiatePayload();
             hyperServicesHolder.initiate(initiatePayload);
 
