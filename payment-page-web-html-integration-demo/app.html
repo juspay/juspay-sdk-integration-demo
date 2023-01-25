@@ -31,17 +31,23 @@
             //block:start:open-payment-page
 
             // Redirecting to payment link which is received from merchant server after Session API S2S call
-            // window.location.replace(result.link);
+            window.location.replace(result.link);
+
+
             // OR
             // Opening payment page in an iframe
+            /* 
             var paymentPageDiv = window.querySelector("#juspayDiv");
             var juspayIframe = document.createElement("iframe");
             juspayIframe.src = result.link;
-            // JUSPAY payment page needs a minimum width of 700px to open web payment page,
-            // on iframe widths less than 700px mobile web payment page will open
+
+            JUSPAY payment page needs a minimum width of 700px to open web payment page,
+            on iframe widths less than 700px mobile web payment page will open
+            
             juspayIframe.width = "1000";
             juspayIframe.height = "920";
             paymentPageDiv.appendChild(juspayIframe);
+            */
 
             //block:end:open-payment-page
           })
