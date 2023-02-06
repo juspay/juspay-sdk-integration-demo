@@ -1,0 +1,62 @@
+{
+    "logsConfig": {
+        "logsUrlKey": "https://logs.juspay.in/godel/analytics",
+        "logsUrlKeySandbox": "https://debug.logs.juspay.net/godel/analytics",
+        "pusherTimerKey": "10.0",
+        "minMemoryRequired": 16384,
+        "encryptionLevelKey": "encryption",
+        "shouldPush": true,
+        "maxLogFileSize": 20971520,
+        "maxLogLineSize": 20971520,
+        "maxLogValueSize" : 32768,
+        "maxFilesAllowed": 7,
+        "numFilesToLeaveIfMaxFilesExceeded": 5,
+        "dontPushIfFileIsLastModifiedBeforeInHours": 168,
+        "startLogPusherTimerOn": "initiate",
+        "publicKeySandbox" : {
+            "kty": "RSA",
+            "kid": "sandbox-log-24-03-2021",
+            "e": "AQAB",
+            "n": "zgKC-M2wFCMxpeoSEdqaFjhTYSbii2-tF0d3IRkuHB810cV_r17r0wZuI9biXjgT-TJdeGE6qdN_haqZFxY8RkQPaN8UXNtaM2MLPdfEPcpkY4E37NHp7a9OrcYYMmGSD_-w3rkmyzkjinqWHhlOnAObQWn5bw0jy4jF6JnGCEIyE-vkYsTZ9doId8ePsRFNEjsH45qSERF-GwQkDUVBOz7_BCKIodVs65eBLsl2I7JEP5vLvAu7hNZ-6AeXj8bFVqyflKVtN5ztNgpMgmgvWAqF4bH017b8Wocj1NelB_3XNq9E7cSJkMtbGfpZhmd1KzNnCx3yPPrGcbFuGEXV0Q"
+        },
+        "publicKey" : {
+            "kty": "RSA",
+            "kid": "production_log_public_key_26_03_2021",
+            "e": "AQAB",
+            "n": "zQjBRk_OxUOfoamCGGRaHn_kiCFjKJkUjnInvCHyh_6nwr98VEE9_QcZO07NjztTZYAGyqpO7TV08X9U2S8VOdQl6b1yVQHF1O6AhEFZTaxH71ro9ljVTvyhlzEfvPvuICLPKwu19N4g6jKU9TJpec63pwQ1GTrVS6L5JMLiYtlR5onMG6NEBtYwbFlpGKTlSJGaFQ6JHFV_S7Q3txReCVnD8AM5pHiORMYOsYz-zE4secDMrbILC9ESCCbIurc8SGXkinBwETm2HZbPZnnSsctuXPRDZXZnz9F8M-lKtE1xQS5l4mkvzLWPbFbIsRx_6VVJxFRAJ0Q4M1Gl6HcZ2Q"
+        }
+    },
+    "headURLs": {
+        "sandbox": [
+            "https://sandbox.juspay.in"
+        ],
+        "production": [
+            "https://api.juspay.in"
+        ]
+    },
+    "godelConfig": {
+        "webViewAccess": {
+            "whitelistedClientIds": [
+                "netmeds",
+                "5paisa_margin",
+                "tul_uat6",
+                "TUL_TMP"
+            ]
+        }
+    },
+    "uiFeatures": {
+        "blurBackground": {
+            "enabled": true,
+            "blacklistedClientIds": [
+                "myparkplus"
+            ]
+        }
+    },
+    "useCommitClientIds": {
+        "bms": "true",
+        "gaana":  "true",
+        "tatapay": "true",
+        "lazypay": "true"
+    },
+    "useCommitNowClientIds": {}
+}

@@ -1,0 +1,2 @@
+in/juspay/hyper_sdk_flutter/BuildConfig.java
+ in.juspay.hyper_sdk_flutter.BuildConfig

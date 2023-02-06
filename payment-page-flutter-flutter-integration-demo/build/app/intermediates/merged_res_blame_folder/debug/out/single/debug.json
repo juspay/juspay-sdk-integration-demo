@@ -1,0 +1,1226 @@
+[
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_oxigen.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_oxigen.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607354.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607354.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607099.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607099.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_paytm.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_paytm.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_powered_by_juspay.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/powered_by_juspay.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_approve_upi_payment.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/approve_upi_payment.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_142094.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_142094.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_999999.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_999999.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607339.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607339.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_net_banking_icon.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/net_banking_icon.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_card_type_discover.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/card_type_discover.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_sbibuddy.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_sbibuddy.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607261.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607261.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_pay_later_icon.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/pay_later_icon.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_652194.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_652194.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_success_green.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/success_green.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_650397.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_650397.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_card_type_master.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/card_type_master.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_113652.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_113652.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_shareit.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_shareit.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607153.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607153.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_loyalty_rewards.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/loyalty_rewards.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_193025.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_193025.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607198.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607198.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607210.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607210.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_checkbox.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/checkbox.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_cashod.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/cashod.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_inapp_collect_complete.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/inapp_collect_complete.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_431870.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_431870.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable-v21_launch_background.xml.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/src/main/res/drawable-v21/launch_background.xml"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_verified_detail.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_verified_detail.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_612345.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_612345.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_card_type_dhani.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/card_type_dhani.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607101.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607101.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607062.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607062.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_608088.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_608088.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_223311.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_223311.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_652150.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_652150.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_emi.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/emi.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_search_cancel.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_search_cancel.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607152.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607152.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_juspay_arrow_up.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/juspay_arrow_up.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_442212.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_442212.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_saved_card_lock.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/saved_card_lock.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_354262.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_354262.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607363.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607363.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_632663.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_632663.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_juspay_safe_logo.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/juspay_safe_logo.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_amazonpay_wallet.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/amazonpay_wallet.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_515948.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_515948.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_card_type_rupay.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/card_type_rupay.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_paycash.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_paycash.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_tick.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/tick.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_new_card_plus.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/new_card_plus.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_back_arrow.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_back_arrow.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_416572.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_416572.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607055.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607055.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_payment_failed.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/payment_failed.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_payzapp.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_payzapp.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_508794.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_508794.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607202.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607202.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_switch_app.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/switch_app.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607270.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607270.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_707657.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_707657.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607080.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607080.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607189.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607189.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_zipcash.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_zipcash.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_card_type_diners.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/card_type_diners.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_loader.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/loader.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_white_arrow_right.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/white_arrow_right.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_white_tick.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_white_tick.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607212.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607212.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_468233.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_468233.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_bank_icici_name.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/bank_icici_name.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607389.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607389.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_bullet_icon_one.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/bullet_icon_one.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_circular_radio_button.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/circular_radio_button.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_default.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_default.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607170.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607170.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_no_balance_rewards.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/no_balance_rewards.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_shopse.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_shopse.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_bullet.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/bullet.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_right_arrow.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/right_arrow.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_508753.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_508753.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607689.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607689.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_juspay_cross.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/juspay_cross.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_606060.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_606060.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_326666.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_326666.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607058.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607058.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607065.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607065.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_411122.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_411122.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607105.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607105.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_airtelmoney.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_airtelmoney.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607258.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607258.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607195.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607195.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_bullet_icon_two.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/bullet_icon_two.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_add_upi_id.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/add_upi_id.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_455012.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_455012.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607187.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607187.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607280.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607280.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607028.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607028.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_cod.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_cod.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_608117.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_608117.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607121.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607121.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_card_type_laser.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/card_type_laser.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_grid_tick.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/grid_tick.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_508507.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_508507.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_checkboxselected.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/checkboxselected.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_508500.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_508500.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607387.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607387.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_amexezeclick.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_amexezeclick.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_990288.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_990288.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_mode_net_banking.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_mode_net_banking.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607249.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607249.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bhim.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bhim.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_pay_rewards.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/pay_rewards.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607394.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607394.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_493541.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_493541.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_error_outline.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_error_outline.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_bank_axis_name.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/bank_axis_name.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607320.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607320.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_508568.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_508568.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_mrupee.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_mrupee.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_juspay_safe.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/juspay_safe.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_548748.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_548748.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_amazonpay.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_amazonpay.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_card_type_visa_electron.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/card_type_visa_electron.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_199641.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_199641.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_inapp_collect_initiate.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/inapp_collect_initiate.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_green_plus.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/green_plus.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_question_mark.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_question_mark.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_food_card.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/food_card.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_cardod.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_cardod.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_608001.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_608001.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_toolbar_back_arrow.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/toolbar_back_arrow.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607100.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607100.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_508541.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_508541.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_500003.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_500003.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607126.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607126.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_0999.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_0999.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607485.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607485.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_143442.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_143442.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_mobikwik.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_mobikwik.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_oxicash.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_oxicash.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607057.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607057.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_visa_background.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/visa_background.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607064.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607064.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_noupiapp.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/noupiapp.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_223322.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_223322.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_508547.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_508547.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607051.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607051.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_olamoney.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_olamoney.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_508534.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_508534.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607506.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607506.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_juspay_branding.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/juspay_branding.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_search_gray.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_search_gray.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_googlepay.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_googlepay.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_612356.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_612356.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607167.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607167.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_juspay_logo_blue.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/juspay_logo_blue.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_508512.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_508512.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_card_type_amex.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/card_type_amex.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607124.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607124.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607184.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607184.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_twid_icon.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/twid_icon.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607084.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607084.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_500004.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_500004.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_paytm.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/paytm.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_card_type_maestro.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/card_type_maestro.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_616197.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_616197.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_failure_red.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/failure_red.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607131.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607131.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607377.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607377.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607324.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607324.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_zestmoney.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_zestmoney.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_card_type_mastercard.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/card_type_mastercard.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_mode_card.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_mode_card.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_foodcard.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/foodcard.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_528293.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_528293.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607117.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607117.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607091.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607091.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607291.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607291.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607223.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607223.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_card_type_diners_club_carte_blanche.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/card_type_diners_club_carte_blanche.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607230.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607230.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_freecharge.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_freecharge.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_card_type_diners_club_international.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/card_type_diners_club_international.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607130.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607130.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607308.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607308.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_525847.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_525847.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_instant.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/instant.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_606993.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_606993.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607075.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607075.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_popup_delete_icon.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/popup_delete_icon.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_859140.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_859140.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_slice.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_slice.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_juspay_warning.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/juspay_warning.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607122.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607122.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_simpl.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_simpl.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_606995.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_606995.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607222.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607222.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_paypal.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_paypal.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_838890.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_838890.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_mpesa.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_mpesa.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_yespay.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_yespay.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607290.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607290.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_508548.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_508548.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_506286.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_506286.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_visa_checkout.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/visa_checkout.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_card.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_card.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_card_type_americanexp.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/card_type_americanexp.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_page_broken.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/page_broken.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_juspay_safe_grey.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/juspay_safe_grey.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607090.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607090.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607115.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607115.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607393.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607393.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607440.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607440.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_outage.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_outage.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_juspay_info.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/juspay_info.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_lazypay.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_lazypay.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_flexmoney.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_flexmoney.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_sodexo.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_sodexo.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_juspay.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/juspay.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_508505.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_508505.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_500005.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_500005.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607276.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607276.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_500002.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_500002.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_emi.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_emi.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_registration_rewards.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/registration_rewards.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_info_icon.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/info_icon.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_606985.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_606985.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_436360.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_436360.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607476.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607476.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_offer_icon.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_offer_icon.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_launch_background.xml.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/src/main/res/drawable/launch_background.xml"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_508991.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_508991.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607273.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607273.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607420.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607420.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/raw_juspay_da_keep.xml.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/raw/juspay_da_keep.xml"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_error.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/error.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_juspay_icon.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/juspay_icon.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607165.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607165.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_checkbox1.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/checkbox1.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607158.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607158.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_juspay_visa_blue.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/juspay_visa_blue.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_wallet_icon.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/wallet_icon.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_ideamoney.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_ideamoney.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_giftcard_faded.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_giftcard_faded.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_thundericon.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/thundericon.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_500001.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_500001.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_phonepe.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_phonepe.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607095.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607095.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_508508.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_508508.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607104.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607104.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_epaylater.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_epaylater.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_672266.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_672266.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_green_offer.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_green_offer.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_745497.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_745497.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607066.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607066.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_508532.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_508532.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607442.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607442.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_eye_hide_grey.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/eye_hide_grey.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_google_pay.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/google_pay.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_info.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_info.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ambient_shadow_zeight.9.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ambient_shadow_zeight.9.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_259789.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_259789.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_508517.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_508517.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_card_security.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/card_security.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_upi_icon.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_upi_icon.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_jiomoney.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_jiomoney.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607214.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607214.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_back_arrow_fmcg.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/back_arrow_fmcg.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_mode_wallet.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_mode_wallet.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607197.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607197.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_cross.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/cross.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_441671.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_441671.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_952542.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_952542.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_phonepe.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/phonepe.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_payumoney.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_payumoney.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607200.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607200.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_261929.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_261929.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_eye_show_grey.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/eye_show_grey.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_223312.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_223312.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_card_type_jcb.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/card_type_jcb.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607087.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607087.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_511308.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_511308.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607509.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607509.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_cred.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/cred.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607000.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607000.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607621.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607621.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_card_type_visa.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/card_type_visa.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_608032.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_608032.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_221122.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_221122.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_508585.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_508585.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607206.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607206.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607592.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607592.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_moffers.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_moffers.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_508998.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_508998.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607241.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607241.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_bank_607544.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_bank_607544.png"
+    },
+    {
+        "merged": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/build/app/intermediates/res/merged/debug/drawable_ic_paytm_allinone.png.flat",
+        "source": "/Users/subhash/juspay/flutter/juspay-juspay-sdk-integration-demo-c7dfd45eea88/payment-page-flutter-flutter-integration-demo/android/app/build/dynamic-assets/res/drawable/ic_paytm_allinone.png"
+    }
+]

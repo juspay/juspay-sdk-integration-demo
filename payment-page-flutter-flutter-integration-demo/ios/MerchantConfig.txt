@@ -1,1 +1,1 @@
-clientId = <your_client_id>
+clientId = picasso

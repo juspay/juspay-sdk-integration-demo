@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hypersdk/hypersdk.dart';
+import 'package:hypersdkflutter/hypersdkflutter.dart';
 import 'package:flutter/services.dart';
 import './screens/home.dart';
 
@@ -17,9 +17,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: [
-  SystemUiOverlay.bottom
-]);
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
+        overlays: [SystemUiOverlay.bottom]);
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
