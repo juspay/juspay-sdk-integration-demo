@@ -21,7 +21,7 @@
 // See https://cordova.apache.org/docs/en/latest/cordova/events/events.html#deviceready
 var hyperSDKRef;
 document.addEventListener("deviceready", onDeviceReady, false);
-const apiKey = "9E8BE20E66349BCA430C6FAC272B39";
+const apiKey = "<YOUR_API_KEY>";
 const merchantId = "<MERCHANT_ID>";
 const clientId = "<CLIENT_ID>";
 var authorization = window.btoa(unescape(encodeURIComponent(apiKey)));
