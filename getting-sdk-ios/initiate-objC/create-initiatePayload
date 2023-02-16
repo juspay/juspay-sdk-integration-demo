@@ -1,0 +1,19 @@
+// Creating initiate payload JSON object
+// block:start:create-initiate-payload
+- (NSDictionary *)createInitiatePayload {
+    NSDictionary *innerPayload = @{
+        @"action": @"initiate",
+        @"merchantId": @"<MERCHANT_ID>",
+        @"clientId": @"<CLIENT_ID>",
+        @"environment": @"production"
+    };
+
+    NSDictionary *sdkPayload = @{
+        @"requestId": @"12398b5571d74c3388a74004bc24370c",
+        @"service": @"in.juspay.hyperpay",
+        @"payload": innerPayload
+    };
+
+    return sdkPayload;
+}
+// block:end:create-initiate-payload
