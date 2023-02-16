@@ -1,0 +1,39 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        // block:start:assets-plugin-maven-url
+        maven {
+            url "https://maven.juspay.in/jp-build-packages/hypersdk-asset-download/releases/"
+        }
+        // block:end:assets-plugin-maven-url
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.0.0"
+
+        // block:start:assets-class-path
+        classpath 'in.juspay:hypersdk-asset-plugin:1.0.3'
+        // block:end:assets-class-path
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        //block:start:hyper-sdk-maven-url
+        maven {
+            url "https://maven.juspay.in/jp-build-packages/hyper-sdk/"
+        }
+        //block:end:hyper-sdk-maven-url
+    }
+}
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
