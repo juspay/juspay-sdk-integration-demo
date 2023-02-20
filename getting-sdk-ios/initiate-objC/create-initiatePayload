@@ -5,12 +5,13 @@
         @"action": @"initiate",
         @"merchantId": @"<MERCHANT_ID>",
         @"clientId": @"<CLIENT_ID>",
-        @"environment": @"production"
+        @"customerId": @"<CUSTOMER_ID>",
+        @"environment": @"prod"
     };
 
     NSDictionary *sdkPayload = @{
         @"requestId": @"12398b5571d74c3388a74004bc24370c",
-        @"service": @"in.juspay.hyperpay",
+        @"service": @"in.juspay.hyperapi",
         @"payload": innerPayload
     };
 
