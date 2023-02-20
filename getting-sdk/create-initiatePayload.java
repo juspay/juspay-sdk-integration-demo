@@ -10,7 +10,7 @@ private JSONObject createInitiatePayload() {
         innerPayload.put("action", "initiate");
         innerPayload.put("merchantId", "<MERCHANT_ID>");    // Put your Merchant ID here
         innerPayload.put("clientId", "<CLIENT_ID>");          // Put your Client ID here
-        innerPayload.put("customerId", "<Customer Id>"); //Any unique refrences to current customer
+        innerPayload.put("customerId", "<CUSTOMER_Id>"); //Any unique refrences to current customer
         innerPayload.put("environment", "prod");
         sdkPayload.put("requestId",  ""+ UUID.randomUUID());
         sdkPayload.put("service", "in.juspay.hyperapi");

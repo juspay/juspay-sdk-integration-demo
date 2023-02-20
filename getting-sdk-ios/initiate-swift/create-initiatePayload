@@ -5,12 +5,13 @@ func createInitiatePayload() -> [String: Any] {
         "action": "initiate",
         "merchantId": "<MERCHANT_ID>",
         "clientId": "<CLIENT_ID>",
-        "environment": "production"
+        "customerId": "<CUSTOMER_ID>",
+        "environment": "prod"
     ];
 
     let sdkPayload : [String: Any] = [
         "requestId": UUID().uuidString,
-        "service": "in.juspay.hyperpay",
+        "service": "in.juspay.hyperapi",
         "payload": innerPayload
     ]
 
