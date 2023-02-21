@@ -4,7 +4,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'package:hypersdk/hypersdk.dart';
+import 'package:hypersdkflutter/hypersdkflutter.dart';
 
 import '../utils/generate_payload.dart';
 import './success.dart';

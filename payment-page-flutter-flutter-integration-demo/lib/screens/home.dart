@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'package:hypersdk/hypersdk.dart';
+import 'package:hypersdkflutter/hypersdkflutter.dart';
 import 'package:uuid/uuid.dart';
 
 import './checkout.dart';
@@ -96,7 +96,7 @@ class _HomeScreenState extends State<HomeScreen> {
           "action": "initiate",
           "merchantId": "<merchant-id>",
           "clientId": "<client-id>",
-          "environment": "production" 
+          "environment": "production"
         }
       };
       // block:end:get-initiate-payload
