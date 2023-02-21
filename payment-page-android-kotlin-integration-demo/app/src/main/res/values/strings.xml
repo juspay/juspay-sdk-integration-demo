@@ -10,4 +10,6 @@
     <string name="checkout_sc">Checkout Screen</string>
     <string name="call_proces">Call process on HyperServices instance on Checkout Button Click</string>
     <string name="handle_jusp">Handle Juspay Payments SDK Response</string>
+    <string name="payment_page_screen">Make Payment</string>
+    <string name="payment_page_amount">Amount</string>
 </resources>

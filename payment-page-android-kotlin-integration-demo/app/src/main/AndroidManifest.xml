@@ -20,6 +20,12 @@
             android:name=".CheckoutActivity"
             android:exported="false" />
         <activity
+            android:name=".PaymentPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CardsActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

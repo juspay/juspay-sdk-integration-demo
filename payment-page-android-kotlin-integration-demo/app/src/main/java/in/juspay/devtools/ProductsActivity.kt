@@ -64,11 +64,12 @@ class ProductsActivity : AppCompatActivity() {
         try {
             // generating inner payload
             innerPayload.put("action", "initiate")
-            innerPayload.put("merchantId", "<MERCHANT_ID>")   //Your Merchant ID here
-            innerPayload.put("clientId", "<CLIENT_ID>")       //Your Client ID here
-            innerPayload.put("environment", "production")
+            innerPayload.put("merchantId", "picasso")   //Your Merchant ID here
+            innerPayload.put("clientId", "geddit")       //Your Client ID here
+            innerPayload.put("customerId", "7761933705") // Replace with customer ID from DB
+            innerPayload.put("environment", "sandbox")
             sdkPayload.put("requestId", "" + UUID.randomUUID())
-            sdkPayload.put("service", "in.juspay.hyperpay")
+            sdkPayload.put("service", "in.juspay.hyperapi")
             sdkPayload.put("payload", innerPayload)
         } catch (e: Exception) {
             e.printStackTrace()

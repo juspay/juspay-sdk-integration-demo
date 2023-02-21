@@ -1,1 +1,1 @@
-clientId = <client_id> shared by Juspay
+clientId = geddit

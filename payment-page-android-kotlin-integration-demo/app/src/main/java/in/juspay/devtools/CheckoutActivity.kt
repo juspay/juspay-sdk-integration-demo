@@ -4,12 +4,14 @@ import `in`.juspay.hypersdk.data.JuspayResponseHandler
 import `in`.juspay.hypersdk.ui.HyperPaymentsCallbackAdapter
 import android.app.ProgressDialog
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.view.View
 import android.webkit.WebView
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import com.google.android.material.snackbar.Snackbar
@@ -21,7 +23,6 @@ import java.util.*
 
 class CheckoutActivity : AppCompatActivity() {
     var processButton: Button? = null
-    var hyperServicesHolder: HyperServiceHolder? = null
     var coordinatorLayout: CoordinatorLayout? = null
     var dialog: ProgressDialog? = null
     var amountString: String? = null
@@ -46,39 +47,24 @@ class CheckoutActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         updatingUI()
-        hyperServicesHolder = HyperServiceHolder(this)
-        hyperServicesHolder!!.setCallback(createHyperPaymentsCallbackAdapter())
-        processButton = findViewById(R.id.rectangle_9)
-        processButton?.setOnClickListener(View.OnClickListener {
-            dialog!!.show()
-            try {
-                run()
-            } catch (e: Exception) {
-            }
-        })
         backImage = findViewById(R.id.imageView)
         backImage?.setOnClickListener(View.OnClickListener { onBackPressed() })
+        processButton = findViewById(R.id.rectangle_9)
+        processButton?.setOnClickListener(View.OnClickListener {
+            var i = Intent(this@CheckoutActivity, PaymentPageActivity::class.java)
+            i.putExtra("amount", amountString);
+            startActivity(i);
+        })
     }
-    
-    // Calling process on hyperService to open payment page
-    // block:start:process-sdk
-    fun startPayments(sdk_payload: JSONObject?) {
-        // Make sure to use the same hyperServices instance which was created in
-        // ProductsActivity.java
-        showSnackbar("Process Called!")
-        hyperServicesHolder?.process(sdk_payload)
-    }
-    // block:end:process-sdk
-
-    //block:start:fetch-process-payload
 
     //Note: Session API must be called from merchant's server
+    @RequiresApi(Build.VERSION_CODES.O)
     @Throws(IOException::class)
     fun run() {
         val payload = JSONObject()
-        val apiKey = "<API_KEY>"     //Put your API Key Here
-        val clientId = "<CLIENT_ID>"    //Put your Client ID here
-        val merchantId = "<MERCHANT_ID>"     // Put your Merchant ID here
+        val apiKey = "9E8BE20E66349BCA430C6FAC272B39"     //Put your API Key Here
+        val clientId = "geddit"    //Put your Client ID here
+        val merchantId = "picasso"     // Put your Merchant ID here
         val randomOrderId = (Math.random() * Math.pow(10.0, 12.0)).toLong()
         val order_id = "test-" + java.lang.Long.toString(randomOrderId)
         try {
@@ -100,7 +86,7 @@ class CheckoutActivity : AppCompatActivity() {
         val requestBody: RequestBody = RequestBody.create(mediaType, payload.toString())
         val authorization = "Basic " + Base64.getEncoder().encodeToString(apiKey.toByteArray())
         val request: Request = Request.Builder()
-            .url("https://api.juspay.in/session")
+            .url("https://sandbox.juspay.in/session")
             .method("POST", requestBody)
             .addHeader("x-merchantid", merchantId)
             .addHeader("Authorization", authorization)
@@ -120,7 +106,7 @@ class CheckoutActivity : AppCompatActivity() {
                     val processResponse: String = response.body?.string() ?: ""
                     val jsonObj = JSONObject(processResponse)
                     val sdkPayload = jsonObj.getJSONObject("sdk_payload")
-                    runOnUiThread { startPayments(sdkPayload) }
+//                    runOnUiThread { startPayments(sdkPayload) }
                 } catch (e: Exception) {
                 }
             }
@@ -211,16 +197,6 @@ class CheckoutActivity : AppCompatActivity() {
         snackbar.show()
     }
 
-    //block:start:onBackPressed
-    override fun onBackPressed() {
-        val handleBackpress: Boolean = hyperServicesHolder?.handleBackPress() == true
-        if (handleBackpress) {
-            super.onBackPressed()
-        }
-    }
-
-    //block:end:onBackPressed
-    
     /*
     Optional Block
     These functions are only supposed to be implemented in case if you are overriding

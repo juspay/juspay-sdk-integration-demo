@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgColor"
+
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rectangle_1"
+            android:layout_width="0dp"
+            android:layout_height="71dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rectangle_1"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                ads:layout_constraintBottom_toBottomOf="parent"
+                ads:layout_constraintStart_toStartOf="parent"
+                ads:layout_constraintTop_toTopOf="parent"
+                ads:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/juspay_sdk_"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:paddingLeft="16dp"
+                android:text="@string/juspay_sdk_"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/juspay_sdk_"
+                ads:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/home_screen"
+                android:layout_width="0dp"
+                android:layout_height="19dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:textAlignment="viewStart"
+                android:paddingLeft="16dp"
+                android:text="Cards"
+                android:textAppearance="@style/home_screen"
+                app:layout_constraintEnd_toEndOf="@+id/juspay_sdk_"
+                app:layout_constraintStart_toStartOf="@+id/juspay_sdk_"
+                app:layout_constraintTop_toBottomOf="@+id/juspay_sdk_"
+                android:fontFamily="@font/nunito_sans_regular"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rectangle_8"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:padding="16dp"
+            android:background="@drawable/rectangle_8"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_1" >
+
+
+            <TextView
+                android:id="@+id/product_1"
+                android:layout_width="150dp"
+                android:layout_height="19dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="top"
+                android:text="Card Number"
+                style="@style/product_1"
+                android:textColor="@color/textColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:fontFamily="@font/nunito_sans_regular"
+                />
+
+            <EditText
+                android:id="@+id/card_input"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintTop_toBottomOf="@+id/product_1"
+                android:background="#20000000"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="10dp"
+                android:inputType="number"
+                android:textCursorDrawable="@null"
+                />
+            <LinearLayout
+                android:id="@+id/cvv_expiry_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/card_input"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    app:layout_constraintTop_toBottomOf="@+id/card_input"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:layout_marginRight="7dp"
+                    >
+                    <TextView
+                        android:id="@+id/expiry_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        android:text="Expiry"
+                        style="@style/product_1"
+                        android:textColor="@color/textColor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:id="@+id/expiry_input"
+                        android:paddingHorizontal="10dp"
+                        android:background="#20000000"
+                        android:inputType="number"
+                        android:textCursorDrawable="@null"
+
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    app:layout_constraintTop_toBottomOf="@+id/card_input"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="7dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/cvv_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        android:text="CVV"
+                        style="@style/product_1"
+                        android:textColor="@color/textColor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:fontFamily="@font/nunito_sans_regular"
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:id="@+id/cvv_input"
+                        android:background="#20000000"
+                        android:paddingHorizontal="10dp"
+                        android:inputType="number"
+                        android:textCursorDrawable="@null"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:layout_constraintTop_toBottomOf="@id/cvv_expiry_row"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <CheckBox
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Save card for future payments"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/proceed_button"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:background="@drawable/rectangle_4"
+                android:text="Proceed to Pay"
+                android:fontFamily="@font/nunito_sans_regular"
+                android:textAllCaps="false"
+                ads:layout_constraintBottom_toBottomOf="parent"
+                ads:layout_constraintEnd_toEndOf="parent"
+                ads:layout_constraintStart_toStartOf="parent"
+                android:textFontWeight="900"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
