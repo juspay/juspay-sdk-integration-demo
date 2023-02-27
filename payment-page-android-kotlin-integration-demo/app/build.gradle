@@ -36,7 +36,7 @@ android {
 dependencies {
     // Adding HyperSDK implementation
     // block:start:add-sdk-implementation
-    implementation 'in.juspay:hypersdk:2.1.7'
+    implementation 'in.juspay:hypersdk:2.1.11'
     // block:end:add-sdk-implementation
 
     implementation 'androidx.appcompat:appcompat:1.4.1'
