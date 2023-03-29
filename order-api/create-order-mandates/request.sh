@@ -1,0 +1,25 @@
+curl POST 'https://sandbox.juspay.in/orders' \
+-H 'x-merchantid: merchant' \
+-H ‘'Content-Type: application/x-www-form-urlencoded'\
+-d 'order_id=234823498237423894273498' \
+-d 'amount=1.00' \
+-d 'currency=INR' \
+-d 'customer_id=cst_lz7emoo5okgav' \
+-d 'customer_email=test@gmail.com' \
+-d 'customer_phone=9818638469' \
+-d 'billing_address_first_name=Name' \
+-d 'billing_address_city=Bengaluru' \
+-d 'shipping_address_city=Mumbai' \
+-d 'shipping_address_first_name=Name' \
+-d 'options.create_mandate=REQUIRED' \
+-d 'mandate.amount_rule=VARIABLE' \
+-d 'mandate.max_amount=1000.00' \
+-d 'mandate.revokable_by_customer=true' \
+-d 'mandate.block_funds=false' \
+-d 'mandate.start_date=1598965200' \
+-d 'mandate.end_date=1914141600' \
+-d 'mandate.frequency=MONTHLY' \
+-d 'mandate.rule_value=1' \
+-d 'mandate.rule_type=ON' \
+-d 'gateway_id=19' \
+-d 'metadata.PAYTM_V2:gateway_reference_id=upimandate'
