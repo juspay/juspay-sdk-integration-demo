@@ -4,7 +4,7 @@ plugins {
     
     // Applying HyperAssets plugin
     // block:start:apply-plugin
-    id 'hypersdk-asset-plugin'
+    id 'hypersdk.plugin'
     // block:end:apply-plugin
 }
 
@@ -34,11 +34,6 @@ android {
 }
 
 dependencies {
-    // Adding HyperSDK implementation
-    // block:start:add-sdk-implementation
-    implementation 'in.juspay:hypersdk:2.1.11'
-    // block:end:add-sdk-implementation
-
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
@@ -49,3 +44,11 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
 }
+
+// Adding HyperSDK implementation
+//block:start:add-sdk-implementation
+hyperSdkPlugin {
+    clientId = "picasso"
+    sdkVersion = "2.1.11"
+}
+//block:end:add-sdk-implementation
