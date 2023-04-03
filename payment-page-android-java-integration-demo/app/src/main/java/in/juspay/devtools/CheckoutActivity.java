@@ -17,6 +17,7 @@ import okhttp3.*;
 import java.io.IOException;
 import java.util.Base64;
 import android.webkit.WebView;
+import in.juspay.hyperinteg.HyperServiceHolder;
 
 public class CheckoutActivity extends AppCompatActivity {
 
@@ -238,8 +239,8 @@ public class CheckoutActivity extends AppCompatActivity {
     //block:start:onBackPressed
     @Override
     public void onBackPressed() {
-        boolean handleBackpress = hyperServicesHolder.handleBackPress();
-        if(handleBackpress) {
+        boolean handleBackpress = hyperServicesHolder.onBackPressed();
+        if(!handleBackpress) {
             super.onBackPressed();
         }
 

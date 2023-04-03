@@ -13,6 +13,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import com.google.android.material.snackbar.Snackbar
+import `in`.juspay.hyperinteg.HyperServiceHolder
 import okhttp3.*
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import org.json.JSONObject
@@ -213,7 +214,7 @@ class CheckoutActivity : AppCompatActivity() {
 
     //block:start:onBackPressed
     override fun onBackPressed() {
-        val handleBackpress: Boolean = hyperServicesHolder?.handleBackPress() == true
+        val handleBackpress: Boolean = hyperServicesHolder?.onBackPressed() == true
         if (handleBackpress) {
             super.onBackPressed()
         }
