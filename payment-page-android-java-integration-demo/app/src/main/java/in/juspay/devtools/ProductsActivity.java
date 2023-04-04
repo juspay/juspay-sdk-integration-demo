@@ -10,7 +10,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 import org.json.JSONObject;
 import java.util.UUID;
-import in.juspay.hyperinteg.HyperServiceHolder;
 
 
 public class ProductsActivity extends AppCompatActivity {
@@ -59,7 +58,7 @@ public class ProductsActivity extends AppCompatActivity {
     //block:start:call-initiate
     //This function initiate the Juspay SDK
     private void initiatePaymentsSDK() {
-        if(!hyperServicesHolder.isInitialised()){
+        if(!hyperServicesHolder.isInitiated()){
             initiatePayload = createInitiatePayload();
             hyperServicesHolder.initiate(initiatePayload);
 

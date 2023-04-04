@@ -9,7 +9,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import com.google.android.material.snackbar.Snackbar
-import `in`.juspay.hyperinteg.HyperServiceHolder
 import org.json.JSONObject
 import java.util.*
 
@@ -80,7 +79,7 @@ class ProductsActivity : AppCompatActivity() {
 
     //block:start:initiate-sdk
     private fun initiatePaymentsSDK() {
-        if (!hyperServicesHolder!!.isInitialised) {
+        if (!hyperServicesHolder!!.isInitiated) {
             initiatePayload = createInitiatePayload()
             hyperServicesHolder!!.initiate(createInitiatePayload())
             showSnackbar("Initiate Called!")
