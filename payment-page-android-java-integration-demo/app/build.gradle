@@ -44,7 +44,7 @@ dependencies {
 
 //block:start:add-sdk-implementation
 hyperSdkPlugin {
-    clientId = "<CLIENT_ID>"
+    clientId = "picasso"
     sdkVersion = "2.1.11"
 }
 //block:end:add-sdk-implementation
