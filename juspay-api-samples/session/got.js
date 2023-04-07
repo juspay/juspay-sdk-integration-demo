@@ -18,6 +18,7 @@ let requestPayload = JSON.stringify({
   theme: "dark",
   first_name: "John",
   last_name: "wick",
+  "options.get_upi_deep_links": true
 });
 
 
