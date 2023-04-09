@@ -1,4 +1,4 @@
-curl POST 'https://sandbox.juspay.in/orders' \
+curl POST 'https://api.juspay.in/orders' \
 -H 'x-merchantid: merchant' \
 -H ‘'Content-Type: application/x-www-form-urlencoded'\
 -d 'order_id=234823498237423894273498' \
@@ -7,10 +7,6 @@ curl POST 'https://sandbox.juspay.in/orders' \
 -d 'customer_id=cst_lz7emoo5okgav' \
 -d 'customer_email=test@gmail.com' \
 -d 'customer_phone=9818638469' \
--d 'billing_address_first_name=Name' \
--d 'billing_address_city=Bengaluru' \
--d 'shipping_address_city=Mumbai' \
--d 'shipping_address_first_name=Name' \
 -d 'options.create_mandate=REQUIRED' \
 -d 'mandate.amount_rule=VARIABLE' \
 -d 'mandate.max_amount=1000.00' \
