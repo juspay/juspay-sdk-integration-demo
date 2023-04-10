@@ -4,7 +4,6 @@
   "order_id": "testing-order-one",
   "payment_links": {
       "web": "https://api.juspay.in/orders/ordeh_xxxxxxxxxxxxxxxxxxxx/payment-page",
-      "expiry": null,
       "deep_link": "upi://pay?tr=123456789123456789&tid=PYTM1234567891234567&mc=5815&pa=paytm-52324041@paytm&pn=ABCZYX%2520ABCDE%2520ABCDEFGH&am=1&cu=INR"
   },
   "sdk_payload": {
