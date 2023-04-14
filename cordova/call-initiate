@@ -1,0 +1,5 @@
+//block:start:initiate-sdk
+
+hyperSDKRef.initiate(JSON.stringify(createInitiatePayload()), hyperSDKCallback);
+
+//block:end:initiate-sdk

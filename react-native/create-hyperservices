@@ -1,0 +1,5 @@
+// block:start:create-hyper-services-instance
+
+HyperSdkReact.createHyperServices();
+
+// block:end:create-hyper-services-instance

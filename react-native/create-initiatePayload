@@ -1,0 +1,14 @@
+// block:start:create-initiate-payload
+
+const initiate_payload = {
+    requestId: uuid.v4(),
+    service: 'in.juspay.hyperpay',
+    payload: {
+        action: 'initiate',
+        merchantId: '<MERCHANT_ID>',
+        clientId: '<CLIENT_ID>',
+        environment: 'production',
+    },
+    };
+
+    // block:end:create-initiate-payload

@@ -1,3 +1,5 @@
-// // block:start:create-hyper-sdk-instance
-final HyperSDK hyperSDK;
-// // block:end:create-hyper-sdk-instance
+//block:start:create-hyper-services-instance
+
+hyperSDKRef = cordova.plugins.HyperSDKPlugin
+
+//block:end:create-hyper-services-instance

@@ -1,0 +1,3 @@
+// // block:start:create-hyper-sdk-instance
+final HyperSDK hyperSDK;
+// // block:end:create-hyper-sdk-instance
