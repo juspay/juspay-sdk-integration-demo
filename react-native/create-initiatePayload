@@ -9,6 +9,6 @@ const initiate_payload = {
         clientId: '<CLIENT_ID>',
         environment: 'production',
     },
-    };
+};
 
-    // block:end:create-initiate-payload
+// block:end:create-initiate-payload
