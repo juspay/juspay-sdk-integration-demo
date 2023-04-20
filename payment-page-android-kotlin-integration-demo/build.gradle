@@ -5,9 +5,7 @@ buildscript {
         mavenCentral()
         // Adding the maven url for Assets plugin
         // block:start:assets-plugin-maven-url
-        maven {
-            url "https://maven.juspay.in/jp-build-packages/hypersdk-asset-download/releases/"
-        }
+        maven { url "https://maven.juspay.in/jp-build-packages/hyper-sdk/" }
         // block:end:assets-plugin-maven-url
     }
     dependencies {
@@ -16,7 +14,7 @@ buildscript {
 
         // Adding the class path for Assets plugin
         // block:start:assets-class-path
-        classpath 'in.juspay:hypersdk-asset-plugin:1.0.3'
+        classpath 'in.juspay:hypersdk.plugin:2.0.2'
         // block:end:assets-class-path
 
         // NOTE: Do not place your application dependencies here; they belong
