@@ -4,10 +4,10 @@ buildscript {
     //Add the clientId ext property
     // block:start:client-id-extention
     ext {
-        clientId = "picasso"
+        clientId = "<CLIENT_ID>"
         hyperSDKVersion = "2.1.12"
     }
-    // block:start:client-id-extention
+    // block:end:client-id-extention
     repositories {
         google()
         mavenCentral()
