@@ -7,7 +7,7 @@ buildscript {
         clientId = "picasso"
         hyperSDKVersion = "2.1.12"
     }
-    // block:start:client-id-extention
+    // block:end:client-id-extention
     repositories {
         google()
         mavenCentral()
