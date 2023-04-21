@@ -33,7 +33,7 @@ dependencies:
   dio: ^4.0.6
 # Applying HyperAssets plugin
 # block:start:add-dependency 
-  hypersdkflutter: ^3.0.10
+  hypersdkflutter: ^4.0.0
 # block:end:add-dependency
 
 
