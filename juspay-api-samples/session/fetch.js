@@ -17,8 +17,7 @@ var requestPayload = JSON.stringify({
   "description": "Complete your payment",
   "theme": "dark",
   "first_name": "John",
-  "last_name": "wick",
-  "options.get_upi_deep_links": true
+  "last_name": "wick"
 });
 
 var requestOptions = {

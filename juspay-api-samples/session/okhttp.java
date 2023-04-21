@@ -20,7 +20,6 @@ public JSONObject createSession() {
     payload.put("first_name", "john");
     payload.put("last_name", "wick");
     payload.put("description", "Order Description");
-    payload.put("options.get_upi_deep_links", true);
 
     OkHttpClient okHttpClient = new OkHttpClient();
 

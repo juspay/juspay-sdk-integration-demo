@@ -3,8 +3,7 @@
   "id": "ordeh_xxxxxxxxxxxxxxxxxxxx",
   "order_id": "testing-order-one",
   "payment_links": {
-      "web": "https://api.juspay.in/orders/ordeh_xxxxxxxxxxxxxxxxxxxx/payment-page",
-      "deep_link": "upi://pay?tr=123456789123456789&tid=PYTM1234567891234567&mc=5815&pa=paytm-52324041@paytm&pn=ABCZYX%2520ABCDE%2520ABCDEFGH&am=1&cu=INR"
+      "web": "https://api.juspay.in/orders/ordeh_xxxxxxxxxxxxxxxxxxxx/payment-page"
   },
   "sdk_payload": {
       "requestId": "12398b5571d74c3388a74004bc24370c",

@@ -15,8 +15,7 @@ $body->append('{
     "return_url": "https://shop.merchant.com",
     "description": "Complete your payment",
     "first_name": "John",
-    "last_name": "wick",
-    "options.get_upi_deep_links": true
+    "last_name": "wick"
 }');
 $request->setBody($body);
 $request->setOptions(array());

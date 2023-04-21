@@ -21,8 +21,7 @@ $request->setBody('{\n
     "return_url": "https://shop.merchant.com",\n    
     "description": "Complete your payment",\n    
     "first_name": "John",\n    
-    "last_name": "wick",\n    
-    "options.get_upi_deep_links": true\n
+    "last_name": "wick"\n
 }');
 try {
   $response = $request->send();
