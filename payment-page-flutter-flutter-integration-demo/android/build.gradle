@@ -1,23 +1,21 @@
 buildscript {
     ext.kotlin_version = '1.6.0'
+
+    //Add the clientId ext property
+    // block:start:client-id-extention
+    ext {
+        clientId = "picasso"
+        hyperSDKVersion = "2.1.12"
+    }
+    // block:start:client-id-extention
     repositories {
         google()
         mavenCentral()
-        // Adding the maven url for Assets plugin
-        // block:start:assets-plugin-maven-url
-        maven {
-            url "https://maven.juspay.in/jp-build-packages/hypersdk-asset-download/releases/"
-        }
-        // block:end:assets-plugin-maven-url
     }
 
     dependencies {
         classpath 'com.android.tools.build:gradle:4.1.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        // Adding the class path for Assets plugin
-        // block:start:assets-class-path
-        classpath 'in.juspay:hypersdk-asset-plugin:1.0.3'
-        // block:end:assets-class-path
     }
 }
 
