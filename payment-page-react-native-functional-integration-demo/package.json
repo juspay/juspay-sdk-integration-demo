@@ -33,7 +33,7 @@
   },
   //block:start:add-dependency-ios
 
-  "hyperSdkIOSVersion": "2.0.92",
+  "hyperSdkIOSVersion": "2.1.15",
   
   //block:end:add-dependency-ios
   "jest": {
