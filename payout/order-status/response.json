@@ -1,0 +1,87 @@
+{
+  "updatedAt": "2020-03-07T10:25:04Z",
+  "type": "FULFILL_ONLY",
+  "status": "FULFILLMENTS_SUCCESSFUL",
+  "orderId": "Z3ags1v7S6FioDQA",
+  "fulfillments": [
+    {
+      "updatedBy": "DEFAULT",
+      "updatedAt": "2020-03-07T10:25:04Z",
+      "type": "ORDER",
+      "transactions": [
+        {
+          "updatedAt": "2020-03-07T10:24:43Z",
+          "txnResponse": {
+            "status": "SUCCESS",
+            "requestId": "3c424431d0243a6a4ff15d1ddac443",
+            "amount": 1
+          },
+          "transactionRef": "3c424431d0243a6a4ff15d1ddac443",
+          "timeStamp": "2020-03-07T10:24:43Z",
+          "status": "SUCCESS",
+          "gatewayRefId": "3c424431d0243a6a4ff15d1ddac443",
+          "fulfillmentMethod": "DUMMY_IMPS",
+          "createdAt": "2020-03-07T10:24:05Z",
+          "amount": 1,
+           "responseMessage": "COMPLETED",
+           "responseCode": "00",
+           "responseDescription" : "Approved",
+        },
+        {
+                    "updatedAt": "2022-10-18T11:51:20Z",
+                    "txnResponse": {
+                        "transactionType": "CRED VOUCHER",
+                        "transactionTime": "11:51:18",
+                        "transactionIdentifier": "302291426784098",
+                        "transactionDate": "18-10-2022",
+                        "systemsTraceAuditNumber": "998265",
+                        "statusCode": "FAILURE",
+                        "retrievalReferenceNumber": "229117998265",
+                        "responseCode": "C",
+                        "approvalCode": "",
+                        "actionCode": "57",
+                        "acquiringBin": "478384"
+                    },
+                    "transactionRef": "229117998265",
+                    "timeStamp": "2020-03-06T11:51:20Z",
+                    "status": "FAILURE",
+                    "responseMessage": "FAILURE",
+                    "responseCode": "57",
+                    "responseDescription" : "Transaction Not Permitted to card holder",
+                    "gatewayRefId": "229117998265",
+                    "fulfillmentMethod": "JUSPAY_VISADIRECT",
+                    "epgTxnId": "302291426784098",
+                    "createdAt": "2020-03-06T11:51:17Z",
+                    "amount": 36
+                }
+       
+      ],
+      "statusUpdatedAt": "2020-03-07T10:25:04Z",
+      "status": "SUCCESS",
+      "preferredMethodList": [
+        "DUMMY_IMPS",
+        "CASHFREE_IMPS"
+      ],
+      "merchantCustomerId": "ce1d3404-dc3d-4886-a46e-43a48ddd0324",
+      "id": "f9c2f6669ba4f3fa70c4d4d01d4dee-f1",
+      "fulfillmentMethodList": [
+        "DUMMY_IMPS",
+        "CASHFREE_IMPS",
+        "DUMMY_NEFT"
+      ],
+      "createdAt": "2020-03-07T10:23:28Z",
+      "beneficiaryDetails": {
+        "details": {
+          "name": "Shubham Kumar",
+          "ifsc": "YESB0000262",
+          "account": "026291800001191"
+        },
+        "type": "ACCOUNT_IFSC"
+      },
+      "amount": 1
+    }
+  ],
+  "customerId": "ce1d3404-dc3d-4886-a46e-43a48ddd0324",
+  "createdAt": "2020-03-07T10:23:28Z",
+  "amount": 1
+}

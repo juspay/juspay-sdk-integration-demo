@@ -1,0 +1,32 @@
+{
+  "validateResp": {
+    "subCode": "200",
+    "status": "SUCCESS",
+    "message": "Bank Account details verified successfully",
+    "data": {
+      "utr": "1643701127355992",
+      "refId": "1063069",
+      "nameAtBank": "JOHN DOE",
+      "micr": 400532038,
+      "city": "GREATER BOMBAY",
+      "branch": "SANTACRUZ, MUMBAI",
+      "bankName": "YES BANK",
+      "amountDeposited": "1"
+    },
+    "accountStatusCode": "ACCOUNT_IS_VALID",
+    "accountStatus": "VALID"
+  },
+  "uniqueId": "ravibene4",
+  "status": "VALID",
+  "remark": "Bank Account details verified successfully",
+  "nameAtBank": "JOHN DOE",
+  "fulfillmentMethod": "CFGEN_IMPS",
+  "beneDetails": {
+    "details": {
+      "name": "Shubham Kumar",
+      "ifsc": "YESB0000262",
+      "account": "026291800001191"
+    },
+    "type": "ACCOUNT_IFSC"
+  }
+}
