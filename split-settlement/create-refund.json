@@ -1,0 +1,90 @@
+{
+  "udf9": "",
+  "udf8": "",
+  "udf7": "",
+  "udf6": "",
+  "udf5": "",
+  "udf4": "",
+  "udf3": "",
+  "udf2": "",
+  "udf10": "",
+  "udf1": "",
+  "txn_uuid": "eul4bnuBAnnC7UivV8k",
+  "txn_id": "splitsettlement_1619009418_test",
+  "status_id": 21,
+  "status": "CHARGED",
+  "split_settlement_response": {
+    "split_details": [
+      {
+        "sub_vendor_id": "Vendor1",
+        "amount": 3
+      },
+      {
+        "sub_vendor_id": "Vendor2",
+        "refunded_amount": 1,
+        "amount": 2
+      }
+    ],
+    "split_applied": true
+  },
+  "return_url": "https://www.google.com",
+  "refunds": [
+    {
+      "unique_request_id": "refund_1619010416",
+      "status": "SUCCESS",
+      "sent_to_gateway": true,
+      "ref": null,
+      "id": null,
+      "error_message": "",
+      "created": "2021-04-21T19:00:21Z",
+      "amount": 1
+    }
+  ],
+  "refunded": true,
+  "product_id": "",
+  "payment_method_type": "CARD",
+  "payment_method": "VISA",
+  "payment_links": {
+    "web": "https://sandbox.juspay.in/merchant/pay/ordeh_16c54f506c1143a88d2aca61533e8b56",
+    "mobile": "https://sandbox.juspay.in/merchant/pay/ordeh_16c54f506c1143a88d2aca61533e8b56?mobile=true",
+    "iframe": "https://sandbox.juspay.in/merchant/ipay/ordeh_16c54f506c1143a88d2aca61533e8b56"
+  },
+  "payment_gateway_response": {
+    "txn_id": "splitsettlement_1619009418_test",
+    "rrn": "768370",
+    "resp_message": "Approved",
+    "resp_code": "Success",
+    "epg_txn_id": "110086948408",
+    "created": "2021-04-21T06:28:49Z",
+    "auth_id_code": "NA"
+  },
+  "order_id": "splitsettlement_1619009418_test",
+  "merchant_id": "merchant identifier",
+  "id": "ordeh_16c54f506c1143a88d2aca61533e8b56",
+  "gateway_reference_id": null,
+  "gateway_id": 16,
+  "date_created": "2021-04-21T06:28:09Z",
+  "customer_phone": "9987039379",
+  "customer_id": "cst_1845074",
+  "customer_email": "juspay@juspay.in",
+  "currency": "INR",
+  "card": {
+    "using_saved_card": true,
+    "saved_to_locker": false,
+    "name_on_card": "XXXX",
+    "last_four_digits": "",
+    "expiry_year": "",
+    "expiry_month": "",
+    "card_type": "DEBIT",
+    "card_reference": "",
+    "card_issuer": "IDFC Bank",
+    "card_isin": "",
+    "card_fingerprint": "",
+    "card_brand": "VISA"
+  },
+  "bank_error_message": "",
+  "bank_error_code": "",
+  "auth_type": "THREE_DS",
+  "amount_refunded": 1,
+  "amount": 5
+}

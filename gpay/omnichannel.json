@@ -1,0 +1,12 @@
+{
+  "txn_uuid": "euljee4mruLZTzrdM",
+  "txn_id": "TEST1592138494",
+  "status": "PENDING_VBV",
+  "payment": {
+    "authentication": {
+      "url": "https://sandbox.juspay.in/v2/pay/start/merchantId/euljee4mruLZTzrdM",
+      "method": "GET"
+    }
+  },
+  "order_id": "TEST1592138494"
+}
