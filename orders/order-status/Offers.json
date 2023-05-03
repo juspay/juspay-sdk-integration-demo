@@ -1,0 +1,85 @@
+{
+    "udf9": ",
+    "udf8": ",
+    "udf7": ",
+    "udf6": ",
+    "udf5": ",
+    "udf4": ",
+    "udf3": ",
+    "udf2": ",
+    "udf10": ",
+    "udf1": ",
+    "txn_uuid": "eulxs4WpmdFDSWsBWSZ",
+    "txn_id": "bsmast1620572051-1",
+    "status_id": 21,
+    "status": "CHARGED",
+    "return_url": "https://google.com",
+    "resp_message": null,
+    "resp_code": null,
+    "refunded": false,
+    "product_id": ",
+    "payment_method_type": "CARD",
+    "payment_method": "VISA",
+    "payment_links": {
+        "web": "https://sandbox.juspay.in/merchant/pay/ordeh_5er343d6a6fe4b2883ec3c6",
+        "mobile": "https://sandbox.juspay.in/merchant/pay/ordeh_5eb4b9883ec3c6?mobile=true",
+        "iframe": "https://sandbox.juspay.in/merchant/ipay/ordeh_5er3423b4b9883ec3c6"
+    },
+    "payment_gateway_response": {
+        "txn_id": "bsmast1620572051-1",
+        "rrn": "NA",
+        "resp_message": "Successful transaction.",
+        "resp_code": "100",
+        "epg_txn_id": "6205720806856300403008",
+        "created": "2021-05-09T14:54:41Z",
+        "auth_id_code": "831200"
+    },
+    "order_id": "asg1620572051",
+    "offers": [
+        {
+           {
+             "status": "AVAILED",
+             "offer_id": "2c8701bd-94da-4e40-b56e-4aa481cddd0f",
+             "offer_code": "OfferCardBase1",
+             "benefits": [
+                 {
+                     "type": "DISCOUNT",
+                     "calculation_info": {
+                         "value": 15,
+                         "calculation_rule": "ABSOLUTE"
+  "max_amount": 1000
+                     },
+                     "amount": 150
+                     }
+                  ]
+        }
+    ],
+    "merchant_id": "test",
+    "id": "ordeh_5e4343d6a6fe4b2d9a23b4b9883ec3c6",
+    "gateway_id": 6,
+    "date_created": "2021-05-09T14:54:11Z",
+    "customer_phone": "8888888888",
+    "customer_id": "cst_s35j8cghim6qncud",
+    "customer_email": "x@something.com",
+    "currency": "INR",
+    "card": {
+        "using_saved_card": false,
+        "saved_to_locker": true,
+        "name_on_card": "customer surname",
+        "last_four_digits": "4242",
+        "expiry_year": "2025",
+        "expiry_month": "05",
+        "card_type": "CREDIT",
+        "card_reference": ",
+        "card_issuer": ",
+        "card_isin": "424242",
+        "card_fingerprint": ",
+        "card_brand": "VISA"
+    },
+    "bank_error_message": ",
+    "bank_error_code": ",
+    "auth_type": ",
+    "amount_refunded": 0,
+    "amount": 1000,
+    "effective_amount": 850
+ }
