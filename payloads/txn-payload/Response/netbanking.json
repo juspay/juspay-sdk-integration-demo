@@ -6,13 +6,13 @@
         "action": "nbTxn",
         "status": "CHARGED",
         "otherInfo": {
-            "url": "https://sandbox.juspay.in/end?status_id=21&status=CHARGED&order_id=hyperorder22463&signature=gXRaN%2FyfHCJJouNuTmnFR025CMptP7%2FFkEz2BFQdTOI%3D&signature_algorithm=HMAC-SHA256",
+            "url": "https://api.juspay.in/end?status_id=21&status=CHARGED&order_id=hyperorder22463&signature=gXRaN%2FyfHCJJouNuTmnFR025CMptP7%2FFkEz2BFQdTOI%3D&signature_algorithm=HMAC-SHA256",
             "realtime": {
                 "requestId": "98ff1ee9-03a7-41ad-9f28-d402b1bb9aa1",
                 "merchantId": "idea_preprod",
                 "customerId": "balas0011@gmail.com",
                 "clientId": "idea_android",
-                "environment": "sandbox",
+                "environment": "production",
                 "merchantLoader": "false",
                 "isWrapper": "false",
                 "lastVisitedUrl": "https://merchant.onlinesbi.sbi/merchant/smsenablehighsecurityconfirm.htm"
