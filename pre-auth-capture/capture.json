@@ -13,7 +13,7 @@
   "txn_id": "merchant_id-order_id-1",
   "status_id": 21,
   "status": "CHARGED",
-  "return_url": "https://sandbox.juspay.in",
+  "return_url": "https://api.juspay.in",
   "refunded": false,
   "product_id": "",
   "payment_method_type": "CARD",
