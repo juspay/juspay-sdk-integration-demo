@@ -5,7 +5,7 @@
 * This repo is being used for Juspay Documentation made using tesseract repo
 * This directory contains demo integration project for Juspay's suite of products
 
-Refer to the docs.juspay.in for details around the integration process.
+Refer to our [Developer Docs](https://docs.juspay.in/) for details around the integration process.
 
 ### Maintained Examples
 
