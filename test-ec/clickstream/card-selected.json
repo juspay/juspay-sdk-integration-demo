@@ -1,0 +1,12 @@
+{
+   "category":"action",
+   "subcategory":"user",
+   "label":"card_selected",
+   "value":{
+      "card_details":{
+         "card_type":"DEBIT",
+         "card_brand":"visa",
+         "bank_name":"SBI"
+      }
+   }
+}

@@ -1,0 +1,24 @@
+//block:start:create-initiate-payload
+
+//Function to generate random requestId
+function uuidv4() {
+    return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+      (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+    );
+  }
+  
+  
+  function createInitiatePayload() {
+      return {
+          requestId: uuidv4(),
+          service: "in.juspay.hyperpay",
+          payload: {
+              action: "initiate",
+              merchantId: "<your_merchant_id>",
+              clientId: "<your_client_id>",
+              environment: "production"
+          }
+      };
+  }
+  
+  //block:end:create-initiate-payload
