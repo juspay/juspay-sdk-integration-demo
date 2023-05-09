@@ -1,0 +1,42 @@
+{
+  "type": "FULFILL_ONLY",
+  "status": "READY_FOR_FULFILLMENT",
+  "payments": [],
+  "orderId": "HBgq67aGVRcMJlRw",
+  "fulfillments": [
+    {
+      "updatedBy": "DEFAULT",
+      "updatedAt": "2022-07-28T05:25:17Z",
+      "type": "ORDER",
+      "statusUpdatedAt": "2022-07-28T05:25:17Z",
+      "status": "CREATED",
+      "preferredMethodList": [
+        "YESBANK_VISADIRECT"
+      ],
+      "id": "e1b32fd16cd47288fda984e4bd6c09-f1",
+      "fulfillmentMethodList": [],
+      "createdAt": "2022-07-28T05:25:17Z",
+      "beneficiaryDetails": {
+        "details": {
+          "tokenPanSequenceNumber": "001",
+          "tokenExpiry": {
+            "year": "2024",
+            "month": "02"
+          },
+          "tokenCryptogram": "123sdsadas1231",
+          "name": "Shubham Kumar",
+          "cardType": "CREDIT",
+          "brand": "VISA",
+          "bankCode": "000000"
+        },
+        "type": "PLAIN_CARD"
+      },
+      "amount": 1,
+      "additionalInfo": {
+        "isRetriable": true
+      }
+    }
+  ],
+  "customerId": "cth_59Yibs1JauYP6WJP",
+  "amount": 1
+}

@@ -1,0 +1,11 @@
+{
+  "status": "CREATED",
+  "status_id": 1,
+  "id": "ordeh_06a7c87b83d7453191ba6a4f9919860c",
+  "order_id": "splitsettlement_1619009418_test",
+  "payment_links": {
+    "iframe": "https://api.juspay.in/merchant/ipay/ordeh_06a7c87b83d7453191ba6a4f9919860c",
+    "web": "https://api.juspay.in/merchant/pay/ordeh_06a7c87b83d7453191ba6a4f9919860c",
+    "mobile": "https://api.juspay.in/merchant/pay/ordeh_06a7c87b83d7453191ba6a4f9919860c?mobile=true"
+  }
+}
