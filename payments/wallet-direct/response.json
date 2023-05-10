@@ -1,0 +1,11 @@
+{
+  "order_id": ":order_id",
+  "txn_id": ":txn_id",
+  "status": "CHARGED",
+  "payment": {
+    "authentication": {
+      "method": "GET",
+      "url": "https://api.juspay.in/pay/finish/:merchant-id/:txn-id"
+    }
+  }
+}

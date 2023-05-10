@@ -1,0 +1,15 @@
+curl --location --request POST 'https://api.juspay.in/txns' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'merchant_id=merchant_success' \
+--data-urlencode 'order_id=JP163552819' \
+--data-urlencode 'payment_method_type=CARD' \
+--data-urlencode 'format=json' \
+--data-urlencode 'card_number=enc-Lkhtaxi67b5ycJUa5HK3vfsr1xYiYtRYK0XxnIR2wmo3K4dkovKD3yvrjVlLA99/8qKjxXpasbKDGpJfm+Mx+CR7dKaTgUfvN04pE54kbMQPYRUgHwZ2S2vl8ntxE/5mT9Fu2NfoC8s8xKbFxNQ8tiIQ4SgobS7a95+U/TvJ3iwEPKQwm08SZIKfW+/vpQbYNWC73rFdi59aS9H7aH9d3WyfGfVezxYRF0iRTBgbDUsnvl50ZMRJGPx+hRHgfsktmBfrhfDm9mYaD/0qEYAMXOmfBAk6ruVW5xR7To2Ce/0BBb3fPKIhtYnYNLeFq1L1gJiIdrONCdZxIdfhperwTA==' \
+--data-urlencode 'card_exp_month=enc-DmPCnxXjsVcq6jfgsSu8etI1QT4qGyjy8uv0IAIhNLUkF3Mesd0eWIvGstBBa5xiYR5+48mUwrVYH5IsqBMmhqkjkyQ5LjG5+h9AesYUB+eVI6p06Bc4Qr+UBU02gjG/Ex1WmbbD7YQ3FpvWbS/slOv2+zF0Qop5dSoNiY9QdkSD5g18LvVi2d5EGzPA2BoUfHt84btom2zXs/mdMvFStqk0J0S2LlBqUIDVnNYKwQ+54b792Szq+qaiaZqRUWwuHE8RkAiMrU8QkdpjNs5Fi5RuKcRVo1FMfW4s5xocjLp9mkDDW7uuYyYyVQxIXPyTSdwZTNWet/qflh72fDrMlw==' \
+--data-urlencode 'card_exp_year=enc-eaOEGCPdV4SYR6gyedXlvHYPcS/pUxo9oyvd8kzpp5/bERyxzzj3KRvQhTk+Vpr5aMGgT+oxkGW8K3JzdVS12AULN4jpZBa9d13HJkj5LTBdsxwivO4vqtDk9y9skDivHBvwRREKB/nzG6DGMYUfM62Pklkt9/TJjqrGTOhOgDbk0C4oTnObiJvzi9EFnwAC/+8usWLEv85BA4p8pGswPY1SZaR/ZlF3PG+vqJoTwu5AKd1WcUbfrl4//XeaCIMb+L3OZ+SvlsE1lNvmOzQV98P1jdijTKjEt8U4nj5wh8uJqssTqr6iKkFCcCanIcATFTEsA0LcWW4BPM4OHlzyHw==' \
+--data-urlencode 'card_security_code=enc-eXiNSDcGRnIPzDF2bZqAxNFBIF1FxOdBZ3tmdQn0lcxc4aDucQwefqqzSiYQK1xkPMWw27mKXQsAclwYDQSWAslytyJQYyWFeD0e1eAOVIrf5oqFKxFhKCpj2eeIOglZ9GPRmbu9zwpuVjM68LfUQEDyymwrooQkGILFszxhcKTqMx8q8XExWzRbOufO85z4W7UcbnKCL6u/oOvo+J92bDchRh/JMzDoYLgtdhjUXhfMw92t7TCP3aFjitIOPu9PdQE4N8Fs26GSTrfxmTnvIDZSG5GvndQXoGgg9wA4pXXmb4Sd6qYhstIKzR4dX8Csctc5+H8oOd82du6P3jnPUw==' \
+--data-urlencode 'redirect_after_payment=true' \
+--data-urlencode 'name_on_card=test' \
+--data-urlencode 'card_encoding_version=2021-01-22' \
+--data-urlencode 'save_to_locker=true' \
+--data-urlencode 'payment_method=MASTER'

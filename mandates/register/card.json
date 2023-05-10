@@ -1,0 +1,12 @@
+{
+  "txn_uuid": "eulmyxQn6bQso6y1Syy",
+  "txn_id": "merchant-234823498237423894273498-1",
+  "status": "PENDING_VBV",
+  "payment": {
+    "authentication": {
+      "url": "https://api.juspay.in/v2/pay/start/paypal/eulmycxxxxxso6y1Syy",
+      "method": "GET"
+    }
+  },
+  "order_id": "234823498237423894273498"
+}

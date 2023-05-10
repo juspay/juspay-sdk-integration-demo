@@ -1,0 +1,8 @@
+<!-- Example for handling GET response -->
+<script type="text/javascript">
+ // assuming that you are passing the JSON response of /txns API directly here
+ function handleJuspayGetResponse(juspayResponse) {
+   window.location.href = juspayResponse.payment.authentication.url
+ }
+ handleJuspayGetResponse(response)
+</script>
