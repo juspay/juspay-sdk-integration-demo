@@ -1,0 +1,58 @@
+{
+  "total": 2,
+  "offset": 0,
+  "object": "list",
+  "list": [
+    {
+      "status": "ACTIVE",
+      "revokable_by_customer": true,
+      "payment_info": {
+        "payment_method_type": "NB",
+        "payment_method": "JP_HDFC",
+        "bank_details": {
+          "ifsc": "HDFC0000053",
+          "beneficiary_name": "test",
+          "bank_name": "HDFC Bank",
+          "account_number": "50xxxxxxxx00"
+        },
+        "auth_type": "THREE_DS"
+      },
+      "max_amount": 5,
+      "mandate_type": "EMANDATE",
+      "mandate_token": "a0d2c3d2******2f9cb9c32",
+      "mandate_id": "nZhm*****anHzE",
+      "mandate_debit_token": "tkn_1d9d0b1b****801287ec938a",
+      "frequency": "ASPRESENTED",
+      "currency": "INR",
+      "block_fund": false,
+      "amount_rule": "VARIABLE",
+      "activated_at": "2021-04-22T07:00:40Z"
+    },
+    {
+      "status": "ACTIVE",
+      "revokable_by_customer": true,
+      "payment_info": {
+        "payment_method_type": "NB",
+        "payment_method": "JP_HDFC",
+        "bank_details": {
+          "ifsc": "HDFC0000053",
+          "beneficiary_name": "test",
+          "bank_name": "HDFC Bank",
+          "account_number": "50xxxxxxxx00"
+        },
+        "auth_type": "THREE_DS"
+      },
+      "max_amount": 20,
+      "mandate_type": "EMANDATE",
+      "mandate_token": "72d272ba******f26b6c0d4",
+      "mandate_id": "8M5th*****4h8D26E",
+      "mandate_debit_token": "tkn_f62170a*****83a0663",
+      "frequency": "ASPRESENTED",
+      "currency": "INR",
+      "block_fund": false,
+      "amount_rule": "VARIABLE",
+      "activated_at": "2021-04-22T07:40:54Z"
+    }
+  ],
+  "count": 2
+}

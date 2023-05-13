@@ -1,0 +1,71 @@
+{
+  "offers": [
+      "offer_id": "c390583e-653f-4cae-9ab1-3328551793bb",
+      "status": "ELIGIBLE",
+      "reason": [],
+      "offer_code": "CARD_OFFER",
+      "offer_description": {
+          "sponsored_by": "JP_HDFC",
+          "title": "50% off on HDFC Debit card",
+          "description": "Get 50% off upto 1000 on all HDFC transactions",
+          "tnc": "Terms and conditions apply"
+      },
+      "ui_configs": {
+          "auto_apply": "false",
+          "should_validate": "true",
+          "is_hidden": "false"
+      },
+      {
+          "offer_rules": {
+              "amount": {
+                  "currency": "INR",
+                  "min_order_amount": "500.00"
+              },
+              "payment_instrument": [
+                  {
+                      "variant": [],
+                      "payment_method": [
+                          "VISA",
+                          "MASTERCARD"
+                      ],
+                      "payment_method_type": "CARD",
+                      "app": [],
+                      "type": [
+                          "DEBIT"
+                      ],
+                      "issuer": [
+                          "JP_HDFC"
+                      ]
+                  }
+              ],
+              "gateways": [],
+              "filters": {
+                  "whitelist": [],
+                  "blacklist": []
+              },
+              "txn_type": [
+                  "ORDER"
+              ]
+          },
+          "order_breakup": {
+              "order_amount": "1000.00",
+              "final_order_amount": "850.00",
+              "discount_amount": "150.00",
+              "merchant_discount_amount": "0.00",
+              "cashback_amount": "0.00",
+              "offer_amount": "150.00",
+              "benefits": [
+                  {
+                      "type": "DISCOUNT",
+                      "calculation_rule": "ABSOLUTE",
+                      "value": 150
+                  }
+              ]
+          },
+          "eligible_saved_payment_methods": [
+              "card_number_identifier"
+          ]
+      }
+  ],
+  "best_offer_combinations": []
+}

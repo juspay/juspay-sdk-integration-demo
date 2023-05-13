@@ -1,0 +1,15 @@
+{
+  "txn_uuid": "eulmN9X8JpeC7qK6AJq",
+  "txn_id": "merchant_id-26234761248249834753485721-1",
+  "status": "PENDING_VBV",
+  "payment": {
+    "authentication": {
+      "url": "https://sandbox.juspay.in/v2/pay/finish/merchant_id/eulmN9X8JpeC7qK6AJq/26234761248249834753485721",
+      "method": "GET"
+    }
+  },
+  "order_id": "26234761248249834753485721",
+  "offer_details": {
+    "offers": []
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "total": 2,
+  "offset": 0,
+  "object": "list",
+  "count": 2,
+  "list": [
+    {
+      "status": "ACTIVE",
+      "payment_info": {
+        "payment_method_type": "CARD",
+        "payment_method": "MASTERCARD",
+        "card": {
+          "using_saved_card": true,
+          "saved_to_locker": true,
+          "name_on_card": "Shyam Sundar",
+          "expiry_year": "2025",
+          "expiry_month": "12",
+          "card_type": "CREDIT",
+          "card_issuer": "HDFC Bank",
+          "card_isin": "545721",
+          "card_brand": "MASTERCARD"
+        },
+        "auth_type": "THREE_DS"
+      },
+      "max_amount": 1000,
+      "mandate_type": "MANDATE",
+      "mandate_id": "ns3UFqGKHL*****XDE67",
+      "mandate_debit_token": "tkn_98042ee*****1fdfbc",
+      "currency": "INR"
+    }
+  ]
+}
