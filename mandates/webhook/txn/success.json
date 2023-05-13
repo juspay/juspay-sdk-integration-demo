@@ -39,15 +39,15 @@
       },
       "status_id": 21,
       "status": "CHARGED",
-      "return_url": "https://sandbox.juspay.in",
+      "return_url": "https://api.juspay.in",
       "refunded": false,
       "product_id": "",
       "payment_method_type": "UPI",
       "payment_method": "UPI",
       "payment_links": {
-        "web": "https://sandbox.juspay.in/merchant/pay/ordeu_9a092980*******4d0206",
-        "mobile": "https://sandbox.juspay.in/merchant/pay/ordeu_9a092980*******4d0206?mobile=true",
-        "iframe": "https://sandbox.juspay.in/merchant/ipay/ordeu_9a092980*******4d0206"
+        "web": "https://api.juspay.in/merchant/pay/ordeu_9a092980*******4d0206",
+        "mobile": "https://api.juspay.in/merchant/pay/ordeu_9a092980*******4d0206?mobile=true",
+        "iframe": "https://api.juspay.in/merchant/ipay/ordeu_9a092980*******4d0206"
       },
       "payment_gateway_response": {
         "txn_id": "juspay-2348******3498-1",
