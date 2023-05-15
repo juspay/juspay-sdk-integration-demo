@@ -9,7 +9,7 @@ buildscript {
         ndkVersion = "21.4.7075529"
         // block:start:add-ext-property
         
-        clientId = "<CLIENT_ID>"
+        clientId = "your_client_id"
         hyperSDKVersion = "2.1.12"
 
         // block:end:add-ext-property

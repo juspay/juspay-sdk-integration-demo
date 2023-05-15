@@ -5516,23 +5516,6 @@
             "outputFile": "com.juspayintegrationexamplern.app-merged_res-33:/values_values.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "63",
-                        "endOffsets": "75"
-                    },
-                    "to": {
-                        "startLines": "711",
-                        "startColumns": "4",
-                        "startOffsets": "45479",
-                        "endColumns": "63",
-                        "endOffsets": "45538"
-                    }
-                },
-                {
                     "source": "/Users/arbindakumarprasad/.gradle/caches/transforms-3/e09ff431baac271b73280e5aeaf996d4/transformed/cardview-1.0.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,35,36,37,38,45,47,50,7",
@@ -5609,23 +5592,6 @@
                     }
                 },
                 {
-                    "source": "/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/build/generated/res/resValues/debug/values/gradleResValues.xml",
-                    "from": {
-                        "startLines": "6,8",
-                        "startColumns": "4,4",
-                        "startOffsets": "156,262",
-                        "endColumns": "63,68",
-                        "endOffsets": "215,326"
-                    },
-                    "to": {
-                        "startLines": "674,675",
-                        "startColumns": "4,4",
-                        "startOffsets": "42877,42941",
-                        "endColumns": "63,68",
-                        "endOffsets": "42936,43005"
-                    }
-                },
-                {
                     "source": "/Users/arbindakumarprasad/.gradle/caches/transforms-3/97f815c1686c025a6e64cfed884545e6/transformed/jetified-drawee-2.6.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,141",
@@ -5676,25 +5642,6 @@
                         "startOffsets": "53561,53632",
                         "endColumns": "70,78",
                         "endOffsets": "53627,53706"
-                    }
-                },
-                {
-                    "source": "/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "54",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "267"
-                    },
-                    "to": {
-                        "startLines": "891",
-                        "startColumns": "4",
-                        "startOffsets": "65274",
-                        "endLines": "894",
-                        "endColumns": "12",
-                        "endOffsets": "65452"
                     }
                 },
                 {
@@ -5878,6 +5825,42 @@
                     }
                 },
                 {
+                    "source": "/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "63",
+                        "endOffsets": "75"
+                    },
+                    "to": {
+                        "startLines": "711",
+                        "startColumns": "4",
+                        "startOffsets": "45479",
+                        "endColumns": "63",
+                        "endOffsets": "45538"
+                    }
+                },
+                {
+                    "source": "/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "54",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "267"
+                    },
+                    "to": {
+                        "startLines": "891",
+                        "startColumns": "4",
+                        "startOffsets": "65274",
+                        "endLines": "894",
+                        "endColumns": "12",
+                        "endOffsets": "65452"
+                    }
+                },
+                {
                     "source": "/Users/arbindakumarprasad/.gradle/caches/transforms-3/460389fece1edbf06b8ee6acd4a8b039/transformed/jetified-play-services-basement-17.1.0/res/values/values.xml",
                     "from": {
                         "startLines": "4,7",
@@ -5892,6 +5875,23 @@
                         "startOffsets": "42129,51073",
                         "endColumns": "67,166",
                         "endOffsets": "42192,51235"
+                    }
+                },
+                {
+                    "source": "/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/build/generated/res/resValues/debug/values/gradleResValues.xml",
+                    "from": {
+                        "startLines": "6,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "156,262",
+                        "endColumns": "63,68",
+                        "endOffsets": "215,326"
+                    },
+                    "to": {
+                        "startLines": "674,675",
+                        "startColumns": "4,4",
+                        "startOffsets": "42877,42941",
+                        "endColumns": "63,68",
+                        "endOffsets": "42936,43005"
                     }
                 },
                 {

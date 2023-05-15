@@ -1756,6 +1756,7 @@ drawable jp_default_card
 drawable jp_failed
 drawable jp_gift_card_icon
 drawable jp_googlepay
+drawable jp_ic_cred
 drawable jp_ic_gallery
 drawable jp_ic_olapostpaid
 drawable jp_ic_search_gray

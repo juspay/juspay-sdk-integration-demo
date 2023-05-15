@@ -1,0 +1,6 @@
+module Pods_juspayIntegrationExampleRN_juspayIntegrationExampleRNTests {
+  umbrella header "Pods-juspayIntegrationExampleRN-juspayIntegrationExampleRNTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

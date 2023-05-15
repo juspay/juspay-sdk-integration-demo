@@ -6,6 +6,15 @@
   },
   "hyper": {
     "bundles": {
+      "acs": {
+        "in.juspay.godel": {
+          "1.2.87": {
+            "v1-acs.zip": {
+              "hash": "b7dc888e7aae4ee9360ee25849973c49"
+            }
+          }
+        }
+      },
       "android": {
         "release": {
           "in.juspay.upiintent": {
@@ -68,10 +77,10 @@
           }
         },
         "in.juspay.hyperpay": {
-          "3.12.0-release-20230417.2": {
+          "3.12.0-release-20230417.7": {
             "android": {
               "v1-index_bundle.zip": {
-                "hash": "aee255c2fc18331cba7e4f2d2ba25473"
+                "hash": "6d880af8af4293c24ffc8082dee35bf9"
               }
             }
           }
@@ -111,18 +120,27 @@
           }
         }
       },
+      "config": {
+        "in.juspay.godel": {
+          "1.1.7": {
+            "v1-config.zip": {
+              "hash": "2a10b285ceec84d8d9aeee170f11f767"
+            }
+          }
+        }
+      },
       "in.juspay.merchants": {
         "geddit": {
           "configuration": {
-            "3.219": {
+            "3.223": {
               "v1-configuration.zip": {
-                "hash": "bdfc711facb833aa3e5d49a1cbadf3a8"
+                "hash": "7cbd6213f450acaa1475e416afa6f5cf"
               },
               "v1-icons.zip": {
-                "hash": "ea55457462b7d9b29d9f4ab2dfcbcf66"
+                "hash": "5f78bdf513d00f5e0eff0d13a4435c1d"
               },
               "v1-strings.zip": {
-                "hash": "127d40330964b663717294dd20f63dbc"
+                "hash": "998b9b7d4c485101d5f88b0d11ad276b"
               }
             }
           }

@@ -31,7 +31,7 @@
     "metro-react-native-babel-preset": "^0.67.0",
     "react-test-renderer": "17.0.2"
   },
-  "hyperSdkIOSVersion": "2.1.15",
+  "hyperSdkIOSVersion": "2.1.23",
   "jest": {
     "preset": "react-native"
   }

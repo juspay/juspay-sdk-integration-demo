@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-juspayIntegrationExampleRN-juspayIntegrationExampleRNTests/Pods-juspayIntegrationExampleRN-juspayIntegrationExampleRNTests-resources.sh
+${PODS_ROOT}/HyperSDK/Fuse.rb
+${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle

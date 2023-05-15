@@ -9,11 +9,11 @@
 9        android:targetSdkVersion="31" />
 10
 11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-11-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/debug/AndroidManifest.xml:5:5-77
-11-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/debug/AndroidManifest.xml:5:22-75
+11-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/debug/AndroidManifest.xml:5:22-75
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:4:5-67
-12-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:4:22-64
+12-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:4:5-67
+12-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:4:22-64
 13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 13-->[com.facebook.flipper:flipper:0.125.0] /Users/arbindakumarprasad/.gradle/caches/transforms-3/c043accd5e328fb9309a849578369125/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:5-76
 13-->[com.facebook.flipper:flipper:0.125.0] /Users/arbindakumarprasad/.gradle/caches/transforms-3/c043accd5e328fb9309a849578369125/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:22-73
@@ -126,53 +126,53 @@
 69-->[androidx.work:work-runtime:2.7.1] /Users/arbindakumarprasad/.gradle/caches/transforms-3/dddb64bb6ae741c5b6184d5d86ffe2c7/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:22-74
 70
 71    <application
-71-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:6:5-24:19
+71-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:6:5-24:19
 72        android:name="com.juspayintegrationexamplern.MainApplication"
-72-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:7:7-38
+72-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:7:7-38
 73        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 73-->[androidx.core:core:1.6.0] /Users/arbindakumarprasad/.gradle/caches/transforms-3/91a0df06f69c84d4dcba0a0f6502a849/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
 74        android:debuggable="true"
 75        android:hardwareAccelerated="true"
 75-->[in.juspay:hypersdk:2.1.12] /Users/arbindakumarprasad/.gradle/caches/transforms-3/3282e89184e577a5977bf449861d1bc7/transformed/jetified-hypersdk-2.1.12/AndroidManifest.xml:57:18-52
 76        android:icon="@mipmap/ic_launcher"
-76-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:9:7-41
+76-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:9:7-41
 77        android:label="@string/app_name"
-77-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:8:7-39
+77-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:8:7-39
 78        android:roundIcon="@mipmap/ic_launcher_round"
-78-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:10:7-52
+78-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:10:7-52
 79        android:theme="@style/AppTheme"
-79-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:11:7-38
+79-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:11:7-38
 80        android:usesCleartextTraffic="true" >
-80-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/debug/AndroidManifest.xml:8:9-44
+80-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/debug/AndroidManifest.xml:8:9-44
 81        <activity
-81-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/debug/AndroidManifest.xml:11:9-111
+81-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/debug/AndroidManifest.xml:11:9-111
 82            android:name="com.facebook.react.devsupport.DevSettingsActivity"
-82-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/debug/AndroidManifest.xml:11:19-83
+82-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/debug/AndroidManifest.xml:11:19-83
 83            android:exported="false" />
-83-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/debug/AndroidManifest.xml:11:84-108
+83-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/debug/AndroidManifest.xml:11:84-108
 84        <activity
-84-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:12:7-23:18
+84-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:12:7-23:18
 85            android:name="com.juspayintegrationexamplern.MainActivity"
-85-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:13:9-37
+85-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:13:9-37
 86            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
-86-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:15:9-118
+86-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:15:9-118
 87            android:exported="true"
-87-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:18:9-32
+87-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:18:9-32
 88            android:label="@string/app_name"
-88-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:14:9-41
+88-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:14:9-41
 89            android:launchMode="singleTask"
-89-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:16:9-40
+89-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:16:9-40
 90            android:windowSoftInputMode="adjustResize" >
-90-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:17:9-51
+90-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:17:9-51
 91            <intent-filter>
-91-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:19:9-22:25
+91-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:19:9-22:25
 92                <action android:name="android.intent.action.MAIN" />
-92-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:20:13-65
-92-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:20:21-62
+92-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:20:13-65
+92-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:20:21-62
 93
 94                <category android:name="android.intent.category.LAUNCHER" />
-94-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:21:13-73
-94-->/Users/arbindakumarprasad/Juspay/github/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:21:23-70
+94-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:21:13-73
+94-->/Users/arbindakumarprasad/Juspay/juspay-sdk-integration-demo/payment-page-react-native-class-integration-demo/android/app/src/main/AndroidManifest.xml:21:23-70
 95            </intent-filter>
 96        </activity>
 97        <activity
