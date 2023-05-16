@@ -65,7 +65,7 @@ class App extends React.Component {
         action: 'initiate',
         merchantId: '<merchant_id>',
         clientId: '<client_id>',
-        environment: 'sandbox',
+        environment: 'production',
       },
     };
 
