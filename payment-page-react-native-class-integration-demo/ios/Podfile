@@ -29,14 +29,11 @@ target 'juspayIntegrationExampleRN' do
   # Note that if you have use_frameworks! enabled, Flipper will not work and
   # you should disable the next line.
   use_flipper!()
+  # block:start:add-ios-postinstall-script
 
   post_install do |installer|
     react_native_post_install(installer)
     __apply_Xcode_12_5_M1_post_install_workaround(installer)
-  end
-  # block:start:add-ios-postinstall-script
-
-  post_install do |installer|
     fuse_path = "./Pods/HyperSDK/Fuse.rb"
     clean_assets = false # Pass true to re-download all the assets
     if File.exist?(fuse_path)

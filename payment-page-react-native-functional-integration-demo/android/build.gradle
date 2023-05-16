@@ -9,8 +9,8 @@ buildscript {
         ndkVersion = "21.4.7075529"
         // block:start:add-ext-property
 
+        clientId = "<CLIENT_ID>"
         hyperSDKVersion = "2.1.12"
-        useDynamicAssets = true
         
         // block:end:add-ext-property
     }

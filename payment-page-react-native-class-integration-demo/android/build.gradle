@@ -8,10 +8,10 @@ buildscript {
         targetSdkVersion = 31
         ndkVersion = "21.4.7075529"
         // block:start:add-ext-property
-
-        hyperSDKVersion = "2.1.12"
-        useDynamicAssets = true
         
+        clientId = "your_client_id"
+        hyperSDKVersion = "2.1.12"
+
         // block:end:add-ext-property
     }
     repositories {
@@ -19,7 +19,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:7.0.4")
+        classpath('com.android.tools.build:gradle:7.3.0')
         classpath("com.facebook.react:react-native-gradle-plugin")
         classpath("de.undercouch:gradle-download-task:4.1.2")
         // NOTE: Do not place your application dependencies here; they belong
@@ -48,8 +48,9 @@ allprojects {
         maven { url 'https://www.jitpack.io' }
         // block:start:hyper-sdk-maven-url
 
-        maven { url "https://maven.juspay.in/jp-build-packages/hyper-sdk/"}
+        maven { url "https://maven.juspay.in/jp-build-packages/hyper-sdk/" }
         
         // block:end:hyper-sdk-maven-url
     }
 }
+

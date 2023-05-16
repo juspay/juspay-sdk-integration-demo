@@ -119,7 +119,7 @@ class Checkout extends React.Component {
         payload: {
           clientId: '<client_id>',
           amount: '10.0',
-          merchantId: 'acmecorp',
+          merchantId: '<merchant_id>',
           clientAuthToken: 'tkn_adbf808e1d2b4d95b41144d0960b5a7e',
           clientAuthTokenExpiry: '2022-01-24T17:40:22Z',
           environment: 'production',
