@@ -1,0 +1,99 @@
+{
+  "udf9": "",
+  "udf8": "",
+  "udf7": "",
+  "udf6": "",
+  "udf5": "",
+  "udf4": "",
+  "udf3": "",
+  "udf2": "",
+  "udf10": "",
+  "udf1": "",
+  "txn_uuid": "eulxdBmoZiHpFUSroaZ",
+  "txn_id": "Symbol-R3558939064-1",
+  "status_id": 21,
+  "status": "CHARGED",
+  "return_url": "https://api.juspay.in/end",
+  "refunded": false,
+  "product_id": "",
+  "payment_method_type": "WALLET",
+  "payment_method": "CRED",
+  "payment_links": {
+        "web":
+        "https://api.juspay.in/merchant/pay/ordeh_89616c88f79141578fa87c28c7f3e
+        606",
+        "mobile":
+        "https://api.juspay.in/merchant/pay/ordeh_89616c88f79141578fa87c28c7f3e
+        606?mobile=true",
+        "iframe":
+        "https://api.juspay.in/merchant/ipay/ordeh_89616c88f79141578fa87c28c7f3
+        e606"
+  },
+  "payment_gateway_response": {
+          "txn_id": "Symbol-R3558939064-1",
+          "rrn": null,
+          "resp_message": null,
+          "resp_code": null,
+          "gateway_response": {
+                  "status": "OK",
+                  "error_code": null,
+                  "response": {
+                          "amount": {
+                              "value": 2,
+                              "currency": "INR"
+                          },
+                          "state": "COMPLETED",
+                          "refunds": null,
+                          "payment_modes": [
+                                {
+                                    "amount": {
+                                        "value": 1,
+                                        "currency": "INR"
+                                    },
+                                    "funding_source": null,
+                                    "gateway_reference_id": null
+                                },
+                                {
+                                    "amount": {
+                                        "value": 1,
+                                        "currency": "OFFER"
+                                    },
+                                    "funding_source": {
+                                        "others": 0.1,
+                                        "merchant": 0.9
+                                    },
+                                    "gateway_reference_id": null
+                                  }
+                            ],
+                            "tracking_id": "Symbol-R3558939064-1",
+                            "user": {
+                                "country_code": null,
+                                "phone_number": null,
+                                "user_id":
+                                "09YUXHq8OQRuAGaLE396vrxJ3SSmHnz2Ru1BBCPNeNf5PEJKqkxBc1b1vAmdT2Z0iFW/Vq2k34
+                                8/eC1TKCzls9CBDmV41xf4uCBv9ZKCAzE="
+                            },
+                            "reference_id": "a8014791-c111-4a05-a446-890aa28083bc"
+                    },
+                    "error_description": null,
+                    "error_message": null
+          },
+          "epg_txn_id": null,
+          "created": "2021-02-01T09:03:58Z",
+          "auth_id_code": null
+  },
+  "order_id": "R3558939064",
+  "merchant_id": "Symbol",
+  "id": "ordeh_89616c88f79141578fa87c28c7f3e606",
+  "gateway_id": 777,
+  "date_created": "2021-02-01T09:02:30Z",
+  "customer_phone": "7338513542",
+  "customer_id": "test_customer",
+  "customer_email": "test007@gmail.com",
+  "currency": "INR",
+  "bank_error_message": "",
+  "bank_error_code": "",
+  "auth_type": "",
+  "amount_refunded": 0,
+  "amount": 2
+}

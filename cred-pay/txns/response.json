@@ -1,0 +1,36 @@
+{
+    "txn_uuid": "eulz7iRV1E1EAUjSFKb",
+    "txn_id": "Symbol-test_1610009874-17",
+    "status": "PENDING_VBV",
+    "payment": {
+            "sdk_params": {
+                    "status": "OK",
+                    "error_code": null,
+                    "response": {
+                        "checkout_mode": "collect",
+                        "state": "FLOW_TRIGGERED",
+                        "layout": {
+                            "icon":
+                            "https://d1sofudel0ufia.cloudfront.net/assets/cred_brand_logo_bg_black.png"
+                            ,
+                            "banner_text": "CRED offers you the most rewarding experience, pay seamlessly using your CRED coins. #killthebill",
+                            "sub_text": "pay seamlessly using your CRED coins. #killthebill",
+                            "cta_text": "Pay with CRED",
+                            "title": "Pay with CRED"
+                        },
+                        "tracking_id": "Symbol-test_1610009874-17",
+                        "intent_url": null,
+                        "reference_id": "99a897c7-aaa3-495e-962e-314a317c79d9"
+                    },
+                    "error_description": null,
+                    "error_message": null
+                },
+                "authentication": {
+                        "url":
+                        "https://sandbox.juspay.in/v2/pay/start/Symbol/eulz7iRV1E1EAUjSFKb",
+                        "method": "GET"
+                }
+            },
+            "order_id": "test_1610009874"
+        }
+                

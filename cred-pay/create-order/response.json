@@ -1,0 +1,14 @@
+{
+      "status": "CREATED",
+      "status_id": 1,
+      "id": "ordeh_963ad7719c6edcb",
+      "order_id": "Test1608301033",
+      "payment_links": {
+          "iframe":
+          "https://api.juspay.in/merchant/ipay/ordeh_963ad7719c6edcb",
+          "web":
+          "https://api.juspay.in/merchant/pay/ordeh_963ad7719c6edcb",
+          "mobile":
+          "https://api.juspay.in/merchant/pay/ordeh_963ad7719c6edcb?mobile=true"
+      }
+  }

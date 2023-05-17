@@ -1,0 +1,37 @@
+{
+      "payment_instrument": [
+          {
+                    "command": "verify_user",
+                    "payment_method": "CRED",
+                    "payment_method_type": "WALLET",
+                    "gateway": "CRED",
+                    "gateway": "CRED",
+                    "status": "INELIGIBLE",
+                    "command_output": {
+                          "status": "OK",
+                          "error_code": "HD_1102",
+                          "response": {
+                              "checkout_mode": null,
+                              "state": "INELIGIBLE",
+                              "layout": {
+                              "icon":
+                              "https://d1sofudel0ufia.cloudfront.net/assets/cred_brand_logo_bg_black.png"
+                              ,
+                              "banner_text": "CRED offers you the most rewarding
+                              experience, pay seamlessly using your CRED coins. #killthebill",
+                              "sub_text": "pay seamlessly using your CRED coins.
+                              #killthebill",
+                              "cta_text": "Pay with CRED",
+                              "title": "Install CRED to continue"
+                            },
+                            "tracking_id": "CRED1e20b5f0e79040c199a55362ca3aae2c",
+                           "intent_url": null,
+                           "reference_id": "1394658f-1cfb-4611-b622-e245f2be8ff1"
+                          },
+                          "error_description": "User in pending state and has completed sign up in CRED app",
+                          "error_message": "CRED is a members only platform for users with a credit score above 750. We encourage you to download the CRED app  and refresh your credit score to become a CRED member today to use this payment method."
+                    },
+                   "gateway_reference_id": null
+                  }
+      ]
+    }
