@@ -1,0 +1,27 @@
+{
+  "object": "list",
+  "list": [
+    {
+      "id": "5xtum1onxblhq28e",
+      "object": "outage",
+      "scope": "GATEWAY",
+      "start_time": "2016-09-19T18:32:00+0000",
+      "end_time": "2016-09-20T18:29:59+0000",
+      "description": "ABCD PG is down",
+      "gateway": "ABCD"
+    },
+    {
+      "id": "b3xy6lc0egxvjt02",
+      "object": "outage",
+      "scope": "BANK",
+      "start_time": "2016-09-19T18:30:00+0000",
+      "end_time": "2016-09-21T12:30:00+0000",
+      "description": "ABCD Bank cards are failing. Please use other options.",
+      "bank": "ABCD Bank",
+      "payment_method_type": "CARD"
+    }
+  ],
+  "count": 2,
+  "offset": 0,
+  "total": 2
+}
