@@ -20,14 +20,11 @@
   "payment_method": "CRED",
   "payment_links": {
         "web":
-        "https://api.juspay.in/merchant/pay/ordeh_89616c88f79141578fa87c28c7f3e
-        606",
+        "https://api.juspay.in/merchant/pay/ordeh_89616c88f79141578fa87c28c7f3e606",
         "mobile":
-        "https://api.juspay.in/merchant/pay/ordeh_89616c88f79141578fa87c28c7f3e
-        606?mobile=true",
+        "https://api.juspay.in/merchant/pay/ordeh_89616c88f79141578fa87c28c7f3e606?mobile=true",
         "iframe":
-        "https://api.juspay.in/merchant/ipay/ordeh_89616c88f79141578fa87c28c7f3
-        e606"
+        "https://api.juspay.in/merchant/ipay/ordeh_89616c88f79141578fa87c28c7f3e606"
   },
   "payment_gateway_response": {
           "txn_id": "Symbol-R3558939064-1",
@@ -70,10 +67,9 @@
                                 "country_code": null,
                                 "phone_number": null,
                                 "user_id":
-                                "09YUXHq8OQRuAGaLE396vrxJ3SSmHnz2Ru1BBCPNeNf5PEJKqkxBc1b1vAmdT2Z0iFW/Vq2k34
-                                8/eC1TKCzls9CBDmV41xf4uCBv9ZKCAzE="
+                                "09YUxxxxxQRuAGaLE396vrxJ3SSmHnz2Ru1BBCxxxxxxxxJKqkxBc1b1vAmdT2Z0iFW/Vq2k348/eC1TKCzxxxxxxxx41xf4uCBv9ZKCAzE="
                             },
-                            "reference_id": "a8014791-c111-4a05-a446-890aa28083bc"
+                            "reference_id": "a80xxxx1-c111-4a05-a446-890xxxxx83bc"
                     },
                     "error_description": null,
                     "error_message": null

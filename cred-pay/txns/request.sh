@@ -8,6 +8,4 @@ curl --location --request POST 'https://api.juspay.in/txns' \
 --data-urlencode 'format=json' \
 --data-urlencode 'sdk_params=true' \
 --data-urlencode
-'sdk_pg_params={"platform":"web","os":"macOS","device":"desktop","countryCo
-de":"+91","phoneNumber":"enc-<encrypted phone
-number>","credAppPresent":false,"metadata": {"abc":"123","def":"456"}}'
+'sdk_pg_params={"platform":"web","os":"macOS","device":"desktop","countryCode":"+91","phoneNumber":"enc-<encrypted phonenumber>","credAppPresent":false,"metadata": {"abc":"123","def":"456"}}'

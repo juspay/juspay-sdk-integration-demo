@@ -10,7 +10,7 @@
                           "status": "OK",
                           "error_code": null,
                           "response": {
-                              "checkout_mode": “collect”,
+                              "checkout_mode": "collect",
                               "state": "ELIGIBLE",
                               "layout": {
                               "icon":

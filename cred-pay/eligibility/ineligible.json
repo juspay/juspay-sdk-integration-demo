@@ -5,7 +5,6 @@
                     "payment_method": "CRED",
                     "payment_method_type": "WALLET",
                     "gateway": "CRED",
-                    "gateway": "CRED",
                     "status": "INELIGIBLE",
                     "command_output": {
                           "status": "OK",
@@ -17,10 +16,8 @@
                               "icon":
                               "https://d1sofudel0ufia.cloudfront.net/assets/cred_brand_logo_bg_black.png"
                               ,
-                              "banner_text": "CRED offers you the most rewarding
-                              experience, pay seamlessly using your CRED coins. #killthebill",
-                              "sub_text": "pay seamlessly using your CRED coins.
-                              #killthebill",
+                              "banner_text": "CRED offers you the most rewarding experience, pay seamlessly using your CRED coins. #killthebill",
+                              "sub_text": "pay seamlessly using your CRED coins. #killthebill",
                               "cta_text": "Pay with CRED",
                               "title": "Install CRED to continue"
                             },

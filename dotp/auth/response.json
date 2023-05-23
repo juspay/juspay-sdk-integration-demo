@@ -1,0 +1,21 @@
+{
+  "order_id" : ":order_id",
+  "txn_id"   : ":txn_id",
+  "status"   : "PENDING_VBV",
+  "payment"  : {
+   "authentication": {
+   "method": "POST",
+   "url": "https://api.juspay.in/v2/txns/:id/authenticate",
+   "params": {
+           "id"                    : "eul5g88xxxxxswrHYMh",
+           "challenge_id"          : "ch_xyz",
+           "auth_type"         : "OTP",
+           "card_isin"             : "424242",
+           "card_issuer_bank_name" : "AXIS BANK LTD",
+           "submit_otp_allowed"    : true,
+           "resend_otp_allowed"    : true,
+           "fallback_url"          : "https://api.juspay.in/v2/pay/start/guest/eul5g88xxxxxswrHYMh?fallback=true"
+      }
+   }
+  }
+}
