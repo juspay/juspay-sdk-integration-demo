@@ -1,4 +1,4 @@
 // Applying HyperAssets plugin
 // block:start:apply-plugin
-apply plugin: 'hypersdk-asset-plugin'
+apply plugin: 'hypersdk.plugin'
 // block:end:apply-plugin
