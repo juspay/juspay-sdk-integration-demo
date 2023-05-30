@@ -61,7 +61,7 @@ class CheckoutActivity : AppCompatActivity() {
         backImage?.setOnClickListener(View.OnClickListener { onBackPressed() })
     }
     
-    // Calling process on hyperService to open payment page
+    // Calling process on hyperService to open the Hypercheckout screen
     // block:start:process-sdk
     fun startPayments(sdk_payload: JSONObject?) {
         // Make sure to use the same hyperServices instance which was created in
