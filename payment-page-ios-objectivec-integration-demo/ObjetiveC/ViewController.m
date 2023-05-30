@@ -96,7 +96,7 @@
             // hide loader
         }
         // Handle Process Result
-        // This case will reach once payment page closes
+        // This case will reach once the Hypercheckout screen closes
         // block:start:handle-process-result
 
         else if ([event isEqualToString:@"process_result"]) {
@@ -154,7 +154,7 @@
     // block:end:initiate-sdk
 }
 - (IBAction)startPayments:(id)sender {
-    // Calling process on hyperService to open payment page
+    // Calling process on hyperService to open the Hypercheckout screen
     // block:start:process-sdk
     NSDictionary *processPayload = [self createProcessPayload];
     [self.hyperInstance process:processPayload];
