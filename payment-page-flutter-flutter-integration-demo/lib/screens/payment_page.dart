@@ -68,7 +68,7 @@ class _PaymentPageState extends State<PaymentPage> {
     var processPayload = await getProcessPayload(widget.amount);
     // block:end:fetch-process-payload
 
-    // Calling process on hyperSDK to open payment page
+    // Calling process on hyperSDK to open the Hypercheckout screen
     // block:start:process-sdk
     await widget.hyperSDK.process(processPayload, hyperSDKCallbackHandler);
     // block:end:process-sdk
@@ -116,7 +116,7 @@ class _PaymentPageState extends State<PaymentPage> {
               break;
             case "cod_initiated":
               {
-                // User opted for cash on delivery option displayed on payment page
+                // User opted for cash on delivery option displayed on the Hypercheckout screen
               }
               break;
           }
