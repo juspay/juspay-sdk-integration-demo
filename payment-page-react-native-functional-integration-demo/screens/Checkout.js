@@ -127,7 +127,7 @@ export default function Checkout({navigation}) {
     
     // block:end:fetch-process-payload
 
-    //Handling hardware backpress inside payment page
+    //Handling hardware backpress inside the checkout screen
     // block:start:handle-hardware-backpress
     
     useEffect(() => {
