@@ -165,7 +165,7 @@ public class CheckoutActivity extends AppCompatActivity {
                         dialog.hide();
                     }
                     // Handle Process Result
-                    // This case will reach once payment page closes
+                    // This case will reach once the Hypercheckout screen closes
                     // block:start:handle-process-result
                     else if (event.equals("process_result")) {
                         boolean error = jsonObject.optBoolean("error");
