@@ -55,7 +55,7 @@ class ViewController: UIViewController {
                 // hide loader
             }
             // Handle Process Result
-            // This case will reach once payment page closes
+            // This case will reach once the Hypercheckout screen closes
             // block:start:handle-process-result
             else if (event == "process_result") {
                 let error = data["error"] as! Bool
@@ -132,7 +132,7 @@ class ViewController: UIViewController {
 
     @IBAction func startPayments(_ sender: Any) {
 
-        // Calling process on hyperService to open payment page
+        // Calling process on hyperService to open the Hypercheckout screen
         // block:start:process-sdk
         hyperInstance.process(getProcessPayload)
         // block:end:process-sdk
