@@ -1,0 +1,5 @@
+curl -X POST \ https://sandbox.juspay.in/txns \
+-H 'Authorization: Basic NkY4QkE3NEFGutr7iuhODg4N0MzNzQ1Og==' \
+-H 'Content-Type: application/x-www-form-urlencoded' \
+-H 'cache-control: no-cache' \
+-d 'merchant_id=merchantid&payment_method_type=WALLET&payment_method=SIMPL&red irect_after_payment=true&format=json&direct_wallet_token=tkn_b4ab55430fbc4e 9eb0f43917c2b83f76&order_id=ORD1573678065'
