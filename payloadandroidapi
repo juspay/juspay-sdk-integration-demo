@@ -1,0 +1,3 @@
+SimplFingerprint.init(<context>, "<user_phone_number>", "<user_email>"); SimplFingerprint.getInstance().generateFingerprint(
+new SimplFingerprintListener() { @Override
+public void fingerprintData(String payload) {

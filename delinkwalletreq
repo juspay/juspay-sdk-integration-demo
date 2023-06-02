@@ -1,0 +1,8 @@
+{
+"requestId": "87df247f-7b84-43a3-ac5d-1c5523dd26af", "service":
+"in.juspay.hyperapi",
+"payload": {
+"action": "delinkWallet", "walletId": "wlt_nvtQf8DP1A2oGoZu",
+"clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213"
+}
+}
