@@ -12,5 +12,5 @@ dependencies {
 
 hyperSdkPlugin {
     clientId = "<CLIENT_ID>"
-    sdkVersion = "2.1.12"
+    sdkVersion = "2.1.13"
 }
