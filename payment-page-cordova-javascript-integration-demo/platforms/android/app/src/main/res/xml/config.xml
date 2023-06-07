@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="HyperSDKPlugin">
+        <param name="android-package" value="in.juspay.hypersdk.HyperSDKPlugin" />
+    </feature>
+    <feature name="SpinnerDialog">
+        <param name="android-package" value="com.greybax.spinnerdialog.SpinnerDialog" />
+    </feature>
+    <feature name="Toast">
+        <param name="android-package" value="nl.xservices.plugins.Toast" />
+    </feature>
+    <name>DevTools Cordova</name>
+    <description>Juspay SDK Integration Demo</description>
+    <author email="arbinda.prasad@juspay.in" href="https://juspay.in">
+        Juspay SDK Team
+    </author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <access origin="*" />
+    <allow-intent href="market:*" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="AndroidInsecureFileModeEnabled" value="true" />
+    <preference name="AndroidXEnabled" value="true" />
+    <preference name="loadUrlTimeoutValue" value="700000" />
+</widget>
