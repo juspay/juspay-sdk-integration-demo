@@ -4,7 +4,7 @@ use_frameworks!
 target 'juspay-sdk-integration-swift' do
   # Adding Hyper SDK dependecy
   # block:start:adding-hyper-sdk-pod
-  pod 'HyperSDK', '2.1.15'
+  pod 'HyperSDK', '2.1.23'
   # block:end:adding-hyper-sdk-pod
 end
 
