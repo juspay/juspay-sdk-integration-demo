@@ -10,7 +10,7 @@ buildscript {
         // block:start:add-ext-property
         
         clientId = "your_client_id"
-        hyperSDKVersion = "2.1.12"
+        hyperSDKVersion = "2.1.13"
 
         // block:end:add-ext-property
     }
