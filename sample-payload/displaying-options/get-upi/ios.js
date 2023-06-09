@@ -1,0 +1,12 @@
+<><key>LSApplicationQueriesSchemes</key>
+<array>
+    <string>credpay</string>
+    <string>paytm</string>
+    <string>bhim</string>
+    <string>myairtel</string>
+    <string>upi</string>
+    <string>devtools</string>
+    <string>phonepe</string>
+    <string>paytmmp</string>
+    <string>tez</string>
+</array></>

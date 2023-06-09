@@ -1,0 +1,13 @@
+{
+    "service": "in.juspay.hyperapi",
+    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+    "payload": {
+        "action": "consumerFinanceTxn",
+        "status": "CHARGED",
+        "otherInfo": {},
+        "orderId": "hyperorder45314"
+    },
+    "errorMessage": "",
+    "errorCode": "",
+    "error": false
+}

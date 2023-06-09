@@ -1,0 +1,27 @@
+{
+    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "action": "eligibility",
+        "amount": "1.00",
+        "clientAuthToken": "tkn_abcejvmodr",
+        "data": {
+            "apps": [
+                {
+                    "checkType": [
+                        "cred"
+                    ],
+                    "mobile": "7032290000",
+                    "udf": {
+                        "key1": "value1"
+                    },
+                    "gatewayReferenceId": {
+                        "cred": "#gatewayReferenceIdForCredChecktype"
+                    }
+                }
+            ],
+            "cards": [],
+            "wallets": []
+        }
+    }
+}

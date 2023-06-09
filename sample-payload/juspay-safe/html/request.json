@@ -1,0 +1,13 @@
+{
+    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "action": "startJuspaySafe",
+        "html": "&lt;BASE-64 encoded html data&gt;",
+        "amount": "1.00",
+        "orderId": "hyperorder45314",
+        "endUrls": [
+            "https:\\/\\/shop\\.merchant\\.com\\/payments\\/handleResponse.*"
+        ]
+    }
+}

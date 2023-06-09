@@ -1,0 +1,29 @@
+{
+    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "action": "eligibility",
+        "data": {
+            "cards": [
+                {
+                    "cardBin": "652801",
+                    "cardAlias": "",
+                    "checkType": {
+                        "otp": {
+                            "eligible": true
+                        },
+                        "vies": {
+                            "alias": "65eg5trh67j2801t",
+                            "eligibility": true,
+                            "enrolled": true,
+                            "expired": false
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "error": false,
+    "errorMessage": "",
+    "errorCode": ""
+}

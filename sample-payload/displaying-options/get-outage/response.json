@@ -1,0 +1,39 @@
+{
+    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "action": "getOutage",
+        "outages": [
+            {
+                "status": "DOWN",
+                "startTime": "2019-10-03T10:49:31Z",
+                "scope": "merchant_pig",
+                "paymentInstrumentGroup": "UPI",
+                "gateway": "NA",
+                "endTime": "2019-10-03T11:48:18Z",
+                "bank": "NA"
+            },
+            {
+                "status": "DOWN",
+                "startTime": "2019-10-03T10:49:31Z",
+                "scope": "merchant_pig",
+                "paymentInstrumentGroup": "WALLET",
+                "gateway": "NA",
+                "endTime": "2019-10-03T11:48:18Z",
+                "bank": "NA"
+            },
+            {
+                "status": "DOWN",
+                "startTime": "2019-10-03T10:49:31Z",
+                "scope": "merchant_gateway_bank",
+                "paymentInstrumentGroup": "NA",
+                "gateway": "GOOGLEPAY",
+                "endTime": "2019-10-03T11:48:18Z",
+                "bank": "GOOGLEPAY"
+            }
+        ]
+    },
+    "error": false,
+    "errorCode": "",
+    "errorMessage": ""
+}

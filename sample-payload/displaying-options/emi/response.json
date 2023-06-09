@@ -1,0 +1,42 @@
+{
+    "service": "in.juspay.hyperapi",
+    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+    "payload": {
+        "action": "emiPlans",
+        "emiPlans": [
+            {
+                "transactionAmount": 1,
+                "totalAmount": 1.02,
+                "tenure": 3,
+                "interest": 13,
+                "gatewayId": 12,
+                "gateway": "PAYU",
+                "emiAmount": 0.34,
+                "bank": "AXIS"
+            },
+            {
+                "transactionAmount": 1,
+                "totalAmount": 1.02,
+                "tenure": 6,
+                "interest": 12,
+                "gatewayId": 12,
+                "gateway": "PAYU",
+                "emiAmount": 0.17,
+                "bank": "AXIS"
+            },
+            {
+                "transactionAmount": 1,
+                "totalAmount": 0.99,
+                "tenure": 3,
+                "interest": 1,
+                "gatewayId": 12,
+                "gateway": "PAYU",
+                "emiAmount": 0.33,
+                "bank": ""
+            }
+        ]
+    },
+    "errorMessage": "",
+    "errorCode": "",
+    "error": false
+}
