@@ -1,0 +1,1 @@
+HyperSdkReact.terminate();
