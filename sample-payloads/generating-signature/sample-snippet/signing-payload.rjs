@@ -1,0 +1,21 @@
+require 'openssl'
+require 'base64'
+require 'json'
+
+privateKeyString = "-----BEGIN RSA PRIVATE KEY-----\nMIIEowIBAA70vuN....EyFLz2FzpPYzwN5aX1rYhPBmS89Yt6pu6McT7jlnw\n-----END RSA PRIVATE KEY-----"
+privateKey = OpenSSL::PKey::RSA.new(privateKeyString)
+# This is a sample snippet. Always store and fetch the private key from crypto vault
+
+def createSignature (payload, privateKey)
+    requiredFields = ["order_id", "merchant_id", "amount", "timestamp", "customer_id"]
+    signaturePayload = JSON.generate(payload)
+    jsonPayload = JSON.parse(signaturePayload)
+    for key in requiredFields do
+        if !jsonPayload.has_key?(key)
+            raise (key + " not found in payload \n")
+        end
+    end
+    signature = privateKey.sign(OpenSSL::Digest::SHA256.new, signaturePayload)
+    encodedSignature = Base64.encode64(signature).delete!("\n")
+    return encodedSignature, signaturePayload
+end

@@ -1,0 +1,1 @@
+hyperServices.setRequestPermissionDelegate(new ReactRequestDelegate(activity));
