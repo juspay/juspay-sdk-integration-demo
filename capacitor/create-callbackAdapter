@@ -1,0 +1,25 @@
+// Define handler for inititate callback
+// block:start:initiate-callback-handler
+@Override
+public void execute(MethodCall call, MethodCallResult result) {
+    String method = call.getMethod();
+    if ("get_initiate_payload".equals(method)) {
+        JSObject payload = new JSObject();
+        payload.put("requestId", UUID.randomUUID().toString());
+        payload.put("service", "in.juspay.hyperpay");
+
+        JSObject innerPayload = new JSObject();
+        innerPayload.put("action", "initiate");
+        innerPayload.put("merchantId", "<merchant-id>");
+        innerPayload.put("clientId", "<client-id>");
+        innerPayload.put("environment", "production");
+
+        payload.put("payload", innerPayload);
+
+        result.success(payload);
+    } else {
+        result.notImplemented();
+    }
+}
+
+// block:end:initiate-callback-handler

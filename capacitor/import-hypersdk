@@ -1,0 +1,4 @@
+import { Plugins } from '@capacitor/core';
+import 'hyper-sdk-capacitor';
+
+const { HyperServices } = Plugins;

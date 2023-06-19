@@ -1,1 +1,1 @@
-HyperServices.preFetch(getApplicationContext(), payload);
+HyperSdkReact.preFetch(JSON.stringify(preFetchPayload));
