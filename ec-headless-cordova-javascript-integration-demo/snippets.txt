@@ -25,7 +25,7 @@ function uuidv4() {
 function createInitiatePayload() {
     return {
         requestId: uuidv4(),
-        service: "in.juspay.hyperpay",
+        service: "in.juspay.hyperapi",
         payload: {
             action: "initiate",
             merchantId: "<your_merchant_id>",
@@ -168,20 +168,11 @@ hyperSDKRef.initiate(JSON.stringify(createInitiatePayload()), hyperSDKCallback);
 //block:end:initiate-sdk
 
 
-// block:start:fetch-process-payload
 
-    //Fetching the process payload from your server. Please refer to the session API section of docs to know more.
-      async function getProcessSDKPayload() {
-        var serverResponse = await fetch("https://your_server_endpoint/");
-        return serverResponse;
-      }
-// block:end:fetch-process-payload
+//block:start:process-sdk-call
 
+if (hyperInstance.isInitialised()){
+    hyperInstance.process(processPayload);
+}
 
-//block:start:process-sdk
-
-var processPayload = await fetch getProcessSDKPayload();
-
-hyperSDKRef.process(processPayload);
-
-//block:end:process-sdk
+//block:end:process-sdk-call
