@@ -1,6 +1,7 @@
 
 {
     //block:start:process-sdk-call
+
     if (hyperInstance.isInitialised()){
     hyperInstance.process(processPayload);
 }
@@ -9,6 +10,7 @@
 
 
     // block:start:create-hyper-callback
+    
     private HyperPaymentsCallbackAdapter createHyperPaymentsCallbackAdapter() {
         return new HyperPaymentsCallbackAdapter() {
             @Override
