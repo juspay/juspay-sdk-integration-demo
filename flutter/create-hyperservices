@@ -1,5 +1,0 @@
-//block:start:create-hyper-services-instance
-
-final HyperSDK hyperSDK;
-
-//block:end:create-hyper-services-instance

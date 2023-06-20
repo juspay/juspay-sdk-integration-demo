@@ -1,1 +1,0 @@
-HyperServices.preFetch(getApplicationContext(), payload);

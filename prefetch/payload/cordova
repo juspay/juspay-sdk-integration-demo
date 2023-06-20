@@ -1,7 +1,0 @@
-var payload = {
-    "service" : "in.juspay.hyperpay",
-    "betaAssets" : true,
-    "payload" : {
-        "clientId" : "<client_id>"
-    }
-}

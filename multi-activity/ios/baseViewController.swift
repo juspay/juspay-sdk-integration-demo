@@ -1,1 +1,0 @@
-hyperInstance.baseViewController = anotherViewController

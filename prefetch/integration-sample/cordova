@@ -1,1 +1,0 @@
-hyperSDKRef.preFetch(JSON.stringify(payload))

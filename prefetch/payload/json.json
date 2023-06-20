@@ -1,6 +1,0 @@
-{ 
-    "service" : "in.juspay.hyperapi",
-    "payload"  : { 
-        "clientId" : "<Client Id>"
-    }
-}

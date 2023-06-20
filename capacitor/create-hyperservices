@@ -1,5 +1,0 @@
-//block:start:create-hyper-services-instance
-
-await HyperServices.createHyperServices();
-
-//block:end:create-hyper-services-instance
