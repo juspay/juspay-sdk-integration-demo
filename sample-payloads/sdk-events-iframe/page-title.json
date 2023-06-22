@@ -1,0 +1,7 @@
+{
+    "event": "user_event",
+    "payload": {
+        "action": "setPageTitle",
+        "title": "Add Card"
+    }
+}

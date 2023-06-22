@@ -1,0 +1,9 @@
+{
+    "event": "paymentAttempt",
+    "payload": {
+      "payment_method_type": "NB",
+      "payment_method": "NB_AXIS",
+      "payment_card_type": "",
+      "payment_card_issuer": ""
+    }
+  }

@@ -1,0 +1,9 @@
+{
+    "service": "in.juspay.hyperpay",
+    "requestId": "e17d4cd0-55z0-410f-84d6-038d69cx3819",
+    "payload": {
+      "action": "updateOrder",
+      "orderDetails": "<updated-order-details-payload>",
+      "signature": "<updated-signature>"
+    }
+  }

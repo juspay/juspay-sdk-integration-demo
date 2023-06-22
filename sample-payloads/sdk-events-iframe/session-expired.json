@@ -1,0 +1,6 @@
+{
+    "event": "sessionExpired",
+    "payload": {
+        "timestamp": "2021-07-19T07:20:53.318Z"
+    }
+}

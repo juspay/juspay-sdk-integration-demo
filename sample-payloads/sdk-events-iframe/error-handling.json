@@ -1,0 +1,6 @@
+{
+    "event": "invokeErrorHandling",
+    "payload": {
+      "error_message": "Something went wrong"
+    }
+  }
