@@ -40,9 +40,9 @@
        "merchant_id": "MID",
        "payment_method_type": "CARD",
        "payment_links": {
-         "iframe": "https://sandbox.juspay.in/merchant/ipay/ord_c4345ba45dd3457c85fe8299f5321f53",
-         "web": "https://sandbox.juspay.in/merchant/pay/ord_c4345ba45dd3457c85fe8299f5321f53",
-         "mobile": "https://sandbox.juspay.in/merchant/pay/ord_c4345ba45dd3457c85fe8299f5321f53?mobile=true"
+         "iframe": "https://api.juspay.in/merchant/ipay/ord_c4345ba45dd3457c85fe8299f5321f53",
+         "web": "https://api.juspay.in/merchant/pay/ord_c4345ba45dd3457c85fe8299f5321f53",
+         "mobile": "https://api.juspay.in/merchant/pay/ord_c4345ba45dd3457c85fe8299f5321f53?mobile=true"
        },
        "status": "AUTHORIZATION_FAILED",
        "txn_uuid": "rkuk1<HIDDEN>ltiam",
