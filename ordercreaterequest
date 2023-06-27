@@ -1,7 +1,7 @@
 curl --location --request POST 'https://sandbox.juspay.in/orders' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'version: 2020-02-17' \
---header 'Authorization: Basic MTUy****MUY0OTY3NzZGNTY0RDRBNzRCOg==' \
+--header 'Authorization: Basic apikeyvalue' \
 --data-urlencode 'order_id=1676534303' \
 --data-urlencode 'amount=10' \
 --data-urlencode 'currency=INR' \
