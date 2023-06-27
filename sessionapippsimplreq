@@ -1,5 +1,5 @@
 curl --location --request POST 'https://sandbox.juspay.in/session' \
---header 'Authorization: Basic MTUyMENDQkRCOTA0MUY0OTY3NzZGNTY0RDRBNzRCOg==' \
+--header 'Authorization: Basic apikeyvalue==' \
 --header 'x-merchantid: your_merchant_id' \
 --header 'Content-Type: application/json' \
 --data-raw '{
