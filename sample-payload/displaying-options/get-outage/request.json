@@ -1,10 +1,10 @@
-value: {
-   started: {
-      payload: {
-         action: "getOutageV2",
-         clientAuthToken: "tkn_6a0e20323d8649889476c1f75338d841",
-      },
-      requestId: "30b97fa7-35e5-45d2-89d7-4c8394c97b9d",
-      service: "in.juspay.hyperapi"
-   }
+{
+   {
+     payload: {
+        action: "getOutageV2",
+        clientAuthToken: "tkn_6a0e20323d8649889476c1f75338d841",
+     },
+     requestId: "30b97fa7-35e5-45d2-89d7-4c8394c97b9d",
+     service: "in.juspay.hyperapi"
+  }
 }
