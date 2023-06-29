@@ -1,37 +1,14 @@
 buildscript {
-    ext.kotlin_version = '1.6.0'
-
+    ....
     //Add the clientId ext property
     // block:start:client-id-extention
+    
     ext {
-        clientId = "<CLIENT_ID>"
+        ....
+        clientId = "<clientId shared by Juspay team>"
         hyperSDKVersion = "2.1.13"
+        ....
     }
     // block:end:client-id-extention
-    repositories {
-        google()
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:4.1.0'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    }
-}
-
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
-
-rootProject.buildDir = '../build'
-subprojects {
-    project.buildDir = "${rootProject.buildDir}/${project.name}"
-    project.evaluationDependsOn(':app')
-}
-
-task clean(type: Delete) {
-    delete rootProject.buildDir
+    ....
 }
