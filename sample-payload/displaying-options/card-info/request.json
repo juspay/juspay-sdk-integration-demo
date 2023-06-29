@@ -4,9 +4,9 @@
     "payload": {
         "action": "cardInfo",
         "cardBin": "459162",
-    //  "checkDirectOtpSupport":true,      // Optional parameter to check DOTP Eligibility
-    //  "checkMandateSupport":true,        // Optional parameter to check Mandates Eligibility
-    //  "checkTokenizeSupport":true,       // Optional parameter to check Tokenization Eligibility
+        "checkDirectOtpSupport":true,      // Optional parameter to check DOTP Eligibility
+        "checkMandateSupport":true,        // Optional parameter to check Mandates Eligibility
+        "checkTokenizeSupport":true,       // Optional parameter to check Tokenization Eligibility
         "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213"
     }
 }
