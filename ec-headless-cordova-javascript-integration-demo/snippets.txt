@@ -1,6 +1,8 @@
 //block:start:add-merchant-config-android
 
-clientId = <clientId> shared by Juspay Team
+ ext {
+        clientId = "<clientId provided by Juspay Team>"
+    }
 
 //block:end:add-merchant-config-android
 
@@ -14,25 +16,20 @@ hyperSDKRef = cordova.plugins.HyperSDKPlugin
 
 //block:start:create-initiate-payload
 
-//Function to generate random requestId 
-function uuidv4() {
-  return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
-    (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
-  );
-}
-
-
-function createInitiatePayload() {
-    return {
-        requestId: uuidv4(),
-        service: "in.juspay.hyperapi",
-        payload: {
-            action: "initiate",
-            merchantId: "<your_merchant_id>",
-            clientId: "<your_client_id>",
-            environment: "production"
-        }
-    };
+var payload = {
+    "requestId": "8cbc3fad-8b3f-40c0-ae93-2d7e75a8624a",
+    "service" : "in.juspay.hyperpay",
+    "betaAssets" : true,
+    "payload" : {
+        "action": "initiate",
+        "merchantKeyId": "2980",
+        "merchantId": "merchant_id",
+        "clientId": "merchant_id" + "_android",
+        "customerId": "customer_id",
+        "environment": "sandbox",
+        "signaturePayload": "signaturePayloadString",
+        "signature": "signature"
+    }
 }
 
 //block:end:create-initiate-payload
@@ -163,7 +160,7 @@ var hyperSDKCallback = function (response) {
 
 //block:start:initiate-sdk
 
-hyperSDKRef.initiate(JSON.stringify(createInitiatePayload()), hyperSDKCallback);
+hyperSDKRef.initiate(JSON.stringify(completePayload), hyperSDKCallback);
 
 //block:end:initiate-sdk
 
@@ -171,8 +168,6 @@ hyperSDKRef.initiate(JSON.stringify(createInitiatePayload()), hyperSDKCallback);
 
 //block:start:process-sdk-call
 
-if (hyperInstance.isInitialised()){
-    hyperInstance.process(processPayload);
-}
+hyperSDKRef.process(JSON.stringify(completePayload));
 
 //block:end:process-sdk-call
