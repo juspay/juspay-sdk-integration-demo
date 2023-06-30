@@ -26,7 +26,7 @@ var payload = {
         "merchantId": "merchant_id",
         "clientId": "merchant_id" + "_android",
         "customerId": "customer_id",
-        "environment": "sandbox",
+        "environment": "production",
         "signaturePayload": "signaturePayloadString",
         "signature": "signature"
     }
