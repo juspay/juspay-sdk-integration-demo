@@ -1,0 +1,14 @@
+post_install do |installer|
+
+  
+  # // Add iOS post-install script
+  # // block:start:ios-post-install
+  
+ fuse_path = "./Pods/HyperSDK/Fuse.rb"
+ clean_assets = false # Pass true to re-download all the assets
+ if File.exist?(fuse_path)
+   if system("ruby", fuse_path.to_s, clean_assets.to_s)
+   end
+ end
+  # // block:end:ios-post-install
+end

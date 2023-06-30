@@ -2,26 +2,24 @@
   // Overriding onBackPressed to handle hardware backpress
   // block:start:onBackPressed
 
-    onWillPop: () async {
-      if (Platform.isAndroid) {
-        var backpressResult = await widget.hyperSDK.onBackPress();
+  import { App } from '@capacitor/app';
 
-        if (backpressResult.toLowerCase() == "true") {
-          return false;
-        } else {
-          return true;
-        }
-      } else {
-        return true;
-      }
+  .........
+  .........
+
+  App.addListener('backButton', async (data) => {
+    const { onBackPressed } = await HyperServices.onBackPressed();
+    if (!onBackPressed) {
+      window.history.back();
     }
+  });
     // block:end:onBackPressed
 
 
   // Calling process on hyperSDK to open the checkout screen
   // block:start:process-sdk
 
-  await widget.hyperSDK.process(processPayload, hyperSDKCallbackHandler);
+  await HyperServices.process(processPayload);
   // block:end:process-sdk
 }
 

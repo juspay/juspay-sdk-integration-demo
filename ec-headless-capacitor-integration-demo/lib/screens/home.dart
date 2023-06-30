@@ -19,7 +19,7 @@ void initiateHyperSDK() async {
     // Calling initiate on hyperSDK instance to boot up payment engine.
     // block:start:initiate-sdk
 
-    await widget.hyperSDK.initiate(initiatePayload, initiateCallbackHandler);
+    await HyperServices.initiate(initiatePayload);
     // block:end:initiate-sdk
   }
 }

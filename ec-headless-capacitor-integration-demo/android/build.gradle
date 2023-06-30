@@ -1,0 +1,13 @@
+
+//Add the clientId ext property
+// block:start:client-id-extention
+
+allprojects {
+    repositories {
+        ....
+        ....
+        maven { url "https://maven.juspay.in/jp-build-packages/hyper-sdk/" }
+    }
+}
+// block:end:client-id-extention
+
