@@ -5,6 +5,6 @@ await HyperServices.createHyperServices();
 //block:end:create-hyper-services-instance
 
 
-// Fow web integrartion, the following parameters are to be passed
+// Fow web integration, the following parameters are to be passed
 
 await HyperServices.createHyperServices(clientId, "in.juspay.hyperapi")
