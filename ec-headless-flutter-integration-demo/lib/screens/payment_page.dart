@@ -18,12 +18,6 @@
     // block:end:onBackPressed
 
 
-  // Get process payload from backend
-  // block:start:fetch-process-payload
-
-  var processPayload = await getProcessPayload(widget.amount);
-  // block:end:fetch-process-payload
-
   // Calling process on hyperSDK to open the checkout screen
   // block:start:process-sdk
 
