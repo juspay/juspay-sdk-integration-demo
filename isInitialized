@@ -1,0 +1,1 @@
+var { isInitialised } = await HyperServices.isInitialised();
