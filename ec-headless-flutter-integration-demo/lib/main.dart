@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   // Create Juspay Object
   // // block:start:create-hyper-sdk-instance
 
-  final HyperSDK hyperSDK;
+  final hyperSDK = HyperSDK();
   // // block:end:create-hyper-sdk-instance
   ....
 }
