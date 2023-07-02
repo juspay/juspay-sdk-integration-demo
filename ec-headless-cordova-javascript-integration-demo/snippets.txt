@@ -24,7 +24,7 @@ var payload = {
         "action": "initiate",
         "merchantKeyId": "2980",
         "merchantId": "merchant_id",
-        "clientId": "merchant_id" + "_android",
+        "clientId": "client_id",
         "customerId": "customer_id",
         "environment": "production",
         "signaturePayload": "signaturePayloadString",
