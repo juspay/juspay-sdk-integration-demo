@@ -1,5 +1,5 @@
 var payload = {
-    "service" : "in.juspay.hyperpay",
+    "service" : "in.juspay.hyperapi",
     "betaAssets" : true,
     "payload" : {
         "clientId" : "<client_id>"
