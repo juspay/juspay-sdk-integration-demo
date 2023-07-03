@@ -1,7 +1,7 @@
 curl POST \
 https://api.juspay.in/orders \
  -H 'Authorization: Basic <base64 of key:>' \
--H ‘'Content-Type: application/x-www-form-urlencoded'\
+ -H 'Content-Type: application/x-www-form-urlencoded'\
  -d "order_id=152664118690577-910" \
  -d "amount=5.00" \
  -d "currency=INR" \

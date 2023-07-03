@@ -1,6 +1,6 @@
 curl POST \ https://api.juspay.in/txns \
 -H 'x-merchantid: merchant' \
--H ‘'Content-Type: application/x-www-form-urlencoded'\
+-H 'Content-Type: application/x-www-form-urlencoded'\
  -d "order_id=152664118690577-910" \
  -d "amount=1.00" \
  -d "currency=INR" \

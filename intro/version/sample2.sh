@@ -1,4 +1,4 @@
 curl --location --request POST 'https://api.juspay.in/orders' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
---header 'version: 2021-03-05' \
+--header 'version: 2023-06-30' \
 --header 'Authorization: Basic QkIwQjMxxxxwdqdg8eq0NzBBMUE2Og=='
