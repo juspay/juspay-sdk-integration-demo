@@ -1,6 +1,6 @@
 {
     "requestId": "9ce6c34b-d200-4222-a2d7-13d683ac4a4d",
-    "service": "in.juspay.ec",
+    "service": "in.juspay.hyperapi",
     "payload": {
       "clientAuthToken": "tkn_997d200379944f8fa0c21c6b8dad8221",
       "action": "cardTxn",
