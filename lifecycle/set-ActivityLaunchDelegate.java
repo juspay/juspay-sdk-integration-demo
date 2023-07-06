@@ -1,0 +1,1 @@
+hyperServices.setActivityLaunchDelegate(new ReactLaunchDelegate(getReactApplicationContext()));
