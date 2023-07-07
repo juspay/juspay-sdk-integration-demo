@@ -1,0 +1,1 @@
+hyperServices.setWebViewConfigurationCallback(juspayWebViewConfigurationCallback);

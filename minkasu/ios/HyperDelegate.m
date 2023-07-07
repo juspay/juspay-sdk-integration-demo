@@ -1,0 +1,1 @@
+hyperInstance.hyperDelegate = self
