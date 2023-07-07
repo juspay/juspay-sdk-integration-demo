@@ -3,6 +3,7 @@
     "service": "in.juspay.hyperapi",
     "payload": {
         "action": "startJuspaySafe",
+        "url": "https://paymenturl.com/payment",
         "postData": "Data1=Value1&Data2=Value2&Data3=Value3",
         "amount": "1.00",
         "orderId": "hyperorder45314",
