@@ -1,0 +1,14 @@
+{
+    "order_id": "testing-order-2205241516",
+    "amount": "1000",
+    "currency":"INR",
+    "customer_email": "test@mail.com",
+    "customer_phone": "9876543210",
+    "payment_page_client_id": "spencers",
+    "action": "paymentPage",
+    "billing_address_first_name":"Test",
+    "first_name": "",
+    "last_name": "",
+    "metadata.merchant_container_list" :"[{\"payment_method\":\"SPENCERS_WALLET\",\"payment_method_type\":\"MERCHANT_CONTAINER\",\"display_name\":\"Spencers Wallet\",\"balance_amount\":10,\"eligible_amount\":10}]"
+
+ } 
