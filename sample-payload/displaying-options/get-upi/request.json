@@ -3,7 +3,6 @@
     "service": "in.juspay.hyperapi",
     "payload": {
         "action": "upiTxn",
-        "orderId": "hyperorder45314",
         "getAvailableApps": true,
         "showLoader": true
     }
