@@ -1,1 +1,0 @@
-curl --location --request GET 'https://api.juspay.in/cardbins/541919?merchant_id=firstcry&options.check_tokenize_support=true'

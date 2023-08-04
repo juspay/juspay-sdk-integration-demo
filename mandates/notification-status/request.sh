@@ -1,1 +1,0 @@
-curl GET 'https://api.juspay.in/notifications/2QNPw8KSbpHL122bNPgA04' \

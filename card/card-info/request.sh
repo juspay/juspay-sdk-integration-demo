@@ -1,1 +1,0 @@
-curl -X GET https://api.juspay.in/cardbins/524368
