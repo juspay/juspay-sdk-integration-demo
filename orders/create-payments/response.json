@@ -1,0 +1,15 @@
+{
+  "order_id": "ord_1590759422",
+  "status": "PENDING_VBV",
+  "payment": {
+    "authentication": {
+      "url": "https://api.juspay.in/v2/pay/start/MID/moz3BDvrJSbBzuqFiw1?cardIssuerBankName%3DAxisBank%26cardType%3DDEBIT%26paymentMethod%3DVISA%26paymentMethodType%3DCARD",
+      "method": "GET"
+    }
+  },
+  "txn_uuid": "moz3BDvrJSbBzuqFiw1",
+  "offer_details": {
+    "offers": []
+  },
+  "txn_id": "MID-ord_1590759422-1"
+}
