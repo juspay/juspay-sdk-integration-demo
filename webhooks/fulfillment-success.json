@@ -1,0 +1,26 @@
+{
+  "value": "SUCCESS",
+  "label": "FULFILLMENT_ORDER",
+  "info": {
+    "updatedBy": "DEFAULT",
+    "updatedAt": "2020-05-29T07:26:08Z",
+    "type": "ORDER",
+    "statusUpdatedAt": "2020-05-29T07:26:03Z",
+    "status": "SUCCESS",
+    "preferredMethodList": ["DUMMY_IMPS"],
+    "id": "95eb968ccdd4f2d9ef31c3e972ca40-f1",
+    "createdAt": "2020-05-29T07:24:14Z",
+    "beneficiaryDetails": {
+      "details": {
+        "name": "Shubham Kumar",
+        "ifsc": "YESB0000262",
+        "account": "026291800001191"
+      },
+      "type": "ACCOUNT_IFSC"
+    },
+    "amount": 10,
+    "merchantCustomerId": "shubham"
+  },
+  "id": "76f029fd6244fe38a252e54e5707cc",
+  "category": "INFO"
+}

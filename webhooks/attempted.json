@@ -1,0 +1,23 @@
+{
+  "value": "INITIATED",
+  "label": "FULFILLMENT_TXN",
+  "info": {
+    "updatedAt": "2020-05-29T07:26:32Z",
+    "txnResponse": {
+      "status": "PENDING",
+      "requestId": "3ec3d5491604fa39d22bba6f236f38",
+      "amount": 10
+    },
+    "transactionRef": "3ec3d5491604fa39d22bba6f236f38",
+    "status": "INITIATED",
+    "id": "95eb968ccdd4f2d9ef31c3e972ca40-f1-t1",
+    "gatewayRefId": "3ec3d5491604fa39d22bba6f236f38",
+    "fulfillmentMethod": "DUMMY_IMPS",
+    "createdAt": "2020-05-29T07:26:18Z",
+    "attempted": true,
+    "amount": 10,
+    "FulfillmentId": "95eb968ccdd4f2d9ef31c3e972ca40-f1"
+  },
+  "id": "b3f1e1de9774b559a327d17592df38",
+  "category": "INFO"
+}

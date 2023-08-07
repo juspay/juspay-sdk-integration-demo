@@ -1,0 +1,16 @@
+{
+  "value": "FULFILLMENTS_SUCCESSFUL",
+  "label": "ORDER",
+  "info": {
+    "updatedAt": "2020-05-29T07:26:03Z",
+    "status": "FULFILLMENTS_SUCCESSFUL",
+    "orderType": "PAY_AND_FULFILL",
+    "merchantOrderId": "6lQuvBOixfADPpmD",
+    "merchantCustomerId": "shubham",
+    "id": "95eb968ccdd4f2d9ef31c3e972ca40",
+    "createdAt": "2020-05-29T07:24:13Z",
+    "amount": 10
+  },
+  "id": "12d83c7fbc041c2b1290106e6d963f",
+  "category": "INFO"
+}
