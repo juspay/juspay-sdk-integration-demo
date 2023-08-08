@@ -4,9 +4,9 @@
   "info": {
     "updatedAt": "2020-05-29T07:24:57Z",
     "status": "READY_FOR_FULFILLMENT",
-    "orderType": "PAY_AND_FULFILL",
+    "orderType": "FULFILL_ONLY",
     "merchantOrderId": "6lQuvBOixfADPpmD",
-    "merchantCustomerId": "shubham",
+    "merchantCustomerId": "1421255",
     "id": "95eb968ccdd4f2d9ef31c3e972ca40",
     "createdAt": "2020-05-29T07:24:13Z",
     "amount": 10
