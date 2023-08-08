@@ -7,7 +7,7 @@ curl --location --request POST 'https://api.juspay.in/payout/merchant/v1/orders'
     "fulfillments": [
         {
             "preferredMethodList": [
-                "CASHFREE_IMPS"
+                "CFGEN_IMPS"
             ],
             "amount": 1,
             "beneficiaryDetails": {
