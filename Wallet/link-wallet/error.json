@@ -1,0 +1,5 @@
+{
+  "error_message": "OTP is required while linking wallet.",
+  "status": "Invalid Request",
+  "error_code": "Invalid"
+}
