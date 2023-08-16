@@ -1,6 +1,6 @@
 PODS:
   - Flutter (1.0.0)
-  - hypersdk (2.0.2):
+  - hypersdk (2.0.4):
     - Flutter
     - HyperSDK (= 2.1.5)
   - HyperSDK (2.1.5):
