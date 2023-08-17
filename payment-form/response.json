@@ -1,32 +1,33 @@
 {
-    "eci": "07",
-    "name_on_card": "Rohit Singh",
-    "token_requestor_id": "40000000079",
-    "fingerprint": "65soeo5vf909rfe4vrvmreu88f",
-    "card_type": "DEBIT",
-    "reference": "token_a0c16957f9bf46b0966a91a35b555353",
-    "customer_id": "rohit_test",
-    "sub_type": null,
-    "network": "VISA",
-    "token_details": {
-        "status": "ACTIVE",
-        "first_six": "478808",
-        "last_four": "8243",
-        "exp_month": "11",
-        "exp_year": "2029"
-    },
-    "issuer_country_code": null,
-    "authentication_details": {
-        "cryptogram": "XXXXXXXXXXXXXXXX",
-        "token": "4788080252078243"
-    },
-    "nickname": null,
-    "issuer": "Paytm",
-    "card_details": {
-        "card_number": null,
-        "last_four": "9426",
-        "par": "V0010014622122423467188903638",
-        "exp_month": "11",
-        "exp_year": "2029"
-    }
- }
+  "eci": "07",
+  "name_on_card": "Rohit Singh",
+  "token_requestor_id": "40000000079",
+  "fingerprint": "65soeo5vf909rfe4vrvmreu88f",
+  "card_type": "DEBIT",
+  "reference": "token_a0c16957f9bf46b0966a91a35b555353",
+  "customer_id": "rohit_test",
+  "sub_type": null,
+  "network": "VISA",
+  "token_details": {
+    "status": "ACTIVE",
+    "first_six": "478808",
+    "last_four": "8243",
+    "exp_month": "11",
+    "exp_year": "2029",
+    "provider": "VISA",
+    "provider_category": "NETWORK"
+  },
+  "issuer_country_code": null,
+  "authentication_details": {
+    "cryptogram": "XXXXXXXXXXXXXXXX",
+    "token": "4788080252078243"
+  },
+  "nickname": null,
+  "issuer": "Paytm",
+  "card_details": {
+    "last_four": "9426",
+    "par": "V0010014622122423467188903638",
+    "exp_month": "11",
+    "exp_year": "2029"
+  }
+}
