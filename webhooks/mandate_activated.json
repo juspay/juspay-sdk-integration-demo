@@ -1,13 +1,15 @@
 {
-  "id": "evt_V2_14596cec6cd34c6380212cc3115030cb",
-  "event_name": "MANDATE_CREATED",
-  "date_created": "2023-08-16T09:02:30Z",
+  "id": "evt_V2_7c242ac8f082499f8398ab56ce603187",
+  "event_name": "MANDATE_ACTIVATED",
+  "date_created": "2023-08-16T09:02:34Z",
   "content": {
     "mandate": {
+      "last_activated_at": "FILTERED",
+      "activated_at": "FILTERED",
       "amount_rule": "VARIABLE",
-      "last_updated": "2023-08-16T09:01:59Z",
+      "last_updated": "2023-08-16T09:02:33Z",
       "frequency": "ASPRESENTED",
-      "status": "CREATED",
+      "status": "ACTIVE",
       "revokable_by_customer": true,
       "order_id": "ord_1692176519ms",
       "end_date": "1789934557",
@@ -19,7 +21,8 @@
       "max_amount": 100,
       "mandate_type": "MANDATE",
       "mandate_id": "c1ZJDKT3YXUhxubgKhkom8",
-      "mandate_token": "FILTERED"
+      "mandate_token": "FILTERED",
+      "mandate_debit_token": "FILTERED"
     }
   }
 }

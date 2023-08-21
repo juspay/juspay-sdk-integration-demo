@@ -1,7 +1,7 @@
 {
-  "id": "evt_V2_132b474fe46b4518a561ad1aa18b4e42",
-  "event_name": "ORDER_REFUNDED",
-  "date_created": "2023-08-10T07:49:01Z",
+  "id": "evt_V2_6d18def52abc4810aaef89a91064b045",
+  "event_name": "REFUND_INITIATED",
+  "date_created": "2023-08-10T07:22:01Z",
   "content": {
     "order": {
       "offers": [],
@@ -95,17 +95,16 @@
       "refunded": false,
       "refunds": [
         {
-          "error_message": "Refund Success",
+          "error_message": "",
           "unique_request_id": "erf_b0c764a743c4221b",
           "created": "2023-08-10T07:22:01Z",
-          "status": "SUCCESS",
+          "status": "PENDING",
           "id": null,
           "refund_type": "STANDARD",
-          "pg_processed_at": "FILTERED",
-          "sent_to_gateway": true,
+          "sent_to_gateway": false,
           "refund_source": "DUMMY",
-          "ref": "55430487",
-          "error_code": "00",
+          "ref": null,
+          "error_code": null,
           "amount": 5,
           "initiated_by": "ms"
         }

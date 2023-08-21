@@ -1,15 +1,17 @@
 {
-  "id": "evt_V2_14596cec6cd34c6380212cc3115030cb",
-  "event_name": "MANDATE_CREATED",
-  "date_created": "2023-08-16T09:02:30Z",
+  "id": "evt_V2_98b67d9bfe334c84a7d4971d932b9465",
+  "event_name": "MANDATE_PAUSED",
+  "date_created": "2023-08-16T09:42:31Z",
   "content": {
     "mandate": {
+      "last_activated_at": "FILTERED",
+      "activated_at": "FILTERED",
       "amount_rule": "VARIABLE",
-      "last_updated": "2023-08-16T09:01:59Z",
+      "last_updated": "2023-08-16T09:42:31Z",
       "frequency": "ASPRESENTED",
-      "status": "CREATED",
+      "status": "PAUSED",
       "revokable_by_customer": true,
-      "order_id": "ord_1692176519ms",
+      "order_id": "sample_ord304",
       "end_date": "1789934557",
       "start_date": "1692169687",
       "currency": "INR",
@@ -18,7 +20,7 @@
       "block_fund": false,
       "max_amount": 100,
       "mandate_type": "MANDATE",
-      "mandate_id": "c1ZJDKT3YXUhxubgKhkom8",
+      "mandate_id": "ii76ncZXa2tceXdeyCFqaM",
       "mandate_token": "FILTERED"
     }
   }

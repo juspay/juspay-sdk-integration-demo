@@ -1,0 +1,27 @@
+{
+  "id": "evt_V2_98b67d9bfe334c84a7d4971d932b9465",
+  "event_name": "MANDATE_EXPIRED",
+  "date_created": "2023-08-17T02:32:43Z",
+  "content": {
+    "mandate": {
+      "last_activated_at": "FILTERED",
+      "activated_at": "FILTERED",
+      "amount_rule": "VARIABLE",
+      "last_updated": "2023-08-17T02:32:44Z",
+      "frequency": "ASPRESENTED",
+      "status": "EXPIRED",
+      "revokable_by_customer": true,
+      "order_id": "sample_ord305",
+      "end_date": "1692256691",
+      "start_date": "1629184691",
+      "currency": "INR",
+      "customer_id": "FILTERED",
+      "payment_info": "FILTERED",
+      "block_fund": false,
+      "max_amount": 5000,
+      "mandate_type": "EMANDATE",
+      "mandate_id": "ii76ncZXa2tceXdeyCFqaM",
+      "mandate_token": "FILTERED"
+    }
+  }
+}

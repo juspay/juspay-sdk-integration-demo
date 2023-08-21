@@ -1,0 +1,23 @@
+{
+  "id": "evt_V2_93ca6871b7fc4efcafe24ede6e25ecb7",
+  "event_name": "NOTIFICATION_FAILED",
+  "date_created": "2023-08-16T10:40:29Z",
+  "content": {
+    "notification": {
+      "object": "notification",
+      "last_updated": "1692182429",
+      "provider_name": "FILTERED",
+      "status": "FAILURE",
+      "description": "Sending pre-debit notification",
+      "id": "110000000129",
+      "mandate": { "mandate_id": "faFdBEsXmJFMdTEx2rvyBH" },
+      "source_object": "MANDATE",
+      "date_created": "1692182429",
+      "notification_type": "FILTERED",
+      "source_info": { "txn_date": "FILTERED", "amount": "1.0" },
+      "object_reference_id": "abcxyztftydf",
+      "response_code": "JP_852",
+      "response_message": "Gateway not supported."
+    }
+  }
+}
