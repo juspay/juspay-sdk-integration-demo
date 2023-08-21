@@ -144,6 +144,20 @@ class Checkout extends React.Component {
     });
 
     // block:end:handle-hardware-backpress
+
+    //Android Permissions Handling
+    // block:start:handle-onRequestPermissionsResult
+    
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+      if (HyperSdkReactModule.getPermissionRequestCodes().contains(requestCode)) {
+          HyperSdkReactModule.onRequestPermissionsResult(requestCode, permissions, grantResults);
+      } else {
+          super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+      }
+    }
+    
+    // block:end:handle-onRequestPermissionsResult
   }
 
   // block:end:event-handling-process

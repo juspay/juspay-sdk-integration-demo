@@ -141,6 +141,20 @@ export default function Checkout({navigation}) {
     
     // block:end:handle-hardware-backpress
 
+    //Android Permissions Handling
+    // block:start:handle-onRequestPermissionsResult
+    
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+      if (HyperSdkReactModule.getPermissionRequestCodes().contains(requestCode)) {
+          HyperSdkReactModule.onRequestPermissionsResult(requestCode, permissions, grantResults);
+      } else {
+          super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+      }
+    }
+    
+    // block:end:handle-onRequestPermissionsResult
+
     // block:start:process-sdk
 
     const startPayment = () => {
