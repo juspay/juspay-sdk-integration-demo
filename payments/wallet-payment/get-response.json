@@ -7,4 +7,5 @@
       "method": "GET",
       "url": "https://wallet-url.com/payment-path/start?hello=world"
     }
+  }
 }
