@@ -2,12 +2,13 @@
 
 const initiate_payload = {
     requestId: uuid.v4(),
-    service: 'in.juspay.hyperpay',
+    service: 'in.juspay.hyperapi',
     payload: {
-        action: 'initiate',
-        merchantId: '<MERCHANT_ID>',
-        clientId: '<CLIENT_ID>',
-        environment: 'production',
+        "action" : "initiate",
+        "merchantId" : "<Merchant Id>",
+        "clientId" : "<Client Id>",
+        "customerId" : "<Customer Id>", //Any unique refrences to current customer
+        "environment" : "prod",
     },
 };
 
