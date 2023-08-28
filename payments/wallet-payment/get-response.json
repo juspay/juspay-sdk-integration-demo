@@ -1,4 +1,4 @@
-response: {
+{
   "order_id": ":order_id",
   "txn_id": ":txn_id",
   "status": "PENDING_VBV",
@@ -7,5 +7,4 @@ response: {
       "method": "GET",
       "url": "https://wallet-url.com/payment-path/start?hello=world"
     }
-  }
 }
