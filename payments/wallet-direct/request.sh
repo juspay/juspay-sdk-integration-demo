@@ -4,7 +4,7 @@ curl --location 'https://api.juspay.in/txns' \
 --data-urlencode 'order_id=de83e2f6-fa65-44b2-91f2-9af8bbbcc06b' \
 --data-urlencode 'merchant_id=azharamin' \
 --data-urlencode 'payment_method_type=WALLET' \
---data-urlencode 'payment_method=PAYTM' \
+--data-urlencode 'payment_method=GOPAY' \
 --data-urlencode 'redirect_after_payment=true' \
 --data-urlencode 'format=json' \
 --data-urlencode 'direct_wallet_token=tkn_ef1a29396adb4ced9ea1b5a43562ac7b' \
