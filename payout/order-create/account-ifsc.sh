@@ -17,6 +17,9 @@ curl --location --request POST 'https://api.juspay.in/payout/merchant/v1/orders'
                     "ifsc" : "YESB0000262"
                 },
                 "type": "ACCOUNT_IFSC"
+            },
+            "additionalInfo": {
+                "remark":"Payout Transaction"
             }
         }
     ],
