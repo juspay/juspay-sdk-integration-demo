@@ -24,7 +24,10 @@
         },
         "type": "ACCOUNT_IFSC"
       },
-      "amount": 1
+      "amount": 1,
+      "additionalInfo": {
+                "remark":"Payout Transaction"
+      }
     }
   ],
   "customerId": "ce1d3404-dc3d-4886-a46e-43a48ddd0324",
