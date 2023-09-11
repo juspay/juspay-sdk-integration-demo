@@ -1,0 +1,83 @@
+[
+  [{ "type": "space" }],
+  [
+    { "type": "space", "weight": 1.0 },
+    { "type": "text", "text": "Bus Name VRL No.", "fontType": "bold" },
+    { "type": "space", "weight": 1.0 }
+  ],
+  [{ "type": "space" }],
+  [
+    { "type": "space", "width": 20 },
+    {
+      "type": "text",
+      "text": "Bangalore",
+      "fontType": "bold",
+      "color": "#b6a885",
+      "textSize": 20
+    },
+    { "type": "space", "width": 1.0 },
+    {
+      "type": "image",
+      "url": "https://static.vecteezy.com/system/resources/previews/018/931/177/original/black-bus-icon-png.png"
+    },
+    { "type": "space", "weight": 1.0 },
+    {
+      "type": "text",
+      "text": "Tirupati",
+      "fontType": "bold",
+      "color": "#b6a885",
+      "textSize": 20
+    },
+    { "type": "space", "width": 20 }
+  ],
+  [
+    { "type": "space", "width": 20 },
+    { "type": "text", "text": "Kalasipalayam", "fontType": "bold" },
+    { "type": "space", "weight": 1.0 },
+    {
+      "type": "image",
+      "url": "https://cdn-icons-png.flaticon.com/512/109/109617.png"
+    },
+    { "type": "space", "weight": 0.8 },
+    { "type": "text", "text": "RTC Bus Stand", "fontType": "bold" },
+    { "type": "space", "width": 20 }
+  ],
+  [
+    { "type": "space", "width": 20 },
+    { "type": "text", "text": "21:15", "fontType": "bold" },
+    { "type": "space", "weight": 1.0 },
+    { "type": "text", "text": "4:00", "fontType": "bold" },
+    { "type": "space", "width": 20 }
+  ],
+  [
+    { "type": "space", "width": 20 },
+    { "type": "text", "text": "Tue, Apr 25", "color": "#808080" },
+    { "type": "space", "weight": 1.0 },
+    { "type": "text", "text": "Wed, Apr 26", "color": "#808080" },
+    { "type": "space", "width": 20 }
+  ],
+  [{ "type": "space" }],
+  [{ "type": "space" }, { "type": "background", "color": "#000000" }],
+  [
+    { "type": "space", "width": 20 },
+    {
+      "type": "text",
+      "text": "Amount: ₹1058",
+      "color": "#ffffff",
+      "fontType": "bold"
+    },
+    { "type": "background", "color": "#000000" }
+  ],
+  [
+    { "type": "space", "width": 20 },
+    {
+      "type": "text",
+      "text": "(Added Taxes)",
+      "color": "#ffffff",
+      "fontType": "bold",
+      "textSize": 10
+    },
+    { "type": "background", "color": "#000000" }
+  ],
+  [{ "type": "space" }, { "type": "background", "color": "#000000" }]
+]

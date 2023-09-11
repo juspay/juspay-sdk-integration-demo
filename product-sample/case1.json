@@ -1,0 +1,47 @@
+[
+  [
+    {
+      "type": "image",
+      "url": "https://assets.juspay.in/hyper/images/internalPP/wallet_icon.png"
+    },
+    { "type": "text", "text": "Amount to pay" },
+    { "type": "text", "text": "₹1000", "fontType": "bold" },
+    {
+      "type": "image",
+      "url": "https://cdn.iconscout.com/icon/free/png-256/free-dot-22-433567.png",
+      "size": 10
+    },
+    { "type": "text", "text": "Saved ₹500", "color": "#47cc83" },
+    {
+      "type": "image",
+      "url": "https://assets.juspay.in/hyper/images/internalPP/info_icon.png",
+      "size": 18
+    },
+    { "type": "space", "weight": 1.0 },
+    {
+      "type": "toggleimage",
+      "openIcon": "https://assets.juspay.in/hyper/images/internalPP/ic_arrow_down.png",
+      "closeIcon": "https://assets.juspay.in/hyper/images/internalPP/ic_arrow_up.png",
+      "size": 18
+    }
+  ],
+  [
+    {
+      "type": "image",
+      "url": "https://assets.juspay.in/hyper/images/internalPP/wallet_icon.png"
+    },
+    {
+      "type": "text",
+      "text": "Mid and Small Cup Focused Portfolio",
+      "fontType": "bold"
+    }
+  ],
+  [
+    {
+      "type": "image",
+      "url": "https://assets.juspay.in/hyper/images/internalPP/wallet_icon.png"
+    },
+    { "type": "text", "text": "Renews every" },
+    { "type": "text", "text": "12 months", "fontType": "bold" }
+  ]
+]
