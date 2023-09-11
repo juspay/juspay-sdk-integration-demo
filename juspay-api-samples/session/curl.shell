@@ -11,7 +11,5 @@ curl --location --request POST 'https://api.juspay.in/session' \
     "payment_page_client_id": "your_client_id",
     "action": "paymentPage",
     "return_url": "https://shop.merchant.com",
-    "description": "Complete your payment",
-    "first_name": "John",
-    "last_name": "wick"
+    "description": "Complete your payment"
 }'
