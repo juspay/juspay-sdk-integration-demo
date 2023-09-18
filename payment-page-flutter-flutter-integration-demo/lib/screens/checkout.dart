@@ -29,7 +29,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
     var amounts = calculateAmount();
 
     return Scaffold(
-      appBar: customAppBar(text: "Checkout Screen"),
+      appBar: customAppBar(text: "Checkout Screen", context: context),
       backgroundColor: Colors.white,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
