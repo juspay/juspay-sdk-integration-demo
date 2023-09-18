@@ -32,7 +32,11 @@ public class ResponsePage extends AppCompatActivity {
         } else if (status.equals("CODInitiated")){
             statusIcon.setImageDrawable(getResources().getDrawable(R.drawable.cod_initiated));
             statusText.setText("COD Initiated!");
-        } else {
+        } else if(status.equals("PendingVBV")) {
+            statusIcon.setImageDrawable(getResources().getDrawable(R.drawable.pending));
+            statusText.setText("Payment Pending...");
+        }
+        else {
             statusIcon.setImageDrawable(getResources().getDrawable(R.drawable.payment_failed));
             statusText.setText("Payment Failed!");
             okay.setText("Retry");
