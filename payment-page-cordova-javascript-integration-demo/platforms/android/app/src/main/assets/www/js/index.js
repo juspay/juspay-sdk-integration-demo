@@ -21,9 +21,9 @@
 // See https://cordova.apache.org/docs/en/latest/cordova/events/events.html#deviceready
 var hyperSDKRef;
 document.addEventListener("deviceready", onDeviceReady, false);
-const apiKey = "<YOUR_API_KEY>";
-const merchantId = "<MERCHANT_ID>";
-const clientId = "<CLIENT_ID>";
+const apiKey = "yourAPIKey";
+const merchantId = "<MERCHANT_ID>";                     //Please input your merchant Id here as shared by Juspay
+const clientId = "<CLIENT_ID>";                         //Please input your client Id here as shared by Juspay
 var authorization = window.btoa(unescape(encodeURIComponent(apiKey)));
 var totalPayable;
 const targetDivProducts = document.getElementById("productPage");
@@ -47,9 +47,6 @@ function onDeviceReady() {
 
   console.log(screen.height);
 }
-
-
-// const initiateButtonClicked = () => {};
 
 //Function to generate random requestId
 function uuidv4() {
@@ -221,7 +218,7 @@ var hyperSDKCallback = function (response) {
 };
 
 // block:end:create-hyper-callback
-
+// This call should be done by your backend and get the process response
 document.getElementById("checkoutButton").addEventListener("click", () => {
   console.log("Process started")
   SpinnerDialog.show(null, "Processing");
@@ -231,18 +228,18 @@ document.getElementById("checkoutButton").addEventListener("click", () => {
   myHeaders.append("Content-Type", "application/json");
   myHeaders.append(
     "Authorization",
-    "Basic OUU4Qxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    `Basic OEEwRTRBRDA0MjA0NjhCQjE0NEQxQjExNjMzNkRB`         
   );
 
   var raw = JSON.stringify({
     order_id: "Test" + Math.floor(Math.random() * 1000000000),
     amount: totalPayable,
-    customer_id: "testing-customer-one",
+    customer_id: "9876543201",
     customer_email: "test@mail.com",
-    customer_phone: "9876543210",
+    customer_phone: "9876543201",
     payment_page_client_id: "<CLIENT_ID>",
     action: "paymentPage",
-    return_url: "https://shop.merchant.com",
+    return_url: "https://www.hdfcbank.com/",
     description: "Complete your payment",
     first_name: "John",
     last_name: "wick",
@@ -262,9 +259,6 @@ document.getElementById("checkoutButton").addEventListener("click", () => {
       hyperSDKRef.process(result.sdk_payload);
     } )
     .catch((error) => console.log("error", error));
-  // console.log(response);
-//  hyperSDKRef.process(processPayload);
-  //   console.log("process called!", processPayload);
 });
 
 

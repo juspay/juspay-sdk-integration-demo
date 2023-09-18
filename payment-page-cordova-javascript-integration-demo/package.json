@@ -14,13 +14,15 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "cordova-android": "^10.1.2",
+    "cordova-ios": "^6.3.0",
     "cordova-plugin-native-spinner": "^1.1.4",
     "cordova-plugin-x-toast": "^2.7.3",
     "hyper-sdk-plugin": "^2.0.22"
   },
   "cordova": {
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ],
     "plugins": {
       "hyper-sdk-plugin": {},
