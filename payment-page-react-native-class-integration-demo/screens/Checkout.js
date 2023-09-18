@@ -11,7 +11,6 @@ import HyperSdkReact from "hyper-sdk-react";
 import axios from "axios";
 import { encode } from "base-64";
 import { withNavigation } from "react-navigation";
-// import { NavigationActions } from 'react-navigation';
 import {
   BackHandler,
   Button,
@@ -32,15 +31,7 @@ class Checkout extends React.Component {
     };
   }
 
-  // console.log(">>>>", this.props.route)
-
-  //Setting event listener to check for process result
-  // block:start:event-handling-process
-
-  // Call the function to make the payment request
-
   componentDidMount() {
-    console.log(">>>>", this.props.navigation.state.params)
     const eventEmitter = new NativeEventEmitter(NativeModules.HyperSdkReact);
     eventEmitter.addListener("HyperEvent", (resp) => {
       const data = JSON.parse(resp);
@@ -127,53 +118,20 @@ class Checkout extends React.Component {
       }
     });
 
-    // block:start:fetch-process-payload
-
-    //Get process payload from server after session API S2S call
-    // block:end:fetch-process-payload
-
-    //Handling hardware backpress inside the checkout screen
-
-    // block:start:handle-hardware-backpress
-
     BackHandler.addEventListener("hardwareBackPress", () => {
       return !HyperSdkReact.isNull() && HyperSdkReact.onBackPressed();
     });
-
-    // block:end:handle-hardware-backpress
-
-    //Android Permissions Handling
-    // block:start:handle-onRequestPermissionsResult
-    
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-      if (HyperSdkReactModule.getPermissionRequestCodes().contains(requestCode)) {
-          HyperSdkReactModule.onRequestPermissionsResult(requestCode, permissions, grantResults);
-      } else {
-          super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-      }
-    }
-    
-    // block:end:handle-onRequestPermissionsResult
   }
-
-  // block:end:event-handling-process
-
-  // block:start:process-sdk
 
   startPayment() {
     if(HyperSdkReact.isInitialised()){
       makePaymentRequest(this.state.total);
     }
-    
-    // HyperSdkReact.process(JSON.stringify(this.state.processPayload));
   }
 
   handleBackPress() {
     this.props.navigation.navigate("Home");
   }
-
-  // block:end:process-sdk
 
   render() {
     const { p1Count, p2Count, p1Price, p2Price } = this.props.navigation.state.params;
@@ -257,30 +215,28 @@ class Checkout extends React.Component {
   }
 }
 
-const getRandomNumber = (min, max) => {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+const getRandomNumber = () => {
+  return Math.floor(Math.random() * 90000000) + 10000000
 };
 
 const makePaymentRequest = (total) => {
   var myHeaders = new Headers();
   myHeaders.append(
     "Authorization",
-    `Basic ${encode("8A0E4AD0420468BB144D1B116336DA")}`
+    `Basic ${encode("<YOUR_API_KEY>")}`
   );
-  myHeaders.append("x-merchantid", "testhdfc1");
+  myHeaders.append("x-merchantid", "<MERCHANT_ID>");
   myHeaders.append("Content-Type", "application/json");
 
   var raw = JSON.stringify({
-    order_id: `test-${getRandomNumber(100000000, 99999999)}`,
+    order_id: `test-${getRandomNumber()}`,
     amount: total,
     customer_id: "9876543201",
     customer_email: "test@mail.com",
     customer_phone: "9876543201",
-    payment_page_client_id: "hdfcmaster",
+    payment_page_client_id: "<CLIENT_ID>",
     action: "paymentPage",
-    return_url: "https://www.hdfcbank.com",
+    return_url: "<return_url>",
     description: "Complete your payment",
     first_name: "John",
     last_name: "wick"
@@ -293,11 +249,9 @@ const makePaymentRequest = (total) => {
     redirect: "follow",
   };
 
-  fetch("https://sandbox.juspay.in/session", requestOptions)
+  fetch("https://api.juspay.in/session", requestOptions)
     .then((response) => response.json())
     .then((result) => {
-      console.log("sdkPayload>>>", result.sdk_payload);
-      // if(result.sdk_payload) return result.sdk_payload
       HyperSdkReact.process(JSON.stringify(result.sdk_payload));
     })
     .catch((error) => console.log("error", error));

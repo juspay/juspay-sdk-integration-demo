@@ -31,14 +31,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    // block:start:create-hyper-services-instance
-
     HyperSdkReact.createHyperServices();
-
-    // block:end:create-hyper-services-instance
-
-    // block:start:event-handling-initiate
-
     const eventEmitter = new NativeEventEmitter(NativeModules.HyperSdkReact);
     eventEmitter.addListener('HyperEvent', resp => {
       const data = JSON.parse(resp);
@@ -53,30 +46,18 @@ class App extends React.Component {
       }
     });
 
-    // block:end:event-handling-initiate
-
-    // Creating initiate payload JSON object
-    // block:start:create-initiate-payload
-
     const initiate_payload = {
       requestId: uuid.v4(),
       service: 'in.juspay.hyperpay',
       payload: {
         action: 'initiate',
-        merchantId: 'testhdfc1',
-        clientId: 'hdfcmaster',
+        merchantId: '<MERCHANT_ID>',
+        clientId: '<CLIENT_ID>',
         environment: 'production',
       },
     };
 
-    // block:end:create-initiate-payload
-
-    // Calling initiate on hyperService instance to boot up payment engine.
-    // block:start:initiate-sdk
-
     HyperSdkReact.initiate(JSON.stringify(initiate_payload));
-
-    // block:end:initiate-sdk
   }
 
   render() {

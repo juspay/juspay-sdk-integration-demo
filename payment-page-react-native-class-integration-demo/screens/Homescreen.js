@@ -83,9 +83,9 @@ class Homescreen extends React.Component {
       service: "in.juspay.hyperpay",
       payload: {
         action: "initiate",
-        merchantId: "testhdfc1",
-        clientId: "hdfcmaster",
-        environment: "sandbox",
+        merchantId: "<MERCHANT_ID>",
+        clientId: "<CLIENT_ID>",
+        environment: "production",
       },
     };
 
@@ -120,7 +120,6 @@ class Homescreen extends React.Component {
               <View style={styles.Rectangle3}>
                 <Image
                   style={styles.ProductImage}
-                  source={require("../images/product1.png")}
                 />
               </View>
 
@@ -158,7 +157,7 @@ class Homescreen extends React.Component {
             <View style={styles.Rectangle3}>
                 <Image
                   style={styles.ProductImage}
-                  source={require("../images/product2.png")}
+                  
                 />
               </View>
               <Text style={styles.Product1}>Product 2</Text>
