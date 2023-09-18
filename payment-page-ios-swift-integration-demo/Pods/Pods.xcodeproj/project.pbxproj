@@ -9,19 +9,21 @@
 /* Begin PBXAggregateTarget section */
 		5EAB61B9B97BE4818BA9509F0BF749A0 /* HyperSDK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 238CAEA8A8FA43CD84198404400C98F8 /* Build configuration list for PBXAggregateTarget "HyperSDK" */;
+			buildConfigurationList = 6900FA693FC2E3563E2391F4FCC1B846 /* Build configuration list for PBXAggregateTarget "HyperSDK" */;
 			buildPhases = (
+				D9036CC566E103F245D3CAA748D9C53E /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
-				548E4A155F8BD2025377ECD9954681AD /* PBXTargetDependency */,
-				54072FF7E3E57DBA28D98906DE642949 /* PBXTargetDependency */,
+				02083344E30FC58F119CE7264DB21F7F /* PBXTargetDependency */,
+				56E3FC3EBDC0C37FB9B9879F79965562 /* PBXTargetDependency */,
 			);
 			name = HyperSDK;
 		};
 		D81AEADE9EC51DAB97224B322512798B /* Salvator */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 368FC049CC21BA89EB1E261FEC35B05C /* Build configuration list for PBXAggregateTarget "Salvator" */;
+			buildConfigurationList = EFD020119B1FA400AE50CAF79207A3D0 /* Build configuration list for PBXAggregateTarget "Salvator" */;
 			buildPhases = (
+				EC5B1FECAB46DE851758FF2CB99F3338 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
 			);
@@ -29,8 +31,9 @@
 		};
 		D9F1B0D67031FD2FCDCC7B8682C83CD6 /* JuspaySafeBrowser */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 993FB5281F35E65FC14B91FFF55A6E8E /* Build configuration list for PBXAggregateTarget "JuspaySafeBrowser" */;
+			buildConfigurationList = 6CF6501235D75902DEC06F5125037AB8 /* Build configuration list for PBXAggregateTarget "JuspaySafeBrowser" */;
 			buildPhases = (
+				77A80F81505A9B143C2FB0893ECD3DD8 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
 			);
@@ -45,6 +48,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1017865A00A96EA329E86116189AF679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9F1B0D67031FD2FCDCC7B8682C83CD6;
+			remoteInfo = JuspaySafeBrowser;
+		};
 		2D88F2474A188024E09897377354FEE6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -52,60 +62,56 @@
 			remoteGlobalIDString = 5EAB61B9B97BE4818BA9509F0BF749A0;
 			remoteInfo = HyperSDK;
 		};
-		39C92BAA116378B8D88DA775B3A1151A /* PBXContainerItemProxy */ = {
+		841844F7245A4174E767A4EEDED419F7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D81AEADE9EC51DAB97224B322512798B;
 			remoteInfo = Salvator;
 		};
-		3E5A06499FC3C34DA660A9255CF0EEF9 /* PBXContainerItemProxy */ = {
+		98906156252058E2220D64F008254744 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D9F1B0D67031FD2FCDCC7B8682C83CD6;
 			remoteInfo = JuspaySafeBrowser;
 		};
-		70FBC66F35C54090689DEDFB7B2C9D83 /* PBXContainerItemProxy */ = {
+		CC1953D092A6BDC45BCC8DA3BE5FE826 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D81AEADE9EC51DAB97224B322512798B;
 			remoteInfo = Salvator;
-		};
-		9A0C6418CFF6A56F8FACB8920EEA245F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D9F1B0D67031FD2FCDCC7B8682C83CD6;
-			remoteInfo = JuspaySafeBrowser;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05B8D86B1B307FD7B3629EF386D65BE4 /* HyperSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HyperSDK.debug.xcconfig; sourceTree = "<group>"; };
-		3356DD048C68C16070AA8DF989B52ED8 /* Salvator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Salvator.framework; sourceTree = "<group>"; };
+		1F46FEDDCD6A4CC94D6C2941A08991BD /* JuspaySafeBrowser-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "JuspaySafeBrowser-xcframeworks.sh"; sourceTree = "<group>"; };
+		34D32AEE56048DE895A5D50E18FF2385 /* HyperSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HyperSDK.release.xcconfig; sourceTree = "<group>"; };
+		35978D52EDCE7B62DE558DA1C4DDA518 /* Salvator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Salvator.release.xcconfig; sourceTree = "<group>"; };
 		407DCBEF6DBF7C914E71095FA8957414 /* Pods-juspay-sdk-integration-swift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-juspay-sdk-integration-swift-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4ADF4A310FFDEB8F6562DE6EEDA455D2 /* HyperSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HyperSDK.framework; sourceTree = "<group>"; };
+		5481A5657C13F38C9910A99360D54505 /* JuspaySafeBrowser.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = JuspaySafeBrowser.xcframework; sourceTree = "<group>"; };
+		55406792051C03A60356CA04404A3681 /* Salvator.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = Salvator.xcframework; sourceTree = "<group>"; };
+		56667FBE808884C48A8F1DF4ECAAFE70 /* Salvator-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Salvator-xcframeworks.sh"; sourceTree = "<group>"; };
 		59F689C223A0EA5F2896AA99FC232AFA /* Pods-juspay-sdk-integration-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-juspay-sdk-integration-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		64338BC3A5B44D9D022CB83B53B25A9F /* Pods-juspay-sdk-integration-swift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-juspay-sdk-integration-swift-frameworks.sh"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7C3250B42A0B3BBB3336F17D6E9EF2E6 /* JuspaySafeBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JuspaySafeBrowser.debug.xcconfig; sourceTree = "<group>"; };
+		7553C4C371E6DBF0BA74F1458F5005F3 /* HyperSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "HyperSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		775B8ECC636066059D5FD4FC04131BC5 /* Fuse.rb */ = {isa = PBXFileReference; includeInIndex = 1; path = Fuse.rb; sourceTree = "<group>"; };
 		8358DBF5A5368E6AA69E40B11448B92D /* Pods-juspay-sdk-integration-swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-juspay-sdk-integration-swift-Info.plist"; sourceTree = "<group>"; };
 		8ACEA88E159EEBCE573A9C1A4B548B30 /* Pods-juspay-sdk-integration-swift-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-juspay-sdk-integration-swift-resources.sh"; sourceTree = "<group>"; };
 		8BB06DE391B265A8A446DE63317BDFB1 /* Pods-juspay-sdk-integration-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-juspay-sdk-integration-swift.release.xcconfig"; sourceTree = "<group>"; };
+		8DCDB7B4DD6C34C5B6C025A2CB5E7C66 /* HyperSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HyperSDK.debug.xcconfig; sourceTree = "<group>"; };
 		92A829BE08E1F245EADAFA396A8DE18D /* Pods-juspay-sdk-integration-swift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-juspay-sdk-integration-swift-acknowledgements.plist"; sourceTree = "<group>"; };
-		990079BAE8C70210B33AC8D97A8076B2 /* Salvator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Salvator.debug.xcconfig; sourceTree = "<group>"; };
-		9D7B6A41EDC2CDBC2683F3F73400D429 /* Fuse.rb */ = {isa = PBXFileReference; includeInIndex = 1; path = Fuse.rb; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F05B638471ED34D58E418F2FCBD275E /* Pods-juspay-sdk-integration-swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-juspay-sdk-integration-swift.modulemap"; sourceTree = "<group>"; };
+		AADC318A1289B0BED88021C49BE0283F /* HyperSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = HyperSDK.xcframework; sourceTree = "<group>"; };
 		B6B8104BD1537470DBBD26A87325A543 /* Pods-juspay-sdk-integration-swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-juspay-sdk-integration-swift-umbrella.h"; sourceTree = "<group>"; };
-		BBBFBB54E77471A0CA131FCA1309D0A1 /* JuspaySafeBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JuspaySafeBrowser.release.xcconfig; sourceTree = "<group>"; };
+		B753DD92434E1F3695F9DF5DAE25C0C2 /* JuspaySafeBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JuspaySafeBrowser.debug.xcconfig; sourceTree = "<group>"; };
+		C76C6D8B9806173264080E83CDB52FCE /* JuspaySafeBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JuspaySafeBrowser.release.xcconfig; sourceTree = "<group>"; };
 		C7FBFEBAA9A4060AB6A31C67E7EAE340 /* Pods-juspay-sdk-integration-swift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-juspay-sdk-integration-swift"; path = Pods_juspay_sdk_integration_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB0317B52484DD1AE8BD7B7C69494F5 /* Pods-juspay-sdk-integration-swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-juspay-sdk-integration-swift-dummy.m"; sourceTree = "<group>"; };
-		D3BAB2981BEA1F97E9E23912CA350A37 /* Salvator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Salvator.release.xcconfig; sourceTree = "<group>"; };
-		DE867181C589744652CAD1A18D4338EC /* HyperSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HyperSDK.release.xcconfig; sourceTree = "<group>"; };
-		FBB772F9F0C6A7BCE9EB57DA2A5544FE /* JuspaySafeBrowser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JuspaySafeBrowser.framework; sourceTree = "<group>"; };
+		F8B3D68E346F0B6127037FCE8E98C658 /* Salvator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Salvator.debug.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +134,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		14C1D05AF2C43393319212BF134AB34F /* HyperSDK */ = {
+			isa = PBXGroup;
+			children = (
+				15550D4F066A1531AE296A9552F07290 /* Frameworks */,
+				43312B83AEA8F91C2EEBCAC5F3C298BD /* Resources */,
+				A6357CD7CAC8AC476219338154C26101 /* Support Files */,
+			);
+			name = HyperSDK;
+			path = HyperSDK;
+			sourceTree = "<group>";
+		};
+		15550D4F066A1531AE296A9552F07290 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AADC318A1289B0BED88021C49BE0283F /* HyperSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		185C600F5D8DC4590DC9C6146C3CC1A5 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,32 +161,40 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		1C63F177A5A07ADABCDD4E71C902C99E /* Salvator */ = {
+		3F7EC5A6E363A516367DA8F9DF7A8375 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F31F82B51B864E445A4385995778B8D4 /* Frameworks */,
-				9D3902E4BF11FB5FCACEEBD2FA9F5CC8 /* Support Files */,
+				55406792051C03A60356CA04404A3681 /* Salvator.xcframework */,
 			);
-			name = Salvator;
-			path = Salvator;
-			sourceTree = "<group>";
-		};
-		2355625DDBA1103EFC98B68E7807A42F /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				9D7B6A41EDC2CDBC2683F3F73400D429 /* Fuse.rb */,
-			);
-			name = Resources;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		3FADCFD2E4CD947DFAA7F1BDA916FAB2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8F9D668ADDF0C322A20AF6B5BDC731CD /* HyperSDK */,
-				A37AA0742C068D5F07EAF5BC54ECA70F /* JuspaySafeBrowser */,
-				1C63F177A5A07ADABCDD4E71C902C99E /* Salvator */,
+				14C1D05AF2C43393319212BF134AB34F /* HyperSDK */,
+				5209620E1703EA27A2032D13D04A9A7C /* JuspaySafeBrowser */,
+				6E7C213BA660A186070C14DE5B571C25 /* Salvator */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		43312B83AEA8F91C2EEBCAC5F3C298BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				775B8ECC636066059D5FD4FC04131BC5 /* Fuse.rb */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5209620E1703EA27A2032D13D04A9A7C /* JuspaySafeBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				C43915A1A9FD56E479A45FD24FC8CD56 /* Frameworks */,
+				85EABDCC45B70F7EC96F63979B262B32 /* Support Files */,
+			);
+			name = JuspaySafeBrowser;
+			path = JuspaySafeBrowser;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -172,25 +205,25 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		8F9D668ADDF0C322A20AF6B5BDC731CD /* HyperSDK */ = {
+		6E7C213BA660A186070C14DE5B571C25 /* Salvator */ = {
 			isa = PBXGroup;
 			children = (
-				DB36CFD68A9420D507C7F82308679029 /* Frameworks */,
-				2355625DDBA1103EFC98B68E7807A42F /* Resources */,
-				D8262C71EA5F6C652A52F02F83CCD186 /* Support Files */,
+				3F7EC5A6E363A516367DA8F9DF7A8375 /* Frameworks */,
+				BD728BA428F7E1884925D4D9BE03260D /* Support Files */,
 			);
-			name = HyperSDK;
-			path = HyperSDK;
+			name = Salvator;
+			path = Salvator;
 			sourceTree = "<group>";
 		};
-		9D3902E4BF11FB5FCACEEBD2FA9F5CC8 /* Support Files */ = {
+		85EABDCC45B70F7EC96F63979B262B32 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				990079BAE8C70210B33AC8D97A8076B2 /* Salvator.debug.xcconfig */,
-				D3BAB2981BEA1F97E9E23912CA350A37 /* Salvator.release.xcconfig */,
+				1F46FEDDCD6A4CC94D6C2941A08991BD /* JuspaySafeBrowser-xcframeworks.sh */,
+				B753DD92434E1F3695F9DF5DAE25C0C2 /* JuspaySafeBrowser.debug.xcconfig */,
+				C76C6D8B9806173264080E83CDB52FCE /* JuspaySafeBrowser.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Salvator";
+			path = "../Target Support Files/JuspaySafeBrowser";
 			sourceTree = "<group>";
 		};
 		9EB3CA2B82C570920FD52E8C99F3454C /* Pods-juspay-sdk-integration-swift */ = {
@@ -211,24 +244,34 @@
 			path = "Target Support Files/Pods-juspay-sdk-integration-swift";
 			sourceTree = "<group>";
 		};
-		A37AA0742C068D5F07EAF5BC54ECA70F /* JuspaySafeBrowser */ = {
+		A6357CD7CAC8AC476219338154C26101 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DD58FB64913E772CDDF1DDA5F8F936A3 /* Frameworks */,
-				BA0405C60FB34806A1B0E2901D54A4A8 /* Support Files */,
-			);
-			name = JuspaySafeBrowser;
-			path = JuspaySafeBrowser;
-			sourceTree = "<group>";
-		};
-		BA0405C60FB34806A1B0E2901D54A4A8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7C3250B42A0B3BBB3336F17D6E9EF2E6 /* JuspaySafeBrowser.debug.xcconfig */,
-				BBBFBB54E77471A0CA131FCA1309D0A1 /* JuspaySafeBrowser.release.xcconfig */,
+				7553C4C371E6DBF0BA74F1458F5005F3 /* HyperSDK-xcframeworks.sh */,
+				8DCDB7B4DD6C34C5B6C025A2CB5E7C66 /* HyperSDK.debug.xcconfig */,
+				34D32AEE56048DE895A5D50E18FF2385 /* HyperSDK.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/JuspaySafeBrowser";
+			path = "../Target Support Files/HyperSDK";
+			sourceTree = "<group>";
+		};
+		BD728BA428F7E1884925D4D9BE03260D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				56667FBE808884C48A8F1DF4ECAAFE70 /* Salvator-xcframeworks.sh */,
+				F8B3D68E346F0B6127037FCE8E98C658 /* Salvator.debug.xcconfig */,
+				35978D52EDCE7B62DE558DA1C4DDA518 /* Salvator.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Salvator";
+			sourceTree = "<group>";
+		};
+		C43915A1A9FD56E479A45FD24FC8CD56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5481A5657C13F38C9910A99360D54505 /* JuspaySafeBrowser.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -246,40 +289,6 @@
 			isa = PBXGroup;
 			children = (
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D8262C71EA5F6C652A52F02F83CCD186 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				05B8D86B1B307FD7B3629EF386D65BE4 /* HyperSDK.debug.xcconfig */,
-				DE867181C589744652CAD1A18D4338EC /* HyperSDK.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/HyperSDK";
-			sourceTree = "<group>";
-		};
-		DB36CFD68A9420D507C7F82308679029 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4ADF4A310FFDEB8F6562DE6EEDA455D2 /* HyperSDK.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DD58FB64913E772CDDF1DDA5F8F936A3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FBB772F9F0C6A7BCE9EB57DA2A5544FE /* JuspaySafeBrowser.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F31F82B51B864E445A4385995778B8D4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3356DD048C68C16070AA8DF989B52ED8 /* Salvator.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -311,8 +320,8 @@
 			);
 			dependencies = (
 				43C312C3254CAFFFD05B8F6416A06E6B /* PBXTargetDependency */,
-				886954CDAC88A52300172B009CAA670B /* PBXTargetDependency */,
-				6D8C639FDF64766F2AC05A520BF4BD29 /* PBXTargetDependency */,
+				964CF5D0CDCE16660453A09CDD925922 /* PBXTargetDependency */,
+				6B6142079241C97E2249236E5815EB03 /* PBXTargetDependency */,
 			);
 			name = "Pods-juspay-sdk-integration-swift";
 			productName = Pods_juspay_sdk_integration_swift;
@@ -325,8 +334,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -359,6 +368,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		77A80F81505A9B143C2FB0893ECD3DD8 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/JuspaySafeBrowser/JuspaySafeBrowser-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/JuspaySafeBrowser/JuspaySafeBrowser-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/JuspaySafeBrowser/JuspaySafeBrowser-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9036CC566E103F245D3CAA748D9C53E /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/HyperSDK/HyperSDK-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/HyperSDK/HyperSDK-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/HyperSDK/HyperSDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC5B1FECAB46DE851758FF2CB99F3338 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Salvator/Salvator-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Salvator/Salvator-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Salvator/Salvator-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D4D8216C333B59BA4416FA60DB352CCE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -371,42 +434,42 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		02083344E30FC58F119CE7264DB21F7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JuspaySafeBrowser;
+			target = D9F1B0D67031FD2FCDCC7B8682C83CD6 /* JuspaySafeBrowser */;
+			targetProxy = 1017865A00A96EA329E86116189AF679 /* PBXContainerItemProxy */;
+		};
 		43C312C3254CAFFFD05B8F6416A06E6B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HyperSDK;
 			target = 5EAB61B9B97BE4818BA9509F0BF749A0 /* HyperSDK */;
 			targetProxy = 2D88F2474A188024E09897377354FEE6 /* PBXContainerItemProxy */;
 		};
-		54072FF7E3E57DBA28D98906DE642949 /* PBXTargetDependency */ = {
+		56E3FC3EBDC0C37FB9B9879F79965562 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Salvator;
 			target = D81AEADE9EC51DAB97224B322512798B /* Salvator */;
-			targetProxy = 39C92BAA116378B8D88DA775B3A1151A /* PBXContainerItemProxy */;
+			targetProxy = CC1953D092A6BDC45BCC8DA3BE5FE826 /* PBXContainerItemProxy */;
 		};
-		548E4A155F8BD2025377ECD9954681AD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = JuspaySafeBrowser;
-			target = D9F1B0D67031FD2FCDCC7B8682C83CD6 /* JuspaySafeBrowser */;
-			targetProxy = 9A0C6418CFF6A56F8FACB8920EEA245F /* PBXContainerItemProxy */;
-		};
-		6D8C639FDF64766F2AC05A520BF4BD29 /* PBXTargetDependency */ = {
+		6B6142079241C97E2249236E5815EB03 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Salvator;
 			target = D81AEADE9EC51DAB97224B322512798B /* Salvator */;
-			targetProxy = 70FBC66F35C54090689DEDFB7B2C9D83 /* PBXContainerItemProxy */;
+			targetProxy = 841844F7245A4174E767A4EEDED419F7 /* PBXContainerItemProxy */;
 		};
-		886954CDAC88A52300172B009CAA670B /* PBXTargetDependency */ = {
+		964CF5D0CDCE16660453A09CDD925922 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JuspaySafeBrowser;
 			target = D9F1B0D67031FD2FCDCC7B8682C83CD6 /* JuspaySafeBrowser */;
-			targetProxy = 3E5A06499FC3C34DA660A9255CF0EEF9 /* PBXContainerItemProxy */;
+			targetProxy = 98906156252058E2220D64F008254744 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		12C9D9CE3F16793314BD49F5D8EEE446 /* Debug */ = {
+		0F70BD722E765DB4C2F95910E597F8CC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 990079BAE8C70210B33AC8D97A8076B2 /* Salvator.debug.xcconfig */;
+			baseConfigurationReference = 35978D52EDCE7B62DE558DA1C4DDA518 /* Salvator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -418,8 +481,27 @@
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
+		};
+		29E4134D7F0D7D69157F25179E456B91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34D32AEE56048DE895A5D50E18FF2385 /* HyperSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		4214E6946993DF02ED98D89047C64016 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -487,40 +569,22 @@
 			};
 			name = Debug;
 		};
-		61B200773D26D3C61ED1444EE1FCF694 /* Release */ = {
+		5185D6963E00B04B7C41FD92F6A42F60 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3BAB2981BEA1F97E9E23912CA350A37 /* Salvator.release.xcconfig */;
+			baseConfigurationReference = B753DD92434E1F3695F9DF5DAE25C0C2 /* JuspaySafeBrowser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
-		};
-		6984D4FF2F3AE97A74294599329BC4F5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBBFBB54E77471A0CA131FCA1309D0A1 /* JuspaySafeBrowser.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
+			name = Debug;
 		};
 		794DA689B4A1BE63F57E0C32A112F9B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -559,9 +623,9 @@
 			};
 			name = Debug;
 		};
-		AEEA87931CF2022BA50E175347759AB0 /* Debug */ = {
+		7F886B32FE61DE4D179116827E6D815E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05B8D86B1B307FD7B3629EF386D65BE4 /* HyperSDK.debug.xcconfig */;
+			baseConfigurationReference = F8B3D68E346F0B6127037FCE8E98C658 /* Salvator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -576,23 +640,22 @@
 			};
 			name = Debug;
 		};
-		BEC4473F110D6E4CF9C71705B7D9DC02 /* Release */ = {
+		8ABCBC154754D62157960D08C82F3B9F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE867181C589744652CAD1A18D4338EC /* HyperSDK.release.xcconfig */;
+			baseConfigurationReference = 8DCDB7B4DD6C34C5B6C025A2CB5E7C66 /* HyperSDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
 		C19A12FE134D0865A4AEB7EEBC2FCF84 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -694,48 +757,50 @@
 			};
 			name = Release;
 		};
-		D593599DEF2F25D94B82A33D2727E8C0 /* Debug */ = {
+		D27AAFACD3AD3DCCE4A0E1C36AC4C213 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C3250B42A0B3BBB3336F17D6E9EF2E6 /* JuspaySafeBrowser.debug.xcconfig */;
+			baseConfigurationReference = C76C6D8B9806173264080E83CDB52FCE /* JuspaySafeBrowser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		238CAEA8A8FA43CD84198404400C98F8 /* Build configuration list for PBXAggregateTarget "HyperSDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AEEA87931CF2022BA50E175347759AB0 /* Debug */,
-				BEC4473F110D6E4CF9C71705B7D9DC02 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		368FC049CC21BA89EB1E261FEC35B05C /* Build configuration list for PBXAggregateTarget "Salvator" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				12C9D9CE3F16793314BD49F5D8EEE446 /* Debug */,
-				61B200773D26D3C61ED1444EE1FCF694 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4214E6946993DF02ED98D89047C64016 /* Debug */,
 				CD85FD90473CFBE797E4264E7BBC70AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6900FA693FC2E3563E2391F4FCC1B846 /* Build configuration list for PBXAggregateTarget "HyperSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ABCBC154754D62157960D08C82F3B9F /* Debug */,
+				29E4134D7F0D7D69157F25179E456B91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CF6501235D75902DEC06F5125037AB8 /* Build configuration list for PBXAggregateTarget "JuspaySafeBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5185D6963E00B04B7C41FD92F6A42F60 /* Debug */,
+				D27AAFACD3AD3DCCE4A0E1C36AC4C213 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -749,11 +814,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		993FB5281F35E65FC14B91FFF55A6E8E /* Build configuration list for PBXAggregateTarget "JuspaySafeBrowser" */ = {
+		EFD020119B1FA400AE50CAF79207A3D0 /* Build configuration list for PBXAggregateTarget "Salvator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D593599DEF2F25D94B82A33D2727E8C0 /* Debug */,
-				6984D4FF2F3AE97A74294599329BC4F5 /* Release */,
+				7F886B32FE61DE4D179116827E6D815E /* Debug */,
+				0F70BD722E765DB4C2F95910E597F8CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

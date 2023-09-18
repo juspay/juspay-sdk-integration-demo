@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>juspay-sdk-integration-swift.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>1</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>279499BFC7F69EB86821274F70006992905812A4</string>
+				<key>dateExpires</key>
+				<string>07/06/24</string>
+				<key>type</key>
+				<string>Apple Development</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>buildNumber</key>
+					<string>2.1.23</string>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>279499BFC7F69EB86821274F70006992905812A4</string>
+						<key>dateExpires</key>
+						<string>07/06/24</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>HyperSDK.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>YM9U73Z2JM</string>
+						<key>name</key>
+						<string>JUSPAY TECHNOLOGIES PRIVATE LIMITED</string>
+					</dict>
+					<key>versionNumber</key>
+					<string>2.1</string>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>buildNumber</key>
+					<string>1</string>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>279499BFC7F69EB86821274F70006992905812A4</string>
+						<key>dateExpires</key>
+						<string>07/06/24</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>JuspaySafeBrowser.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>YM9U73Z2JM</string>
+						<key>name</key>
+						<string>JUSPAY TECHNOLOGIES PRIVATE LIMITED</string>
+					</dict>
+					<key>versionNumber</key>
+					<string>1.0</string>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>buildNumber</key>
+					<string>2</string>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>279499BFC7F69EB86821274F70006992905812A4</string>
+						<key>dateExpires</key>
+						<string>07/06/24</string>
+						<key>type</key>
+						<string>Apple Development</string>
+					</dict>
+					<key>name</key>
+					<string>Salvator.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>YM9U73Z2JM</string>
+						<key>name</key>
+						<string>JUSPAY TECHNOLOGIES PRIVATE LIMITED</string>
+					</dict>
+					<key>versionNumber</key>
+					<string>1.0</string>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>YM9U73Z2JM.in.juspay.juspay-sdk-integration-swift</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>YM9U73Z2JM</string>
+				<key>get-task-allow</key>
+				<true/>
+			</dict>
+			<key>name</key>
+			<string>juspay-sdk-integration-swift.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>b760ad82-2a8d-405d-a29b-e936b07b5991</string>
+				<key>dateExpires</key>
+				<string>07/06/24</string>
+				<key>name</key>
+				<string>iOS Team Provisioning Profile: *</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>YM9U73Z2JM</string>
+				<key>name</key>
+				<string>JUSPAY TECHNOLOGIES PRIVATE LIMITED</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>

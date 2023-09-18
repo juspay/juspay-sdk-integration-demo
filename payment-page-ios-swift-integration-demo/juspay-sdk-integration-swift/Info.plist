@@ -12,6 +12,7 @@
 				<string>amzn-$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 				<string>juspay-$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 				<string>$(PRODUCT_BUNDLE_IDENTIFIER).cred</string>
+				<string>paytm-$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 			</array>
 		</dict>
 	</array>
@@ -24,6 +25,7 @@
 		<string>paytm</string>
 		<string>bhim</string>
 		<string>devtools</string>
+		<string>myairtel</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

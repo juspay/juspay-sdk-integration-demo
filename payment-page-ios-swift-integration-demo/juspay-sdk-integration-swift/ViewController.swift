@@ -13,6 +13,12 @@ import HyperSDK
 // block:end:import-hyper-sdk
 
 
+import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
+
+
 class ViewController: UIViewController {
 
     // Creating an object of HyperServices class.
@@ -33,7 +39,7 @@ class ViewController: UIViewController {
             "action": "initiate",
             "merchantId": "<MERCHANT_ID>",
             "clientId": "<CLIENT_ID>",
-            "environment": "production"
+            "environment": "sandbox"
         ];
         
         let sdkPayload : [String: Any] = [
@@ -123,20 +129,74 @@ class ViewController: UIViewController {
 
     // Creating process payload JSON object
     // block:start:fetch-process-payload
-    func getProcessPayload() {
+    func getProcessPayload(completion: @escaping ([AnyHashable: Any]?) -> Void) {
         // Make an API Call to your server to create Session and return SDK Payload
-        let sdkProcessPayload  = APIServices.shared.fetchSDKProcessPayload()
-        return sdkProcessPayload
+        createOrder { jsonData in
+            completion(jsonData)
+        }
     }
     // block:end:fetch-process-payload
 
     @IBAction func startPayments(_ sender: Any) {
-
         // Calling process on hyperService to open the Hypercheckout screen
         // block:start:process-sdk
-        hyperInstance.process(getProcessPayload)
+        getProcessPayload { sdkProcessPayload in
+            self.hyperInstance.process(sdkProcessPayload)
+        }
         // block:end:process-sdk
     }
     
+    func createOrder(completion: @escaping ([String: Any]?) -> Void) {
+        let semaphore = DispatchSemaphore(value: 0)
+        var orderId = String(Int.random(in: 10000000...99999999))
+
+        let parameters = """
+        {
+            "order_id": "test387678468udfhu7648",
+            "amount": "1.0",
+            "customer_id": "testing-customer-one",
+            "customer_email": "test@mail.com",
+            "customer_phone": "9876543210",
+            "payment_page_client_id": "hdfcmaster",
+            "action": "paymentPage",
+            "return_url": "https://shop.merchant.com",
+            "description": "Complete your payment",
+            "first_name": "John",
+            "last_name": "wick"
+        }
+        """
+        let postData = parameters.data(using: .utf8)
+
+        var request = URLRequest(url: URL(string: "https://sandbox.juspay.in/session")!, timeoutInterval: Double.infinity)
+        request.addValue("Basic <API_KEY>", forHTTPHeaderField: "Authorization")
+        request.addValue("<MERCHANT_ID>", forHTTPHeaderField: "x-merchantid")
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+
+        request.httpMethod = "POST"
+        request.httpBody = postData
+
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data else {
+                print(String(describing: error))
+                semaphore.signal()
+                completion(nil)
+                return
+            }
+            do {
+                if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
+                    let sdkPayload = json["sdk_payload"] as? [String: Any] {
+                    completion(sdkPayload)
+                } else {
+                    completion(nil)
+                }
+            } catch {
+                print("Error: Failed to parse JSON - \(error)")
+                completion(nil)
+            }
+            semaphore.signal()
+        }
+        task.resume()
+        semaphore.wait()
+    }
 }
 
