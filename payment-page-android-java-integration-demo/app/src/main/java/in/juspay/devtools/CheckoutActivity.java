@@ -80,10 +80,11 @@ public class CheckoutActivity extends AppCompatActivity {
 
     // block:start:fetch-process-payload
     // Note: Session API should only be called from merchant's server. Don't call it from client app
+    // -----------------------------------------------------------------
     private void run() throws IOException {
         JSONObject payload = new JSONObject();
-        String apiKey = "<API_KEY>";  //Put your API Key Here
-        String clientId = "<CLIENT_ID";  // Put your clientID here 
+        String apiKey = "<YOUR_API_KEY>";  //Put your API Key Here
+        String clientId = "<CLIENT_ID>";  // Put your clientID here
         String merchantId = "<MERCHANT_ID>";   // Put your merchant ID here
 
         long randomOrderId = (long) (Math.random()*Math.pow(10,12)); 
@@ -100,6 +101,7 @@ public class CheckoutActivity extends AppCompatActivity {
             payload.put("first_name", "john");
             payload.put("last_name", "wick");
             payload.put("description", "Order Description");
+            payload.put("return_url", "<REDIRECT_URL>");
 
             // For other payload params you can refer to the integration doc shared with you
         } catch (Exception e){
@@ -148,6 +150,7 @@ public class CheckoutActivity extends AppCompatActivity {
             }
         });
     }
+    // -----------------------------------------------------------------
     // block:end:fetch-process-payload
 
     // block:start:create-hyper-callback
@@ -157,7 +160,7 @@ public class CheckoutActivity extends AppCompatActivity {
             public void onEvent(JSONObject jsonObject, JuspayResponseHandler responseHandler) {
                 Intent redirect = new Intent(CheckoutActivity.this, ResponsePage.class);
                 redirect.putExtra("responsePayload", jsonObject.toString());
-                System.out.println(jsonObject);
+                System.out.println("jsonObject>>> " +jsonObject);
                 try {
                     String event = jsonObject.getString("event");
                     if (event.equals("hide_loader")) {
@@ -222,6 +225,10 @@ public class CheckoutActivity extends AppCompatActivity {
                                     break;
                                     // txn failed
                                     // check order status via S2S API
+                                default:
+                                    redirect.putExtra("status", "APIFailure");
+                                    startActivity(redirect);
+                                    break;
                             }
                         }
                     }
