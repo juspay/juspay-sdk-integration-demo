@@ -1,12 +1,12 @@
 PODS:
-  - HyperSDK (2.1.15):
-    - JuspaySafeBrowser (= 0.1.73)
-    - Salvator (= 1.0.1)
-  - JuspaySafeBrowser (0.1.73)
-  - Salvator (1.0.1)
+  - HyperSDK (2.1.23):
+    - JuspaySafeBrowser (= 0.1.77)
+    - Salvator (= 1.0.2)
+  - JuspaySafeBrowser (0.1.77)
+  - Salvator (1.0.2)
 
 DEPENDENCIES:
-  - HyperSDK (= 2.1.15)
+  - HyperSDK (= 2.1.23)
 
 SPEC REPOS:
   trunk:
@@ -15,10 +15,10 @@ SPEC REPOS:
     - Salvator
 
 SPEC CHECKSUMS:
-  HyperSDK: 7550cef52459c7d01de4871b2eb549b23810c4c0
-  JuspaySafeBrowser: 0193990c52e8865bd57f2875b03a20a598d8643d
-  Salvator: e388abcd1c8a526aff3e952ed94219bb4e12c85f
+  HyperSDK: 6ed505c2cb997444bad0fd6eebce6e2bc685f82f
+  JuspaySafeBrowser: 039d54b068d7ca314866fa8a2d111ad98f3daea2
+  Salvator: 084905ad83586b10de2c283c87b9241fefac5405
 
-PODFILE CHECKSUM: 5b577b558e6ec2e31af26d9206cdd6f670172cfd
+PODFILE CHECKSUM: 7054b08cda7193d31db1601b59b3910759b39611
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.12.1

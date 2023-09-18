@@ -1,5 +1,5 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/HyperSDK" "${PODS_ROOT}/JuspaySafeBrowser" "${PODS_ROOT}/Salvator"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/HyperSDK" "${PODS_ROOT}/JuspaySafeBrowser" "${PODS_ROOT}/Salvator" "${PODS_XCFRAMEWORKS_BUILD_DIR}/HyperSDK" "${PODS_XCFRAMEWORKS_BUILD_DIR}/JuspaySafeBrowser" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Salvator"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
 OTHER_LDFLAGS = $(inherited) -framework "HyperSDK" -framework "JuspaySafeBrowser" -framework "Salvator"
