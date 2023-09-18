@@ -17,3 +17,10 @@
         payment-page-android
 
 2. And payment-page-android code have both Java and Kotlin so there will be two folders named accordingly and each folder should contain their demo code.
+
+
+
+
+Release build:
+in android folder
+/gradlew assembleRelease

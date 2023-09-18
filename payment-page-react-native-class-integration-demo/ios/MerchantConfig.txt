@@ -1,1 +1,1 @@
-clientId = <clientId_shared_by_Juspay>
+clientId = <CLIENT_ID>
