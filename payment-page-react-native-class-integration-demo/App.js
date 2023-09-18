@@ -63,8 +63,8 @@ class App extends React.Component {
       service: 'in.juspay.hyperpay',
       payload: {
         action: 'initiate',
-        merchantId: '<merchant_id>',
-        clientId: '<client_id>',
+        merchantId: 'testhdfc1',
+        clientId: 'hdfcmaster',
         environment: 'production',
       },
     };

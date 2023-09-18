@@ -1,4 +1,0 @@
-${PODS_ROOT}/Target Support Files/Pods-juspayIntegrationExampleRN/Pods-juspayIntegrationExampleRN-frameworks.sh
-${PODS_XCFRAMEWORKS_BUILD_DIR}/HyperSDK/HyperSDK.framework/HyperSDK
-${PODS_XCFRAMEWORKS_BUILD_DIR}/JuspaySafeBrowser/JuspaySafeBrowser.framework/JuspaySafeBrowser
-${PODS_XCFRAMEWORKS_BUILD_DIR}/Salvator/Salvator.framework/Salvator

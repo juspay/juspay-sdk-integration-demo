@@ -1,6 +1,0 @@
-module Pods_juspayIntegrationExampleRN {
-  umbrella header "Pods-juspayIntegrationExampleRN-umbrella.h"
-
-  export *
-  module * { export * }
-}

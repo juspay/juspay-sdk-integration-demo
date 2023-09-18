@@ -1,1 +1,0 @@
-../../../../../node_modules/hyper-sdk-react/ios/HyperSdkReact-Bridging-Header.h

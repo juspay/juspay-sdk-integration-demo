@@ -1,7 +1,0 @@
-${PODS_ROOT}/Target Support Files/Pods-juspayIntegrationExampleRN-juspayIntegrationExampleRNTests/Pods-juspayIntegrationExampleRN-juspayIntegrationExampleRNTests-frameworks.sh
-${PODS_XCFRAMEWORKS_BUILD_DIR}/Flipper-DoubleConversion/double-conversion.framework/double-conversion
-${PODS_XCFRAMEWORKS_BUILD_DIR}/Flipper-Glog/glog.framework/glog
-${PODS_XCFRAMEWORKS_BUILD_DIR}/HyperSDK/HyperSDK.framework/HyperSDK
-${PODS_XCFRAMEWORKS_BUILD_DIR}/JuspaySafeBrowser/JuspaySafeBrowser.framework/JuspaySafeBrowser
-${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL
-${PODS_XCFRAMEWORKS_BUILD_DIR}/Salvator/Salvator.framework/Salvator
