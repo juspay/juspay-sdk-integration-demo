@@ -118,8 +118,11 @@ class Checkout extends React.Component {
       }
     });
 
+    //Handling hardware backpress inside the checkout screen
+    // block:start:handle-hardware-backpress
     BackHandler.addEventListener("hardwareBackPress", () => {
       return !HyperSdkReact.isNull() && HyperSdkReact.onBackPressed();
+    // block:end:handle-hardware-backpress
     });
   }
 
@@ -219,7 +222,12 @@ const getRandomNumber = () => {
   return Math.floor(Math.random() * 90000000) + 10000000
 };
 
+
+
 const makePaymentRequest = (total) => {
+
+  // block:start:fetch-process-payload
+  // This API call should be made in merchant server 
   var myHeaders = new Headers();
   myHeaders.append(
     "Authorization",
@@ -252,9 +260,12 @@ const makePaymentRequest = (total) => {
   fetch("https://api.juspay.in/session", requestOptions)
     .then((response) => response.json())
     .then((result) => {
+      // block:start:process-sdk
       HyperSdkReact.process(JSON.stringify(result.sdk_payload));
+      // block:end:process-sdk
     })
     .catch((error) => console.log("error", error));
+   // block:end:fetch-process-payload
 };
 
 export default createStackNavigator(
