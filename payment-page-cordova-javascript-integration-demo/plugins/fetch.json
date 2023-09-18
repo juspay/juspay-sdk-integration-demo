@@ -2,7 +2,7 @@
   "hyper-sdk-plugin": {
     "source": {
       "type": "registry",
-      "id": "hyper-sdk-plugin"
+      "id": "hyper-sdk-plugin@^2.0.22"
     },
     "is_top_level": true,
     "variables": {}

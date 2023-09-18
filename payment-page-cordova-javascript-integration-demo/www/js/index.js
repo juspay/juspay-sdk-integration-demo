@@ -22,8 +22,8 @@
 var hyperSDKRef;
 document.addEventListener("deviceready", onDeviceReady, false);
 const apiKey = "yourAPIKey";
-const merchantId = "yourMerchantIdHere";                     //Please input your merchant Id here as shared by Juspay
-const clientId = "yourClientIdHere";                         //Please input your client Id here as shared by Juspay
+const merchantId = "<MERCHANT_ID>";                     //Please input your merchant Id here as shared by Juspay
+const clientId = "<CLIENT_ID>";                         //Please input your client Id here as shared by Juspay
 var authorization = window.btoa(unescape(encodeURIComponent(apiKey)));
 var totalPayable;
 const targetDivProducts = document.getElementById("productPage");
@@ -228,18 +228,18 @@ document.getElementById("checkoutButton").addEventListener("click", () => {
   myHeaders.append("Content-Type", "application/json");
   myHeaders.append(
     "Authorization",
-    "Basic xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"         
+    `Basic OEEwRTRBRDA0MjA0NjhCQjE0NEQxQjExNjMzNkRB`         
   );
 
   var raw = JSON.stringify({
     order_id: "Test" + Math.floor(Math.random() * 1000000000),
     amount: totalPayable,
-    customer_id: "testing-customer-onehjcd",
+    customer_id: "9876543201",
     customer_email: "test@mail.com",
-    customer_phone: "9876543210",
+    customer_phone: "9876543201",
     payment_page_client_id: "<CLIENT_ID>",
     action: "paymentPage",
-    return_url: "https://shop.merchant.com",
+    return_url: "https://www.hdfcbank.com/",
     description: "Complete your payment",
     first_name: "John",
     last_name: "wick",
