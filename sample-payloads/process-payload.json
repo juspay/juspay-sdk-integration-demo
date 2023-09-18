@@ -1,0 +1,18 @@
+{
+   "requestId" : "8cbc3fad-8b3f-40c0-ae93-2d7e75a8624a", 
+   "service" : "in.juspay.hyperpay",
+   "payload"  : { 
+   "action" : "paymentPage",
+      "merchantId" : "idea_preprod",
+  		"clientId": "idea",
+  		"orderId": "R1096438018",
+		  "amount": "1.00",
+		  "customerId": "1234567890",
+	    "customerEmail": "test@gmail.com",
+      "customerMobile": "9739534710",
+	 		"orderDetails": "{\"order_id\":\"R1096438018\",\"amount\":\"1.00\",\"customer_id\":\"1234567890\",\"merchant_id\":\"idea_preprod\",\"customer_email\":\"test007@gmail.com\",\"customer_phone\":\"1234567890\",\"return_url\":\"https:\\/\\/sandbox.juspay.in\\/end\",\"timestamp\":\"1571922200845\"}",
+	   	"signature": "AZOn8jH8RPWSzrbZ0iiHSLjMdvnvDBkyKslgx4yDadtiQ49kqf8vFh7GMEC/aSARgfovwUOBoPPRTksV6IXNlwIBwuSLWeH7/dIBC+FdtgOR1UNhRGKM17xNg/A6iLufR880Pa31QT3JAWJtRPeQ3aGczsgsFc8NzbSNCQmV2w7ziSSUAwdpU8JWthkFc2oW23QTcMHXnk/EHXf9vAHUZS1x2vKMnrUE6JuTa8vNLlpAcsZ8ueGLvBuobx6lBltsyb8+DjWT+3+W4nt1xmH734g9aOkduLyQTvGIYDKCpnvWdR0J34SvgUnCnv5XzRm9+HQInZDSslJ+1q5hAe3PQQ==",
+		  "merchantKeyId": "2980",
+		  "language": "english"
+    }
+}
