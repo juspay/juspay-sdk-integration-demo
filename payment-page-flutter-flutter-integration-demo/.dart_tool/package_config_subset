@@ -1,7 +1,7 @@
 doc_app
 2.12
-file:///Users/arbindakumarprasad/JuspayRepo/temp/juspay-sdk-integration-demo/payment-page-flutter-flutter-integration-demo/
-file:///Users/arbindakumarprasad/JuspayRepo/temp/juspay-sdk-integration-demo/payment-page-flutter-flutter-integration-demo/lib/
+file:///Users/arbindakumarprasad/Juspay/github/pp-flutter/juspay-sdk-integration-demo/payment-page-flutter-flutter-integration-demo/
+file:///Users/arbindakumarprasad/Juspay/github/pp-flutter/juspay-sdk-integration-demo/payment-page-flutter-flutter-integration-demo/lib/
 async
 2.14
 file:///Users/arbindakumarprasad/development/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.9.0/
@@ -42,6 +42,10 @@ flutter_lints
 2.12
 file:///Users/arbindakumarprasad/development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_lints-1.0.4/
 file:///Users/arbindakumarprasad/development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_lints-1.0.4/lib/
+http
+2.14
+file:///Users/arbindakumarprasad/development/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.5/
+file:///Users/arbindakumarprasad/development/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.5/lib/
 http_parser
 2.12
 file:///Users/arbindakumarprasad/development/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.1/

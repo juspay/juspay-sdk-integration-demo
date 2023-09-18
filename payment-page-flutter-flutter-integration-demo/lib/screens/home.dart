@@ -19,7 +19,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  var countProductOne = 0;
+  var countProductOne = 1;
   var countProductTwo = 0;
 
   @override
@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
     var screenHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
-      appBar: customAppBar(text: "Home Screen"),
+      appBar: customAppBar(text: "Home Screen", context: context),
       backgroundColor: Colors.white,
       body: Column(
         children: [
@@ -94,8 +94,8 @@ class _HomeScreenState extends State<HomeScreen> {
         "service": "in.juspay.hyperpay",
         "payload": {
           "action": "initiate",
-          "merchantId": "<merchant-id>",
-          "clientId": "<client-id>",
+          "merchantId": "<MERCHANT_ID>",
+          "clientId": "<CLIENT_ID>",
           "environment": "production"
         }
       };
@@ -127,7 +127,13 @@ class _HomeScreenState extends State<HomeScreen> {
             height: height / 4,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
-                color: const Color(0xFFf5f5f5)),
+                color: Color.fromARGB(255, 121, 119, 119)),
+            child: Image.asset(
+              text == 'one'
+                  ? 'assets/product1.png'
+                  : 'assets/product2.png', // Replace with the path to your image
+              fit: BoxFit.cover,
+            ),
           ),
           Container(
             height: height / 4,

@@ -8,7 +8,7 @@ class FailedScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: customAppBar(text: "Payment Status"),
+        appBar: customAppBar(text: "Payment Status", context: context),
         body: Column(
           children: [
             Expanded(
