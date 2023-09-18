@@ -44,7 +44,7 @@ dependencies {
 
 //block:start:add-sdk-implementation
 hyperSdkPlugin {
-    clientId = "<CLIENT_ID>"
+    clientId = "credpayweb"
     sdkVersion = "2.1.12"
 }
 //block:end:add-sdk-implementation
