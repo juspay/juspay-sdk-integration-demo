@@ -1,4 +1,3 @@
-curl --location --request POST '<merchant-url>' \
+curl --location --request POST '<merchant-webkook-url>' \
 --header 'Content-Type: application/json' \
---header 'Authorization: Basic <Base64_encoded_username:password>' \
---data <Payload>
+--header 'Authorization: Basic <Base64_encoded_pair_username:password>' \
