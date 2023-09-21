@@ -2,7 +2,7 @@
     "list": [
         {
             "wallet": "MOBIKWIK",
-            "token": "tk_ebx87atbj3be8odylabs8niu948h",
+            "token": "tk_ebx87atbj3be8odylabs8nn9948h",
             "last_refreshed": "2023-09-11T08:29:47Z",
             "juspay_bank_code": "JP_MOBIKWIK",
             "object": "wallet_account",
