@@ -1,22 +1,59 @@
 {
-  "list": [
-    {
-      "wallet": "PAYTM",
-      "token": "tk_04ec****cff6f4095a",
-      "last_refreshed": "2022-02-17T06:58:08Z",
-      "juspay_bank_code": "JP_PAYTM",
-      "object": "wallet_account",
-      "metadata": {
-        "mobile_number": "77****78"
-      },
-      "id": "wlt_x1****K6am",
-      "current_balance": 109.55,
-      "gateway_reference_id": null,
-      "linked": true
-    }
-  ],
-  "offset": 0,
-  "count": 1,
-  "total": 1,
-  "object": "list"
+    "list": [
+        {
+            "wallet": "MOBIKWIK",
+            "token": "tk_ebx87atbj3be8odylabs8niu948h",
+            "last_refreshed": "2023-09-11T08:29:47Z",
+            "juspay_bank_code": "JP_MOBIKWIK",
+            "object": "wallet_account",
+            "metadata": {
+                "mobile_number": "9999999999"
+            },
+            "id": "wlm_bkb8Yio8un8Uhiuo",
+            "current_balance": 100,
+            "gateway_reference_id": null,
+            "sub_details": [
+                {
+                    "payment_method": "MOBIKWIK",
+                    "payment_method_type": "WALLET",
+                    "last_refreshed": "2023-09-11T08:29:47Z",
+                    "current_balance": 100
+                }
+            ],
+            "linked": true
+        },
+        {
+            "wallet": "PAYTM",
+            "token": "tk_bmh78tghmbvc435980nnbv674cdvrtfgjk",
+            "last_refreshed": "2023-09-11T08:29:46Z",
+            "juspay_bank_code": "JP_PAYTM",
+            "object": "wallet_account",
+            "metadata": {
+                "device_id": "vTu7uhv66gyY6h9o",
+                "mobile_number": "9999999999"
+            },
+            "id": "wlm_bk7b8hkvc4rcyjk",
+            "current_balance": 45,
+            "gateway_reference_id": null,
+            "sub_details": [
+                {
+                    "payment_method": "PAYTM_POSTPAID",
+                    "payment_method_type": "WALLET",
+                    "last_refreshed": "2023-09-11T08:29:46.985Z",
+                    "current_balance": 22250
+                },
+                {
+                    "payment_method": "PAYTM",
+                    "payment_method_type": "WALLET",
+                    "last_refreshed": "2023-09-11T08:29:46Z",
+                    "current_balance": 45
+                }
+            ],
+            "linked": true
+        }
+    ],
+    "offset": 0,
+    "count": 2,
+    "total": 2,
+    "object": "list"
 }
