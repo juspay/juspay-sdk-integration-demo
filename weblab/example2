@@ -1,0 +1,9 @@
+//pause merchant transactions for specified time period
+{
+"pauseMerchant": {
+"c": "(currentGateway.indexOf('YESBANK_UPI')>=0  && (new Date('2023-07-08T20:30:00Z')< new Date() && new Date()<new Date('2023-07-08T23:30:00Z'))",
+"r": {
+  "ATTEMPT": 0
+  }
+},
+}
