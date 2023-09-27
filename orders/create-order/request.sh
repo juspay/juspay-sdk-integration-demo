@@ -2,7 +2,7 @@ curl --location 'https://sandbox.juspay.in/txns' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'Authorization: Basic e3thcGlrZXl9fTo=' \
 --data-urlencode 'order_id=1692783824' \
---data-urlencode 'merchant_id=paypal' \
+--data-urlencode 'merchant_id=merchantid' \
 --data-urlencode 'payment_method_type=WALLET' \
 --data-urlencode 'payment_method=GRABPAY' \
 --data-urlencode 'redirect_after_payment=true' \
