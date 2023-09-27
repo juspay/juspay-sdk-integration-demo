@@ -3,5 +3,5 @@ curl -X POST https://api.juspay.in/txns \
 -d "merchant_id=:merchant_id" \
 -d "payment_method_type=NB" \
 -d "payment_method=NB_BCA" \
--d "redirect_after_payment=true" \
+-d "redirect_after_payment=true2" \
 -d "format=json"
