@@ -10,6 +10,6 @@ curl --location 'https://api.juspay.in/txns' \
 --data-urlencode 'direct_wallet_token=tkn_ef1a29396adb4ced9ea1b5a43562ac7b' \
 --data-urlencode 'order.order_id=1693230550' \
 --data-urlencode 'order.amount=100' \
---data-urlencode 'order.currency=INR' \
+--data-urlencode 'order.currency=IDR' \
 --data-urlencode 'order.customer_id=test123' \
 --data-urlencode 'order.customer_phone=9164326296'
