@@ -9,6 +9,6 @@ curl --location 'https://api.juspay.in/txns' \
 --data-urlencode 'format=json' \
 --data-urlencode 'order.order_id=1693230550' \
 --data-urlencode 'order.amount=100' \
---data-urlencode 'order.currency=INR' \
+--data-urlencode 'order.currency=IDR' \
 --data-urlencode 'order.customer_id=test123' \
 --data-urlencode 'order.customer_phone=9164326296'
