@@ -12,13 +12,13 @@
     },
     {
       "payment_method_type": "NB",
-      "payment_method": "NB_HDFC",
-      "description": "HDFC"
+      "payment_method": "NB_BCA",
+      "description": "BCA"
     },
     {
       "payment_method_type": "WALLET",
-      "payment_method": "PAYTM",
-      "description": "Paytm"
+      "payment_method": "GOPAY",
+      "description": "Gopay Wallet"
     }
   ]
 }
