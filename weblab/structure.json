@@ -1,0 +1,15 @@
+//Sample structure of weblab
+{
+"case1": {
+  "c": "JS Condition here",
+  "r": {
+    "ATTEMPT": 0
+  }
+},
+"case2": {
+  "c": "JS condition here",
+  "r": {
+    "ATTEMPT": 0
+  }
+}
+}
