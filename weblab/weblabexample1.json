@@ -1,0 +1,8 @@
+{
+  "pauseMerchant": {
+    "c": "((balance <= 500000) && ((currentGateway.indexOf('YESBANK') >= 0) || (currentGateway.indexOf('YESNODAL_UPI') >= 0) || (currentGateway.indexOf('CFGEN_IMPS.ABC') >= 0))",
+    "r": {
+      "ATTEMPT": 0
+    }
+  },
+}
