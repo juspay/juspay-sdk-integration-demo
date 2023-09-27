@@ -1,8 +1,8 @@
 {
    "object_reference_id": "customer",
    "object": "customer",
-   "mobile_number": "9999999999",
-   "mobile_country_code": "91",
+   "mobile_number": "99999999",
+   "mobile_country_code": "65",
    "last_updated": "2020-03-17T14:29:17Z",
    "last_name": "al",
    "juspay": {
