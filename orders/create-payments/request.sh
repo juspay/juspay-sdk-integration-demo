@@ -2,8 +2,8 @@ curl --location --request POST 'https://api.juspay.in/txns' \
 --header 'Authorization: Basic Auth of <your-api-key>' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'order.order_id=ord_1590759422' \
---data-urlencode 'order.amount=101550.00' \
---data-urlencode 'order.currency=INR' \
+--data-urlencode 'order.amount=101.00' \
+--data-urlencode 'order.currency=SGD' \
 --data-urlencode 'order.customer_id=cst_1590759422' \
 --data-urlencode 'order.return_url=https://merchant.in/payments' \
 --data-urlencode 'merchant_id=<your-merchant-id>' \
