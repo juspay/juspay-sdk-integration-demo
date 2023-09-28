@@ -2,11 +2,11 @@
    "id": "cst_om2l6ctlptxwxuzj",
    "object": "customer",
    "object_reference_id": "customer@gmail.com",
-   "mobile_number": "9988776655",
+   "mobile_number": "99887766",
    "date_created": "2016-08-02T08:07:52+0000",
    "last_updated": "2016-08-02T08:07:52+0000",
    "email_address": "customer@gmail.com",
    "first_name": "John",
    "last_name": "Smith",
-   "mobile_country_code": "91"
+   "mobile_country_code": "+65"
 }
