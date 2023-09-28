@@ -1,0 +1,82 @@
+{
+    "updatedAt": "2023-09-28T13:56:06Z",
+    "udf5": "udf5",
+    "udf4": "udf4",
+    "udf3": "udf3",
+    "udf2": "udf2",
+    "udf1": "udf1",
+    "type": "FULFILL_ONLY",
+    "status": "FULFILLMENTS_FAILURE",
+    "refunds": [],
+    "payments": [],
+    "orderId": "1695909138",
+    "fulfillments": [
+        {
+            "updatedBy": "DEFAULT",
+            "updatedAt": "2023-09-28T13:56:06Z",
+            "type": "ORDER",
+            "transactions": [
+                {
+                    "updatedAt": "2023-09-28T13:55:36Z",
+                    "txnResponse": {
+                        "status": "FAILURE",
+                        "requestId": "2a0cfe72b614f73aa04ac79e814f59",
+                        "amount": 25
+                    },
+                    "transactionRef": "2a0cfe72b614f73aa04ac79e814f59",
+                    "timeStamp": "2023-09-28T13:55:36Z",
+                    "status": "FAILURE",
+                    "responseMessage": "Amount Lies In Failure Range.",
+                    "responseCode": "FAILURE",
+                    "gatewayRefId": "2a0cfe72b614f73aa04ac79e814f59",
+                    "fulfillmentMethod": "DUMMY_NEFT",
+                    "epgTxnId": "2a0cfe72b614f73aa04ac79e814f59",
+                    "createdAt": "2023-09-28T13:54:34Z",
+                    "amount": 25
+                },
+                {
+                    "updatedAt": "2023-09-28T13:54:22Z",
+                    "txnResponse": {
+                        "status": "FAILURE",
+                        "requestId": "be7c61e21a34783be96806cfc1e240",
+                        "amount": 25
+                    },
+                    "transactionRef": "be7c61e21a34783be96806cfc1e240",
+                    "timeStamp": "2023-09-28T13:54:22Z",
+                    "status": "FAILURE",
+                    "responseMessage": "Amount Lies In Failure Range.",
+                    "responseCode": "FAILURE",
+                    "gatewayRefId": "be7c61e21a34783be96806cfc1e240",
+                    "fulfillmentMethod": "DUMMY_IMPS",
+                    "epgTxnId": "be7c61e21a34783be96806cfc1e240",
+                    "createdAt": "2023-09-28T13:52:44Z",
+                    "amount": 25
+                }
+            ],
+            "statusUpdatedAt": "2023-09-28T13:56:06Z",
+            "status": "FAILURE",
+            "preferredMethodList": [
+                "DUMMY_IMPS"
+            ],
+            "merchantCustomerId": "1421255",
+            "id": "92c9147adaa4b22a08e78b9d00957a-f1",
+            "fulfillmentMethodList": [
+                "DUMMY_IMPS",
+                "DUMMY_NEFT"
+            ],
+            "createdAt": "2023-09-28T13:52:18Z",
+            "beneficiaryDetails": {
+                "details": {
+                    "name": "Aditya Kadrolkar",
+                    "ifsc": "HDFC0009498",
+                    "account": "50100380396143"
+                },
+                "type": "ACCOUNT_IFSC"
+            },
+            "amount": 25
+        }
+    ],
+    "customerId": "1421255",
+    "createdAt": "2023-09-28T13:52:18Z",
+    "amount": 25
+}
