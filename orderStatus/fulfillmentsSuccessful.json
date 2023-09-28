@@ -1,0 +1,64 @@
+{
+    "updatedAt": "2023-09-28T12:59:42Z",
+    "udf5": "udf5",
+    "udf4": "udf4",
+    "udf3": "udf3",
+    "udf2": "udf2",
+    "udf1": "udf1",
+    "type": "FULFILL_ONLY",
+    "status": "FULFILLMENTS_SUCCESSFUL",
+    "refunds": [],
+    "payments": [],
+    "orderId": "1695905859",
+    "fulfillments": [
+        {
+            "updatedBy": "DEFAULT",
+            "updatedAt": "2023-09-28T12:59:42Z",
+            "type": "ORDER",
+            "transactions": [
+                {
+                    "updatedAt": "2023-09-28T12:59:30Z",
+                    "txnResponse": {
+                        "status": "SUCCESS",
+                        "requestId": "b321d24f6e3432a8cc6e6ec8635de1",
+                        "amount": 1
+                    },
+                    "transactionRef": "b321d24f6e3432a8cc6e6ec8635de1",
+                    "timeStamp": "2023-09-28T12:59:30Z",
+                    "status": "SUCCESS",
+                    "responseMessage": "Amount Lies In Success Range.",
+                    "responseCode": "SUCCESS",
+                    "gatewayRefId": "b321d24f6e3432a8cc6e6ec8635de1",
+                    "fulfillmentMethod": "DUMMY_IMPS",
+                    "epgTxnId": "b321d24f6e3432a8cc6e6ec8635de1",
+                    "createdAt": "2023-09-28T12:58:04Z",
+                    "amount": 1
+                }
+            ],
+            "statusUpdatedAt": "2023-09-28T12:59:42Z",
+            "status": "SUCCESS",
+            "preferredMethodList": [
+                "DUMMY_IMPS"
+            ],
+            "merchantCustomerId": "1421255",
+            "id": "eba0089f6d34b63bc76613af9a8441-f1",
+            "fulfillmentMethodList": [
+                "DUMMY_IMPS",
+                "DUMMY_NEFT"
+            ],
+            "createdAt": "2023-09-28T12:57:39Z",
+            "beneficiaryDetails": {
+                "details": {
+                    "name": "Aditya Kadrolkar",
+                    "ifsc": "HDFC0009498",
+                    "account": "50100380396143"
+                },
+                "type": "ACCOUNT_IFSC"
+            },
+            "amount": 1
+        }
+    ],
+    "customerId": "1421255",
+    "createdAt": "2023-09-28T12:57:39Z",
+    "amount": 1
+}
