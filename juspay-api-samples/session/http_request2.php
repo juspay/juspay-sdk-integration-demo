@@ -22,6 +22,7 @@ $request->setBody('{\n
     "description": "Complete your payment",\n    
     "first_name": "John",\n    
     "last_name": "wick"\n
+    "options.get_upi_deep_links": "true"\n
 }');
 try {
   $response = $request->send();
