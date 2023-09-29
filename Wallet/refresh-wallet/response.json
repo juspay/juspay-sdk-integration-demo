@@ -1,9 +1,17 @@
 {
-  "id": "wlt_q23xzki3pazgtezo",
-  "object": "wallet_account",
   "wallet": "MOBIKWIK",
-  "token": "tok_winysteev9eftrwcv6me",
-  "current_balance": 250,
-  "linked": "true",
-  "last_refreshed": "2016-08-02T08:07:52+0000"
+  "token": "tkn_bceo87bpefjwlbfcv86vq8bxiwyen3",
+  "last_refreshed": "2023-09-11T08:26:15.000Z",
+  "object": "wallet_account",
+  "id": "wlm_bBJb6i6bjhvgnc",
+  "current_balance": 100,
+  "sub_details": [
+      {
+          "payment_method": "MOBIKWIK",
+          "payment_method_type": "WALLET",
+          "last_refreshed": "2023-09-11T08:26:15Z",
+          "current_balance": 100
+      }
+  ],
+  "linked": true
 }

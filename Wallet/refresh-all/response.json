@@ -1,22 +1,59 @@
 {
   "list": [
-    {
-      "wallet": "PAYTM",
-      "token": "tk_04ec****cff6f4095a",
-      "last_refreshed": "2022-02-17T06:58:08Z",
-      "juspay_bank_code": "JP_PAYTM",
-      "object": "wallet_account",
-      "metadata": {
-        "mobile_number": "77****78"
+      {
+          "wallet": "MOBIKWIK",
+          "token": "tk_ecbio8b69p8aiojdnap9b8u ",
+          "last_refreshed": "2023-09-11T08:29:47Z",
+          "juspay_bank_code": "JP_MOBIKWIK",
+          "object": "wallet_account",
+          "metadata": {
+              "mobile_number": "9999999999"
+          },
+          "id": "wlm_vT890Ngjknnknb89",
+          "current_balance": 100,
+          "gateway_reference_id": null,
+          "sub_details": [
+              {
+                  "payment_method": "MOBIKWIK",
+                  "payment_method_type": "WALLET",
+                  "last_refreshed": "2023-09-11T08:29:47Z",
+                  "current_balance": 100
+              }
+          ],
+          "linked": true
       },
-      "id": "wlt_x1****K6am",
-      "current_balance": 109.55,
-      "gateway_reference_id": null,
-      "linked": true
-    }
+      {
+          "wallet": "PAYTM",
+          "token": "tk_csdjcbsd678ovsyfowe9f8nsjdncbs86va",
+          "last_refreshed": "2023-09-11T08:29:46Z",
+          "juspay_bank_code": "JP_PAYTM",
+          "object": "wallet_account",
+          "metadata": {
+              "device_id": "blUutbvo76578u",
+              "mobile_number": "9999999999"
+          },
+          "id": "wlm_blUutbvo76578u",
+          "current_balance": 95,
+          "gateway_reference_id": null,
+          "sub_details": [
+              {
+                  "payment_method": "PAYTM_POSTPAID",
+                  "payment_method_type": "WALLET",
+                  "last_refreshed": "2023-09-11T08:29:46.985Z",
+                  "current_balance": 22222
+              },
+              {
+                  "payment_method": "PAYTM",
+                  "payment_method_type": "WALLET",
+                  "last_refreshed": "2023-09-11T08:29:46Z",
+                  "current_balance": 95
+              }
+          ],
+          "linked": true
+      }
   ],
   "offset": 0,
-  "count": 1,
-  "total": 1,
+  "count": 2,
+  "total": 2,
   "object": "list"
 }

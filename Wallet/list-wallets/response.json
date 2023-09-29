@@ -1,26 +1,50 @@
 {
-  "object": "list",
   "list": [
-    {
-      "id": "wlt_q23xzki3pazgtezo",
-      "object": "wallet_account",
-      "wallet": "MOBIKWIK",
-      "token": "tok_winysteev9eftrwcv6me",
-      "current_balance": 250,
-      "linked": true,
-      "last_refreshed": "2016-08-02T08:07:52+0000"
-    },
-    {
-      "id": "wlt_mu2xfwb4mr18flbs",
-      "object": "wallet_account",
-      "wallet": "FREECHARGE",
-      "token": null,
-      "current_balance": null,
-      "linked": false,
-      "last_refreshed": null
-    }
+      {
+          "wallet": "MOBIKWIK",
+          "token": "tk_bkc87beikjcnlblc87asa897sb8anisjkl8b",
+          "last_refreshed": "2023-09-11T08:29:47Z",
+          "juspay_bank_code": "JP_MOBIKWIK",
+          "object": "wallet_account",
+          "id": "wlm_Giuln7b8Uy78uyhjI",
+          "current_balance": 100,
+          "sub_details": [
+              {
+                  "payment_method": "MOBIKWIK",
+                  "payment_method_type": "WALLET",
+                  "last_refreshed": "2023-09-11T08:29:47Z",
+                  "current_balance": 100
+              }
+          ],
+          "linked": true
+      },
+      {
+          "wallet": "PAYTM",
+          "token": "tk_biknby8976v567uygjkhvc5x3789h0npou",
+          "last_refreshed": "2023-09-11T08:29:46Z",
+          "juspay_bank_code": "JP_PAYTM",
+          "object": "wallet_account",
+          "id": "wlm_vUtyjb78klnU8l",
+          "current_balance": 45,
+          "sub_details": [
+              {
+                  "payment_method": "PAYTM_POSTPAID",
+                  "payment_method_type": "WALLET",
+                  "last_refreshed": "2023-09-11T08:29:46.985Z",
+                  "current_balance": 22250
+              },
+              {
+                  "payment_method": "PAYTM",
+                  "payment_method_type": "WALLET",
+                  "last_refreshed": "2023-09-11T08:29:46Z",
+                  "current_balance": 45
+              }
+          ],
+          "linked": true
+      }
   ],
-  "count": 10,
   "offset": 0,
-  "total": 100
+  "count": 2,
+  "total": 2,
+  "object": "list"
 }

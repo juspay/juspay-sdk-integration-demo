@@ -1,9 +1,17 @@
 {
-  "id": "wlt_q23xzki3pazgtezo",
-  "object": "wallet_account",
-  "wallet": "MOBIKWIK",
+  "wallet": "PAYTM",
   "token": null,
+  "last_refreshed": null,
+  "object": "wallet_account",
+  "id": "wlm_vNb87tTUvbb86bD",
   "current_balance": null,
-  "linked": "false",
-  "last_refreshed": null
+  "sub_details": [
+      {
+          "payment_method": "PAYTM",
+          "payment_method_type": "WALLET",
+          "last_refreshed": null,
+          "current_balance": null
+      }
+  ],
+  "linked": false
 }
