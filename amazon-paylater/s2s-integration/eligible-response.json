@@ -1,0 +1,14 @@
+{
+  "payment_methods_eligibility": [
+    {
+      "status": "SUCCESS",
+      "payment_method": "AMAZONPAYLATER",
+      "payment_method_type": "CONSUMER_FINANCE",
+      "is_eligible": true,
+      "balance": 100,
+      "kfs_link": "https://amazonpay.amazon.in/v1/????",
+      "description": "Amazon Pay Later",
+      "eligibility_strategy": "TRANSACTION"
+    }
+  ]
+}

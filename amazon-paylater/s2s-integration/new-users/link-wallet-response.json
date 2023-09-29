@@ -1,0 +1,23 @@
+{
+  "wallet": "AMAZONPAY",
+  "token": "tkn_7d9f4261f90649cd918cc6be60d995a8",
+  "last_refreshed": "2023-09-14T13:40:26.000Z",
+  "object": "wallet_account",
+  "id": "wlm_6wshp8GdnZkvhafa",
+  "current_balance": 500,
+  "sub_details": [
+    {
+      "payment_method": "AMAZONPAYLATER",
+      "payment_method_type": "CONSUMER_FINANCE",
+      "last_refreshed": "2023-09-14T13:40:26.830Z",
+      "current_balance": 100
+    },
+    {
+      "payment_method": "AMAZONPAY",
+      "payment_method_type": "WALLET",
+      "last_refreshed": "2023-09-14T13:40:26Z",
+      "current_balance": 500
+    }
+  ],
+  "linked": true
+}

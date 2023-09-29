@@ -1,0 +1,14 @@
+{
+  "payment_methods_eligibility": [
+    {
+      "status": "ERROR",
+      "payment_method": "AMAZONPAYLATER",
+      "payment_method_type": "CONSUMER_FINANCE",
+      "is_eligible": true,
+      "gateway_error_code": "linking_required",
+      "gateway_error_message": "linking_required",
+      "description": "Amazon Paylater",
+      "eligibility_strategy": "TRANSACTION"
+    }
+  ]
+}
