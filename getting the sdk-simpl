@@ -1,5 +1,0 @@
-repositories {
-mavenCentral()
-maven { url "https://maven.juspay.in/jp-build-packages/hyper-sdk/" }
-maven { url "https://maven.getsimpl.com"}
-}

@@ -1,6 +1,0 @@
-"payment_methods_eligibility": [
-{
-"status": "SUCCESS", "payment_method_type": "WALLET", "payment_method": "SIMPL", "is_eligible": true, "eligibility_strategy": "USER", "description": "Simpl Wallet", "balance": 20000
-}, ...
-]
-}

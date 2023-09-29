@@ -1,8 +1,0 @@
-'metadata.split_settlement_details=
-{"marketplace": {"refund_amount": 0}, 
-"vendor": 
-{"split": 
-[{"sub_mid": "Vendor2", 
-"refund_amount": 1}]}
-}'
-

@@ -1,0 +1,34 @@
+{
+  "status": "NEW",
+  "id": "ordeh_54cca71a932840399502d3b2666c729d",
+  "order_id": "ref_253",
+  "payment_links": {
+    "web": "https://sandbox.juspay.in/orders/ordeh_54cca71a932840399502d3b2666c729d/payment-page",
+    "expiry": null
+  },
+  "sdk_payload": {
+    "requestId": "2b81edee38e34f8e82a581fcedf6eef4",
+    "service": "in.juspay.hyperpay",
+    "payload": {
+      "clientId": "geddit",
+      "amount": "100.0",
+      "metadata.AMAZONPAY:gateway_reference_id": "amazon_test",
+      "merchantId": "merchant_success",
+      "clientAuthToken": "tkn_defae86c77db4ce880cb2be9ffdb82b2",
+      "clientAuthTokenExpiry": "2023-08-21T12:11:59Z",
+      "environment": "sandbox",
+      "lastName": "Luffy",
+      "quantity": "1",
+      "action": "paymentPage",
+      "customerId": "cth_jJeDKnpQDuL8XWk6",
+      "returnUrl": "http://www.juspay.in",
+      "currency": "INR",
+      "firstName": "Monkey.D",
+      "customerPhone": "9986028298",
+      "customerEmail": "test@mail.com",
+      "orderId": "ref_253",
+      "productId": "test123",
+      "description": "Complete your payment"
+    }
+  }
+}
