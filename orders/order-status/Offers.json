@@ -58,10 +58,10 @@
     "id": "ordeh_5e4343d6a6fe4b2d9a23b4b9883ec3c6",
     "gateway_id": 6,
     "date_created": "2021-05-09T14:54:11Z",
-    "customer_phone": "8888888888",
+    "customer_phone": "88888888",
     "customer_id": "cst_s35j8cghim6qncud",
     "customer_email": "x@something.com",
-    "currency": "INR",
+    "currency": "SGD",
     "card": {
         "using_saved_card": false,
         "saved_to_locker": true,
