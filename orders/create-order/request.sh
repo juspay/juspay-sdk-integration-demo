@@ -4,7 +4,7 @@ curl --location 'https://sandbox.juspay.in/txns' \
 --data-urlencode 'order_id=1692783824' \
 --data-urlencode 'merchant_id=paypal' \
 --data-urlencode 'payment_method_type=WALLET' \
---data-urlencode 'payment_method=OVO' \
+--data-urlencode 'payment_method=GRABPAY' \
 --data-urlencode 'redirect_after_payment=true' \
 --data-urlencode 'format=json'
 --data-urlencode 'order.order_id=ord_1590759422' \
