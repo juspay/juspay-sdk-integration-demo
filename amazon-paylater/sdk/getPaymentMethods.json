@@ -1,0 +1,32 @@
+{
+  "juspayBankCode": "JP_AMAZONPAY",
+  "paymentMethodType": "CONSUMER_FINANCE",
+  "walletDirectDebitSupport": true,
+  "supportedFeatures": [
+    {
+      "supportedReferenceIds": ["amazon_test", "amazonpaylater_test"],
+      "featureName": "sdk",
+      "supportedByDefault": false
+    },
+    {
+      "supportedReferenceIds": ["amazon_test", "amazonpaylater_test"],
+      "featureName": "wallet_direct_debit",
+      "supportedByDefault": false
+    },
+    {
+      "supportedReferenceIds": ["amazon_test", "amazonpaylater_test"],
+      "featureName": "link_and_pay",
+      "supportedByDefault": false
+    },
+    {
+      "supportedReferenceIds": ["amazon_test", "amazonpaylater_test"],
+      "featureName": "eligibility",
+      "supportedByDefault": false
+    }
+  ],
+  "paymentMethod": "AMAZONPAYLATER",
+  "nickName": "AMAZONPAYLATER",
+  "supportedReferenceIds": ["amazon_test", "amazonpaylater_test"],
+  "description": "Amazon Pay Later",
+  "supportedByDefault": false
+}

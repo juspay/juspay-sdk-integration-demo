@@ -1,0 +1,11 @@
+{
+  "status": "CREATED",
+  "status_id": 1,
+  "id": "ordeh_07343849498b49bca29a5d7725049a34",
+  "order_id": "MOTOINR1695191749",
+  "payment_links": {
+    "iframe": "https://sandbox.juspay.in/orders/ordeh_07343849498b49bca29a5d7725049a34/payment-page",
+    "web": "https://sandbox.juspay.in/orders/ordeh_07343849498b49bca29a5d7725049a34/payment-page",
+    "mobile": "https://sandbox.juspay.in/orders/ordeh_07343849498b49bca29a5d7725049a34/payment-page"
+  }
+}

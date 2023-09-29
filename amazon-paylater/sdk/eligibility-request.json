@@ -1,0 +1,23 @@
+{
+  "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+  "service": "in.juspay.hyperapi",
+  "payload": {
+    "action": "eligibility",
+    "amount": "1.00",
+    "data": {
+      "wallets": [
+        {
+          "mobileNumber": null,
+          "mobile": "1111111111",
+          "gatewayReferenceId": "amazon_test",
+          "email": "test@mail.com",
+          "customerId": "cth_pKL9ayw75febC1Dd"
+        }
+      ],
+      "cards": []
+    },
+    "device_params": null,
+    "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213",
+    "showLoader": true
+  }
+}
