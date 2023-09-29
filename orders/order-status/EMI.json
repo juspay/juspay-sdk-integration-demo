@@ -1,13 +1,13 @@
 {
     "customer_email": "test@gmail.com",
-    "customer_phone": "9999999999",
+    "customer_phone": "99999999",
     "customer_id": "CUSTOMER",
     "status_id": 21,
     "status": "CHARGED",
     "id": "ordeh_1894a9c3450194ff39db6e7356382d56e",
     "merchant_id": "TEST",
     "amount": 15122,
-    "currency": "INR",
+    "currency": "SGD",
     "order_id": "XXXX1234",
     "date_created": "2023-03-07T04:36:08Z",
     "return_url": "www.google.com",
@@ -36,7 +36,7 @@
       "saved_to_locker": true,
       "expiry_month": "09",
       "name_on_card": "name",
-      "card_issuer": "HDFC Bank",
+      "card_issuer": "JP MORGAN",
       "last_four_digits": "1111",
       "using_saved_card": false,
       "card_fingerprint": "77tjnlafqf9ppmf9lmj9o18",
@@ -60,11 +60,11 @@
         "par": "50XXXXXXXXXXXXXXXXXXXX6",
         "tokenization_status": "ACTIVE"
       },
-      "card_issuer_country": "INDIA",
-      "juspay_bank_code": "JP_HDFC",
+      "card_issuer_country": "SINGAPORE",
+      "juspay_bank_code": "JP_XXXX",
       "extended_card_type": "CREDIT"
     },
-    "payment_method": "MASTERCARD",
+    "payment_method": "VISA",
     "refunded": false,
     "amount_refunded": 0,
     "effective_amount": 15122,
@@ -84,7 +84,7 @@
       "txn_amount": 15122,
       "offer_deduction_amount": null,
       "gateway_id": 12,
-      "currency": "INR",
+      "currency": "SGD",
       "metadata": {
         "microapp": "hyperpay",
         "payment_channel": "MWEB"
@@ -92,7 +92,7 @@
       "express_checkout": false,
       "redirect": true,
       "txn_uuid": "moztmXXXryxxxxxZXwBEV",
-      "gateway": "PAYU",
+      "gateway": "STRIPE",
       "error_message": "",
       "created": "2023-03-07T04:36:42Z",
       "txn_flow_type": "EMI"
@@ -107,9 +107,9 @@
       "txn_id": "TEST-XXXX1234-1"
     },
     "gateway_id": 12,
-    "emi_bank": "HDFC",
+    "emi_bank": "JPMORGAN",
     "emi_tenure": 3,
-    "gateway_reference_id": "HDFC",
+    "gateway_reference_id": "TEST",
     "offers": [],
     "maximum_eligible_refund_amount": 15122
   }
