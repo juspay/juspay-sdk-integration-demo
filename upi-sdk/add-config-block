@@ -1,0 +1,3 @@
+configurations.all {
+    exclude(group:'in.juspay',module:'secure-component-prod')
+}

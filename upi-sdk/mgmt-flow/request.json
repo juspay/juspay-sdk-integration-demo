@@ -1,0 +1,17 @@
+{
+  "requestId": "19d7fa5f-24b9-4864-a659-147ca57918b4",
+  "service": "in.juspay.hyperapi",
+  "payload": {
+    "action": "management",
+    "merchantKeyId": "<Merchant Key Id>",
+    "signature": "<Generated signature for signature payload>",
+    "signaturePayload": "<Stringified signature payload used for signature generation>"
+  }
+}
+
+//Sample Signature Payload//
+"signaturePayload": {
+  "merchant_id": "stock",
+  "customer_id": "abcde12345",
+  "timestamp": "1668389349848"
+}

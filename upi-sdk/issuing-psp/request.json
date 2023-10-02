@@ -1,0 +1,22 @@
+{
+  "requestId": "8cbc3fad-8b3f-40c0-ae93-2d7e75a8624a",
+  "service": "in.juspay.hyperpay",
+  "payload": {
+    "action": "initiate",
+    "merchantKeyId": "<Merchant Key Id>",
+    "clientId": "<Client Id>",
+    "signature": "<Generated signature for signature payload>",
+    "signaturePayload": "<Stringified signature payload>",
+    "environment": "sandbox",
+    "issuingPsp": "YES_BIZ",
+    "shouldCreateCustomer": true,
+    "logLevel": 1
+  }
+}
+
+//Sample Signature Payload//
+"signaturePayload": {
+  "merchant_id": "stock",
+  "customer_id": "abcde12345",
+  "timestamp": "1668389349848"
+}

@@ -1,0 +1,12 @@
+{
+  "requestId": "19d7fa5f-24b9-4864-a659-147ca57918b4",
+  "service": "in.juspay.hyperapi",
+  "payload": {
+    "action": "management",
+    "status": "SUCCESS"
+  },
+  "error": false,
+  "errorMessage": "",
+  "errorCode": "",
+  "event": "process_result"
+}

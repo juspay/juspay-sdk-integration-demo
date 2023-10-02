@@ -1,0 +1,3 @@
+dependencies {
+    implementation'in.juspay:secure-component-uat:2.1.8'
+}

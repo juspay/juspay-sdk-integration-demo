@@ -1,0 +1,12 @@
+{
+  "requestId": "<request id passed>",
+  "service": "in.juspay.hyperpay",
+  "payload": {
+    "action": "initiate",
+    "status": "SUCCESS/FAILURE"
+  },
+  "error": false,
+  "errorMessage": "",
+  "errorCode": "",
+  "event": "process_result"
+}
