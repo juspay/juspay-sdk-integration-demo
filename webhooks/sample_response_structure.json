@@ -1,0 +1,10 @@
+{
+  "id": "evt_gsu1c0r7umcfrxeb",
+  "date_created": "2015-06-03T10:42:25Z",
+  "event_name": "<event_name>",
+  "content": {
+    "order": {
+      /* Complete order data as obtained from /order/:order_id API */
+    }
+  }
+}
