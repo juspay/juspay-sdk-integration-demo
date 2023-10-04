@@ -1,0 +1,17 @@
+{
+  "order_id": ":order_id",
+  "txn_id": ":txn_id",
+  "status": "PENDING_VBV",
+  "payment": {
+    "authentication": {
+      "method": "POST", // handle GET & POST both
+      "url": "https://testbank.com/acs/8340a507",
+	"params":{ // dynamic key value pair based on selected PG
+		"PaReq":"U45600005134",
+		"MD":"eJxtUmtvgjAU/SuE76MtipvmUtONLLIE1FmW+GlhpRGcgPLwsV+/FnVuyZpA7rkcTs65tzA+5htjL6s6KwvXJBY2DVmIMsmKlWtG/PnuwRxT4GklpbeQoq0khUDWdbySRpa45nvUdwZYHYf08BCbFGbsVe4oXDSpkrRsQFeofq5EGhcNhVjsHv2Qku4AukDIZeV7NGSAzhUUcS7pS7SYsWXEOKAOgyjboqlOtOcMAF0BtNWGpk2zrUcItXFjfWSbTSLrT0uUOSD9FdDNwazVVa3UjllCg7V/CLlP3vichGt2CDxGAh4cppy5gDQDRLzfK16keaf/eR0FkriR1Ma2jR3bMchg1LsfEWW060Oca7/aukEwtjBW6c8t2GpL7Az0WDHRL0C/+6DWUKktXcNfEcjjtiykYqiB/9Sg8gukct/SPk309EWj5+zN+1O+7MlJ2tdPwP2vkLmu3kdH0KKZGq09JGdVDQBpCXRZNbpcCFX9uSjfqEfEKw==",
+		"TermUrl" : "https://api.juspay.in/pay/response/mid/txnUuid"
+
+}
+    }
+  }
+}
