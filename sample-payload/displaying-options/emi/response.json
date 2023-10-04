@@ -1,40 +1,70 @@
 {
-    "service": "in.juspay.hyperapi",
-    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+    "service": "in.juspay.ec",
+    "requestId": "37d19a67-298a-465d-94e0-50ecdd80efa2",
     "payload": {
-        "action": "emiPlans",
-        "emiPlans": [
-            {
-                "transactionAmount": 1,
-                "totalAmount": 1.02,
-                "tenure": 3,
-                "interest": 13,
-                "gatewayId": 12,
-                "gateway": "PAYU",
-                "emiAmount": 0.34,
-                "bank": "AXIS"
-            },
-            {
-                "transactionAmount": 1,
-                "totalAmount": 1.02,
-                "tenure": 6,
-                "interest": 12,
-                "gatewayId": 12,
-                "gateway": "PAYU",
-                "emiAmount": 0.17,
-                "bank": "AXIS"
-            },
-            {
-                "transactionAmount": 1,
-                "totalAmount": 0.99,
-                "tenure": 3,
-                "interest": 1,
-                "gatewayId": 12,
-                "gateway": "PAYU",
-                "emiAmount": 0.33,
-                "bank": ""
+        "action": "emiPlansV2",
+        "emiPlans": {
+            "noCostEmi": {
+                "credit": {
+                    "paymentMethodType": "CARD",
+                    "paymentMethod": "CARD",
+                    "issuers": [
+                        {
+                            "tenures": [
+                                {
+                                    "txnEmiType": "STANDARD_EMI",
+                                    "totalMonthlyAmountPayable": "1666.67",
+                                    "totalInterestAmount": "354.71",
+                                    "totalInstantDiscountAmount": "354.69",
+                                    "totalCashbackAmount": "0.00",
+                                    "totalAmountPayable": "10000.02",
+                                    "tenure": 6,
+                                    "supportedGateways": [
+                                        {
+                                            "gatewayId": 74,
+                                            "gateway": "PINELABS"
+                                        }
+                                    ],
+                                    "offerIds": [
+                                        "d1ab0c60-85a1-4383-bf6a-118c3c5344cd"
+                                    ],
+                                    "interestDiscountAmount": "354.69",
+                                    "bankInterestRate": "12.50",
+                                    "additionalProcessingFee": "0.00",
+                                    "additionalDiscountAmount": "0.00"
+                                },
+                                {
+                                    "txnEmiType": "STANDARD_EMI",
+                                    "totalMonthlyAmountPayable": "1669.05",
+                                    "totalInterestAmount": "368.99",
+                                    "totalInstantDiscountAmount": "354.69",
+                                    "totalCashbackAmount": "0.00",
+                                    "totalAmountPayable": "10014.30",
+                                    "tenure": 6,
+                                    "supportedGateways": [
+                                        {
+                                            "gatewayId": 12,
+                                            "gateway": "PAYU"
+                                        }
+                                    ],
+                                    "offerIds": [
+                                        "d1ab0c60-85a1-4383-bf6a-118c3c5344cd"
+                                    ],
+                                    "interestDiscountAmount": "354.69",
+                                    "bankInterestRate": "13.00",
+                                    "additionalProcessingFee": "0.00",
+                                    "additionalDiscountAmount": "0.00"
+                                }
+                            ],
+                            "juspayBankCode": "JP_HSBC",
+                            "issuerName": "HSBC Bank",
+                            "emiBank": "HSBC"
+                        }
+                    ]
+                }
             }
-        ]
+        },
+        "cartAmount": "10000.00"
     },
     "errorMessage": "",
     "errorCode": "",
