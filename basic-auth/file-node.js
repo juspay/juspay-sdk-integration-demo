@@ -1,0 +1,1 @@
+const apiKey = "your_api_key"; const authorization = "Basic " + Buffer.from(apiKey + ":").toString("base64");

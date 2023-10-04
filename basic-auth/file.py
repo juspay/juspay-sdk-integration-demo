@@ -1,0 +1,1 @@
+import base64 api_key = "your_api_key" authorization = "Basic " + base64.b64encode(f"{api_key}:".encode("utf-8")).decode("utf-8")

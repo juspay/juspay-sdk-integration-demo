@@ -1,0 +1,1 @@
+using System; using System.Text; string apiKey = "your_api_key"; string authorization = "Basic " + Convert.ToBase64String(Encoding.UTF8.GetBytes(apiKey + ":"));

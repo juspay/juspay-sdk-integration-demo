@@ -1,0 +1,1 @@
+$api_key = "your_api_key"; $authorization = "Basic " . base64_encode($api_key . ":");
