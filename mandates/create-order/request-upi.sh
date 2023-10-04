@@ -22,4 +22,4 @@ curl POST 'https://api.juspay.in/orders' \
 -d 'mandate.rule_value=1' \
 -d 'mandate.rule_type=ON' \
 -d 'gateway_id=19' \
--d 'metadata.OVO:gateway_reference_id=upimandate'
+-d 'metadata.OVO:gateway_reference_id=mandate'

@@ -54,7 +54,7 @@
   "payer_vpa": "99999999@paytm",
   "order_id": "234823498237423894273498",
   "metadata": {
-    "OVO:gateway_reference_id": "upimandate"
+    "OVO:gateway_reference_id": "mandate"
   },
   "merchant_id": "juspay",
   "mandate": {
@@ -74,7 +74,7 @@
   },
   "id": "ordeu_9a0929803da644df8036133cf14d0206",
 
-  "gateway_reference_id": "upimandate",
+  "gateway_reference_id": "mandate",
   "gateway_id": 19,
   "date_created": "2020-08-30T09:47:46Z",
   "customer_phone": "99999999",
