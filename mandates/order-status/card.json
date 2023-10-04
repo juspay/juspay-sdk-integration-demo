@@ -29,7 +29,7 @@
     "express_checkout": false,
     "error_message": "",
     "error_code": "",
-    "currency": "INR",
+    "currency": "SGD",
     "created": "2021-11-27T12:33:12Z"
   },
   "status_id": 21,
@@ -77,10 +77,10 @@
   "gateway_id": 27,
   "effective_amount": 3,
   "date_created": "2021-11-27T12:30:49Z",
-  "customer_phone": "9876543210",
+  "customer_phone": "98743210",
   "customer_id": "cst_zqqmw0vrfbhvvj2zzdzg",
   "customer_email": "test@juspay.in",
-  "currency": "INR",
+  "currency": "SGD",
   "card": {
     "using_token": false,
     "using_saved_card": false,
@@ -91,7 +91,7 @@
     "expiry_month": "12",
     "card_type": "DEBIT",
     "card_reference": "",
-    "card_issuer": "HDFC BANK",
+    "card_issuer": "JP MORGAN",
     "card_isin": "459150",
     "card_fingerprint": "",
     "card_brand": "VISA"

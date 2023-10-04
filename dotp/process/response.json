@@ -3,7 +3,7 @@
   "order_id": ":order_id",
   "txn_id": ":txn_id",
   "status": "CHARGED",
-  "gateway": "RAZORPAY",
+  "gateway": "STRIPE",
   "created": "2017-05-05T12:12:08Z",
   "resp_code": "00",
   "resp_message": "",

@@ -1,13 +1,13 @@
 {
   "customer_email": "test@gmail.com",
-  "customer_phone": "9999999999",
+  "customer_phone": "99999999",
   "customer_id": "testcardenc1",
   "status_id": 21,
   "status": "CHARGED",
   "id": "ordeh_57dfd768bb7d4896bc042y0b90bc9ad77",
   "merchant_id": "merchant_success",
   "amount": 1,
-  "currency": "INR",
+  "currency": "SGD",
   "order_id": "JP1636474794",
   "date_created": "2021-11-09T16:19:55Z",
   "return_url": "",
@@ -78,7 +78,7 @@
       "error_message": "processed",
       "sent_to_gateway": true,
       "initiated_by": "API",
-      "refund_source": "RAZORPAY",
+      "refund_source": "STRIPE",
       "refund_type": "STANDARD",
       "metadata": {
         "speed_processed": "normal",
@@ -103,11 +103,11 @@
     "txn_amount": 1,
     "offer_deduction_amount": null,
     "gateway_id": 23,
-    "currency": "INR",
+    "currency": "SGD",
     "express_checkout": true,
     "redirect": true,
     "txn_uuid": "eulwh5QbZSBvw35eWnH",
-    "gateway": "RAZORPAY",
+    "gateway": "STRIPE",
     "error_message": "",
     "created": "2021-11-09T16:20:52Z"
   },
@@ -122,7 +122,7 @@
   },
   "gateway_id": 23,
   "metadata": {
-    "RAZORPAY:gateway_reference_id": "testmid"
+    "STRIPE:gateway_reference_id": "testmid"
   },
   "gateway_reference_id": "testmid"
 }

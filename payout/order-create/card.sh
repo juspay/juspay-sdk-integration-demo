@@ -24,7 +24,7 @@ curl --location --request POST 'https://api.juspay.in/payout/merchant/v1/orders'
     ],
     "amount": 1,
     "customerId": "ce1d3404-dc3d-4886-a46e-43a48ddd0324",
-    "customerPhone": "9999999999",
+    "customerPhone": "99999999",
     "customerEmail": "taral@gmail.com",
     "type": "FULFILL_ONLY".
     "udf1":"udf1",

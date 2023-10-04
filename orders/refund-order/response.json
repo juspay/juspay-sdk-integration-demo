@@ -22,11 +22,11 @@
     "order_id": "JP1636474794",
     "net_amount": 1,
     "gateway_id": 23,
-    "gateway": "RAZORPAY",
+    "gateway": "STRIPE",
     "express_checkout": true,
     "error_message": "",
     "error_code": "",
-    "currency": "INR",
+    "currency": "SGD",
     "created": "2021-11-09T16:20:52Z"
   },
   "status_id": 21,
@@ -39,7 +39,7 @@
       "status": "PENDING",
       "sent_to_gateway": false,
       "refund_type": "STANDARD",
-      "refund_source": "RAZORPAY",
+      "refund_source": "STRIPE",
       "ref": null,
       "initiated_by": "API",
       "id": null,
@@ -70,7 +70,7 @@
   "order_id": "JP1636474794",
   "offers": [],
   "metadata": {
-    "RAZORPAY:gateway_reference_id": "testmid"
+    "STRIPE:gateway_reference_id": "testmid"
   },
   "merchant_id": "merchant_success",
   "id": "ordeh_57dfd768bb7d4896bc0c3f30bc9ad77",
@@ -78,10 +78,10 @@
   "gateway_id": 23,
   "effective_amount": 1,
   "date_created": "2021-11-09T16:19:55Z",
-  "customer_phone": "9999999999",
+  "customer_phone": "99999999",
   "customer_id": "testcardenc1",
   "customer_email": "test@gmail.com",
-  "currency": "INR",
+  "currency": "SGD",
   "card": {
     "using_token": false,
     "using_saved_card": true,

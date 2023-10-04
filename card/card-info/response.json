@@ -2,9 +2,9 @@
   "id": "485498",
   "card_sub_type": "REGALIA",
   "brand": "VISA",
-  "bank": "HDFC Bank",
+  "bank": "JP MORGAN",
   "object": "cardbin",
   "type": "CREDIT",
-  "juspay_bank_code": "JP_HDFC",
-  "country": "INDIA"
+  "juspay_bank_code": "JP_X",
+  "country": "SINGAPORE"
 }

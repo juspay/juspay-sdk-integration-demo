@@ -40,7 +40,7 @@
   "customer_phone": null,
   "customer_id": "FUR14920977945",
   "customer_email": null,
-  "currency": "INR",
+  "currency": "SGD",
   "card": {
     "using_saved_card": true,
     "saved_to_locker": false,
@@ -50,7 +50,7 @@
     "expiry_month": "07",
     "card_type": "DEBIT",
     "card_reference": "aa301450fe38c65cd813a8c33897942b",
-    "card_issuer": "HDFC Bank",
+    "card_issuer": "JP MORGAN",
     "card_isin": "541919",
     "card_fingerprint": "6rds4re1p3678ftk333q64gs1g",
     "card_brand": "MASTERCARD"

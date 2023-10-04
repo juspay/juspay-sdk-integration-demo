@@ -13,7 +13,7 @@ curl --location --request POST 'https://api.juspay.in/payout/merchant/v1/orders/
                 "details": {
                     "name": "Taral Shah",
                     "brand": "PAYTM",
-                    "walletIdentifier" : "9999999999"
+                    "walletIdentifier" : "99999999"
                 },
                 "type": "WALLET"
             }
@@ -21,7 +21,7 @@ curl --location --request POST 'https://api.juspay.in/payout/merchant/v1/orders/
     ],
     "amount": 1,
     "customerId": "m123",
-    "customerPhone": "9999999999",
+    "customerPhone": "99999999",
     "customerEmail": "shubham@gmail.com",
     "type": "FULFILL_ONLY"
 }'

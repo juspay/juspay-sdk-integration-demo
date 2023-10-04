@@ -8,11 +8,11 @@
       "revokable_by_customer": true,
       "payment_info": {
         "payment_method_type": "NB",
-        "payment_method": "JP_HDFC",
+        "payment_method": "JP_X",
         "bank_details": {
           "ifsc": "HDFC0000053",
           "beneficiary_name": "test",
-          "bank_name": "HDFC Bank",
+          "bank_name": "JP MORGAN",
           "account_number": "50xxxxxxxx00"
         },
         "auth_type": "THREE_DS"
@@ -23,7 +23,7 @@
       "mandate_id": "nZhm*****anHzE",
       "mandate_debit_token": "tkn_1d9d0b1b****801287ec938a",
       "frequency": "ASPRESENTED",
-      "currency": "INR",
+      "currency": "SGD",
       "block_fund": false,
       "amount_rule": "VARIABLE",
       "activated_at": "2021-04-22T07:00:40Z"
@@ -33,11 +33,11 @@
       "revokable_by_customer": true,
       "payment_info": {
         "payment_method_type": "NB",
-        "payment_method": "JP_HDFC",
+        "payment_method": "JP_X",
         "bank_details": {
           "ifsc": "HDFC0000053",
           "beneficiary_name": "test",
-          "bank_name": "HDFC Bank",
+          "bank_name": "JP MORGAN",
           "account_number": "50xxxxxxxx00"
         },
         "auth_type": "THREE_DS"
@@ -48,7 +48,7 @@
       "mandate_id": "8M5th*****4h8D26E",
       "mandate_debit_token": "tkn_f62170a*****83a0663",
       "frequency": "ASPRESENTED",
-      "currency": "INR",
+      "currency": "SGD",
       "block_fund": false,
       "amount_rule": "VARIABLE",
       "activated_at": "2021-04-22T07:40:54Z"

@@ -2,10 +2,10 @@
   "id": "541919",
   "object": "cardbin",
   "brand": "MASTERCARD",
-  "bank": "HDFC Bank",
-  "country": "INDIA",
+  "bank": "JP MORGAN",
+  "country": "SINGAPORE",
   "type": "DEBIT",
   "card_sub_type": "PLATINUM",
-  "juspay_bank_code": "JP_HDFC",
+  "juspay_bank_code": "JP_X",
   "tokenize_support": true
 }

@@ -64,10 +64,10 @@
   "gateway_reference_id": null,
   "gateway_id": 16,
   "date_created": "2021-04-21T06:28:09Z",
-  "customer_phone": "9987039379",
+  "customer_phone": "99870393",
   "customer_id": "cst_1845074",
   "customer_email": "juspay@juspay.in",
-  "currency": "INR",
+  "currency": "SGD",
   "card": {
     "using_saved_card": true,
     "saved_to_locker": false,

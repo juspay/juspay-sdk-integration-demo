@@ -16,7 +16,7 @@
           "expiry_year": "2025",
           "expiry_month": "12",
           "card_type": "CREDIT",
-          "card_issuer": "HDFC Bank",
+          "card_issuer": "JP MORGAN",
           "card_isin": "545721",
           "card_brand": "MASTERCARD"
         },
@@ -26,7 +26,7 @@
       "mandate_type": "MANDATE",
       "mandate_id": "ns3UFqGKHL*****XDE67",
       "mandate_debit_token": "tkn_98042ee*****1fdfbc",
-      "currency": "INR"
+      "currency": "SGD"
     }
   ]
 }

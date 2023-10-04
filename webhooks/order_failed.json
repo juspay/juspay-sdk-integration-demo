@@ -52,7 +52,7 @@
         "rrn": null
       },
       "udf1": "",
-      "currency": "INR",
+      "currency": "SGD",
       "udf4": "",
       "customer_id": "FILTERED",
       "date_created": "1111111T07:18:57Z",
@@ -74,7 +74,7 @@
         "status": "AUTHORIZATION_FAILED",
         "net_amount": 8,
         "order_id": "sample_ord_502",
-        "currency": "INR",
+        "currency": "SGD",
         "error_code": "03",
         "gateway_id": 100,
         "surcharge_amount": null,

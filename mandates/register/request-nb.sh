@@ -3,7 +3,7 @@ curl -X POST 'https://api.juspay.in/txns' \
 -d 'order_id=ORD1622098688' \
 -d 'merchant_id=guest' \
 -d 'payment_method_type=NB' \
--d 'payment_method=JP_HDFC' \
+-d 'payment_method=JP_X' \
 -d 'bank_ifsc=HDFC0000053' \
 -d 'bank_account_number=50100013132000' \
 -d 'bank_beneficiary_name=test' \

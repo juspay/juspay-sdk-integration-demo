@@ -5,7 +5,7 @@
       "reason": [],
       "offer_code": "CARD_OFFER",
       "offer_description": {
-          "sponsored_by": "JP_HDFC",
+          "sponsored_by": "JP_X",
           "title": "50% off on HDFC Debit card",
           "description": "Get 50% off upto 1000 on all HDFC transactions",
           "tnc": "Terms and conditions apply"
@@ -18,7 +18,7 @@
       {
           "offer_rules": {
               "amount": {
-                  "currency": "INR",
+                  "currency": "SGD",
                   "min_order_amount": "500.00"
               },
               "payment_instrument": [
@@ -34,7 +34,7 @@
                           "DEBIT"
                       ],
                       "issuer": [
-                          "JP_HDFC"
+                          "JP_X"
                       ]
                   }
               ],
