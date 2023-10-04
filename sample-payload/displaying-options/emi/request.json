@@ -1,9 +1,22 @@
 {
-    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
-    "service": "in.juspay.hyperapi",
+    "service": "in.juspay.ec",
+    "requestId": "37d19a67-298a-465d-94e0-50ecdd80efa2",
     "payload": {
-        "action": "emiPlans",
-        "amount": "1.00",
-        "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213"
+        "txn_intent_id": null,
+        "signaturePayload": null,
+        "signature": null,
+        "productDetails": null,
+        "orderInfo": null,
+        "orderId": "order_sp_116",
+        "orderDetails": null,
+        "orderBasket": "[{\"id\": \"id1\",\"unitPrice\": 25000,\"quantity\": 1},{\"id\": \"id2\",\"unitPrice\": 5000,\"quantity\": 1}]",
+        "orderAmount": "10000",
+        "offerCode": null,
+        "mobileNumber": "8050009999",
+        "merchant_id": "picasso",
+        "merchantKeyId": "",
+        "customerId": "test_user_001",
+        "clientAuthToken": "tkn_cc3d23dc111103b43d7a4313316196",
+        "action": "emiPlansV2"
     }
 }
