@@ -30,12 +30,7 @@
       "nickname": "",
       "name_on_card": "test",
       "expired": false,
-      "card_fingerprint": "78g5l1fp62obpivbqsved6dsgb",
-      "cvv_less_support": true,
-      "cvv_less_supported_gateways": [
-        "STRIPE",
-        "ADYEN"
-      ]
+      "card_fingerprint": "78g5l1fp62obpivbqsved6dsgb"
     }
   ]
 }
