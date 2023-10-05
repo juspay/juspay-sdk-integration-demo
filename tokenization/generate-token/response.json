@@ -1,0 +1,15 @@
+{
+  "status": "SUCCESS",
+  "payload": {
+    "cardFingerprint": "b0e062e21d4545edb9273cca75817744",
+    "tokenStatus": "ACTIVE",
+    "cardReference": "token_0a9c4a21b99343e2a27bfd9e3ef6ce24",
+    "correlationId": "5888942cab9d4e97ac0843a7840bc9ad",
+    "par": "V0010014622074319305424002620",
+    "customerId": "abc6831",
+    "tokenExpiryMonth": "02",
+    "tokenLastFour": "1345",
+    "tokenExpiryYear": "2027",
+    "tokenIsin": "472815862"
+  }
+}
