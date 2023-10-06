@@ -1,0 +1,19 @@
+{
+  "requestId": "37158830-68f4-4147-bad1-9ec785b70ef9",
+  "service": "in.juspay.hyperpay",
+  "payload": {
+    "hidePaymentWidget": true,
+    "orderDetails": "{\"features\":{\"paymentWidget\":{\"enable\":true,\"useHideUI\":true}},\"order_id\":\"hyperorder87933\",\"first_name\":\"Test\",\"last_name\":\"Customer\",\"mobile_number\":\"9742144874\",\"email_address\":\"test@gmail.com\",\"merchant_id\":\"merchantID\",\"amount\":\"900.00\",\"customer_id\":\"9742144874\",\"timestamp\":\"1696429434155\",\"return_url\":\"https:\\/\\/sandbox.juspay.in\\/end\",\"currency\":\"INR\",\"mandate.start_date\":\"1671199395000\",\"mandate.end_date\":\"1765893795000\",\"metadata.amount_category\":\"{\\\"nonfood\\\":\\\"0\\\",\\\"food\\\":\\\"0\\\"}\",\"hidePaymentWidget\":true,\"clientId\":\"clientID\",\"merchantId\":\"merchantID\",\"environment\":\"sandbox\",\"customerId\":\"9742144874\",\"orderId\":\"hyperorder87933\",\"endUrls\":[\"https:\\/\\/sandbox.juspay.in\\/end\"],\"customerMobile\":\"9742144874\",\"customerEmail\":\"test007@gmail.com\"}",
+    "action": "paymentPage",
+    "clientId": "clientID",
+    "merchantId": "merchantID",
+    "environment": "sandbox",
+    "customerId": "9742144874",
+    "orderId": "hyperorder87933",
+    "amount": "900.00",
+    "customerMobile": "9742144874",
+    "customerEmail": "test007@gmail.com",
+    "signature": "MtvUqlT9NW8LGfpOy1m0UfVB3AD8g/zKIl4FvG3RtJS8EaIsTd1PxdOVBKkhIyhtXKvIbp7sXbCH\neZxIubM231acZAHAjLz+yaYxutx5szwIhXiiW7pMb5mJ8gQOgYgHkPxcPn6X5yPU7gPFSuP0T9kW\nlsiD/WTIjRL+/LYeYcMZYxHGNw8nRSe4w0BpcFLJwm1WN2AB428LqtCsSooyokNRvuUouYv6hmVB\nZQuxz9OYTmSdd71+TYiyrrojtzJrdAYatfkcJ6sXx2Jalv0dbUm3cNff0yf7SJA6hxV6YBKVz5PM\nbBEPYy2DvV58jnk9pqzB2vtWuGY2bqUDZRGwUg==\n",
+    "merchantKeyId": "2980"
+  }
+}

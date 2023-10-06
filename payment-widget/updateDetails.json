@@ -1,0 +1,6 @@
+{
+    "requestId": "37158830-68f4-4147-bad1-9ec785b70ef9",
+    "service": "in.juspay.hyperpay",
+    "action": "updateDetails",
+    "hidePaymentWidget": false or true
+}

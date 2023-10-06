@@ -1,0 +1,12 @@
+struct ProfileView: View {
+    var body: some View {
+        ZStack(alignment: .bottom) {
+            HStack {
+                Merchant         (Leave 103px empty/ shimmer in the bottom of this layout)
+            }
+            HStack {
+                Juspay
+            }
+        }
+    }
+}

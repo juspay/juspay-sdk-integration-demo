@@ -1,0 +1,10 @@
+{
+  "event": "paymentAttempt",
+  "payload": {
+    "payment_card_issuer": "",
+    "payment_card_type": "",
+    "payment_method_type": "",
+    "payment_method": "",
+    "txnReference": "<txn_reference>"
+  }
+}

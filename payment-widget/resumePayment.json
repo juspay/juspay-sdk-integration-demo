@@ -1,0 +1,14 @@
+
+{
+    "requestId": "d19e5af1-76c1-475e-98f9-906a69bc4512",
+    "service": "in.juspay.hyperpay",
+    "payload": {
+      "action": "resumePayment",
+      "txnReference": "<txn_reference>",
+      "status": true | false,
+      "orderDetails": "<updated-order-details-payload>",
+      "signature": "<updated-signature>"
+    }
+  }
+  
+  
