@@ -62,7 +62,6 @@
             "initiated_by": "API",
             "refund_source": "STRIPE",
             "refund_type": "STANDARD",
-            "metadata": {},
            "pg_processed_at": "2022-11-24T08:07:43Z",
            "error_code": "processed"
         }

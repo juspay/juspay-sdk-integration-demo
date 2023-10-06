@@ -22,7 +22,7 @@
       "order_id": "145678234",
       "net_amount": 1,
       "gateway_id": 19,
-      "gateway": "OVO",
+      "gateway": "BOKU",
       "express_checkout": false,
       "error_message": "",
       "error_code": "",
@@ -49,7 +49,7 @@
     "refunded": true,
     "product_id": "",
     "payment_method_type": "WALLET",
-    "payment_method": "OVO",
+    "payment_method": "PAYPAY",
     "payment_links": {
       "web": "https://api.juspay.in/merchant/pay/ordeu_f19a2a9da6034a269f03424dbda0",
       "mobile": "https://api.juspay.in/merchant/pay/ordeu_f19a2a9da6034a269f03424dbda0?mobile=true",

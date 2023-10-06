@@ -61,10 +61,10 @@
         "tokenization_status": "ACTIVE"
       },
       "card_issuer_country": "SINGAPORE",
-      "juspay_bank_code": "JP_X",
+      "juspay_bank_code": "JP_XXXX",
       "extended_card_type": "CREDIT"
     },
-    "payment_method": "MASTERCARD",
+    "payment_method": "VISA",
     "refunded": false,
     "amount_refunded": 0,
     "effective_amount": 15122,
@@ -92,7 +92,7 @@
       "express_checkout": false,
       "redirect": true,
       "txn_uuid": "moztmXXXryxxxxxZXwBEV",
-      "gateway": "ADYEN",
+      "gateway": "STRIPE",
       "error_message": "",
       "created": "2023-03-07T04:36:42Z",
       "txn_flow_type": "EMI"
@@ -107,9 +107,9 @@
       "txn_id": "TEST-XXXX1234-1"
     },
     "gateway_id": 12,
-    "emi_bank": "HDFC",
+    "emi_bank": "JPMORGAN",
     "emi_tenure": 3,
-    "gateway_reference_id": "HDFC",
+    "gateway_reference_id": "TEST",
     "offers": [],
     "maximum_eligible_refund_amount": 15122
   }
