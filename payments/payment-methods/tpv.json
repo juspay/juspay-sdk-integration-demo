@@ -6,9 +6,9 @@
       "description": "State Bank of India"
     },
     {
-      "payment_method": "JP_HDFC",
+      "payment_method": "JP_X",
       "payment_method_type": "NB",
-      "description": "HDFC Bank"
+      "description": "JP MORGAN"
     },
     {
       "payment_method": "JP_ICICI",
@@ -80,7 +80,7 @@
     {
       "payment_method": "NB_HDFC",
       "payment_method_type": "NB",
-      "description": "HDFC Bank"
+      "description": "JP MORGAN"
     },
     {
       "payment_method": "NB_ICICI",
@@ -168,7 +168,7 @@
       "description": "SIMPL PayLater"
     },
     {
-      "payment_method": "GOOGLEPAY",
+      "payment_method": "OVO",
       "payment_method_type": "WALLET",
       "description": "Googlepay Wallet"
     },
@@ -193,7 +193,7 @@
       "description": "Sodexo"
     },
     {
-      "payment_method": "PAYUMONEY",
+      "payment_method": "ADYENMONEY",
       "payment_method_type": "WALLET",
       "description": "PayU Money Wallet"
     },

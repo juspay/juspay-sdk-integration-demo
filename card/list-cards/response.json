@@ -10,7 +10,7 @@
       "card_exp_year": "2025",
       "card_exp_month": "12",
       "card_type": "CREDIT",
-      "card_issuer": "HDFC BANK",
+      "card_issuer": "JP MORGAN",
       "card_brand": "MASTERCARD",
       "nickname": "",
       "name_on_card": "test",
@@ -33,8 +33,8 @@
       "card_fingerprint": "78g5l1fp62obpivbqsved6dsgb",
       "cvv_less_support": true,
       "cvv_less_supported_gateways": [
-        "RAZORPAY",
-        "PAYU"
+        "STRIPE",
+        "ADYEN"
       ]
     }
   ]

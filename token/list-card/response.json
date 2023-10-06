@@ -17,7 +17,7 @@
           "card_fingerprint": "6uvve3h71mpgrr88848hr4vsat",
           "juspay_bank_code": "JP_SBI",
           "card_sub_type": "NA",
-          "card_issuer_country": "INDIA",
+          "card_issuer_country": "SINGAPORE",
           "tokenize_support": false,
           "provider_category": "CONTAINER",
           "provider": "JUSPAY",

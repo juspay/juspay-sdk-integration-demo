@@ -20,9 +20,9 @@
           "action": "paymentPage",
           "customerId": "testing-customer-one",
           "returnUrl": "https://shop.merchant.com",
-          "currency": "INR",
+          "currency": "SGD",
           "billingAddressFirstName": "John",
-          "customerPhone": "9876543210",
+          "customerPhone": "99999999",
           "customerEmail": "test@mail.com",
           "orderId": "testing-order-one",
           "description": "Complete your payment"

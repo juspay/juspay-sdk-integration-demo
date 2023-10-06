@@ -1,13 +1,13 @@
 {
     "customer_email": "test@gmail.com",
-    "customer_phone": "9876543210",
+    "customer_phone": "98765432",
     "customer_id": "cst_wiqou3224",
     "status_id": 21,
     "status": "CHARGED",
     "id": "ordeh_ce50b4861d2b4b3e9bf3r3r2rid3”,
     "merchant_id": "merchantId”,
     "amount": 2,
-    "currency": "INR",
+    "currency": "SGD",
     "order_id": "JPAYNEW034",
     "date_created": "2021-09-10T09:06:53Z",
     "return_url": "https://api.juspay.in",
@@ -50,11 +50,11 @@
         "txn_amount": 2,
         "offer_deduction_amount": null,
         "gateway_id": 23,
-        "currency": "INR",
+        "currency": "SGD",
         "express_checkout": false,
         "redirect": false,
         "txn_uuid": "eulk1HvJ29o9dJ344x4f",
-        "gateway": "RAZORPAY",
+        "gateway": "STRIPE",
         "error_message": "",
         "created": "2021-09-10T09:07:10Z"
     },
@@ -68,9 +68,9 @@
         "txn_id": "merchantId-JPAYNEW034-1"
     },
     "gateway_id": 23,
-    "payer_vpa": "9876543210@ybl",
+    "payer_vpa": "99999999@ybl",
     "upi": {
-        "payer_vpa": "9876543210@ybl",
+        "payer_vpa": "99999999@ybl",
         "txn_flow_type": "COLLECT"
     },
     "gateway_reference_id": null,

@@ -11,8 +11,8 @@
       "status": "DOWN",
       "payment_method": "NB_HDFC",
       "payment_method_type": "NB",
-      "juspay_bank_code": "JP_HDFC",
-      "description": "HDFC Bank"
+      "juspay_bank_code": "JP_X",
+      "description": "JP MORGAN"
     },
     {
       "status": "FLUCTUATE",
@@ -123,7 +123,7 @@
     {
       "payment_method": "NB_HDFC",
       "payment_method_type": "NB",
-      "description": "HDFC Bank"
+      "description": "JP MORGAN"
     },
     {
       "payment_method": "NB_ICICI",
@@ -219,7 +219,7 @@
     },
     {
       "wallet_direct_debit_support": false,
-      "payment_method": "GOOGLEPAY",
+      "payment_method": "OVO",
       "payment_method_type": "WALLET",
       "description": "Googlepay Wallet"
     },
@@ -247,7 +247,7 @@
     },
     {
       "wallet_direct_debit_support": false,
-      "payment_method": "PAYUMONEY",
+      "payment_method": "ADYENMONEY",
       "payment_method_type": "WALLET",
       "description": "PayU Money Wallet"
     },

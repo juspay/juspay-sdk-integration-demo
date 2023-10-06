@@ -15,7 +15,7 @@ $request->setBody('{\n
     "order_id": "testing-order-one",\n    
     "amount": "1.0",\n    "customer_id": "testing-customer-one",\n    
     "customer_email": "test@mail.com",\n    
-    "customer_phone": "9876543210",\n    
+    "customer_phone": "98765432",\n    
     "payment_page_client_id": "your_client_id",\n    
     "action": "paymentPage",\n    
     "return_url": "https://shop.merchant.com",\n    

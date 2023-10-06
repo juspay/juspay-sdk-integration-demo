@@ -1,10 +1,10 @@
- def priorities = ['HDFC', 'ICICI', 'PAYU'] 
+ def priorities = ['HDFC', 'ICICI', 'ADYEN'] 
   // above is the default priority
 
   if (order.udf1 == 'web') {
-    priorities = ['HDFC','PAYU','ICICI']
+    priorities = ['HDFC','ADYEN','ICICI']
   }
   else if (order.udf1 == 'mobile' && order.udf2 == 'android')
-    priorities = ['ICICI','HDFC','PAYU']
+    priorities = ['ICICI','HDFC','ADYEN']
   }
   setGatewayPriority(priorities)

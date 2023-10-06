@@ -16,6 +16,6 @@ curl --location --request POST 'https://api.juspay.in/payout/merchant/v1/benedet
     "command" : "validate",
     "customerId" : "ravi1",
     "email": "dummy@gmail.com",
-    "phone": "9999999999"
+    "phone": "99999999"
 
 }

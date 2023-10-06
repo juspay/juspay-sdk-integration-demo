@@ -3,7 +3,7 @@
   "amount": "1.0",
   "customer_id": "testing-customer-one",
   "customer_email": "test@mail.com",
-  "customer_phone": "9876543210",
+  "customer_phone": "98765432",
   "payment_page_client_id": "yourClientId",
   "action": "paymentPage",
   "return_url": "https://shop.merchant.com",

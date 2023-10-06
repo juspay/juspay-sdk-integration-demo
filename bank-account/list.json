@@ -6,12 +6,12 @@
       "id": "bank_woeriusdfk",
       "customer_id": "cst_weoriudfjks",
       "date_created": "2019-12-24T14:40:23Z",
-      "bank_name": "HDFC Bank",
+      "bank_name": "JP MORGAN",
       "ifsc": "HDFC092343",
       "account_number": "40002323422",
       "beneficiary_name": "test",
       "validation_amount": 1,
-      "currency": "INR",
+      "currency": "SGD",
       "validation_status": "PENDING",
       "last_validated": null,
       "metadata": {
@@ -29,7 +29,7 @@
       "account_number": "40002323422",
       "beneficiary_name": "test",
       "validation_amount": 1,
-      "currency": "INR",
+      "currency": "SGD",
       "validation_status": "ACTIVE",
       "last_validated ": "2019-12-21T14:50:23Z",
       "metadata": {

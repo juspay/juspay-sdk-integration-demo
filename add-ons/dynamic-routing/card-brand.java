@@ -1,10 +1,10 @@
-  def priorities = ['HDFC', 'ICICI', 'PAYU'] 
+  def priorities = ['HDFC', 'ICICI', 'ADYEN'] 
   // default priorities
   if (payment.cardBrand == 'MAESTRO') { 
     // if Maestro card, use ICICI as primary
-    priorities = ['ICICI', 'PAYU', 'HDFC']
+    priorities = ['ICICI', 'ADYEN', 'HDFC']
   }
   else if (payment.cardBrand == 'AMEX')
-    priorities = ['PAYU', 'ICICI', 'HDFC']
+    priorities = ['ADYEN', 'ICICI', 'HDFC']
   }
   setGatewayPriority(priorities)

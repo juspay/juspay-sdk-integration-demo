@@ -3,7 +3,7 @@ curl POST \ https://api.juspay.in/txns \
 -H 'Content-Type: application/x-www-form-urlencoded'\
  -d "order_id=152664118690577-910" \
  -d "amount=1.00" \
- -d "currency=INR" \
+ -d "currency=SGD" \
  -d "customer_id=test_juspay" \
  -d "customer_email=test@gmail.com" \
  -d "customer_phone=987654321" \

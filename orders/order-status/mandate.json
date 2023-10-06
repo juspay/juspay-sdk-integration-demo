@@ -25,11 +25,11 @@
     "order_id": "234823498237423894273498",
     "net_amount": 1,
     "gateway_id": 19,
-    "gateway": "PAYTM_V2",
+    "gateway": "OVO",
     "express_checkout": false,
     "error_message": "",
     "error_code": "",
-    "currency": "INR",
+    "currency": "SGD",
     "created": "2020-08-30T09:53:17Z"
   },
   "status_id": 21,
@@ -51,10 +51,10 @@
     "created": "2020-08-30T09:54:10Z",
     "auth_id_code": ""
   },
-  "payer_vpa": "9999999999@paytm",
+  "payer_vpa": "99999999@paytm",
   "order_id": "234823498237423894273498",
   "metadata": {
-    "PAYTM_V2:gateway_reference_id": "upimandate"
+    "OVO:gateway_reference_id": "mandate"
   },
   "merchant_id": "juspay",
   "mandate": {
@@ -74,13 +74,13 @@
   },
   "id": "ordeu_9a0929803da644df8036133cf14d0206",
 
-  "gateway_reference_id": "upimandate",
+  "gateway_reference_id": "mandate",
   "gateway_id": 19,
   "date_created": "2020-08-30T09:47:46Z",
-  "customer_phone": "9999999999",
+  "customer_phone": "99999999",
   "customer_id": "cst_lz7zmpemoo5okv",
   "customer_email": "customer@gmail.com",
-  "currency": "INR",
+  "currency": "SGD",
   "bank_error_message": "",
   "bank_error_code": "",
   "auth_type": "",

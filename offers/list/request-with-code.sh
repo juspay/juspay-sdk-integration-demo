@@ -5,7 +5,7 @@ curl --location --request POST 'https://api.juspay.in/v1/offers/list' \
     "order": {
         "order_id": "SDEA5645",
         "amount": "1000",
-        "currency": "INR"
+        "currency": "SGD"
     },
     "payment_method_info": [
         {
@@ -51,7 +51,7 @@ curl --location --request POST 'https://api.juspay.in/v1/offers/list' \
     "customer": {
         "id": "customer123",
         "email": "customer5453@gmail.com",
-        "mobile": "9999999999"
+        "mobile": "99999999"
     },
     "offer_code": "CARD_OFFER"
 }'

@@ -47,7 +47,7 @@
           },
           "offer_rules": {
               "amount": {
-                  "currency": "INR",
+                  "currency": "SGD",
                   "min_order_amount": "500.00"
               },
               "payment_instrument": [
@@ -61,7 +61,7 @@
                       "app": [],
                       "type": [],
                       "issuer": [
-                          "JP_HDFC"
+                          "JP_X"
                       ]
                   }
               ],
@@ -99,8 +99,8 @@
           "reason": [],
           "offer_code": "Card",
           "offer_description": {
-              "sponsored_by": "JP_HDFC",
-              "title": "50% off on HDFC Debit card",
+              "sponsored_by": "JP_X",
+              "title": "50% off on X Debit card",
               "description": "",
               "tnc": ""
           },
@@ -111,7 +111,7 @@
           },
           "offer_rules": {
               "amount": {
-                  "currency": "INR",
+                  "currency": "SGD",
                   "min_order_amount": "500.00"
               },
               "payment_instrument": [
@@ -127,7 +127,7 @@
                           "DEBIT"
                       ],
                       "issuer": [
-                          "JP_HDFC"
+                          "JP_X"
                       ]
                   }
               ],
