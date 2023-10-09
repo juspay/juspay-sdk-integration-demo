@@ -1,0 +1,20 @@
+<script>
+      function startPayments() {
+        //Get the payload from session API of Juspay through your api//
+        fetch("https://api.<merchantwebsite>.com/makePayment", requestOptions)
+          .then((response) => response.json())
+          .then((result) => {
+            //block:start:open-payment-page
+            //extract Payload from result
+            var processPayload = result['sdk_payload'];
+            //Call hyperServices.Process with the Payload
+            if (window.hyperServicesObject.isInitialised()) {
+              window.hyperServicesObject.process(processPayload);
+            } else {
+              //Intialise hyperInstance and call process again
+            }
+            //block:end:open-payment-page
+          })
+          .catch((error) => console.log("error", error));
+      }
+</script>
