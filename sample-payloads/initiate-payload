@@ -10,8 +10,8 @@
                   "hyperSDKDiv": "HyperSDKDiv",
                   "integrationType": "iframe",
                   "environment": "production", // For sandbox the value should be sandbox instead of production
-                  "merchantId": "melorrapay",
-                  "clientId": "melorrapay"
+                  "merchantId": "your_merchant_id",
+                  "clientId": "your_client_id"
 } }
         window.hyperServicesObject.initiate(initiatePayload)
       }
