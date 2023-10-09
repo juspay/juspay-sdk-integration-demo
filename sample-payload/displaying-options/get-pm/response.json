@@ -14,14 +14,9 @@
                 "description": "Master Card"
             },
             {
-                "paymentMethodType": "NB",
-                "paymentMethod": "NB_HDFC",
-                "description": "HDFC"
-            },
-            {
                 "paymentMethodType": "WALLET",
-                "paymentMethod": "PAYTM",
-                "description": "Paytm"
+                "paymentMethod": "OVO",
+                "description": "Ovo"
             }
         ]
     },

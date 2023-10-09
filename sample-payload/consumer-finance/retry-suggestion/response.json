@@ -9,10 +9,10 @@
                 "priority": 1,
                 "status": "SUCCESS",
                 "paymentMethodType": "consumerFinance",
-                "paymentMethod": "ICICI_PAYLATER",
+                "paymentMethod": "GRAB_PAYLATER",
                 "isEligible": true,
                 "eligibilityStrategy": "USER",
-                "description": "ICICI PayLater",
+                "description": "Grab Paylater",
                 "balance": 100
             },
             {

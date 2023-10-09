@@ -14,9 +14,9 @@
                 "id": "bank_b3iKnjFunHxevWJY",
                 "dateCreated": "2020-04-24T12:29:23Z",
                 "customerId": "cst_inekmigs7vvqg9qu",
-                "currency": "INR",
+                "currency": "SGD",
                 "beneficiaryName": "testtp",
-                "bankName": "HDFC Bank",
+                "bankName": "JP Morgan",
                 "accountNumber": "50100219614602"
             },
             {
@@ -28,9 +28,9 @@
                 "id": "bank_sgdjtWu3Fnge7C58",
                 "dateCreated": "2020-04-24T12:09:25Z",
                 "customerId": "cst_inekmigs7vvqg9qu",
-                "currency": "INR",
+                "currency": "SGD",
                 "beneficiaryName": "testen",
-                "bankName": "HDFC Bank",
+                "bankName": "JP Morgan",
                 "accountNumber": "50100219614602"
             }
         ]

@@ -3,9 +3,9 @@
   "card_sub_type": "PLATINUM",
   "mandate_support": true,
   "brand": "MASTERCARD",
-  "bank": "HDFC Bank",
+  "bank": "JP Morgan",
   "object": "cardbin",
   "type": "DEBIT",
-  "juspay_bank_code": "JP_HDFC",
+  "juspay_bank_code": "JP_X",
   "country": "INDIA"
 }

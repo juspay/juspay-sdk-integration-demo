@@ -15,7 +15,7 @@
         "cardSecurityCode": "123",
         "saveToLocker": true,
         "nameOnCard": "Test Customer",
-        "emiBank": "HDFC",
+        "emiBank": "BANK1",
         "isEmi": true,
         "emiTenure": 3
     }

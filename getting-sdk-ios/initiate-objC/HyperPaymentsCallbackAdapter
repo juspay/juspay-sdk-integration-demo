@@ -20,7 +20,7 @@
             if (!error) {
                 // txn success, status should be "charged"
                 // process data -- show pi and pig in UI maybe also?
-                // example -- pi: "PAYTM", pig: "WALLET"
+                // example -- pi: "OVO", pig: "WALLET"
                 // call orderStatus once to verify (false positives)
             } else {
 

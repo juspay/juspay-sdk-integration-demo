@@ -4,7 +4,7 @@
     "payload": {
         "action": "walletTxn",
         "orderId": "hyperorder45314",
-        "paymentMethod": "PAYTM",
+        "paymentMethod": "OVO",
         "sdkPresent": "ANDROID_PAYTM",
         "endUrls": [
             "https:\\/\\/shop\\.merchant\\.com\\/payments\\/handleResponse.*"

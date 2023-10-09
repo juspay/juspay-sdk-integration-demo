@@ -21,7 +21,7 @@
       "payment_method_type": "CARD"
     },
     {
-      "description": "HDFC Bank",
+      "description": "JP Morgan",
       "payment_method": "NB_HDFC",
       "payment_method_type": "NB"
     },
@@ -49,13 +49,13 @@
     },
     {
       "payment_method_type": "CARD",
-      "payment_method": "JP_HDFC",
-      "description": "HDFC Bank"
+      "payment_method": "JP_X",
+      "description": "JP Morgan"
     },
     {
       "payment_method_type": "NB",
-      "payment_method": "JP_HDFC",
-      "description": "HDFC Bank"
+      "payment_method": "JP_X",
+      "description": "JP Morgan"
     },
     {
       "payment_method_type": "CARD",

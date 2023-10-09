@@ -6,7 +6,7 @@
         "orderId": "hyperorder45314",
         "paymentMethod": "PAYPAL",
         "shouldLink": true,
-        "sdkPresent": "ANDROID_GOOGLEPAY",
+        "sdkPresent": " ",
         "endUrls": [
             "https:\\/\\/shop\\.merchant\\.com\\/payments\\/handleResponse.*"
         ],

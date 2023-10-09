@@ -8,8 +8,8 @@
     "outage": [
       {
         "description": "Mastercard",
-        "issuerName": "HDFC Bank",
-        "juspayBankCode": "JP_HDFC",
+        "issuerName": "JP Morgan",
+        "juspayBankCode": "JP_X",
         "paymentMethod": "MASTERCARD",
         "paymentMethodType": "CARD",
         "status": "DOWN"
@@ -72,8 +72,8 @@
       },
       {
         "description": "HDFC Flexipay",
-        "issuerName": "HDFC Bank",
-        "juspayBankCode": "JP_HDFC",
+        "issuerName": "JP Morgan",
+        "juspayBankCode": "JP_X",
         "paymentMethod": "HDFC_FLEXIPAY",
         "paymentMethodType": "CONSUMER_FINANCE",
         "status": "FLUCTUATE"
@@ -95,10 +95,10 @@
         "status": "DOWN"
       },
       {
-        "description": "Paytm",
-        "issuerName": "Paytm",
+        "description": "Ovo",
+        "issuerName": "Ovo",
         "juspayBankCode": "JP_PAYTM",
-        "paymentMethod": "PAYTM",
+        "paymentMethod": "OVO",
         "paymentMethodType": "WALLET",
         "status": "DOWN"
       }

@@ -4,7 +4,7 @@
     "payload": {
         "action": "consumerFinanceTxn",
         "orderId": "hyperorder45314",
-        "paymentMethod": "ICICI_PAYLATER",
+        "paymentMethod": "GRAB_PAYLATER",
         "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213"
     }
 }

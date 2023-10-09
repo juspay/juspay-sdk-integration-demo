@@ -17,7 +17,7 @@
                 }
             },
             {
-                "wallet": "AMAZONPAY",
+                "wallet": "PAYPAY",
                 "token": "",
                 "linked": false,
                 "lastRefreshed": "",

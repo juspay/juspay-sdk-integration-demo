@@ -5,7 +5,7 @@
         "action": "refreshWalletBalances",
         "list": [
             {
-                "wallet": "PAYPAL",
+                "wallet": "OVO",
                 "token": "tkn_0f7a01fbbaa9476fb37cf1e2e33b1cfc",
                 "linked": true,
                 "lastRefreshed": "",

@@ -3,7 +3,7 @@
     "service": "in.juspay.hyperapi",
     "payload": {
         "action": "isDeviceReady",
-        "sdkPresent": "ANDROID_GOOGLEPAY",
+        "sdkPresent": " ",
         "checkFor": [
             "UPI",
             "CARD"

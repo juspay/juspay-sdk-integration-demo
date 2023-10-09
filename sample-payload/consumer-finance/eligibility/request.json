@@ -10,8 +10,8 @@
             "consumerFinance": [
                 {
                     "checkType": [
-                        "SIMPL",
-                        "LAZYPAY"
+                        "GRAB Paylater",
+                        "ATOME"
                     ],
                     "customerId": "1234567890"
                 }

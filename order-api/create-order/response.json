@@ -30,7 +30,7 @@
   "customer_phone": "9999999999",
   "customer_id": "1235677",
   "customer_email": "test@gmail.com",
-  "currency": "INR",
+  "currency": "SGD",
   "amount_refunded": 0,
   "amount": 1
 }

@@ -15,7 +15,7 @@
                 "environment": "production",
                 "merchantLoader": "false",
                 "isWrapper": "false",
-                "lastVisitedUrl": "https://test.payu.in/0f573e02a5c1ca13e6b0594af4252a1ca42e1602f8da237d0f9a15dc2802bcad/CommonPgResponseHandler.php"
+                "lastVisitedUrl": "https://test.pg.in/0f573e02a5c1ca13e6b0594af4252a1ca42e1602f8da237d0f9a15dc2802bcad/CommonPgResponseHandler.php"
             }
         }
     },

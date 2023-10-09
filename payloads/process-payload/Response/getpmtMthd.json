@@ -16,12 +16,12 @@
           {
               "paymentMethodType": "NB",
               "paymentMethod": "NB_HDFC",
-              "description": "HDFC"
+              "description": "BANK1"
           },
           {
               "paymentMethodType": "WALLET",
-              "paymentMethod": "PAYTM",
-              "description": "Paytm"
+              "paymentMethod": "OVO",
+              "description": "Ovo"
           }
       ]
   },

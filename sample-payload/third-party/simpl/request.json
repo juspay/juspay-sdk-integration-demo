@@ -4,8 +4,8 @@
     "payload": {
         "action": "walletTxn",
         "orderId": "hyperorder45314",
-        "paymentMethod": "SIMPL",
-        "sdkPresent": "ANDROID_SIMPL",
+        "paymentMethod": "GRAB Paylater",
+        "sdkPresent": " ",
         "endUrls": [
             "https:\\/\\/shop\\.merchant\\.com\\/payments\\/handleResponse.*"
         ],

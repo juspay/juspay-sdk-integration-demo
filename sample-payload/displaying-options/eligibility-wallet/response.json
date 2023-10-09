@@ -7,21 +7,21 @@
             {
                 "status": "SUCCESS",
                 "paymentMethodType": "WALLET",
-                "paymentMethod": "SIMPL",
+                "paymentMethod": "GRAB Paylater",
                 "isEligible": true,
                 "gatewayErrorMessage": "pending_dues",
                 "gatewayErrorCode": "pending_dues",
                 "eligibilityStrategy": "USER",
-                "description": "SIMPL PayLater",
+                "description": "GRAB PayLater",
                 "balance": 0
             },
             {
                 "status": "SUCCESS",
                 "paymentMethodType": "WALLET",
-                "paymentMethod": "LAZYPAY",
+                "paymentMethod": "ATOME",
                 "isEligible": true,
                 "eligibilityStrategy": "TRANSACTION",
-                "description": "Lazy Pay Wallet"
+                "description": "Atome"
             }
         ]
     },

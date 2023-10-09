@@ -15,6 +15,6 @@
         "saveToLocker": true,
         "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213",
         "tokenize": true,
-        "cardNickName": "User - HDFC"
+        "cardNickName": "User - BANK1"
     }
 }

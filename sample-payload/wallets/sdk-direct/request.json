@@ -5,7 +5,7 @@
         "action": "walletTxn",
         "orderId": "hyperorder45314",
         "paymentMethod": "PAYPAL",
-        "sdkPresent": "ANDROID_GOOGLEPAY",
+        "sdkPresent": " ",
         "directWalletToken": "tkn_nvtQf8DP1A2oGoZu",
         "endUrls": [
             "https:\\/\\/shop\\.merchant\\.com\\/payments\\/handleResponse.*"

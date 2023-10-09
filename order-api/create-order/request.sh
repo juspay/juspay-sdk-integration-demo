@@ -5,7 +5,7 @@ curl --location --request POST 'https://api.juspay.in/orders' \
 --header 'Authorization: Basic QTA0QT*******ODg1Og==' \
 --data-urlencode 'order_id=14183944763' \
 --data-urlencode 'amount=100.00' \
---data-urlencode 'currency=INR' \
+--data-urlencode 'currency=SGD' \
 --data-urlencode 'customer_id=guest_user_101' \
 --data-urlencode 'customer_email=customer@gmail.com' \
 --data-urlencode 'customer_phone=9988665522' \
@@ -34,8 +34,8 @@ curl --location --request POST 'https://api.juspay.in/orders' \
 --data-urlencode 'shipping_address_phone=9962881912' \
 --data-urlencode 'shipping_address_country_code_iso=IND' \
 --data-urlencode 'shipping_address_country=India' \
---data-urlencode 'metadata.PAYTM:PROMO_CAMP_ID=xyz' \
---data-urlencode 'metadata.PAYTM:CUST_ID=1234' \
+--data-urlencode 'metadata.OVO:PROMO_CAMP_ID=xyz' \
+--data-urlencode 'metadata.OVO:CUST_ID=1234' \
 --data-urlencode 'metadata.PAYU:offer_key=1234' \
 --data-urlencode 'metadata.PAYU:gateway_reference_id=bus' \
 --data-urlencode 'options.get_client_auth_token=true' \
