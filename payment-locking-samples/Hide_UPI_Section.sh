@@ -18,7 +18,7 @@ curl --location --request POST 'https://api.juspay.in/session' \
        "allowDefaultOptions": true,
        "options": [
            {
-               "paymentMethodType": "UPI",
+               "paymentMethodType": "WALLET",
                "enable": false
            }
        ]
