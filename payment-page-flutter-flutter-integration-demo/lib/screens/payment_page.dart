@@ -26,6 +26,8 @@ class PaymentPage extends StatefulWidget {
   _PaymentPageState createState() => _PaymentPageState(amount);
 }
 
+// Note: Session API should only be called from merchant's server. Don't call it from client app
+// -----------------------------------------------------------------
 Future<Map<String, dynamic>> makeApiCall(amount) async {
   var url = Uri.parse('https://api.juspay.in/session');
 
@@ -62,6 +64,7 @@ Future<Map<String, dynamic>> makeApiCall(amount) async {
     throw Exception('API call failed with status code ${response.statusCode}');
   }
 }
+// -----------------------------------------------------------------
 
 class _PaymentPageState extends State<PaymentPage> {
   var showLoader = true;
