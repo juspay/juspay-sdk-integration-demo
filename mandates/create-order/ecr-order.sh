@@ -1,19 +1,20 @@
-curl --location --request POST 'http://localhost:8082/ecr/orders' \
---header 'version: 2019-06-14' \
---header 'Content-Type: application/x-www-form-urlencoded' \
---header 'Authorization: Basic N0JBRDA4OUExRjYwNEYwREEyNDlCNjY3QTVCMUQzM0Q6' \
---data-urlencode 'order_id=YESBIZ_TPV_0034' \
---data-urlencode 'amount=1' \
---data-urlencode 'currency=INR' \
---data-urlencode 'return_url=https://google.com' \
---data-urlencode 'customer_id=cst_3uh6gumy3esndhdr' \
---data-urlencode 'metadata.YES_BIZ:gateway_reference_id=yes_biz_sandbox' \
---data-urlencode 'options.get_client_auth_token=true' \
---data-urlencode 'order_type=TPV_PAYMENT' \
---data-urlencode 'metadata.bank_account_details=[{"bank_account_number":"83748239234872","bank_ifsc":"AABC0876543", "juspay_bank_code" : "500007", "bank_beneficiary_name" : "Abc"}]' \
---data-urlencode 'basket=[{"id":"491838009","description":"Test Product","quantity":1,"unitPrice":25123.25,"category":"Electronics","sku":"12345","productUrl":"https://www.google.com","sellerType":"VENDOR","customParams":{"name1":"value1","name2":"value2"}}]' \
---data-urlencode 'gateway_id=514' \
---data-urlencode 'options.create_mandate=REQUIRED' \
---data-urlencode 'mandate.start_date=1684216880' \
---data-urlencode 'mandate.end_date=1691827270' \
---data-urlencode 'mandate_max_amount=3'
+curl --location --request POST 'https://sandbox.juspay.in/session' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Basic MkNFQkU4QjYyQkQ0MDkwOEMzNzNGQUNBRDRGNjA1Og==' \
+--header 'version: 2023-08-01' \
+--data-raw '{
+  "order_id": "order1697020098a",
+  "amount": "1",
+  "customer_id": "cth_qYcqE4hVnwL2Esnk",
+  "customer_email": "juspay.jus@gmail.com",
+  "customer_phone": "6369288490",
+  "payment_page_client_id": "fortum",
+  "first_name":"Sim",
+  "action": "paymentPage",
+  "return_url": "https://juspay.in/",
+  "gateway_id": "12",
+  "order_type" : "TPV_PAYMENT",
+  "options.create_mandate" : "REQUIRED",
+  "metadata.bank_account_details" : "[{\"bank_account_number\":\"83748239234872\",\"bank_ifsc\":\"AABC0876543\", \"juspay_bank_code\" : \"500007\", \"bank_beneficiary_name\" : \"Abc\"}]",
+  "mandate.max_amount" : "3"
+}
