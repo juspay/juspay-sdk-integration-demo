@@ -81,6 +81,9 @@ class CheckoutViewController: UIViewController {
         let postData = parameters.data(using: .utf8)
 
         var request = URLRequest(url: URL(string: "https://api.juspay.in/session")!, timeoutInterval: Double.infinity)
+        
+        // API Key Should never be used from client side, it should always be stored securely on server.
+        // And all the API calls requiring API key should always be done from server
         request.addValue("Basic \(Data("<YOUR_API_KEY>".utf8).base64EncodedString())", forHTTPHeaderField: "Authorization")
         request.addValue("<MERCHANT_ID>", forHTTPHeaderField: "x-merchantid")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
