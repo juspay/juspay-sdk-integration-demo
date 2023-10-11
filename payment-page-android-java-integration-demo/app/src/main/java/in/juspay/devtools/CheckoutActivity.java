@@ -83,6 +83,8 @@ public class CheckoutActivity extends AppCompatActivity {
     // -----------------------------------------------------------------
     private void run() throws IOException {
         JSONObject payload = new JSONObject();
+        // API Key Should never be used from client side, it should always be stored securely on server.
+        // And all the API calls requiring API key should always be done from server
         String apiKey = "<YOUR_API_KEY>";  //Put your API Key Here
         String clientId = "<CLIENT_ID>";  // Put your clientID here
         String merchantId = "<MERCHANT_ID>";   // Put your merchant ID here
