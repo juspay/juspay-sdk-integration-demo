@@ -56,7 +56,8 @@ class CheckoutViewController: UIViewController {
 
     
     
-    // This create order call should be made on the merchants server
+    // Note: Session API should only be called from merchant's server. Don't call it from client app
+    // -----------------------------------------------------------------
     func createOrder(completion: @escaping ([String: Any]?) -> Void) {
         let semaphore = DispatchSemaphore(value: 0)
         let orderId = String(Int.random(in: 10000000...99999999))
@@ -112,6 +113,8 @@ class CheckoutViewController: UIViewController {
         task.resume()
         semaphore.wait()
     }
+
+    // -----------------------------------------------------------------
     
 
     /*
