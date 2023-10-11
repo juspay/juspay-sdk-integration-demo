@@ -222,13 +222,14 @@ const getRandomNumber = () => {
   return Math.floor(Math.random() * 90000000) + 10000000
 };
 
-
-
+// block:start:fetch-process-payload
+// Note: Session API should only be called from merchant's server. Don't call it from client app
+// -----------------------------------------------------------------
 const makePaymentRequest = (total) => {
-
-  // block:start:fetch-process-payload
-  // This API call should be made in merchant server 
   var myHeaders = new Headers();
+
+  // API Key Should never be used from client side, it should always be stored securely on server.
+  // And all the API calls requiring API key should always be done from server
   myHeaders.append(
     "Authorization",
     `Basic ${encode("<YOUR_API_KEY>")}`
@@ -265,8 +266,8 @@ const makePaymentRequest = (total) => {
       // block:end:process-sdk
     })
     .catch((error) => console.log("error", error));
-   // block:end:fetch-process-payload
 };
+// block:end:fetch-process-payload
 
 export default createStackNavigator(
   {
