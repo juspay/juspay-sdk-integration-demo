@@ -73,10 +73,15 @@ class CheckoutActivity : AppCompatActivity() {
 
     //block:start:fetch-process-payload
 
-    //Note: Session API must be called from merchant's server
+    
+    // Note: Session API should only be called from merchant's server. Don't call it from client app
+    // -----------------------------------------------------------------
     @Throws(IOException::class)
     fun run() {
         val payload = JSONObject()
+        
+        // API Key Should never be used from client side, it should always be stored securely on server.
+        // And all the API calls requiring API key should always be done from server
         val apiKey = "<API_KEY>"     //Put your API Key Here
         val clientId = "<CLIENT_ID>"    //Put your Client ID here
         val merchantId = "<MERCHANT_ID>"     // Put your Merchant ID here
@@ -127,6 +132,7 @@ class CheckoutActivity : AppCompatActivity() {
             }
         })
     }
+    // -----------------------------------------------------------------
     //block:end:fetch-process-payload
 
     //block:start:create-hyper-callback
