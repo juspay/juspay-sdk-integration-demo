@@ -1,6 +1,6 @@
 curl --location 'https://api.juspay.in/v1/offers/list?emi=true' \
+--header 'Authorization: <API KEY>' \
 --header 'Content-Type: application/json' \
---header 'Authorization: Basic NThBQ0MwRDYxMzI0M0JCQjhFMTk1RUMwMDE5ODU4Og==' \
 --data-raw '{
     "order": {
         "order_id": "SDEA5645",
