@@ -1,0 +1,24 @@
+{
+  "order_id": "juspayKTestTxns767",
+  "frequency": "ASPRESENTED",
+  "end_date": "2633067060",
+  "status": "REVOKED",
+  "amount_rule": "VARIABLE",
+  "last_updated": "2023-06-09T07:49:18Z",
+  "start_date": "1686293709",
+  "customer_id": "cst_z1fsoxwyhvp5gj13",
+  "mandate_id": "uEzrKHH8sowcSwdGAUg2Tw",
+  "block_fund": false,
+  "currency": "INR",
+  "max_amount": 20,
+  "mandate_token": "35b555e1eaaa4b42bf6279e87458ccc9",
+  "revokable_by_customer": true,
+  "payment_info": {
+    "upi": {
+      "payer_vpa": "8861150466@ybl"
+    },
+    "payment_method": "COLLECT",
+    "payment_method_type": "UPI"
+  },
+  "mandate_type": "EMANDATE"
+}
