@@ -1,0 +1,14 @@
+{
+  "status": "SUCCESS",
+  "payload": {
+    "cardBrand": "MASTERCARD",
+    "cardIssuerCountry": "INDIA",
+    "correlationId": "9cff63adf7ae41068765dcdf5c1103a0",
+    "altIdDetails": "eyJhbGciOiJSU0EtT0FFUC0yNTYiLCJlbmMiOiJBMTI4R0NNIn0.1ty4w8A3PEzQgsD-RzUb7Isnt9ZGVoB5aw-HNqZOsdYRPxRRm5BvOZ93D2XvIrK2Lv6IUmV94SP5HMyJ419V_G5tZEEo-vKKwwfwiTpWPQVg3rRpg80FVEyMI0JJfkWJ6lg3jOMcGwFa2ZJOI9HUtCyULntaZMbeSj_-h_ipGJ061PlTWS1y50UgaPUsOLhPfexM8_k9aspjLxfPf604W8v5HJp3rNH620smSzhMWQtk3NoBJ3PKpUOM2UwY_y1XBVYELM5FcpU4joRTgEvAvvbQdwjUW83Dxz3s6pGGK0nNCO_RVxGiMOl8jFh5wBQ2kVnsTS79-Kghu_x651lUHQ.h-FGvt7nEuUfH2yZ.zbba3zN4Pt280CwRmBaKRT7hcfV3hhaRcbh-NU9qVZ2nZdDk9Vlt_oD-8LDMvN3ym7eFcLZm0VMIjaLyPGpMkRFxdwWlAyS-vPgIfbvn4TV-cEFZsUqKoXPg3qHXQX1_AmiREFg_yzSQuke_yukS8h7Sfv7eWPJigZMC5wE5iqrpJiITTzepPWo.li194-hkDOA4wwNmlSfnVA",
+    "providerCategory": "NETWORK",
+    "provider": "MASTERCARD",
+    "cardIssuerBank": "ICICI Bank"
+  },
+  "errorCode": null,
+  "errorMessage": null
+}

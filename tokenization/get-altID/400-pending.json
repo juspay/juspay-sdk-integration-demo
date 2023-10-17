@@ -1,0 +1,12 @@
+{
+  "error": true,
+  "error_message": "BAD_REQUEST",
+  "user_message": "Contact juspay to register for ALT_ID",
+  "error_info": {
+    "code": "INVALID_INPUT",
+    "category": "USER_ERROR",
+    "request_id": "f5a7b176-0db5-426b-bc4c-7d862e395c41",
+    "user_message": "Invalid request params. Please verify your input.",
+    "developer_message": "Invalid request params."
+  }
+}

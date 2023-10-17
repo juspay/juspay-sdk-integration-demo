@@ -1,0 +1,12 @@
+{
+  "error": true,
+  "error_message": "BAD_REQUEST",
+  "user_message": "The network token provision request contained data that could not be verified",
+  "error_info": {
+    "code": "INVALID_INPUT",
+    "category": "USER_ERROR",
+    "request_id": "ccccac2d-c451-42cc-a7e6-b7355dec8bdc",
+    "user_message": "Invalid request params. Please verify your input.",
+    "developer_message": "Invalid request params."
+  }
+}
