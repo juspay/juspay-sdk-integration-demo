@@ -18,7 +18,7 @@
         "emiBank": "HDFC",
         "isEmi": true,
         "supportedGatewayId": [74,21],
-        "emiType": "NO_COST_EMI"
+        "emiType": "NO_COST_EMI",
         "emiTenure": 3
     }
 }
