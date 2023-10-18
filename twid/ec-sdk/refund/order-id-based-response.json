@@ -1,0 +1,49 @@
+{
+  "order_id": "HD-1682603668",
+  "status": "SUCCESS",
+  "amount": 950,
+  "sent_to_gateway": false,
+  "unique_request_id": "URI_1696428914",
+  "gateway": "PAYU",
+  "created": "2023-10-04T14:15:15Z",
+  "initiated_by": "API",
+  "split_refund_details": [
+    {
+      "status": "SUCCESS",
+      "amount": 750,
+      "sent_to_gateway": false,
+      "unique_request_id": "URI_1696428914",
+      "gateway": "PAYU",
+      "refund_source": "PAYU",
+      "txn_id": "azharamin-HD-1682603668-1-1",
+      "refund_type": "STANDARD",
+      "epg_txn_id": null,
+      "refund_arn": null,
+      "authorization_id": null,
+      "reference_id": null
+    },
+    {
+      "status": "SUCCESS",
+      "amount": 200,
+      "sent_to_gateway": false,
+      "unique_request_id": "URI_1696428914-1",
+      "gateway": "TWID_V2",
+      "refund_source": "TWID_V2",
+      "txn_id": "azharamin-HD-1682603668-1-2",
+      "refund_type": "STANDARD",
+      "epg_txn_id": null,
+      "refund_arn": null,
+      "authorization_id": null,
+      "reference_id": null
+    }
+  ],
+  "refund_source": "PAYU",
+  "refund_arn": null,
+  "error_message": null,
+  "epg_txn_id": null,
+  "txn_id": "azharamin-HD-1682603668-1-1",
+  "authorization_id": null,
+  "reference_id": null,
+  "response_code": null,
+  "refund_type": "STANDARD"
+}

@@ -1,0 +1,11 @@
+curl --location 'https://sandbox.juspay.in/orders' \
+--header 'Authorization: Basic <auth> \
+--form 'order_id="<orderId>"' \
+--form 'amount="1000.00"' \
+--form 'currency="INR"' \
+--form 'customer_id="<customer_id>"' \
+--form 'customer_email="<customer_email>"' \
+--form 'customer_phone="<customer_mobile>"' \
+--form 'return_url="http://www.google.com/"' \
+--form 'redirect_after_payment="true"' \
+--form 'metadata.JUSPAY:gateway_reference_id="<refId>"'

@@ -1,0 +1,10 @@
+{
+  "walletName": "TWID_V2",
+  "sdkWalletIdentifier": null,
+  "requestId": null,
+  "mobileNumber": "7093125824",
+  "gatewayReferenceId": null,
+  "clientAuthToken": "tkn_99ade0fcd97f4d4aaf0d1e84f472a4ac",
+  "command": "authenticate",
+  "action": "createWallet"
+}

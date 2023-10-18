@@ -1,0 +1,23 @@
+{
+  "juspayBankCode": "JP_TWID",
+  "paymentMethodType": "REWARD",
+  "walletDirectDebitSupport": true,
+  "supportedFeatures": [
+    {
+      "supportedReferenceIds": ["twidtestmode", "testmode"],
+      "featureName": "wallet_direct_debit",
+      "supportedByDefault": false
+    },
+    {
+      "supportedReferenceIds": ["twidtestmode", "testmode"],
+      "featureName": "eligibility",
+      "supportedByDefault": false
+    }
+  ],
+  "paymentMethod": "TWID",
+  "nickName": "Twid",
+  "supportedReferenceIds": ["twidtestmode", "testmode"],
+  "description": "Twid Rewards",
+  "supportedByDefault": false,
+  "paymentMethodSubType": "REWARD"
+}

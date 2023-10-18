@@ -1,0 +1,10 @@
+{
+  "walletName": "TWID_V2",
+  "walletId": "wlm_q2UkPy9Qk8gadYjc",
+  "sdkWalletIdentifier": null,
+  "requestId": null,
+  "otp": "1234",
+  "gatewayReferenceId": null,
+  "clientAuthToken": "tkn_b82039848c504825aaa070a81f4e1086",
+  "action": "linkWallet"
+}
