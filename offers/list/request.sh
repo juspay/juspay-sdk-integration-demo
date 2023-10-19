@@ -1,17 +1,19 @@
-curl --location --request POST 'https://api.juspay.in/v1/offers/list' \
---header 'Authorization: <API KEY>' \
+curl --location 'https://api.juspay.in/v1/offers/list?emi=true' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: <API KEY>' \
 --data-raw '{
     "order": {
         "order_id": "SDEA5645",
-        "amount": "1000",
+        "amount": "12000",
         "currency": "INR"
     },
     "payment_method_info": [
         {
             "payment_method_type": "CARD",
             "payment_method_reference": "card_number_identifier",
-            "card_number": "4111111111111111"
+            "card_number": "4111111111111111",
+            "bank_code": "SBI",
+            "card_type": "CREDIT"
         },
         {
             "payment_method_type": "CARD",
@@ -46,6 +48,13 @@ curl --location --request POST 'https://api.juspay.in/v1/offers/list' \
             "payment_method_type": "NB",
             "payment_method_reference": "AXIS_BANK_NB",
             "payment_method": "NB_AXIS"
+        },
+        {
+            "payment_method_type": "CARD",
+            "payment_method_reference": "AMEX_EMI_6",
+            "is_emi": "true",
+            "emi_bank": "AMEX",
+            "emi_tenure":"6"
         }
     ],
     "customer": {
@@ -53,4 +62,5 @@ curl --location --request POST 'https://api.juspay.in/v1/offers/list' \
         "email": "customer5453@gmail.com",
         "mobile": "9999999999"
     }
+    
 }'
