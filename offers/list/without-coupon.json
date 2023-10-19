@@ -1,163 +1,252 @@
 {
-  "best_offer_combinations": [
-      {
-          "payment_method_reference": "card_number_identifier",
-          "offers": [
-              {
-                  "offer_id": "3666dfe2-53e7-4dff-a795-3bd0e0af2b26",
-                  "cashback_amount": "0.00",
-                  "discount_amount": "50.00",
-                  "merchant_discount_amount": "0.00",
-                  "total_offered_amount": "50.00"
-              }
-          ],
-          "order_breakup": {
-              "order_amount": "1000.00",
-              "final_order_amount": "950.00",
-              "discount_amount": "50.00",
-              "merchant_discount_amount": "0.00",
-              "cashback_amount": "0.00",
-              "offer_amount": "50.00",
-              "benefits": [
-                  {
-                      "type": "DISCOUNT",
-                      "calculation_rule": "ABSOLUTE",
-                      "value": 50
-                  }
-              ]
-          }
-      }
-  ],
-  "offers": [
-      {
-          "offer_id": "3666dfe2-53e7-4dff-a795-3bd0e0af2b26",
-          "status": "ELIGIBLE",
-          "reason": [],
-          "offer_code": "additional 50 off",
-          "offer_description": {
-              "sponsored_by": "MERCHANT",
-              "title": "flat 50 off",
-              "description": "offer12",
-              "tnc": "yurgvgxbhjknsa"
-          },
-          "ui_configs": {
-              "auto_apply": "true",
-              "should_validate": "true",
-              "is_hidden": "false"
-          },
-          "offer_rules": {
-              "amount": {
-                  "currency": "INR",
-                  "min_order_amount": "500.00"
-              },
-              "payment_instrument": [
-                  {
-                      "variant": [],
-                      "payment_method": [
-                          "VISA",
-                          "MASTERCARD"
-                      ],
-                      "payment_method_type": "CARD",
-                      "app": [],
-                      "type": [],
-                      "issuer": [
-                          "JP_HDFC"
-                      ]
-                  }
-              ],
-              "gateways": [],
-              "filters": {
-                  "whitelist": [],
-                  "blacklist": []
-              },
-              "txn_type": [
-                  "ORDER"
-              ]
-          },
-          "order_breakup": {
-              "order_amount": "1000.00",
-              "final_order_amount": "950.00",
-              "discount_amount": "50.00",
-              "merchant_discount_amount": "0.00",
-              "cashback_amount": "0.00",
-              "offer_amount": "50.00",
-              "benefits": [
-                  {
-                      "type": "DISCOUNT",
-                      "calculation_rule": "ABSOLUTE",
-                      "value": 50
-                  }
-              ]
-          },
-          "eligible_saved_payment_methods": [
-              "card_number_identifier"
-          ]
-      },
-      {
-          "offer_id": "c390583e-653f-4cae-9ab1-3328551793bb",
-          "status": "ELIGIBLE",
-          "reason": [],
-          "offer_code": "Card",
-          "offer_description": {
-              "sponsored_by": "JP_HDFC",
-              "title": "50% off on HDFC Debit card",
-              "description": "",
-              "tnc": ""
-          },
-          "ui_configs": {
-              "auto_apply": "false",
-              "should_validate": "true",
-              "is_hidden": "false"
-          },
-          "offer_rules": {
-              "amount": {
-                  "currency": "INR",
-                  "min_order_amount": "500.00"
-              },
-              "payment_instrument": [
-                  {
-                      "variant": [],
-                      "payment_method": [
-                          "VISA",
-                          "MASTERCARD"
-                      ],
-                      "payment_method_type": "CARD",
-                      "app": [],
-                      "type": [
-                          "DEBIT"
-                      ],
-                      "issuer": [
-                          "JP_HDFC"
-                      ]
-                  }
-              ],
-              "gateways": [],
-              "filters": {
-                  "whitelist": [],
-                  "blacklist": []
-              },
-              "txn_type": [
-                  "ORDER"
-              ]
-          },
-          "order_breakup": {
-              "order_amount": "1000.00",
-              "final_order_amount": "850.00",
-              "discount_amount": "150.00",
-              "merchant_discount_amount": "0.00",
-              "cashback_amount": "0.00",
-              "offer_amount": "150.00",
-              "benefits": [
-                  {
-                      "type": "DISCOUNT",
-                      "calculation_rule": "ABSOLUTE",
-                      "value": 150
-                  }
-              ]
-          },
-          "eligible_saved_payment_methods": [
-              "card_number_identifier"
-          ]
-      }
-  ]
+   "best_offer_combinations": [
+        {
+            "payment_method_reference": "card_number_identifier",
+            "offers": [
+                {
+                    "offer_id": "72ac6b3f-626c-413d-b1cf-5c7bd2e60cf3",
+                    "cashback_amount": "0.00",
+                    "discount_amount": "10000.00",
+                    "merchant_discount_amount": "0.00",
+                    "total_offered_amount": "10000.00"
+                }
+            ],
+            "order_breakup": {
+                "order_amount": "12000.00",
+                "applicable_order_amount": "12000.00",
+                "final_order_amount": "2000.00",
+                "discount_amount": "10000.00",
+                "merchant_discount_amount": "0.00",
+                "cashback_amount": "0.00",
+                "offer_amount": "10000.00",
+                "benefits": [
+                    {
+                        "amount_info": [],
+                        "type": "DISCOUNT",
+                        "calculation_rule": "ABSOLUTE",
+                        "value": 10000
+                    }
+                ]
+            }
+        },
+        {
+            "payment_method_reference": "card_tkn_identifier",
+            "offers": [
+                {
+                    "offer_id": "72ac6b3f-626c-413d-b1cf-5c7bd2e60cf3",
+                    "cashback_amount": "0.00",
+                    "discount_amount": "10000.00",
+                    "merchant_discount_amount": "0.00",
+                    "total_offered_amount": "10000.00"
+                }
+            ],
+            "order_breakup": {
+                "order_amount": "12000.00",
+                "applicable_order_amount": "12000.00",
+                "final_order_amount": "2000.00",
+                "discount_amount": "10000.00",
+                "merchant_discount_amount": "0.00",
+                "cashback_amount": "0.00",
+                "offer_amount": "10000.00",
+                "benefits": [
+                    {
+                        "amount_info": [],
+                        "type": "DISCOUNT",
+                        "calculation_rule": "ABSOLUTE",
+                        "value": 10000
+                    }
+                ]
+            }
+        },
+        {
+            "payment_method_reference": "MOBIKWIK",
+            "offers": [
+                {
+                    "offer_id": "72ac6b3f-626c-413d-b1cf-5c7bd2e60cf3",
+                    "cashback_amount": "0.00",
+                    "discount_amount": "10000.00",
+                    "merchant_discount_amount": "0.00",
+                    "total_offered_amount": "10000.00"
+                }
+            ],
+            "order_breakup": {
+                "order_amount": "12000.00",
+                "applicable_order_amount": "12000.00",
+                "final_order_amount": "2000.00",
+                "discount_amount": "10000.00",
+                "merchant_discount_amount": "0.00",
+                "cashback_amount": "0.00",
+                "offer_amount": "10000.00",
+                "benefits": [
+                    {
+                        "amount_info": [],
+                        "type": "DISCOUNT",
+                        "calculation_rule": "ABSOLUTE",
+                        "value": 10000
+                    }
+                ]
+            }
+        },
+        {
+            "payment_method_reference": "navyamotaiah@oksbi",
+            "offers": [
+                {
+                    "offer_id": "72ac6b3f-626c-413d-b1cf-5c7bd2e60cf3",
+                    "cashback_amount": "0.00",
+                    "discount_amount": "10000.00",
+                    "merchant_discount_amount": "0.00",
+                    "total_offered_amount": "10000.00"
+                }
+            ],
+            "order_breakup": {
+                "order_amount": "12000.00",
+                "applicable_order_amount": "12000.00",
+                "final_order_amount": "2000.00",
+                "discount_amount": "10000.00",
+                "merchant_discount_amount": "0.00",
+                "cashback_amount": "0.00",
+                "offer_amount": "10000.00",
+                "benefits": [
+                    {
+                        "amount_info": [],
+                        "type": "DISCOUNT",
+                        "calculation_rule": "ABSOLUTE",
+                        "value": 10000
+                    }
+                ]
+            }
+        },
+        {
+            "payment_method_reference": "com.google.android.apps.nbu.paisa.user",
+            "offers": [
+                {
+                    "offer_id": "72ac6b3f-626c-413d-b1cf-5c7bd2e60cf3",
+                    "cashback_amount": "0.00",
+                    "discount_amount": "10000.00",
+                    "merchant_discount_amount": "0.00",
+                    "total_offered_amount": "10000.00"
+                }
+            ],
+            "order_breakup": {
+                "order_amount": "12000.00",
+                "applicable_order_amount": "12000.00",
+                "final_order_amount": "2000.00",
+                "discount_amount": "10000.00",
+                "merchant_discount_amount": "0.00",
+                "cashback_amount": "0.00",
+                "offer_amount": "10000.00",
+                "benefits": [
+                    {
+                        "amount_info": [],
+                        "type": "DISCOUNT",
+                        "calculation_rule": "ABSOLUTE",
+                        "value": 10000
+                    }
+                ]
+            }
+        },
+        {
+            "payment_method_reference": "ZESTMONEY",
+            "offers": [
+                {
+                    "offer_id": "72ac6b3f-626c-413d-b1cf-5c7bd2e60cf3",
+                    "cashback_amount": "0.00",
+                    "discount_amount": "10000.00",
+                    "merchant_discount_amount": "0.00",
+                    "total_offered_amount": "10000.00"
+                }
+            ],
+            "order_breakup": {
+                "order_amount": "12000.00",
+                "applicable_order_amount": "12000.00",
+                "final_order_amount": "2000.00",
+                "discount_amount": "10000.00",
+                "merchant_discount_amount": "0.00",
+                "cashback_amount": "0.00",
+                "offer_amount": "10000.00",
+                "benefits": [
+                    {
+                        "amount_info": [],
+                        "type": "DISCOUNT",
+                        "calculation_rule": "ABSOLUTE",
+                        "value": 10000
+                    }
+                ]
+            }
+        },
+        {
+            "payment_method_reference": "AXIS_BANK_NB",
+            "offers": [
+                {
+                    "offer_id": "72ac6b3f-626c-413d-b1cf-5c7bd2e60cf3",
+                    "cashback_amount": "0.00",
+                    "discount_amount": "10000.00",
+                    "merchant_discount_amount": "0.00",
+                    "total_offered_amount": "10000.00"
+                }
+            ],
+            "order_breakup": {
+                "order_amount": "12000.00",
+                "applicable_order_amount": "12000.00",
+                "final_order_amount": "2000.00",
+                "discount_amount": "10000.00",
+                "merchant_discount_amount": "0.00",
+                "cashback_amount": "0.00",
+                "offer_amount": "10000.00",
+                "benefits": [
+                    {
+                        "amount_info": [],
+                        "type": "DISCOUNT",
+                        "calculation_rule": "ABSOLUTE",
+                        "value": 10000
+                    }
+                ]
+            }
+        },
+        {
+            "payment_method_reference": "AMEX_EMI_6",
+            "offers": [
+                {
+                    "emi_cashback_amount": "0.00",
+                    "emi_discount_amount": "475.15",
+                    "offer_id": "7f9a0e06-aefd-47a8-be04-3759ddf4820f",
+                    "cashback_amount": "1000.00",
+                    "discount_amount": "0.00",
+                    "merchant_discount_amount": "0.00",
+                    "total_offered_amount": "1475.15"
+                }
+            ],
+            "order_breakup": {
+                "emi_discount": {
+                    "bank": "AMEX",
+                    "tenure": 6,
+                    "interest_rate": 14,
+                    "emi_discount_amount": "475.15",
+                    "emi_cashback_amount": "0.00"
+                },
+                "order_amount": "12000.00",
+                "applicable_order_amount": "12000.00",
+                "final_order_amount": "11524.85",
+                "discount_amount": "0.00",
+                "merchant_discount_amount": "0.00",
+                "cashback_amount": "1000.00",
+                "offer_amount": "1475.15",
+                "benefits": [
+                    {
+                        "amount_info": [],
+                        "type": "CASHBACK",
+                        "calculation_rule": "ABSOLUTE",
+                        "value": 1000
+                    },
+                    {
+                        "amount_info": [],
+                        "emi_type": "NO_COST",
+                        "type": "EMI_DISCOUNT",
+                        "calculation_rule": "PERCENTAGE",
+                        "value": 100
+                    }
+                ]
+            }
+        }
+    ]
 }
