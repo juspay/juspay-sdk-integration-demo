@@ -1,0 +1,1 @@
+HyperSdkReact.process(JSON.stringify(processPayload));

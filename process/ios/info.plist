@@ -1,0 +1,8 @@
+<key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>credpay</string>
+        <string>phonepe</string>
+        <string>paytmmp</string>
+        <string>tez</string>
+        <string>paytm</string>
+    </array>

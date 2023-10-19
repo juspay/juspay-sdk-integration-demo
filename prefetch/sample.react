@@ -1,0 +1,1 @@
+HyperSdkReact.preFetch(JSON.stringify(preFetchPayload));

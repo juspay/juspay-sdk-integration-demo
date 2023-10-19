@@ -1,0 +1,1 @@
+HyperSdkReact.initiate(JSON.stringify(initiatePayload));
