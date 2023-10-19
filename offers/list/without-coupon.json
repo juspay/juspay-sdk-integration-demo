@@ -1,5 +1,5 @@
 {
-    "best_offer_combinations": [
+   "best_offer_combinations": [
         {
             "payment_method_reference": "card_number_identifier",
             "offers": [
