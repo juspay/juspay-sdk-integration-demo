@@ -1,0 +1,5 @@
+{
+  "status": "Bad Request",
+  "error_code": "invalid_request_error",
+  "error_message": "Can't find a suitable gateway to process the transaction"
+}

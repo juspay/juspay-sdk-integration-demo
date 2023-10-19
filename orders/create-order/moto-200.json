@@ -1,0 +1,15 @@
+{
+  "order_id": "ord_jkbvgusvb",
+  "status": "CHARGED",
+  "payment": {
+    "authentication": {
+      "url": "https://sandbox.juspay.in/v2/pay/finish/mid/mozq4D58xxxxUyUR2ELk/ord_jkbvgusvb",
+      "method": "GET"
+    }
+  },
+  "txn_uuid": "mozq4D58xxxxUyUR2ELk",
+  "offer_details": {
+    "offers": []
+  },
+  "txn_id": "ord_jkbvgusvb"
+}
