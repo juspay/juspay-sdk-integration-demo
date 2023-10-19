@@ -1,0 +1,69 @@
+const eventEmitter = new NativeEventEmitter(NativeModules.HyperSdkReact);
+this.eventListener = eventEmitter.addListener('HyperEvent', (resp) => {
+    const data = JSON.parse(resp);
+    const event = data.event || '';
+​
+    switch (event) {
+        case 'initiate_result':
+			// handle initiate response -- log it maybe?
+			// do what you want here
+			break;
+​
+        case 'hide_loader':
+            // stop the processing loader
+            break;
+​
+        case 'process_result':
+            const error = data.error || false;
+​
+            const innerPayload = data.payload || {};
+            const status = innerPayload.status || '';
+            const pi = innerPayload.paymentInstrument || '';
+            const pig = innerPayload.paymentInstrumentGroup || '';
+​
+            if (!error) {
+                // txn success, status should be "charged"
+				// process data -- show pi and pig in UI maybe also?
+				// example -- pi: "PAYTM", pig: "WALLET"
+				// call orderStatus once to verify (false positives)
+​
+            } else {
+                const errorCode = data.errorCode || '';
+                const errorMessage = data.errorMessage || '';
+                switch (status) {
+					case 'backpressed':
+						// user back-pressed from PP without initiating any txn
+						break;
+					case 'user_aborted':
+						// user initiated a txn and pressed back
+						// poll order status
+						break;
+					case 'pending_vbv':
+					case 'authorizing':
+						// txn in pending state
+						// poll order status until backend says fail or success
+						break;
+					case 'authorization_failed':
+					case 'authentication_failed':
+					case 'api_failure':
+						// txn failed
+						// poll orderStatus to verify (false negatives)
+						break;
+					case 'new':
+						// order created but txn failed
+						// very rare for V2 (signature based)
+						// also failure
+						// poll order status
+						break;
+					default:
+						// unknown status, this is also failure
+						// poll order status
+                }
+                // if txn was attempted, pi and pig would be non-empty
+				// can be used to show in UI if you are into that
+				// errorMessage can also be shown in UI
+​
+            }
+     }
+​
+});

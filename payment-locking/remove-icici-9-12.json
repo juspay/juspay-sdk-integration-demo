@@ -1,0 +1,26 @@
+{
+    "allowDefaultOptions": true,
+    "emiOptions": {
+      "noCostEmi": {
+        "credit": {
+          "enable": true,
+          "filters": [
+            {
+              "issuerFilter": {
+                "issuers": [
+                  "JP_ICICI"
+                ],
+          "tenures": ["9::12"],
+                "enable": false
+              },
+              "paymentMethodType": "CARD",
+              "paymentMethod": "CARD",
+              "enable": true
+            }
+          ]
+        },
+        "enable": true
+      }
+    }
+  }
+  

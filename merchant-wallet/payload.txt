@@ -1,0 +1,19 @@
+metadata.merchant_container_list :
+
+[{ 
+
+payment_method : “FIT_CASH”   
+
+payment_method_type:”MERCHANT_CONTAINER”
+
+display_name : “Fit Cash”,              
+
+balance_amount : “2000.00”,
+
+eligible_amount: “1000.00”,
+
+walletIconURL: “example.png”, 
+
+isPreSelected: true
+
+ }]

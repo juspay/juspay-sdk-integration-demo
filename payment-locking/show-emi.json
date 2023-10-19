@@ -1,0 +1,9 @@
+{
+"payment_filter": {
+    "allowDefaultOptions": true,
+    "options": [],
+    "emiOptions": {
+    "showOnlyEmi" : true 
+   }
+}
+}
