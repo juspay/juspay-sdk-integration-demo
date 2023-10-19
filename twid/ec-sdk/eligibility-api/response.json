@@ -1,147 +1,78 @@
 {
-  "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
-  "service": "in.juspay.hyperapi",
-  "payload": {
-    "action": "eligibility",
-    "wallets": [
-      {
-        "payment_methods_eligibility": [
-          {
-            "status": "SUCCESS",
-            "reward_details": {
-              "best_reward_type": "burn",
-              "best_reward_id": 212267,
-              "sub_title": "Save Rs.998 using 998 points + Earn 40 points",
-              "is_otp_verification_required": true
-            },
-            "payment_method": "TWID_V2",
-            "payment_method_type": "REWARD",
-            "redeemable_info": [
-              {
-                "issuer_type": "bank",
-                "toggle": false,
-                "reward_id": "212267",
-                "reward_type": "BURN",
-                "value": 998,
-                "payment_locking_payload": {
-                  "reward_rules": [
-                    {
-                      "filters": {
-                        "card_bins": [
-                          "531849",
-                          "536303",
-                          "524167",
-                          "549921",
-                          "558918",
-                          "553204",
-                          "356165",
-                          "356166",
-                          "356139",
-                          "404652",
-                          "405023",
-                          "404638",
-                          "405204",
-                          "405210",
-                          "512345"
-                        ]
-                      },
-                      "payment_instrument": {
-                        "payment_method": [],
-                        "payment_method_type": "CARD",
-                        "app": [],
-                        "type": ["bank"],
-                        "issuer": ["hdfcbank"]
-                      }
-                    }
-                  ]
-                },
-                "brand_logo": "https://cdn.twidpay.com/co/s2s_issuer_images/hdfc_square.svg",
-                "title": "Save Rs.998 by Using 998 HDFC Bank HDFC Bank Points",
-                "type": "BURN",
-                "brand_name": "HDFC Bank"
-              },
-              {
-                "issuer_type": "brand",
-                "toggle": true,
-                "reward_id": "212217",
-                "reward_type": "BURN",
-                "value": 134,
-                "payment_locking_payload": {
-                  "reward_rules": [
-                    {
-                      "filters": {},
-                      "payment_instrument": {
-                        "payment_method": [],
-                        "payment_method_type": "CARD",
-                        "app": [],
-                        "type": ["brand"],
-                        "issuer": [""]
-                      }
-                    }
-                  ]
-                },
-                "brand_logo": "https://cdn.twidpay.com/co/s2s_issuer_images/Cobb.jpg",
-                "title": "Save Rs.134 by Using 536 Cobb Cobb Points",
-                "type": "BURN",
-                "brand_name": "Cobb"
-              },
-              {
-                "issuer_type": "brand",
-                "earnable_points": 40,
-                "toggle": true,
-                "reward_id": "212217",
-                "reward_type": "EARN",
-                "value": null,
-                "payment_locking_payload": {
-                  "reward_rules": [
-                    {
-                      "filters": {},
-                      "payment_instrument": {
-                        "payment_method": [],
-                        "payment_method_type": "CARD",
-                        "app": [],
-                        "type": ["brand"],
-                        "issuer": [""]
-                      }
-                    }
-                  ]
-                },
-                "brand_logo": "https://cdn.twidpay.com/co/s2s_issuer_images/Cobb.jpg",
-                "title": "Earn upto 40 Cobb Points",
-                "type": "EARN",
-                "brand_name": "Cobb"
-              }
-            ],
-            "is_eligible": true,
-            "voucher_info": [
-              {
-                "voucher_amount": 50,
-                "voucher_id": 1596,
-                "code": "TestCashback50",
-                "title": "discount",
-                "type": "VOUCHER",
-                "expires_on": "Expires on September 20, 2023",
-                "voucher_tnc": "Coupon is valid till date 9th Sep 2023\nCoupon is applicable only once per customer and is non-refundable\nCoupons can not be clubbed with any other offers\nIf the bill value is less than the"
-              }
-            ],
-            "gateway_error_message": "success",
-            "description": "Twid Rewards",
-            "eligibility_strategy": "USER"
-          }
-        ],
-        "orderId": "re1692707000939",
-        "customerId": "cth_pKL9ayw75febC1Dd"
-      }
-    ],
-    "consumerFinance": [],
-    "apps": [
-      {
-        "paymentMethodsEligibility": [],
-        "orderId": "re1692707000939"
-      }
-    ]
+  "status": "SUCCESS",
+  "reward_details": {
+    "best_reward_type": "burn",
+    "best_reward_id": 212217,
+    "sub_title": "Get Rs.100 cashback + Save Rs.365 using 1460 points"
   },
-  "error": false,
-  "errorCode": "",
-  "errorMessage": ""
+  "payment_method": "TWID",
+  "payment_method_type": "REWARD",
+  "redeemable_info": [
+    {
+      "issuer_type": "brand",
+      "toggle": true,
+      "reward_id": "212217",
+      "reward_type": "BURN",
+      "value": 365,
+      "payment_locking_payload": {
+        "reward_rules": [
+          {
+            "filters": {},
+            "payment_instrument": {
+              "payment_method": [],
+              "payment_method_type": "CARD",
+              "app": [],
+              "type": [],
+              "issuer": []
+            }
+          }
+        ]
+      },
+      "brand_logo": "https://cdn.twidpay.com/co/s2s_issuer_images/Cobb.jpg",
+      "title": "Save Rs.365 by Using 1460 Cobb Cobb Points",
+      "type": "BURN",
+      "brand_name": "Cobb"
+    },
+    {
+      "issuer_type": "brand",
+      "earnable_points": 40,
+      "toggle": true,
+      "reward_id": "212217",
+      "reward_type": "EARN",
+      "value": null,
+      "payment_locking_payload": {
+        "reward_rules": [
+          {
+            "filters": {},
+            "payment_instrument": {
+              "payment_method": [],
+              "payment_method_type": "CARD",
+              "app": [],
+              "type": [],
+              "issuer": []
+            }
+          }
+        ]
+      },
+      "brand_logo": "https://cdn.twidpay.com/co/s2s_issuer_images/Cobb.jpg",
+      "title": "Earn upto 40 Cobb Points",
+      "type": "EARN",
+      "brand_name": "Cobb"
+    }
+  ],
+  "is_eligible": true,
+  "voucher_info": [
+    {
+      "voucher_amount": 100,
+      "voucher_id": 1641,
+      "code": "0ff_20",
+      "title": "discount",
+      "type": "VOUCHER",
+      "expires_on": "Expires on November 12, 2023",
+      "voucher_tnc": "Coupon is valid till date 30th Nov 2023\nCoupon is applicable only once per customer and is non-refundable\nCoupons can not be clubbed with any other offers\nIf the bill value is less than the cashback amount, the coupon code will be fully 100% utilized. The balance amount is not refundable.\nOther T&Cs may apply\n"
+    }
+  ],
+  "gateway_error_message": "success",
+  "description": "Twid Rewards",
+  "eligibility_strategy": "USER"
 }

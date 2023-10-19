@@ -9,7 +9,7 @@
         {
           "mobileNumber": "1111111111",
           "mobile": "1111111111",
-          "gatewayReferenceId": "amazon_test",
+          "gatewayReferenceId": "twid_test",
           "email": "test@mail.com",
           "customerId": "cth_pKL9ayw75febC1Dd"
         }
