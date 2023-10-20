@@ -48,4 +48,5 @@ curl --location 'https://api.juspay.in/txns' \
 --data-urlencode 'order.metadata.PAYU%3Agateway_reference_id=bus' \
 --data-urlencode 'order.options.get_client_auth_token=true' \
 --data-urlencode 'order.metadata.subvention_amount=90' \
+--data-urlencode 'order.metadata.auto_refund_post_success=true' \
 --data-urlencode 'format=json'
