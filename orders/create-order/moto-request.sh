@@ -1,6 +1,6 @@
 curl --location 'https://sandbox.juspay.in/txns' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
---header 'x-merchant-id: egencia' \
+--header 'x-merchant-id: <merchant_id>' \
 --header 'Authorization: Basic <API Key setup on Juspay dashboard>' \
 --data-urlencode 'order.order_id=ord_jkbvgusvb' \
 --data-urlencode 'order.customer_id=cust_169' \
@@ -16,6 +16,6 @@ curl --location 'https://sandbox.juspay.in/txns' \
 --data-urlencode 'order.return_url=https://merchant.in/payments' \
 --data-urlencode 'order.amount=1' \
 --data-urlencode 'tavv=AGU+nY4+Tn+qxxxxMSAAADFA==' \
---data-urlencode 'auth_type=MOTO'
-
+--data-urlencode 'auth_type=MOTO' \
+--data-urlencode 'order.metadata.auto_refund_post_success=true'
 
