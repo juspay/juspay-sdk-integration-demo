@@ -16,6 +16,4 @@ curl --location 'https://sandbox.juspay.in/txns' \
 --data-urlencode 'order.return_url=https://merchant.in/payments' \
 --data-urlencode 'order.amount=1' \
 --data-urlencode 'tavv=AGU+nY4+Tn+qxxxxMSAAADFA==' \
---data-urlencode 'auth_type=MOTO' \
---data-urlencode 'order.metadata.auto_refund_post_success=true'
-
+--data-urlencode 'auth_type=MOTO'
