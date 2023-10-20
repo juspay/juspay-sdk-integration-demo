@@ -46,7 +46,7 @@ Future<Map<String, dynamic>> makeApiCall(amount) async {
     "customer_id": "9876543201",
     "customer_email": "test@mail.com",
     "customer_phone": "9876543201",
-    "payment_page_client_id": "<CLIENT_ID>",
+    "payment_page_client_id": "hdfcmaster",
     "action": "paymentPage",
     "return_url": "https://shop.merchant.com",
     "description": "Complete your payment",

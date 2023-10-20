@@ -95,7 +95,7 @@ class _HomeScreenState extends State<HomeScreen> {
         "payload": {
           "action": "initiate",
           "merchantId": "<MERCHANT_ID>",
-          "clientId": "<CLIENT_ID>",
+          "clientId": "hdfcmaster",
           "environment": "production"
         }
       };

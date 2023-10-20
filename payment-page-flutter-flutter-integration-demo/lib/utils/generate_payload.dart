@@ -6,7 +6,7 @@ Map<String, dynamic> getProcessPayload(amount) {
     "requestId": "12398b5571d74c3388a74004bc24370c",
     "service": "in.juspay.hyperpay",
     "payload": {
-      "clientId": "your_client_id", // replace with your client id
+      "clientId": "hdfcmaster", // replace with your client id
       "amount": amount,
       "merchantId": "<your_merchant_id>", // replace with your merchant id
       "clientAuthToken": "tkn_xxxxxxxxxxxxxxxxxxxxx",
