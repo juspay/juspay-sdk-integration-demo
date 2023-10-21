@@ -1,0 +1,1 @@
+const hyperServiceObject = new window.HyperServices()
