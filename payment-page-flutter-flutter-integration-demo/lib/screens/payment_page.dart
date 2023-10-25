@@ -26,46 +26,6 @@ class PaymentPage extends StatefulWidget {
   _PaymentPageState createState() => _PaymentPageState(amount);
 }
 
-// Note: Session API should only be called from merchant's server. Don't call it from client app
-// -----------------------------------------------------------------
-Future<Map<String, dynamic>> makeApiCall(amount) async {
-  var url = Uri.parse('https://api.juspay.in/session');
-
-  var headers = {
-    'Authorization': 'Basic <YOUR_API_KEY>',
-    'x-merchantid': '<MERCHANT_ID>',
-    'Content-Type': 'application/json',
-  };
-
-  var rng = new Random();
-  var number = rng.nextInt(900000) + 100000;
-
-  var requestBody = {
-    "order_id": "test" + number.toString(),
-    "amount": amount,
-    "customer_id": "9876543201",
-    "customer_email": "test@mail.com",
-    "customer_phone": "9876543201",
-    "payment_page_client_id": "hdfcmaster",
-    "action": "paymentPage",
-    "return_url": "https://shop.merchant.com",
-    "description": "Complete your payment",
-    "first_name": "John",
-    "last_name": "wick"
-  };
-
-  var response =
-      await http.post(url, headers: headers, body: jsonEncode(requestBody));
-
-  if (response.statusCode == 200) {
-    Map<String, dynamic> jsonResponse = jsonDecode(response.body);
-    return jsonResponse['sdk_payload'];
-  } else {
-    throw Exception('API call failed with status code ${response.statusCode}');
-  }
-}
-// -----------------------------------------------------------------
-
 class _PaymentPageState extends State<PaymentPage> {
   var showLoader = true;
   var processCalled = false;
@@ -109,15 +69,10 @@ class _PaymentPageState extends State<PaymentPage> {
 
   void callProcess(amount) async {
     processCalled = true;
-    var processPayload = await makeApiCall(amount);
-    // Get process payload from backend
-    // block:start:fetch-process-payload
-    // var processPayload = await getProcessPayload(widget.amount);
-    // block:end:fetch-process-payload
+    // To get this sdk_payload you need to hit your backend API which will again hit the Create Order API 
+    // and the sdk_payload response from the Create Order API need to be passed here
 
-    // Calling process on hyperSDK to open the Hypercheckout screen
-    // block:start:process-sdk
-    await widget.hyperSDK.process(processPayload, hyperSDKCallbackHandler);
+    await widget.hyperSDK.process(sdk_payload, hyperSDKCallbackHandler);
     // block:end:process-sdk
   }
 
