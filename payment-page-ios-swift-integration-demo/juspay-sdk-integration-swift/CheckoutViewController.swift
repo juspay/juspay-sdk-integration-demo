@@ -60,7 +60,7 @@ class CheckoutViewController: UIViewController {
     func createOrder(completion: @escaping ([String: Any]?) -> Void) {
         // This function return the sdk_payload
         // To get the sdk_payload you need to hit your backend API which will again hit the Create Order API 
-        // and the sdk_response from the Create Order API need to be passed here
+        // and the sdk_payload response from the Create Order API need to be passed here
 
     }
     
