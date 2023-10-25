@@ -50,3 +50,9 @@ Thumbs.db
 
 # Keys
 *.pem
+
+# Lock files
+composer.lock
+
+# Vendor files
+vendor/*
