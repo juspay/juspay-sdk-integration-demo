@@ -1,0 +1,52 @@
+{
+	"name" : "juspay/expresscheckout-php-sdk",
+	"description" : "Express Checkout SDK for PHP allows easy integration with Juspay's EC payments as a service platform",
+	"minimum-stability" : "stable",
+	"authors" : [{
+		"name" : "Juspay Support",
+		"email" : "support@juspay.in"
+	}],
+	"require" : {
+		"php": ">=7.1.0",
+		"ext-curl" : "*",
+		"ext-json" : "*",
+		"web-token/jwt-framework": "^3.0 || ^2.0 || ^1.0"
+	},
+	"provide" : {
+		"ext-sodium": "*"
+	},
+	"suggest": {
+		"ext-gmp": "php gmp or php BCMath extension is needed in linux to improve the sdk performance",
+		"ext-bcmath": "php gmp or php BCMath extension is needed in linux to improve the sdk performance"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "4.* || ^9.0"
+	},
+	"scripts": {
+        "gmp-docker-linux": "curl -sSL https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions -o - | sh -s gmp"
+    },
+	"autoload" : {
+		"psr-4" : {
+			"Juspay\\" : "lib",
+			"Juspay\\Model\\" : "lib/Model",
+			"Juspay\\Exception\\" : "lib/Exception"
+		}
+	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"Juspay\\Test\\" : "tests/"
+		}
+	},
+	"license" : "AGPL-3.0-only",
+	"support" : {
+		"email" : "support@juspay.in"
+	},
+	"homepage" : "https://www.juspay.in",
+	"keywords" : [
+		"juspay",
+		"expresscheckout",
+		"payment processing",
+		"api",
+		"payment gateway"
+	]
+}

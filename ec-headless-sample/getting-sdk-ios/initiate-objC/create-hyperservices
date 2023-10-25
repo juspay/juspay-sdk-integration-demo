@@ -1,3 +1,0 @@
- //block:start:create-hyper-services-instance
-    self.hyperInstance = [[HyperServices alloc] init];
-    //block:end:create-hyper-services-instance

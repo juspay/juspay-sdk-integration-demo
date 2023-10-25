@@ -1,8 +1,0 @@
-{
-   "category":"action",
-   "subcategory":"user",
-   "label":"card_number_changed",
-   "value":{
-      "AddCardScreen":"515161XXXXXXXXXXX"
-   }
-}

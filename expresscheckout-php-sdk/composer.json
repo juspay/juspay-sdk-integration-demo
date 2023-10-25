@@ -1,0 +1,17 @@
+{
+    "name": "ramprakash.v/php_kit",
+    "type": "project",
+    "require": {
+        "juspay/expresscheckout-php-sdk": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "RamprakashV\\PhpKit\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ramprakash Vel"
+        }
+    ]
+}

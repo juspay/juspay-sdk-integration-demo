@@ -1,8 +1,0 @@
-{
-   "category":"action",
-   "subcategory":"user",
-   "label":"upi_id_changed",
-   "value":{
-      "VpaScreen":"@upi"
-   }
-}
