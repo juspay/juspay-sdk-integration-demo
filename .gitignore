@@ -52,7 +52,7 @@ Thumbs.db
 *.pem
 
 # Lock files
-composer.lock
+*.lock
 
 # Vendor files
-vendor/*
+vendor/
