@@ -11,9 +11,10 @@ curl --location 'https://sandbox.juspay.in/txns' \
 --data-urlencode 'order.mandate.frequency=ASPRESENTED' \
 --data-urlencode 'order.mandate.amount_rule=VARIABLE' \
 --data-urlencode 'order.mandate.start_date=1698218211' \
+--data-urlencode 'order.mandate.start_date=1698218211' \
 --data-urlencode 'order.metadata.bank_account_details=[{"bank_account_number": "<bank account>","bank_ifsc":"<ifsc>","juspay_bank_code" : "JP_HDFC"}]' \
---data-urlencode 'order.order_type=TPV_PAYMENT' \
---data-urlencode 'order.gateway_id=514' \
+--data-urlencode 'order.order_type=<only to be passed if taking TPV, pass 'TPV_PAYMENT'>,' \
+--data-urlencode 'order.gateway_id=<gateway_id at Juspay>' \
 --data-urlencode 'order.metadata.auto_refund_post_success=true' \
 --data-urlencode 'payment_method_type=UPI' \
 --data-urlencode 'payment_method=COLLECT' \
