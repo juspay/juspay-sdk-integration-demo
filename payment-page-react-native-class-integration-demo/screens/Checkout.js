@@ -225,47 +225,10 @@ const getRandomNumber = () => {
 
 
 const makePaymentRequest = (total) => {
-
-  // block:start:fetch-process-payload
-  // This API call should be made in merchant server 
-  var myHeaders = new Headers();
-  myHeaders.append(
-    "Authorization",
-    `Basic ${encode("<YOUR_API_KEY>")}`
-  );
-  myHeaders.append("x-merchantid", "<MERCHANT_ID>");
-  myHeaders.append("Content-Type", "application/json");
-
-  var raw = JSON.stringify({
-    order_id: `test-${getRandomNumber()}`,
-    amount: total,
-    customer_id: "9876543201",
-    customer_email: "test@mail.com",
-    customer_phone: "9876543201",
-    payment_page_client_id: "<CLIENT_ID>",
-    action: "paymentPage",
-    return_url: "<return_url>",
-    description: "Complete your payment",
-    first_name: "John",
-    last_name: "wick"
-  });
-
-  var requestOptions = {
-    method: "POST",
-    headers: myHeaders,
-    body: raw,
-    redirect: "follow",
-  };
-
-  fetch("https://api.juspay.in/session", requestOptions)
-    .then((response) => response.json())
-    .then((result) => {
-      // block:start:process-sdk
-      HyperSdkReact.process(JSON.stringify(result.sdk_payload));
-      // block:end:process-sdk
-    })
-    .catch((error) => console.log("error", error));
-   // block:end:fetch-process-payload
+  // To get this sdk_payload you need to hit your backend API which will again hit the Create Order API 
+  // and the sdk_payload resposne from the Create Order API need to be passed here
+  HyperSdkReact.process(JSON.stringify(sdk_payload));
+  
 };
 
 export default createStackNavigator(
