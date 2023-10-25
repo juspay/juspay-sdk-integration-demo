@@ -1,0 +1,37 @@
+{
+  "order_id": "o_1698225298",
+  "status": "PENDING_VBV",
+  "payment": {
+    "sdk_params": {
+      "scheme": "mandate",
+      "uri_params": {
+        "amrule": "MAX",
+        "tn": "Debit%20Money%20For%20UPI%20Autopay",
+        "validityend": "26072024",
+        "mode": "00",
+        "mn": "JUSPAY",
+        "cu": "INR",
+        "pn": "merchant name",
+        "purpose": "14",
+        "tid": "YJP11gsqszvoufocmozutWhEydEimxersay",
+        "pa": "merchant vpa",
+        "am": "5.00",
+        "orgid": "000000",
+        "validitystart": "25102023",
+        "recur": "ASPRESENTED",
+        "tr": "mido16982252981",
+        "mc": "6xx1",
+        "mam": "1.00"
+      }
+    },
+    "authentication": {
+      "url": "https://sandbox.juspay.in/v2/pay/start/mid/mozutWhEydEimxersay?cardIssuerBankName%3DPAY%26cardType%3DUPI%26paymentMethod%3DPAY%26paymentMethodType%3DUPI",
+      "method": "GET"
+    }
+  },
+  "txn_uuid": "mozutWhEydEimxersay",
+  "offer_details": {
+    "offers": []
+  },
+  "txn_id": "mid-o_1698225298-1"
+}

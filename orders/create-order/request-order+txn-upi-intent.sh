@@ -1,0 +1,26 @@
+curl --location 'https://sandbox.juspay.in/txns' \
+--header 'x-merchantid: <merchant_id>' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'Authorization: Basic <Api key>' \
+--data-urlencode 'order.order_id=o_1698225314' \
+--data-urlencode 'order.amount=1' \
+--data-urlencode 'order.currency=INR' \
+--data-urlencode 'order.customer_id=cust_1698225314' \
+--data-urlencode 'order.options.create_mandate=REQUIRED' \
+--data-urlencode 'order.mandate.max_amount=5' \
+--data-urlencode 'order.mandate.frequency=ASPRESENTED' \
+--data-urlencode 'order.mandate.amount_rule=VARIABLE' \
+--data-urlencode 'order.mandate.start_date=1698225314' \
+--data-urlencode 'order.mandate.end_date=1698225417' \
+--data-urlencode 'order.metadata.bank_account_details=[{"bank_account_number": "<bank account>","bank_ifsc":"<ifsc>","juspay_bank_code" : "JP_HDFC"}]' \
+--data-urlencode 'order.order_type=<only to be passed if taking TPV, pass 'TPV_PAYMENT'> \
+--data-urlencode 'order.gateway_id=<gateway_id at Juspay>' \
+--data-urlencode 'merchant_id=<merchant_id>' \
+--data-urlencode 'payment_method_type=UPI' \
+--data-urlencode 'payment_method=PAY' \
+--data-urlencode 'redirect_after_payment=true' \
+--data-urlencode 'format=json' \
+--data-urlencode 'txn_type=UPI_PAY' \
+--data-urlencode 'sdk_params=true' \
+--data-urlencode 'should_create_mandate=true' \
+--data-urlencode 'mandate_type=EMANDATE'
