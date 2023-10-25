@@ -222,43 +222,9 @@ var hyperSDKCallback = function (response) {
 document.getElementById("checkoutButton").addEventListener("click", () => {
   console.log("Process started")
   SpinnerDialog.show(null, "Processing");
-
-  var myHeaders = new Headers();
-  myHeaders.append("x-merchantid", "<MERCHANT_ID>");
-  myHeaders.append("Content-Type", "application/json");
-  myHeaders.append(
-    "Authorization",
-    `Basic OEEwRTRBRDA0MjA0NjhCQjE0NEQxQjExNjMzNkRB`         
-  );
-
-  var raw = JSON.stringify({
-    order_id: "Test" + Math.floor(Math.random() * 1000000000),
-    amount: totalPayable,
-    customer_id: "9876543201",
-    customer_email: "test@mail.com",
-    customer_phone: "9876543201",
-    payment_page_client_id: "<CLIENT_ID>",
-    action: "paymentPage",
-    return_url: "https://www.hdfcbank.com/",
-    description: "Complete your payment",
-    first_name: "John",
-    last_name: "wick",
-  });
-
-  var requestOptions = {
-    method: "POST",
-    headers: myHeaders,
-    body: raw,
-    redirect: "follow",
-  };
-
-  fetch("https://sandbox.juspay.in/session", requestOptions)
-    .then((response) => response.json())
-    .then((result) =>{
-      showToast("Process called")
-      hyperSDKRef.process(result.sdk_payload);
-    } )
-    .catch((error) => console.log("error", error));
+  // To get this sdk_payload you need to hit your backend API which will again hit the Create Order API 
+  // and the sdk_response from the Create Order API need to be passed here
+  hyperSDKRef.process(sdk_payload);
 });
 
 
