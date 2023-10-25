@@ -223,7 +223,7 @@ document.getElementById("checkoutButton").addEventListener("click", () => {
   console.log("Process started")
   SpinnerDialog.show(null, "Processing");
   // To get this sdk_payload you need to hit your backend API which will again hit the Create Order API 
-  // and the sdk_response from the Create Order API need to be passed here
+  // and the sdk_payload resposne from the Create Order API need to be passed here
   hyperSDKRef.process(sdk_payload);
 });
 
