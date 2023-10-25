@@ -226,7 +226,7 @@ const getRandomNumber = () => {
 
 const makePaymentRequest = (total) => {
   // To get this sdk_payload you need to hit your backend API which will again hit the Create Order API 
-  // and the sdk_payload resposne from the Create Order API need to be passed here
+  // and the sdk_payload response from the Create Order API need to be passed here
   HyperSdkReact.process(JSON.stringify(sdk_payload));
   
 };
