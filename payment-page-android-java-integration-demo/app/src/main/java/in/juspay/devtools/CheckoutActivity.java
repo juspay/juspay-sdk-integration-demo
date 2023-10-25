@@ -66,92 +66,21 @@ public class CheckoutActivity extends AppCompatActivity {
         });
     }
 
+
     //block:start:process-sdk
     private void startPayments(JSONObject sdk_payload) {
         // Make sure to use the same hyperServices instance which was created in
         // ProductsActivity.java
-
         Helper helper = new Helper();
         helper.showSnackbar("Process Called!", coordinatorLayout);
+
+        // To get this sdk_payload you need to hit your backend API which will again hit the Create Order API 
+        // and the sdk_response from the Create Order API need to be passed here
         hyperServicesHolder.process(sdk_payload);
 
     }
     //block:end:process-sdk
 
-    // block:start:fetch-process-payload
-    // Note: Session API should only be called from merchant's server. Don't call it from client app
-    // -----------------------------------------------------------------
-    private void run() throws IOException {
-        JSONObject payload = new JSONObject();
-        String apiKey = "<YOUR_API_KEY>";  //Put your API Key Here
-        String clientId = "<CLIENT_ID>";  // Put your clientID here
-        String merchantId = "<MERCHANT_ID>";   // Put your merchant ID here
-
-        long randomOrderId = (long) (Math.random()*Math.pow(10,12)); 
-        String order_id = "test-" + Long.toString(randomOrderId);    // Put you own order id here
-        try{
-            // You can put your payload details here
-            payload.put("order_id", order_id);    // OrderID should be unique
-            payload.put("amount", amountString);    // Amount should be in strings e.g. "100.00"
-            payload.put("customer_id", "9876543201");    // Customer ID should be unique for each user and should be a string
-            payload.put("customer_email", "test@mail.com");
-            payload.put("customer_phone", "9876543201");
-            payload.put("payment_page_client_id", clientId);
-            payload.put("action", "paymentPage");
-            payload.put("first_name", "john");
-            payload.put("last_name", "wick");
-            payload.put("description", "Order Description");
-            payload.put("return_url", "<REDIRECT_URL>");
-
-            // For other payload params you can refer to the integration doc shared with you
-        } catch (Exception e){
-
-        }
-
-
-        OkHttpClient client = new OkHttpClient();
-
-        MediaType mediaType = MediaType.parse("application/json");
-        RequestBody requestBody = RequestBody.create(mediaType, payload.toString());
-        String authorization = "Basic " + Base64.getEncoder().encodeToString(apiKey.getBytes());
-        Request request =
-                new Request.Builder()
-                        .url("https://api.juspay.in/session")
-                        .method("POST", requestBody)
-                        .addHeader("x-merchantid", merchantId)
-                        .addHeader("Authorization", authorization)
-                        .addHeader("Content-Type", "application/json")
-                        .build();
-
-        // Note: Session API should only be called from merchant's server. Don't call it from client app
-        client.newCall(request).enqueue(new Callback() {
-            @Override
-            public void onFailure(Call call, IOException e) {
-                call.cancel();
-            }
-
-            @Override
-            public void onResponse(Call call, Response response) throws IOException {
-                try{
-                    String processResponse = response.body().string();
-
-                    JSONObject jsonObj = new JSONObject(processResponse);
-                    JSONObject sdkPayload = jsonObj.getJSONObject("sdk_payload");
-
-                    CheckoutActivity.this.runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            startPayments(sdkPayload);
-                        }
-                    });
-                } catch (Exception e){
-
-                }
-            }
-        });
-    }
-    // -----------------------------------------------------------------
-    // block:end:fetch-process-payload
 
     // block:start:create-hyper-callback
     private HyperPaymentsCallbackAdapter createHyperPaymentsCallbackAdapter() {
