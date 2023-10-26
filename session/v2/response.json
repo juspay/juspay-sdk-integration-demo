@@ -1,0 +1,34 @@
+{
+    "status": "NEW",
+    "id": "ordeh_7d32b2e428ba423f9d0ecf9575b23759",
+    "order_id": "yourUniqueOrderId",
+    "payment_links": {
+        "web": "https://sandbox.juspay.in/orders/ordeh_7d32b2e428ba423f9d0ecf9575b23759/payment-page",
+        "expiry": "2023-10-26T08:27:07Z"
+    },
+    "sdk_payload": {
+        "requestId": "d9d65b3f4a6342559898ba6d20e88f93",
+        "service": "in.juspay.hyperpay",
+        "payload": {
+            "options.createMandate": "REQUIRED",
+            "clientId": "picasso",
+            "amount": "10.0",
+            "merchantId": "yourmerchantid",
+            "clientAuthToken": "tkn_932acc174f4f4a5fbeeba72a7a1b8135",
+            "service": "in.juspay.ec",
+            "clientAuthTokenExpiry": "2023-10-26T08:27:07Z",
+            "environment": "sandbox",
+            "mandate.maxAmount": "1000.00",
+            "mandate.endDate": "1646234827",
+            "action": "enach",
+            "customerId": "yourUniqueCustId",
+            "returnUrl": "https://shop.merchant.com",
+            "mandate.startDate": "1644420442",
+            "currency": "INR",
+            "customerPhone": "9876543210",
+            "customerEmail": "dummyemail@gmail.com",
+            "orderId": "yourUniqueOrderId"
+        },
+        "expiry": "2023-10-26T08:27:07Z"
+    }
+}
