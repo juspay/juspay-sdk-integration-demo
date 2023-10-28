@@ -51,7 +51,7 @@ public class CheckoutActivity extends AppCompatActivity {
             public void onClick(View view) {
                 dialog.show();
                 try{
-                    run();
+                    //run();
                 } catch (Exception e){
 
                 }

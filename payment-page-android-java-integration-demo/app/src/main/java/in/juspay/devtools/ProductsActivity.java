@@ -11,6 +11,7 @@ import android.widget.Toast;
 import org.json.JSONObject;
 import java.util.UUID;
 import in.juspay.hyperinteg.HyperServiceHolder;
+import in.juspay.devtools.PayloadConstants;
 
 
 public class ProductsActivity extends AppCompatActivity {
@@ -30,35 +31,18 @@ public class ProductsActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+        prepareUI();
         //block:start:create-hyper-services-instance
-        
         hyperServicesHolder = new HyperServiceHolder(this);
-
         //block:end:create-hyper-services-instance
-        initiatePaymentsSDK();
-        proceedButton = findViewById(R.id.rectangle_8);
-        itemCountTv1 = findViewById(R.id.some_id);
-        itemCountTv2 = findViewById(R.id.some_id2);
-        proceedButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(item1Count>=1 || item2Count >=1){
-                    Intent intent = new Intent(ProductsActivity.this, CheckoutActivity.class);
-                    intent.putExtra("item1Count", item1Count);
-                    intent.putExtra("item2Count", item2Count);
-                    intent.putExtra("item1Price", item1Price);
-                    intent.putExtra("item2Price", item2Price);
-                    startActivity(intent);
-                } else {
-                    Toast.makeText(ProductsActivity.this, "You should add atlease one item", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
+        initiateJuspayPaymentsSDK();
+
     }
 
+
     //block:start:call-initiate
-    //This function initiate the Juspay SDK
-    private void initiatePaymentsSDK() {
+    //This function will initiate the Juspay SDK for further operations
+    private void initiateJuspayPaymentsSDK() {
         if(!hyperServicesHolder.isInitialised()){
             initiatePayload = createInitiatePayload();
             hyperServicesHolder.initiate(initiatePayload);
@@ -79,9 +63,9 @@ public class ProductsActivity extends AppCompatActivity {
         try {
             // generating inner payload
             innerPayload.put("action", "initiate");
-            innerPayload.put("merchantId", "<MERCHANT_ID>");    // Put your Merchant ID here
-            innerPayload.put("clientId", "<CLIENT_ID>");          // Put your Client ID here
-            innerPayload.put("environment", "production");
+            innerPayload.put("merchantId", PayloadConstants.MERCHANT_ID);    // Put your Merchant ID here
+            innerPayload.put("clientId", PayloadConstants.CLIENT_ID);          // Put your Client ID here
+            innerPayload.put("environment", PayloadConstants.ENVIRONMENT);
             sdkPayload.put("requestId",  ""+ UUID.randomUUID());
             sdkPayload.put("service", "in.juspay.hyperpay");
             sdkPayload.put("payload", innerPayload);
@@ -93,6 +77,27 @@ public class ProductsActivity extends AppCompatActivity {
     }
     //block:end:create-initiate-payload
 
+    //All Below Functions are for rendering of the demo product screen
+    private void prepareUI(){
+        proceedButton = findViewById(R.id.rectangle_8);
+        itemCountTv1 = findViewById(R.id.some_id);
+        itemCountTv2 = findViewById(R.id.some_id2);
+        proceedButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(item1Count>=1 || item2Count >=1){
+                    Intent intent = new Intent(ProductsActivity.this, CheckoutActivity.class);
+                    intent.putExtra("item1Count", item1Count);
+                    intent.putExtra("item2Count", item2Count);
+                    intent.putExtra("item1Price", item1Price);
+                    intent.putExtra("item2Price", item2Price);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(ProductsActivity.this, "You should add atlease one item", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    }
     public void add1Clicked(View v){
         item1Count += 1;
         itemCountTv1.setText(Integer.toString(item1Count));
