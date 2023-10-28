@@ -6,6 +6,8 @@
 # Node artifact files
 node_modules/
 dist/
+payment-page-android-java-integration-demo/.gradle
+payment-page-android-java-integration-demo/.idea
 
 # Compiled Java class files
 *.class
