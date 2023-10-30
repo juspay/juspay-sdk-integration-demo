@@ -1,2 +1,2 @@
 curl --location --request POST 'https://sandbox.juspay.in/v2/txns/eulqjS1qion3rgS2hTo/void' \
---header 'Authorization: Basic MTEzOTk1OEMwMzI0MzY2OTE1NjM5QTBERkMzRDc1Og=='
+--header 'Authorization: Basic API KEY'
