@@ -1,0 +1,32 @@
+ext {
+    mavenRepo = "${rootProject.rootDir}/mavenRepo/hyper-sdk"
+
+    pomGenerator = { artifactName, fullVersion, configurations ->
+        return {
+            def dependencies = asNode().appendNode('dependencies')
+
+            configurations.each { configuration ->
+                def regex = /^($artifactName)?(([aA]pi)|([iI]mplementation))$/
+
+                if (configuration.name ==~ regex) {
+                    configuration.getDependencies().each {
+                        def dependency = dependencies.appendNode('dependency')
+                        def dependencyGroup = it.group
+                        def dependencyArtifact = it.name
+                        def dependencyVersion = it.version
+
+                        if (dependencyGroup == rootProject.name) {
+                            dependencyGroup = "in.juspay"
+                            dependencyArtifact = dependencyArtifact.replaceAll("-", ".")
+                            dependencyVersion = fullVersion
+                        }
+
+                        dependency.appendNode('groupId', dependencyGroup)
+                        dependency.appendNode('artifactId', dependencyArtifact)
+                        dependency.appendNode('version', dependencyVersion)
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,15 +1,21 @@
 package in.juspay.devtools;
 
+import androidx.core.view.ViewCompat;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import in.juspay.devtools.databinding.ActivityCheckoutBinding;
 import in.juspay.hypersdk.data.JuspayResponseHandler;
 import in.juspay.hypersdk.ui.HyperPaymentsCallbackAdapter;
 import org.json.JSONObject;
@@ -18,9 +24,12 @@ import java.io.IOException;
 import java.util.Base64;
 import android.webkit.WebView;
 import in.juspay.hyperinteg.HyperServiceHolder;
+import java.util.*;
+import in.juspay.devtools.databinding.ActivityCheckoutBinding;
+
 
 public class CheckoutActivity extends AppCompatActivity {
-
+    private ActivityCheckoutBinding binding;
     private Button processButton;
     private HyperServiceHolder hyperServicesHolder;
     private CoordinatorLayout coordinatorLayout;
@@ -30,6 +39,9 @@ public class CheckoutActivity extends AppCompatActivity {
     private TextView item1PriceTv, item2PriceTv, item1CountTv, item2CountTv, totalAmountTv, taxTv, totalPayableTv;
     private double taxPercent = 0.18;
     private ImageView backImage;
+
+    private String order_id = null;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,17 +58,16 @@ public class CheckoutActivity extends AppCompatActivity {
         hyperServicesHolder = new HyperServiceHolder(this);
         hyperServicesHolder.setCallback(createHyperPaymentsCallbackAdapter());
         processButton = findViewById(R.id.rectangle_9);
+        binding = ActivityCheckoutBinding.inflate(getLayoutInflater());
         processButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 dialog.show();
-                try{
-                    //run();
-                } catch (Exception e){
 
-                }
+                new Thread(() -> fetchPaymentPageUrl()).start();
             }
         });
+        setContentView(binding.getRoot());
         backImage = findViewById(R.id.imageView);
         backImage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,6 +92,84 @@ public class CheckoutActivity extends AppCompatActivity {
     }
     //block:end:process-sdk
 
+
+    protected void fetchPaymentPageUrl() {
+        setLoaderVisibility(true);
+        JSONObject payload = new JSONObject();
+        String apiKey = getString(R.string.api_key);
+        String clientId = getString(R.string.client_id);
+        String merchantId = getString(R.string.merchant_id);
+        String amountString = "1.0";
+        UUID orderId = UUID.randomUUID();
+
+        try {
+            payload.put("order_id", orderId);
+            payload.put("amount", amountString);
+            payload.put("customer_id", "test1234");
+            payload.put("customer_email", "test@juspay.in");
+            payload.put("customer_phone", "9876543201");
+            payload.put("payment_page_client_id", clientId);
+            payload.put("action", "paymentPage");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        OkHttpClient client = new OkHttpClient();
+        MediaType mediaType = MediaType.get("application/json");
+        RequestBody requestBody = RequestBody.create(payload.toString(), mediaType);
+        String authorization = "Basic " + apiKey;
+        Request request = new Request.Builder()
+                .url("https://sandbox.juspay.in/session")
+                .method("POST", requestBody)
+                .addHeader("x-merchantid", merchantId)
+                .addHeader("Authorization", authorization)
+                .addHeader("Content-Type", "application/json")
+                .build();
+
+        client.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                call.cancel();
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                try {
+                    String apiResponse = response.body().string();
+                    JSONObject jsonResponse = new JSONObject(apiResponse);
+                    String paymentUrl = jsonResponse.getJSONObject("payment_links").getString("web");
+
+                    order_id = jsonResponse.getString("order_id");
+
+                    // Update UI on the main thread
+                    new Handler(Looper.getMainLooper()).post(() -> {
+                        launchWebView(paymentUrl);
+                        setLoaderVisibility(false);
+                    });
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
+
+
+
+
+
+
+    private void setLoaderVisibility(final boolean isVisible) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                if (isVisible) {
+                    binding.progressBarCyclic.setVisibility(View.VISIBLE);
+                } else {
+                    binding.progressBarCyclic.setVisibility(View.GONE);
+                }
+            }
+        });
+    }
 
     // block:start:create-hyper-callback
     private HyperPaymentsCallbackAdapter createHyperPaymentsCallbackAdapter() {
@@ -171,6 +260,28 @@ public class CheckoutActivity extends AppCompatActivity {
     // block:end:create-hyper-callback
 
 
+
+    private void launchWebView(String url) {
+        WebView.setWebContentsDebuggingEnabled(true);
+        Intent intent = new Intent(this, WebViewActivity.class);
+        intent.putExtra("url", url);
+        intent.putExtra("return_url", "");
+        startActivityForResult(intent, 124);
+        setLoaderVisibility(false);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 124) {
+            if (order_id != null) {
+                // Handle the payment status using the order_id set while calling the session API
+                // You can show a loader until the payment_status response and hide it after the response
+            } else {
+                // Handle the case where order_id is null
+            }
+        }
+    }
 
     //block:start:onBackPressed
     @Override

@@ -1,0 +1,85 @@
+plugins {
+    id 'com.android.library'
+    id 'maven-publish'
+}
+
+def props = new Properties()
+file("../version.properties").withInputStream { props.load(it) }
+def sdkVersion = props.getProperty("sdkVersion")
+def sdkName = project.name.replace("-", ".")
+
+android {
+    namespace 'in.juspay.hyper.webview.upi'
+    compileSdk 33
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 33
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildTypes.all {
+        resValue 'string', 'hyper_webview_sdk_version', sdkVersion
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
+
+publishing {
+    repositories {
+        maven {
+            url "file:///${rootProject.ext.mavenRepo}"
+        }
+    }
+    publications {
+        sdk(MavenPublication) {
+            groupId = 'in.juspay'
+            artifactId = sdkName
+            version = sdkVersion
+
+            artifact("$buildDir/outputs/aar/${project.name}-release.aar")
+
+            pom.withXml rootProject.ext.pomGenerator(sdkName, sdkVersion, configurations)
+        }
+    }
+}
+
+tasks.create("copyMappings") {
+    doLast {
+        def mappingDir = new File("${project.buildDir}/outputs/mapping/release")
+        if (!mappingDir.isDirectory()) {
+            return
+        }
+
+        println("${project.name}: mapping exists")
+        def mavenRepo = project.rootProject.ext.mavenRepo
+        def targetPath = new File("$mavenRepo/in/juspay/$sdkName/$sdkVersion/mapping")
+        targetPath.with {
+            deleteDir()
+            mkdirs()
+        }
+
+        copy {
+            from mappingDir.path
+            into targetPath.path
+        }
+    }
+}

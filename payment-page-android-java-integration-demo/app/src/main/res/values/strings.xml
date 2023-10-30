@@ -10,4 +10,8 @@
     <string name="checkout_sc">Checkout Screen</string>
     <string name="call_proces">Call process on HyperServices instance on Checkout Button Click</string>
     <string name="handle_jusp">Handle Juspay Payments SDK Response</string>
+
+    <string name="merchant_id">"idea_preprod"</string>
+    <string name="client_id">"paypaljuspay"</string>
+    <string name="api_key">"MzJCNDM3QTZCNUI0OEE5OUEwQTQ4ODU4RDNCQzU1Og=="</string>
 </resources>

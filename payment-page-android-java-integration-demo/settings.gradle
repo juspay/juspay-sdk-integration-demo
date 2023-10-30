@@ -1,2 +1,3 @@
 rootProject.name = "Devtools"
 include ':app'
+include ':hyper-webview-sdk'
