@@ -1,7 +1,7 @@
 curl --location 'https://sandbox.juspay.in/ecr/orders' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'Authorization: Basic API KEY' \
---data-urlencode 'order_id=Snap_1694596780' \
+--data-urlencode 'order_id=Snap_123456' \
 --data-urlencode 'customer_id=' \
 --data-urlencode 'customer_email=test@gmail.com' \
 --data-urlencode 'customer_phone=7878787878' \
