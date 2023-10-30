@@ -1,3 +1,3 @@
 curl --location 'https://sandbox.juspay.in/txns' \
---header 'Content-Type: application/x-www-form-urlencoded' \ --data-urlencode 'order_id=Snap_1694596680' \ --data-urlencode 'merchant_id=Anjali_A_L' \
+--header 'Content-Type: application/x-www-form-urlencoded' \ --data-urlencode 'order_id=Snap_123456' \ --data-urlencode 'merchant_id=MERCHANT' \
 --data-urlencode 'payment_method_type=CONSUMER_FINANCE' \ --data-urlencode 'payment_method=SNAPMINT' \ --data-urlencode 'redirect_after_payment=true' \ --data-urlencode 'format=json'
