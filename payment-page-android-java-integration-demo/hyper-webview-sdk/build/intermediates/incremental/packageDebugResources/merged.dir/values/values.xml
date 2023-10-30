@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hyper_webview_sdk_version" translatable="false">1.0.0-rc.01</string>
+</resources>

@@ -8,6 +8,9 @@ node_modules/
 dist/
 payment-page-android-java-integration-demo/.gradle
 payment-page-android-java-integration-demo/.idea
+payment-page-android-java-integration-demo/local.properties
+payment-page-android-java-integration-demo/app/build
+
 
 # Compiled Java class files
 *.class

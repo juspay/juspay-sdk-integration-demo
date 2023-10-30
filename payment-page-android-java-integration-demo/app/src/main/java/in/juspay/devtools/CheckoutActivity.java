@@ -6,6 +6,7 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -40,8 +41,7 @@ public class CheckoutActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-
-        updatingUI();
+        updatingUI(); //This is relevant only for sample project
 
         hyperServicesHolder = new HyperServiceHolder(this);
         hyperServicesHolder.setCallback(createHyperPaymentsCallbackAdapter());
@@ -51,7 +51,7 @@ public class CheckoutActivity extends AppCompatActivity {
             public void onClick(View view) {
                 dialog.show();
                 try{
-                    //run();
+                    openPaymentPage();
                 } catch (Exception e){
 
                 }
@@ -66,21 +66,60 @@ public class CheckoutActivity extends AppCompatActivity {
         });
     }
 
+    private void openPaymentPage() throws IOException {
+        JSONObject payload = new JSONObject();
 
-    //block:start:process-sdk
-    private void startPayments(JSONObject sdk_payload) {
-        // Make sure to use the same hyperServices instance which was created in
-        // ProductsActivity.java
-        Helper helper = new Helper();
-        helper.showSnackbar("Process Called!", coordinatorLayout);
+        long randomOrderId = (long) (Math.random()*Math.pow(10,12));
+        String order_id = "test-" + Long.toString(randomOrderId);    // Put you own order id here
+        try{
+            // You can put your payload details here
+            payload.put("order_id", order_id);    // OrderID should be unique
+            payload.put("amount", amountString);    // Amount should be in strings e.g. "100.00"
+            payload.put("customer_id", "testing-customer-one");    // Customer ID should be unique for each user and should be a string
+            payload.put("customer_email", "test@mail.com");
+            payload.put("customer_phone", "9876543201");
+            payload.put("action", "paymentPage");
 
-        // To get this sdk_payload you need to hit your backend API which will again hit the Create Order API 
-        // and the sdk_payload resposne from the Create Order API need to be passed here
-        hyperServicesHolder.process(sdk_payload);
+            // For other payload params you can refer to the integration doc shared with you
+        } catch (Exception e){
+            Log.d("Juspay",e.toString());
+        }
 
+        OkHttpClient client = new OkHttpClient();
+        MediaType mediaType = MediaType.parse("application/json");
+        RequestBody requestBody = RequestBody.create(payload.toString(), mediaType);
+        Request request =
+                new Request.Builder()
+                        .url("http://10.0.2.2:5000/initiateJuspayPayment") //10.0.2.2 Works only on emulator
+                        .method("POST", requestBody)
+                        .build();
+        client.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                call.cancel();
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                try{
+                    //Fetching response from API Call
+                    String processResponse = response.body().string();
+                    JSONObject sdkPayload = new JSONObject(processResponse).getJSONObject("sdkPayload");
+                    CheckoutActivity.this.runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            new Helper().showSnackbar("Opening Payment Page", coordinatorLayout);
+                            //block:start:process-sdk
+                            hyperServicesHolder.process(sdkPayload);
+                            //block:end:process-sdk
+                        }
+                    });
+                } catch (Exception e){
+
+                }
+            }
+        });
     }
-    //block:end:process-sdk
-
 
     // block:start:create-hyper-callback
     private HyperPaymentsCallbackAdapter createHyperPaymentsCallbackAdapter() {
@@ -89,7 +128,6 @@ public class CheckoutActivity extends AppCompatActivity {
             public void onEvent(JSONObject jsonObject, JuspayResponseHandler responseHandler) {
                 Intent redirect = new Intent(CheckoutActivity.this, ResponsePage.class);
                 redirect.putExtra("responsePayload", jsonObject.toString());
-                System.out.println("jsonObject>>> " +jsonObject);
                 try {
                     String event = jsonObject.getString("event");
                     if (event.equals("hide_loader")) {
@@ -121,7 +159,6 @@ public class CheckoutActivity extends AppCompatActivity {
                             switch (status) {
                                 case "backpressed":
                                     // user back-pressed from PP without initiating transaction
-
                                     break;
                                 case "user_aborted":
                                     // user initiated a txn and pressed back
@@ -179,9 +216,10 @@ public class CheckoutActivity extends AppCompatActivity {
         if(!handleBackpress) {
             super.onBackPressed();
         }
-
     }
     //block:end:onBackPressed
+
+
 
     private void updatingUI(){
         coordinatorLayout = findViewById(R.id.coordinatorLayout);

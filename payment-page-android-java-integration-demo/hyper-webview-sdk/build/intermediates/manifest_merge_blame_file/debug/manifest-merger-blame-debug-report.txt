@@ -1,0 +1,92 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="in.juspay.hyper.webview.upi" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="21"
+6-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml
+7        android:targetSdkVersion="33" />
+7-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml
+8
+9    <queries>
+9-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:4:5-45:15
+10        <intent>
+10-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:5:9-10:18
+11            <data
+11-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:6:13-9:40
+12                android:host="pay"
+12-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:7:17-35
+13                android:pathPattern=".*"
+13-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:8:17-41
+14                android:scheme="upi" />
+14-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:9:17-37
+15        </intent>
+16        <intent>
+16-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:11:9-13:18
+17            <action android:name="android.support.customtabs.action.CustomTabsService" />
+17-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:12:13-90
+17-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:12:21-87
+18        </intent>
+19        <intent>
+19-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:14:9-19:18
+20            <data
+20-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:6:13-9:40
+21                android:host="mandate"
+21-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:7:17-35
+22                android:pathPattern=".*"
+22-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:8:17-41
+23                android:scheme="upi" />
+23-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:9:17-37
+24        </intent>
+25        <intent>
+25-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:20:9-24:18
+26            <data
+26-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:6:13-9:40
+27                android:pathPattern=".*"
+27-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:8:17-41
+28                android:scheme="upi" />
+28-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:9:17-37
+29        </intent>
+30        <intent>
+30-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:25:9-30:18
+31            <data
+31-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:6:13-9:40
+32                android:host="pay"
+32-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:7:17-35
+33                android:pathPattern=".*"
+33-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:8:17-41
+34                android:scheme="juspay" />
+34-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:9:17-37
+35        </intent>
+36        <intent>
+36-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:31:9-36:18
+37            <data
+37-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:6:13-9:40
+38                android:host="checkout"
+38-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:7:17-35
+39                android:pathPattern=".*"
+39-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:8:17-41
+40                android:scheme="credpay" />
+40-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:9:17-37
+41        </intent>
+42
+43        <package android:name="com.tatadigital.tcp.dev" />
+43-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:38:9-59
+43-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:38:18-56
+44        <package android:name="com.tatadigital.tcp" />
+44-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:39:9-55
+44-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:39:18-52
+45
+46        <intent>
+46-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:41:9-44:18
+47            <action android:name="android.intent.action.VIEW" />
+47-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:42:13-65
+47-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:42:21-62
+48
+49            <data android:mimeType="application/uri" />
+49-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:6:13-9:40
+49-->/Users/arbindakumarprasad/Juspay/kits/juspay-sdk-integration-demo/payment-page-android-java-integration-demo/hyper-webview-sdk/src/main/AndroidManifest.xml:43:19-53
+50        </intent>
+51    </queries>
+52
+53</manifest>
