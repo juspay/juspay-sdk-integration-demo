@@ -1,3 +1,3 @@
 curl --location --request POST 'https://sandbox.juspay.in/v2/txns/euls8dwVW11EqbuaTEf/capture' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
---header 'Authorization: Basic MTEzOTk1OEMwMzI0MzY2OTE1NjM5QTBERkMzRDc1Og=='
+--header 'Authorization: Basic API KEY'
