@@ -1,0 +1,8 @@
+{ 
+cardBrands :: Maybe (Array String),
+cardBins :: Maybe (Array String),
+cardTypes :: Maybe (Array String),
+cardSubTypes :: Maybe (Array String),
+cardBanks :: Maybe (Array String),
+enable :: Boolean
+}

@@ -1,0 +1,36 @@
+newtype EmiSubFilter = EmiSubFilter
+  { enable :: Boolean 
+    , credit :: Maybe
+      { enable :: Boolean
+      , filters ::
+          [
+            { paymentMethodType :: PaymentMethodType
+            , paymentMethod :: String
+            , enable :: Boolean
+            , issuerFilter :: {issuers :: Array String, enable :: Boolean}
+            }
+          ]
+      }
+    , debit :: Maybe
+      { enable :: Boolean
+      , filters ::
+          [
+            { paymentMethodType :: PaymentMethodType
+            , paymentMethod :: String
+            , enable :: Boolean
+            , issuerFilter :: {issuers :: Array String, enable :: Boolean}
+            }
+          ]
+      }
+    , cardless :: Maybe
+      { enable :: Boolean
+      , filters ::
+         [
+            { paymentMethodType :: PaymentMethodType
+            , paymentMethod :: String
+            , enable :: Boolean
+            , issuerFilter :: {issuers :: Array String, enable :: Boolean}
+            }
+         ]
+      }
+  }

@@ -1,0 +1,6 @@
+newtype EmiFilter = EmiFilter
+  { standardEmi :: Maybe EmiSubFilter
+  , lowCostEmi :: Maybe EmiSubFilter
+  , noCostEmi :: Maybe EmiSubFilter
+  , showOnlyEmi :: Maybe Boolean
+  }

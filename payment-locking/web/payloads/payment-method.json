@@ -1,0 +1,9 @@
+{ 
+enable :: Boolean,
+paymentMethodType :: PaymentMethodType, 
+paymentMethods :: Maybe(Array String),
+cardFilters :: Maybe (Array CardFilter),
+upiFilters :: Maybe (Array UPIFilter),
+display :: Boolean,
+displayMessage :: String
+}

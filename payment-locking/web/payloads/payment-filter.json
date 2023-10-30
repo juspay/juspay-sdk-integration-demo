@@ -1,0 +1,4 @@
+{ 
+allowDefaultOptions :: Maybe Boolean, 
+options :: Array PaymentMethodFilter
+}
