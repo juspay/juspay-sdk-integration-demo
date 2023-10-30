@@ -1,0 +1,23 @@
+metadata.merchant_container_list :
+
+{ payment_method :: String
+
+, payment_method_type :: PaymentMethodType
+
+, display_name :: String
+
+, balance_amount :: Maybe Number
+
+, eligible_amount :: Number
+
+, allow_user_modify_amount :: Maybe Boolean
+
+, currency_info :: Maybe CurrencyInfo
+
+, metadata :: Maybe String
+
+, walletIconURL :: Maybe String
+
+, isPreSelected :: Maybe Boolean
+
+}
