@@ -9,8 +9,8 @@ function createSignature (payload, privateKey) {
     var objKeys = Object.keys(payload);
 
     if (requiredFields.every(key => objKeys.includes(key))){
-        signaturePayload = JSON.stringify(payload);
-        signature = privateKey.sign(signaturePayload, "base64", "utf8");
+        const signaturePayload = JSON.stringify(payload);
+        const signature = privateKey.sign(signaturePayload, "base64", "utf8");
         return {signature, signaturePayload}
     }
     throw Error ("Not a valid JSON payload");
