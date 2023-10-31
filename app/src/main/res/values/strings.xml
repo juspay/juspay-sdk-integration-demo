@@ -2,12 +2,12 @@
     <string name="app_name">Devtools</string>
     <string name="juspay_sdk_"> Juspay SDK Integration Demo </string>
     <string name="home_screen"> Home Screen</string>
-    <string name="juspay_paym">Juspay Payments SDK should be initiated on this screen.</string>
+    <string name="juspay_paym"></string>
     <string name="products">Products</string>
     <string name="product_1">Product 1</string>
     <string name="product_2">Product 2</string>
     <string name="price_rs_1_">Price: Rs. 1/item\nAwesome product description for product one.</string>
     <string name="checkout_sc">Checkout Screen</string>
-    <string name="call_proces">Call process on HyperServices instance on Checkout Button Click</string>
+    <string name="call_proces">Call HyperCheckoutLite.openPaymentPage() on Checkout button click</string>
     <string name="handle_jusp">Handle Juspay Payments SDK Response</string>
 </resources>
