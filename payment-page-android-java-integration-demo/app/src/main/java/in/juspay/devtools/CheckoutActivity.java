@@ -13,11 +13,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import in.juspay.hypersdk.data.JuspayResponseHandler;
 import in.juspay.hypersdk.ui.HyperPaymentsCallbackAdapter;
+
+import org.json.JSONException;
 import org.json.JSONObject;
 import okhttp3.*;
 import java.io.IOException;
-import java.util.Base64;
-import android.webkit.WebView;
 import in.juspay.hyperinteg.HyperServiceHolder;
 
 public class CheckoutActivity extends AppCompatActivity {
@@ -85,6 +85,29 @@ public class CheckoutActivity extends AppCompatActivity {
             Log.d("Juspay",e.toString());
         }
 
+        ApiClient.sendPostRequest("http://10.0.2.2:5000/initiateJuspayPayment", payload, new ApiClient.ApiResponseCallback() {
+            @Override
+            public void onResponseReceived(String response) throws JSONException {
+                try{
+                    JSONObject sdkPayload = new JSONObject(response).getJSONObject("sdkPayload");
+                    CheckoutActivity.this.runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            new Helper().showSnackbar("Opening Payment Page", coordinatorLayout);
+                            hyperServicesHolder.process(sdkPayload);
+                        }
+                    });
+                } catch (Exception e){
+
+                }
+            }
+
+            @Override
+            public void onFailure(Exception e) {
+
+            }
+        });
+
         OkHttpClient client = new OkHttpClient();
         MediaType mediaType = MediaType.parse("application/json");
         RequestBody requestBody = RequestBody.create(payload.toString(), mediaType);
@@ -127,76 +150,16 @@ public class CheckoutActivity extends AppCompatActivity {
             @Override
             public void onEvent(JSONObject jsonObject, JuspayResponseHandler responseHandler) {
                 Intent redirect = new Intent(CheckoutActivity.this, ResponsePage.class);
-                redirect.putExtra("responsePayload", jsonObject.toString());
                 try {
                     String event = jsonObject.getString("event");
                     if (event.equals("hide_loader")) {
                         // Hide Loader
                         dialog.hide();
                     }
-                    // Handle Process Result
-                    // This case will reach once the Hypercheckout screen closes
-                    // block:start:handle-process-result
                     else if (event.equals("process_result")) {
-                        boolean error = jsonObject.optBoolean("error");
-                        JSONObject innerPayload = jsonObject.optJSONObject("payload");
-                        String status = innerPayload.optString("status");
-
-                        if (!error) {
-                            switch (status) {
-                                case "charged":
-                                    // Successful Transaction
-                                    // check order status via S2S API
-                                    redirect.putExtra("status", "OrderSuccess");
-                                    startActivity(redirect);
-                                    break;
-                                case "cod_initiated":
-                                    redirect.putExtra("status", "CODInitiated");
-                                    startActivity(redirect);
-                                    break;
-                            }
-                        } else {
-                            switch (status) {
-                                case "backpressed":
-                                    // user back-pressed from PP without initiating transaction
-                                    break;
-                                case "user_aborted":
-                                    // user initiated a txn and pressed back
-                                    // check order status via S2S API
-                                    Intent successIntent = new Intent(CheckoutActivity.this, ResponsePage.class);
-                                    redirect.putExtra("status", "UserAborted");
-                                    startActivity(redirect);
-                                    break;
-                                case "pending_vbv":
-                                    redirect.putExtra("status", "PendingVBV");
-                                    startActivity(redirect);
-                                    break;
-                                case "authorizing":
-                                    // txn in pending state
-                                    // check order status via S2S API
-                                    redirect.putExtra("status", "Authorizing");
-                                    startActivity(redirect);
-                                    break;
-                                case "authorization_failed":
-                                    redirect.putExtra("status", "AuthorizationFailed");
-                                    startActivity(redirect);
-                                    break;
-                                case "authentication_failed":
-                                    redirect.putExtra("status", "AuthenticationFailed");
-                                    startActivity(redirect);
-                                    break;
-                                case "api_failure":
-                                    redirect.putExtra("status", "APIFailure");
-                                    startActivity(redirect);
-                                    break;
-                                    // txn failed
-                                    // check order status via S2S API
-                                default:
-                                    redirect.putExtra("status", "APIFailure");
-                                    startActivity(redirect);
-                                    break;
-                            }
-                        }
+                        String orderId = jsonObject.getString("orderId");
+                        redirect.putExtra("orderId", orderId);
+                        startActivity(redirect);
                     }
                     // block:end:handle-process-result
                 } catch (Exception e) {
