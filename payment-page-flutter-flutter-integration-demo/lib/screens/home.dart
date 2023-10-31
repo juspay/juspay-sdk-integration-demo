@@ -99,23 +99,13 @@ class _HomeScreenState extends State<HomeScreen> {
           "environment": "production"
         }
       };
-      // block:end:get-initiate-payload
-
-      // Calling initiate on hyperSDK instance to boot up payment engine.
-      // block:start:initiate-sdk
       await widget.hyperSDK.initiate(initiatePayload, initiateCallbackHandler);
-      // block:end:initiate-sdk
     }
   }
 
-  // Define handler for inititate callback
-  // block:start:initiate-callback-handler
   void initiateCallbackHandler(MethodCall methodCall) {
-    if (methodCall.method == "initiate_result") {
-      // check initiate result
-    }
+    if (methodCall.method == "initiate_result") {}
   }
-  // block:end:initiate-callback-handler
 
   Widget singleProduct(double height, String text, int itemCount) {
     return Container(
@@ -129,9 +119,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 borderRadius: BorderRadius.circular(8),
                 color: Color.fromARGB(255, 121, 119, 119)),
             child: Image.asset(
-              text == 'one'
-                  ? 'assets/product1.png'
-                  : 'assets/product2.png', // Replace with the path to your image
+              text == 'one' ? 'assets/product1.png' : 'assets/product2.png',
               fit: BoxFit.cover,
             ),
           ),

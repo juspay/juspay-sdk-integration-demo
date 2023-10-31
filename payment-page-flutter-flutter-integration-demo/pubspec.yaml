@@ -66,6 +66,9 @@ flutter:
   assets:
     - assets/product1.png
     - assets/product2.png
+    - assets/paymentFailed.png
+    - assets/paymentSuccess.png
+    - assets/pending.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

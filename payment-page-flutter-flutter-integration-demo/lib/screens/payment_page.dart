@@ -2,26 +2,18 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
 import 'package:http/http.dart' as http;
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-// block:start:import-hyper-sdk
 import 'package:hypersdkflutter/hypersdkflutter.dart';
-// block:end:import-hyper-sdk
-
 import '../utils/generate_payload.dart';
 import './success.dart';
 import './failed.dart';
 
 class PaymentPage extends StatefulWidget {
-  // Create Juspay Object
-  // block:start:create-hyper-sdk-instance
   final HyperSDK hyperSDK;
-  // block:end:create-hyper-sdk-instance
   final String amount;
   const PaymentPage({Key? key, required this.hyperSDK, required this.amount})
       : super(key: key);
-
   @override
   _PaymentPageState createState() => _PaymentPageState(amount);
 }
@@ -39,10 +31,9 @@ class _PaymentPageState extends State<PaymentPage> {
   @override
   Widget build(BuildContext context) {
     if (!processCalled) {
-      callProcess(amount);
+      openPaymentPage(amount);
     }
-    // Overriding onBackPressed to handle hardware backpress
-    // block:start:onBackPressed
+
     return WillPopScope(
       onWillPop: () async {
         if (Platform.isAndroid) {
@@ -57,7 +48,6 @@ class _PaymentPageState extends State<PaymentPage> {
           return true;
         }
       },
-      // block:end:onBackPressed
       child: Container(
         color: Colors.white,
         child: Center(
@@ -67,18 +57,41 @@ class _PaymentPageState extends State<PaymentPage> {
     );
   }
 
-  void callProcess(amount) async {
+  void openPaymentPage(amount) async {
     processCalled = true;
-    // To get this sdk_payload you need to hit your backend API which will again hit the Create Order API 
-    // and the sdk_payload response from the Create Order API need to be passed here
+    var url = Uri.parse(
+        'http://10.0.2.2:5000/initiateJuspayPayment'); //10.0.2.2 Works only on emulator
+    var headers = {
+      'Content-Type': 'application/json',
+    };
+    var rng = new Random();
+    var number = rng.nextInt(900000) + 100000;
 
-    await widget.hyperSDK.process(sdk_payload, hyperSDKCallbackHandler);
-    // block:end:process-sdk
+    var requestBody = {
+      "order_id": "test" + number.toString(),
+      "amount": amount,
+      "customer_id": "9876543201",
+      "customer_email": "test@mail.com",
+      "customer_phone": "9876543201",
+      "payment_page_client_id": "hdfcmaster"
+    };
+
+    var response =
+        await http.post(url, headers: headers, body: jsonEncode(requestBody));
+
+    if (response.statusCode == 200) {
+      Map<String, dynamic> jsonResponse = jsonDecode(response.body);
+      widget.hyperSDK
+          .process(jsonResponse['sdkPayload'], hyperSDKCallbackHandler);
+    } else {
+      throw Exception(
+          'API call failed with status code ${response.statusCode}');
+    }
+    ;
   }
 
-  // Define handler for callbacks from hyperSDK
-  // block:start:callback-handler
   void hyperSDKCallbackHandler(MethodCall methodCall) {
+    print('args>>> $methodCall');
     switch (methodCall.method) {
       case "hide_loader":
         setState(() {
@@ -93,108 +106,14 @@ class _PaymentPageState extends State<PaymentPage> {
         } catch (e) {
           print(e);
         }
+        print('args>>> $args');
+        var orderId = args['orderId'];
 
-        var error = args["error"] ?? false;
-
-        var innerPayload = args["payload"] ?? {};
-
-        var status = innerPayload["status"] ?? " ";
-        var pi = innerPayload["paymentInstrument"] ?? " ";
-        var pig = innerPayload["paymentInstrumentGroup"] ?? " ";
-
-        if (!error) {
-          switch (status) {
-            case "charged":
-              {
-                // block:start:check-order-status
-                // Successful Transaction
-                // check order status via S2S API
-                // block:end:check-order-status
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => SuccessScreen()));
-              }
-              break;
-            case "cod_initiated":
-              {
-                // User opted for cash on delivery option displayed on the Hypercheckout screen
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => SuccessScreen()));
-              }
-              break;
-          }
-        } else {
-          var errorCode = args["errorCode"] ?? " ";
-          var errorMessage = args["errorMessage"] ?? " ";
-
-          // WidgetsBinding.instance.addPostFrameCallback((_) {
-          //   Navigator.pushReplacement(context,
-          //       MaterialPageRoute(builder: (context) => const SuccessScreen()));
-          // });
-          switch (status) {
-            case "backpressed":
-              {
-                // user back-pressed from PP without initiating any txn
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => FailedScreen()));
-              }
-              break;
-            case "user_aborted":
-              {
-                // user initiated a txn and pressed back
-                // check order status via S2S API
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => FailedScreen()));
-              }
-              break;
-            case "pending_vbv":
-              {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => FailedScreen()));
-              }
-              break;
-            case "authorizing":
-              {
-                // txn in pending state
-                // check order status via S2S API
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => FailedScreen()));
-              }
-              break;
-            case "authorization_failed":
-              {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => FailedScreen()));
-              }
-              break;
-            case "authentication_failed":
-              {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => FailedScreen()));
-              }
-              break;
-            case "api_failure":
-              {
-                // txn failed
-                // check order status via S2S API
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => FailedScreen()));
-              }
-              break;
-            case "new":
-              {
-                // order created but txn failed
-                // check order status via S2S API
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => FailedScreen()));
-              }
-              break;
-            default:
-              {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => FailedScreen()));
-              }
-          }
-        }
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => SuccessScreen(),
+                settings: RouteSettings(arguments: orderId)));
     }
   }
   // block:end:callback-handler
