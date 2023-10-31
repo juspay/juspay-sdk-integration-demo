@@ -3,8 +3,8 @@ import 'package:http/http.dart' as http;
 import '../widgets/app_bar.dart';
 import 'dart:convert';
 
-class SuccessScreen extends StatelessWidget {
-  const SuccessScreen({Key? key}) : super(key: key);
+class ResponseScreen extends StatelessWidget {
+  const ResponseScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -6,8 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hypersdkflutter/hypersdkflutter.dart';
 import '../utils/generate_payload.dart';
-import './success.dart';
-import './failed.dart';
+import 'response.dart';
 
 class PaymentPage extends StatefulWidget {
   final HyperSDK hyperSDK;
@@ -112,7 +111,7 @@ class _PaymentPageState extends State<PaymentPage> {
         Navigator.push(
             context,
             MaterialPageRoute(
-                builder: (context) => SuccessScreen(),
+                builder: (context) => ResponseScreen(),
                 settings: RouteSettings(arguments: orderId)));
     }
   }
