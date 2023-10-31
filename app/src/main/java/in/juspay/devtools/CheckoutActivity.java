@@ -90,8 +90,6 @@ public class CheckoutActivity extends AppCompatActivity {
 
                             HyperCheckoutLite.openPaymentPage(CheckoutActivity.this, sdkPayload, createHyperPaymentsCallbackAdapter());
                             new Helper().showSnackbar("Opening Payment Page", coordinatorLayout);
-
-//                            hyperServicesHolder.process(sdkPayload);
                         }
                     });
                 } catch (Exception e) {
