@@ -1,1 +1,3 @@
 This repository demonstrates how to integrate Juspay's Android SDK.
+
+The documentation to our Android SDK is available here
