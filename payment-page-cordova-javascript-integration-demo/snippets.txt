@@ -167,21 +167,4 @@ hyperSDKRef.initiate(JSON.stringify(createInitiatePayload()), hyperSDKCallback);
 
 //block:end:initiate-sdk
 
-
-// block:start:fetch-process-payload
-
-    //Fetching the process payload from your server. Please refer to the session API section of docs to know more.
-      async function getProcessSDKPayload() {
-        var serverResponse = await fetch("https://your_server_endpoint/");
-        return serverResponse;
-      }
-// block:end:fetch-process-payload
-
-
-//block:start:process-sdk
-
-var processPayload = await fetch getProcessSDKPayload();
-
 hyperSDKRef.process(processPayload);
-
-//block:end:process-sdk
