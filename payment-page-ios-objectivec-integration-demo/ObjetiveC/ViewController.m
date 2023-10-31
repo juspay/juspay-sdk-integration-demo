@@ -44,41 +44,6 @@
 }
 // block:end:create-initiate-payload
 
-
-// Creating process payload JSON object
-// block:start:fetch-process-payload
-- (NSDictionary *)createProcessPayload {
-    // Make an API Call to your server to create Session and return SDK Payload
-    //Payload received from Session API call
-    NSDictionary *sdkProcessPayload = @{
-        @"clientId": @"<your_client_id>",
-        @"amount": @"1.0",
-        @"merchantId": @"<your_merchant_id>",
-        @"clientAuthToken": @"tkn_xxxxxxxxxxxxxxxxxxxxx",
-        @"clientAuthTokenExpiry": @"2022-03-12T20:29:23Z",
-        @"environment": @"sandbox",
-        @"lastName": @"wick",
-        @"action": @"paymentPage",
-        @"customerId": @"testing-customer-one",
-        @"returnUrl": @"https://shop.merchant.com",
-        @"currency": @"INR",
-        @"firstName": @"John",
-        @"customerPhone": @"9876543210",
-        @"customerEmail": @"test@mail.com",
-        @"orderId": @"testing-order-one",
-        @"description": @"Complete your payment"
-    };
-    
-    NSDictionary *sdkPayload = @{
-        @"requestId": NSUUID.UUID.UUIDString,
-        @"service": @"in.juspay.hyperpay",
-        @"payload": sdkProcessPayload
-    };
-
-    return sdkPayload;
-}
-// block:end:fetch-process-payload
-
 - (void)viewDidLoad {
     
     [super viewDidLoad];
