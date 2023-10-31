@@ -222,53 +222,6 @@ const getRandomNumber = () => {
   return Math.floor(Math.random() * 90000000) + 10000000
 };
 
-// block:start:fetch-process-payload
-// Note: Session API should only be called from merchant's server. Don't call it from client app
-// -----------------------------------------------------------------
-const makePaymentRequest = (total) => {
-  var myHeaders = new Headers();
-
-  // API Key Should never be used from client side, it should always be stored securely on server.
-  // And all the API calls requiring API key should always be done from server
-  myHeaders.append(
-    "Authorization",
-    `Basic ${encode("<YOUR_API_KEY>")}`
-  );
-  myHeaders.append("x-merchantid", "<MERCHANT_ID>");
-  myHeaders.append("Content-Type", "application/json");
-
-  var raw = JSON.stringify({
-    order_id: `test-${getRandomNumber()}`,
-    amount: total,
-    customer_id: "9876543201",
-    customer_email: "test@mail.com",
-    customer_phone: "9876543201",
-    payment_page_client_id: "<CLIENT_ID>",
-    action: "paymentPage",
-    return_url: "<return_url>",
-    description: "Complete your payment",
-    first_name: "John",
-    last_name: "wick"
-  });
-
-  var requestOptions = {
-    method: "POST",
-    headers: myHeaders,
-    body: raw,
-    redirect: "follow",
-  };
-
-  fetch("https://api.juspay.in/session", requestOptions)
-    .then((response) => response.json())
-    .then((result) => {
-      // block:start:process-sdk
-      HyperSdkReact.process(JSON.stringify(result.sdk_payload));
-      // block:end:process-sdk
-    })
-    .catch((error) => console.log("error", error));
-};
-// block:end:fetch-process-payload
-
 export default createStackNavigator(
   {
     Checkout: {

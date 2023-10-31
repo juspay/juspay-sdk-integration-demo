@@ -101,32 +101,6 @@ export default function Checkout({navigation}) {
 
     // block:end:event-handling-process
 
-    // block:start:fetch-process-payload
-
-    //Get process payload from server after session API S2S call
-    useEffect(() => {
-        setProcessPayload({
-            "requestId":"dbba45aaf8dc408da474b7943b9e1d9f",
-            "service":"in.juspay.hyperpay",
-            "payload":{
-               "clientId":"<CLIENT_ID>",
-               "amount":"10.0",
-               "merchantId":"acmecorp",
-               "clientAuthToken":"tkn_adbf808e1d2b4d95b41144d0960b5a7e",
-               "clientAuthTokenExpiry":"2022-01-24T17:40:22Z",
-               "environment":"production",
-               "action":"paymentPage",
-               "customerId":"dummyCustId",
-               "currency":"INR",
-               "customerPhone":"9876543210",
-               "customerEmail":"dummyemail@gmail.com",
-               "orderId":"yourUniqueOrderId"
-            }
-        });
-    }, [])
-    
-    // block:end:fetch-process-payload
-
     //Handling hardware backpress inside the checkout screen
     // block:start:handle-hardware-backpress
     
