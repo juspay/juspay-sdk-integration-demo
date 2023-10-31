@@ -1,25 +1,18 @@
 package in.juspay.devtools;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-import org.json.JSONObject;
-import java.util.UUID;
-import in.juspay.hyperinteg.HyperServiceHolder;
-import in.juspay.devtools.PayloadConstants;
+
 
 
 public class ProductsActivity extends AppCompatActivity {
     private Button proceedButton;
     private TextView itemCountTv1, itemCountTv2;
-    private HyperServiceHolder hyperServicesHolder;
-    private JSONObject initiatePayload;
-    protected CoordinatorLayout coordinatorLayout;
     private int item1Count = 1, item2Count = 0, item1Price = 1, item2Price = 1;
 
     @Override
@@ -32,52 +25,7 @@ public class ProductsActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         prepareUI();
-        //block:start:create-hyper-services-instance
-        hyperServicesHolder = new HyperServiceHolder(this);
-        //block:end:create-hyper-services-instance
-        initiateJuspayPaymentsSDK();
-
     }
-
-
-    //block:start:call-initiate
-    //This function will initiate the Juspay SDK for further operations
-    private void initiateJuspayPaymentsSDK() {
-        if(!hyperServicesHolder.isInitialised()){
-            initiatePayload = createInitiatePayload();
-            hyperServicesHolder.initiate(initiatePayload);
-
-            //Showing snackbar
-            Helper helper = new Helper();
-            CoordinatorLayout coordinatorLayout = findViewById(R.id.coordinatorLayout2);
-            helper.showSnackbar("Initiate Called!", coordinatorLayout);
-        }
-    }
-    //block:end:call-initiate
-
-    //block:start:create-initiate-payload
-    // This function creates intiate payload.
-    private JSONObject createInitiatePayload() {
-        JSONObject sdkPayload = new JSONObject();
-        JSONObject innerPayload = new JSONObject();
-        try {
-            // generating inner payload
-            innerPayload.put("action", "initiate");
-            innerPayload.put("merchantId", PayloadConstants.MERCHANT_ID);    // Put your Merchant ID here
-            innerPayload.put("clientId", PayloadConstants.CLIENT_ID);          // Put your Client ID here
-            innerPayload.put("environment", PayloadConstants.ENVIRONMENT);
-            sdkPayload.put("requestId",  ""+ UUID.randomUUID());
-            sdkPayload.put("service", "in.juspay.hyperpay");
-            sdkPayload.put("payload", innerPayload);
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return sdkPayload;
-    }
-    //block:end:create-initiate-payload
-
-    //All Below Functions are for rendering of the demo product screen
     private void prepareUI(){
         proceedButton = findViewById(R.id.rectangle_8);
         itemCountTv1 = findViewById(R.id.some_id);

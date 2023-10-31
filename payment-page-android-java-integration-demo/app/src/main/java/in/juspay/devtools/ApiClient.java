@@ -39,7 +39,6 @@ public class ApiClient {
                 try {
                     if (response.isSuccessful()) {
                         String responseBody = response.body().string();
-
                         callback.onResponseReceived(responseBody);
 
                     } else {

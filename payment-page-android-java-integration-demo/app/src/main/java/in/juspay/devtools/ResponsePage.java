@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -28,8 +29,10 @@ public class ResponsePage extends AppCompatActivity {
         ApiClient.sendGetRequest("http://10.0.2.2:5000/handleJuspayResponse?order_id="+orderId, new ApiClient.ApiResponseCallback() {
             @Override
             public void onResponseReceived(String response) throws JSONException {
+                Log.d("RESPP>>>", response);
                 JSONObject orderStatusJsonObject = new JSONObject(response);
                 String orderStatus = orderStatusJsonObject.getString("order_status");
+                Log.d("STATUS>>>", orderStatus);
                 String message = orderStatusJsonObject.getString("message");
                 runOnUiThread(new Runnable() {
                     @Override
