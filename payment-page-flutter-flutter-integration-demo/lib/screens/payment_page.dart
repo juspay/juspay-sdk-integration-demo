@@ -30,7 +30,7 @@ class _PaymentPageState extends State<PaymentPage> {
   @override
   Widget build(BuildContext context) {
     if (!processCalled) {
-      openPaymentPage(amount);
+      startPayment(amount);
     }
 
     return WillPopScope(
@@ -56,7 +56,7 @@ class _PaymentPageState extends State<PaymentPage> {
     );
   }
 
-  void openPaymentPage(amount) async {
+  void startPayment(amount) async {
     processCalled = true;
     var url = Uri.parse(
         'http://10.0.2.2:5000/initiateJuspayPayment'); //10.0.2.2 Works only on emulator
@@ -81,7 +81,7 @@ class _PaymentPageState extends State<PaymentPage> {
     if (response.statusCode == 200) {
       Map<String, dynamic> jsonResponse = jsonDecode(response.body);
       widget.hyperSDK
-          .process(jsonResponse['sdkPayload'], hyperSDKCallbackHandler);
+          .openPaymentPage(jsonResponse['sdkPayload'], hyperSDKCallbackHandler);
     } else {
       throw Exception(
           'API call failed with status code ${response.statusCode}');
@@ -90,7 +90,6 @@ class _PaymentPageState extends State<PaymentPage> {
   }
 
   void hyperSDKCallbackHandler(MethodCall methodCall) {
-    print('args>>> $methodCall');
     switch (methodCall.method) {
       case "hide_loader":
         setState(() {
@@ -105,7 +104,6 @@ class _PaymentPageState extends State<PaymentPage> {
         } catch (e) {
           print(e);
         }
-        print('args>>> $args');
         var orderId = args['orderId'];
 
         Navigator.push(
@@ -115,5 +113,4 @@ class _PaymentPageState extends State<PaymentPage> {
                 settings: RouteSettings(arguments: orderId)));
     }
   }
-  // block:end:callback-handler
 }

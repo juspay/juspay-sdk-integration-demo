@@ -24,8 +24,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    initiateHyperSDK();
-
     var screenHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
@@ -82,29 +80,6 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       ),
     );
-  }
-
-  void initiateHyperSDK() async {
-    // Check whether hyperSDK is already initialised
-    if (!await widget.hyperSDK.isInitialised()) {
-      // Getting initiate payload
-      // block:start:get-initiate-payload
-      var initiatePayload = {
-        "requestId": const Uuid().v4(),
-        "service": "in.juspay.hyperpay",
-        "payload": {
-          "action": "initiate",
-          "merchantId": "<MERCHANT_ID>",
-          "clientId": "hdfcmaster",
-          "environment": "production"
-        }
-      };
-      await widget.hyperSDK.initiate(initiatePayload, initiateCallbackHandler);
-    }
-  }
-
-  void initiateCallbackHandler(MethodCall methodCall) {
-    if (methodCall.method == "initiate_result") {}
   }
 
   Widget singleProduct(double height, String text, int itemCount) {
