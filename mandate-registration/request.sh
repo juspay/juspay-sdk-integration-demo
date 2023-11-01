@@ -13,6 +13,4 @@ curl --location --request POST 'https://api.juspay.in/session' \
     "action":"paymentPage",
     "options.create_mandate":"OPTIONAL/REQUIRED",
     "mandate.max_amount":"1000.00",
-    "mandate.start_date":"1644420442",
-    "mandate.end_date":"1646234827"
 }'
