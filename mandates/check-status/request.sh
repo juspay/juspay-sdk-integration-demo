@@ -1,4 +1,4 @@
-curl --location --request POST 'http://localhost:8080/mandates/hyhTD5Ga4jJ2KXZwwnyh4A' \
---header 'Authorization: Basic N0JBRDA4OUExRjYwNEYwREEyNDlCNjY3QTVCMUQzM0Q6' \
+curl --location 'https://sandbox.juspay.in/mandates/hyhTD5Ga4jJ2KXZwwnyh4A' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'Authorization: your api key' \
 --data-urlencode 'command=check_status'
