@@ -1,0 +1,26 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Juspay Backend Kit created using archetype-maven-webapp</display-name>
+    <listener>
+        <listener-class>in.juspaybackendkit.JuspayConfig</listener-class>
+    </listener>
+    <servlet>
+        <servlet-name>InitiateJuspayPayment</servlet-name>
+        <servlet-class>in.juspaybackendkit.InitiateJuspayPayment</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>HandleJuspayResponse</servlet-name>
+        <servlet-class>in.juspaybackendkit.HandleJuspayResponse</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InitiateJuspayPayment</servlet-name>
+        <url-pattern>/initiateJuspayPayment</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HandleJuspayResponse</servlet-name>
+        <url-pattern>/handleJuspayResponse</url-pattern>
+    </servlet-mapping>
+</web-app>

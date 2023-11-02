@@ -1,4 +1,0 @@
-// Importing Hyper SDK
-// block:start:import-hyper-sdk
-import HyperSDK
-// block:end:import-hyper-sdk

@@ -1,8 +1,0 @@
-{
-   "category":"action",
-   "subcategory":"user",
-   "label":"expiry_date_changed",
-   "value":{
-      "AddCardScreen":"XXXX"
-   }
-}
