@@ -23,7 +23,7 @@ if(isset($input['amount'])) {
         $params['customer_id'] = "testing-customer-one";
         $params['payment_page_client_id'] = $config["PAYMENT_PAGE_CLIENT_ID"];
         $params['action'] = "paymentPage";
-        $params['return_url'] = "http://localhost:5000/handleJuspayResponse";
+        $params['return_url'] = "http://0.0.0.0:5000/handleJuspayResponse";
         $requestOption = new RequestOptions();
         $requestOption->withCustomerId("testing-customer-one")->withMerchantId($config["MERCHANT_ID"]); # Add merchant id
         $session = Session::create($params, $requestOption);

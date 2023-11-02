@@ -44,7 +44,7 @@ class PHPKit {
             $params['customer_id'] = "testing-customer-one";
             $params['payment_page_client_id'] = $this->config["MERCHANT_ID"];
             $params['action'] = "paymentPage";
-            $params['return_url'] = "http://localhost:5001/handleResponse";
+            $params['return_url'] = "http://0.0.0.0:5000/handleResponse";
             $requestOption = new RequestOptions();
             $requestOption->withCustomerId("testing-customer-one")->withMerchantId($this->config["MERCHANT_ID"]); # Add merchant id
             $session = Session::create($params, $requestOption);
