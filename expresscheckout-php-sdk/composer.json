@@ -9,6 +9,13 @@
             "RamprakashV\\PhpKit\\": "src/"
         }
     },
+    "config": {
+        "process-timeout":0
+    },
+    "scripts": {
+        "run_server": "composer install && php -S 0.0.0.0:5000 router.php",
+        "run_app": "composer install && php Program.php"
+    },
     "authors": [
         {
             "name": "Ramprakash Vel"

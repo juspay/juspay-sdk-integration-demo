@@ -10,19 +10,24 @@ use Juspay\Model\Session;
 class PHPKit {
 
     public string $orderId;
-    public function __construct($orderId) {
+
+    private $config;
+
+    public function __construct($orderId, $config) {
         $this->orderId = $orderId;
+        $this->config = $config;
     }
     public function orderStatus() {
        try {
         $params = array();
         $params ['order_id'] = $this->orderId;
         $requestOption = new RequestOptions();
-        $requestOption->withCustomerId("testing-customer-one")->withMerchantId("SG017"); # Add merchant id
+        $requestOption->withCustomerId("testing-customer-one")->withMerchantId($this->config["MERCHANT_ID"]); # Add merchant id
         $order = Order::status($params, $requestOption);
         echo "id: ". $order->orderId . PHP_EOL;
         echo "amount: ". $order->amount . PHP_EOL;
         echo "status: " . $order->status . PHP_EOL;
+        echo "order env" . getenv("ORDER_ID") . PHP_EOL;
        } catch ( JuspayException $e ) {
             echo "error code" . $e->getHttpResponseCode() . PHP_EOL;
             echo "error message: " . $e->getErrorMessage() . PHP_EOL;
@@ -35,13 +40,13 @@ class PHPKit {
             $params = array();
             $params['amount'] = 1;
             $params['order_id'] = $this->orderId;
-            $params["merchant_id"] = "SG017"; # Add merchant id
+            $params["merchant_id"] = $this->config["MERCHANT_ID"]; # Add merchant id
             $params['customer_id'] = "testing-customer-one";
-            $params['payment_page_client_id'] = "hdfcmaster";
+            $params['payment_page_client_id'] = $this->config["MERCHANT_ID"];
             $params['action'] = "paymentPage";
-            $params['return_url'] = "https://www.hdfc.com";
+            $params['return_url'] = "http://localhost:5001/handleResponse";
             $requestOption = new RequestOptions();
-            $requestOption->withCustomerId("testing-customer-one")->withMerchantId("SG017"); # Add merchant id
+            $requestOption->withCustomerId("testing-customer-one")->withMerchantId($this->config["MERCHANT_ID"]); # Add merchant id
             $session = Session::create($params, $requestOption);
             echo "id: " . $session->id . PHP_EOL;
             echo "order id: ". $session->orderId . PHP_EOL;
@@ -56,18 +61,28 @@ class PHPKit {
     }
 }
 
+$config = file_get_contents("config.json");
+$config = json_decode($config, true);
+$privateKey = array_key_exists("PRIVATE_KEY", $config) ? $config["PRIVATE_KEY"] : file_get_contents($config["PRIVATE_KEY_PATH"]);
+$publicKey =  array_key_exists("PUBLIC_KEY", $config) ? $config["PUBLIC_KEY"] : file_get_contents($config["PUBLIC_KEY_PATH"]);
 
-$privateKey = file_get_contents("./privateKey.pem");
-$publicKey = file_get_contents("./publicKey.pem");
+if ($privateKey == false || $publicKey == false) {
+    if ($privateKey == false) {
+        throw new Exception ("private key file not found");
+    }
+    throw new Exception ("public key file not found");
+}
+
+JuspayEnvironment::init()
+->withBaseUrl("https://smartgatewayuat.hdfcbank.com")
+->withJuspayJWT(new JuspayJWT($config["KEY_UUID"], $publicKey, $privateKey)); #Add key id
 
 $orderId = uniqid();
 
 echo "order id: " . $orderId . PHP_EOL;
 
-JuspayEnvironment::init()
-->withBaseUrl("https://smartgatewayuat.hdfcbank.com")
-->withJuspayJWT(new JuspayJWT("key_85860aaf863c48ea9e0bb572b6571656", $publicKey, $privateKey)); #Add key id
-$phpKit = new PHPKit($orderId);
+$phpKit = new PHPKit($orderId, $config);
+
 echo "Executing Session" . PHP_EOL;
 $phpKit->session();
 echo "Executing Order Status:" . PHP_EOL;
