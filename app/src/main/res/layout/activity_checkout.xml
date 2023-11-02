@@ -256,15 +256,16 @@
             ads:layout_constraintTop_toBottomOf="@+id/rectangle_8" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
             android:layout_width="0dp"
             android:layout_height="122dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="16dp"
+            android:background="@drawable/rectangle_8"
             ads:layout_constraintEnd_toEndOf="parent"
             ads:layout_constraintStart_toStartOf="parent"
-            ads:layout_constraintTop_toBottomOf="@+id/amount"
-            android:background="@drawable/rectangle_8">
+            ads:layout_constraintTop_toBottomOf="@+id/amount">
 
             <TextView
                 android:id="@+id/total_amoun"
@@ -283,15 +284,15 @@
 
             <TextView
                 android:id="@+id/some_id"
+                style="@style/product_1"
                 android:layout_width="70dp"
                 android:layout_height="0dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginEnd="16dp"
-                android:text="Rs 2"
                 android:fontFamily="@font/nunito_sans_regular"
+                android:text="Rs 2"
                 android:textAlignment="viewEnd"
-                style="@style/product_1"
                 ads:layout_constraintBottom_toBottomOf="@+id/total_amoun"
                 ads:layout_constraintEnd_toEndOf="parent"
                 ads:layout_constraintTop_toTopOf="@+id/total_amoun" />
@@ -319,8 +320,8 @@
                 android:layout_height="0dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
-                android:text="Rs 2"
                 android:fontFamily="@font/nunito_sans_regular"
+                android:text="Rs 2"
                 android:textAlignment="viewEnd"
                 ads:layout_constraintBottom_toBottomOf="@+id/total_amoun2"
                 ads:layout_constraintEnd_toEndOf="@+id/some_id"
@@ -329,15 +330,15 @@
 
             <TextView
                 android:id="@+id/total_payab"
+                style="@style/product_1"
                 android:layout_width="140dp"
                 android:layout_height="19dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginBottom="16dp"
+                android:fontFamily="@font/nunito_sans_regular"
                 android:gravity="top"
                 android:text="Total Payable Amount"
-                style="@style/product_1"
-                android:fontFamily="@font/nunito_sans_regular"
                 ads:layout_constraintBottom_toBottomOf="parent"
                 ads:layout_constraintStart_toStartOf="@+id/total_amoun2" />
 
@@ -348,8 +349,8 @@
                 android:layout_height="0dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
-                android:text="Rs 2"
                 android:fontFamily="@font/nunito_sans_regular"
+                android:text="Rs 2"
                 android:textAlignment="viewEnd"
                 ads:layout_constraintBottom_toBottomOf="@+id/total_payab"
                 ads:layout_constraintEnd_toEndOf="@+id/some_id3"
@@ -376,10 +377,17 @@
             ads:layout_constraintStart_toStartOf="parent"
             android:textFontWeight="900"/>
 
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            ads:layout_constraintBottom_toBottomOf="parent"
+            ads:layout_constraintEnd_toEndOf="parent"
+            ads:layout_constraintStart_toStartOf="parent"
+            ads:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 

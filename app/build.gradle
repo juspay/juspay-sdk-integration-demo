@@ -43,8 +43,8 @@ dependencies {
 
 //block:start:add-sdk-implementation
 hyperSdkPlugin {
-    clientId = "hdfcmaster"
-    sdkVersion = "2.1.20-rc.03"
+    clientId = "geddit"
+    sdkVersion = "2.1.20-rc.05"
     microSDKs = ["hypercheckoutlite"]
 }
 //block:end:add-sdk-implementation
