@@ -5,8 +5,7 @@ buildscript {
     // block:start:client-id-extention
     ext {
         clientId = "hdfcmaster"
-        hyperSDKVersion = "2.1.20-rc.03"
-        microSDKs = ['hypercheckoutlite']
+        hyperSDKVersion = "2.1.20-rc.06"
     }
     // block:end:client-id-extention
     repositories {

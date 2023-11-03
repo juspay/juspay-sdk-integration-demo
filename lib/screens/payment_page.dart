@@ -57,7 +57,6 @@ class _PaymentPageState extends State<PaymentPage> {
   }
 
   void startPayment(amount) async {
-    print("PROCESSSSS");
     processCalled = true;
     var url = Uri.parse(
         'http://10.0.2.2:5000/initiateJuspayPayment'); //10.0.2.2 Works only on emulator
@@ -71,13 +70,11 @@ class _PaymentPageState extends State<PaymentPage> {
       "order_id": "test" + number.toString(),
       "amount": amount
     };
-    print('PAYLOAD: ${requestBody}');
     var response =
         await http.post(url, headers: headers, body: jsonEncode(requestBody));
-    print('RESPONSE: ${response}');
     if (response.statusCode == 200) {
       Map<String, dynamic> jsonResponse = jsonDecode(response.body);
-      print('PROCESS: ');
+
       widget.hyperSDK
           .openPaymentPage(jsonResponse['sdkPayload'], hyperSDKCallbackHandler);
     } else {

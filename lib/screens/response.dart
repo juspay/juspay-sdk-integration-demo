@@ -23,7 +23,6 @@ class ResponseScreen extends StatelessWidget {
             }
 
             // Assuming your payment response is of type String, update as needed
-            print('Payment Status: $snapshot');
 
             Map<String, dynamic> data = snapshot.data as Map<String, dynamic>;
             String orderId = data['order_id'];
@@ -45,8 +44,6 @@ class ResponseScreen extends StatelessWidget {
                 statusImageUrl = "assets/paymentFailed.png";
                 break;
             }
-
-            print("order status: $orderStatus");
 
             return Column(
               children: [
@@ -123,11 +120,9 @@ class ResponseScreen extends StatelessWidget {
     if (response.statusCode == 200) {
       Map<String, dynamic> jsonResponse = jsonDecode(response.body);
       return jsonResponse;
-      // print('jsonResponse: $jsonResponse');
     } else {
       throw Exception(
           'API call failed with status code ${response.statusCode} ${response.body}');
     }
-    ;
   }
 }
