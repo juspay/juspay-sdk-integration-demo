@@ -1,0 +1,11 @@
+{
+  "label": "payment_instrument_group",
+  "value": {
+    "pig_name": "wallet",
+    "po_selected": {
+      "unlinked_wallet": "PAYZAPP"
+    },
+    "screen": "walletlistscreen",
+    "section": ""
+  }
+}

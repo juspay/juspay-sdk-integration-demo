@@ -1,0 +1,15 @@
+{
+    "label": "payment_instrument_group",
+    "value": {
+        "pig_name": "card",
+        "po_selected": {
+            "card_details": {
+                "bank_name": "AMEX",
+                "card_brand": "AMEX",
+                "card_type": "CREDIT"
+            }
+        },
+        "screen": "EMIAddCardCheckoutScreen",
+        "section": "null"
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "label": "payment_instrument_group",
+  "value": {
+    "pig_name": "upi",
+    "po_selected": {
+      "vpa_selected": "@axl"
+    },
+    "screen": "VpaScreen",
+    "section": ""
+  }
+}

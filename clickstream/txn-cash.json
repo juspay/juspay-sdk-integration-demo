@@ -1,0 +1,11 @@
+{
+    "label": "payment_instrument_group",
+    "value": {
+        "pig_name": "cash_on_delivery",
+        "po_selected": {
+            "method_name": "cod"
+        },
+        "screen": "codscreen",
+        "section": ""
+    }
+}
