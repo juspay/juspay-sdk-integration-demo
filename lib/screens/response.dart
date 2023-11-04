@@ -62,7 +62,7 @@ class ResponseScreen extends StatelessWidget {
                         alignment: Alignment.centerLeft,
                         padding: const EdgeInsets.symmetric(horizontal: 10),
                         child: const Text(
-                          "Call process on HyperServices instance on Checkout Button Click",
+                          "Call handleJuspayResponse API to fetch the Order Status",
                           style: TextStyle(
                             fontSize: 14,
                           ),
