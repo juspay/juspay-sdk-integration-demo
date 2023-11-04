@@ -39,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 alignment: Alignment.centerLeft,
                 padding: const EdgeInsets.only(left: 20),
                 child: const Text(
-                  "Juspay Payments SDK should be initiated on this screen",
+                  "",
                   style: TextStyle(
                     fontSize: 14,
                   ),

@@ -42,7 +42,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                 alignment: Alignment.centerLeft,
                 padding: const EdgeInsets.only(left: 20),
                 child: const Text(
-                  "Call process on HyperServices instance on Checkout Button Click",
+                  "Call widget.hyperSDK.openPaymentPage() on Checkout button click",
                   style: TextStyle(
                     fontSize: 14,
                   ),

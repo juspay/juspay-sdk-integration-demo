@@ -11,101 +11,110 @@ class ResponseScreen extends StatelessWidget {
     final orderId = ModalRoute.of(context)!.settings.arguments;
     var screenHeight = MediaQuery.of(context).size.height;
 
-    return Scaffold(
-      appBar: customAppBar(text: "Payment Status", context: context),
-      body: FutureBuilder(
-        future: getPaymentResponse(orderId),
-        builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.done) {
-            // Check for errors in the snapshot
-            if (snapshot.hasError) {
-              return Center(child: Text('Error: ${snapshot.error}'));
-            }
-
-            // Assuming your payment response is of type String, update as needed
-
-            Map<String, dynamic> data = snapshot.data as Map<String, dynamic>;
-            String orderId = data['order_id'];
-            String orderStatus = data['order_status'];
-            String orderStatusText = "";
-            String statusImageUrl = "";
-            switch (orderStatus) {
-              case "CHARGED":
-              case "COD_INITIATED":
-                orderStatusText = "Payment Successful";
-                statusImageUrl = "assets/paymentSuccess.png";
-                break;
-              case "PENDING_VBV":
-                orderStatusText = "Payment Pending...";
-                statusImageUrl = "assets/pending.png";
-                break;
-              default:
-                orderStatusText = "Payment Failed";
-                statusImageUrl = "assets/paymentFailed.png";
-                break;
-            }
-
-            return Column(
-              children: [
-                Expanded(
-                  flex: 1,
-                  child: Container(
-                    color: Colors.blue,
-                    width: double.infinity,
-                    alignment: Alignment.centerLeft,
-                    padding: const EdgeInsets.symmetric(horizontal: 10),
-                    child: const Text(
-                      "Call process on HyperServices instance on Checkout Button Click",
-                      style: TextStyle(
-                        fontSize: 14,
+    return WillPopScope(
+        onWillPop: () async {
+          Navigator.pop(context);
+          Navigator.pop(context);
+          return true;
+        },
+        child: Scaffold(
+          appBar: customAppBar(text: "Payment Status", context: context),
+          body: FutureBuilder(
+            future: getPaymentResponse(orderId),
+            builder: (context, snapshot) {
+              if (snapshot.connectionState == ConnectionState.done) {
+                if (snapshot.hasError) {
+                  return Center(child: Text('Error: ${snapshot.error}'));
+                }
+                Map<String, dynamic> data =
+                    snapshot.data as Map<String, dynamic>;
+                String orderId = data['order_id'];
+                String orderStatus = data['order_status'];
+                String orderStatusText = "";
+                String statusImageUrl = "";
+                if (orderStatus != null) {
+                  switch (orderStatus) {
+                    case "CHARGED":
+                    case "COD_INITIATED":
+                      orderStatusText = "Payment Successful";
+                      statusImageUrl = "assets/paymentSuccess.png";
+                      break;
+                    case "PENDING_VBV":
+                      orderStatusText = "Payment Pending...";
+                      statusImageUrl = "assets/pending.png";
+                      break;
+                    default:
+                      orderStatusText = "Payment Failed";
+                      statusImageUrl = "assets/paymentFailed.png";
+                      break;
+                  }
+                } else {
+                  Navigator.pop(context);
+                  Navigator.pop(context);
+                }
+                return Column(
+                  children: [
+                    Expanded(
+                      flex: 1,
+                      child: Container(
+                        color: Colors.blue,
+                        width: double.infinity,
+                        alignment: Alignment.centerLeft,
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
+                        child: const Text(
+                          "Call process on HyperServices instance on Checkout Button Click",
+                          style: TextStyle(
+                            fontSize: 14,
+                          ),
+                        ),
                       ),
                     ),
-                  ),
-                ),
-                Container(
-                  height: screenHeight / 4,
-                  margin: const EdgeInsets.only(top: 100.0),
-                  child: Image.asset(
-                    statusImageUrl,
-                    fit: BoxFit.cover,
-                  ),
-                ),
-                Expanded(
-                  flex: 8,
-                  child: Center(
-                    child: Text(
-                      orderStatusText, // Display the payment response
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+                    Container(
+                      height: screenHeight / 4,
+                      margin: const EdgeInsets.only(top: 100.0),
+                      child: Image.asset(
+                        statusImageUrl,
+                        fit: BoxFit.cover,
+                      ),
                     ),
-                  ),
-                ),
-                Expanded(
-                  child: Center(
-                    child: Text(
-                      "Order Id: " + orderId, // Display the payment response
-                      style:
-                          TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
+                    Expanded(
+                      flex: 8,
+                      child: Center(
+                        child: Text(
+                          orderStatusText, // Display the payment response
+                          style: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.w600),
+                        ),
+                      ),
                     ),
-                  ),
-                ),
-                Expanded(
-                  child: Center(
-                    child: Text(
-                      "Status: " + orderStatus, // Display the payment response
-                      style:
-                          TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
+                    Expanded(
+                      child: Center(
+                        child: Text(
+                          "Order Id: " +
+                              orderId, // Display the payment response
+                          style: TextStyle(
+                              fontSize: 14, fontWeight: FontWeight.w600),
+                        ),
+                      ),
                     ),
-                  ),
-                ),
-              ],
-            );
-          } else {
-            return Center(child: CircularProgressIndicator());
-          }
-        },
-      ),
-    );
+                    Expanded(
+                      child: Center(
+                        child: Text(
+                          "Status: " +
+                              orderStatus, // Display the payment response
+                          style: TextStyle(
+                              fontSize: 14, fontWeight: FontWeight.w600),
+                        ),
+                      ),
+                    ),
+                  ],
+                );
+              } else {
+                return Center(child: CircularProgressIndicator());
+              }
+            },
+          ),
+        ));
   }
 
   Future<Map<String, dynamic>> getPaymentResponse(order_id) async {

@@ -111,10 +111,10 @@ packages:
     dependency: "direct main"
     description:
       name: hypersdkflutter
-      sha256: "9517f1f1ba252b815eb32f00e07942a3db3d7f3c07e442d3efaab329fa2eae3f"
+      sha256: "07a2c83b38239a6a3f90c5251997c49547bb4ddf07ee7dcdb62e87479a4f0d5f"
       url: "https://pub.dev"
     source: hosted
-    version: "4.0.4"
+    version: "4.0.5"
   lints:
     dependency: transitive
     description:

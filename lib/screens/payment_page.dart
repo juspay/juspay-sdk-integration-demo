@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
+import 'package:doc_app/screens/checkout.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -99,13 +100,24 @@ class _PaymentPageState extends State<PaymentPage> {
         } catch (e) {
           print(e);
         }
+        var innerPayload = args["payload"] ?? {};
+        var status = innerPayload["status"] ?? " ";
         var orderId = args['orderId'];
 
-        Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => ResponseScreen(),
-                settings: RouteSettings(arguments: orderId)));
+        switch (status) {
+          case "backpressed":
+          case "user_aborted":
+            {
+              Navigator.pop(context);
+            }
+            break;
+          default:
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => ResponseScreen(),
+                    settings: RouteSettings(arguments: orderId)));
+        }
     }
   }
 }
