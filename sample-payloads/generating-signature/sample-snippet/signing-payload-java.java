@@ -30,13 +30,15 @@ public class JuspayUtil {
         rsa.initSign(privateKey);
         rsa.update(data.getBytes());
         byte[] sign =  rsa.sign();
-        if (urlEncodeSignature) {
-            return URLEncoder.encode(DatatypeConverter.printBase64Binary(sign), "UTF-8");
-        } else {
-            return DatatypeConverter.printBase64Binary(sign);
-        }
+        if (urlEncodeSignature) { 
+            String signature = URLEncoder.encode(DatatypeConverter.printBase64Binary(sign), "UTF-8");
+                return URLDecoder.decode(signature, "UTF-8");
+            }
+            else {
+                return DatatypeConverter.printBase64Binary(sign);
+            }
     }
-
+ 
     //Method to retrieve the Private Key from a file
     public static PrivateKey readPrivateKeyFromFile(String filename) throws Exception {
         File keyFile = new File(filename);
@@ -54,6 +56,7 @@ public class JuspayUtil {
         byte[] keyBytes = DatatypeConverter.parseBase64Binary(fileContent.toString());
         return generatePrivateKey(keyBytes, isPkcs1Content);
     }
+    
 
     //Method to retrieve the Private Key from a variable
     public static PrivateKey readPrivateKey(String content) throws Exception {
