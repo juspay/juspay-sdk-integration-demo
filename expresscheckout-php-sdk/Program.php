@@ -17,6 +17,8 @@ class PHPKit {
         $this->orderId = $orderId;
         $this->config = $config;
     }
+
+    // block:start:order-status-functions
     public function orderStatus() {
        try {
         $params = array();
@@ -34,6 +36,7 @@ class PHPKit {
             echo "error code" . $e->getErrorCode() . PHP_EOL;
         }
     }
+    // block:start:order-status-function
     
     // block:start:session-function
     public function session() {
