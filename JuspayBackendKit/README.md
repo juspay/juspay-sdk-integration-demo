@@ -23,6 +23,7 @@ Note:- key file path has to be absolute.
 ## Run Application
 The app is made using Servlets. Hence, multiple ways to run the application.
 
+[//]: # (block:start:run-server)
 ### Quick run using `setup.sh`
 ```bash
 chmod +x ./setup.sh
@@ -35,6 +36,7 @@ mvn clean install
 mvn clean package
 mvn jetty:run
 ```
+[//]: # (block:end:run-server)
 
 # Want to add inside your own project (Servlet based project)
 Please find `in.juspaybackendkit` package and copy it to your own setup. Now that we have added skd code in the project we'll configure web.xml

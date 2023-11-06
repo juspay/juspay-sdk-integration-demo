@@ -47,10 +47,12 @@ public class JuspayConfig implements ServletContextListener {
             String privateKey = readKeyFromPath(privateKeyPath, "private-key.pem");
             String publicKey = readKeyFromPath(publicKeyPath, "public-key.pem");
 
+            // block:start:initialize-juspay-config
             JweJwsEncryptionKeys jweJwsEncryptionKeys = new JweJwsEncryptionKeys(keyUUID, publicKey, privateKey);
             JuspayEnvironment.withMerchantId(merchantId);
             JuspayEnvironment.withJweJwsEncryption(jweJwsEncryptionKeys);
             JuspayEnvironment.withBaseUrl(JuspayConfig.SANDBOX_BASE_URL);
+            // block:end:initialize-juspay-config
 
             JuspayConfig.merchant_id = merchantId;
             JuspayConfig.key_uuid = keyUUID;

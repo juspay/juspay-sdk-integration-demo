@@ -15,6 +15,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.UUID;
 
+// block:start:InitiateJuspayPayment
 public class InitiateJuspayPayment extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
@@ -84,3 +85,4 @@ public class InitiateJuspayPayment extends HttpServlet {
         }
     }
 }
+// block:end:InitiateJuspayPayment
