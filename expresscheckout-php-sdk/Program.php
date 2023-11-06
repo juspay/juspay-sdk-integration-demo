@@ -34,7 +34,8 @@ class PHPKit {
             echo "error code" . $e->getErrorCode() . PHP_EOL;
         }
     }
-
+    
+    // block:start:session-function
     public function session() {
         try {
             $params = array();
@@ -59,7 +60,9 @@ class PHPKit {
             echo "error code" . $e->getErrorCode() . PHP_EOL;
         }
     }
+    // block:end:session-function
 }
+
 
 $config = file_get_contents("config.json");
 $config = json_decode($config, true);
