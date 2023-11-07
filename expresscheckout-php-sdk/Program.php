@@ -36,7 +36,7 @@ class PHPKit {
             echo "error code" . $e->getErrorCode() . PHP_EOL;
         }
     }
-    // block:start:order-status-function
+    // block:end:order-status-function
     
     // block:start:session-function
     public function session() {
