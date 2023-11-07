@@ -32,6 +32,7 @@ public class ResponsePage extends AppCompatActivity {
         String orderId = i.getStringExtra("orderId");
         Button okay = findViewById(R.id.rectangle_12);
 
+        // block:start:sendGetRequest
         ApiClient.sendGetRequest("http://10.0.2.2:5000/handleJuspayResponse?order_id="+orderId, new ApiClient.ApiResponseCallback() {
             @Override
             public void onResponseReceived(String response) throws JSONException {
@@ -67,7 +68,7 @@ public class ResponsePage extends AppCompatActivity {
                         .show();
             }
         });
-
+        // block:end:sendGetRequest
 
         ImageView back = findViewById(R.id.imageView1);
         back.setOnClickListener(new View.OnClickListener() {
