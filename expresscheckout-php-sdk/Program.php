@@ -18,7 +18,7 @@ class PHPKit {
         $this->config = $config;
     }
 
-    // block:start:order-status-functions
+    // block:start:order-status-function
     public function orderStatus() {
        try {
         $params = array();
