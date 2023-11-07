@@ -66,21 +66,25 @@ public class CheckoutActivity extends AppCompatActivity {
         });
     }
 
+    // block:start:startPayment
     private void openPaymentPage() throws IOException {
         JSONObject payload = new JSONObject();
 
         long randomOrderId = (long) (Math.random() * Math.pow(10, 12));
         String order_id = "test-" + randomOrderId;    // Put you own order id here
         try {
+            // block:start:updateOrderID
             // You can put your payload details here
             payload.put("order_id", order_id);    // OrderID should be unique
             payload.put("amount", amountString);    // Amount should be in strings e.g. "100.00"
 
             // For other payload params you can refer to the integration doc shared with you
+            // block:start:updateOrderID
         } catch (Exception e) {
             Log.d("EXCEPTATION: ", e.toString());
         }
 
+        // block:start:sendPostRequest
         ApiClient.sendPostRequest("http://10.0.2.2:5000/initiateJuspayPayment", payload, new ApiClient.ApiResponseCallback() {
             @Override
             public void onResponseReceived(String response) throws JSONException {
@@ -89,7 +93,9 @@ public class CheckoutActivity extends AppCompatActivity {
                     CheckoutActivity.this.runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
+                            // block:start:openPaymentPage
                             HyperCheckoutLite.openPaymentPage(CheckoutActivity.this, sdkPayload, createHyperPaymentsCallbackAdapter());
+                            // block:end:openPaymentPage
                             new Helper().showSnackbar("Opening Payment Page", coordinatorLayout);
                         }
                     });
@@ -105,7 +111,9 @@ public class CheckoutActivity extends AppCompatActivity {
                 new Helper().showSnackbar("Payment Initiation API Failed", coordinatorLayout);
             }
         });
+        // block:end:sendPostRequest
     }
+    // block:end:startPayment
 
     @Override
     protected void onPause() {
