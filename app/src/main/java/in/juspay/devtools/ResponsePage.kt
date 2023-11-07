@@ -3,18 +3,20 @@ package `in`.juspay.devtools
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import org.json.JSONException
 import org.json.JSONObject
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
+import com.google.android.material.snackbar.Snackbar
 
 class ResponsePage : AppCompatActivity() {
+    private lateinit var constraintLayout: ConstraintLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_response_page)
+        constraintLayout = findViewById(R.id.responsePageLayout);
     }
 
     override fun onStart() {
@@ -25,10 +27,8 @@ class ResponsePage : AppCompatActivity() {
 
         ApiClient.sendGetRequest("http://10.0.2.2:5000/handleJuspayResponse?order_id=$orderId", object : ApiClient.ApiResponseCallback {
             override fun onResponseReceived(response: String?) {
-//                Log.d("RESPP>>>", response)
                 val orderStatusJsonObject = JSONObject(response)
                 val orderStatus = orderStatusJsonObject.getString("order_status")
-                Log.d("STATUS>>>", orderStatus)
                 val message = orderStatusJsonObject.getString("message")
                 runOnUiThread {
                     val statusText = findViewById<TextView>(R.id.payment_suc)
@@ -45,6 +45,8 @@ class ResponsePage : AppCompatActivity() {
 
             override fun onFailure(e: Exception?) {
                 // Handle the failure here, e contains information about the error
+                Log.d("EXCEPTATION: ", e.toString())
+                Snackbar.make(constraintLayout, "Order Status API Failed", Snackbar.LENGTH_LONG)
             }
         })
 

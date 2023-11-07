@@ -4,7 +4,6 @@ import android.app.ProgressDialog
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
@@ -13,10 +12,7 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout
 import `in`.juspay.hypercheckoutlite.HyperCheckoutLite
 import `in`.juspay.hypersdk.data.JuspayResponseHandler
 import `in`.juspay.hypersdk.ui.HyperPaymentsCallbackAdapter
-import org.json.JSONException
 import org.json.JSONObject
-import java.io.IOException
-import `in`.juspay.hyperinteg.HyperServiceHolder
 
 class CheckoutActivity : AppCompatActivity() {
     private lateinit var processButton: Button
