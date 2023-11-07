@@ -6,7 +6,8 @@ curl --location 'https://api.juspay.in/v1/offers/list?emi=true' \
         "order_id": "SDEA5645",
         "amount": "12000",
         "currency": "INR",
-        "basket": "[{\"id\":\"id1\",\"unitPrice\":10000,\"quantity\":1},{\"id\":\"id2\",\"unitPrice\":2000,\"quantity\":1}]"
+        "basket": "[{\"id\":\"id1\",\"unitPrice\":10000,\"quantity\":1},{\"id\":\"id2\",\"unitPrice\":2000,\"quantity\":1}]",
+        "amount_info": "{\"base_amount\":\"11000\",\"add_on_amounts\":[{\"name\":\"tax\",\"amount\":\"1000\"}]}"
     },
     "payment_method_info": [
         {
