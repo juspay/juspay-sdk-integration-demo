@@ -17,6 +17,7 @@ public class HandleJuspayResponse extends HttpServlet {
         doPost(req, resp);
     }
 
+    // block:start:order-status-function
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String orderId = req.getParameter("order_id");
@@ -66,6 +67,7 @@ public class HandleJuspayResponse extends HttpServlet {
             resp.getWriter().write(makeErrorMsg(e.getStatus()));
         }
     }
+    // block:end:order-status-function
 
     private String makeErrorMsg(String msg) {
         return "{\n  \"message\": \"" + msg + "\"\n}";
