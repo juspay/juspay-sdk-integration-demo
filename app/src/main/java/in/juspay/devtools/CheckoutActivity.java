@@ -78,7 +78,7 @@ public class CheckoutActivity extends AppCompatActivity {
 
             // For other payload params you can refer to the integration doc shared with you
         } catch (Exception e) {
-            Log.d("Juspay", e.toString());
+            Log.d("EXCEPTATION: ", e.toString());
         }
 
         ApiClient.sendPostRequest("http://10.0.2.2:5000/initiateJuspayPayment", payload, new ApiClient.ApiResponseCallback() {
@@ -94,13 +94,15 @@ public class CheckoutActivity extends AppCompatActivity {
                         }
                     });
                 } catch (Exception e) {
-                    Log.d("ERROR>>>", e.toString());
+                    Log.d("EXCEPTATION:", e.toString());
+                    new Helper().showSnackbar("Unable to parse sdkPayload from response", coordinatorLayout);
                 }
             }
 
             @Override
             public void onFailure(Exception e) {
-
+                Log.d("EXCEPTATION: ", e.toString());
+                new Helper().showSnackbar("Payment Initiation API Failed", coordinatorLayout);
             }
         });
     }
@@ -108,7 +110,6 @@ public class CheckoutActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        Log.d("PAUSE ACTIVITY", "");
     }
 
     // block:start:create-hyper-callback
