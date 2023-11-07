@@ -37,7 +37,7 @@ class ResponsePage : AppCompatActivity() {
 
                     when (orderStatus) {
                         "CHARGED" -> statusIcon.setImageDrawable(resources.getDrawable(R.drawable.payment_success))
-                        "PENDING" -> statusIcon.setImageDrawable(resources.getDrawable(R.drawable.pending))
+                        "PENDING_VBV" -> statusIcon.setImageDrawable(resources.getDrawable(R.drawable.pending))
                         else -> statusIcon.setImageDrawable(resources.getDrawable(R.drawable.payment_failed))
                     }
                 }
