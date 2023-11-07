@@ -79,7 +79,7 @@ public class CheckoutActivity extends AppCompatActivity {
             payload.put("amount", amountString);    // Amount should be in strings e.g. "100.00"
 
             // For other payload params you can refer to the integration doc shared with you
-            // block:start:updateOrderID
+            // block:end:updateOrderID
         } catch (Exception e) {
             Log.d("EXCEPTATION: ", e.toString());
         }
