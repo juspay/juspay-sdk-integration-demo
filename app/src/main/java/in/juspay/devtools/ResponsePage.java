@@ -49,7 +49,7 @@ public class ResponsePage extends AppCompatActivity {
                             case "CHARGED":
                                 statusIcon.setImageDrawable(getResources().getDrawable(R.drawable.payment_success));
                                 break;
-                            case "PENDING":
+                            case "PENDING_VBV":
                                 statusIcon.setImageDrawable(getResources().getDrawable(R.drawable.pending));
                                 break;
                             default:
