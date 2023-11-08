@@ -39,28 +39,19 @@ public class ResponsePage extends AppCompatActivity {
                 JSONObject orderStatusJsonObject = new JSONObject(response);
                 String orderStatus = orderStatusJsonObject.getString("order_status");
                 String message = orderStatusJsonObject.getString("message");
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        TextView statusText = findViewById(R.id.payment_suc);
-                        statusText.setText(message);
-                        ImageView statusIcon = findViewById(R.id.checked_1);
-
-                        switch (orderStatus) {
-                            case "CHARGED":
-                                statusIcon.setImageDrawable(getResources().getDrawable(R.drawable.payment_success));
-                                break;
-                            case "PENDING_VBV":
-                                statusIcon.setImageDrawable(getResources().getDrawable(R.drawable.pending));
-                                break;
-                            default:
-                                statusIcon.setImageDrawable(getResources().getDrawable(R.drawable.payment_failed));
-                                break;
+                    switch (orderStatus) {
+                        case "CHARGED":
+                         // Create and Display UI for Payment Success Screen 
+                            break;
+                        case "PENDING_VBV":
+                         // Create and Display UI for Payment Pending Screen 
+                            break;
+                         default:
+                        // Create and Display UI for Payment Failure Screen 
+                            break;
                         }
-                    }
-                });
             }
-
+       // block:end:sendGetRequest
             @Override
             public void onFailure(Exception e) {
                 Log.d("EXCEPTATION: ", e.toString());
@@ -68,7 +59,7 @@ public class ResponsePage extends AppCompatActivity {
                         .show();
             }
         });
-        // block:end:sendGetRequest
+        
 
         ImageView back = findViewById(R.id.imageView1);
         back.setOnClickListener(new View.OnClickListener() {
