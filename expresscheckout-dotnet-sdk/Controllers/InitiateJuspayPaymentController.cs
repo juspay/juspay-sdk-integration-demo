@@ -31,7 +31,7 @@ namespace dotnet_server.Controllers {
                 string orderId = string.IsNullOrEmpty(req.Order_id) ? $"{new Random().Next()}" : req.Order_id;
                 string customerId = "testing-customer-one";
                 RequestOptions requestOptions = new RequestOptions{ CustomerId = customerId, MerchantId =  JuspayEnvironment.MerchantId };
-                CreateOrderSessionInput createOrderSessionInput = new CreateOrderSessionInput(new Dictionary<string, object>{{ "amount", req.Amount }, { "order_id",  orderId}, { "customer_id", customerId }, { "payment_page_client_id", Init.Config.PaymentPageClientId }, { "action", "paymentPage" }, { "return_url", "http://localhost:5000/handleJuspayResponse" }, { "metadata.GOCASHFREE:gateway_reference_id", "V3Cashfree" } });
+                CreateOrderSessionInput createOrderSessionInput = new CreateOrderSessionInput(new Dictionary<string, object>{{ "amount", req.Amount }, { "order_id",  orderId}, { "customer_id", customerId }, { "payment_page_client_id", Init.Config.PaymentPageClientId }, { "action", "paymentPage" }, { "return_url", "http://localhost:5000/handleJuspayResponse" } });
                 JuspayResponse sessionRes = new SessionService().CreateOrderSession(createOrderSessionInput, requestOptions);
                 Dictionary<string, object> res = new Dictionary<string, object> {
                     { "orderId", sessionRes.Response.order_id },
