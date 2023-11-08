@@ -45,7 +45,7 @@ class CheckoutActivity : AppCompatActivity() {
         processButton.setOnClickListener {
             dialog.show()
             try {
-                openPaymentPage()
+                startPayment()
             } catch (e: Exception) {
             }
         }
@@ -56,7 +56,7 @@ class CheckoutActivity : AppCompatActivity() {
     }
 
     // block:start:startPayment
-    private fun openPaymentPage() {
+    private fun startPayment() {
         val payload = JSONObject()
 
         val randomOrderId = (Math.random() * Math.pow(10.0, 12.0)).toLong()
