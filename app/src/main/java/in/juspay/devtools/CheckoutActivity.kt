@@ -139,7 +139,7 @@ class CheckoutActivity : AppCompatActivity() {
 
     // block:start:onBackPressed
     override fun onBackPressed() {
-        val handleBackpress = HyperCheckoutLite.handleBackPress()
+        val handleBackpress = HyperCheckoutLite.onBackPressed()
         if (!handleBackpress) {
             super.onBackPressed()
         }
