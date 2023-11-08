@@ -10,7 +10,7 @@
             "wallets": [
                 {
                     "checkType": [
-                        "SIMPL"
+                        "simpl"
                     ],
                     "customerId": "1234567890",
                     "mobile": "9999999999"
@@ -33,21 +33,6 @@
             "first_name": "Simpl",
             "last_name": "Simpl",
             "aggregator_flow_ori": "headless"
-        },
-        "device_params": {
-            "simpl_device_manufacturer": "Samsung",
-            "simpl_device_model": "FT-129459",
-            "simpl_isr": "false",
-            "simpl_dres": "561,
-570","simpl_duptime": "1100877165","simpl_can": "Walker, Dominguez and
-Davis","simpl_ipa": "192.168. 1.1","simpl_pav": "testing","user_agent": "Mozilla/5.0
-(Linux; Android 8.1.0; Redmi 5A Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML,
-like Gecko) Version/4.0Chrome/97.0.4692.70 Mobile Safari/537.36","simpl_amem":
-"2395",
-            "simpl_adisk": "1666",
-            "simpl_fontsize": "11",
-            "simpl_pan": "6.6.4",
-            "simpl_ltln": "-22.629812, -11.583188"
         }
     }
 }
