@@ -118,13 +118,15 @@ class ResponseScreen extends StatelessWidget {
   }
 
   Future<Map<String, dynamic>> getPaymentResponse(order_id) async {
-    var url = Uri.parse(
-        'http://10.0.2.2:5000/handleJuspayResponse?order_id=${order_id}'); //10.0.2.2 Works only on emulator
     var headers = {
       'Content-Type': 'application/json',
     };
 
-    var response = await http.get(url, headers: headers);
+    //10.0.2.2 Works only on emulator
+    var response = await http.get(
+        Uri.parse(
+            'http://10.0.2.2:5000/handleJuspayResponse?order_id=${order_id}'),
+        headers: headers);
 
     if (response.statusCode == 200) {
       Map<String, dynamic> jsonResponse = jsonDecode(response.body);

@@ -59,20 +59,21 @@ class _PaymentPageState extends State<PaymentPage> {
 
   void startPayment(amount) async {
     processCalled = true;
-    var url = Uri.parse(
-        'http://10.0.2.2:5000/initiateJuspayPayment'); //10.0.2.2 Works only on emulator
     var headers = {
       'Content-Type': 'application/json',
     };
-    var rng = new Random();
-    var number = rng.nextInt(900000) + 100000;
 
     var requestBody = {
-      "order_id": "test" + number.toString(),
+      "order_id": "test" + (new Random().nextInt(900000) + 100000).toString(),
       "amount": amount
     };
-    var response =
-        await http.post(url, headers: headers, body: jsonEncode(requestBody));
+
+    // 10.0.2.2 Works only on emulator
+    var response = await http.post(
+        Uri.parse('http://10.0.2.2:5000/initiateJuspayPayment'),
+        headers: headers,
+        body: jsonEncode(requestBody));
+
     if (response.statusCode == 200) {
       Map<String, dynamic> jsonResponse = jsonDecode(response.body);
 
