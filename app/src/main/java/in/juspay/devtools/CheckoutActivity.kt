@@ -55,12 +55,14 @@ class CheckoutActivity : AppCompatActivity() {
         }
     }
 
+    // block:start:startPayment
     private fun openPaymentPage() {
         val payload = JSONObject()
 
         val randomOrderId = (Math.random() * Math.pow(10.0, 12.0)).toLong()
         val order_id = "test-$randomOrderId" // Put your own order id here
         try {
+            // block:start:updateOrderID
             // You can put your payload details here
             payload.put("order_id", order_id) // OrderID should be unique
             payload.put("amount", amountString) // Amount should be in strings e.g. "100.00"
@@ -70,16 +72,20 @@ class CheckoutActivity : AppCompatActivity() {
             payload.put("action", "paymentPage")
 
             // For other payload params, you can refer to the integration doc shared with you
+            // block:end:updateOrderID
         } catch (e: Exception) {
             Log.d("Juspay", e.toString())
         }
 
+        // block:start:sendPostRequest
         ApiClient.sendPostRequest("http://10.0.2.2:5000/initiateJuspayPayment", payload, object : ApiClient.ApiResponseCallback {
             override fun onResponseReceived(response: String?) {
                 try {
                     val sdkPayload = JSONObject(response).getJSONObject("sdkPayload")
                     runOnUiThread {
+                        // block:start:openPaymentPage
                         HyperCheckoutLite.openPaymentPage(this@CheckoutActivity, sdkPayload, createHyperPaymentsCallbackAdapter())
+                        // block:end:openPaymentPage
                         Helper().showSnackbar("Opening Payment Page", coordinatorLayout)
                     }
                 } catch (e: Exception) {
@@ -91,8 +97,11 @@ class CheckoutActivity : AppCompatActivity() {
 
             }
         })
+        // block:end:sendPostRequest
     }
+    // block:end:startPayment
 
+    // block:start:create-hyper-callback
     private fun createHyperPaymentsCallbackAdapter(): HyperPaymentsCallbackAdapter {
         return object : HyperPaymentsCallbackAdapter() {
             override fun onEvent(jsonObject: JSONObject, responseHandler: JuspayResponseHandler) {
@@ -126,13 +135,16 @@ class CheckoutActivity : AppCompatActivity() {
             }
         }
     }
+    // block:end:create-hyper-callback
 
+    // block:start:onBackPressed
     override fun onBackPressed() {
         val handleBackpress = HyperCheckoutLite.handleBackPress()
         if (!handleBackpress) {
             super.onBackPressed()
         }
     }
+    // block:end:onBackPressed
 
     private fun updatingUI() {
         coordinatorLayout = findViewById(R.id.coordinatorLayout)
