@@ -57,6 +57,7 @@ class _PaymentPageState extends State<PaymentPage> {
     );
   }
 
+  // block:start:startPayment
   void startPayment(amount) async {
     processCalled = true;
     var headers = {
@@ -64,15 +65,19 @@ class _PaymentPageState extends State<PaymentPage> {
     };
 
     var requestBody = {
+      // block:start:updateOrderID
       "order_id": "test" + (new Random().nextInt(900000) + 100000).toString(),
       "amount": amount
+      // block:end:updateOrderID
     };
 
+    // block:start:await-http-post-function
     // 10.0.2.2 Works only on emulator
     var response = await http.post(
         Uri.parse('http://10.0.2.2:5000/initiateJuspayPayment'),
         headers: headers,
         body: jsonEncode(requestBody));
+    // block:end:await-http-post-function
 
     if (response.statusCode == 200) {
       Map<String, dynamic> jsonResponse = jsonDecode(response.body);
@@ -85,6 +90,7 @@ class _PaymentPageState extends State<PaymentPage> {
     }
     ;
   }
+  // block:end:startPayment
 
   void hyperSDKCallbackHandler(MethodCall methodCall) {
     switch (methodCall.method) {
