@@ -51,7 +51,7 @@ public class CheckoutActivity extends AppCompatActivity {
                     progressBar.setVisibility(View.VISIBLE);
                 });
                 try {
-                    openPaymentPage();
+                    startPayment();
                 } catch (Exception e) {
 
                 }
@@ -67,7 +67,7 @@ public class CheckoutActivity extends AppCompatActivity {
     }
 
     // block:start:startPayment
-    private void openPaymentPage() throws IOException {
+    private void startPayment() throws IOException {
         JSONObject payload = new JSONObject();
 
         long randomOrderId = (long) (Math.random() * Math.pow(10, 12));
@@ -81,7 +81,7 @@ public class CheckoutActivity extends AppCompatActivity {
             // For other payload params you can refer to the integration doc shared with you
             // block:end:updateOrderID
         } catch (Exception e) {
-            Log.d("EXCEPTATION: ", e.toString());
+            Log.d("EXCEPTION: ", e.toString());
         }
 
         // block:start:sendPostRequest
