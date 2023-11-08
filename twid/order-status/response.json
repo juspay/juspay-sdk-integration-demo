@@ -91,29 +91,7 @@
         "epg_txn_id": "2150281800",
         "resp_message": "Simulated response message",
         "auth_id_code": "NA",
-        "txn_id": "azhar_test-HD-1699336785-1-1",
-        "gateway_response": {
-          "bank_reference": "1234567890",
-          "cf_payment_id": 2150281800,
-          "entity": "payment",
-          "is_captured": true,
-          "order_amount": 998,
-          "order_id": "azhar_test-HD-1699336785-1-1",
-          "payment_amount": 998,
-          "payment_completion_time": "2023-11-07T11:31:11+05:30",
-          "payment_currency": "INR",
-          "payment_group": "upi",
-          "payment_message": "Simulated response message",
-          "payment_method": {
-            "upi": {
-              "channel": "collect",
-              "upi_id": "testsuccess@gocash"
-            }
-          },
-          "payment_status": "SUCCESS",
-          "payment_time": "2023-11-07T11:30:25+05:30",
-          "upi_id": "testsuccess@gocash"
-        }
+        "txn_id": "azhar_test-HD-1699336785-1-1"
       },
       "gateway_id": 70,
       "gateway_reference_id": "twid-s2s",
@@ -149,8 +127,8 @@
           "unique_request_id": "refund1699336957-1",
           "ref": "RF-2558",
           "created": "2023-11-07T06:02:37Z",
-          "status": "MANUAL_REVIEW",
-          "error_message": "Partial refund request has been queued.",
+          "status": "SUCCESS",
+          "error_message": "Transaction Cancelled Successfully",
           "sent_to_gateway": true,
           "expected_refund_credit_time": "2023-11-18T07:00:00Z",
           "initiated_by": "API",
@@ -196,25 +174,7 @@
         "epg_txn_id": null,
         "resp_message": "success",
         "auth_id_code": null,
-        "txn_id": "azhar_test-HD-1699336785-1-2",
-        "gateway_response": {
-          "data": {
-            "twid_transaction_id": 78212,
-            "bill_amount": 1000,
-            "bill_amount_remaining": 998,
-            "cashback_voucher_earned": null,
-            "reward_points_earned": 40,
-            "reward_amount_redeemed": 2,
-            "transaction_date": null,
-            "redeemed_points": "8",
-            "merchant_transaction_id": "azhar_test-HD-1699336785-1-2",
-            "voucher_amount_redeemed": null,
-            "total_amount_redeemed": null
-          },
-          "error_code": null,
-          "message": "success",
-          "status": true
-        }
+        "txn_id": "azhar_test-HD-1699336785-1-2"
       },
       "gateway_id": 92,
       "gateway_reference_id": "twid-s2s",
