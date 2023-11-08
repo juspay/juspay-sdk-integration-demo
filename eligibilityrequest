@@ -6,6 +6,20 @@
         "amount": "1.00",
         "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213",
         "orderId": "hyperorder45314",
+        "data": {
+            "wallets": [
+                {
+                    "checkType": [
+                        "SIMPL"
+                    ],
+                    "customerId": "1234567890",
+                    "mobile": "9999999999"
+                }
+            ],
+            "cards": [],
+            "wallets": [],
+            "apps": []
+        },
         "merchant_params": {
             "email": "shshh@gamil.com",
             "first_txn_date": "2019-07-17",
@@ -34,20 +48,6 @@ like Gecko) Version/4.0Chrome/97.0.4692.70 Mobile Safari/537.36","simpl_amem":
             "simpl_fontsize": "11",
             "simpl_pan": "6.6.4",
             "simpl_ltln": "-22.629812, -11.583188"
-        },
-        "data": {
-            "wallets": [
-                {
-                    "checkType": [
-                        "SIMPL"
-                    ],
-                    "customerId": "1234567890",
-                    "mobile": "9999999999"
-                }
-            ],
-            "cards": [],
-            "wallets": [],
-            "apps": []
         }
     }
 }
