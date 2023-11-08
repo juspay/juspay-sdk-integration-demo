@@ -122,11 +122,13 @@ class ResponseScreen extends StatelessWidget {
       'Content-Type': 'application/json',
     };
 
+    // block:start:sendGetRequest
     //10.0.2.2 Works only on emulator
     var response = await http.get(
         Uri.parse(
             'http://10.0.2.2:5000/handleJuspayResponse?order_id=${order_id}'),
         headers: headers);
+    // block:end:sendGetRequest
 
     if (response.statusCode == 200) {
       Map<String, dynamic> jsonResponse = jsonDecode(response.body);
