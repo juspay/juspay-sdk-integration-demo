@@ -8,8 +8,10 @@ use Juspay\Model\JuspayJWT;
 $config = file_get_contents("config.json");
 $config = json_decode($config, true);
 
+// block:start:read-keys-from-file
 $privateKey = array_key_exists("PRIVATE_KEY", $config) ? $config["PRIVATE_KEY"] : file_get_contents($config["PRIVATE_KEY_PATH"]);
 $publicKey =  array_key_exists("PUBLIC_KEY", $config) ? $config["PUBLIC_KEY"] : file_get_contents($config["PUBLIC_KEY_PATH"]);
+// block:end:read-keys-from-file
 
 if ($privateKey == false || $publicKey == false) {
     http_response_code(500);
@@ -24,11 +26,11 @@ if ($privateKey == false || $publicKey == false) {
     }
 }
 
-// block:start:initalize-function
+// block:start:initialize-juspay-config
 JuspayEnvironment::init()
 ->withBaseUrl("https://smartgatewayuat.hdfcbank.com")
 ->withJuspayJWT(new JuspayJWT($config["KEY_UUID"], $publicKey, $privateKey)); #Add key id
-// block:end:initalize-function
+// block:end:initialize-juspay-config
 
 class ServerEnv {
     public function __construct($config) {
