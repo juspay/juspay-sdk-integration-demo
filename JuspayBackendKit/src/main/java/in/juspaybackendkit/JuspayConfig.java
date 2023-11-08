@@ -65,9 +65,11 @@ public class JuspayConfig implements ServletContextListener {
         }
     }
 
+    // block:start:read-keys-from-file
     private static String readFileAsString(String filePath) throws IOException {
         return new String(Files.readAllBytes(Paths.get(filePath)), Charset.defaultCharset());
     }
+    // block:end:read-keys-from-file
 
     private static String resolveConfigValue(ObjectNode configObject, String key, boolean optional) {
         if (configObject.get(key) != null) {
