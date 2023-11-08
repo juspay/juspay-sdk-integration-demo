@@ -46,7 +46,7 @@ class ResponsePage : AppCompatActivity() {
 
             override fun onFailure(e: Exception?) {
                 // Handle the failure here, e contains information about the error
-                Log.d("EXCEPTATION: ", e.toString())
+                Log.d("EXCEPTION: ", e.toString())
                 Snackbar.make(constraintLayout, "Order Status API Failed", Snackbar.LENGTH_LONG)
             }
         })
