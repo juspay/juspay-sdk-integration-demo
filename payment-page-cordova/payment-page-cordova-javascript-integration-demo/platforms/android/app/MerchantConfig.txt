@@ -1,1 +1,0 @@
-clientId = <client_id shared by juspay>

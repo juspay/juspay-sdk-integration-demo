@@ -1,4 +1,0 @@
- // Creating an object of HyperServices class.
-    // block:start:create-hyper-services-instance
-    let hyperInstance = HyperServices();
-    // block:end:create-hyper-services-instance
