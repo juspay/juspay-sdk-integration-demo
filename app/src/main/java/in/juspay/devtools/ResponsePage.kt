@@ -24,7 +24,8 @@ class ResponsePage : AppCompatActivity() {
         val i = intent
         val orderId = i.getStringExtra("orderId")
         val okay = findViewById<Button>(R.id.rectangle_12)
-
+        
+        // block:start:sendGetRequest
         ApiClient.sendGetRequest("http://10.0.2.2:5000/handleJuspayResponse?order_id=$orderId", object : ApiClient.ApiResponseCallback {
             override fun onResponseReceived(response: String?) {
                 val orderStatusJsonObject = JSONObject(response)
@@ -49,6 +50,7 @@ class ResponsePage : AppCompatActivity() {
                 Snackbar.make(constraintLayout, "Order Status API Failed", Snackbar.LENGTH_LONG)
             }
         })
+        // block:end:sendGetRequest
 
         val back = findViewById<ImageView>(R.id.imageView1)
         back.setOnClickListener {
