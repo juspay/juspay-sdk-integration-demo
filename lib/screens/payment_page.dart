@@ -92,6 +92,7 @@ class _PaymentPageState extends State<PaymentPage> {
   }
   // block:end:startPayment
 
+  // block:start:create-hyper-callback
   void hyperSDKCallbackHandler(MethodCall methodCall) {
     switch (methodCall.method) {
       case "hide_loader":
@@ -127,4 +128,5 @@ class _PaymentPageState extends State<PaymentPage> {
         }
     }
   }
+  // block:end:create-hyper-callback
 }
