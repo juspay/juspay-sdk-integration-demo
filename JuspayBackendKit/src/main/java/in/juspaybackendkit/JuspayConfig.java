@@ -25,7 +25,6 @@ public class JuspayConfig implements ServletContextListener {
     public static final String SANDBOX_BASE_URL = "https://smartgatewayuat.hdfcbank.com";
     public static final String PRODUCTION_BASE_URL = "https://smartgateway.hdfcbank.com";
 
-    // block:start:initialize-juspay-config
     @Override
     public void contextInitialized(ServletContextEvent sce) {
         try {
@@ -48,11 +47,12 @@ public class JuspayConfig implements ServletContextListener {
             String privateKey = readKeyFromPath(privateKeyPath, "private-key.pem");
             String publicKey = readKeyFromPath(publicKeyPath, "public-key.pem");
 
-            
+            // block:start:initialize-juspay-config
             JweJwsEncryptionKeys jweJwsEncryptionKeys = new JweJwsEncryptionKeys(keyUUID, publicKey, privateKey);
             JuspayEnvironment.withMerchantId(merchantId);
             JuspayEnvironment.withJweJwsEncryption(jweJwsEncryptionKeys);
             JuspayEnvironment.withBaseUrl(JuspayConfig.SANDBOX_BASE_URL);
+            // block:end:initialize-juspay-config
 
             JuspayConfig.merchant_id = merchantId;
             JuspayConfig.key_uuid = keyUUID;
@@ -64,7 +64,6 @@ public class JuspayConfig implements ServletContextListener {
             throw new RuntimeException(e);
         }
     }
-    // block:end:initialize-juspay-config
 
     private static String readFileAsString(String filePath) throws IOException {
         return new String(Files.readAllBytes(Paths.get(filePath)), Charset.defaultCharset());
