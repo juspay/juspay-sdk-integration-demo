@@ -23,9 +23,13 @@ if ($privateKey == false || $publicKey == false) {
         throw new Exception ("public key file not found");
     }
 }
+
+// block:start:initalize-function
 JuspayEnvironment::init()
 ->withBaseUrl("https://smartgatewayuat.hdfcbank.com")
 ->withJuspayJWT(new JuspayJWT($config["KEY_UUID"], $publicKey, $privateKey)); #Add key id
+// block:end:initalize-function
+
 class ServerEnv {
     public function __construct($config) {
         self::$config = $config;
