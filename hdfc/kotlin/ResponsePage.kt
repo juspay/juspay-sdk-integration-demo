@@ -31,26 +31,23 @@ class ResponsePage : AppCompatActivity() {
                 val orderStatusJsonObject = JSONObject(response)
                 val orderStatus = orderStatusJsonObject.getString("order_status")
                 val message = orderStatusJsonObject.getString("message")
-                runOnUiThread {
-                    val statusText = findViewById<TextView>(R.id.payment_suc)
-                    statusText.text = message
-                    val statusIcon = findViewById<ImageView>(R.id.checked_1)
 
                     when (orderStatus) {
-                        "CHARGED" -> statusIcon.setImageDrawable(resources.getDrawable(R.drawable.payment_success))
-                        "PENDING_VBV" -> statusIcon.setImageDrawable(resources.getDrawable(R.drawable.pending))
-                        else -> statusIcon.setImageDrawable(resources.getDrawable(R.drawable.payment_failed))
+                        "CHARGED" -> // Create and Display UI for Payment Success Screen
+                        "PENDING_VBV" -> // Create and Display UI for Payment Pending Screen
+                        else -> // Create and Display UI for Payment Failure Screen
                     }
                 }
             }
-
+            // block:end:sendGetRequest
+            
             override fun onFailure(e: Exception?) {
                 // Handle the failure here, e contains information about the error
                 Log.d("EXCEPTION: ", e.toString())
                 Snackbar.make(constraintLayout, "Order Status API Failed", Snackbar.LENGTH_LONG)
             }
         })
-        // block:end:sendGetRequest
+        
 
         val back = findViewById<ImageView>(R.id.imageView1)
         back.setOnClickListener {
