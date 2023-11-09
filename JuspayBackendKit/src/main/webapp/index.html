@@ -80,7 +80,7 @@
                 order_id: orderId,
                 amount: amount,
             };
-//block:start:handle-payment-response
+<!--block:start:open-paymentpage-->
             var xhr = new XMLHttpRequest();
             xhr.open("POST", 'initiateJuspayPayment', true);
             xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
@@ -96,7 +96,7 @@
                     alert(`http status code: ${xhr.status} message: ${response.message}`);
                 }
             };
-//block:end:handle-payment-response
+<!--block:end:open-paymentpage-->
             xhr.send(JSON.stringify(data));
         });
     </script>
