@@ -82,10 +82,11 @@ class _PaymentPageState extends State<PaymentPage> {
     if (response.statusCode == 200) {
       Map<String, dynamic> jsonResponse = jsonDecode(response.body);
 
+      // block:start:openPaymentPage
       widget.hyperSDK
-          // block:start:openPaymentPage
           .openPaymentPage(jsonResponse['sdkPayload'], hyperSDKCallbackHandler);
-          // block:end:openPaymentPage
+      // block:end:openPaymentPage
+      
     } else {
       throw Exception(
           'API call failed with status code ${response.statusCode}');
