@@ -20,12 +20,14 @@ namespace dotnet_server.Controllers
     public class HandleJuspayResponseController : Controller
     {
 
+        // block:start:order-status-function
         public JuspayResponse getOrderStatus (string orderId)
         {
             string customerId = "testing-customer-one";
-            RequestOptions requestOptions = new RequestOptions{ CustomerId = customerId, MerchantId =  JuspayEnvironment.MerchantId };
+            RequestOptions requestOptions = new RequestOptions{ CustomerId = customerId };
             return new OrderService().GetOrder(orderId, null, requestOptions);
         }
+        // block:end:order-status-function
         public string orderStatusMessage(JuspayResponse orderRes)
         {
         Dictionary<string, string> response = new Dictionary<string, string> { { "order_id", (string) orderRes.Response.order_id }};

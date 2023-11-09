@@ -28,9 +28,10 @@ namespace dotnet_server.Controllers {
                 {
                     return BadRequest();
                 }
+                // block:start:session-function
                 string orderId = string.IsNullOrEmpty(req.Order_id) ? $"{new Random().Next()}" : req.Order_id;
                 string customerId = "testing-customer-one";
-                RequestOptions requestOptions = new RequestOptions{ CustomerId = customerId, MerchantId =  JuspayEnvironment.MerchantId };
+                RequestOptions requestOptions = new RequestOptions{ CustomerId = customerId };
                 CreateOrderSessionInput createOrderSessionInput = new CreateOrderSessionInput(new Dictionary<string, object>{{ "amount", req.Amount }, { "order_id",  orderId}, { "customer_id", customerId }, { "payment_page_client_id", Init.Config.PaymentPageClientId }, { "action", "paymentPage" }, { "return_url", "http://localhost:5000/handleJuspayResponse" } });
                 JuspayResponse sessionRes = new SessionService().CreateOrderSession(createOrderSessionInput, requestOptions);
                 Dictionary<string, object> res = new Dictionary<string, object> {
@@ -40,6 +41,7 @@ namespace dotnet_server.Controllers {
                     { "paymentLinks", sessionRes.Response.payment_links },
                     { "sdkPayload", sessionRes.Response.sdk_payload },
                 };
+                // block:end:session-function
                 if (sessionRes.Response.status == "NEW")
                 {
                     return new ContentResult

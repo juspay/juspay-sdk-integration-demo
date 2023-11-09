@@ -25,15 +25,19 @@ namespace  dotnet_server
                 }
                 if (Config.PrivateKey == null && Config.PrivateKeyPath != null)
                 {
+                    // block:start:read-keys-from-file
                     Config.PrivateKey = File.ReadAllText(Config.PrivateKeyPath);
+                    // block:end:read-keys-from-file
                 }
                 if (Config.PublicKey == null && Config.PublicKeyPath != null)
                 {
                     Config.PublicKey = File.ReadAllText(Config.PublicKeyPath);
                 }
+                // block:start:initialize-juspay-config
                 JuspayEnvironment.JuspayJWT = new JuspayJWTRSA(Config.KeyUuid, Config.PublicKey, Config.PrivateKey);
                 JuspayEnvironment.MerchantId = Config.MerchantId;
                 JuspayEnvironment.BaseUrl = "https://smartgatewayuat.hdfcbank.com";
+                // block:end:initialize-juspay-config
             }
         }
         public static Config Config { get; set; }
