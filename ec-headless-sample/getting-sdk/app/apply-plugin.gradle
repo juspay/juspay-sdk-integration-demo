@@ -1,7 +1,0 @@
-plugins {
-    id 'com.android.application'
-    // block:start:apply-plugin
-    id 'hypersdk-asset-plugin'
-    // block:end:apply-plugin
-}
-

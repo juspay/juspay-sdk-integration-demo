@@ -1,5 +1,0 @@
-//block:start:import-hyper-sdk
-
-import HyperSdkReact from 'hyper-sdk-react';
-
-//block:end:import-hyper-sdk

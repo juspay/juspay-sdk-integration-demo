@@ -1,5 +1,0 @@
-// block:start:initiate-sdk
-
-HyperSdkReact.initiate(JSON.stringify(initiate_payload));
-
-// block:end:initiate-sdk
