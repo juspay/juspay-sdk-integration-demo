@@ -33,7 +33,7 @@ class _PaymentPageState extends State<PaymentPage> {
     if (!processCalled) {
       startPayment(amount);
     }
-
+//block:start:onBackPress
     return WillPopScope(
       onWillPop: () async {
         if (Platform.isAndroid) {
@@ -48,6 +48,7 @@ class _PaymentPageState extends State<PaymentPage> {
           return true;
         }
       },
+//block:end:onBackPress
       child: Container(
         color: Colors.white,
         child: Center(
