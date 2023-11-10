@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <style>
+        .container {
+            height: 80vh;
+            margin-left: auto;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form {
+            margin: 0 auto;
+            margin-top: 3rem;
+            border: 1px solid gray;
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 2px 2px gray;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #submitBtn {
+            align-self: center;
+        }
+
+        .button-1 {
+            background-color: #05f;
+            border-radius: 8px;
+            border-style: none;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 1rem;
+            font-weight: 500;
+            height: 40px;
+            line-height: 20px;
+            padding: 10px;
+            text-align: center;
+            transition: color 100ms;
+            vertical-align: baseline;
+        }
+
+            .button-1:hover,
+            .button-1:focus {
+                background-color: #472ed5;
+            }
+
+        .heading {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <link href="data:text/css,%3Ais(%5Bid*%3D'google_ads_iframe'%5D%2C%5Bid*%3D'taboola-'%5D%2C.taboolaHeight%2C.taboola-placeholder%2C%23credential_picker_container%2C%23credentials-picker-container%2C%23credential_picker_iframe%2C%5Bid*%3D'google-one-tap-iframe'%5D%2C%23google-one-tap-popup-container%2C.google-one-tap-modal-div%2C%23amp_floatingAdDiv%2C%23ez-content-blocker-container%2C%23notify-adblock)%20%7Bdisplay%3Anone!important%3Bmin-height%3A0!important%3Bheight%3A0!important%3B%7D" rel="stylesheet" type="text/css">
+</head>
+
+<body data-new-gr-c-s-check-loaded="8.908.0" data-gr-ext-installed="">
+    <div class="heading">
+        <h2>Order Form</h2>
+    </div>
+    <div class="container">
+        <div class="form">
+            <form id="orderForm">
+                <label for="orderId">Order ID:</label>
+                <input type="text" id="orderId"><br><br>
+                <label for="amount">Amount*:</label>
+                <input type="number" id="amount" required=""><br><br>
+                <!-- <label for="payment-page-client-id">payment-page-client-id:</label>
+                <input type="text" id="payment-page-client-id"><br><br> -->
+            </form>
+            <button id="submitBtn" class="button-1">Submit</button>
+        </div>
+    </div>
+    <script>
+        document.getElementById("submitBtn").addEventListener("click", function() {
+            var orderId = document.getElementById("orderId").value;
+            var amount = document.getElementById("amount").value;
+            var data = {
+                order_id: orderId,
+                amount: amount,
+            };
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", 'initiateJuspayPayment', true);
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4) {
+                    var response = JSON.parse(xhr.responseText);
+                    if (xhr.status == 200) {
+                        if (response.status === 'NEW') {
+                            var url = response.paymentLinks.web;
+                            return window.location.href = url;
+                        }
+                    }
+                    alert(`http status code: ${xhr.status} message: ${response.message}`);
+                }
+            };
+            xhr.send(JSON.stringify(data));
+        });
+    </script>
+
+</body>
+</html>
