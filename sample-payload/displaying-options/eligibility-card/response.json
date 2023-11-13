@@ -4,23 +4,15 @@
     "payload": {
         "action": "eligibility",
         "data": {
-            "cards": [
-                {
-                    "cardBin": "652801",
-                    "cardAlias": "",
-                    "checkType": {
-                        "otp": {
-                            "eligible": true
-                        },
-                        "vies": {
-                            "alias": "65eg5trh67j2801t",
-                            "eligibility": true,
-                            "enrolled": true,
-                            "expired": false
-                        }
+            "cards": [{
+                "cardBin": "652801",
+                "cardAlias": "",
+                "checkType": {
+                    "otp": {
+                        "eligible": true
                     }
                 }
-            ]
+            }]
         }
     },
     "error": false,
