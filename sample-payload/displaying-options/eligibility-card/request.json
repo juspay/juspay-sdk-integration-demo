@@ -6,18 +6,13 @@
         "amount": "1.00",
         "data": {
             "wallets": [],
-            "cards": [
-                {
-                    "cardBin": "524254",
-                    "cardAlias": "e5poq5sehj0nfvndv1o7a9s99",
-                    "checkType": [
-                        "otp",
-                        "vies"
-                    ]
-                }
-            ]
-        },
-        "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213",
-        "showLoader": true
+            "cards": [{
+                "cardBin": "524254",
+                "cardAlias": "e5poq5sehj0nfvndv1o7a9s99", //cardFingerprint
+                "checkType": [
+                    "otp"
+                ]
+            }]
+        }
     }
 }
