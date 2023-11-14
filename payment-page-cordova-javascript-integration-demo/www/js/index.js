@@ -228,7 +228,7 @@ document.getElementById("checkoutButton").addEventListener("click", () => {
   myHeaders.append("Content-Type", "application/json");
   myHeaders.append(
     "Authorization",
-    `Basic OEEwRTRBRDA0MjA0NjhCQjE0NEQxQjExNjMzNkRB`         
+    `Basic <API_KEY>`         
   );
 
   var raw = JSON.stringify({
