@@ -1,61 +1,25 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from "react";
-import {
-  StyleSheet,
-  TouchableOpacity,
-  Image,
-  View,
-  ImageBackground,
-} from "react-native";
+import { StyleSheet, TouchableOpacity, Image, View } from "react-native";
 import HyperSdkReact from "hyper-sdk-react";
-import axios from "axios";
-import { encode } from "base-64";
-import { withNavigation } from "react-navigation";
 import {
   BackHandler,
   Button,
   NativeEventEmitter,
   NativeModules,
-  ScrollView,
   Text,
-  navigation,
 } from "react-native";
 import { createStackNavigator } from "react-navigation";
-
-
-const makePaymentRequest = (total) => {
-  var myHeaders = new Headers();
-  myHeaders.append("Content-Type", "application/json");
-
-  var raw = JSON.stringify({
-    order_id: `test-${getRandomNumber()}`,
-    amount: total
-  });
-
-  var requestOptions = {
-    method: "POST",
-    headers: myHeaders,
-    body: raw,
-    redirect: "follow",
-  };
-
-  fetch("http://10.0.2.2:5000/initiateJuspayPayment", requestOptions)
-    .then((response) => response.json())
-    .then((result) => {
-      // block:start:process-sdk
-      HyperSdkReact.process(JSON.stringify(result.sdkPayload));
-      // block:end:process-sdk
-    })
-    .catch((error) => console.log("error", error));
-  
-};
+import ApiClient from "./ApiClient";
+import LoaderKit from "react-native-loader-kit";
 
 class Checkout extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       processPayload: {},
-      total: 1
+      total: 1,
+      isLoaderActive: false,
     };
   }
 
@@ -63,101 +27,62 @@ class Checkout extends React.Component {
     const eventEmitter = new NativeEventEmitter(NativeModules.HyperSdkReact);
     eventEmitter.addListener("HyperEvent", (resp) => {
       const data = JSON.parse(resp);
+      const orderId = data.orderId;
       const event = data.event || "";
       switch (event) {
         case "initiate_result":
-          // this was already handled in homescreen where initiate was called
-          break;
         case "hide_loader":
-          // stop the processing loader
+          //Handle initiate_result and hide_loader
+          this.setState({ isLoaderActive: false });
           break;
         //block:start:handle-process-result
 
         case "process_result":
-          const error = data.error || false;
           const innerPayload = data.payload || {};
           const status = innerPayload.status || "";
-          const pi = innerPayload.paymentInstrument || "";
-          const pig = innerPayload.paymentInstrumentGroup || "";
-
-          if (!error) {
-            // txn success, status should be "charged"
-
-            //block:start:check-order-status
-
-            // call orderStatus once to verify (false positives)
-
-            //block:end:check-order-status
-
-            //block:start:display-payment-status
-
-            this.props.navigation.navigate("Success");
-
-            //block:end:display-payment-status
-          } else {
-            const errorCode = data.errorCode || "";
-            const errorMessage = data.errorMessage || "";
-            switch (status) {
-              case "backpressed":
-                // user back-pressed from PP without initiating any txn
-                break;
-              case "user_aborted":
-                // user initiated a txn and pressed back
-                // poll order status
-                this.props.navigation.navigate("Failure");
-                break;
-              case "pending_vbv":
-              case "authorizing":
-                // txn in pending state
-                // poll order status until backend says fail or success
-                break;
-              case "authorization_failed":
-              case "authentication_failed":
-              case "api_failure":
-                // txn failed
-                // poll orderStatus to verify (false negatives)
-                //block:start:display-payment-status
-
-                this.props.navigation.navigate("Failure");
-
-                //block:end:display-payment-status
-                break;
-              case "new":
-                // order created but txn failed
-                // very rare for V2 (signature based)
-                // also failure
-                // poll order status
-                this.props.navigation.navigate("Failure");
-                break;
-              default:
-                // unknown status, this is also failure
-                // poll order status
-                this.props.navigation.navigate("Failure");
-            }
-            // if txn was attempted, pi and pig would be non-empty
-            // can be used to show in UI if you are into that
-            // errorMessage can also be shown in UI
+          console.log("Inner Payload>>>", innerPayload);
+          switch (status) {
+            case "backpressed":
+            case "user_aborted":
+              //Handle Backpress or user aborted case
+              break;
+            default:
+              this.props.navigation.navigate("Response", {
+                orderId: orderId,
+              });
           }
           break;
-
-        //block:end:handle-process-result
         default:
           console.log(data);
       }
     });
 
-    //Handling hardware backpress inside the checkout screen
-    // block:start:handle-hardware-backpress
     BackHandler.addEventListener("hardwareBackPress", () => {
       return !HyperSdkReact.isNull() && HyperSdkReact.onBackPressed();
-    // block:end:handle-hardware-backpress
     });
   }
 
   startPayment() {
-    if(HyperSdkReact.isInitialised()){
-      makePaymentRequest(this.state.total);
-    }
+    this.setState({ isLoaderActive: true });
+    var payload = {
+      order_id: `test-${getRandomNumber()}`,
+      amount: this.state.total,
+    };
+
+    ApiClient.sendPostRequest(
+      "http://10.0.2.2:5000/initiateJuspayPayment",
+      payload,
+      {
+        onResponseReceived: (response) => {
+          HyperSdkReact.openPaymentPage(
+            JSON.stringify(JSON.parse(response).sdkPayload)
+          );
+        },
+        onFailure: (error) => {
+          console.error("POST request failed:", error);
+        },
+      }
+    );
   }
 
   handleBackPress() {
@@ -165,8 +90,9 @@ class Checkout extends React.Component {
   }
 
   render() {
-    const { p1Count, p2Count, p1Price, p2Price } = this.props.navigation.state.params;
-    this.state.total = (p1Price * p1Count) + (p2Price * p2Count) + 2;
+    const { p1Count, p2Count, p1Price, p2Price } =
+      this.props.navigation.state.params;
+    this.state.total = p1Price * p1Count + p2Price * p2Count + 2;
     return (
       <View style={styles.CheckoutActivity}>
         <View style={styles.Group669}>
@@ -190,7 +116,7 @@ class Checkout extends React.Component {
           </View>
           <View style={styles.Group492}>
             <Text style={styles.CallProcessOnHyperse}>
-              Call process on HyperServices instance on Checkout Button Click
+            Call HyperSdkReact.openPaymentPage() on Checkout button click
             </Text>
           </View>
           <View style={styles.Container}>
@@ -221,9 +147,13 @@ class Checkout extends React.Component {
                 </Text>
               </View>
               <View style={styles.Group828}>
-                <Text style={styles._2}>₹ {(p1Price * p1Count) + (p2Price * p2Count)}</Text>
+                <Text style={styles._2}>
+                  ₹ {p1Price * p1Count + p2Price * p2Count}
+                </Text>
                 <Text style={styles._02}>₹ 2</Text>
-                <Text style={styles._22}>₹ {(p1Price * p1Count) + (p2Price * p2Count) + 2}</Text>
+                <Text style={styles._22}>
+                  ₹ {p1Price * p1Count + p2Price * p2Count + 2}
+                </Text>
               </View>
             </View>
             <View style={styles.Checkout}>
@@ -241,13 +171,25 @@ class Checkout extends React.Component {
             uri: "https://firebasestorage.googleapis.com/v0/b/unify-v3-copy.appspot.com/o/l77bpu3z5t-23%3A126?alt=media&token=288ee118-fdf8-46d4-b853-8a5e1d3986a4",
           }}
         />
+        {this.state.isLoaderActive && (
+          <View style={styles.container}>
+            <View style={styles.centeredContent}>
+              <LoaderKit
+                style={{ width: 50, height: 50 }}
+                name={"BallPulse"}
+                size={50}
+                color={"blue"}
+              />
+            </View>
+          </View>
+        )}
       </View>
     );
   }
 }
 
 const getRandomNumber = () => {
-  return Math.floor(Math.random() * 90000000) + 10000000
+  return Math.floor(Math.random() * 90000000) + 10000000;
 };
 
 export default createStackNavigator(
@@ -265,6 +207,12 @@ export default createStackNavigator(
 );
 
 const styles = StyleSheet.create({
+  container: {
+    width: '100%',
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   Container: {
     paddingLeft: 10,
     paddingRight: 10,
@@ -392,7 +340,7 @@ const styles = StyleSheet.create({
   Group6109: {
     display: "flex",
     flexDirection: "column",
-    
+
     alignItems: "flex-end",
     height: "100%",
     boxSizing: "border-box",
@@ -422,7 +370,7 @@ const styles = StyleSheet.create({
     fontWeight: "400",
     paddingBottom: 20,
     paddingTop: 8,
-    paddingLeft: 30
+    paddingLeft: 30,
   },
   Group872: {
     display: "flex",
@@ -444,7 +392,7 @@ const styles = StyleSheet.create({
     lineHeight: 14,
     fontFamily: "Nunito Sans, sans-serif",
     fontWeight: "400",
-    paddingLeft: 30
+    paddingLeft: 30,
   },
   Amount: {
     color: "rgba(251,141,51,1)",
@@ -544,7 +492,7 @@ const styles = StyleSheet.create({
     marginTop: 70,
   },
   Checkout: {
-    paddingTop:40
+    paddingTop: 40,
   },
   Vector1: {
     position: "absolute",

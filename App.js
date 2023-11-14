@@ -3,8 +3,7 @@ import {createAppContainer, createStackNavigator} from 'react-navigation';
 
 import Homescreen from './screens/Homescreen';
 import Checkout from './screens/Checkout';
-import Success from './screens/Success';
-import Failure from './screens/Failure';
+import Response from './screens/Response';
 //block:start:import-hyper-sdk
 
 import HyperSdkReact from 'hyper-sdk-react';
@@ -15,8 +14,7 @@ import {NativeEventEmitter, NativeModules} from 'react-native';
 
 const RootStack = createStackNavigator({
   Home: Homescreen,
-  Success: Success,
-  Failure: Failure,
+  Response: Response,
   Checkout: Checkout,
 });
 

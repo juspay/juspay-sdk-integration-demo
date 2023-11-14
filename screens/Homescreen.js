@@ -1,23 +1,16 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from "react";
-import { Text, Button, ScrollView } from "react-native";
-import HyperSdkReact from "hyper-sdk-react";
-import uuid from "react-native-uuid";
+import { Text, Button } from "react-native";
 import {
-  NativeEventEmitter,
-  NativeModules,
   TouchableOpacity,
 } from "react-native";
 import {
   StyleSheet,
   Image,
   View,
-  ImageBackground,
   Dimensions,
 } from "react-native";
 import { createStackNavigator } from "react-navigation";
-
-const screenHeight = Dimensions.get("window").height;
 
 class Homescreen extends React.Component {
   constructor(props) {
@@ -53,48 +46,49 @@ class Homescreen extends React.Component {
   componentDidMount() {
     // block:start:create-hyper-services-instance
 
-    HyperSdkReact.createHyperServices();
+    // HyperSdkReact.createHyperServices();
 
     // block:end:create-hyper-services-instance
 
     // block:start:event-handling-initiate
 
-    const eventEmitter = new NativeEventEmitter(NativeModules.HyperSdkReact);
-    eventEmitter.addListener("HyperEvent", (resp) => {
-      const data = JSON.parse(resp);
-      const event = data.event || "";
-      switch (event) {
-        case "initiate_result":
-          // logging the initiate result
-          console.log("Initiate result", data);
-          break;
-        default:
-          console.log(data);
-      }
-    });
+    // const eventEmitter = new NativeEventEmitter(NativeModules.HyperSdkReact);
+    // eventEmitter.addListener("HyperEvent", (resp) => {
+    //   const data = JSON.parse(resp);
+    //   const event = data.event || "";
+    //   switch (event) {
+    //     case "initiate_result":
+    //       // logging the initiate result
+    //       break;
+    //     default:
+    //       console.log(data);
+    //   }
+    // });
 
     // block:end:event-handling-initiate
 
     // Creating initiate payload JSON object
     // block:start:create-initiate-payload
 
-    const initiate_payload = {
-      requestId: uuid.v4(),
-      service: "in.juspay.hyperpay",
-      payload: {
-        action: "initiate",
-        merchantId: "<MERCHANT_ID>",
-        clientId: "<CLIENT_ID>",
-        environment: "production",
-      },
-    };
+    // const initiate_payload = {
+    //   requestId: uuid.v4(),
+    //   service: "in.juspay.hyperpay",
+    //   payload: {
+    //     action: "initiate",
+    //     merchantId: "testhdfc1",
+    //     clientId: "hdfcmaster",
+    //     environment: "production",
+    //   },
+    // };
 
     // block:end:create-initiate-payload
 
     // Calling initiate on hyperService instance to boot up payment engine.
     // block:start:initiate-sdk
 
-    HyperSdkReact.initiate(JSON.stringify(initiate_payload));
+    // if(!HyperSdkReact.isInitialised()) {
+    //   HyperSdkReact.initiate(JSON.stringify(initiate_payload));
+    // }
 
     // block:end:initiate-sdk
   }
@@ -111,7 +105,7 @@ class Homescreen extends React.Component {
           </View>
           <View style={styles.Group352}>
             <Text style={styles.JuspayPaymentsSdkSho}>
-              Juspay Payments SDK should be initiated on this screen.
+              
             </Text>
           </View>
           <View style={styles.Container}>

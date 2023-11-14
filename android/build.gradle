@@ -7,12 +7,9 @@ buildscript {
         compileSdkVersion = 33
         targetSdkVersion = 31
         ndkVersion = "21.4.7075529"
-        // block:start:add-ext-property
         kotlin_version = '1.6.10'
         clientId = "hdfcmaster"
-        hyperSDKVersion = "2.1.13"
-
-        // block:end:add-ext-property
+        hyperSDKVersion = "2.1.15"
     }
     repositories {
         google()
@@ -23,8 +20,6 @@ buildscript {
         classpath("com.facebook.react:react-native-gradle-plugin")
         classpath("de.undercouch:gradle-download-task:4.1.2")
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
     }
 }
 
