@@ -1,18 +1,29 @@
-# How to use this repo#
+# README #
+
+This README would normally document whatever steps are necessary to get your application up and running.
 
 ### What is this repository for? ###
 
-* This repo is being used for Juspay Documentation made using tesseract repo
+* Quick summary
+* Version
+* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
 ### How do I get set up? ###
 
-* This repo is used to show the code section of the documentation.
+* Summary of set up
+* Configuration
+* Dependencies
+* Database configuration
+* How to run tests
+* Deployment instructions
 
 ### Contribution guidelines ###
 
-* So if you want to add any new product and/or platform. please follow the below steps.
-1. All the code content of a particular platform of a product is kept in a branch "productName" + "-" + "platformName".
-    Let suppose you are adding code for platform android in the product payment-page then the name of the branch will be 
-        payment-page-android
+* Writing tests
+* Code review
+* Other guidelines
 
-2. And payment-page-android code have both Java and Kotlin so there will be two folders named accordingly and each folder should contain their demo code.
+### Who do I talk to? ###
+
+* Repo owner or admin
+* Other community or team contact
