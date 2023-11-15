@@ -8,7 +8,6 @@ import {
   StyleSheet,
   Image,
   View,
-  Dimensions,
 } from "react-native";
 import { createStackNavigator } from "react-navigation";
 

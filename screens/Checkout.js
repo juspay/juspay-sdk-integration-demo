@@ -40,7 +40,6 @@ class Checkout extends React.Component {
         case "process_result":
           const innerPayload = data.payload || {};
           const status = innerPayload.status || "";
-          console.log("Inner Payload>>>", innerPayload);
           switch (status) {
             case "backpressed":
             case "user_aborted":
@@ -74,7 +73,7 @@ class Checkout extends React.Component {
       payload,
       {
         onResponseReceived: (response) => {
-          HyperSdkReact.openPaymentPage(
+          HyperSdkReact.process(
             JSON.stringify(JSON.parse(response).sdkPayload)
           );
         },
