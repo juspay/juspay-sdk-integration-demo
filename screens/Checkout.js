@@ -1,6 +1,13 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from "react";
-import { StyleSheet, TouchableOpacity, Image, View, ActivityIndicator } from "react-native";
+import {
+  StyleSheet,
+  TouchableOpacity,
+  Image,
+  View,
+  ActivityIndicator,
+} from "react-native";
+import { encode } from "base-64";
 import HyperSdkReact from "hyper-sdk-react";
 import {
   BackHandler,
@@ -60,27 +67,70 @@ class Checkout extends React.Component {
     });
   }
 
+  // startPayment() {
+  //   this.setState({ isLoaderActive: true });
+  //   var payload = {
+  //     order_id: `test-${getRandomNumber()}`,
+  //     amount: this.state.total,
+  //   };
+
+  //   ApiClient.sendPostRequest(
+  //     "http://10.0.2.2:5000/initiateJuspayPayment",
+  //     payload,
+  //     {
+  //       onResponseReceived: (response) => {
+  //         HyperSdkReact.openPaymentPage(
+  //           JSON.stringify(JSON.parse(response).sdkPayload)
+  //         );
+  //       },
+  //       onFailure: (error) => {
+  //         console.error("POST request failed:", error);
+  //       },
+  //     }
+  //   );
+  // }
+
   startPayment() {
     this.setState({ isLoaderActive: true });
-    var payload = {
+
+    var myHeaders = new Headers();
+
+    // API Key Should never be used from client side, it should always be stored securely on server.
+    // And all the API calls requiring API key should always be done from server
+    myHeaders.append("Authorization", `Basic NUUxOTFDQkJBQUE0OEI3QTc4QTlDQzhCNENBMEU1Og==`);
+    myHeaders.append("x-merchantid", "testhdfc1");
+    myHeaders.append("Content-Type", "application/json");
+
+    var raw = JSON.stringify({
       order_id: `test-${getRandomNumber()}`,
-      amount: this.state.total,
+      amount: "1",
+      customer_id: "9876543201",
+      customer_email: "test@mail.com",
+      customer_phone: "9876543201",
+      payment_page_client_id: "hdfcmaster",
+      action: "paymentPage",
+      return_url: "<return_url>",
+      description: "Complete your payment",
+      first_name: "John",
+      last_name: "wick",
+    });
+
+    var requestOptions = {
+      method: "POST",
+      headers: myHeaders,
+      body: raw,
+      redirect: "follow",
     };
 
-    ApiClient.sendPostRequest(
-      "http://10.0.2.2:5000/initiateJuspayPayment",
-      payload,
-      {
-        onResponseReceived: (response) => {
-          HyperSdkReact.openPaymentPage(
-            JSON.stringify(JSON.parse(response).sdkPayload)
-          );
-        },
-        onFailure: (error) => {
-          console.error("POST request failed:", error);
-        },
-      }
-    );
+    fetch("https://sandbox.juspay.in/session", requestOptions)
+      .then((response) => response.json())
+      .then((result) => {
+        console.log("result>>>", result)
+        // block:start:process-sdk
+        HyperSdkReact.process(JSON.stringify(result.sdk_payload));
+        // block:end:process-sdk
+      })
+      .catch((error) => console.log("error", error));
   }
 
   handleBackPress() {
@@ -114,7 +164,7 @@ class Checkout extends React.Component {
           </View>
           <View style={styles.Group492}>
             <Text style={styles.CallProcessOnHyperse}>
-            Call HyperSdkReact.openPaymentPage() on Checkout button click
+              Call HyperSdkReact.openPaymentPage() on Checkout button click
             </Text>
           </View>
           <View style={styles.Container}>
@@ -172,7 +222,7 @@ class Checkout extends React.Component {
         {this.state.isLoaderActive && (
           <View style={styles.container}>
             <View style={styles.centeredContent}>
-              <ActivityIndicator size="large"/>
+              <ActivityIndicator size="large" />
             </View>
           </View>
         )}
@@ -201,10 +251,10 @@ export default createStackNavigator(
 
 const styles = StyleSheet.create({
   container: {
-    width: '100%',
+    width: "100%",
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
   Container: {
     paddingLeft: 10,
