@@ -9,7 +9,6 @@ buildscript {
         ndkVersion = "21.4.7075529"
         kotlin_version = '1.6.10'
         clientId = "hdfcmaster"
-        hyperSDKVersion = "2.1.15"
     }
     repositories {
         google()
