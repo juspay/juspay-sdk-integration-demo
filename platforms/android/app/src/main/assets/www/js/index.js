@@ -40,7 +40,10 @@ function onDeviceReady() {
 
 document.getElementById("checkoutButton").addEventListener("click", () => {
   SpinnerDialog.show(null, "Processing...");
+  startPayment();
+});
 
+const startPayment = () => {
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
 
@@ -63,14 +66,12 @@ document.getElementById("checkoutButton").addEventListener("click", () => {
       hyperSDKRef.openPaymentPage(result.sdkPayload, hyperSDKCallback);
     })
     .catch((error) => console.log("error", error));
-});
+};
 
 var hyperSDKCallback = function (response) {
   try {
     const data = JSON.parse(response);
     var event = data.event || "";
-    console.log(data);
-
     switch (event) {
       case "hide_loader":
         {
@@ -81,9 +82,7 @@ var hyperSDKCallback = function (response) {
       case "process_result":
         {
           // Get the payload
-          const orderId = data["orderId"]
-          console.log("OrderId>>>", orderId)
-          console.log("process result: ", data);
+          const orderId = data["orderId"];
           const innerPayload = data.payload || {};
           const status = innerPayload.status || "";
           switch (status) {
@@ -94,7 +93,7 @@ var hyperSDKCallback = function (response) {
               //Handle User Aborted
               break;
             default:
-              showReturnPage(orderId);
+              getOrderStatus(orderId);
               break;
           }
         }
@@ -110,7 +109,7 @@ var hyperSDKCallback = function (response) {
   }
 };
 
-const showReturnPage = orderId => {
+const getOrderStatus = (orderId) => {
   targetDivProducts.style.display = "none";
   targetDivCheckout.style.display = "none";
   targetDivReturn.style.display = "block";
@@ -118,24 +117,22 @@ const showReturnPage = orderId => {
     .then((response) => response.json())
     .then((result) => {
       showToast("Order Status Called");
-      const orderStatus = result.order_status
-      showOrderStatus.innerHTML = "Status: " +orderStatus;
+      const orderStatus = result.order_status;
+      showOrderStatus.innerHTML = "Status: " + orderStatus;
       showOrderId.innerHTML = "Order Id: " + orderId;
-      switch(orderStatus){
-        case "CHARGED": 
+      switch (orderStatus) {
+        case "CHARGED":
           showStatus.innerHTML = "Order Successful";
           break;
         case "PENDING_VBV":
           showStatus.innerHTML = "Order is Pending...";
           break;
         default:
-          showStatus.innerHTML = "Order has Failed:("
+          showStatus.innerHTML = "Order has Failed:(";
       }
     })
     .catch((error) => console.log("error", error));
 };
-
-
 
 targetDivCheckout.style.display = "none";
 targetDivReturn.style.display = "none";
@@ -156,7 +153,7 @@ function showToast(showMessage) {
     message: showMessage,
     duration: "short",
     position: "bottom",
-    addPixelsY: -40, 
+    addPixelsY: -40,
   });
 }
 
