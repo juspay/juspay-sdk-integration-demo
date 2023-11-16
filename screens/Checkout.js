@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from "react";
-import { StyleSheet, TouchableOpacity, Image, View } from "react-native";
+import { StyleSheet, TouchableOpacity, Image, View, ActivityIndicator } from "react-native";
 import HyperSdkReact from "hyper-sdk-react";
 import {
   BackHandler,
@@ -11,7 +11,6 @@ import {
 } from "react-native";
 import { createStackNavigator } from "react-navigation";
 import ApiClient from "./ApiClient";
-import LoaderKit from "react-native-loader-kit";
 
 class Checkout extends React.Component {
   constructor(props) {
@@ -73,7 +72,7 @@ class Checkout extends React.Component {
       payload,
       {
         onResponseReceived: (response) => {
-          HyperSdkReact.process(
+          HyperSdkReact.openPaymentPage(
             JSON.stringify(JSON.parse(response).sdkPayload)
           );
         },
@@ -173,12 +172,7 @@ class Checkout extends React.Component {
         {this.state.isLoaderActive && (
           <View style={styles.container}>
             <View style={styles.centeredContent}>
-              <LoaderKit
-                style={{ width: 50, height: 50 }}
-                name={"BallPulse"}
-                size={50}
-                color={"blue"}
-              />
+              <ActivityIndicator size="large"/>
             </View>
           </View>
         )}
