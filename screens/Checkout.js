@@ -97,8 +97,8 @@ class Checkout extends React.Component {
 
     // API Key Should never be used from client side, it should always be stored securely on server.
     // And all the API calls requiring API key should always be done from server
-    myHeaders.append("Authorization", `Basic NUUxOTFDQkJBQUE0OEI3QTc4QTlDQzhCNENBMEU1Og==`);
-    myHeaders.append("x-merchantid", "testhdfc1");
+    myHeaders.append("Authorization", `Basic ${encode("RUREMjNBNzk0QzE0MTA2OUZFODVDNjYzQ0M2REIx")}`);
+    myHeaders.append("x-merchantid", "moneyview");
     myHeaders.append("Content-Type", "application/json");
 
     var raw = JSON.stringify({
@@ -122,7 +122,7 @@ class Checkout extends React.Component {
       redirect: "follow",
     };
 
-    fetch("https://sandbox.juspay.in/session", requestOptions)
+    fetch("https://api.juspay.in/session", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         console.log("result>>>", result)
