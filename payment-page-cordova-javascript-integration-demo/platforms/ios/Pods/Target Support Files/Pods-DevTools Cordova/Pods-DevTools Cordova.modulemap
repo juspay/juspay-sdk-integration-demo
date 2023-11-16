@@ -1,6 +1,0 @@
-framework module Pods_DevTools_Cordova {
-  umbrella header "Pods-DevTools Cordova-umbrella.h"
-
-  export *
-  module * { export * }
-}

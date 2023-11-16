@@ -19,5 +19,5 @@
 ext.repos = {
     google()
     mavenCentral()
-maven { url "https://maven.juspay.in/jp-build-packages/hypersdk-asset-download/releases/" } 
+    maven { url "https://maven.juspay.in/jp-build-packages/hyper-sdk/" }
 }

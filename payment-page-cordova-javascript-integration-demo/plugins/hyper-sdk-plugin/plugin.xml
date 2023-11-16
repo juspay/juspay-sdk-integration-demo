@@ -8,7 +8,7 @@
     <description>A Cordova plugin for the HyperSDK</description>
     <author>Juspay Technologies PVT LTD</author>
     <keywords>hypersdk,payments,juspay</keywords>
-    <license>Apache 2.0 License</license>
+    <license>AGPL-3.0-only License</license>
     <!-- Base : End -->
 
     <!-- Supported Platform : Start -->
@@ -41,7 +41,6 @@
         <source-file src="src/android/HyperActivity.java" target-dir="src/in/juspay/hypersdk" />
         <source-file src="src/android/ProcessActivity.java" target-dir="src/in/juspay/hypersdk" />
         <resource-file src="src/android/jp_styles.xml" target="res/values/jp_styles.xml" />
-        <source-file src="src/MerchantConfig.txt" target-dir="../../" />
         <framework custom="true" src="src/android/build-extras.gradle" type="gradleReference"/>
         <hook type="after_plugin_install" src="/scripts/postInstall.js"/>
     </platform>
@@ -70,7 +69,7 @@
                 <source url="https://github.com/CocoaPods/Specs.git"/>
             </config>
             <pods use-frameworks="true">
-                <pod name="HyperSDK" spec="2.1.9" />
+                <pod name="HyperSDK" spec="2.1.23" />
             </pods>
         </podspec>
     </platform>

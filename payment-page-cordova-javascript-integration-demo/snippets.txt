@@ -29,7 +29,7 @@ function createInitiatePayload() {
         payload: {
             action: "initiate",
             merchantId: "<your_merchant_id>",
-            clientId: "<your_client_id>",
+            clientId: "<your_hdfcmaster>",
             environment: "production"
         }
     };

@@ -1,26 +1,48 @@
-apply plugin: 'hypersdk-asset-plugin'
+apply plugin: 'hypersdk.plugin'
 
 allprojects {
     repositories {
         google()
         jcenter()
-        maven {
-          url "https://maven.juspay.in/jp-build-packages/hyper-sdk/"
-        }
+        maven { url "https://maven.juspay.in/jp-build-packages/hyper-sdk/" }
     }
 }
 
-dependencies {
-  def hyperSDKVersion = "2.0.4-rc.78"
-  implementation ("in.juspay:hypersdk:$hyperSDKVersion") {
-    exclude group: "in.juspay", module: "visa-sensory-branding"
-  }
-  implementation 'in.juspay:amazonpay-silentpay-sdk:1.0.0'
-  implementation 'in.juspay:amazonpay-hardened-silentpay-sdk:1.0.0'
-  implementation 'androidx.browser:browser:1.3.0'
-  implementation 'com.google.android.gms:play-services-auth:17.0.0'
-  implementation 'com.google.android.gms:play-services-auth-api-phone:17.4.0'
-  implementation 'in.juspay:google-pay-client-api:1.0.0'
+static def mostRecentVersion(List<String> versions) {
+    return versions.sort(false) { a, b ->
+        [a, b]*.tokenize('-rc')*.join('')*.tokenize('.')*.collect {
+            it as int
+        }.with { u, v ->
+            [u, v].transpose().findResult { x, y -> x <=> y ?: null } ?: u.size() <=> v.size()
+        }
+    }[-1]
 }
 
-ext.cdvCompileSdkVersion = 29
+static def getHyperSDKVersion(rootProject) {
+    def hyperSdkVersion = '2.1.20'
+    if (!rootProject.hasProperty('hyperSDKVersion')) {
+        return hyperSdkVersion
+    }
+    def rootVersion = rootProject.hyperSDKVersion
+    hyperSdkVersion = mostRecentVersion([rootVersion, hyperSdkVersion])
+    if (hyperSdkVersion != rootVersion) {
+        System.out.println("Ignoring the overriden SDK version present in root build.gradle ($rootVersion), as there is a newer version present in the SDK ($hyperSdkVersion).")
+    }
+    return hyperSdkVersion
+}
+
+static def getClientId(rootProject) {
+    if (!rootProject.hasProperty('clientId')) {
+        throw new GradleException("clientId parameter is required in ext block of root build.gradle")
+    }
+    return rootProject.clientId
+}
+
+dependencies {
+    compileOnly "in.juspay:hypercheckoutlite:${getHyperSDKVersion(rootProject)}"
+}
+
+hyperSdkPlugin {
+    clientId = getClientId(rootProject)
+    sdkVersion = getHyperSDKVersion(rootProject)
+}

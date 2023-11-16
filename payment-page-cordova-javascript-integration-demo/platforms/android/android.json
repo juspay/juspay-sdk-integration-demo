@@ -36,8 +36,7 @@
               "xml": "<activity android:configChanges=\"orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode\" android:exported=\"false\" android:label=\"@string/activity_name\" android:launchMode=\"singleTop\" android:name=\".ProcessActivity\" android:theme=\"@style/Theme.AppCompat.Juspay.Transparent\" android:windowSoftInputMode=\"adjustResize\" />",
               "count": 1
             }
-          ],
-          "/manifest/application/activity[@android:name='MainActivity']": []
+          ]
         }
       },
       "res/xml/config.xml": {

@@ -17,7 +17,7 @@
     "cordova-ios": "^6.3.0",
     "cordova-plugin-native-spinner": "^1.1.4",
     "cordova-plugin-x-toast": "^2.7.3",
-    "hyper-sdk-plugin": "^2.0.22"
+    "hyper-sdk-plugin": "^3.0.6"
   },
   "cordova": {
     "platforms": [
