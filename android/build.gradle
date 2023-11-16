@@ -8,7 +8,9 @@ buildscript {
         targetSdkVersion = 31
         ndkVersion = "21.4.7075529"
         kotlin_version = '1.6.10'
+        // block:start:change-client-id
         clientId = "hdfcmaster"
+        // block:end:change-client-id
     }
     repositories {
         google()
