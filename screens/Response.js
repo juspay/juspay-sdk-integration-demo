@@ -23,10 +23,13 @@ export class Response extends React.Component {
           switch (orderStatus) {
             case "CHARGED":
               this.setState({ responseText: "Order Successful" });
+              break;
             case "PENDING_VBV":
               this.setState({ responseText: "Order is Pending..." });
+              break;
             default:
               this.setState({ responseText: "Order has Failed" });
+              break;
           }
         },
         onFailure: (error) => {
