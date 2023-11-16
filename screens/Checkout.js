@@ -60,6 +60,7 @@ class Checkout extends React.Component {
     });
   }
 
+  // block:start:startPayment
   startPayment() {
     this.setState({ isLoaderActive: true });
     var payload = {
@@ -82,6 +83,7 @@ class Checkout extends React.Component {
       }
     );
   }
+  // block:end:startPayment
 
   handleBackPress() {
     this.props.navigation.navigate("Home");
