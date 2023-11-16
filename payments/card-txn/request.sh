@@ -10,6 +10,7 @@ curl -X POST https://api.juspay.in/txns \
 -d "name_on_card=Name" \
 -d "card_security_code=111" \
 -d "save_to_locker=true" \
+-d "tokenize=true" \
 -d "redirect_after_payment=true" \
 -d "format=json"
 
