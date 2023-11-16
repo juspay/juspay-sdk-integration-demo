@@ -3,3 +3,4 @@ build
 .flutter-plugins
 .flutter-plugins-dependencies
 .idea
+node_modules
