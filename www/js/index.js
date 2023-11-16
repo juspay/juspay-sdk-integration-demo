@@ -43,14 +43,16 @@ document.getElementById("checkoutButton").addEventListener("click", () => {
   startPayment();
 });
 
+// block:start:startPayment
 const startPayment = () => {
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
-
+  // block:start:updateOrderID
   var raw = JSON.stringify({
     order_id: "Test" + Math.floor(Math.random() * 1000000000),
     amount: totalPayable,
   });
+  // block:end:updateOrderID
 
   var requestOptions = {
     method: "POST",
@@ -59,15 +61,21 @@ const startPayment = () => {
     redirect: "follow",
   };
 
+  // block:start:await-http-post-function
   fetch("http://10.0.2.2:5000/initiateJuspayPayment", requestOptions)
     .then((response) => response.json())
     .then((result) => {
       showToast("openPaymentPage called");
+      // block:start:openPaymentPage
       hyperSDKRef.openPaymentPage(result.sdkPayload, hyperSDKCallback);
+      // block:end:openPaymentPage
     })
     .catch((error) => console.log("error", error));
+  // block:end:await-http-post-function
 };
+// block:end:startPayment
 
+// block:start:create-hyper-callback
 var hyperSDKCallback = function (response) {
   try {
     const data = JSON.parse(response);
@@ -108,11 +116,13 @@ var hyperSDKCallback = function (response) {
     console.log(error);
   }
 };
+// block:end:create-hyper-callback
 
 const getOrderStatus = (orderId) => {
   targetDivProducts.style.display = "none";
   targetDivCheckout.style.display = "none";
   targetDivReturn.style.display = "block";
+  // block:start:sendGetRequest
   fetch(`http://10.0.2.2:5000/handleJuspayResponse?order_id=${orderId}`)
     .then((response) => response.json())
     .then((result) => {
@@ -132,6 +142,7 @@ const getOrderStatus = (orderId) => {
       }
     })
     .catch((error) => console.log("error", error));
+  // block:end:sendGetRequest
 };
 
 targetDivCheckout.style.display = "none";
