@@ -14,6 +14,7 @@ export class Response extends React.Component {
   componentDidMount() {
     const { orderId } = this.props.navigation.state.params;
     this.setState({ orderId: orderId });
+    // block:start:sendGetRequest
     ApiClient.sendGetRequest(
       `http://10.0.2.2:5000/handleJuspayResponse?order_id=${orderId}`,
       {
@@ -38,6 +39,8 @@ export class Response extends React.Component {
         },
       }
     );
+    // block:end:sendGetRequest
+    
   }
 
   render() {
