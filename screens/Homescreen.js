@@ -1,14 +1,8 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from "react";
 import { Text, Button } from "react-native";
-import {
-  TouchableOpacity,
-} from "react-native";
-import {
-  StyleSheet,
-  Image,
-  View,
-} from "react-native";
+import { TouchableOpacity } from "react-native";
+import { StyleSheet, Image, View } from "react-native";
 import { createStackNavigator } from "react-navigation";
 
 class Homescreen extends React.Component {
@@ -53,9 +47,7 @@ class Homescreen extends React.Component {
             <Text style={styles.HomeScreen}>Home Screen</Text>
           </View>
           <View style={styles.Group352}>
-            <Text style={styles.JuspayPaymentsSdkSho}>
-              
-            </Text>
+            <Text style={styles.JuspayPaymentsSdkSho}></Text>
           </View>
           <View style={styles.Container}>
             <Text style={styles.Products}>Products</Text>
@@ -63,6 +55,7 @@ class Homescreen extends React.Component {
               <View style={styles.Rectangle3}>
                 <Image
                   style={styles.ProductImage}
+                  source={require("../images/product1.png")}
                 />
               </View>
 
@@ -97,10 +90,10 @@ class Homescreen extends React.Component {
               </View>
             </View>
             <View style={styles.Product}>
-            <View style={styles.Rectangle3}>
+              <View style={styles.Rectangle3}>
                 <Image
                   style={styles.ProductImage}
-                  
+                  source={require("../images/product2.png")}
                 />
               </View>
               <Text style={styles.Product1}>Product 2</Text>
@@ -172,7 +165,6 @@ const styles = StyleSheet.create({
     height: 149,
     width: 149,
     backgroundColor: "rgba(245,245,245,1)",
-
   },
   HomeActivity: {
     display: "flex",
