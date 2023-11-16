@@ -21,15 +21,15 @@ buildscript {
     apply from: 'CordovaLib/cordova.gradle'
     apply from: 'repositories.gradle'
     repositories repos
+    // block:start:change-client-id
     ext {
         clientId = "hdfcmaster"
     }
+   // block:end:change-client-id
     dependencies {
         classpath "in.juspay:hypersdk.plugin:2.0.4"
         classpath "com.android.tools.build:gradle:${cordovaConfig.AGP_VERSION}"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${cordovaConfig.KOTLIN_VERSION}"
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
     }
 }
 
