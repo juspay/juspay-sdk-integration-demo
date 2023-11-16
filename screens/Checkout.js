@@ -57,9 +57,11 @@ class Checkout extends React.Component {
     });
     // block:end:create-hyper-callback
 
+    //block:start:onBackPress
     BackHandler.addEventListener("hardwareBackPress", () => {
       return !HyperSdkReact.isNull() && HyperSdkReact.onBackPressed();
     });
+    //block:end:onBackPress
   }
 
   // block:start:startPayment
