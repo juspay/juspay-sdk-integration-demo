@@ -24,6 +24,7 @@ class Checkout extends React.Component {
 
   componentDidMount() {
     const eventEmitter = new NativeEventEmitter(NativeModules.HyperSdkReact);
+    // block:start:create-hyper-callback
     eventEmitter.addListener("HyperEvent", (resp) => {
       const data = JSON.parse(resp);
       const orderId = data.orderId;
@@ -54,6 +55,7 @@ class Checkout extends React.Component {
           console.log(data);
       }
     });
+    // block:end:create-hyper-callback
 
     BackHandler.addEventListener("hardwareBackPress", () => {
       return !HyperSdkReact.isNull() && HyperSdkReact.onBackPressed();
@@ -63,25 +65,33 @@ class Checkout extends React.Component {
   // block:start:startPayment
   startPayment() {
     this.setState({ isLoaderActive: true });
+    // block:start:updateOrderID
     var payload = {
       order_id: `test-${getRandomNumber()}`,
       amount: this.state.total,
     };
+    // block:end:updateOrderID
+
 
     ApiClient.sendPostRequest(
+      // block:start:await-http-post-function
       "http://10.0.2.2:5000/initiateJuspayPayment",
+      // block:end:await-http-post-function
       payload,
       {
         onResponseReceived: (response) => {
+          // block:start:openPaymentPage
           HyperSdkReact.openPaymentPage(
             JSON.stringify(JSON.parse(response).sdkPayload)
           );
+          // block:end:openPaymentPage
         },
         onFailure: (error) => {
           console.error("POST request failed:", error);
         },
       }
     );
+
   }
   // block:end:startPayment
 
