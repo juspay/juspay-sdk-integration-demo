@@ -34,7 +34,7 @@ namespace DotnetServer.Controllers
             CreateOrderSessionInput createOrderSessionInput = new CreateOrderSessionInput(new Dictionary<string, object> { { "amount", req.Amount }, { "order_id", orderId }, { "customer_id", customerId }, { "payment_page_client_id", Init.Config.PaymentPageClientId }, { "action", "paymentPage" }, { "return_url", "http://localhost:5000/handleJuspayResponse" }, { "metadata.GOCASHFREE:gateway_reference_id", "V3Cashfree" } });
             try
             {
-                JuspayResponse sessionRes = await new SessionService().CreateOrderSessionAsync(createOrderSessionInput, requestOptions);
+                JuspayResponse sessionRes = await new OrderSession().CreateAsync(createOrderSessionInput, requestOptions);
                 Dictionary<string, object> res = new Dictionary<string, object> {
                     { "orderId", sessionRes.Response.order_id },
                     { "id", sessionRes.Response.id },

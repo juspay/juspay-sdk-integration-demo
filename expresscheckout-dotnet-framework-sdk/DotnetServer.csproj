@@ -54,8 +54,8 @@
     <Reference Include="jose-jwt, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\jose-jwt.4.1.0\lib\net40\jose-jwt.dll</HintPath>
     </Reference>
-    <Reference Include="Juspay, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\expresscheckout.2.0.2\lib\net452\Juspay.dll</HintPath>
+    <Reference Include="Juspay, Version=2.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\expresscheckout.2.0.3\lib\net452\Juspay.dll</HintPath>
     </Reference>
     <Reference Include="log4net, Version=2.0.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>packages\log4net.2.0.15\lib\net45\log4net.dll</HintPath>
@@ -230,6 +230,7 @@
     <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="log4net.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <PropertyGroup>
