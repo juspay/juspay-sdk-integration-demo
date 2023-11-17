@@ -25,7 +25,7 @@ namespace dotnet_server.Controllers
         {
             string customerId = "testing-customer-one";
             RequestOptions requestOptions = new RequestOptions{ CustomerId = customerId };
-            return new OrderService().GetOrder(orderId, null, requestOptions);
+            return new Order().Get(orderId, null, requestOptions);
         }
         // block:end:order-status-function
         public string orderStatusMessage(JuspayResponse orderRes)

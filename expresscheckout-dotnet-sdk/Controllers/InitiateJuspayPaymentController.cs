@@ -33,7 +33,7 @@ namespace dotnet_server.Controllers {
                 string customerId = "testing-customer-one";
                 RequestOptions requestOptions = new RequestOptions{ CustomerId = customerId };
                 CreateOrderSessionInput createOrderSessionInput = new CreateOrderSessionInput(new Dictionary<string, object>{{ "amount", req.Amount }, { "order_id",  orderId}, { "customer_id", customerId }, { "payment_page_client_id", Init.Config.PaymentPageClientId }, { "action", "paymentPage" }, { "return_url", "http://localhost:5000/handleJuspayResponse" } });
-                JuspayResponse sessionRes = new SessionService().CreateOrderSession(createOrderSessionInput, requestOptions);
+                JuspayResponse sessionRes = new OrderSession().Create(createOrderSessionInput, requestOptions);
                 Dictionary<string, object> res = new Dictionary<string, object> {
                     { "orderId", sessionRes.Response.order_id },
                     { "id", sessionRes.Response.id },
