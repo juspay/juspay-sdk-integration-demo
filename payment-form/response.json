@@ -5,7 +5,7 @@
   "fingerprint": "65soeo5vf909rfe4vrvmreu88f",
   "card_type": "DEBIT",
   "reference": "token_a0c16957f9bf46b0966a91a35b555353",
-  "customer_id": "rohit_test",
+  "customer_id": "juspaytest_cust",
   "sub_type": null,
   "network": "VISA",
   "token_details": {
