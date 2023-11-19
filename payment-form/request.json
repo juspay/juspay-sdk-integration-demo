@@ -1,6 +1,5 @@
 {
   "card_reference": "token_a0c16957f9bf46b0966a91a35b555353",
   "customer_id": "juspaytest_cust",
-  "submerchantId": "airline1",
-  "check_cvv_less_support": true
+  "submerchantId": "airline1"
 }
