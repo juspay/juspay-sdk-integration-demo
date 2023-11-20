@@ -6,9 +6,6 @@
         "orderId": "hyperorder45314",
         "custVpa": "90005643210@ybl",
         "upiSdkPresent": false,
-        "endUrls": [
-            "https:\\/\\/shop\\.merchant\\.com\\/payments\\/handleResponse.*"
-        ],
         "displayNote": "UPI Collect",
         "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213"
     }
