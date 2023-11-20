@@ -2,10 +2,6 @@
     "payload": {
       "action": "walletTxn",
       "clientAuthToken": "tkn_a2ef311f47b04165b5a7ddbc01804220",
-      "endUrls": [
-        "https://api.juspay.in/api/jpay/return.*",
-        "cdredirect"
-      ],
       "mandateType": "EMANDATE",
       "orderId": "JP9************48610",
       "paymentMethod": "JP_PAYTM",

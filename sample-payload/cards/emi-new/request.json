@@ -5,9 +5,6 @@
         "action": "cardTxn",
         "orderId": "hyperorder45314",
         "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213",
-        "endUrls": [
-            "https:\\/\\/shop\\.merchant\\.com\\/payments\\/handleResponse.*"
-        ],
         "paymentMethod": "MASTERCARD",
         "cardNumber": "4622540011002200",
         "cardExpMonth": "05",

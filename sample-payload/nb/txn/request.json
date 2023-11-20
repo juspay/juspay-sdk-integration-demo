@@ -5,9 +5,6 @@
         "action": "nbTxn",
         "orderId": "hyperorder45314",
         "paymentMethod": "NB_AXIS",
-        "endUrls": [
-            "https:\\/\\/shop\\.merchant\\.com\\/payments\\/handleResponse.*"
-        ],
         "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213"
     }
 }

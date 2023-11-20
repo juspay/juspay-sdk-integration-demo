@@ -5,9 +5,6 @@
         "action": "nbTxn",
         "orderId": "hyperorder45314",
         "paymentMethod": "NB_AXIS",
-        "endUrls": [
-            "https:\\/\\/shop\\.merchant\\.com\\/payments\\/handleResponse.*"
-        ],
         "bankIfsc": "SBIN0070740",
         "bankAccountNumber": "00000067369932310",
         "bankBeneficiaryName": "Parthiban P",

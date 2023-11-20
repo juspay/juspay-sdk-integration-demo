@@ -5,9 +5,6 @@
         "action": "cardTxn",
         "orderId": "hyperorder45314",
         "paymentMethod": "VISA",
-        "endUrls": [
-            "https:\\/\\/shop\\.merchant\\.com\\/payments\\/handleResponse.*"
-        ],
         "cardToken": "tkn_844ce1fb-9810-4b87-82a5-c8a62b30ded0",
         "cardSecurityCode": "123",
         "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213",

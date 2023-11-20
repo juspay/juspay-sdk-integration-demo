@@ -5,9 +5,6 @@
       "clientAuthToken": "tkn_997d200379944f8fa0c21c6b8dad8221",
       "action": "cardTxn",
       "orderId": "hyperorder79736",
-      "endUrls": [
-        "https://api.juspay.in/end"
-      ],
       "paymentMethod": "VISA",
       "cardNumber": "4************4",
       "cardExpMonth": "04",

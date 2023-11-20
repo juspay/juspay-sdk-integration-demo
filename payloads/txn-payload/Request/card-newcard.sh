@@ -4,9 +4,6 @@
     "payload": {
         "action": "cardTxn",
         "orderId": "hyperorder45314",
-        "endUrls": [
-            "https:\\/\\/shop\\.merchant\\.com\\/payments\\/handleResponse.*"
-        ],
         "paymentMethod": "VISA",
         "cardNumber": "4622540011002200",
         "cardExpMonth": "05",

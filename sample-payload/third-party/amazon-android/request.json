@@ -5,9 +5,6 @@
         "action": "walletTxn",
         "orderId": "R1365012599",
         "clientAuthToken": "tkn_304dcdf61d0048828cbff35b8e433ce0",
-        "endUrls": [
-            "https:\\/\\/shop\\.merchant\\.com\\/payments\\/handleResponse.*"
-        ],
         "paymentMethodType": "Wallet",
         "paymentMethod": "AMAZONPAY",
         "directWalletToken": "tkn_nvtQf8DP1A2oGoZu",
