@@ -1,0 +1,36 @@
+{
+    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "action": "eligibility",
+        "wallets": [
+            {
+                "payment_methods_eligibility": [
+                    {
+                        "status": "SUCCESS",
+                        "payment_method": "AMAZONPAYLATER",
+                        "payment_method_type": "CONSUMER_FINANCE",
+                        "is_eligible": true,
+                        "gateway_error_code": "linking_required",
+                        "gateway_error_message": "linking_required",
+                        "description": "Amazon Pay Later",
+                        "eligibility_strategy": "TRANSACTION",
+                        "kfs_link": "https://amazonpay.amazon.in/v1/render-kfs?payload=qixWCK28k0GLZcKRVBokHZIGaYeL7tDWJUMooI4jRsn%2FnsgvdULdeoTP%2BdpfPKrifWMrSFQX7Rq18HxnuME03m2NaWpRDZ2c561iZ2oWFokC32hLcu44VxMt3uIVrZk2j00LWjMOCmAFjKLUdDUte2b8sOW1moHbXUiU55MqmUpENgjbMri%2FgdHiZFitwoCpBrBnMjKvV9JHX52OVOLZm%2BqKayBoqAPGIVsu2dN9bPFr35sutSxMUiS64%2FF%2Bto5fk3uI4m0QE5aG55o6LJSuhiyIbWVCfdInLFlcVAPrF9H%2BbmZAKeOiM7jo%2Bsno2Rd6EaTtysOS42sIa9dMlT7wJMkEkA%3D%3D&iv=jxxn%2B%2B011FO0gG2WDz%2BPFA%3D%3D&authToken=QXR6YXxJd0VCSUo5b3ZlSGVJUmpVZWhGc0pQOVhsMEFBUUd6dWVlb19OQTRxNlBXNWRJUjhJTElVb191NGozZHV6T2p0dXFUazlQYWEzUnNoQnpxRUMwVk1xc1RHbUFGaWZFZFQyLUVfN3R1ZTF1SmZFNGU3dnM4dmppVXlCZ0Y3QWhCRzFWSlo2X0llMnhDOWtNNzNVbXhpbEhwdlh0aXZqeW50SUkxNmh4Nng1RjVIRUdYRG5md3lOZnVsM1dOdFRPZGVKQlhRYW5UZXgzRDlKRDk3VGYtWWQ5amc0MDRFTFM2Y1BISUNCeVJfUElpM2lweVlKajVDX2lCRUJOV2htNGhDVEo2M1k0aGczRjc5TURNOF9lQlgyalRoWkJ1WEN1bHFFd3dhUEVwbHU3aFktVG5CVTRGVnJrUG8zSmRSd1dIVHNwbXRiWjJpVUNIN0xBenBYM0xHeUQxbkl2NENXdmpjUUtsOGNKdUxuWXNXZk8tYllaRlQ5aXdJQzUtclZUTXRRbExwdmxMaldmeVpNUEZZSU1JTDBGVnpKOGE5"
+                    }
+                ],
+                "orderId": "re1692707000939",
+                "customerId": "cth_pKL9ayw75febC1Dd"
+            }
+        ],
+        "consumerFinance": [],
+        "apps": [
+            {
+                "paymentMethodsEligibility": [],
+                "orderId": "re1692707000939"
+            }
+        ]
+    },
+    "error": false,
+    "errorCode": "",
+    "errorMessage": ""
+}

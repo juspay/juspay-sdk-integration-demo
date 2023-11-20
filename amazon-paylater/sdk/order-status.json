@@ -1,0 +1,43 @@
+{
+    "customer_email": "nagendra.p@juspay.in",
+    "customer_phone": "7892369201",
+    "customer_id": "cth_oKFk2gKvJUuwQ8Dq",
+    "status_id": 10,
+    "status": "NEW",
+    "id": "ordeh_07343849498b49bca29a5d7725049a34",
+    "merchant_id": "azhar_test",
+    "amount": 1,
+    "currency": "INR",
+    "order_id": "MOTOINR1695191740",
+    "date_created": "2023-09-20T06:35:40Z",
+    "return_url": "https://sandbox.juspay.in/r/6JmlYW",
+    "product_id": "product_150",
+    "payment_links": {
+        "iframe": "https://sandbox.juspay.in/orders/ordeh_07343849498b49bca29a5d7725049a34/payment-page",
+        "web": "https://sandbox.juspay.in/orders/ordeh_07343849498b49bca29a5d7725049a34/payment-page",
+        "mobile": "https://sandbox.juspay.in/orders/ordeh_07343849498b49bca29a5d7725049a34/payment-page"
+    },
+    "udf1": "",
+    "udf2": "",
+    "udf3": "",
+    "udf4": "",
+    "udf5": "",
+    "udf6": "",
+    "udf7": "",
+    "udf8": "",
+    "udf9": "",
+    "udf10": "",
+    "refunded": false,
+    "amount_refunded": 0,
+    "effective_amount": 1,
+    "metadata": {
+        "YES_BIZ:gateway_reference_id": "juspay_test",
+        "payment_links": {
+            "iframe": "https://sandbox.juspay.in/orders/ordeh_07343849498b49bca29a5d7725049a34/payment-page",
+            "web": "https://sandbox.juspay.in/orders/ordeh_07343849498b49bca29a5d7725049a34/payment-page",
+            "mobile": "https://sandbox.juspay.in/orders/ordeh_07343849498b49bca29a5d7725049a34/payment-page"
+        },
+        "payment_page_client_id": "change"
+    },
+    "offers": []
+}

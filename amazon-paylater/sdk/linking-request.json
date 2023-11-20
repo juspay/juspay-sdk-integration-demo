@@ -1,0 +1,9 @@
+{
+    "walletName": "AMAZONPAY",
+    "sdkWalletIdentifier": "AZ4WQCLDT2DF0",
+    "requestId": "ba7a5e37-4fdf-4de6-80bb-c428149deaea",
+    "mobileNumber": "7224996066",
+    "gatewayReferenceId": "amazonpaylater_test",
+    "clientAuthToken": "tkn_ba1314a42fa747e98bc4cbaffe9a4552",
+    "action": "createWallet"
+}

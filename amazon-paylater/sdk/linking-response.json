@@ -1,0 +1,32 @@
+{
+    "service": "in.juspay.hyperapi",
+    "requestId": "a9dab6ef-05ad-4f36-9305-11dafdb9af4e",
+    "payload": {
+        "action": "createWallet",
+        "wallet": "AMAZONPAY",
+        "token": "tkn_614d9850874d4620bf41e24f733d3f1c",
+        "subDetails": [
+            {
+                "paymentMethodType": "CONSUMER_FINANCE",
+                "paymentMethod": "AMAZONPAYLATER",
+                "lastRefreshed": "2023-09-18T13:08:18.814Z",
+                "currentBalance": 100
+            },
+            {
+                "paymentMethodType": "WALLET",
+                "paymentMethod": "AMAZONPAY",
+                "lastRefreshed": "2023-09-18T13:08:18Z",
+                "currentBalance": 500
+            }
+        ],
+        "metadata": {},
+        "linked": true,
+        "lastRefreshed": "2023-09-18T13:08:18.000Z",
+        "id": "wlm_oaSmLFatgvNcxiGb",
+        "gatewayReferenceId": "amazonpaylater_test",
+        "currentBalance": 500
+    },
+    "errorMessage": "",
+    "errorCode": "",
+    "error": false
+}
