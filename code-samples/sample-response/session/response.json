@@ -1,0 +1,31 @@
+"status": "NEW",
+    "id": "ordeh_3b0bf151fb4944221ab0f",
+    "order_id": "testing-order-one",
+    "payment_links": {
+        "web": "https://smartgatewayuat.hdfcbank.com/orders/ordeh_3b0bf151fb49442085b2157e3121ab0f/payment-page",
+        "expiry": "2023-05-12T11:22:02Z"
+    },
+    "sdk_payload": {
+        "requestId": "67ad5d66fcdb4c208114ac1248836730",
+        "service": "in.juspay.hyperpay",
+        "payload": {
+            "clientId": "hdfcmaster",
+            "amount": "1.0",
+            "merchantId": "testhdfc1",
+            "clientAuthToken": "tkn_db93f6c34de34fd3f7bdbbeb743",
+            "clientAuthTokenExpiry": "2023-11-20T14:31:55Z",
+            "environment": "sandbox",
+            "lastName": "wick",
+            "action": "paymentPage",
+            "customerId": "testing-customer-one",
+            "returnUrl": "https://shop.merchant.com",
+            "currency": "INR",
+            "firstName": "John",
+            "customerPhone": "9876543210",
+            "customerEmail": "test@mail.com",
+            "orderId": "testing-order-one",
+            "description": "Complete your payment"
+        },
+        "expiry": "2023-05-12T11:22:02Z"
+    }
+}
