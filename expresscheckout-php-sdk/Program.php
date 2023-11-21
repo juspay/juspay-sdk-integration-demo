@@ -1,15 +1,16 @@
 <?php
+date_default_timezone_set('UTC');
 use Juspay\RequestOptions;
 require realpath(__DIR__ .  '/vendor/autoload.php'); # Required while running it as standalone, not required while integrating into existing project
 use Juspay\Exception\JuspayException;
 use Juspay\JuspayEnvironment;
 use Juspay\Model\JuspayJWT;
 use Juspay\Model\Order;
-use Juspay\Model\Session;
+use Juspay\Model\OrderSession;
 
 class PHPKit {
 
-    public string $orderId;
+    public $orderId;
 
     private $config;
 
@@ -51,7 +52,7 @@ class PHPKit {
             $params['return_url'] = "http://0.0.0.0:5000/handleResponse";
             $requestOption = new RequestOptions();
             $requestOption->withCustomerId("testing-customer-one")->withMerchantId($this->config["MERCHANT_ID"]); # Add merchant id
-            $session = Session::create($params, $requestOption);
+            $session = OrderSession::create($params, $requestOption);
             echo "id: " . $session->id . PHP_EOL;
             echo "order id: ". $session->orderId . PHP_EOL;
             echo "status" . $session->status . PHP_EOL;

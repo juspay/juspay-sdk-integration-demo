@@ -1,5 +1,6 @@
 <?php
 namespace server;
+date_default_timezone_set('UTC');
 use Exception;
 require realpath(__DIR__ .  '/vendor/autoload.php');
 use Juspay\JuspayEnvironment;
@@ -40,4 +41,3 @@ class ServerEnv {
 }
 new ServerEnv($config);
 ?>
-
