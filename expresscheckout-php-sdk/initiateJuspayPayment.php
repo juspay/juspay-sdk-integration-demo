@@ -4,7 +4,7 @@ require realpath(__DIR__ .  '/vendor/autoload.php'); # Required while running it
 require_once __DIR__ . '/init.php';
 use Juspay\RequestOptions;
 use Juspay\Exception\JuspayException;
-use Juspay\Model\OrderSession;
+use Juspay\Model\Session;
 
 $config = ServerEnv::$config;
 
@@ -26,7 +26,7 @@ if(isset($input['amount'])) {
         $params['return_url'] = "http://localhost:5000/handleJuspayResponse";
         $requestOption = new RequestOptions();
         $requestOption->withCustomerId("testing-customer-one")->withMerchantId($config["MERCHANT_ID"]); # Add merchant id
-        $session = OrderSession::create($params, $requestOption);
+        $session = Session::create($params, $requestOption);
         if ($session->status == "NEW") {
             $response = array("orderId" => $session->orderId, "id" => $session->id, "status" => $session->status, "paymentLinks" =>  $session->paymentLinks, "sdkPayload" => $session->sdkPayload );
         } else {
