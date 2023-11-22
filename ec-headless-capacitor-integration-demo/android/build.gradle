@@ -1,3 +1,17 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ....
+    ext {
+          // block:start:add-ext-property
+        ....
+        clientId = "<clientId shared by Juspay team>"
+        hyperSDKVersion = "2.1.13"
+         // block:end:add-ext-property
+        ....
+    }
+    ....
+}
 
 //Add the clientId ext property
 // block:start:client-id-extention
@@ -10,4 +24,3 @@ allprojects {
     }
 }
 // block:end:client-id-extention
-
