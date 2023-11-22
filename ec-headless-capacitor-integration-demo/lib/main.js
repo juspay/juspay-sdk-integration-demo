@@ -13,7 +13,9 @@ const { HyperServices } = Plugins;
   // // block:start:create-hyper-sdk-instance
 
   await HyperServices.createHyperServices();
-  // await HyperServices.createHyperServices(clientId, "in.juspay.hyperapi") //Pass these parameters for Web integration
+  // await HyperServices.createHyperServices(clientId, service) 
+  //service: "in.juspay.hyperpay" (For Payment Page),"in.juspay.hyperapi" (For Express Checkout)
+  //clientId : "Client shared by Juspay"
   // // block:end:create-hyper-sdk-instance
   ....
 
