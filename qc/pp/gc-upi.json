@@ -1,0 +1,230 @@
+{
+    "customer_email": "kajshsh@gmail.com",
+    "customer_phone": "9582671920",
+    "customer_id": "VjUwIzkzZWQ5MzQ3LTM2ZjItNDQ2OC05MjhlLTJjNWE1NDVmMjI5MA",
+    "status_id": 21,
+    "status": "CHARGED",
+    "id": "ordeh_bd301df673ce4a5db4f8430a46bd7543",
+    "merchant_id": "snapdeal_test",
+    "amount": 1420,
+    "currency": "INR",
+    "order_id": "78027491",
+    "date_created": "2023-07-04T12:09:33Z",
+    "return_url": "https://www.snapdeal.com/",
+    "product_id": "",
+    "payment_links": {
+        "iframe": "https://sandbox.juspay.in/orders/ordeh_bd301df673ce4a5db4f8430a46bd7543/payment-page",
+        "web": "https://sandbox.juspay.in/orders/ordeh_bd301df673ce4a5db4f8430a46bd7543/payment-page",
+        "mobile": "https://sandbox.juspay.in/orders/ordeh_bd301df673ce4a5db4f8430a46bd7543/payment-page"
+    },
+    "udf1": "APP",
+    "udf2": "",
+    "udf3": "88",
+    "udf4": "",
+    "udf5": "",
+    "udf6": "",
+    "udf7": "",
+    "udf8": "",
+    "udf9": "",
+    "udf10": "",
+    "refunded": false,
+    "amount_refunded": 0,
+    "effective_amount": 1420,
+    "txn_list": [
+        {
+            "txn_id": "snapdeal_test-78027491-1-1",
+            "payment_method_type": "UPI",
+            "auth_type": "",
+            "payment_method": "UPI",
+            "refunded": true,
+            "amount_refunded": 420,
+            "effective_amount": 420,
+            "refunds": [
+                {
+                    "id": "1270194508_350461_680749",
+                    "amount": 420,
+                    "unique_request_id": "1270194508_350461_680749",
+                    "ref": null,
+                    "created": "2023-07-06T19:06:31Z",
+                    "status": "MANUAL_REVIEW",
+                    "error_message": "Refund got dropped",
+                    "sent_to_gateway": true,
+                    "initiated_by": "API",
+                    "refund_source": "RAZORPAY",
+                    "refund_type": "STANDARD",
+                    "error_code": "404"
+                }
+            ],
+            "resp_code": null,
+            "resp_message": null,
+            "bank_error_code": "",
+            "bank_error_message": "",
+            "txn_uuid": "moz3Fa1jXpqCwGrWMGn",
+            "txn_detail": {
+                "txn_id": "snapdeal_test-78027491-1-1",
+                "order_id": "78027491",
+                "status": "CHARGED",
+                "error_code": null,
+                "net_amount": 1420,
+                "surcharge_amount": null,
+                "tax_amount": null,
+                "txn_amount": 420,
+                "offer_deduction_amount": null,
+                "gateway_id": 23,
+                "currency": "INR",
+                "metadata": {
+                    "payment_channel": "\"ANDROID\""
+                },
+                "express_checkout": false,
+                "redirect": true,
+                "txn_uuid": "moz3Fa1jXpqCwGrWMGn",
+                "gateway": "RAZORPAY",
+                "error_message": "",
+                "created": "2023-07-04T12:09:34Z",
+                "txn_flow_type": "COLLECT"
+            },
+            "payment_gateway_response": {
+                "resp_code": "captured",
+                "rrn": "417957372664",
+                "created": "2023-07-04T12:09:47Z",
+                "epg_txn_id": "pay_M9idmkZprEN4mI",
+                "resp_message": "",
+                "auth_id_code": "",
+                "txn_id": "snapdeal_test-78027491-1-1",
+                "debit_amount": "420.0"
+            },
+            "gateway_id": 23,
+            "gateway_reference_id": null,
+            "payer_vpa": "success@upi",
+            "upi": {
+                "payer_vpa": "success@upi",
+                "txn_flow_type": "COLLECT"
+            },
+            "metadata": {
+                "payment_links": {
+                    "iframe": "https://sandbox.juspay.in/orders/ordeh_bd301df673ce4a5db4f8430a46bd7543/payment-page",
+                    "web": "https://sandbox.juspay.in/orders/ordeh_bd301df673ce4a5db4f8430a46bd7543/payment-page",
+                    "mobile": "https://sandbox.juspay.in/orders/ordeh_bd301df673ce4a5db4f8430a46bd7543/payment-page"
+                },
+                "payment_page_client_id": "defaultclient",
+                "payment_locking": {
+                    "offer_details": "{\"merge_with_default_payment_methods\":\"true\",\"offer_applied\":\"false\",\"offer_payment_methods\":\"null\"}"
+                }
+            },
+            "offers": [],
+            "status": "CHARGED"
+        },
+        {
+            "txn_id": "snapdeal_test-78027491-1-2",
+            "payment_method_type": "CARD",
+            "auth_type": "NO_THREE_DS",
+            "card": {
+                "expiry_year": "2049",
+                "card_reference": "",
+                "saved_to_locker": false,
+                "expiry_month": "12",
+                "name_on_card": "qwick_cilver_card",
+                "card_issuer": "",
+                "last_four_digits": "3503",
+                "using_saved_card": false,
+                "card_fingerprint": "",
+                "card_isin": "199253",
+                "card_type": "CREDIT",
+                "card_brand": "QWIKCILVER",
+                "using_token": false,
+                "tokens": [],
+                "card_issuer_country": "",
+                "juspay_bank_code": "",
+                "extended_card_type": "CREDIT",
+                "payment_account_reference": ""
+            },
+            "payment_method": "QWIKCILVER",
+            "refunded": true,
+            "amount_refunded": 420,
+            "effective_amount": 1000,
+            "refunds": [
+                {
+                    "id": null,
+                    "amount": 2,
+                    "unique_request_id": "qc401",
+                    "ref": null,
+                    "created": "2023-07-04T13:18:39Z",
+                    "status": "FAILURE",
+                    "error_message": "Validation Failed.",
+                    "sent_to_gateway": true,
+                    "initiated_by": "API",
+                    "refund_source": "QWIKCILVER",
+                    "refund_type": "STANDARD",
+                    "pg_declined_at": "2023-07-04T13:23:16Z",
+                    "error_code": "10838"
+                },
+                {
+                    "id": null,
+                    "amount": 1000,
+                    "unique_request_id": "1270194508_350461_680750",
+                    "ref": null,
+                    "created": "2023-07-06T19:06:47Z",
+                    "status": "SUCCESS",
+                    "error_message": "",
+                    "sent_to_gateway": true,
+                    "initiated_by": "API",
+                    "refund_source": "QWIKCILVER",
+                    "refund_type": "STANDARD",
+                    "pg_processed_at": "2023-07-06T19:11:34Z",
+                    "error_code": null
+                }
+            ],
+            "resp_code": null,
+            "resp_message": null,
+            "bank_error_code": "",
+            "bank_error_message": "",
+            "txn_uuid": "moz8Uf7eAythqCo6Rx8",
+            "txn_detail": {
+                "txn_id": "snapdeal_test-78027491-1-2",
+                "order_id": "78027491",
+                "status": "CHARGED",
+                "error_code": null,
+                "net_amount": 1420,
+                "surcharge_amount": null,
+                "tax_amount": null,
+                "txn_amount": 1000,
+                "offer_deduction_amount": null,
+                "gateway_id": 47,
+                "currency": "INR",
+                "express_checkout": false,
+                "redirect": false,
+                "txn_uuid": "moz8Uf7eAythqCo6Rx8",
+                "gateway": "QWIKCILVER",
+                "error_message": "",
+                "created": "2023-07-04T12:09:34Z",
+                "txn_flow_type": "CARD_TRANSACTION"
+            },
+            "payment_gateway_response": {
+                "resp_code": "0",
+                "rrn": null,
+                "created": "2023-07-04T12:09:34Z",
+                "epg_txn_id": "14050682",
+                "resp_message": "Transaction successful.",
+                "auth_id_code": null,
+                "txn_id": "snapdeal_test-78027491-1-2"
+            },
+            "gateway_id": 47,
+            "gateway_reference_id": null,
+            "metadata": {
+                "payment_links": {
+                    "iframe": "https://sandbox.juspay.in/orders/ordeh_bd301df673ce4a5db4f8430a46bd7543/payment-page",
+                    "web": "https://sandbox.juspay.in/orders/ordeh_bd301df673ce4a5db4f8430a46bd7543/payment-page",
+                    "mobile": "https://sandbox.juspay.in/orders/ordeh_bd301df673ce4a5db4f8430a46bd7543/payment-page"
+                },
+                "payment_page_client_id": "defaultclient",
+                "payment_locking": {
+                    "offer_details": "{\"merge_with_default_payment_methods\":\"true\",\"offer_applied\":\"false\",\"offer_payment_methods\":\"null\"}"
+                }
+            },
+            "offers": [],
+            "captured_amount": 1000,
+            "refundable_amount": 0,
+            "status": "CHARGED"
+        }
+    ]
+}
