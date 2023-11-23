@@ -24,7 +24,7 @@
 }
 
 // Listen to events from HyperSDK
-
+// block:start:callbacklistener
 HyperServices.addListener('HyperEvent', async (data) => {
    var event = data["event"];
    switch (event) {
@@ -50,3 +50,4 @@ HyperServices.addListener('HyperEvent', async (data) => {
       break;
    }
 });
+// block:end:callbacklistener
