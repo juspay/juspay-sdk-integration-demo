@@ -1,6 +1,6 @@
 <?php
     if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
-        system("cmd composer_installer.bat");
+        system("composer_installer.bat");
     } else if (strtoupper(substr(PHP_OS, 0, 6))  === 'DARWIN') {
         $output = shell_exec('test -e "$(command -v comp)" && echo 1 || echo 0');
         if ($output == 0) {
