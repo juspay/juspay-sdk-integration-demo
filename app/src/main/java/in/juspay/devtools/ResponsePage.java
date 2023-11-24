@@ -75,7 +75,7 @@ public class ResponsePage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 finish();
-                Intent i = new Intent(ResponsePage.this, ProductsActivity.class);
+                Intent i = new Intent(ResponsePage.this, CheckoutActivity.class);
                 startActivity(i);
             }
         });

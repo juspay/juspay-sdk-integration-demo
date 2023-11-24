@@ -2,35 +2,24 @@ package in.juspay.devtools;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
-import android.widget.TextView;
-
 import in.juspay.hypercheckoutlite.HyperCheckoutLite;
 import in.juspay.hypersdk.data.JuspayResponseHandler;
 import in.juspay.hypersdk.ui.HyperPaymentsCallbackAdapter;
-
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.IOException;
 
 public class CheckoutActivity extends AppCompatActivity {
     private Button processButton;
     private CoordinatorLayout coordinatorLayout;
-    private String amountString;
-    private int item1Price, item2Price, item1Count, item2Count;
-    private TextView item1PriceTv, item2PriceTv, item1CountTv, item2CountTv, totalAmountTv, taxTv, totalPayableTv;
     private ProgressBar progressBar;
-    private double taxPercent = 0.18;
     private ImageView backImage;
 
     @Override
@@ -76,7 +65,6 @@ public class CheckoutActivity extends AppCompatActivity {
             // block:start:updateOrderID
             // You can put your payload details here
             payload.put("order_id", order_id);    // OrderID should be unique
-            payload.put("amount", amountString);    // Amount should be in strings e.g. "100.00"
 
             // For other payload params you can refer to the integration doc shared with you
             // block:end:updateOrderID
@@ -173,37 +161,5 @@ public class CheckoutActivity extends AppCompatActivity {
     private void updatingUI() {
         coordinatorLayout = findViewById(R.id.coordinatorLayout);
         progressBar = findViewById(R.id.progressBar);
-        Intent i = getIntent();
-        item1Count = i.getIntExtra("item1Count", 1);
-        item2Count = i.getIntExtra("item2Count", 1);
-        item1Price = i.getIntExtra("item1Price", 1);
-        item2Price = i.getIntExtra("item2Price", 1);
-
-        item1PriceTv = findViewById(R.id.some_id1);
-        item2PriceTv = findViewById(R.id.some_id2);
-        item1CountTv = findViewById(R.id.x2);
-        item2CountTv = findViewById(R.id.x3);
-
-
-        item1CountTv.setText("x" + Integer.toString(item1Count));
-        item2CountTv.setText("x" + Integer.toString(item2Count));
-        int item1Amount = item1Price * item1Count;
-        int item2Amount = item2Price * item2Count;
-        item1PriceTv.setText("₹ " + Integer.toString(item1Amount));
-        item2PriceTv.setText("₹ " + Integer.toString(item2Amount));
-
-        totalAmountTv = findViewById(R.id.some_id);
-        taxTv = findViewById(R.id.some_id3);
-        totalPayableTv = findViewById(R.id.some_id5);
-
-        int totalAmount = item1Amount + item2Amount;
-        double tax = totalAmount * taxPercent;
-        double totalPayable = totalAmount + tax;
-        Helper helper = new Helper();
-        amountString = Double.toString(helper.round(totalPayable, 2));
-        String taxString = Double.toString(helper.round(tax, 2));
-        totalAmountTv.setText("₹ " + Integer.toString(totalAmount));
-        taxTv.setText("₹ " + taxString);
-        totalPayableTv.setText("₹ " + amountString);
     }
 }
