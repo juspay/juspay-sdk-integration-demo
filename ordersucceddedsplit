@@ -1,1 +1,101 @@
-{"event_name":"ORDER_SUCCEEDED","content":{"order":{"split_settlement_response":{"split_applied":true,"split_details":"FILTERED"},"order_id":"81e69b0772","udf3":"","status":"CHARGED","amount":116,"auth_type":"THREE_DS","refunded":false,"udf8":"FILTERED","udf5":"FILTERED","payment_method":"NB_SBI","gateway_id":23,"udf2":"vivriti","payment_method_type":"NB","txn_uuid":"mo2uLR","udf4":"","customer_id":"FILTERED","udf10":"FILTERED","payment_links":{"iframe":"https://sandbox.juspay.in/orders/ordeh_efb5702b8a5841a58/payment-page","web":"https://sandbox.juspay.in/orders/ordeh_efb5702bf0764/payment-page","mobile":"https://sandbox.juspay.in/orders/ordeh_efb57f0764/payment-page"},"effective_amount":116,"udf1":"REPAY","payment_gateway_response":{"debit_amount":"116.0","auth_id_code":"","created":"2023-05-19T10:54:41Z","rrn":"6833","epg_txn_id":"pay_LrUnXO","txn_id":3d0f31412ca8dd6b01ef9b0772","resp_message":"SUCCESS","resp_code":"SUCCESS"},"product_id":"","txn_detail":{"order_id":"81e6b0772","status":"CHARGED","net_amount":116,"error_code":null,"gateway_id":23,"surcharge_amount":"FILTERED","txn_uuid":"mc82uLR","gateway":"RAZORPAY","created":"2023-05-19T10:54:23Z","tax_amount":"FILTERED","txn_amount":116,"error_message":"","currency":"INR","redirect":true,"metadata":{"microapp":"hyperpay","payment_channel":"ANDROID"},"express_checkout":false,"txn_id":"0f31412c8dd6b01ef9b07","txn_flow_type":"FILTERED","offer_deduction_amount":"FILTERED"},"amount_refunded":0,"customer_email":"FILTERED","currency":"INR","customer_phone":"FILTERED","metadata":{"split_settlement_details":"{\"marketplace\":{\"amount\":0.0},\"vendor\":{\"split\":[{\"amount\":116.0,\"merchant_commission\":0.0,\"sub_mid\":\"testing\"}]},\"mdr_borne_by\":\"ALL\"}","payment_links":{"iframe":"https://sandbox.juspay.in/orders/ordeh_efb58cf0764/payment-page","web":"https://sandbox.juspay.in/orders/ordeh_efb8cf0764/payment-page","mobile":"https://sandbox.juspay.in/orders/ordeh_efb570278cf0764/payment-page"},"payment_page_client_id":"FILTERED","RAZORPAY:gateway_reference_id":"FILTERED"},"bank_error_message":"","id":"ordeh_efb578cf0764","txn_id":e6663d0f31412ca8dd6b01ef","merchant_id":"test","resp_message":null,"maximum_eligible_refund_amount":"FILTERED","udf7":"FILTERED","date_created":"2023-05-19T10:54:23Z","bank_error_code":"","offers":[],"udf9":"FILTERED","gateway_reference_id":"vivriti","return_url":"https://test.com","status_id":21,"resp_code":null,"udf6":"FILTERED"}},"id":"evt_V2_831ffa3796c7426e809f77b3ec1b1452","date_created":"2023-05-19T10:54:41Z"}
+{
+    "event_name": "ORDER_SUCCEEDED",
+    "content": {
+        "order": {
+            "split_settlement_response": {
+                "split_applied": true,
+                "split_details": "FILTERED"
+            },
+            "order_id": "81e69b0772",
+            "udf3": "",
+            "status": "CHARGED",
+            "amount": 116,
+            "auth_type": "THREE_DS",
+            "refunded": false,
+            "udf8": "FILTERED",
+            "udf5": "FILTERED",
+            "payment_method": "NB_SBI",
+            "gateway_id": 23,
+            "udf2": "vivriti",
+            "payment_method_type": "NB",
+            "txn_uuid": "mo2uLR",
+            "udf4": "",
+            "customer_id": "FILTERED",
+            "udf10": "FILTERED",
+            "payment_links": {
+                "iframe": "https://sandbox.juspay.in/orders/ordeh_efb5702b8a5841a58/payment-page",
+                "web": "https://sandbox.juspay.in/orders/ordeh_efb5702bf0764/payment-page",
+                "mobile": "https://sandbox.juspay.in/orders/ordeh_efb57f0764/payment-page"
+            },
+            "effective_amount": 116,
+            "udf1": "REPAY",
+            "payment_gateway_response": {
+                "debit_amount": "116.0",
+                "auth_id_code": "",
+                "created": "2023-05-19T10:54:41Z",
+                "rrn": "6833",
+                "epg_txn_id": "pay_LrUnXO",
+                "txn_id": "3d0f31412ca8dd6b01ef9b0772",
+                "resp_message": "SUCCESS",
+                "resp_code": "SUCCESS"
+            },
+            "product_id": "",
+            "txn_detail": {
+                "order_id": "81e6b0772",
+                "status": "CHARGED",
+                "net_amount": 116,
+                "error_code": null,
+                "gateway_id": 23,
+                "surcharge_amount": "FILTERED",
+                "txn_uuid": "mc82uLR",
+                "gateway": "RAZORPAY",
+                "created": "2023-05-19T10: 54: 23Z",
+                "tax_amount": "FILTERED",
+                "txn_amount": 116,
+                "error_message": "",
+                "currency": "INR",
+                "redirect": true,
+                "metadata": {
+                    "microapp": "hyperpay",
+                    "payment_channel": "ANDROID"
+                },
+                "express_checkout": false,
+                "txn_id": "0f31412c8dd6b01ef9b07",
+                "txn_flow_type": "FILTERED",
+                "offer_deduction_amount": "FILTERED"
+            },
+            "amount_refunded": 0,
+            "customer_email": "FILTERED",
+            "currency": "INR",
+            "customer_phone": "FILTERED",
+            "metadata": {
+                "split_settlement_details": "{\"marketplace\":{\"amount\":0.0},\"vendor\":{\"split\":[{\"amount\":116.0,\"merchant_commission\":0.0,\"sub_mid\":\"testing\"}]},\"mdr_borne_by\":\"ALL\"}",
+                "payment_links": {
+                    "iframe": "https://sandbox.juspay.in/orders/ordeh_efb58cf0764/payment-page",
+                    "web": "https://sandbox.juspay.in/orders/ordeh_efb8cf0764/payment-page",
+                    "mobile": "https://sandbox.juspay.in/orders/ordeh_efb570278cf0764/payment-page"
+                },
+                "payment_page_client_id": "FILTERED",
+                "RAZORPAY:gateway_reference_id": "FILTERED"
+            },
+            "bank_error_message": "",
+            "id": "ordeh_efb578cf0764",
+            "txn_id": "e6663d0f31412ca8dd6b01ef",
+            "merchant_id": "test",
+            "resp_message": null,
+            "maximum_eligible_refund_amount": "FILTERED",
+            "udf7": "FILTERED",
+            "date_created": "2023-05-19T10: 54: 23Z",
+            "bank_error_code": "",
+            "offers": [],
+            "udf9": "FILTERED",
+            "gateway_reference_id": "vivriti",
+            "return_url": "https: //test.com",
+            "status_id": 21,
+            "resp_code": null,
+            "udf6": "FILTERED"
+        }
+    },
+    "id": "evt_V2_831ffa3796c7426e809f77b3ec1b1452",
+    "date_created": "2023-05-19T10:54:41Z"
+}
