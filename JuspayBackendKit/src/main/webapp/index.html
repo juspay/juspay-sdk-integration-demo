@@ -27,7 +27,7 @@
     #submitBtn {
        align-self: center;
     }
-
+​
     .button-1 {
         background-color: #05f;
         border-radius: 8px;
@@ -45,7 +45,7 @@
         transition: color 100ms;
         vertical-align: baseline;
     }
-
+​
     .button-1:hover,
     .button-1:focus {
         background-color: #472ed5;
@@ -56,30 +56,17 @@
     }
 </style>
 <body>
-    <div class="heading">
-        <h2>Order Form</h2>
+<div class="heading">
+    <h2>Checkout Screen</h2>
+</div>
+<div class="container">
+    <div class="form">
+        <button id="submitBtn" class="button-1">Open Payment Page</button>
     </div>
-    <div class="container">
-        <div class="form">
-            <form id="orderForm">
-                <label for="orderId">Order ID:</label>
-                <input type="text" id="orderId"><br><br>
-                <label for="amount">Amount*:</label>
-                <input type="number" id="amount" required><br><br>
-                <!-- <label for="payment-page-client-id">payment-page-client-id:</label>
-                <input type="text" id="payment-page-client-id"><br><br> -->
-            </form>
-            <button id="submitBtn" class="button-1">Submit</button>
-        </div>
-    </div>
-    <script>
+</div>
+<script>
         document.getElementById("submitBtn").addEventListener("click", function() {
-            var orderId = document.getElementById("orderId").value;
-            var amount = document.getElementById("amount").value;
-            var data = {
-                order_id: orderId,
-                amount: amount,
-            };
+​
 <!--block:start:open-paymentpage-->
             var xhr = new XMLHttpRequest();
             xhr.open("POST", 'initiateJuspayPayment', true);
@@ -97,7 +84,8 @@
                 }
             };
 <!--block:end:open-paymentpage-->
-            xhr.send(JSON.stringify(data));
+
+            xhr.send(null);
         });
     </script>
 </body>

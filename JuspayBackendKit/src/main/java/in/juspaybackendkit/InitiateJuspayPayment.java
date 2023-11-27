@@ -1,7 +1,5 @@
 package in.juspaybackendkit;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import in.juspay.exception.JuspayException;
 import in.juspay.model.OrderSession;
@@ -13,33 +11,15 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Random;
 import java.util.UUID;
 
 // block:start:InitiateJuspayPayment
 public class InitiateJuspayPayment extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        JsonNode payload = getBody(req);
-        if (payload == null) {
-            resp.setStatus(HttpServletResponse.SC_UNSUPPORTED_MEDIA_TYPE);
-            resp.getWriter().write(makeErrorMsg("only accepts application/json"));
-            return;
-        }
-
         String orderId = "order_" + UUID.randomUUID().toString().substring(12);
-        String amount;
-
-        if (payload.has("order_id") && !payload.get("order_id").asText().isEmpty()) {
-            orderId = payload.get("order_id").asText();
-        }
-
-        if (!payload.has("amount")) {
-            resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-            resp.getWriter().write(makeErrorMsg("amount is not present or not empty"));
-            return;
-        } else {
-            amount = payload.get("amount").asText();
-        }
+        int amount = new Random().nextInt(100) + 1;
 
         String serverName = req.getServerName();
         int serverPort = req.getServerPort();
@@ -75,14 +55,6 @@ public class InitiateJuspayPayment extends HttpServlet {
 
     private String makeErrorMsg(String msg) {
         return "{\n  \"message\": \"" + msg + "\"\n}";
-    }
-
-    private JsonNode getBody(HttpServletRequest req) {
-        try {
-            return new ObjectMapper().readValue(req.getInputStream(), JsonNode.class);
-        } catch (Exception e) {
-            return null;
-        }
     }
 }
 // block:end:InitiateJuspayPayment
