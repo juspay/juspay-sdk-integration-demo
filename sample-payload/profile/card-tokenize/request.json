@@ -3,10 +3,10 @@
     "service": "in.juspay.hyperapi",
     "payload": {
         "action": "tokenizeCard",
-        "cardNumber": "4622540011002200",
+        "cardNumber": "4**************4",
         "cardExpMonth": "05",
         "cardExpYear": "25",
-        "cardSecurityCode": "123",
+        "cardSecurityCode": "***",
         "nameOnCard": "Rak",
         "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213"
     }
