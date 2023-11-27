@@ -6,7 +6,7 @@
       "action": "cardTxn",
       "orderId": "hyperorder79736",
       "paymentMethod": "VISA",
-      "cardNumber": "4************4",
+      "cardNumber": "4**************4",
       "cardExpMonth": "04",
       "cardExpYear": "26",
       "cardSecurityCode": "***",
