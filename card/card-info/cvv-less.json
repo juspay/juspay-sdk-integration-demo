@@ -1,11 +1,5 @@
 {
     "country": "INDIA",
-    "cvv_less_supported_gateways": [
-        "PAYU",
-        "PAYTM_V2",
-        "CYBERSOURCE",
-        "RAZORPAY"
-    ],
     "extended_card_type": "DEBIT",
     "brand": "VISA",
     "juspay_bank_code": "JP_HDFC",
@@ -15,4 +9,24 @@
     "card_sub_type": "VISA PLATINUM",
     "type": "DEBIT",
     "bank": "HDFC Bank"
+}
+
+
+{
+    "country": "INDIA",
+    "extended_card_type": "CREDIT",
+    "brand": "VISA",
+    "juspay_bank_code": "JP_HDFC",
+    "object": "cardbin",
+    "id": "405028700",
+    "card_sub_type": "BHARAT",
+    "type": "CREDIT",
+    "bank": "HDFC Bank",
+    "cvv_less_support": true,
+    "cvv_less_supported_gateways": [
+        "PAYU",
+        "PAYTM_V2",
+        "CYBERSOURCE",
+        "RAZORPAY"
+    ],
 }
