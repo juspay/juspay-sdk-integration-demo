@@ -10,28 +10,19 @@ using System.Web.UI.WebControls;
 
 namespace DotnetServer.Controllers
 {
-    public class InitiateJuspayPaymentRequest
-    {
-        public string Amount { get; set; }
-        public string Order_id { get; set; }
-
-    }
     public class InitiateJuspayPaymentController : Controller
     {
 
         [System.Web.Mvc.Route("initiateJuspayPayment")]
         [System.Web.Mvc.HttpPost]
-        public async Task<ActionResult> Post([FromBody] InitiateJuspayPaymentRequest req)
+        public async Task<ActionResult> Post()
         {
 
-            if (req.Amount == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            string orderId = string.IsNullOrEmpty(req.Order_id) ? $"{new Random().Next()}" : req.Order_id;
+            string orderId = $"order_{new Random().Next()}";
             string customerId = "testing-customer-one";
+            int amount = new Random().Next(0,100);
             RequestOptions requestOptions = new RequestOptions { CustomerId = customerId };
-            CreateOrderSessionInput createOrderSessionInput = new CreateOrderSessionInput(new Dictionary<string, object> { { "amount", req.Amount }, { "order_id", orderId }, { "customer_id", customerId }, { "payment_page_client_id", Init.Config.PaymentPageClientId }, { "action", "paymentPage" }, { "return_url", "http://localhost:5000/handleJuspayResponse" }, { "metadata.GOCASHFREE:gateway_reference_id", "V3Cashfree" } });
+            CreateOrderSessionInput createOrderSessionInput = new CreateOrderSessionInput(new Dictionary<string, object> { { "amount", amount }, { "order_id", orderId }, { "customer_id", customerId }, { "payment_page_client_id", Init.Config.PaymentPageClientId }, { "action", "paymentPage" }, { "return_url", "http://localhost:5000/handleJuspayResponse" }, { "metadata.GOCASHFREE:gateway_reference_id", "V3Cashfree" } });
             try
             {
                 JuspayResponse sessionRes = await new OrderSession().CreateAsync(createOrderSessionInput, requestOptions);

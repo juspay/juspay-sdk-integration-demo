@@ -5,14 +5,6 @@ using System.Collections.Generic;
 using System;
 
 namespace dotnet_server.Controllers {
-    public class InitiateJuspayPaymentRequest
-    {
-        [JsonProperty("amount")]
-        public string Amount { get; set; }
-
-        [JsonProperty("order_id")]
-        public string Order_id { get; set; }
-    }
 
     [ApiController]
     [Route("[controller]")]
@@ -20,19 +12,16 @@ namespace dotnet_server.Controllers {
     {
 
         [HttpPost]
-        public IActionResult Post([FromBody] InitiateJuspayPaymentRequest req)
+        public IActionResult Post()
         {
             try
             {
-                if (req == null)
-                {
-                    return BadRequest();
-                }
                 // block:start:session-function
-                string orderId = string.IsNullOrEmpty(req.Order_id) ? $"{new Random().Next()}" : req.Order_id;
+                string orderId = $"order_{new Random().Next()}";
+                int amount = new Random().Next(0, 100);
                 string customerId = "testing-customer-one";
                 RequestOptions requestOptions = new RequestOptions{ CustomerId = customerId };
-                CreateOrderSessionInput createOrderSessionInput = new CreateOrderSessionInput(new Dictionary<string, object>{{ "amount", req.Amount }, { "order_id",  orderId}, { "customer_id", customerId }, { "payment_page_client_id", Init.Config.PaymentPageClientId }, { "action", "paymentPage" }, { "return_url", "http://localhost:5000/handleJuspayResponse" } });
+                CreateOrderSessionInput createOrderSessionInput = new CreateOrderSessionInput(new Dictionary<string, object>{{ "amount", amount}, { "order_id",  orderId}, { "customer_id", customerId }, { "payment_page_client_id", Init.Config.PaymentPageClientId }, { "action", "paymentPage" }, { "return_url", "http://localhost:5000/handleJuspayResponse" } });
                 JuspayResponse sessionRes = new OrderSession().Create(createOrderSessionInput, requestOptions);
                 Dictionary<string, object> res = new Dictionary<string, object> {
                     { "orderId", sessionRes.Response.order_id },
