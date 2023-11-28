@@ -1,0 +1,11 @@
+{
+    "status": "SUCCESS",
+    "associateId": "rohit_juspay",
+    "response": {
+        "visa": "onboarded",
+        "mastercard": "onboarded",
+        "rupay": "onboarded",
+        "amex": "onboarded",
+        "diners": "onboarded"
+    }
+}
