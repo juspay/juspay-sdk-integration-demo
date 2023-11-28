@@ -1,10 +1,11 @@
 {
-  "id": "485498",
-  "card_sub_type": "REGALIA",
-  "brand": "VISA",
-  "bank": "HDFC Bank",
-  "object": "cardbin",
-  "type": "CREDIT",
-  "juspay_bank_code": "JP_HDFC",
-  "country": "INDIA"
+    "country": "INDIA",
+    "extended_card_type": "CREDIT",
+    "brand": "VISA",
+    "juspay_bank_code": "JP_HDFC",
+    "object": "cardbin",
+    "id": "405028700",
+    "card_sub_type": "BHARAT",
+    "type": "CREDIT",
+    "bank": "HDFC Bank"
 }

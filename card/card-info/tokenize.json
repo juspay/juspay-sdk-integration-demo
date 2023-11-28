@@ -1,11 +1,12 @@
 {
-  "id": "541919",
-  "object": "cardbin",
-  "brand": "MASTERCARD",
-  "bank": "HDFC Bank",
-  "country": "INDIA",
-  "type": "DEBIT",
-  "card_sub_type": "PLATINUM",
-  "juspay_bank_code": "JP_HDFC",
-  "tokenize_support": true
+    "country": "INDIA",
+    "extended_card_type": "CREDIT",
+    "brand": "VISA",
+    "juspay_bank_code": "JP_HDFC",
+    "object": "cardbin",
+    "id": "405028700",
+    "card_sub_type": "BHARAT",
+    "type": "CREDIT",
+    "bank": "HDFC Bank",
+    "tokenize_support": true
 }
