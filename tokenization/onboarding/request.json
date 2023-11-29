@@ -1,0 +1,14 @@
+{
+  "associateId": "rohit_juspay",
+  "testMode": true,
+  "companyDetails": {
+    "legalName": "Partner's merchant Legal Name",
+    "tradeName": "Partner's merchant trade Name",
+    "websiteURL": "Partner's merchant URL",
+    "contactEmail": "Partner's merchant Email",
+    "businessIdentificationType": "",
+    "businessIdentificationValue": ""
+  },
+ "flow": "ALT_ID",
+ "network": "VISA"
+}
