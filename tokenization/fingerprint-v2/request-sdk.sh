@@ -1,4 +1,7 @@
-{
+curl --location 'https://sandbox.juspay.in/v2/card/fingerprint' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Basic <MASKED API KEY>' \
+--data '{
     "requestId": "Unique Request ID",
     "service": "in.juspay.hyperapi",
     "payload": {
@@ -7,4 +10,4 @@
         "istoken": "true",
         "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213"
     }
-}
+}'
