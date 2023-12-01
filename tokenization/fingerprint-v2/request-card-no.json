@@ -1,5 +1,5 @@
 {
     "request_id": "Unique Request ID",
     "card_number": "Card Number",
-    "istoken": "false"
+    "is_token": false
 }
