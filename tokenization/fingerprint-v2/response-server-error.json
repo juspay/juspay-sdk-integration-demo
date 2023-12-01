@@ -1,0 +1,9 @@
+{
+    "error_info": {
+        "category": "SERVER_ERROR",
+        "request_id": "NOREQID-288dcbd762cc4ce1bc73a754d0bcc17e",
+        "developer_message": "Actual_Network_message",
+        "user_message": "Error from network",
+        "code": "NETWORK_ERROR_CODE"
+    }
+}

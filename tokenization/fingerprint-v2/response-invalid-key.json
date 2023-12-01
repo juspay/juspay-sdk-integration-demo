@@ -1,0 +1,9 @@
+{
+    "error_info": {
+        "category": "USER_ERROR",
+        "request_id": "NOREQID-288dcbd762cc4ce1bc73a754d0bcc17e",
+        "developer_message": "Invalid API Key. Please pass a valid and active api key.",
+        "user_message": "Unauthorized.",
+        "code": "UNAUTHORIZED"
+    }
+}
