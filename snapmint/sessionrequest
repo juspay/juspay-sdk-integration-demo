@@ -1,0 +1,44 @@
+curl --location --request POST 'https://sandbox.juspay.in/session' \
+--header 'version: 2023-11-01' \
+--header 'x-merchantid: jptest' \
+--header 'Authorization: Basic R******************************g==' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "order_id": "Test_1701454471",
+    "amount": "5000.00",
+    "currency": "INR",
+    "customer_id": "customer123",
+    "customer_email": "customer@gmail.com",
+    "customer_phone": "7777788888",
+    "product_id": "prod-141833",
+    "payment_page_client_id": "jptest",
+    "return_url": "http://shop.merchant.com/payments/handleResponse",
+    "description": "Sample description",
+    "billing_address_first_name": "Juspay",
+    "billing_address_last_name": "Technologies",
+    "billing_address_line1": "Girija Building",
+    "billing_address_line2": "Ganapathi Temple Road",
+    "billing_address_line3": "8th Block, Koramangala",
+    "billing_address_city": "Bengaluru",
+    "billing_address_state": "Karnataka",
+    "billing_address_country": "India",
+    "billing_address_postal_code": "560095",
+    "billing_address_phone": "9988775566",
+    "billing_address_country_code_iso": "IND",
+    "shipping_address_first_name": "Juspay",
+    "shipping_address_last_name": "Technologies",
+    "shipping_address_line1": "Girija Building",
+    "shipping_address_line2": "Ganapathi Temple Road",
+    "shipping_address_line3": "8th Block, Koramangala",
+    "shipping_address_city": "Bengaluru",
+    "shipping_address_state": "Karnataka",
+    "shipping_address_postal_code": "560095",
+    "shipping_address_country_code_iso": "IND",
+    "shipping_address_country": "India",
+    "basket": "[{\"id\":\"MK-RMB-32613-YVVT-GUD-B1C1\",\"quantity\":2,\"unitPrice\":7500,\"description\":\"iphone\",\"productURL\":\"https://www.google.com\",\"category\":\"Electronics\",\"sku\":\"123456\",\"sellerType\":\"VENDOR\",\"customParams\":{\"name1\":\"value1\",\"name2\":\"value2\"}}]",
+    "metadata.SNAPMINT:snapmintTotalOrders": "5",
+    "metadata.SNAPMINT:snapmintTotalOrderValue": "10000",
+    "metadata.SNAPMINT:snapmintMaxOrderValue": "6000",
+    "metadata.SNAPMINT:snapmintLast3Addresses": "110040 | 110042 | 110043",
+    "metadata.SNAPMINT:snapmintLastOrderDate": "20230828"
+}'
