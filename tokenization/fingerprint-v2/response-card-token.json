@@ -1,9 +1,18 @@
 {
+    "status": "error",
+    "error_code": "invalid_request_error",
+    "error_message": "Could not locate a card with given token",
     "error_info": {
-        "category": "REQUEST_ERROR",
-        "request_id": "NOREQID-288dcbd762cc4ce1bc73a754d0bcc17e",
-        "developer_message": "Invalid or Expired CardToken; CardToken has a set time limit; Please ensure to use the CardToken before expiry",
-        "user_message": "Invalid Request.",
-        "code": "INVALID_REQUEST"
+        "category": "USER_ERROR",
+        "request_id": "388c73fb-3076-413c-b158-17e5627f7c42",
+        "developer_message": "Could not locate a card with given token",
+        "user_message": "Invalid request params. Please verify your input.",
+        "code": "INVALID_INPUT",
+        "fields": [
+            {
+                "field_name": "card_token",
+                "reason": "Invalid value."
+            }
+        ]
     }
 }

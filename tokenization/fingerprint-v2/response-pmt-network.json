@@ -1,0 +1,12 @@
+{
+    "error": true,
+    "error_message": "File maintenance error",
+    "user_message": "PAR value not returned by network.",
+    "error_info": {
+        "code": "INVALID_INPUT",
+        "category": "USER_ERROR",
+        "request_id": "9bd263ab-9a60-4543-9fdd-0620188e260c",
+        "user_message": "Invalid request params. Please verify your input.",
+        "developer_message": "Invalid request params."
+    }
+}
