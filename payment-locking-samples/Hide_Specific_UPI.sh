@@ -1,7 +1,3 @@
-curl --location --request POST 'https://api.juspay.in/session' \
---header 'Authorization: Basic base_64_encoded_api_key==' \
---header 'x-merchantid: your_merchant_id' \
---header 'Content-Type: application/json' \
 --data-raw '{
     "order_id": "testing-order-one",
     "amount": "1.0",
@@ -14,6 +10,7 @@ curl --location --request POST 'https://api.juspay.in/session' \
     "description": "Complete your payment",
     "first_name": "John",
     "last_name": "wick",
+// Add payment locking payload given below to the payload used for creating an order    
     "payment_filter": {
        "allowDefaultOptions": true,
        "options": [{
