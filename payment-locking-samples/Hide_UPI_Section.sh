@@ -10,6 +10,7 @@
     "description": "Complete your payment",
     "first_name": "John",
     "last_name": "wick",
+// Add payment locking payload given below to the payload used for creating an order
     "payment_filter": {
        "allowDefaultOptions": true,
        "options": [
