@@ -37,7 +37,7 @@
         "expiry_month": "12",
         "name_on_card": "test",
         "card_issuer": "JP Morgan",
-        "last_four_digits": "",
+        "last_four_digits": "2354",
         "using_saved_card": true,
         "card_fingerprint": "32qqi3sv1u5237fq7ura2rgqqb",
         "card_isin": "411111",
