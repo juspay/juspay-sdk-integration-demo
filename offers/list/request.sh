@@ -64,5 +64,5 @@ curl --location 'https://api.juspay.in/v1/offers/list?emi=true' \
         "email": "customer5453@gmail.com",
         "mobile": "9999999999"
     }
-    
+    "offer_code": "coupon_offer"
 }'
