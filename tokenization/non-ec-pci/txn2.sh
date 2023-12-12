@@ -1,0 +1,22 @@
+curl --location --request POST 'https://sandbox.juspay.in/txns' \
+--header 'Authorization: Basic MASKED' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'order.order_id={order_id}' \
+--data-urlencode 'order.customer_id={customer_id}' \
+--data-urlencode 'order.currency=INR' \
+--data-urlencode 'payment_method_type=CARD' \
+--data-urlencode 'card_security_code={cvv}' \
+--data-urlencode 'card_number={token_number}' \
+--data-urlencode 'card_exp_month={token_expiry_month}' \
+--data-urlencode 'card_exp_year={token_expiry_year}' \
+--data-urlencode 'format=json' \
+--data-urlencode 'payment_method=VISA' \
+--data-urlencode 'redirect_after_payment=true' \
+--data-urlencode 'merchant_id=udit_juspay' \
+--data-urlencode 'order.return_url=https://api.juspay.in/end' \
+--data-urlencode 'order.amount=1' \
+--data-urlencode 'tavv={tavv}'\
+--data-urlencode 'token.requestor_id={trid}' \
+--data-urlencode 'token.par={par}'\
+--data-urlencode 'token.card_last_four={Last 4 digits}'\
+--data-urlencode 'token.eci={ECI}'

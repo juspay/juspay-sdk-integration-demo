@@ -1,0 +1,20 @@
+{
+    "txn_uuid": "eultahHKFRLe",
+    "txn_id": "makemytrip_vsc",
+    "status": "PENDING_VBV",
+    "payment": {
+        "authentication": {
+            "url": "https://sandbox.juspay.in/v2/txns/consent/makemytrip_vsc/eultahHKFRLe",
+            "method": "GET"
+        }
+    },
+    "order_id": "udit1632810288",
+    "offer_details": {
+        "offers": []
+    },
+    "juspay": {
+        "client_auth_token_expiry": "2021-09-28T06:39:48Z",
+        "client_auth_token": "tkn_868ede1dff0543a7b9cc8f7012428485"
+    }
+ }
+ 

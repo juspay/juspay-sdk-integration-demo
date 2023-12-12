@@ -1,0 +1,15 @@
+{
+    "txn_uuid": "eulvRWKCQuehQgvPDn5",
+    "txn_id": "UD-udit1639638015-1",
+    "status": "PENDING_VBV",
+    "payment": {
+        "authentication": {
+            "url": "https://sandbox.juspay.in/v2/pay/start/udit_juspay/eulvRWKCQuehQgvPDn5",
+            "method": "GET"
+        }
+    },
+    "order_id": "udit1639638015",
+    "offer_details": {
+        "offers": []
+    }
+}

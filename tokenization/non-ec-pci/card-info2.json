@@ -1,0 +1,11 @@
+{
+    "id": "401200",
+    "object": "cardbin",
+    "brand": "VISA",
+    "bank": "HDFC Bank",
+    "country": "INDIA",
+    "type": "CREDIT",
+    "card_sub_type": "CLASSIC",
+    "juspay_bank_code": "JP_HDFC",
+    "tokenize_support": true
+ }

@@ -1,0 +1,9 @@
+{
+    "status" : "SUCCESS"
+}
+
+{
+     "status" : "FAILURE",
+     "error_message": "",
+     "error_code": ""
+}

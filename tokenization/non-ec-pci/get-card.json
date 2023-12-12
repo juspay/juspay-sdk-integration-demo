@@ -1,0 +1,30 @@
+{
+    "eci": "07",
+    "name_on_card": "name",
+    "token_requestor_id": "400000XXXXX",
+    "fingerprint": "7r3lfdf2u86odgtl2g2dicpicj",
+    "card_type": "DEBIT",
+    "reference": "token_3c7097da41064c30bcXXXXXXX",
+    "sub_type": null,
+    "network": "VISA",
+    "token_details": {
+        "status": "ACTIVE",
+        "first_six": "489769",
+        "last_four": "4290",
+        "exp_month": "10",
+        "exp_year": "2026"
+    },
+    "issuer_country_code": null,
+    "authentication_details": {
+        "cryptogram": "FILTERED",
+        "token": "489769FILTERED4290"
+    },
+    "nickname": null,
+    "issuer": "Slice",
+    "card_details": {
+        "last_four": "FILTERED",
+        "par": "V00100158FILTERED8791",
+        "exp_month": "10",
+        "exp_year": "2026"
+    }
+}

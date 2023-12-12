@@ -1,0 +1,1 @@
+curl --location --request GET 'https://sandbox.juspay.in/orders/<order_id>'
