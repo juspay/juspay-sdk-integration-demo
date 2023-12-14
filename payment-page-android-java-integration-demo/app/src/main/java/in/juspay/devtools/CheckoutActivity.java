@@ -103,8 +103,6 @@ public class CheckoutActivity extends AppCompatActivity {
             payload.put("first_name", "john");
             payload.put("last_name", "wick");
             payload.put("description", "Order Description");
-            payload.put("return_url", "<REDIRECT_URL>");
-
             // For other payload params you can refer to the integration doc shared with you
         } catch (Exception e){
 
