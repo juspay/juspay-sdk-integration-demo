@@ -1,0 +1,11 @@
+{
+  "category": "screen",
+  "subcategory": "screen",
+  "label": "current_screen",
+  "value": {
+      "url": "",
+      "screen_name": "PaymentPageScreen",
+      "presentation_type": "screen",
+      "id": 1
+  }
+}
