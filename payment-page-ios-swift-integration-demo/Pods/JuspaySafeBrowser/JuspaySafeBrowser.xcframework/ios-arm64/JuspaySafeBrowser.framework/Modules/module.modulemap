@@ -1,6 +1,6 @@
 framework module JuspaySafeBrowser {
   umbrella header "JuspaySafeBrowser.h"
-
   export *
+
   module * { export * }
 }

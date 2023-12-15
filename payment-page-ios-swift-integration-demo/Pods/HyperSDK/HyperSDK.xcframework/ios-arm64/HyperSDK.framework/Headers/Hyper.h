@@ -12,7 +12,9 @@
 // That could be because of the following reasons:
 // * Not all the steps are followed as given in the integration documentation.
 // * Some error occured while doing pod install.
-#import "VerifyHyperAssets.h"
+#import <HyperSDK/VerifyHyperAssets.h>
+#import <HyperSDK/BridgeCompontent.h>
+#import <HyperSDK/BridgeModule.h>
 
 @protocol HyperDelegate <NSObject>
 

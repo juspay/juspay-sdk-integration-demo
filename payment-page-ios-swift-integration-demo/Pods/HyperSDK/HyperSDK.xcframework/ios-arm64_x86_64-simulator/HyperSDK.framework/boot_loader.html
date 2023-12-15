@@ -5,12 +5,12 @@
             document.title = microAppId;
             window.__OS = "IOS";
             
-            function loadBootLoader() {
+            function loadBootLoader(path) {
                 var headID = document.getElementsByTagName("head")[0];
                 var newScript = document.createElement('script');
                 newScript.type = 'text/javascript';
                 newScript.id = microAppId;
-                newScript.innerHTML = JBridge.loadFileInDUI('v1-boot_loader.jsa');
+                newScript.innerHTML = JBridge.loadFileInDUI(path);
                 headID.appendChild(newScript);
             }
             
@@ -26,7 +26,17 @@
             }
             
             whenAvailable("JBridge", function() {
-                loadBootLoader();
+                const fileName = 'v1-boot_loader.jsa';
+                loadBootLoader(fileName);
+                setTimeout(function () {
+                    if (typeof window.onMerchantEvent !== 'function') {
+                        loadBootLoader(fileName);
+                        var retryObj = {'retry_tried': 'true'};
+                        try {
+                            window.Analytics._trackLifeCycle('hypersdk')('info')('bundle_load_retry')(retryObj)();
+                        } catch (e) {}
+                    }
+                }, 1000)
             });
         </script>
     </body>

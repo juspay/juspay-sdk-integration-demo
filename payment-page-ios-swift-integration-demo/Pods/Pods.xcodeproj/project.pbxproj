@@ -334,8 +334,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -467,41 +467,39 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0F70BD722E765DB4C2F95910E597F8CC /* Release */ = {
+		2E0B6C8F189A69DF6A23B4CE73397E28 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35978D52EDCE7B62DE558DA1C4DDA518 /* Salvator.release.xcconfig */;
+			baseConfigurationReference = 8DCDB7B4DD6C34C5B6C025A2CB5E7C66 /* HyperSDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
-		29E4134D7F0D7D69157F25179E456B91 /* Release */ = {
+		300CF047AB3F2C5E996250DC51D355C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34D32AEE56048DE895A5D50E18FF2385 /* HyperSDK.release.xcconfig */;
+			baseConfigurationReference = B753DD92434E1F3695F9DF5DAE25C0C2 /* JuspaySafeBrowser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
 		4214E6946993DF02ED98D89047C64016 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -569,23 +567,6 @@
 			};
 			name = Debug;
 		};
-		5185D6963E00B04B7C41FD92F6A42F60 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B753DD92434E1F3695F9DF5DAE25C0C2 /* JuspaySafeBrowser.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		794DA689B4A1BE63F57E0C32A112F9B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 59F689C223A0EA5F2896AA99FC232AFA /* Pods-juspay-sdk-integration-swift.debug.xcconfig */;
@@ -623,14 +604,14 @@
 			};
 			name = Debug;
 		};
-		7F886B32FE61DE4D179116827E6D815E /* Debug */ = {
+		942F5A2818987E9A8593E15B84FEF13B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F8B3D68E346F0B6127037FCE8E98C658 /* Salvator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -640,22 +621,23 @@
 			};
 			name = Debug;
 		};
-		8ABCBC154754D62157960D08C82F3B9F /* Debug */ = {
+		AAB0767D4285F7A0BE39AB8731805C5A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DCDB7B4DD6C34C5B6C025A2CB5E7C66 /* HyperSDK.debug.xcconfig */;
+			baseConfigurationReference = C76C6D8B9806173264080E83CDB52FCE /* JuspaySafeBrowser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		C19A12FE134D0865A4AEB7EEBC2FCF84 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -757,14 +739,32 @@
 			};
 			name = Release;
 		};
-		D27AAFACD3AD3DCCE4A0E1C36AC4C213 /* Release */ = {
+		E320C52DBC9C3479D55E6E506377FBD2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C76C6D8B9806173264080E83CDB52FCE /* JuspaySafeBrowser.release.xcconfig */;
+			baseConfigurationReference = 35978D52EDCE7B62DE558DA1C4DDA518 /* Salvator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED2BD6F240DEF6B6B5CE27C77747D9D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34D32AEE56048DE895A5D50E18FF2385 /* HyperSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -790,8 +790,8 @@
 		6900FA693FC2E3563E2391F4FCC1B846 /* Build configuration list for PBXAggregateTarget "HyperSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8ABCBC154754D62157960D08C82F3B9F /* Debug */,
-				29E4134D7F0D7D69157F25179E456B91 /* Release */,
+				2E0B6C8F189A69DF6A23B4CE73397E28 /* Debug */,
+				ED2BD6F240DEF6B6B5CE27C77747D9D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -799,8 +799,8 @@
 		6CF6501235D75902DEC06F5125037AB8 /* Build configuration list for PBXAggregateTarget "JuspaySafeBrowser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5185D6963E00B04B7C41FD92F6A42F60 /* Debug */,
-				D27AAFACD3AD3DCCE4A0E1C36AC4C213 /* Release */,
+				300CF047AB3F2C5E996250DC51D355C0 /* Debug */,
+				AAB0767D4285F7A0BE39AB8731805C5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -817,8 +817,8 @@
 		EFD020119B1FA400AE50CAF79207A3D0 /* Build configuration list for PBXAggregateTarget "Salvator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7F886B32FE61DE4D179116827E6D815E /* Debug */,
-				0F70BD722E765DB4C2F95910E597F8CC /* Release */,
+				942F5A2818987E9A8593E15B84FEF13B /* Debug */,
+				E320C52DBC9C3479D55E6E506377FBD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
