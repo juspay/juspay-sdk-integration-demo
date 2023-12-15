@@ -4,13 +4,25 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/BridgeCompontent.h</key>
+		<data>
+		FG0Fx3p686kuQayaRzM3zeNfhDQ=
+		</data>
+		<key>Headers/BridgeModule.h</key>
+		<data>
+		ouZTKxGhZeY4UffhcRyaQr4t8iI=
+		</data>
 		<key>Headers/Hyper.h</key>
 		<data>
-		pKjQdXes8B+ALhErwyfRxx+whTk=
+		QLOIL7mpPuzRmjB9idcb9t/+Nq4=
+		</data>
+		<key>Headers/HyperCheckoutLite.h</key>
+		<data>
+		DcLn45FQ07NHqh5qXnyPTJu+wpM=
 		</data>
 		<key>Headers/HyperSDK.h</key>
 		<data>
-		Meeq+Mgu/jkHLV6G2QA2JYhkx2U=
+		ODrp1uq0Ea7w0AyHyLLd1I54tVA=
 		</data>
 		<key>Headers/VerifyHyperAssets.h</key>
 		<data>
@@ -18,15 +30,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rNI7L5I1e6F8KwwMWvo12n4vBow=
+		3iOy+jdro8jHXr5Z6qzSlLYj1GE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		tRWajbk1toR05bJYalc3kYnrAD0=
+		6AaMSE60dyNgeLY46tesLLyQKGE=
 		</data>
 		<key>boot_loader.html</key>
 		<data>
-		RxjWLimuNgctBILJb8CRNcp9I+w=
+		TxZgMm+b4uvI3dAuXitI19GmfIc=
 		</data>
 		<key>payments-com.juspay.gemi-base.html</key>
 		<data>
@@ -50,7 +62,7 @@
 		</data>
 		<key>payments-in.juspay.ec-base.html</key>
 		<data>
-		I7KVjlsNincTIZ24E/sLp6iVM1w=
+		vl5oPr2qSONcBFrAblokOSkjSvU=
 		</data>
 		<key>payments-in.juspay.ec-v1-config.jsa</key>
 		<data>
@@ -82,7 +94,7 @@
 		</data>
 		<key>payments-in.juspay.hyperpay-base.html</key>
 		<data>
-		IIXHnwoampUcFm9tZymeNss+lnk=
+		2peY1kroYn5RfuLNrcrNZa6bjcI=
 		</data>
 		<key>payments-in.juspay.hyperpay-v1-configuration.jsa</key>
 		<data>
@@ -122,7 +134,7 @@
 		</data>
 		<key>payments-in.juspay.upiintent-base.html</key>
 		<data>
-		sF0lgVMM9rguYkQZHWjZJaasNEQ=
+		gT0hihTDr5P89a825Zl2/6WFhD8=
 		</data>
 		<key>payments-in.juspay.upiintent-v1-config.jsa</key>
 		<data>
@@ -158,7 +170,7 @@
 		</data>
 		<key>v1-boot_loader.jsa</key>
 		<data>
-		4lHKKtWI8q7wwJ2AZupW6IXF3js=
+		YUta6lbnHmJ//ht8jFiNPtsbShE=
 		</data>
 		<key>v1-config.jsa</key>
 		<data>
@@ -171,18 +183,39 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/BridgeCompontent.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			J2aJQOFtTWfg4ot6Qsdz0Zy0MYuPCvzhLdXyTA3JIRs=
+			</data>
+		</dict>
+		<key>Headers/BridgeModule.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KPnMtxVbMgt85oOqqXD/6iS9KednwfrT9GuhLcE5Oq8=
+			</data>
+		</dict>
 		<key>Headers/Hyper.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZT+oT0ffAaG7s1J8yHd+q0Tk0aFz+KKascJVHzGs8ok=
+			CfilA/oaicTGPm3bGi7zvPCI0m0IPJDIco9Vq/LFCUQ=
+			</data>
+		</dict>
+		<key>Headers/HyperCheckoutLite.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			x3AKv1TiTWLroWB/WE+tg0c3HBQI8/Kvf4C4ULR3kRE=
 			</data>
 		</dict>
 		<key>Headers/HyperSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s1RopPgYA/M8IPp/qkU89actgL+xAMW5xRm/cyeKXhs=
+			y0Z8KOgXnJwRx85957AncaILuzKeWJ6RNhCapYUeclw=
 			</data>
 		</dict>
 		<key>Headers/VerifyHyperAssets.h</key>
@@ -196,14 +229,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gRsfMlDMuKu5cBY+XMxgk2yQ0XL3xp8CPByDcR8TGv0=
+			ygGbAga4AiM61hWB1OlnUaQlrakF9IELIWt+T1bGMu4=
 			</data>
 		</dict>
 		<key>boot_loader.html</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jeqx9FfLF3xJok0bOWxcD4KU5D1wA9xlJRu1fxbnTsE=
+			CRaI9n8p7j07jTR+kjfZl9ChTBneA+7MS+F5OYpNgdk=
 			</data>
 		</dict>
 		<key>payments-com.juspay.gemi-base.html</key>
@@ -245,7 +278,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sb/iSSEPOgb/i2P+gTpC4R8fF7gPfvopVbeo+0x7MqM=
+			i32S5eAuVzAunE+qL5ebrK787NMiBrPvVjV47Ccfwmc=
 			</data>
 		</dict>
 		<key>payments-in.juspay.ec-v1-config.jsa</key>
@@ -301,7 +334,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sSl8ULweQiYVpUzw7k0mw0QVSD+S0cjx9qFUKwKokzw=
+			Ac8oK9tOaZDafN5kd0svKGRlXZqJSnuRG22Ms5DQ7SM=
 			</data>
 		</dict>
 		<key>payments-in.juspay.hyperpay-v1-configuration.jsa</key>
@@ -371,7 +404,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vRIlcTwzjZpP0FJo7Zj8oo/zZa9Lk9wsy1p0L0Kan90=
+			oIHVVWyz5Dwflt40sr8CfdddyAoJr4FdF//+9qiQ+gU=
 			</data>
 		</dict>
 		<key>payments-in.juspay.upiintent-v1-config.jsa</key>
@@ -434,7 +467,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yx0eHegH8sR4tK4QwfpP9SkjHelwaXTpYqexUPKAgrU=
+			3KT04/rJf/ZlfDTrRv1fpMkwRg1FGBk6xCP8+o9Ln08=
 			</data>
 		</dict>
 		<key>v1-config.jsa</key>

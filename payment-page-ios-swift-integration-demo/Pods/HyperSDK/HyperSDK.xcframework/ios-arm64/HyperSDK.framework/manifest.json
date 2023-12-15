@@ -1,0 +1,172 @@
+{
+  "0.6rc9": {
+    "v1-acs.jsa": {
+      "hash": "a2495785194e947dddb33b29e5ea0ef1"
+    }
+  },
+  "godel": {
+    "v1-config.jsa": {
+      "hash": "a4bbd8088659aec2741a871cc1721f5d"
+    }
+  },
+  "hyper": {
+    "bundles": {
+      "app": {
+        "in.juspay.dotp": {
+          "4.5.1": {
+            "ios": {
+              "v1-index_bundle.jsa": {
+                "hash": "dc6c23a708e31ab3ff5cd92c95228add"
+              }
+            }
+          }
+        },
+        "in.juspay.ec": {
+          "3.16.25": {
+            "ios": {
+              "v1-index_bundle.jsa": {
+                "hash": "dc7831b274c428a9a25beb1f7ff13a2f"
+              }
+            }
+          }
+        },
+        "in.juspay.escrow": {
+          "3.4.0": {
+            "ios": {
+              "v1-index_bundle.jsa": {
+                "hash": "fbe29f3c8ba770d6c33e7dd9d05645a7"
+              }
+            }
+          }
+        },
+        "in.juspay.flyer": {
+          "2.5.2": {
+            "ios": {
+              "v1-index_bundle.jsa": {
+                "hash": "bb7deb6478ab61eaf608b450936c454b"
+              }
+            }
+          }
+        },
+        "in.juspay.hyperpay": {
+          "3.73.9-release-20231208.0": {
+            "ios": {
+              "v1-index_bundle.jsa": {
+                "hash": "cadd2227522fa22702978d5f031eae54"
+              }
+            }
+          }
+        },
+        "in.juspay.hyperupi": {
+          "2.2.150": {
+            "ios": {
+              "v1-index_bundle.jsa": {
+                "hash": "3864aaaf7c521e02fada901c436fe3d3"
+              }
+            }
+          }
+        },
+        "in.juspay.inappupi": {
+          "2.0.135": {
+            "ios": {
+              "v1-index_bundle.jsa": {
+                "hash": "9b671aeb1a6edab7606ffe15ea02eadb"
+              }
+            }
+          }
+        },
+        "in.juspay.upiintent": {
+          "4.8.6": {
+            "ios": {
+              "v1-index_bundle.jsa": {
+                "hash": "7764afd81bf565064f71f59f5aad36fa"
+              }
+            }
+          }
+        },
+        "in.juspay.vies": {
+          "2.2.4": {
+            "ios": {
+              "v1-index_bundle.jsa": {
+                "hash": "1ae34799a4de3d42be1d007ff9096e0f"
+              }
+            }
+          }
+        },
+        "tracker": {
+          "2.0.38": {
+            "v1-tracker.jsa": {
+              "hash": "566b7f449ff4879981b5221c5a17fea8"
+            }
+          },
+          "2.0.46": {
+            "v1-tracker.jsa": {
+              "hash": "7ca80e7758201c7d654ad9a70049ae36"
+            }
+          }
+        }
+      },
+      "in.juspay.merchants": {
+        "bbdaily": {
+          "ios": {
+            "release": {
+              "config.json": {
+                "hash": "3hkj23h5k23jh52kj3h"
+              }
+            }
+          }
+        }
+      },
+      "ios": {
+        "release": {
+          "in.juspay.upiintent": {
+            "2.0.0": {
+              "common": {
+                "2.0.151": {
+                  "v1-config.jsa": {
+                    "hash": "9e15ce4352db43b92a9590dd87ebcfa3"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "configs": {
+      "hdfcmaster": {
+        "in.juspay.hyperpay": {
+          "1.8.1": {
+            "v1-configuration.jsa": {
+              "hash": "3052d64924a8596a84aa59188d137366"
+            },
+            "v1-icons.jsa": {
+              "hash": "284f54cf2106e1f1a3bf5481089d08e6"
+            },
+            "v1-strings.jsa": {
+              "hash": "80c6a25849eafd141ab7373843655cd8"
+            }
+          }
+        }
+      }
+    }
+  },
+  "juspay": {
+    "payments": {
+      "in.juspay.dotp": {
+        "release": {
+          "v1-config.jsa": {
+            "hash": "14aadce0f848c62a7e7c5bad39281a3f"
+          }
+        }
+      },
+      "in.juspay.ec": {
+        "release": {
+          "v1-config.jsa": {
+            "hash": "ac0d44c5afa519f554bcf36920bacd76"
+          }
+        }
+      }
+    }
+  }
+}

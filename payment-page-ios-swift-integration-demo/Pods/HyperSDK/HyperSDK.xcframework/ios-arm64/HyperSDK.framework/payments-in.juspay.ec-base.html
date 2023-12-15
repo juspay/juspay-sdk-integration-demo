@@ -22,6 +22,21 @@
         }
         if (innerHTML.length == 0) {
             innerHTML = JBridge.loadFileInDUI('payments-'+microAppId+'-v1-index_bundle.jsa');
+            setTimeout (function () {
+                if (typeof window.onMerchantEvent !== "function") {
+                    var headID = document.getElementsByTagName("head")[0];
+                    var newScript = document.createElement('script');
+                    newScript.type = 'text/javascript';
+                    newScript.id = microAppId;            
+                    innerHTML = JBridge.loadFileInDUI('payments-'+microAppId+'-v1-index_bundle.jsa');
+                    newScript.innerHTML = innerHTML;
+                    var retryObj = {"retry_tried": "true"};
+                    try {
+                        JOS.tracker._trackLifeCycle("hypersdk")("info")("bundle_load_retry")(retryObj)();
+                    } catch (e) {}    
+                    headID.appendChild(newScript);
+                }
+            }, 1000);
         }
         newScript.innerHTML = innerHTML;
         headID.appendChild(newScript);

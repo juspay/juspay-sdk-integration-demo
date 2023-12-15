@@ -7,3 +7,4 @@
 
 #import <UIKit/UIKit.h>
 #import "Hyper.h"
+#import "HyperCheckoutLite.h"
