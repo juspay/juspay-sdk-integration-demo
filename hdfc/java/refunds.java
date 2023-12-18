@@ -5,4 +5,4 @@ Map<String, Object> params = new LinkedHashMap<String, Object>();
             params.put("order_id", this.order.getOrderId());
             
             RequestOptions requestOptions = RequestOptions.createDefault().withCustomerId(customerId);
-            Refund refund = Order.refund(params, requestOptions);
+            Order refund = Order.refund(params, requestOptions );
