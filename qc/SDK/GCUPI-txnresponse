@@ -1,0 +1,32 @@
+{
+    "error": false,
+    "errorCode": "",
+    "errorMessage": "",
+    "payload": {
+        "action": "upiTxn",
+        "merchantId": "JPTEST",
+        "orderId": "52062320993",
+        "status": "CHARGED",
+        "statusId": 21,
+        "txnList": [
+            {
+                "paymentMethod": "UPI",
+                "paymentMethodType": "UPI",
+                "txnAmount": 168,
+                "txnId": "JPTEST-52062320993-1-1",
+                "txnStatus": "CHARGED",
+                "txnUuid": "mozx2mG5N7yqPnBvDRt"
+            },
+            {
+                "paymentMethod": "QWIKCILVER",
+                "paymentMethodType": "CARD",
+                "txnAmount": 201,
+                "txnId": "JPTEST-52062320993-1-2",
+                "txnStatus": "CHARGED",
+                "txnUuid": "mozgZLmutAi3zsmNctq"
+            }
+        ]
+    },
+    "requestId": "b9050437-5707-4ca2-8cd0-c8a6609f7b8c",
+    "service": "in.juspay.hyperapi"
+}
