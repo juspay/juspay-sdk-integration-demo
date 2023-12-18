@@ -1,0 +1,17 @@
+{
+    "requestId": "dc802a49-694c-4911-b806-450ae5bc2dcb",
+    "service": "in.juspay.ec",
+    "payload": {
+        "action": "giftCardPayment",
+        "orderId": "QCTEST01",
+        "paymentMethod": "QWIKCILVER",
+        "merchantKeyId": "<Merchant Key ID>",
+        "cardToken": "<GIFT Card Number>", 
+        "cardSecurityCode": "<Gift Card Pin>",
+        "redirectAfterPayment": true,
+        "endUrls": ["https://sandbox.juspay.in/end"],
+        "paymentMethodType": "CARD",
+        "merchantId": "<Merchant ID>",
+        "format": "json"
+    }
+}
