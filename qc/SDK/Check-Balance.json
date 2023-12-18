@@ -9,7 +9,7 @@
         "gatewayReferenceId": "",
         "gatewayId": "id",
         "customerId": "9742144874",
-        "clientAuthToken":"<Client-Auth-Token>", // or API Key / Signature 
+        "clientAuthToken":"<Client-Auth-Token>",
         "cardType": "QWIKCILVER",
         "cardToken": "<Gift Card No.>",
         "cardSecurityCode": "<Card Pin>"
