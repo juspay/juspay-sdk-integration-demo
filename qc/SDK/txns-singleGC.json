@@ -1,6 +1,6 @@
 {
     "requestId": "dc802a49-694c-4911-b806-450ae5bc2dcb",
-    "service": "in.juspay.ec",
+    "service": "in.juspay.hyperapi",
     "payload": {
         "action": "giftCardPayment",
         "orderId": "QCTEST01",
