@@ -1,0 +1,16 @@
+{
+  "payload": {
+    "service": "in.juspay.ec",
+    "requestId": "8410b0e0-31fe-41e6-be18-35fff100c9fb",
+    "payload": {
+      "action": "giftCardValidate",
+      "isEligible": true,  
+      "cardToken": "<Gift Card No.>",
+      "balance": 998.88   
+    },
+    "errorMessage": "",
+    "errorCode": "",
+    "error": false
+  },
+  "event": "process_result"
+}
