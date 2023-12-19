@@ -1,0 +1,24 @@
+{
+    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "action": "upiTxn",
+        "availableApps": [
+            {
+                "packageName": "in.org.npci.upiapp",
+                "appName": "Bhim",
+                "supportsMandate": true,
+                "supportsPay": true
+            },
+            {
+                "packageName": "com.phonepe.app",
+                "appName": "PhonePe",
+                "supportsMandate": false,
+                "supportsPay": true
+            }
+        ]
+    },
+    "error": false,
+    "errorCode": "",
+    "errorMessage": ""
+}

@@ -1,0 +1,17 @@
+{
+    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "action": "cardTxn",
+        "orderId": "hyperorder45314",
+        "paymentMethod": "VISA",
+        "amount": "1.00",
+        "cardNumber": "4**************4",
+        "cardExpMonth": "05",
+        "cardExpYear": "25",
+        "cardSecurityCode": "***",
+        "saveToLocker": true,
+        "authType": "OTP",
+        "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213"
+    }
+}

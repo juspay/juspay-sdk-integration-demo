@@ -1,0 +1,30 @@
+{
+    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "signature": "",
+        "shouldCreateMandate": "",
+        "paymentMethodType": "",
+        "paymentMethod": "NB_SBI",
+        "orderId": "hyperorder45314",
+        "orderDetails": "",
+        "offerToken": "",
+        "merchantKeyId": "",
+        "mandateType": "",
+        "bankIfsc": "",
+        "bankId": "",
+        "bankBeneficiaryName": "",
+        "bankAccountType": "",
+        "bankAccountNumber": "",
+        "additionalPaymentDetails": {
+            "should_create_mandate": "true",
+            "payment_method_type": "NB",
+            "payment_method": "JP_SBI",
+            "mandate_type": "EMANDATE",
+            "bank_ifsc": "YESB0000132",
+            "bank_beneficiary_name": "qwertyuio",
+            "bank_account_number": "1234560"
+        },
+        "action": "nbTxn"
+    }
+}

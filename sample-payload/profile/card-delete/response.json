@@ -1,0 +1,13 @@
+{
+    "service": "in.juspay.hyperapi",
+    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+    "payload": {
+        "action": "deleteCard",
+        "cardToken": "c75a9fca-1121-418e-973c-47d5c4971456",
+        "cardReference": "8kj23wiueiwef4232329i235",
+        "deleted": true
+    },
+    "errorMessage": "",
+    "errorCode": "",
+    "error": false
+}

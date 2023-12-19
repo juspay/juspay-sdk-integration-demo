@@ -1,0 +1,109 @@
+{
+  "error": false,
+  "errorCode": "",
+  "errorMessage": "",
+  "event": "process_result",
+  "payload": {
+    "action": "getOutageV2",
+    "outage": [
+      {
+        "description": "Mastercard",
+        "issuerName": "HDFC Bank",
+        "juspayBankCode": "JP_HDFC",
+        "paymentMethod": "MASTERCARD",
+        "paymentMethodType": "CARD",
+        "status": "DOWN"
+      },
+      {
+        "description": "Bank of India",
+        "issuerName": "Bank of India",
+        "juspayBankCode": "JP_BOI",
+        "paymentMethod": "NB_BOI",
+        "paymentMethodType": "NB",
+        "status": "FLUCTUATE"
+      },
+      {
+        "description": "Bank of Baroda",
+        "issuerName": "Bank of Baroda",
+        "juspayBankCode": "JP_BOB",
+        "paymentMethod": "NB_BOB",
+        "paymentMethodType": "NB",
+        "status": "DOWN"
+      },
+      {
+        "description": "Mobikwik",
+        "issuerName": "Mobikwik",
+        "juspayBankCode": "JP_MOBIKWIK",
+        "paymentMethod": "MOBIKWIK",
+        "paymentMethodType": "WALLET",
+        "status": "DOWN"
+      },
+      {
+        "description": "Freecharge",
+        "issuerName": "Freecharge",
+        "juspayBankCode": "JP_FREECHARGE",
+        "paymentMethod": "FREECHARGE",
+        "paymentMethodType": "WALLET",
+        "status": "FLUCTUATE"
+      },
+      {
+        "description": "PhonePe / BHIM UPI",
+        "issuerName": "PhonePe",
+        "juspayBankCode": "JP_PHONEPE",
+        "paymentMethod": "PHONEPE",
+        "paymentMethodType": "WALLET",
+        "status": "DOWN"
+      },
+      {
+        "description": "Rupay",
+        "issuerName": "Bank of Baroda",
+        "juspayBankCode": "JP_BOB",
+        "paymentMethod": "RUPAY",
+        "paymentMethodType": "CARD",
+        "status": "DOWN"
+      },
+      {
+        "description": "Rupay",
+        "issuerName": "SBI",
+        "juspayBankCode": "JP_SBI",
+        "paymentMethod": "RUPAY",
+        "paymentMethodType": "CARD",
+        "status": "FLUCTUATE"
+      },
+      {
+        "description": "HDFC Flexipay",
+        "issuerName": "HDFC Bank",
+        "juspayBankCode": "JP_HDFC",
+        "paymentMethod": "HDFC_FLEXIPAY",
+        "paymentMethodType": "CONSUMER_FINANCE",
+        "status": "FLUCTUATE"
+      },
+      {
+        "description": "ZestMoney",
+        "issuerName": "ZestMoney",
+        "juspayBankCode": "JP_ZESTMONEY",
+        "paymentMethod": "ZESTMONEY",
+        "paymentMethodType": "CONSUMER_FINANCE",
+        "status": "FLUCTUATE"
+      },
+      {
+        "description": "Twid Rewards",
+        "issuerName": "Twid Reward",
+        "juspayBankCode": "JP_TWID",
+        "paymentMethod": "TWID",
+        "paymentMethodType": "REWARD",
+        "status": "DOWN"
+      },
+      {
+        "description": "Paytm",
+        "issuerName": "Paytm",
+        "juspayBankCode": "JP_PAYTM",
+        "paymentMethod": "PAYTM",
+        "paymentMethodType": "WALLET",
+        "status": "DOWN"
+      }
+    ]
+  },
+  "requestId": "30b97fa7-35e5-45d2-89d7-4c8394c97b9d",
+  "service": "in.juspay.hyperapi"
+}

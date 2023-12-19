@@ -1,0 +1,31 @@
+{
+    "service": "in.juspay.hyperapi",
+    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+    "payload": {
+        "action": "upiTxn",
+        "availableApps": [{
+            "appName": "GooglePay",
+            "iconUrl": "https://assets.juspay.in/juspay/assets/images/google_pay_upi.png",
+            "packageName": "tez://upi/pay"
+        }, {
+            "appName": "PhonePe",
+            "iconUrl": "https://assets.juspay.in/juspay/assets/images/phonepe_upi.png",
+            "packageName": "phonepe://pay"
+        }, {
+            "appName": "Paytm",
+            "iconUrl": "https://assets.juspay.in/juspay/assets/images/paytm_upi.png",
+            "packageName": "paytmmp://upi/pay"
+        }, {
+            "appName": "Airtel",
+            "iconUrl": "https://assets.juspay.in/juspay/assets/images/airtel_upi.png",
+            "packageName": "myairtel://upi_welcome_screen"
+        }, {
+            "appName": "CRED Pay UPI",
+            "iconUrl": "https://assets.juspay.in/juspay/assets/images/credpay_upi.png",
+            "packageName": "credpay://upi/pay"
+        }]
+    },
+    "errorMessage": "",
+    "errorCode": "",
+    "error": false
+}

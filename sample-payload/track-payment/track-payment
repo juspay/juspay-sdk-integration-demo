@@ -1,0 +1,16 @@
+curl -X POST https://logs.juspay.in/payment/status
+-H "Content-Type: application/json"
+-d "@data.json" {
+      "merchant_id": "<Merchant Id>",
+      "client_id": "<Merchant Id>_ios/<Merchant Id>_android/<Merchant Id>_web",
+      "order_id": "<Order Id>",
+      "transaction_id": "<Transaction Id>",
+      "payment_status": "SUCCESS",
+      "amount_details": {
+        "amount": "123.45",
+        "purchase_amount":12345,
+        "exponent":2,
+        "currency":356
+      },
+      "signature": "<signature>"
+    }

@@ -1,0 +1,13 @@
+{
+    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "action": "enach",
+        "orderId": "hyperorder45314",
+        "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213",
+        "signature": "T9/9GGLY3sDRoYddAXaMaiD19t7lDDg76P5Q1DjRLTg2g==",
+        "orderDetails": "{\"order_id\":\"R5317229588\",\"merchant_id\": \"idea_preprod\",\"amount\": \"1.00\",\"customer_id\": \"1234567890\",\"options.create_mandate\": \"REQUIRED\",\"mandate.max_amount\": \"5000\",\"mandate.start_date\": \"1633087969\",\"mandate.end_date\": \"1664623962\",\"mandate.frequency\": \"MONTHLY\",\"mandate.amount_rule\": \"VARIABLE\"}",
+        "merchantKeyId": 3003,
+        "paymentMethodType": "NB | CARD"
+    }
+}

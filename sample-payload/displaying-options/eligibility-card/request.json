@@ -1,0 +1,18 @@
+{
+    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "action": "eligibility",
+        "amount": "1.00",
+        "data": {
+            "wallets": [],
+            "cards": [{
+                "cardBin": "524254",
+                "cardAlias": "e5poq5sehj0nfvndv1o7a9s99", //cardFingerprint
+                "checkType": [
+                    "otp"
+                ]
+            }]
+        }
+    }
+}

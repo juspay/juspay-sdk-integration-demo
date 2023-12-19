@@ -1,0 +1,22 @@
+{
+    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "action": "nbValidate",
+        "validationStatus": "ACTIVE",
+        "validationAmount": 100,
+        "object": "bank_account",
+        "lastValidated": "2020-04-24T12:09:33Z",
+        "ifsc": "HDFC0002777",
+        "id": "bank_sgdjtWu3Fnge7C58",
+        "dateCreated": "2020-04-24T12:09:25Z",
+        "customerId": "cst_inekmigs7vvqg9qu",
+        "currency": "INR",
+        "beneficiaryName": "Parthiban P",
+        "bankName": "HDFC Bank",
+        "accountNumber": "50100219614602"
+    },
+    "error": false,
+    "errorCode": "",
+    "errorMessage": ""
+}

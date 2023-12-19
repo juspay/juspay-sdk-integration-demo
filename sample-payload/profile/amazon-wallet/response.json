@@ -1,0 +1,18 @@
+{
+    "service": "in.juspay.hyperapi",
+    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+    "payload": {
+        "action": "createWallet",
+        "wallet": "AMAZONPAY",
+        "token": "tkn_d094b8e1768041d0a33c238b6011c",
+        "metadata": "",
+        "linked": true,
+        "lastRefreshed": "2020-07-13T07:58:04.000Z",
+        "id": "wlt_ar98FnnGTERrF",
+        "gatewayReferenceId": "",
+        "currentBalance": 600
+    },
+    "errorMessage": "",
+    "errorCode": "",
+    "error": false
+}

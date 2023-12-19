@@ -1,0 +1,13 @@
+{
+    "payload": {
+      "action": "walletTxn",
+      "clientAuthToken": "tkn_a2ef311f47b04165b5a7ddbc01804220",
+      "mandateType": "EMANDATE",
+      "orderId": "JP9************48610",
+      "paymentMethod": "JP_PAYTM",
+      "retry_suggestion_used": false,
+      "shouldCreateMandate": true
+    },
+    "requestId": "11eb7860-7bdb-4668-8412-938c1ee60539",
+    "service": "in.juspay.hyperapi"
+}

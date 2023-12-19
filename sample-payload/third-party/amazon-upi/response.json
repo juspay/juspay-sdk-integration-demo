@@ -1,0 +1,17 @@
+{
+    "service": "in.juspay.hyperapi",
+    "requestId": "c5db944e-ebd6-4056-9e80-a6f2424f47a6",
+    "payload": {
+        "action": "upiTxn",
+        "availableApps": [
+            {
+            "packageName": "AMAZON_PAY_UPI_SDK",
+            "appName": "Amazon Pay UPI"
+            }
+        ]
+    },
+    "errorMessage": "",
+    "errorCode": "",
+    "error": false,
+    "event": "process_result"
+}

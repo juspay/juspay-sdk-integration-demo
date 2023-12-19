@@ -1,0 +1,18 @@
+{
+    "service": "in.juspay.hyperapi",
+    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+    "payload": {
+        "action": "createWallet",
+        "wallet": "PAYTM",
+        "token": "",
+        "metadata": "",
+        "linked": false,
+        "lastRefreshed": "",
+        "id": "wlt_a72g4HXTjcyzXcN5",
+        "gatewayReferenceId": "",
+        "currentBalance": ""
+    },
+    "errorMessage": "",
+    "errorCode": "",
+    "error": false
+}

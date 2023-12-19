@@ -1,0 +1,10 @@
+{
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "action": "createWallet",
+        "walletName": "AMAZONPAY",
+        "clientAuthToken": "tkn_e4ea4b76ac024783a578f4db69272a4a",
+        "sdkWalletIdentifier": "ADNOE244OUYBGW13"
+    },
+    "requestId": "93D2E1E4-266B-4DDE-AA04-87CED3EC6090"
+}

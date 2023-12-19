@@ -1,0 +1,12 @@
+{
+    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "action": "upiTxn",
+        "orderId": "hyperorder45314",
+        "getAvailableApps": true,
+        "getMandateApps": true,
+        "shouldCreateMandate": true,
+        "showLoader": true
+    }
+}
