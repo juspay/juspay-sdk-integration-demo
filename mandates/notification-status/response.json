@@ -1,5 +1,5 @@
 {
-  "status": "FAILURE",
+  "status": "SUCCESS",
   "source_object": "MANDATE",
   "source_info": {
     "txn_date": "1634057114",
@@ -7,7 +7,9 @@
     "amount": "1"
   },
   "provider_response": {
-    "provider_ref_id": "IN0CA915121983"
+    "provider_ref_id": "IN0CA915121983",
+    "provider_response_code": "00",
+    "provider_response_message": "Your notification is successful"
   },
   "provider_name": "BILLDESK",
   "object_reference_id": "2QNPw8KSbpHL122bNPgA04",
