@@ -1,0 +1,71 @@
+{
+  "payment_methods": [
+    {
+      "description": "Pay with UPI",
+      "payment_method": "UPI",
+      "payment_method_type": "UPI"
+    },
+    {
+      "description": "Visa",
+      "payment_method": "VISA",
+      "payment_method_type": "CARD"
+    },
+    {
+      "description": "Mastercard",
+      "payment_method": "MASTER",
+      "payment_method_type": "CARD"
+    },
+    {
+      "description": "Rupay",
+      "payment_method": "RUPAY",
+      "payment_method_type": "CARD"
+    },
+    {
+      "description": "HDFC Bank",
+      "payment_method": "NB_HDFC",
+      "payment_method_type": "NB"
+    },
+    {
+      "description": "ICICI Netbanking",
+      "payment_method": "NB_ICICI",
+      "payment_method_type": "NB"
+    },
+    {
+      "description": "Axis Bank",
+      "payment_method": "NB_AXIS",
+      "payment_method_type": "NB"
+    }
+  ],
+  "emandate_payment_methods": [
+    {
+      "description": "UPI Collect",
+      "payment_method": "COLLECT",
+      "payment_method_type": "UPI"
+    },
+    {
+      "description": "UPI Intent Pay",
+      "payment_method": "PAY",
+      "payment_method_type": "UPI"
+    },
+    {
+      "payment_method_type": "CARD",
+      "payment_method": "JP_HDFC",
+      "description": "HDFC Bank"
+    },
+    {
+      "payment_method_type": "NB",
+      "payment_method": "JP_HDFC",
+      "description": "HDFC Bank"
+    },
+    {
+      "payment_method_type": "CARD",
+      "payment_method": "JP_AXIS",
+      "description": "Axis Bank"
+    },
+    {
+      "payment_method_type": "NB",
+      "payment_method": "JP_AXIS",
+      "description": "Axis Bank"
+    }
+  ]
+}
