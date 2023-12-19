@@ -9,6 +9,8 @@ import UIKit
 import HyperSDK
 
 var totalpayable = 1;
+var ordeId: String? = nil;
+var message: String? = nil;
 
 class CheckoutViewController: UIViewController {
 
@@ -85,27 +87,35 @@ class CheckoutViewController: UIViewController {
                         case "user_aborted":
                             // user initiated a txn and pressed back
                             // poll order status
-                            let alertController = UIAlertController(title: "Payment Aborted", message: "Transaction aborted by user", preferredStyle: .alert)
-                            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-                            alertController.addAction(okAction)
-                            present(alertController, animated: true, completion: nil)
+                            callOrderStatus { order_status in
+                                let alertController = UIAlertController(title: "Payment Aborted", message: "Transaction aborted by user", preferredStyle: .alert)
+                                let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                                alertController.addAction(okAction)
+                                self.present(alertController, animated: true, completion: nil)
+                            }
                             break
                         case "pending_vbv", "authorizing":
-                            performSegue(withIdentifier: "statusSegue", sender: status)
                             // txn in pending state
                             // poll order status until backend says fail or success
+                            callOrderStatus { order_status in
+                                self.performSegue(withIdentifier: "statusSegue", sender: order_status)
+                            }
                             break
                         case "authorization_failed", "authentication_failed", "api_failure":
-                            performSegue(withIdentifier: "statusSegue", sender: status)
                             // txn failed
                             // poll orderStatus to verify (false negatives)
+                            callOrderStatus { order_status in
+                                self.performSegue(withIdentifier: "statusSegue", sender: order_status)
+                            }
                             break
                         case "new":
-                            performSegue(withIdentifier: "statusSegue", sender: status)
                             // order created but txn failed
                             // very rare for V2 (signature based)
                             // also failure
                             // poll order status
+                            callOrderStatus { order_status in
+                                self.performSegue(withIdentifier: "statusSegue", sender: order_status)
+                            }
                             break
                         default:
                             performSegue(withIdentifier: "statusSegue", sender: status)
@@ -120,6 +130,46 @@ class CheckoutViewController: UIViewController {
         }
     }
 
+    func callOrderStatus(completion: @escaping (String?) -> Void) {
+        if let order_id = ordeId {
+            let semaphore = DispatchSemaphore(value: 0)
+            let endpoint = "http://127.0.0.1:5000/handleJuspayResponse?order_id=" + order_id;
+            var request = URLRequest(url: URL(string: endpoint)!, timeoutInterval: Double.infinity)
+            
+            request.httpMethod = "GET"
+            
+            let task = URLSession.shared.dataTask(with: request) { data, response, error in
+                guard let data = data else {
+                    semaphore.signal()
+                    completion(nil)
+                    return
+                }
+                
+                do {
+                    if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
+                       let order_status = json["order_status"] as? String{
+                        let msg = json["message"] as? String;
+                        message = msg;
+                        completion(order_status)
+                    } else {
+                        completion(nil)
+                    }
+                } catch {
+                    print("Error: Failed to parse JSON - \(error)")
+                    completion(nil)
+                }
+                
+                semaphore.signal()
+            }
+            
+            task.resume()
+            semaphore.wait()
+        }else{
+            completion(nil)
+        }
+    }
+
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "statusSegue" {
             if let destinationVC = segue.destination as? StatusViewController {
