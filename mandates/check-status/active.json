@@ -1,0 +1,24 @@
+{
+  "order_id": "juspayKTestTxns849",
+  "frequency": "ASPRESENTED",
+  "end_date": "2633068438",
+  "status": "ACTIVE",
+  "activated_at": "2023-06-09T07:59:32Z",
+  "last_activated_at": "2023-06-09T07:59:32Z",
+  "amount_rule": "VARIABLE",
+  "last_updated": "2023-06-09T07:59:32Z",
+  "start_date": "1686293709",
+  "mandate_debit_token": "tkn_88620327ecf64826ad5cea548a1554d4",
+  "customer_id": "cst_z1fsoxwyhvp5gj13",
+  "mandate_id": "hyhTD5Ga4jJ2KXZwwnyh4A",
+  "block_fund": false,
+  "currency": "INR",
+  "max_amount": 20,
+  "mandate_token": "4a1d3fd9727e4b95bdc5cfd60aa12530",
+  "revokable_by_customer": true,
+  "payment_info": {
+    "payment_method": "PAY",
+    "payment_method_type": "UPI"
+  },
+  "mandate_type": "EMANDATE"
+}
