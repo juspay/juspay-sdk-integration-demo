@@ -1,0 +1,117 @@
+{
+    "offers": [
+        {
+            "offer_rules": {
+            "amount": {
+                "currency": "INR",
+                "amount_info": [
+                    "base_amount",
+                    "deliverycharge"
+                ],
+                "min_order_amount": "50.00"
+            },
+            "additional_payment_filters": {
+                "emi_eligibility": [
+                    {
+                        "bank_plan": [
+                            {
+                                "tenure": [
+                                    6
+                                ],
+                                "bank": "AMEX"
+                            }
+                        ],
+                        "type": "STANDARD"
+                    }
+                ]
+            },
+            "payment_instrument": [
+                {
+                    "variant": [],
+                    "payment_method": [],
+                    "payment_method_type": "CARD",
+                    "app": [],
+                    "type": [
+                        "CREDIT"
+                    ],
+                    "issuer": [
+                        "JP_AMEX"
+                    ]
+                }
+            ],
+            "gateways": [],
+            "filters": {
+                "whitelist": [],
+                "blacklist": []
+            },
+            "txn_type": [
+                "EMI"
+            ]
+        },
+        "order_breakup": {
+            "emi_discounts": [
+                {
+                    "bank": "AMEX",
+                    "emi_type": "STANDARD",
+                    "tenure": 6,
+                    "interest_rate": 15,
+                    "emi_discount_amount": "469.88",
+                    "emi_cashback_amount": "0.00",
+                    "offer_amount": "669.88",
+                    "final_order_amount": "11330.12"
+                }
+            ],
+            "order_amount": "12000.00",
+            "applicable_order_amount": "11300.00",
+            "discount_amount": "200.00",
+            "merchant_discount_amount": "0.00",
+            "cashback_amount": "0.00",
+            "benefits": [
+                {
+                    "amount_info": [
+                        "base_amount",
+                        "deliverytip",
+                        "donation",
+                        "packingcharge"
+                    ],
+                    "type": "DISCOUNT",
+                    "calculation_rule": "ABSOLUTE",
+                    "value": 200
+                },
+                {
+                    "amount_info": [
+                        "base_amount",
+                        "deliverytip",
+                        "donation",
+                        "packingcharge"
+                    ],
+                    "emi_type": "NO_COST",
+                    "type": "EMI_DISCOUNT",
+                    "calculation_rule": "PERCENTAGE",
+                    "value": 100
+                }
+            ]
+        },
+        "offer_id": "c6843bf7-762a-4e20-895d-0ef57e476ed3",
+        "status": "ELIGIBLE",
+        "reason": [],
+        "offer_code": "Amount_Info_Offers",
+        "offer_description": {
+            "sponsored_by": "com.abipbl.upi",
+            "title": "Amount Info Offers",
+            "description": "",
+            "tnc": ""
+        },
+        "ui_configs": {
+            "offer_display_priority": 0,
+            "auto_apply": "false",
+            "should_validate": "true",
+            "is_hidden": "false"
+        },
+        "application_mode": "ORDER",
+        "eligible_saved_payment_methods": [
+            "AMEX_EMI_6"
+        ],
+        "actions": []
+} 
+]}
