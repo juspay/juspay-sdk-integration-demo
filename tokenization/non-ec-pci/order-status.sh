@@ -1,1 +1,1 @@
-curl --location --request GET 'https://sandbox.juspay.in/orders/<order_id>'
+curl --location --request GET 'https://smartgatewayuat.hdfcbank.com/orders/<order_id>'

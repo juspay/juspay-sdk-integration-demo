@@ -3,7 +3,7 @@
   "status": "CHARGED",
   "payment": {
     "authentication": {
-      "url": "https://sandbox.juspay.in/v2/pay/finish/mid/mozq4D58xxxxUyUR2ELk/ord_jkbvgusvb",
+      "url": "https://smartgatewayuat.hdfcbank.com/v2/pay/finish/mid/mozq4D58xxxxUyUR2ELk/ord_jkbvgusvb",
       "method": "GET"
     }
   },

@@ -1,2 +1,2 @@
 <script type="text/javascript"
-        src="https://api.juspay.in/pay-v3.js"></script>
+        src="https://smartgateway.hdfcbank.com/pay-v3.js"></script>

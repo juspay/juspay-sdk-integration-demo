@@ -1,4 +1,4 @@
-curl --location 'https://sandbox.juspay.in/get/altId' \
+curl --location 'https://smartgatewayuat.hdfcbank.com/get/altId' \
 --header 'accept: application/json' \
 --header 'content-type: application/json' \
 --header 'x-merchantId: zohopay' \

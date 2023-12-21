@@ -5,7 +5,7 @@
   "payment": {
     "authentication": {
       "method": "GET",
-      "url": "https://api.juspay.in/pay/finish/:merchant-id/:txn-id"
+      "url": "https://smartgateway.hdfcbank.com/pay/finish/:merchant-id/:txn-id"
     }
   }
 }

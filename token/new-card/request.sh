@@ -1,4 +1,4 @@
-curl --location --request POST 'https://api.juspay.in/txns' \
+curl --location --request POST 'https://smartgateway.hdfcbank.com/txns' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'order_id=null' \
 --data-urlencode 'merchant_id={{merchant_id}}' \

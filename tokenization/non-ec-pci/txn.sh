@@ -1,4 +1,4 @@
-curl --location --request POST 'https://sandbox.juspay.in/txns' 
+curl --location --request POST 'https://smartgatewayuat.hdfcbank.com/txns' 
 --header 'Authorization: Basic <base64 encoded of API Key>'
 --header 'x-merchantid: makemytrip_vsc' 
 --header 'Content-Type: application/x-www-form-urlencoded' 

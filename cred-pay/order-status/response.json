@@ -13,18 +13,18 @@
   "txn_id": "Symbol-R3558939064-1",
   "status_id": 21,
   "status": "CHARGED",
-  "return_url": "https://api.juspay.in/end",
+  "return_url": "https://smartgateway.hdfcbank.com/end",
   "refunded": false,
   "product_id": "",
   "payment_method_type": "WALLET",
   "payment_method": "CRED",
   "payment_links": {
         "web":
-        "https://api.juspay.in/merchant/pay/ordeh_89616c88f79141578fa87c28c7f3e606",
+        "https://smartgateway.hdfcbank.com/merchant/pay/ordeh_89616c88f79141578fa87c28c7f3e606",
         "mobile":
-        "https://api.juspay.in/merchant/pay/ordeh_89616c88f79141578fa87c28c7f3e606?mobile=true",
+        "https://smartgateway.hdfcbank.com/merchant/pay/ordeh_89616c88f79141578fa87c28c7f3e606?mobile=true",
         "iframe":
-        "https://api.juspay.in/merchant/ipay/ordeh_89616c88f79141578fa87c28c7f3e606"
+        "https://smartgateway.hdfcbank.com/merchant/ipay/ordeh_89616c88f79141578fa87c28c7f3e606"
   },
   "payment_gateway_response": {
           "txn_id": "Symbol-R3558939064-1",

@@ -1,4 +1,4 @@
-curl --location --request POST 'https://sandbox.juspay.in/txns' \
+curl --location --request POST 'https://smartgatewayuat.hdfcbank.com/txns' \
 --header 'Authorization: Basic MASKED' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'order.order_id={order_id}' \
@@ -13,7 +13,7 @@ curl --location --request POST 'https://sandbox.juspay.in/txns' \
 --data-urlencode 'payment_method=VISA' \
 --data-urlencode 'redirect_after_payment=true' \
 --data-urlencode 'merchant_id=udit_juspay' \
---data-urlencode 'order.return_url=https://api.juspay.in/end' \
+--data-urlencode 'order.return_url=https://smartgateway.hdfcbank.com/end' \
 --data-urlencode 'order.amount=1' \
 --data-urlencode 'tavv={tavv}'\
 --data-urlencode 'token.requestor_id={trid}' \

@@ -12,7 +12,7 @@
       "amount": "1"
     },
     "authentication": {
-      "url": "https://api.juspay.in/v2/pay/start/juspay/eulgxNxxxxcnKwoqe2",
+      "url": "https://smartgateway.hdfcbank.com/v2/pay/start/juspay/eulgxNxxxxcnKwoqe2",
       "method": "GET"
     }
   },

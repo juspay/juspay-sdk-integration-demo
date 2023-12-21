@@ -1,2 +1,2 @@
-curl --location --request POST 'https://api.juspay.in/orders' \
+curl --location --request POST 'https://smartgateway.hdfcbank.com/orders' \
 --header 'Authorization: Basic QkIwQjxxxdssjxxxwfqpkddNzBBMUE2Og=='

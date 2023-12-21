@@ -1,4 +1,4 @@
-curl --location --request POST 'https://api.juspay.in/v1/offers/list' \
+curl --location --request POST 'https://smartgateway.hdfcbank.com/v1/offers/list' \
 --header 'Authorization: <API KEY>' \
 --header 'Content-Type: application/json' \
 --data-raw '{

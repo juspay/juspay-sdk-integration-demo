@@ -14,9 +14,9 @@
         "merchant_payload": "{\"customerPhone\":\"999999999\",\"customerEmail\":\"1111111\"}",
         "payment_page_sdk_payload": "FILTERED",
         "payment_links": {
-          "web": "https://api.juspay.in/orders/ordeh_c5ce7ae7e09f4576a9f3d59e9dc51db0/payment-page",
-          "iframe": "https://api.juspay.in/orders/ordeh_c5ce7ae7e09f4576a9f3d59e9dc51db0/payment-page",
-          "mobile": "https://api.juspay.in/orders/ordeh_c5ce7ae7e09f4576a9f3d59e9dc51db0/payment-page"
+          "web": "https://smartgateway.hdfcbank.com/orders/ordeh_c5ce7ae7e09f4576a9f3d59e9dc51db0/payment-page",
+          "iframe": "https://smartgateway.hdfcbank.com/orders/ordeh_c5ce7ae7e09f4576a9f3d59e9dc51db0/payment-page",
+          "mobile": "https://smartgateway.hdfcbank.com/orders/ordeh_c5ce7ae7e09f4576a9f3d59e9dc51db0/payment-page"
         }
       },
       "udf5": "FILTERED",
@@ -54,9 +54,9 @@
       "date_created": "RIPPIFILTEREDT14:32:05Z",
       "gateway_id": 12,
       "payment_links": {
-        "web": "https://api.juspay.in/orders/ordeh_c5ce7ae7e09f4576a9f3d59e9dc51db0/payment-page",
-        "iframe": "https://api.juspay.in/orders/ordeh_c5ce7ae7e09f4576a9f3d59e9dc51db0/payment-page",
-        "mobile": "https://api.juspay.in/orders/ordeh_c5ce7ae7e09f4576a9f3d59e9dc51db0/payment-page"
+        "web": "https://smartgateway.hdfcbank.com/orders/ordeh_c5ce7ae7e09f4576a9f3d59e9dc51db0/payment-page",
+        "iframe": "https://smartgateway.hdfcbank.com/orders/ordeh_c5ce7ae7e09f4576a9f3d59e9dc51db0/payment-page",
+        "mobile": "https://smartgateway.hdfcbank.com/orders/ordeh_c5ce7ae7e09f4576a9f3d59e9dc51db0/payment-page"
       },
       "txn_detail": {
         "express_checkout": true,

@@ -4,8 +4,8 @@
     "status": "CREATED",
     "status_id": 1,
     "payment_links": {
-      "web": "https://api.juspay.in/merchant/pay/ord_e294a26e66ad4336a992ceab81ad704c",
-      "mobile": "https://api.juspay.in/merchant/pay/ord_e294a26e66ad4336a992ceab81ad704c?mobile=true",
-      "iframe": "https://api.juspay.in/merchant/ipay/ord_e294a26e66ad4336a992ceab81ad704c"
+      "web": "https://smartgateway.hdfcbank.com/merchant/pay/ord_e294a26e66ad4336a992ceab81ad704c",
+      "mobile": "https://smartgateway.hdfcbank.com/merchant/pay/ord_e294a26e66ad4336a992ceab81ad704c?mobile=true",
+      "iframe": "https://smartgateway.hdfcbank.com/merchant/ipay/ord_e294a26e66ad4336a992ceab81ad704c"
     }
   }

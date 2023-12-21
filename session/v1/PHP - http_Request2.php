@@ -1,7 +1,7 @@
 <?php
 require_once 'HTTP/Request2.php';
 $request = new HTTP_Request2();
-$request->setUrl('https://api.juspay.in/session');
+$request->setUrl('https://smartgateway.hdfcbank.com/session');
 $request->setMethod(HTTP_Request2::METHOD_POST);
 $request->setConfig(array(
   'follow_redirects' => TRUE

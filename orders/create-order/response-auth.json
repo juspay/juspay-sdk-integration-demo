@@ -15,9 +15,9 @@
   "refunded": false,
   "product_id": "",
   "payment_links": {
-    "web": "https://api.juspay.in/merchant/pay/ordeu_8bddad1e3b9c85eab3db4528575c01b",
-    "mobile": "https://api.juspay.in/merchant/pay/ordeu_8bddad1e3b9c85eab3db4528575c01b?mobile=true",
-    "iframe": "https://api.juspay.in/merchant/ipay/ordeu_8bddad1e3b9c485eab3db4528575c01b"
+    "web": "https://smartgateway.hdfcbank.com/merchant/pay/ordeu_8bddad1e3b9c85eab3db4528575c01b",
+    "mobile": "https://smartgateway.hdfcbank.com/merchant/pay/ordeu_8bddad1e3b9c85eab3db4528575c01b?mobile=true",
+    "iframe": "https://smartgateway.hdfcbank.com/merchant/ipay/ordeu_8bddad1e3b9c485eab3db4528575c01b"
   },
   "order_id": "14183944763",
   "merchant_id": "merchantId",

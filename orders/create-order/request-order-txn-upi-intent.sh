@@ -1,4 +1,4 @@
-curl --location 'https://sandbox.juspay.in/txns' \
+curl --location 'https://smartgatewayuat.hdfcbank.com/txns' \
 --header 'x-merchantid: <merchant_id>' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'Authorization: Basic <Api key>' \

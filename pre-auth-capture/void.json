@@ -13,15 +13,15 @@
   "txn_id": ":txn_uuid",
   "status_id": 32,
   "status": "VOID_INITIATED",
-  "return_url": "https://api.juspay.in",
+  "return_url": "https://smartgateway.hdfcbank.com",
   "refunded": false,
   "product_id": "",
   "payment_method_type": "CARD",
   "payment_method": "MASTERCARD",
   "payment_links": {
-    "web": "https://api.juspay.in/merchant/pay/ord_be69837b0a4b4fe486967e1ce1cd0477",
-    "mobile": "https://api.juspay.in/merchant/pay/ord_be69837b0a4b4fe486967e1ce1cd0477?mobile=true",
-    "iframe": "https://api.juspay.in/merchant/ipay/ord_be69837b0a4b4fe486967e1ce1cd0477"
+    "web": "https://smartgateway.hdfcbank.com/merchant/pay/ord_be69837b0a4b4fe486967e1ce1cd0477",
+    "mobile": "https://smartgateway.hdfcbank.com/merchant/pay/ord_be69837b0a4b4fe486967e1ce1cd0477?mobile=true",
+    "iframe": "https://smartgateway.hdfcbank.com/merchant/ipay/ord_be69837b0a4b4fe486967e1ce1cd0477"
   },
   "payment_gateway_response": {
     "txn_id": "8342jhd9",

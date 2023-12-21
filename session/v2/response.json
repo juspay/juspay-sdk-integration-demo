@@ -3,7 +3,7 @@
     "id": "ordeh_7d32b2e428ba423f9d0ecf9575b23759",
     "order_id": "yourUniqueOrderId",
     "payment_links": {
-        "web": "https://sandbox.juspay.in/orders/ordeh_7d32b2e428ba423f9d0ecf9575b23759/payment-page",
+        "web": "https://smartgatewayuat.hdfcbank.com/orders/ordeh_7d32b2e428ba423f9d0ecf9575b23759/payment-page",
         "expiry": "2023-10-26T08:27:07Z"
     },
     "sdk_payload": {

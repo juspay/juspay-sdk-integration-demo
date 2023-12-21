@@ -1,4 +1,4 @@
-curl -L 'https://api.juspay.in/v4/card/get' \
+curl -L 'https://smartgateway.hdfcbank.com/v4/card/get' \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Basic XXXXXXk0QjJEQTlBQjc0QThCOg==' \
 -d '{

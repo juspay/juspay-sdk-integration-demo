@@ -1,4 +1,4 @@
-curl -X POST https://api.juspay.in/orders/1418394476/refunds \
+curl -X POST https://smartgateway.hdfcbank.com/orders/1418394476/refunds \
 -u your_api_key: \
 -H "version:2023-06-30" \
 -H 'Content-Type: application/x-www-form-urlencoded'\

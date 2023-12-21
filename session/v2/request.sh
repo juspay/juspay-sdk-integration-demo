@@ -1,4 +1,4 @@
-curl --location --request POST 'https://api.juspay.in/session' \
+curl --location --request POST 'https://smartgateway.hdfcbank.com/session' \
     --header 'x-merchantid: yourMerchantId' \
     --header 'Authorization: Basic base64encodedkey==' \
     --header 'Content-Type: application/json' \

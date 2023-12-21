@@ -25,7 +25,7 @@
       }
     },
     "authentication": {
-      "url": "https://sandbox.juspay.in/v2/pay/start/mid/mozutWhEydEimxersay?cardIssuerBankName%3DPAY%26cardType%3DUPI%26paymentMethod%3DPAY%26paymentMethodType%3DUPI",
+      "url": "https://smartgatewayuat.hdfcbank.com/v2/pay/start/mid/mozutWhEydEimxersay?cardIssuerBankName%3DPAY%26cardType%3DUPI%26paymentMethod%3DPAY%26paymentMethodType%3DUPI",
       "method": "GET"
     }
   },

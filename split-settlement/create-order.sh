@@ -1,4 +1,4 @@
-curl --location --request POST 'https://api.juspay.in/orders' \
+curl --location --request POST 'https://smartgateway.hdfcbank.com/orders' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'Authorization: Basic <base64 of Merchant API Key>' \
 --data-urlencode 'order_id=splitsettlement_1619009418_test' \

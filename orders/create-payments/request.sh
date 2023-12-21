@@ -1,4 +1,4 @@
-curl --location 'https://api.juspay.in/txns' \
+curl --location 'https://smartgateway.hdfcbank.com/txns' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'Authorization: Basic Auth of <your-api-key>' \
 --data-urlencode 'order.order_id=ord_1590759422' \

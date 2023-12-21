@@ -1,4 +1,4 @@
-curl --location --request POST 'https://api.juspay.in/orders/splitsettlement_1619009418_test/refunds' \
+curl --location --request POST 'https://smartgateway.hdfcbank.com/orders/splitsettlement_1619009418_test/refunds' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'Authorization: Basic <base64 of Merchant API Key>' \
 --data-urlencode 'unique_request_id=refund_1619010416' \

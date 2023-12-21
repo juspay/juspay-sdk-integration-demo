@@ -1,4 +1,4 @@
-curl --location --request POST 'https://api.juspay.in/tokenization/onboarding' \
+curl --location --request POST 'https://smartgateway.hdfcbank.com/tokenization/onboarding' \
 --header 'Authorization: Basic base_64_encoded_api_key==' \
 --header 'version: 2023-06-30' \
 --header 'x-merchantid: <merchant id>' \

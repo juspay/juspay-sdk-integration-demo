@@ -1,7 +1,7 @@
 <?php
 $client = new http\Client;
 $request = new http\Client\Request;
-$request->setRequestUrl('https://api.juspay.in/session');
+$request->setRequestUrl('https://smartgateway.hdfcbank.com/session');
 $request->setRequestMethod('POST');
 $body = new http\Message\Body;
 $body->append('{

@@ -1,4 +1,4 @@
-curl --location 'https://api.juspay.in/v1/offers/list?emi=true' \
+curl --location 'https://smartgateway.hdfcbank.com/v1/offers/list?emi=true' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: <API KEY>' \
 --data-raw '{

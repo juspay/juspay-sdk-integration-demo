@@ -1,2 +1,2 @@
-curl -X GET https://api.juspay.in/outages \
+curl -X GET https://smartgateway.hdfcbank.com/outages \
 -u your_api_key:

@@ -31,7 +31,7 @@ public JSONObject createSession() {
 
     Request request =
         new Request.Builder()
-            .url("https://api.juspay.in/session")
+            .url("https://smartgateway.hdfcbank.com/session")
             .method("POST", requestBody)
             .addHeader("x-merchantid", merchantId)
             .addHeader("Authorization", authorization)

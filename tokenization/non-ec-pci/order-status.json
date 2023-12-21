@@ -13,15 +13,15 @@
     "txn_id": "makemytrip_vsc-udit1632752888-1",
     "status_id": 21,
     "status": "CHARGED",
-    "return_url": "https://api.juspay.in/end",
+    "return_url": "https://smartgateway.hdfcbank.com/end",
     "refunded": false,
     "product_id": "",
     "payment_method_type": "CARD",
     "payment_method": "VISA",
     "payment_links": {
-        "web": "https://sandbox.juspay.in/merchant/pay/ordeu_32d4f0f417ec49398849079cfeb38d3a",
-        "mobile": "https://sandbox.juspay.in/merchant/pay/ordeu_32d4f0f417ec49398849079cfeb38d3a?mobile=true",
-        "iframe": "https://sandbox.juspay.in/merchant/ipay/ordeu_32d4f0f417ec49398849079cfeb38d3a"
+        "web": "https://smartgatewayuat.hdfcbank.com/merchant/pay/ordeu_32d4f0f417ec49398849079cfeb38d3a",
+        "mobile": "https://smartgatewayuat.hdfcbank.com/merchant/pay/ordeu_32d4f0f417ec49398849079cfeb38d3a?mobile=true",
+        "iframe": "https://smartgatewayuat.hdfcbank.com/merchant/ipay/ordeu_32d4f0f417ec49398849079cfeb38d3a"
     },
     "payment_gateway_response": {
         "txn_id": "makemytrip_vsc-udit1632752888-1",

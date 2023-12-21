@@ -1,4 +1,4 @@
-curl -X  POST 'https://api.juspay.in/txns' \
+curl -X  POST 'https://smartgateway.hdfcbank.com/txns' \
 -H 'Content-Type: application/x-www-form-urlencoded' \
 -H 'Authorization: Basic <base64 of key:>'
 -d 'order.order_id=26234761248249834753485721' \

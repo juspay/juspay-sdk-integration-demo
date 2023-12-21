@@ -68,9 +68,9 @@
         "payment_method_type": "UPI",
         "payment_method": "UPI",
         "payment_links": {
-          "web": "https://api.juspay.in/merchant/pay/ordeh_61006772743a45b78725fe8a77fdecb5",
+          "web": "https://smartgateway.hdfcbank.com/merchant/pay/ordeh_61006772743a45b78725fe8a77fdecb5",
           "mobile": "FILTERED",
-          "iframe": "https://api.juspay.in/merchant/ipay/ordeh_61006772743a45b78725fe8a77fdecb5"
+          "iframe": "https://smartgateway.hdfcbank.com/merchant/ipay/ordeh_61006772743a45b78725fe8a77fdecb5"
         },
         "payment_gateway_response": {
           "txn_id": "confirm-ctkt174582939-1",

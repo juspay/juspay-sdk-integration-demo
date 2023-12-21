@@ -31,7 +31,7 @@
     },
     "status_id": 21,
     "status": "CHARGED",
-    "return_url": "https://api.juspay.in/end",
+    "return_url": "https://smartgateway.hdfcbank.com/end",
     "refunds": [
       {
         "unique_request_id": "refund_1590649567",
@@ -51,9 +51,9 @@
     "payment_method_type": "WALLET",
     "payment_method": "GOOGLEPAY",
     "payment_links": {
-      "web": "https://api.juspay.in/merchant/pay/ordeu_f19a2a9da6034a269f03424dbda0",
-      "mobile": "https://api.juspay.in/merchant/pay/ordeu_f19a2a9da6034a269f03424dbda0?mobile=true",
-      "iframe": "https://api.juspay.in/merchant/ipay/ordeu_f19a2a9da6034a269f03424dbda0"
+      "web": "https://smartgateway.hdfcbank.com/merchant/pay/ordeu_f19a2a9da6034a269f03424dbda0",
+      "mobile": "https://smartgateway.hdfcbank.com/merchant/pay/ordeu_f19a2a9da6034a269f03424dbda0?mobile=true",
+      "iframe": "https://smartgateway.hdfcbank.com/merchant/ipay/ordeu_f19a2a9da6034a269f03424dbda0"
     },
     "payment_gateway_response": {
       "txn_id": "merchantId-145678234-1",

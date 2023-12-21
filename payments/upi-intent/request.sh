@@ -1,4 +1,4 @@
-curl -X POST https://api.juspay.in/txns \
+curl -X POST https://smartgateway.hdfcbank.com/txns \
 -d "order_id=9727125664Q20200107180320" \
 -d "merchant_id=juspay" \
 -d "payment_method_type=UPI" \

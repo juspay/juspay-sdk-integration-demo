@@ -5,7 +5,7 @@
   "payment": {
     "authentication": {
       "method": "GET",
-      "url": "https://api.juspay.in/pay/start/guest/8646a7a0xxxxxfa99995fec00340a507"
+      "url": "https://smartgateway.hdfcbank.com/pay/start/guest/8646a7a0xxxxxfa99995fec00340a507"
     }
   }
 }

@@ -10,12 +10,12 @@
     "currency": "INR",
     "order_id": "JPAYNEW034",
     "date_created": "2021-09-10T09:06:53Z",
-    "return_url": "https://api.juspay.in",
+    "return_url": "https://smartgateway.hdfcbank.com",
     "product_id": "",
     "payment_links": {
-        "iframe": "https://api.juspay.in/merchant/ipay/ordeh_ce50b4861d2b4b3e9bf3r3r2rid3",
-        "web": "https://api.juspay.in/merchant/pay/ordeh_ce50b4861d2b4b3e9bf3r3r2rid3",
-        "mobile": "https://api.juspay.in/merchant/pay/ordeh_ce50b4861d2b4b3e9bf3r3r2rid3?mobile=true"
+        "iframe": "https://smartgateway.hdfcbank.com/merchant/ipay/ordeh_ce50b4861d2b4b3e9bf3r3r2rid3",
+        "web": "https://smartgateway.hdfcbank.com/merchant/pay/ordeh_ce50b4861d2b4b3e9bf3r3r2rid3",
+        "mobile": "https://smartgateway.hdfcbank.com/merchant/pay/ordeh_ce50b4861d2b4b3e9bf3r3r2rid3?mobile=true"
     },
     "udf1": "",
     "udf2": "",

@@ -1,1 +1,1 @@
-curl -X GET https://api.juspay.in/cardbins/524368?merchant_id=:merchant_id&options.check_direct_otp_support=true
+curl -X GET https://smartgateway.hdfcbank.com/cardbins/524368?merchant_id=:merchant_id&options.check_direct_otp_support=true

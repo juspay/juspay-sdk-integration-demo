@@ -1,4 +1,4 @@
-curl -X POST https://api.juspay.in/payout/merchant/v1/PL7D5Q9J7D/attempt \
+curl -X POST https://smartgateway.hdfcbank.com/payout/merchant/v1/PL7D5Q9J7D/attempt \
   -u x-merchantid: <merchant-id>
   -u your_api_key:
   -d '{

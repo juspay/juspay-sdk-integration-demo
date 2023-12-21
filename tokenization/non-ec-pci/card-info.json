@@ -4,7 +4,7 @@
     "status": "PENDING_VBV",
     "payment": {
         "authentication": {
-            "url": "https://sandbox.juspay.in/v2/txns/consent/makemytrip_vsc/eultahHKFRLe",
+            "url": "https://smartgatewayuat.hdfcbank.com/v2/txns/consent/makemytrip_vsc/eultahHKFRLe",
             "method": "GET"
         }
     },

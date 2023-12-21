@@ -1,5 +1,5 @@
 curl --request POST \
-     --url https://api.juspay.in/generateToken \
+     --url https://smartgateway.hdfcbank.com/generateToken \
      --header 'Authorization: Basic XXXXAPIKEYXXXXX' \
      --header 'accept: application/json' \
      --header 'authorization: Basic NkU3RDE3NzA5REU0RkQ5QkY2QUYwMzlEQ0E1QTk5Og==' \

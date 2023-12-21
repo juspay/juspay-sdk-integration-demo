@@ -4,7 +4,7 @@
   "status": "PENDING_VBV",
   "payment": {
       "authentication": {
-          "url": "https://api.juspay.in/v2/pay/start/guest/eul5xxxxxCXbswrHYMh",
+          "url": "https://smartgateway.hdfcbank.com/v2/pay/start/guest/eul5xxxxxCXbswrHYMh",
           "method": "GET"
       }
   },

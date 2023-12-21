@@ -10,7 +10,7 @@
   "payment"  : {
     "authentication": {
     "method": "POST",
-    "url": "https://api.juspay.in/v2/txns/:id/authenticate",
+    "url": "https://smartgateway.hdfcbank.com/v2/txns/:id/authenticate",
     "params": {
             "id"                    : "8646a7a02997xxxxx995fec00340a507",
             "challenge_id"          : "ch_xyz",
@@ -19,7 +19,7 @@
             "card_issuer_bank_name" : "AXIS BANK LTD",
             "submit_otp_allowed"    : true,
             "resend_otp_allowed"    : false,
-            "fallback_url"          : "https://api.juspay.in/v2/pay/start/guest/eul5g88xxxxxswrHYMh"
+            "fallback_url"          : "https://smartgateway.hdfcbank.com/v2/pay/start/guest/eul5g88xxxxxswrHYMh"
 
     }
     }
