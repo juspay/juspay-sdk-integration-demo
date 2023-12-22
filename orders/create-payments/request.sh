@@ -20,7 +20,7 @@ curl --location 'https://smartgateway.hdfcbank.com/txns' \
 --data-urlencode 'order.customer_phone=9988665522' \
 --data-urlencode 'order.product_id=prod-141833' \
 --data-urlencode 'order.description=Sample description' \
---data-urlencode 'order.billing_address_first_name=Juspay' \
+--data-urlencode 'order.billing_address_first_name=Airline' \
 --data-urlencode 'order.billing_address_last_name=Technologies' \
 --data-urlencode 'order.billing_address_line1=Girija Building' \
 --data-urlencode 'order.billing_address_line2=Ganapathi Temple Road' \
@@ -31,7 +31,7 @@ curl --location 'https://smartgateway.hdfcbank.com/txns' \
 --data-urlencode 'order.billing_address_postal_code=560095' \
 --data-urlencode 'order.billing_address_phone=9988775566' \
 --data-urlencode 'order.billing_address_country_code_iso=IND' \
---data-urlencode 'order.shipping_address_first_name=Juspay' \
+--data-urlencode 'order.shipping_address_first_name=Airline' \
 --data-urlencode 'order.shipping_address_last_name=Technologies' \
 --data-urlencode 'order.shipping_address_line1=Girija Building' \
 --data-urlencode 'order.shipping_address_line2=Ganapathi Temple Road' \
