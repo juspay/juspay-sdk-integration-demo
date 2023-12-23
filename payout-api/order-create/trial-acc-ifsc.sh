@@ -1,7 +1,7 @@
 curl --location 'https://sandbox.juspay.in/payout/merchant/v1/orders' \
 --header 'Content-Type: application/json' \
---header 'x-merchantid: morpehusdemo' \
---header 'Authorization: Basic ZmM3OTc0MmE4Y2U0ZmE2YTU1Mjg3ODBlNWMxNWM1Og==' \
+--header 'x-merchantid: <merchantId>' \
+--header 'Authorization: Basic (b64 encoded API key)' \
 --data-raw '{
     "orderId": "1703350468",
     "fulfillments": [
