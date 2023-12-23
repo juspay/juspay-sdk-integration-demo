@@ -1,37 +1,48 @@
 {
-  "type": "FULFILL_ONLY",
-  "status": "READY_FOR_FULFILLMENT",
-  "payments": [],
-  "orderId": "2GjpOBzOiFnEKQ5l",
-  "fulfillments": [
-    {
-      "updatedBy": "DEFAULT",
-      "updatedAt": "2020-03-06T19:55:21Z",
-      "type": "ORDER",
-      "statusUpdatedAt": "2020-03-06T19:55:21Z",
-      "status": "CREATED",
-      "preferredMethodList": [
-        "CASHFREE_IMPS"
-      ],
-      "id": "9e7a542cd1744c7a612333c58ecefa-f1",
-      "fulfillmentMethodList": [],
-      "createdAt": "2020-03-06T19:55:21Z",
-      "beneficiaryDetails": {
-        "details": {
-          "name": "Taral Shah",
-          "ifsc": "YESB0000262",
-          "account": "026291800001191"
-        },
-        "type": "ACCOUNT_IFSC"
-      },
-      "amount": 1
-    }
-  ],
-  "customerId": "ce1d3404-dc3d-4886-a46e-43a48ddd0324",
-  "amount": 1,
-  "udf1": "udf1",
-  "udf2": "udf2",
-  "udf3": "udf3",
-  "udf4": "udf4",
-  "udf5": "udf5"
+    "udf5": "udf5",
+    "udf4": "udf4",
+    "udf3": "udf3",
+    "udf2": "udf2",
+    "udf1": "udf1",
+    "type": "FULFILL_ONLY",
+    "status": "READY_FOR_FULFILLMENT",
+    "payments": [],
+    "orderId": "1703350468",
+    "fulfillments": [
+        {
+            "updatedBy": "DEFAULT",
+            "updatedAt": "2023-12-23T16:54:27Z",
+            "udf5": "String5",
+            "udf4": "String4",
+            "udf3": "String3",
+            "udf2": "String2",
+            "udf1": "String1",
+            "type": "ORDER",
+            "statusUpdatedAt": "2023-12-23T16:54:27Z",
+            "status": "CREATED",
+            "preferredMethodList": [
+                "DUMMY_IMPS"
+            ],
+            "id": "048d9907e8940c7891ee7250fd1219-f1",
+            "fulfillmentMethodList": [],
+            "createdAt": "2023-12-23T16:54:27Z",
+            "beneficiaryDetails": {
+                "details": {
+                    "name": "Aditya Kadrolkar",
+                    "ifsc": "YESB0000262",
+                    "account": "026291800001191"
+                },
+                "type": "ACCOUNT_IFSC"
+            },
+            "amount": 1,
+            "additionalInfo": {
+                "useThisAsTR": "ef9eb194e664a319549e644c08be2b",
+                "remark": "Payout Transaction",
+                "isRetriable": false,
+                "attemptThreshold": 25
+            }
+        }
+    ],
+    "customerId": "cth_59Yibs1JauYP6WJP",
+    "amount": 1
 }
