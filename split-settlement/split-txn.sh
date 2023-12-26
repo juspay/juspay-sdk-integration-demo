@@ -1,0 +1,14 @@
+curl --location 'localhost:8080/txns' \ 
+--header 'Content-Type: application/x-www-form-urlencoded' \ 
+--header 'Authorization: Basic N0JBRDA4OUExRjYwNEYwREEyNDlCashdljsa6' \ 
+--data-urlencode 'order_id=sample' \ 
+--data-urlencode 'merchant_id=azharamin' \ 
+--data-urlencode 'payment_method_type=NB' \ 
+--data-urlencode 'payment_method=JP_HDFC' \ 
+--data-urlencode 'mandate_type=EMANDATE' \ 
+--data-urlencode 'bank_account_number=50100585100000' \ 
+--data-urlencode 'bank_ifsc=HDFC0000003' \ 
+--data-urlencode 'bank_beneficiary_name=Your Name' \ 
+--data-urlencode 'redirect_after_payment=true' \ 
+--data-urlencode 'format=json' \ 
+--data-urlencode 'should_create_mandate=true'

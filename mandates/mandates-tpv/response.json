@@ -1,0 +1,32 @@
+{
+    "status": "NEW",
+    "id": "ordeh_f463189702c34e6ba3d0eb34b4e4b367",
+    "order_id": "mny_aj_12",
+    "payment_links": {
+        "web": "https://sandbox.juspay.in/orders/ordeh_f463189702c34e6ba3d0eb34b4e4b367/payment-page",
+        "expiry": null
+    },
+    "sdk_payload": {
+        "requestId": "0531f98681864def9de04b8d3867c4f0",
+        "service": "in.juspay.hyperpay",
+        "payload": {
+            "options.createMandate": "REQUIRED",
+            "clientId": "mid",
+            "amount": "1.0",
+            "merchantId": "mid",
+            "clientAuthToken": "tkn_3f81462a6f2d4412a8f73c2a578132df",
+            "clientAuthTokenExpiry": "2023-12-26T14:24:28Z",
+            "environment": "sandbox",
+            "mandate.maxAmount": "1000.00",
+            "orderType": "TPV_PAYMENT",
+            "metadata.bankAccountDetails": "[{\"bank_account_number\":\"83748239234000\",\"bank_ifsc\":\"AABD0000011\", \"bank_beneficiary_name\" : \"Abc\"}]",
+            "action": "paymentPage",
+            "customerId": "cust_id",
+            "returnUrl": "https://mid.in",
+            "currency": "INR",
+            "customerPhone": "9876543210",
+            "customerEmail": "dummyemail@gmail.com",
+            "orderId": "mny_aj_12"
+        }
+    }
+}

@@ -1,0 +1,12 @@
+curl --location 'http://localhost:8080/txns' \
+--header 'X-Auth-Scope: DASHBOARD' \
+--header 'version: 2017-07-26' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'Authorization: Basic N0JBRDA4OUExRjYwNEYwREEyNDlCNjY3QTVCMUQzM0Q6' \
+--data-urlencode 'order.order_id=sample_001' \
+--data-urlencode 'merchant_id=mid' \
+--data-urlencode 'order.amount=1' \
+--data-urlencode 'order.currency=INR' \
+--data-urlencode 'format=json' \
+--data-urlencode 'mandate_id=upYUpasaaaavt' \
+--data-urlencode 'order.metadata.split_settlement_details={"marketplace":{"amount":0},"mdr_borne_by":"ALL","vendor":{"split":[{"amount":1,"merchant_commission":0,"sub_mid":"v1","notes":"{\"corporate_account_number\":\"123456789\"}"}]}}' \

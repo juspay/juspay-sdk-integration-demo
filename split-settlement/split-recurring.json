@@ -1,0 +1,15 @@
+{
+    "order_id": "sample_001",
+    "status": "AUTHORIZING",
+    "payment": {
+        "authentication": {
+            "url": "http://localhost:8080/v2/pay/finish/azharamin/mozbADoS3vaW34JgfPy/digio_031_001",
+            "method": "GET"
+        }
+    },
+    "txn_uuid": "mozbADoS3vaW34JgfPy",
+    "offer_details": {
+        "offers": []
+    },
+    "txn_id": "mid-sample_001-1"
+}

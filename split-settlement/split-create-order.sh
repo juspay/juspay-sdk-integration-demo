@@ -1,0 +1,14 @@
+curl --location 'localhost:8084/ecr/orders' \ 
+--header 'Content-Type: application/x-www-form-urlencoded' \ 
+--header 'version: 2023-02-12' \ 
+--header 'Authorization: Basic N0JBRDA4OUExRjYwNEYwREEyNDlCNjY3QTVCMUQzM0Q6' \ 
+--data-urlencode 'order_id=digio_031' \ 
+--data-urlencode 'amount=2' \ --data-urlencode 'currency=INR' \ 
+--data-urlencode 'options.create_mandate=REQUIRED' \ 
+--data-urlencode 'mandate_max_amount=1.00' \ 
+--data-urlencode 'customer_id=cth_6bJLSiY9T618j6x9' \ 
+--data-urlencode 'mandate.frequency=ASPRESENTED' \ 
+--data-urlencode 'mandate.amount_rule=VARIABLE' \ 
+--data-urlencode 'metadata.DIGIO%3Agateway_reference_id=DIGIO' \ 
+--data-urlencode 'metadata.split_settlement_details={"marketplace":{"amount":0},"mdr_borne_by":"ALL","vendor":{"split":[{"amount":2,"merchant_commission":0,"sub_mid":"v1","notes":"{\"corporate_account_number\":\"123456789\"}"}]}}' \ 
+--data-urlencode 'mandate.end_date=1762175465000'

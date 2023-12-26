@@ -1,0 +1,11 @@
+{
+    "status": "CREATED",
+    "status_id": 1,
+    "id": "ordeh_668ea900a93c460c82df0b007b8c1531",
+    "order_id": "digio_028",
+    "payment_links": {
+        "iframe": "http://localhost:8080/merchant/ipay/ordeh_668ea900a93c460c82df0b007b8c1531",
+        "web": "http://localhost:8080/merchant/pay/ordeh_668ea900a93c460c82df0b007b8c1531",
+        "mobile": "http://localhost:8080/merchant/pay/ordeh_668ea900a93c460c82df0b007b8c1531?mobile=true"
+    }
+}

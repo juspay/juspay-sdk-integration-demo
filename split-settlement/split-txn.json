@@ -1,0 +1,15 @@
+{
+    "order_id": "sample",
+    "status": "PENDING_VBV",
+    "payment": {
+        "authentication": {
+            "url": "http://localhost:8080/v2/pay/start/azharamin/mozj6xuP3xsaJ4xVm7t",
+            "method": "GET"
+        }
+    },
+    "txn_uuid": "mozj6xuP3xsaJ4xVm7t",
+    "offer_details": {
+        "offers": []
+    },
+    "txn_id": "mid-sample-1"
+}
