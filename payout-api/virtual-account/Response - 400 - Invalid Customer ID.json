@@ -1,0 +1,5 @@
+{
+	"status": "error",
+	"error_code": "invalid_request",
+	"error_message": "Customer not found"
+}
