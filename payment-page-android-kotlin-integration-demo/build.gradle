@@ -14,7 +14,7 @@ buildscript {
 
         // Adding the class path for Assets plugin
         // block:start:assets-class-path
-        classpath 'in.juspay:hypersdk.plugin:2.0.4'
+        classpath 'in.juspay:hypersdk.plugin:2.0.6'
         // block:end:assets-class-path
 
         // NOTE: Do not place your application dependencies here; they belong
