@@ -1,0 +1,17 @@
+{
+  "requestId": "41041223-33d9-43b0-956c-4848484923",
+    "service": "in.juspay.hyperapi"
+  "payload": {
+      "action": "cardTxn",
+      "amount": "1000",
+      "authType": "OTP",
+      "cardBin": "524193",
+      "cardSecurityCode": "RIPPIFILTERED",
+      "cardToken": "tkn_d33467593jn27344567724",
+      "clientAuthToken": "tkn_955792f8259293g99",
+      "isEmi": false,
+      "orderId": "order12345",
+      "saveToLocker": false,
+      "shouldCreateMandate": false
+    }
+}
