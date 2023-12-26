@@ -7,25 +7,25 @@
     "type": "FULFILL_ONLY",
     "status": "READY_FOR_FULFILLMENT",
     "payments": [],
-    "orderId": "1703350468",
+    "orderId": "1703593449",
     "fulfillments": [
         {
             "updatedBy": "DEFAULT",
-            "updatedAt": "2023-12-23T16:54:27Z",
+            "updatedAt": "2023-12-26T12:24:08Z",
             "udf5": "String5",
             "udf4": "String4",
             "udf3": "String3",
             "udf2": "String2",
             "udf1": "String1",
             "type": "ORDER",
-            "statusUpdatedAt": "2023-12-23T16:54:27Z",
+            "statusUpdatedAt": "2023-12-26T12:24:08Z",
             "status": "CREATED",
             "preferredMethodList": [
                 "DUMMY_IMPS"
             ],
-            "id": "048d9907e8940c7891ee7250fd1219-f1",
+            "id": "25cbcf3454a445789309dc0b54e681-f1",
             "fulfillmentMethodList": [],
-            "createdAt": "2023-12-23T16:54:27Z",
+            "createdAt": "2023-12-26T12:24:08Z",
             "beneficiaryDetails": {
                 "details": {
                     "name": "Aditya Kadrolkar",
@@ -36,6 +36,11 @@
             },
             "amount": 1,
             "additionalInfo": {
+                "webhookDetails": {
+                    "username": "test",
+                    "url": "https://www.test.com/callback/dynamicwebhook/example",
+                    "customHeader": "123456789"
+                },
                 "useThisAsTR": "ef9eb194e664a319549e644c08be2b",
                 "remark": "Payout Transaction",
                 "isRetriable": false,
