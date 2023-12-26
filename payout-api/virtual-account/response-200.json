@@ -1,0 +1,11 @@
+{
+	"status": "ENABLED",
+	"virtual_account": "ABCD320915166064",
+	"virtual_account_reference": "tee9",
+	"customer_id": "cth_gAYegMPaf5XwbNdM",
+	"ifsc": "UTIB0CCH274",
+	"type": "ACCOUNT_IFSC"
+      "date_created": "2023-07-31T09:00:52Z",
+      "last_updated": "2023-07-31T09:00:52Z",
+      "metadata" : "{\"name\":\"Hitesh\", \"city\": \"Jaipur\"}"
+}
