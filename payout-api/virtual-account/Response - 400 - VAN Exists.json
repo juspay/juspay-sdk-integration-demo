@@ -1,0 +1,5 @@
+{
+	"status": "error",
+	"error_code": "invalid_request",
+	"error_message": "Virtual Account with given virtual_account_reference already exists for customer."
+}
