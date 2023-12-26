@@ -27,7 +27,6 @@ curl --location 'https://sandbox.juspay.in/payout/merchant/v1/orders' \
                 "useThisAsTR":"ef9eb194e664a319549e644c08be2b",
                 "scheduleTime":"2023-12-23T16:51:51Z",
                 "attemptThreshold": 25,
-                "isRetriable": false,
                 "webhookDetails":{
                     "url" : "https://www.test.com/callback/dynamicwebhook/example"
                     , "username" : "test"
