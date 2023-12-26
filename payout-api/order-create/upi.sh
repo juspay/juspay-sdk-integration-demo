@@ -3,7 +3,7 @@ curl --location 'https://sandbox.juspay.in/payout/merchant/v1/orders' \
 --header 'x-merchantid: <merchant id>' \
 --header 'Authorization: Basic Basic (b64 encoded API key)' \
 --data-raw '{
-    "orderId": "1703597784",
+    "orderId": "1703597744",
     "fulfillments": [
         {
             "preferredMethodList": ["DUMMY_UPI"],
