@@ -43,7 +43,6 @@
                 },
                 "useThisAsTR": "ef9eb194e664a319549e644c08be2b",
                 "remark": "Payout Transaction",
-                "isRetriable": false,
                 "attemptThreshold": 25
             }
         }
