@@ -1,0 +1,14 @@
+"payload": {
+        "action": "cardInfo",
+        "type": "CREDIT",
+        "object": "cardbin",
+        "id": "512345",
+        "country": "INDIA",
+        "brand": "MASTERCARD",
+        "bank": "HDFC Bank",
+        "direct_otp_support":true
+    },
+    "errorMessage": "",
+    "errorCode": "",
+    "error": false
+}
