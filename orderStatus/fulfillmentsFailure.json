@@ -1,5 +1,5 @@
 {
-    "updatedAt": "2023-09-28T13:56:06Z",
+    "updatedAt": "2023-12-27T12:24:28Z",
     "udf5": "udf5",
     "udf4": "udf4",
     "udf3": "udf3",
@@ -9,74 +9,71 @@
     "status": "FULFILLMENTS_FAILURE",
     "refunds": [],
     "payments": [],
-    "orderId": "1695909138",
+    "orderId": "1703679781",
     "fulfillments": [
         {
             "updatedBy": "DEFAULT",
-            "updatedAt": "2023-09-28T13:56:06Z",
+            "updatedAt": "2023-12-27T12:24:28Z",
+            "udf5": "String5",
+            "udf4": "String4",
+            "udf3": "String3",
+            "udf2": "String2",
+            "udf1": "String1",
             "type": "ORDER",
             "transactions": [
                 {
-                    "updatedAt": "2023-09-28T13:55:36Z",
+                    "updatedAt": "2023-12-27T12:24:06Z",
                     "txnResponse": {
                         "status": "FAILURE",
-                        "requestId": "2a0cfe72b614f73aa04ac79e814f59",
-                        "amount": 25
+                        "requestId": "665d82f25ca46d0b759e420ee4101f",
+                        "amount": 104
                     },
-                    "transactionRef": "2a0cfe72b614f73aa04ac79e814f59",
-                    "timeStamp": "2023-09-28T13:55:36Z",
+                    "transactionRef": "665d82f25ca46d0b759e420ee4101f",
+                    "timeStamp": "2023-12-27T12:24:06Z",
                     "status": "FAILURE",
                     "responseMessage": "Amount Lies In Failure Range.",
                     "responseCode": "FAILURE",
-                    "gatewayRefId": "2a0cfe72b614f73aa04ac79e814f59",
-                    "fulfillmentMethod": "DUMMY_NEFT",
-                    "epgTxnId": "2a0cfe72b614f73aa04ac79e814f59",
-                    "createdAt": "2023-09-28T13:54:34Z",
-                    "amount": 25
-                },
-                {
-                    "updatedAt": "2023-09-28T13:54:22Z",
-                    "txnResponse": {
-                        "status": "FAILURE",
-                        "requestId": "be7c61e21a34783be96806cfc1e240",
-                        "amount": 25
-                    },
-                    "transactionRef": "be7c61e21a34783be96806cfc1e240",
-                    "timeStamp": "2023-09-28T13:54:22Z",
-                    "status": "FAILURE",
-                    "responseMessage": "Amount Lies In Failure Range.",
-                    "responseCode": "FAILURE",
-                    "gatewayRefId": "be7c61e21a34783be96806cfc1e240",
+                    "gatewayRefId": "665d82f25ca46d0b759e420ee4101f",
                     "fulfillmentMethod": "DUMMY_IMPS",
-                    "epgTxnId": "be7c61e21a34783be96806cfc1e240",
-                    "createdAt": "2023-09-28T13:52:44Z",
-                    "amount": 25
+                    "epgTxnId": "665d82f25ca46d0b759e420ee4101f",
+                    "createdAt": "2023-12-27T12:23:01Z",
+                    "amount": 104
                 }
             ],
-            "statusUpdatedAt": "2023-09-28T13:56:06Z",
+            "statusUpdatedAt": "2023-12-27T12:24:28Z",
             "status": "FAILURE",
             "preferredMethodList": [
                 "DUMMY_IMPS"
             ],
-            "merchantCustomerId": "1421255",
-            "id": "92c9147adaa4b22a08e78b9d00957a-f1",
+            "merchantCustomerId": "cth_59Yibs1JauYP6WJP",
+            "id": "bbeef26a7b64a73813c2b7b9db7ef2-f1",
             "fulfillmentMethodList": [
-                "DUMMY_IMPS",
-                "DUMMY_NEFT"
+                "DUMMY_IMPS"
             ],
-            "createdAt": "2023-09-28T13:52:18Z",
+            "createdAt": "2023-12-27T12:23:01Z",
             "beneficiaryDetails": {
                 "details": {
                     "name": "Aditya Kadrolkar",
-                    "ifsc": "HDFC0009498",
-                    "account": "50100380396143"
+                    "ifsc": "YESB0000262",
+                    "account": "026291800001191"
                 },
                 "type": "ACCOUNT_IFSC"
             },
-            "amount": 25
+            "amount": 104,
+            "additionalInfo": {
+                "webhookDetails": {
+                    "username": "test",
+                    "url": "https://www.test.com/callback/dynamicwebhook/example",
+                    "customHeader": "123456789"
+                },
+                "useThisAsTR": "ef9eb194e664a319549e644c08be2b",
+                "remark": "Payout Transaction",
+                "isRetriable": false,
+                "attemptThreshold": 25
+            }
         }
     ],
-    "customerId": "1421255",
-    "createdAt": "2023-09-28T13:52:18Z",
-    "amount": 25
+    "customerId": "cth_59Yibs1JauYP6WJP",
+    "createdAt": "2023-12-27T12:23:01Z",
+    "amount": 104
 }
