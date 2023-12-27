@@ -12,7 +12,7 @@ curl --location 'https://sandbox.juspay.in/payout/merchant/v1/orders' \
                 "details": {
                     "name": "Aditya Kadrolkar", 
                     "vpa": "test@upi",
-                    "mobileNumber": "9999999999"
+                    "mobileNo": "9999999999"
                 },
                 "type": "UPI_ID"
             },
