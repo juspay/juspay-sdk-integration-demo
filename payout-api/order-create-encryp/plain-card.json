@@ -17,7 +17,7 @@
                         "year": "2028"
                     }
                 },
-                "type": "WALLET"
+                "type": "PLAIN_CARD"
             },
             "udf1": "String1",
             "udf2": "String2",
