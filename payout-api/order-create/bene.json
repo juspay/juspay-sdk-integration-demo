@@ -1,31 +1,51 @@
 {
-  "type": "FULFILL_ONLY",
-  "status": "READY_FOR_FULFILLMENT",
-  "payments": [],
-  "orderId": "65YmmR7tWPxssB55",
-  "fulfillments": [
-    {
-      "updatedBy": "DEFAULT",
-      "updatedAt": "2022-11-30T06:58:35Z",
-      "type": "ORDER",
-      "statusUpdatedAt": "2022-11-30T06:58:35Z",
-      "status": "CREATED",
-      "preferredMethodList": [
-        "CFGEN_IMPS"
-      ],
-      "id": "a7c9e9ba323407eb8d39bd78e6b8f5-f1",
-      "fulfillmentMethodList": [],
-      "createdAt": "2022-11-30T06:58:35Z",
-      "beneficiaryDetails": {
-        "details": {
-          "name": "Arun Kumar",
-          "id": "pa_dry_run00"
-        },
-        "type": "BENE_ID"
-      },
-      "amount": 11
-    }
-  ],
-  "customerId": "arun1",
-  "amount": 11
+    "udf5": "udf5",
+    "udf4": "udf4",
+    "udf3": "udf3",
+    "udf2": "udf2",
+    "udf1": "udf1",
+    "type": "FULFILL_ONLY",
+    "status": "READY_FOR_FULFILLMENT",
+    "payments": [],
+    "orderId": "1703659780",
+    "fulfillments": [
+        {
+            "updatedBy": "DEFAULT",
+            "updatedAt": "2023-12-27T08:04:08Z",
+            "udf5": "String5",
+            "udf4": "String4",
+            "udf3": "String3",
+            "udf2": "String2",
+            "udf1": "String1",
+            "type": "ORDER",
+            "statusUpdatedAt": "2023-12-27T08:04:08Z",
+            "status": "CREATED",
+            "preferredMethodList": [
+                "DUMMY_IMPS"
+            ],
+            "id": "631ad42b1914d17ae4c51f1feeff9a-f1",
+            "fulfillmentMethodList": [],
+            "createdAt": "2023-12-27T08:04:08Z",
+            "beneficiaryDetails": {
+                "details": {
+                    "name": "Aditya Kadrolkar",
+                    "id": "33917851140"
+                },
+                "type": "BENE_ID"
+            },
+            "amount": 1,
+            "additionalInfo": {
+                "webhookDetails": {
+                    "username": "test",
+                    "url": "https://www.test.com/callback/dynamicwebhook/example",
+                    "customHeader": "123456789"
+                },
+                "useThisAsTR": "ef9eb194e664a319549e644c08be2b",
+                "remark": "Payout Transaction",
+                "attemptThreshold": 1440
+            }
+        }
+    ],
+    "customerId": "cth_59Yibs1JauYP6WJP",
+    "amount": 1
 }
