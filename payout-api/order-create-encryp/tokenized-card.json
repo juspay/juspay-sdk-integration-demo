@@ -1,1 +1,53 @@
-"{\"orderId\":\"{{orderId}}\",\"fulfillments\":[{\"preferredMethodList\":[\"YESBANK_VISADIRECT\"],\"amount\":1,\"beneficiaryDetails\":{\"details\":{\"name\":\"Krunal\",\"cardType\":\"CREDIT\",\"brand\":\"MASTERCARD\",\"bankCode\":\"000000\",\"cardToken\":\"5513651111111111\",\"tokenCryptogram\":\"123sdsadas1231\",\"tokenPanSequenceNumber\":\"001\",\"tokenExpiry\":{\"month\":\"02\",\"year\":\"2024\"}},\"type\":\"PLAIN_CARD\"},\"additionalInfo\":{\"isRetriable\":true}}],\"amount\":1,\"customerId\":\"m123\",\"customerPhone\":\"9999099999\",\"customerEmail\":\"krunal@gmail.com\",\"type\":\"FULFILL_ONLY\"}"
+{
+    "udf5": "udf5",
+    "udf4": "udf4",
+    "udf3": "udf3",
+    "udf2": "udf2",
+    "udf1": "udf1",
+    "type": "FULFILL_ONLY",
+    "status": "READY_FOR_FULFILLMENT",
+    "payments": [],
+    "orderId": "1903665523",
+    "fulfillments": [
+        {
+            "updatedBy": "DEFAULT",
+            "updatedAt": "2023-12-27T14:04:18Z",
+            "udf5": "String5",
+            "udf4": "String4",
+            "udf3": "String3",
+            "udf2": "String2",
+            "udf1": "String1",
+            "type": "ORDER",
+            "statusUpdatedAt": "2023-12-27T14:04:18Z",
+            "status": "CREATED",
+            "preferredMethodList": [
+                "DUMMY_VISADIRECT"
+            ],
+            "id": "64f2a6a10a543f0856586dadbd90ad-f1",
+            "fulfillmentMethodList": [],
+            "createdAt": "2023-12-27T14:04:18Z",
+            "beneficiaryDetails": {
+                "details": {
+                    "name": "Aditya Kadrolkar",
+                    "cardType": "CREDIT",
+                    "brand": "VISA",
+                    "bankCode": "508534"
+                },
+                "type": "PLAIN_CARD"
+            },
+            "amount": 1,
+            "additionalInfo": {
+                "webhookDetails": {
+                    "username": "test",
+                    "url": "https://www.test.com/callback/dynamicwebhook/example",
+                    "customHeader": "123456789"
+                },
+                "useThisAsTR": "ef9eb194e664a319549e644c08be2b",
+                "remark": "Payout Transaction",
+                "attemptThreshold": 1440
+            }
+        }
+    ],
+    "customerId": "cth_59Yibs1JauYP6WJP",
+    "amount": 1
+}
