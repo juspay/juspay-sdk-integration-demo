@@ -1,5 +1,5 @@
 {
-    "updatedAt": "2023-09-28T14:03:02Z",
+    "updatedAt": "2023-12-27T12:19:38Z",
     "udf5": "udf5",
     "udf4": "udf4",
     "udf3": "udf3",
@@ -9,53 +9,68 @@
     "status": "FULFILLMENTS_MANUAL_REVIEW",
     "refunds": [],
     "payments": [],
-    "orderId": "1695909610",
+    "orderId": "1703679080",
     "fulfillments": [
         {
             "updatedBy": "DEFAULT",
-            "updatedAt": "2023-09-28T14:03:02Z",
+            "updatedAt": "2023-12-27T12:19:38Z",
+            "udf5": "String5",
+            "udf4": "String4",
+            "udf3": "String3",
+            "udf2": "String2",
+            "udf1": "String1",
             "type": "ORDER",
             "transactions": [
                 {
-                    "updatedAt": "2023-09-28T14:02:49Z",
+                    "updatedAt": "2023-12-27T12:19:23Z",
                     "txnResponse": {
                         "status": "PENDING",
-                        "requestId": "6a372c4858743af92edba92d252b43",
-                        "amount": 22
+                        "requestId": "7cad5ae77f44b37b252dd0b0a4e678",
+                        "amount": 21
                     },
-                    "transactionRef": "6a372c4858743af92edba92d252b43",
-                    "timeStamp": "2023-09-28T14:02:49Z",
+                    "transactionRef": "7cad5ae77f44b37b252dd0b0a4e678",
+                    "timeStamp": "2023-12-27T12:19:23Z",
                     "status": "INITIATED",
-                    "gatewayRefId": "6a372c4858743af92edba92d252b43",
+                    "gatewayRefId": "7cad5ae77f44b37b252dd0b0a4e678",
                     "fulfillmentMethod": "DUMMY_IMPS",
-                    "createdAt": "2023-09-28T14:00:34Z",
-                    "amount": 22
+                    "createdAt": "2023-12-27T12:16:30Z",
+                    "amount": 21
                 }
             ],
-            "statusUpdatedAt": "2023-09-28T14:03:02Z",
+            "statusUpdatedAt": "2023-12-27T12:19:38Z",
             "status": "MANUAL_REVIEW",
             "preferredMethodList": [
                 "DUMMY_IMPS"
             ],
-            "merchantCustomerId": "1421255",
-            "id": "4492ed9b54143c794f63dbb4c2366f-f1",
+            "merchantCustomerId": "cth_59Yibs1JauYP6WJP",
+            "id": "c712639d4624864b7ab47e9ba0ded7-f1",
             "fulfillmentMethodList": [
-                "DUMMY_IMPS",
-                "DUMMY_NEFT"
+                "DUMMY_IMPS"
             ],
-            "createdAt": "2023-09-28T14:00:10Z",
+            "createdAt": "2023-12-27T12:11:21Z",
             "beneficiaryDetails": {
                 "details": {
                     "name": "Aditya Kadrolkar",
-                    "ifsc": "HDFC0009498",
-                    "account": "50100380396143"
+                    "ifsc": "YESB0000262",
+                    "account": "026291800001191"
                 },
                 "type": "ACCOUNT_IFSC"
             },
-            "amount": 22
+            "amount": 21,
+            "additionalInfo": {
+                "webhookDetails": {
+                    "username": "test",
+                    "url": "https://www.test.com/callback/dynamicwebhook/example",
+                    "customHeader": "123456789"
+                },
+                "useThisAsTR": "ef9eb194e664a319549e644c08be2b",
+                "remark": "Payout Transaction",
+                "isRetriable": false,
+                "attemptThreshold": 25
+            }
         }
     ],
-    "customerId": "1421255",
-    "createdAt": "2023-09-28T14:00:10Z",
-    "amount": 22
+    "customerId": "cth_59Yibs1JauYP6WJP",
+    "createdAt": "2023-12-27T12:11:20Z",
+    "amount": 21
 }
