@@ -1,37 +1,49 @@
 {
-  "type": "FULFILL_ONLY",
-  "status": "READY_FOR_FULFILLMENT",
-  "payments": [],
-  "orderId": "e6J4OxzzbpJ1G2Lu",
-  "fulfillments": [
-    {
-      "updatedBy": "DEFAULT",
-      "updatedAt": "2020-03-06T19:55:21Z",
-      "type": "ORDER",
-      "statusUpdatedAt": "2020-03-06T19:55:21Z",
-      "status": "CREATED",
-      "preferredMethodList": [
-        "CASHFREE_IMPS"
-      ],
-      "id": "9e7a542cd1744c7a612333c58ecefa-f1",
-      "fulfillmentMethodList": [],
-      "createdAt": "2020-03-06T19:55:21Z",
-      "beneficiaryDetails": {
-        "details": {
-          "name": "Taral Shah",
-          "brand": "PAYTM",
-          "walletIdentifier": "9999999999"
-        },
-        "type": "WALLET"
-      },
-      "amount": 1
-    }
-  ],
-  "customerId": "m123",
-  "amount": 1,
-  "udf1": "udf1",
-  "udf2": "udf2",
-  "udf3": "udf3",
-  "udf4": "udf4",
-  "udf5": "udf5"
+    "udf5": "udf5",
+    "udf4": "udf4",
+    "udf3": "udf3",
+    "udf2": "udf2",
+    "udf1": "udf1",
+    "type": "FULFILL_ONLY",
+    "status": "READY_FOR_FULFILLMENT",
+    "payments": [],
+    "orderId": "1703665523",
+    "fulfillments": [
+        {
+            "updatedBy": "DEFAULT",
+            "updatedAt": "2023-12-27T08:25:23Z",
+            "udf5": "String5",
+            "udf4": "String4",
+            "udf3": "String3",
+            "udf2": "String2",
+            "udf1": "String1",
+            "type": "ORDER",
+            "statusUpdatedAt": "2023-12-27T08:25:23Z",
+            "status": "CREATED",
+            "preferredMethodList": [],
+            "id": "a45e48746eb4c85ba2c29b464e302a-f1",
+            "fulfillmentMethodList": [],
+            "createdAt": "2023-12-27T08:25:23Z",
+            "beneficiaryDetails": {
+                "details": {
+                    "walletIdentifier": "9999999999",
+                    "brand": "PAYTM"
+                },
+                "type": "WALLET"
+            },
+            "amount": 1,
+            "additionalInfo": {
+                "webhookDetails": {
+                    "username": "test",
+                    "url": "https://www.test.com/callback/dynamicwebhook/example",
+                    "customHeader": "123456789"
+                },
+                "useThisAsTR": "ef9eb194e664a319549e644c08be2b",
+                "remark": "Payout Transaction",
+                "attemptThreshold": 1440
+            }
+        }
+    ],
+    "customerId": "cth_59Yibs1JauYP6WJP",
+    "amount": 1
 }
