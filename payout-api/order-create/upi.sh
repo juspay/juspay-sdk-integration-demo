@@ -11,7 +11,8 @@ curl --location 'https://sandbox.juspay.in/payout/merchant/v1/orders' \
             "beneficiaryDetails": {
                 "details": {
                     "name": "Aditya Kadrolkar", 
-                    "vpa": "test@upi"
+                    "vpa": "test@upi",
+                    "mobileNumber": "9999999999"
                 },
                 "type": "UPI_ID"
             },
