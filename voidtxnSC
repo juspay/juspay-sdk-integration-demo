@@ -1,0 +1,2 @@
+curl --location --request POST 'https://sandbox.juspay.in/v2/txns/txn_uuid/void' \
+--header 'Authorization: Basic API KEY'
