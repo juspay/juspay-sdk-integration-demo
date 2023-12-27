@@ -1,4 +1,4 @@
-curl --location --request GET 'https://api.juspay.in/payout/merchant/v1/orders/Z3ags1v7S6FioDQA?expand=fulfillment%20' \
---u your_api_key: \
-  --header 'Content-Type: application/json'\
-  --header 'x-merchantid: <merchant-id>' 
+curl --location 'https://sandbox.juspay.in/payout/merchant/v1/orders/:orderId?expand=fulfillment%2Cpayment%2Crefund' \
+--header 'Content-Type: application/json' \
+--header 'x-merchantid: <merchant id>' \
+--header 'Authorization: Basic (b64 encoded API key)'
