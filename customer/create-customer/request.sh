@@ -9,3 +9,6 @@ curl -X POST https://api.juspay.in/customers\
 -d "last_name=Smith"\
 -d "mobile_country_code=91"\
 -d"options.get_client_auth_token=true"\
+
+
+fkvjnvf
