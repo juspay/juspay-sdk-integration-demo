@@ -11,3 +11,5 @@ curl -X POST https://api.juspay.in/v2/customers\
 -d"options.get_client_auth_token=true"\
 
 123
+
+456
