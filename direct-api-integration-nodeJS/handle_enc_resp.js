@@ -1,5 +1,3 @@
-//block:start:sample-code-for-handling-encrypted-response
-
 //———Sample Code For Handling Encrypted Response———
 const jose = require('node-jose');
 
@@ -14,8 +12,6 @@ async function jwtDecryptRequest(body, publicKeyString, privateKeyString) {
         iv: body.iv,
         tag: body.tag,
 };
-
-//block:end:sample-code-for-handling-encrypted-response
 
 //block:start:decrypt-response-payload
 
