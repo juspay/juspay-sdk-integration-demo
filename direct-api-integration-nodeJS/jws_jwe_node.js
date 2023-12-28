@@ -1,5 +1,3 @@
-//block:start:sample-code-for-signing-payload
-
 //———Sample Code For Signing the Payload (JWS)———
 const jose = require('node-jose');
 
@@ -12,6 +10,9 @@ async function jwtEncryptRequest(
     const privateKey = await jose.JWK.asKey(privateKeyString, `pem`);
     const publicKey = await jose.JWK.asKey(publicKeyString, 'pem');
     let userPayload;
+    
+   //block:start:generate-signature-using-private-key
+    
     try {
         userPayload = JSON.stringify(data);// Step 2.1: Convert the JSON payload to string
 } catch (error) {
@@ -26,10 +27,6 @@ async function jwtEncryptRequest(
         throw new Error('Key id cannot be empty/undefined');
 }
 
-//block:end:sample-code-for-signing-payload
-
-//block:start:generate-signature-using-private-key
-
 // Step 2.2: Generate a signature using Private Key
     const signer = jose.JWS.createSign(
 { fields: { alg: 'RS256', kid: keyId }, format: 'flattened' },
@@ -38,7 +35,7 @@ async function jwtEncryptRequest(
 
     const signedResult = await signer.final();
 
-//block:end:generate-signature-using-private-key
+ //block:end:generate-signature-using-private-key
 
 
 //block:start:serialize-signature-to-json
