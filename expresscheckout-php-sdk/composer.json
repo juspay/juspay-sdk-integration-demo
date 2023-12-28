@@ -2,7 +2,7 @@
     "name": "ramprakash.v/php_kit",
     "type": "project",
     "require": {
-        "juspay/expresscheckout-php-sdk": "2.0.3"
+        "juspay/expresscheckout-php-sdk": "2.0.4"
     },
     "autoload": {
         "psr-4": {

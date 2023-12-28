@@ -30,6 +30,7 @@ if ($privateKey == false || $publicKey == false) {
 // block:start:initialize-juspay-config
 JuspayEnvironment::init()
 ->withBaseUrl("https://smartgatewayuat.hdfcbank.com")
+->withMerchantId($config["MERCHANT_ID"])
 ->withJuspayJWT(new JuspayJWT($config["KEY_UUID"], $publicKey, $privateKey)); #Add key id
 // block:end:initialize-juspay-config
 

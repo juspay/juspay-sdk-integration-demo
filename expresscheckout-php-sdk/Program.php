@@ -25,7 +25,7 @@ class PHPKit {
         $params = array();
         $params ['order_id'] = $this->orderId;
         $requestOption = new RequestOptions();
-        $requestOption->withCustomerId("testing-customer-one")->withMerchantId($this->config["MERCHANT_ID"]); # Add merchant id
+        $requestOption->withCustomerId("testing-customer-one");
         $order = Order::status($params, $requestOption);
         echo "id: ". $order->orderId . PHP_EOL;
         echo "amount: ". $order->amount . PHP_EOL;
@@ -51,7 +51,7 @@ class PHPKit {
             $params['action'] = "paymentPage";
             $params['return_url'] = "http://0.0.0.0:5000/handleResponse";
             $requestOption = new RequestOptions();
-            $requestOption->withCustomerId("testing-customer-one")->withMerchantId($this->config["MERCHANT_ID"]); # Add merchant id
+            $requestOption->withCustomerId("testing-customer-one");
             $session = OrderSession::create($params, $requestOption);
             echo "id: " . $session->id . PHP_EOL;
             echo "order id: ". $session->orderId . PHP_EOL;
@@ -82,6 +82,7 @@ if ($privateKey == false || $publicKey == false) {
 
 JuspayEnvironment::init()
 ->withBaseUrl("https://smartgatewayuat.hdfcbank.com")
+->withMerchantId($config["MERCHANT_ID"])
 ->withJuspayJWT(new JuspayJWT($config["KEY_UUID"], $publicKey, $privateKey)); #Add key id
 
 $orderId = uniqid();

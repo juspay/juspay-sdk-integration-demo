@@ -24,7 +24,7 @@ try {
     $params['action'] = "paymentPage";
     $params['return_url'] = "http://localhost:5000/handleJuspayResponse";
     $requestOption = new RequestOptions();
-    $requestOption->withCustomerId("testing-customer-one")->withMerchantId($config["MERCHANT_ID"]); # Add merchant id
+    $requestOption->withCustomerId("testing-customer-one");
     $session = OrderSession::create($params, $requestOption);
     if ($session->status == "NEW") {
         $response = array("orderId" => $session->orderId, "id" => $session->id, "status" => $session->status, "paymentLinks" =>  $session->paymentLinks, "sdkPayload" => $session->sdkPayload );

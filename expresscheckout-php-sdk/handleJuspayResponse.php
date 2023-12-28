@@ -16,7 +16,7 @@ function getOrder($orderId, $config) {
     $params = array();
     $params ['order_id'] = $orderId;
     $requestOption = new RequestOptions();
-    $requestOption->withCustomerId("testing-customer-one")->withMerchantId($config["MERCHANT_ID"]); # Add merchant id
+    $requestOption->withCustomerId("testing-customer-one");
     return Order::status($params, $requestOption);
    } catch (JuspayException $e) {
     http_response_code($e->getHttpResponseCode());
