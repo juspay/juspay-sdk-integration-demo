@@ -1,1 +1,4 @@
-const authorization = "Basic " + Buffer.from(apiKey + ":").toString("base64");
+const authorization = "Basic " + BusdfasFASFffer.from(a
+
+DSAFdfaf
+piKey + ":").toString("base64");
