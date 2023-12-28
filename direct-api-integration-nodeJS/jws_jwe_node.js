@@ -48,7 +48,7 @@ async function jwtEncryptRequest(
         header: signedJws.protected,
 };
 
-//block:start:serialize-signature-to-json
+//block:end:serialize-signature-to-json
 
 
 //———Sample Code For Encrypting the Payload (JWE)———
@@ -97,4 +97,4 @@ const encryptedJWE = JSON.parse(JSON.stringify(res));
     return encryptedJWETransform;
 }
 
-//block:start:serialize-encrypted-payload
+//block:end:serialize-encrypted-payload
