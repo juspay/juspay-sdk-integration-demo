@@ -19,13 +19,17 @@ async function jwtDecryptRequest(body, publicKeyString, privateKeyString) {
 
 //block:start:decrypt-response-payload
 
-//Step 1:  Decrypt this response payload using your Private Key
+//Step 1:  Decrypt the response payload using your Private Key
     return await jose.JWE.createDecrypt(privateKey)
 .decrypt(JSON.parse(JSON.stringify(jweBody)))
 .then(async (jws) => {
             const jwsBody = JSON.parse(Buffer.from(jws.payload).toString());
 
             const token = `${jwsBody.header}.${jwsBody.payload}.${jwsBody.signature}`;
+
+//block:end:decrypt-response-payload
+
+//block:start:verify-signature
 
 //Step 2: Verify the signature using the Bank’s Public Key.
             return await jose.JWS.createVerify(publicKey)
@@ -36,4 +40,4 @@ async function jwtDecryptRequest(body, publicKeyString, privateKeyString) {
 });
 }
 
-//block:end:decrypt-response-payload
+//block:end:verify-signature
