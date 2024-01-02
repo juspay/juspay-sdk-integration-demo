@@ -1,10 +1,10 @@
-curl -X POST https://api.juspay.in/payout/merchant/v1/PL7D5Q9J7D/attempt \
-  -u x-merchantid: <merchant-id>
-  -u your_api_key:
-  -d '{
-"payload":"eyJlbmMiOiJBxxxxxxxxxxxxMjU2IiwiYWxnIjoiUlNBLU9BRVAiLCJraWQiOiJhbWF6b25rZXkxIn0.ZOkZg-CxCvVbC-uX-QphJW0LWBKymxFEF2deYncqYwC-7py8NgjSehE7HufNfQdHe6YE3i2a_veugtO6K1MzpsHltH8N4he-cJ8zuFsnSIaFeDnLL-AyCXcztwIAx7eaJM36lJea_V1mPqFdIbDVO7M1Pi7QIPzzM3r4bK7E3yPxI2mVvqMai86OToHWaXH8vP7HEKoGXlTf_Ldeb93-uOpGzyrP836NbsP7lYm5XdsXeNOHnaAP645XTBUGvYPd1huFne91vPmxIiEZnaYAFcyxeDDwsc-yWiLyNGUSo8P8Ukw-8WJvMcbMAL4BcX8pLDQcacegGfGpx_M9943JOg.Ge18ShQX6dpAdJFJeeZyfQ.u2bTacQhX6rc5WdSkXEzFyyqwXQiOtm_LmA03fvleHi-dAoVefPmahP2lBzwQNt6NK_uVoztRvtfqpGR1yPLuZ7havx0NtWeIJIBCHJWnDyBYF7ECnrXbNbWj3XHdUq8N20c50aWEW3Iz9YjbUNizg.M3I3FfCNdFDhIal4VqccNw",
-  "kid": "kid",
-  "sid": "sid",
-  "format": "compact"
-  }'
-
+curl --location 'https://sandbox.juspay.in/payout/merchant/v1.1/orders' \
+--header 'x-merchantid: <x-merchantid>' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Basic (b64 encoded API key)' \
+--data '{
+    "payload": "eyJhbGciOiJSU0EtT0FFUCIsInR5cCI6IkpXVCIsImVuYyI6IkEyNTZDQkMtSFM1MTIifQ.x88C2GRVLT9501v1Nq49QF83qoVSf7xmibBfBrfJn4sOjI1gy1Gu9R5X9diVf-ST9wSHBwKuM4bW7Vs9VsshcCxtQr0xd6rFCbS-PnM6VwbjOh8Vre-06d3j3dbKFEy_OFVIvqvRIpJxGuTcAXUAoaoJMh_ubykxxQJX_owudksyUMmu0-cEa9QeitIET5P_45mn9EdD6NYsy94gYPucBxhfihvUuNfoQH7VwjsYbIAR9NMkxTPzSqfrfGZC2qq5Emav06b937ZfCcz2ncYpdHCBuJ3oWcW4ZG9WkebpAp3ho5lNHiU22TAawyt5B2LZXHCg_1dIdz7fOu0Nkb7Pow.f8LRRRhuMDti2aD3dkyr7w.JHVovPAX5WsztT0ikR_W2_Po7r-4lPRBN69Flv_F9JOQExSrZOYZr0cwXHuThoUhmkxVbvP886xtDgKPbosKUve8pn4k0ujGsVy--ptt5Zici3XEFwmY_m51L3qi_BzmqCBDCTAqXRpkLblyJfAEP-Apdq0956jDe2jwO2KuDly1P29SLcL4rVGTz6244hDCjvCN-JR3sFCTNLN6fFbMOEAPcR2TBEJ5KVDeM_wrdWmdfRp24HPVtVYHA6rE5W2zX_o6a2UeJGApgwKGRZx_u_SLWUrmMP9X_5l8HTjuphbxdVEkSBbZPgBi16ec8PEL8xNvSPtHbY5hSGPgmPJiN6l_4Ht5C8revwUb2OBQcMXxU_WrxvYo8iz8JQAjxM1uDDARJORvuSzbpxi09zJx2QtT6wKNZcFxzfOAHdFZuLhPI0HnamFQcmE1QOAbYhyycrsN918bNesCuJVrpvTOOEaROfbVTZpP3wfpbjf2B93OTV0hNerlQ4zF-A-vSodZ2w164bnq6j.KAUUlWrSXo7VKwlmyseyU8MthpPSUjqpbAyYo1wgNEM",
+    "kid": "JuspayKID", 
+    "sid": "JuspaySID", 
+    "format": "compact"
+}'
