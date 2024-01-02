@@ -54,12 +54,7 @@ function orderStatusMessage ($order) {
 if (isset($_POST["order_id"])) {
     try {
         $orderId = $_POST["order_id"];
-        $amount = $_POST["amount"];
         $order = getOrder($orderId, $config);
-        if ($amount != (string)$order->amount) {
-            http_response_code(400);
-            $response = array("message" => "order validation failed");
-        }
         $response = orderStatusMessage($order);
         
     }
