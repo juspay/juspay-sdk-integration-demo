@@ -1,1 +1,6 @@
-{\"fulfillmentId\":\"345\",\"cardInfo\":{\"cardToken\":\"34567\",\"tokenCryptogram\": \"CRYPTOGRAM\",\"tokenPanSequenceNumber\":\"001\",\"tokenExpiry\":{\"month\":\"01\",\"year\":\"2025\"}}}
+{
+    "fulfillmentId": "c14b43505a545b3a65c416634009a2-f1",
+    "cardInfo": {
+        "cardToken": "1111111111111111"
+    }
+}
