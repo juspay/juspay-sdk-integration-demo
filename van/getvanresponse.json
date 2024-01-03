@@ -1,0 +1,10 @@
+{
+    "status": "ENABLED",
+    "virtual_account": "ABCD400314648212",
+    "last_updated": "2024-01-03T08:57:12.31589749Z",
+    "virtual_account_reference": "test1",
+    "ifsc": "UTIB0CCH274",
+    "metadata": "{\"name\":\"Hitesh\", \"city\": \"Jaipur\"}",
+    "type": "ACCOUNT_IFSC",
+    "date_created": "2024-01-03T08:57:12.31589749Z"
+}
