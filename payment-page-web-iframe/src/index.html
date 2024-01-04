@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juspay Integration</title>
+    <!-- Include Juspay Hypercheckout SDK -->
+    <script src="https://public.releases.juspay.in/hyper-sdk-web/HyperServices.js"></script>
+</head>
+
+ <!-- Ensure that you invoke the initiate function at an earlier stage than the process function to facilitate the loading of all microapps and expedite the checkout loading process-->
+<body onload="initiateJuspayPayment()">
+    <!-- block:start:adding-div -->
+
+    <!-- Step 1: Add the Hypercheckout div -->
+    <div id="HyperSDKDiv"></div>
+
+    <!-- block:end:adding-div -->
+    <button onclick="processJuspayPayment()">Start Payment</button>
+
+    <script>
+       // block:start:create-hyperServices-object
+
+        // Step 2: Create HyperServices object
+        let hyperServicesObject;
+
+        // Function to initiate Juspay payment using Hypercheckout
+        // block:end:create-hyperServices-object
+
+        // block:start:call-initiate
+        async function initiateJuspayPayment() {
+            try {
+                // Check if HyperServices is loaded
+                if (window.HyperServices) {
+                    hyperServicesObject = new window.HyperServices();
+
+                    // Call the initiate function with the callback handler
+                    hyperServicesObject.initiate({
+                        "requestId": generateRandomRequestId(),
+                        "service": "in.juspay.hyperpay",
+                        "payload": {
+                            "action": "initiate",
+                            "hyperSDKDiv": "HyperSDKDiv",
+                            "integrationType": "iframe",
+                            "environment": "production", // Update sandbox for sandbox environment
+                            "merchantId": "<client_id>", // Update this to your merchant ID
+                            "clientId": "<merchant_id>" // Update this to your client ID
+                        }
+                    }, hyperCallbackHandler);
+                } else {
+                    console.error('HyperServices script not loaded');
+                }
+            } catch (error) {
+                console.error('Error:', error.message);
+                // Handle error as needed
+            }
+        }
+            // block:end:call-initiate
+
+        // Function to generate a random UUID
+        function generateRandomRequestId() {
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+                var r = Math.random() * 16 | 0,
+                    v = c === 'x' ? r : (r & 0x3 | 0x8);
+                return v.toString(16);
+            });
+        }
+
+        // Function to process Juspay payment
+        async function processJuspayPayment() {
+            try {
+                // block:start:fetch-process-payload
+                // Step 4: Fetch the sdk_payload from the server-side
+                // The session API should be called from your server, not directly from the client-side
+                console.log('Call the server-side code to fetch Juspay session data');
+                // Mocking the SDK payload for demonstration purposes
+                const sdk_payload = '{"mock": "sdk_payload"}';
+                process(sdk_payload);
+            } catch (error) {
+                console.error('Error:', error.message);
+                // Handle error as needed
+            }
+        }
+        // block:end:fetch-process-payload
+
+        // block:start:call-process 
+        // Step 5: Call the process function (included as it is)
+        function process(sdk_payload) {
+            // Call the process function with the fetched sdk_payload
+            if (hyperServicesObject && hyperServicesObject.isInitialised()) {
+                hyperServicesObject.process(sdk_payload);
+            } else {
+                console.error('HyperServices not initialized');
+                // Handle initialization error if needed
+            }
+        }
+         // block:end:call-process  
+
+        //  block:start:create-hyper-callback
+        
+        // Callback handler for HyperServices events
+        function hyperCallbackHandler(eventData) {
+            try {
+                if (eventData) {
+                    const eventJSON = typeof eventData === 'string' ? JSON.parse(eventData) : eventData;
+                    const event = eventJSON.event;
+
+                    // Check for event key
+                    if (event == "initiate_result") {
+                        // Handle initiate result here
+                        console.log("Initiate Result:", eventJSON);
+                    } else if (event == "process_result") {
+                        // Handle process result here
+                        console.log("Process Result:", eventJSON);
+                    } else if (event == "user_event") {
+                        // Handle Payment Page events
+                        console.log("User Event:", eventJSON);
+                    } else {
+                        console.log("Unhandled event", event, " Event data", eventData);
+                    }
+                } else {
+                    console.log("No data received in event", eventData);
+                }
+            } catch (error) {
+                console.log("Error in hyperSDK response", error);
+            }
+        }
+         //  block:end:create-hyper-callback
+    </script>
+
+</body>
+
+</html>
