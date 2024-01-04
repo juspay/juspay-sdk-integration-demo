@@ -13,7 +13,6 @@
 <body onload="initiateJuspayPayment()">
     <!-- block:start:adding-div -->
 
-    <!-- Step 1: Add the Hypercheckout div -->
     <div id="HyperSDKDiv"></div>
 
     <!-- block:end:adding-div -->
@@ -22,7 +21,6 @@
     <script>
        // block:start:create-hyperServices-object
 
-        // Step 2: Create HyperServices object
         let hyperServicesObject;
 
         // Function to initiate Juspay payment using Hypercheckout
@@ -71,7 +69,6 @@
         async function processJuspayPayment() {
             try {
                 // block:start:fetch-process-payload
-                // Step 4: Fetch the sdk_payload from the server-side
                 // The session API should be called from your server, not directly from the client-side
                 console.log('Call the server-side code to fetch Juspay session data');
                 // Mocking the SDK payload for demonstration purposes
@@ -85,7 +82,7 @@
         // block:end:fetch-process-payload
 
         // block:start:call-process 
-        // Step 5: Call the process function (included as it is)
+
         function process(sdk_payload) {
             // Call the process function with the fetched sdk_payload
             if (hyperServicesObject && hyperServicesObject.isInitialised()) {
@@ -98,7 +95,7 @@
          // block:end:call-process  
 
         //  block:start:create-hyper-callback
-        
+
         // Callback handler for HyperServices events
         function hyperCallbackHandler(eventData) {
             try {
