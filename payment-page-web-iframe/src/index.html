@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juspay Integration</title>
-    <!-- Include Juspay Hypercheckout SDK -->
-    <script src="https://public.releases.juspay.in/hyper-sdk-web/HyperServices.js"></script>
+
 </head>
 
 <!-- Ensure that you invoke the initiate function at an earlier stage than the process function to facilitate the smooth loading of Hypercheckout -->
@@ -24,8 +23,14 @@
 
         let hyperServicesObject;
 
-        // Function to initiate Juspay payment using Hypercheckout
         // block:end:create-hyperServices-object
+
+         // Calling the initiation script ahead of displaying the payment page.
+        const script = document.createElement('script');
+        script.src = 'https://public.releases.juspay.in/hyper-sdk-web/HyperServices.js';
+        script.setAttribute('clientId', 'yourClientId');
+        script.setAttribute('service', 'in.juspay.hyperpay');
+        document.body.appendChild(script);
 
         // block:start:call-initiate
         async function initiateJuspayPayment() {
@@ -43,8 +48,8 @@
                             "hyperSDKDiv": "HyperSDKDiv",
                             "integrationType": "iframe",
                             "environment": "production", // Update sandbox for sandbox environment
-                            "merchantId": "<client_id>", // Update this to your merchant ID
-                            "clientId": "<merchant_id>" // Update this to your client ID
+                            "merchantId": "<merchant_id>", // Update this to your merchant ID
+                            "clientId": "<client_id>" // Update this to your client ID
                         }
                     }, hyperCallbackHandler);
                 } else {
@@ -96,7 +101,7 @@
                         "description": "Complete your payment"
                     }
                 }
-                
+
                 process(sdk_payload);
             } catch (error) {
                 console.error('Error:', error.message);
