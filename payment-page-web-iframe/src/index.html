@@ -9,7 +9,8 @@
     <script src="https://public.releases.juspay.in/hyper-sdk-web/HyperServices.js"></script>
 </head>
 
- <!-- Ensure that you invoke the initiate function at an earlier stage than the process function to facilitate the loading of all microapps and expedite the checkout loading process-->
+<!-- Ensure that you invoke the initiate function at an earlier stage than the process function to facilitate the smooth loading of Hypercheckout -->
+
 <body onload="initiateJuspayPayment()">
     <!-- block:start:adding-div -->
 
@@ -19,7 +20,7 @@
     <button onclick="processJuspayPayment()">Start Payment</button>
 
     <script>
-       // block:start:create-hyperServices-object
+        // block:start:create-hyperServices-object
 
         let hyperServicesObject;
 
@@ -54,7 +55,7 @@
                 // Handle error as needed
             }
         }
-            // block:end:call-initiate
+        // block:end:call-initiate
 
         // Function to generate a random UUID
         function generateRandomRequestId() {
@@ -72,7 +73,30 @@
                 // The session API should be called from your server, not directly from the client-side
                 console.log('Call the server-side code to fetch Juspay session data');
                 // Mocking the SDK payload for demonstration purposes
-                const sdk_payload = '{"mock": "sdk_payload"}';
+                const sdk_payload = {
+                    "requestId": "8cbc3fad-8b3f-40c0-ae93-2d7e75a8624a",
+                    "service": "in.juspay.hyperpay",
+                    "payload": {
+                        "action": "paymentPage",
+                        "clientId": "<your-client-id>",
+                        "amount": "1",
+                        "merchantId": "<your merchant id>",
+                        "clientAuthToken": "tkn_8e5c1540506c4829bda2e48b3c06e7cf",
+                        "clientAuthTokenExpiry": "2024-01-04T14:28:18Z",
+                        "environment": "production",
+                        "lastName": "wick",
+                        "action": "paymentPage",
+                        "customerId": "testing-customer",
+                        "returnUrl": "https://sandbox.juspay.in/end",
+                        "currency": "INR",
+                        "firstName": "John",
+                        "customerPhone": "9999999999",
+                        "customerEmail": "test@mail.com",
+                        "orderId": "test_order",
+                        "description": "Complete your payment"
+                    }
+                }
+                
                 process(sdk_payload);
             } catch (error) {
                 console.error('Error:', error.message);
@@ -92,7 +116,7 @@
                 // Handle initialization error if needed
             }
         }
-         // block:end:call-process  
+        // block:end:call-process  
 
         //  block:start:create-hyper-callback
 
@@ -123,7 +147,7 @@
                 console.log("Error in hyperSDK response", error);
             }
         }
-         //  block:end:create-hyper-callback
+        //  block:end:create-hyper-callback
     </script>
 
 </body>
