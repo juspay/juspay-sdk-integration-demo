@@ -24,14 +24,16 @@
         let hyperServicesObject;
 
         // block:end:create-hyperServices-object
+        // block:start:add-hyperServices-script
 
-         // Calling the initiation script ahead of displaying the payment page.
+        // Calling the initiation script ahead of displaying the payment page.
         const script = document.createElement('script');
         script.src = 'https://public.releases.juspay.in/hyper-sdk-web/HyperServices.js';
         script.setAttribute('clientId', 'yourClientId');
         script.setAttribute('service', 'in.juspay.hyperpay');
         document.body.appendChild(script);
-
+        // block:end:add-hyperServices-script
+        
         // block:start:call-initiate
         async function initiateJuspayPayment() {
             try {
