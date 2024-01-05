@@ -1,39 +1,64 @@
-curl --location --request POST 'https://api.juspay.in/orders' \
---header 'version: 2023-06-30' \
---header 'Content-Type: application/x-www-form-urlencoded' \
---header 'x-merchantid: merchant_id'\
---header 'Authorization: Basic QTA0QT*******ODg1Og==' \
---data-urlencode 'order_id=14183944763' \
---data-urlencode 'amount=100.00' \
---data-urlencode 'currency=INR' \
---data-urlencode 'customer_id=guest_user_101' \
---data-urlencode 'customer_email=customer@gmail.com' \
---data-urlencode 'customer_phone=9988665522' \
---data-urlencode 'product_id=prod-141833' \
---data-urlencode 'return_url=http://shop.merchant.com/payments/handleResponse' \
---data-urlencode 'options.get_upi_deep_links=true'
---data-urlencode 'payment_page.client_id=hyper-beta' \
---data-urlencode 'payment_page.environment=production' \
---data-urlencode 'description=Sample description' \
---data-urlencode 'billing_address_first_name=Juspay' \
---data-urlencode 'billing_address_last_name=Technologies' \
---data-urlencode 'billing_address_line1=Girija Building' \
---data-urlencode 'billing_address_line2=Ganapathi Temple Road' \
---data-urlencode 'billing_address_line3=8th Block, Koramangala' \
---data-urlencode 'billing_address_city=Bengaluru' \
---data-urlencode 'billing_address_state=Karnataka' \
---data-urlencode 'billing_address_country=India' \
---data-urlencode 'billing_address_postal_code=560095' \
---data-urlencode 'billing_address_phone=9988775566' \
---data-urlencode 'billing_address_country_code_iso=IND' \
---data-urlencode 'shipping_address_first_name=Juspay' \
---data-urlencode 'shipping_address_last_name=Technologies' \
---data-urlencode 'shipping_address_line1=Girija Building' \
---data-urlencode 'shipping_address_line2=Ganapathi Temple Road' \
---data-urlencode 'shipping_address_line3=8th Block, Koramangala' \
---data-urlencode 'shipping_address_city=Bengaluru' \
---data-urlencode 'shipping_address_state=Karnataka' \
---data-urlencode 'shipping_address_postal_code=560095' \
---data-urlencode 'shipping_address_phone=9962881912' \
---data-urlencode 'shipping_address_country_code_iso=IND' \
---data-urlencode 'shipping_address_country=India' \
+curl --location 'https://sandbox.juspay.in/session' \
+--header 'origin: https://sandbox.juspay.in' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Basic *********************API_KEY' \
+--data-raw '{
+   "mobile_country_code": "+91",
+   "payment_page_client_id": "picasso",
+   "amount": 100,
+   "currency": "INR",
+   "action": "paymentPage", 
+   "customer_email": "asdf@gmail.com",
+   "customer_phone": "8888899999",
+   "first_name": "John",
+   "last_name" : "Doe",
+   "description": "This is Payment Description.",
+   "customer_id": "customer_id",
+   "order_id": "order_dummy_1",
+   "return_url": "https://juspay.in/",
+   "mandate.revokable_by_customer": true,
+   "mandate.block_funds": false,
+   "mandate_max_amount": "1000",
+   "mandate.start_date": "1703768016",
+   "mandate.end_date": "1733011200",
+   "mandate.frequency": "ASPRESENTED",
+   "options.create_mandate": "REQUIRED",
+   "send_mail": true,
+   "send_sms": false,
+   "udf1": "udf1-dummy",
+   "udf2": "udf2-dummy",
+   "udf3": "udf3-dummy",
+   "udf4": "udf4-dummy",
+   "udf6": "udf6-dummy",
+   "udf5": "udf5-dummy",
+   "udf7": "udf7-dummy",
+   "udf8": "udf8-dummy",
+   "udf9": "udf9-dummy",
+   "udf10": "udf10-dummy",
+   "payment_filter": {
+       "allowDefaultOptions": false,
+       "options": [
+           {
+               "paymentMethodType": "UPI",
+               "enable": true
+           },
+           {
+               "paymentMethodType": "WALLETS",
+               "enable": true
+           },
+           {
+               "paymentMethodType": "CARD",
+               "enable": true
+           },
+           {
+               "paymentMethodType": "NB",
+               "enable": false
+           }
+       ],
+       "emiOptions": {}
+   },
+   "gateway_id": "12",
+   "metadata.JUSPAY:gateway_reference_id": "payu_test",
+   "metadata.expiryInMins": "3397"
+  }
+'
