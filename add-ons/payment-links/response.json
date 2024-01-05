@@ -1,12 +1,76 @@
 {
-  "status": "CREATED",
-  "status_id": 1,
-  "id": "ord_e294a26e66ad4336a992ceab81ad704c",
-  "order_id": "14183944763",
-  "payment_links": {
-    "web": "https://api.juspay.in/merchant/pay/ord_e294a26e66ad4336a992ceab81ad704c",
-    "mobile": "https://api.juspay.in/merchant/pay/ord_e294a26e66ad4336a992ceab81ad704c?mobile=true",
-    "iframe": "https://api.juspay.in/merchant/ipay/ord_e294a26e66ad4336a992ceab81ad704c"
-  },
-  "deep_link": "upi://pay?tr=20211123246240644044&tid=PYTM202111232462406423423&mc=1234&pa=paytm-52372941@paytm&pn=acmecorp&am=1&cu=INR"
+    "status": "NEW",
+    "id": "ordeh_662673ccb6ac44eda5856491e153afc4",
+    "order_id": "order_a_b_id_dummy_1",
+    "payment_links": {
+        "web": "https://sandbox.juspay.in/orders/ordeh_662673ccb6ac44eda5856491e153afc4/payment-page",
+        "expiry": "2023-12-30T21:46:57Z"
+    },
+    "sdk_payload": {
+        "requestId": "af2f666419a24155991764369ccaed86",
+        "service": "in.juspay.hyperpay",
+        "payload": {
+      "amount": "100.0",
+      "currency": "INR",
+      "orderId": "order_a_b_id_dummy_1",
+      "merchantId": "global_sandbox",
+      "clientId": "picasso",
+      "options.createMandate": "REQUIRED",
+      "mandateMaxAmount": "1000",
+      "mandate.startDate": "1703768016",
+      "mandate.endDate": "1733011200",
+             "mandate.frequency": "ASPRESENTED",
+      "mandate.revokableByCustomer": true,
+      "mandate.blockFunds": false,
+      "mobileCountryCode": "+91",
+      "customerId": "customer_id",
+            "customerPhone": "8987654567",
+            "customerEmail": "asdf@gmail.com",
+      "sendMail": true,
+      "sendSms": true,
+      "clientAuthToken": "tkn_9e414695b9654c529c8161d1807a47cd",
+            "clientAuthTokenExpiry": "2023-12-28T13:24:57Z",
+            "environment": "sandbox",
+      "gatewayId": "12",
+      "metadata.expiryinmins": "3397",
+            "metadata.JUSPAY:gatewayReferenceId": "payu_test",
+            "action": "paymentPage",
+             "udf1": "udf1-dummy",
+      "udf2": "udf2-dummy",
+      "udf3": "udf3-dummy",
+      "udf4": "udf4-dummy",
+      "udf5": "udf5-dummy",
+      "udf6": "udf6-dummy"
+      "udf7": "udf7-dummy",
+      "udf8": "udf8-dummy",
+      "udf9": "udf9-dummy",
+      "udf10": "udf10-dummy",
+            "returnUrl": "https://juspay.in/",
+            "paymentFilter": {
+                "allowDefaultOptions": false,
+                "options": [
+                    {
+                        "paymentMethodType": "UPI",
+                        "enable": true
+                    },
+                    {
+                        "paymentMethodType": "WALLETS",
+                        "enable": true
+                    },
+                    {
+                        "paymentMethodType": "CARD",
+                        "enable": true
+                    },
+                    {
+                        "paymentMethodType": "NB",
+                        "enable": false
+                    }
+                ],
+                "emiOptions": {}
+            },
+            "description": "This is Payment Description."
+        },
+        "expiry": "2023-12-30T21:46:57Z"
+    },
+    "order_expiry": "2023-12-30T21:46:57Z"
 }
