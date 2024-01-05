@@ -1,6 +1,11 @@
 {
     "fulfillmentId": "c14b43505a545b3a65c416634009a2-f1",
     "cardInfo": {
-        "cardNumber": " 5513651111111111"
+        "cardNumber": " 5513651111111111",
+        "cardSecurityCode": "123",
+        "cardExpiry": {
+            "month": "02",
+            "year": "2028"
+        }
     }
 }
