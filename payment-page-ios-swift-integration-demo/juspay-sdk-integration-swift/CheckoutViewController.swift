@@ -16,17 +16,6 @@ class CheckoutViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        p1QntyOutlet.text = "x\(p1Qnty)"
-        p2QntyOutlet.text = "x\(p2Qnty)"
-        let total =  (p1Qnty * p1Price) + (p2Qnty * p1Price)
-        let tax = (total * 18)/100
-        totalpayable = total + tax
-        
-        p1Amount.text = "Rs. \(p1Qnty * p1Price)"
-        p2Amount.text = "Rs. \(p2Qnty * p1Price)"
-        totalAmount.text = "Rs. \(total)"
-        taxOutlet.text = "Rs. \(tax)"
-        totalPayableOutlet.text = "Rs. \(totalpayable)"
     }
 
     // block:start:fetch-process-payload
@@ -189,7 +178,11 @@ class CheckoutViewController: UIViewController {
             let endpoint = "http://127.0.0.1:5000/initiateJuspayPayment";
             var request = URLRequest(url: URL(string: endpoint)!, timeoutInterval: Double.infinity)
 
-            request.httpMethod = "GET"
+            request.httpMethod = "POST"
+        
+            let body: [String: Any] = ["item_details": [["item_id" : "12345", "quantity" : 2], ["item_id" : "54321", "quantity" : 2]]]
+            let finalBody = try? JSONSerialization.data(withJSONObject: body)
+            request.httpBody = finalBody
 
             let task = URLSession.shared.dataTask(with: request) { data, response, error in
                 guard let data = data else {
