@@ -1,0 +1,11 @@
+{
+    "status": "error",
+    "error_code": "access_denied",
+    "error_info": {
+        "category": "USER_ERROR",
+        "request_id": "949da375-f13c-4054-af38-9996672361a3",
+        "developer_message": "Invalid API Key. Please pass a valid and active api key.",
+        "user_message": "Unauthorized.",
+        "code": "UNAUTHORIZED"
+    }
+}
