@@ -1,0 +1,19 @@
+{
+    "status": "ERROR",
+    "error_code": "INVALID_REQUEST",
+    "error_message": "mandate_max_amount exceeds mandate maxAmount threshold.",
+    "status_id": -1,
+    "error_info": {
+        "category": "UNKNOWN",
+        "request_id": "c79c055e-ffc6-416e-a079-6f1c2afaeeb1",
+        "developer_message": "mandate_max_amount exceeds mandate maxAmount threshold.",
+        "user_message": "INVALID_REQUEST",
+        "code": "UNKNOWN_ERROR",
+        "fields": [
+            {
+                "field_name": "mandate.max_amount",
+                "reason": "Invalid Value"
+            }
+        ]
+    }
+}

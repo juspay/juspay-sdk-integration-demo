@@ -1,5 +1,4 @@
 curl --location 'https://sandbox.juspay.in/session' \
---header 'origin: https://sandbox.juspay.in' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Basic *********************API_KEY' \
 --data-raw '{
