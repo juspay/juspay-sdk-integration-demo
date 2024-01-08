@@ -1,5 +1,4 @@
 curl --location 'https://sandbox.juspay.in/session' \
---header 'origin: https://sandbox.juspay.in' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Basic *********************API_KEY' \
 --data-raw '{
@@ -54,4 +53,4 @@ curl --location 'https://sandbox.juspay.in/session' \
    "metadata.JUSPAY:gateway_reference_id": "payu_test",
    "metadata.expiryInMins": "3397"
   }
-'  
+' 
