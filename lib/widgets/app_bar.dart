@@ -24,7 +24,7 @@ AppBar customAppBar({
         ),
       ],
     ),
-    backgroundColor: const Color(0xFF2E2B2C),
+    backgroundColor: Color.fromARGB(255, 240, 237, 238),
     leading: text == "Home Screen"
         ? null
         : IconButton(

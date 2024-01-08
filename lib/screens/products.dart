@@ -1,10 +1,9 @@
+import 'package:doc_app/screens/payment_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'package:hypersdkflutter/hypersdkflutter.dart';
 import 'package:uuid/uuid.dart';
-
-import './checkout.dart';
 
 import '../widgets/app_bar.dart';
 import '../widgets/bottom_button.dart';
@@ -27,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
     var screenHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
-      appBar: customAppBar(text: "Home Screen", context: context),
+      appBar: customAppBar(text: "Checkout Screen", context: context),
       backgroundColor: Colors.white,
       body: Column(
         children: [
@@ -45,36 +44,13 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 )),
           ),
-          Container(
-            alignment: Alignment.centerLeft,
-            padding: const EdgeInsets.only(left: 20, top: 15),
-            child: const Text(
-              "Products",
-              style: TextStyle(
-                  fontSize: 18,
-                  color: Color(0xFfFB8D33),
-                  fontWeight: FontWeight.bold),
-            ),
-          ),
-          Container(
-            height: screenHeight / 1.75,
-            margin: const EdgeInsets.symmetric(vertical: 8),
-            child: Column(
-              children: [
-                singleProduct(screenHeight / 1.75, "one", countProductOne),
-                singleProduct(screenHeight / 1.75, "two", countProductTwo)
-              ],
-            ),
-          ),
           BottomButton(
-              height: screenHeight / 10,
-              text: "Go to Cart",
+              height: 100,
+              text: "Open Payment Page",
               onpressed: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => CheckoutScreen(
-                            productOneCount: countProductOne,
-                            productTwoCount: countProductTwo,
+                      builder: (context) => PaymentPage(
                             hyperSDK: widget.hyperSDK,
                           ))))
         ],

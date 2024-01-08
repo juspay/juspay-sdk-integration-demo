@@ -165,7 +165,6 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                   MaterialPageRoute(
                       builder: (context) => PaymentPage(
                             hyperSDK: widget.hyperSDK,
-                            amount: amounts['totalAmount'].toString(),
                           ))))
         ],
       ),

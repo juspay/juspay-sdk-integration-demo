@@ -1,7 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
-import 'package:doc_app/screens/checkout.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -11,11 +10,9 @@ import 'response.dart';
 
 class PaymentPage extends StatefulWidget {
   final HyperSDK hyperSDK;
-  final String amount;
-  const PaymentPage({Key? key, required this.hyperSDK, required this.amount})
-      : super(key: key);
+  const PaymentPage({Key? key, required this.hyperSDK}) : super(key: key);
   @override
-  _PaymentPageState createState() => _PaymentPageState(amount);
+  _PaymentPageState createState() => _PaymentPageState();
 }
 
 class _PaymentPageState extends State<PaymentPage> {
@@ -24,14 +21,13 @@ class _PaymentPageState extends State<PaymentPage> {
   var paymentSuccess = false;
   var paymentFailed = false;
   var amount = "0";
-  _PaymentPageState(amount) {
-    this.amount = amount;
-  }
+  var orderId;
+  _PaymentPageState();
 
   @override
   Widget build(BuildContext context) {
     if (!processCalled) {
-      startPayment(amount);
+      startPayment();
     }
 //block:start:onBackPress
     return WillPopScope(
@@ -59,17 +55,18 @@ class _PaymentPageState extends State<PaymentPage> {
   }
 
   // block:start:startPayment
-  void startPayment(amount) async {
+  void startPayment() async {
     processCalled = true;
     var headers = {
       'Content-Type': 'application/json',
     };
 
     var requestBody = {
-      // block:start:updateOrderID
-      "order_id": "test" + (new Random().nextInt(900000) + 100000).toString(),
-      "amount": amount
-      // block:end:updateOrderID
+      //send the items selected by the user
+      "item_details": [
+        {"item_id": "12345", "quantity": 2},
+        {"item_id": "54321", "quantity": 1}
+      ]
     };
 
     // block:start:await-http-post-function
@@ -82,12 +79,11 @@ class _PaymentPageState extends State<PaymentPage> {
 
     if (response.statusCode == 200) {
       Map<String, dynamic> jsonResponse = jsonDecode(response.body);
-
+      orderId = jsonResponse["orderId"];
       // block:start:openPaymentPage
       widget.hyperSDK
           .openPaymentPage(jsonResponse['sdkPayload'], hyperSDKCallbackHandler);
       // block:end:openPaymentPage
-      
     } else {
       throw Exception(
           'API call failed with status code ${response.statusCode}');
@@ -114,7 +110,6 @@ class _PaymentPageState extends State<PaymentPage> {
         }
         var innerPayload = args["payload"] ?? {};
         var status = innerPayload["status"] ?? " ";
-        var orderId = args['orderId'];
 
         switch (status) {
           case "backpressed":
@@ -127,7 +122,7 @@ class _PaymentPageState extends State<PaymentPage> {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => ResponseScreen(),
+                    builder: (context) => const ResponseScreen(),
                     settings: RouteSettings(arguments: orderId)));
         }
     }
