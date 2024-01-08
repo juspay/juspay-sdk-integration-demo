@@ -1,19 +1,33 @@
-# How to use this repo#
+How to run this project:
+Setting up the project
 
-### What is this repository for? ###
+1. Make sure you have flutter installed You can check it by following command in the terminal 
 
-* This repo is being used for Juspay Documentation made using tesseract repo
+```flutter —version```
 
-### How do I get set up? ###
+You will get the response like this
 
-* This repo is used to show the code section of the documentation.
+    ```
+        Flutter 3.13.8 • channel stable • https://github.com/flutter/flutter.git
+        Framework • revision 6c4930c4ac (2 weeks ago) • 2023-10-18 10:57:55 -0500
+        Engine • revision 767d8c75e8
+        Tools • Dart 3.1.4 • DevTools 2.25.0
+    ```
+If you don't have flutter install, follow the steps mentioned https://docs.flutter.dev/get-started/install
 
-### Contribution guidelines ###
+2. Download the zip file and open the unzipped folder in VS Code
 
-* If you want to add any new product and/or platform. please follow the below steps.
+3. Open the VS Code terminal for this project and follow below instructions
 
-1. All the code content of a particular platform of a product is kept in a branch "productName" + "-" + "platformName".
-    Let suppose you are adding code for platform android in the product payment-page then the name of the branch will be 
-        payment-page-android
 
-2. And payment-page-android code have both Java and Kotlin so there will be two folders named accordingly and each folder should contain their demo code.
+Running The project
+1. Install all the project dependencies 
+
+    ```flutter pub get```
+
+Note: Before running the next step make sure you have local backend sample peoject as well as Emulator (Virtual Device) up and running
+2. Running the project: 
+
+```flutter run```
+
+ This command will run the project on the available virtual device

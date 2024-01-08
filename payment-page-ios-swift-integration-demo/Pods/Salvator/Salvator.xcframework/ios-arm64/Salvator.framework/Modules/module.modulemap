@@ -1,6 +1,0 @@
-framework module Salvator {
-  umbrella header "Salvator.h"
-  export *
-
-  module * { export * }
-}
