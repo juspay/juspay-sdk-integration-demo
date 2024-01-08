@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         // Use a Handler to delay the transition to the ProductsActivity
         Handler().postDelayed({
-            val intent = Intent(this@MainActivity, ProductsActivity::class.java)
+            val intent = Intent(this@MainActivity, CheckoutActivity::class.java)
             startActivity(intent) // Start the ProductsActivity
             finish() // Close the current activity (splash screen)
         }, SPLASH_SCREEN_TIME_OUT)

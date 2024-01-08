@@ -15,9 +15,6 @@
             android:name=".ResponsePage"
             android:exported="false" />
         <activity
-            android:name=".ProductsActivity"
-            android:exported="false" />
-        <activity
             android:name=".CheckoutActivity"
             android:exported="false" />
         <activity

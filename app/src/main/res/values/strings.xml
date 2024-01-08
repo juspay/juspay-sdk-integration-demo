@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Devtools</string>
     <string name="juspay_sdk_"> Juspay SDK Integration Demo </string>
-    <string name="home_screen"> Home Screen</string>
+    <string name="home_screen"> Checkout Screen</string>
     <string name="juspay_paym">Juspay Payments SDK should be initiated on this screen.</string>
     <string name="products">Products</string>
     <string name="product_1">Product 1</string>

@@ -55,13 +55,14 @@ class ResponsePage : AppCompatActivity() {
         val back = findViewById<ImageView>(R.id.imageView1)
         back.setOnClickListener {
             finish()
-            val i = Intent(this@ResponsePage, ProductsActivity::class.java)
+            val i = Intent(this@ResponsePage, CheckoutActivity::class.java)
             startActivity(i)
         }
 
         okay.setOnClickListener {
-            finishAffinity()
-            System.exit(0)
+            finish()
+            val i = Intent(this@ResponsePage, CheckoutActivity::class.java)
+            startActivity(i)
         }
     }
 }
