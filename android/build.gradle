@@ -10,6 +10,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        maven { url "https://maven.juspay.in/jp-build-packages/hyper-sdk/" }
     }
 
     dependencies {
@@ -22,6 +23,7 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+        maven { url "https://maven.juspay.in/jp-build-packages/hyper-sdk/" }
     }
 }
 
