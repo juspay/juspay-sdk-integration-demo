@@ -71,7 +71,6 @@ class CheckoutViewController: UIViewController {
             "customer_phone": "9876543201",
             "payment_page_client_id": "<CLIENT_ID>",
             "action": "paymentPage",
-            "return_url": "https://shop.merchant.com",
             "description": "OrderDescription",
             "first_name": "John",
             "last_name": "wick"
