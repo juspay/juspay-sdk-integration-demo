@@ -159,7 +159,6 @@ class ViewController: UIViewController {
             "customer_phone": "9876543210",
             "payment_page_client_id": "hdfcmaster",
             "action": "paymentPage",
-            "return_url": "https://shop.merchant.com",
             "description": "Complete your payment",
             "first_name": "John",
             "last_name": "wick"
