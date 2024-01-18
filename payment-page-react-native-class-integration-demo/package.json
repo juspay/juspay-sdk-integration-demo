@@ -34,7 +34,7 @@
     "react-test-renderer": "17.0.2"
   },
   //block:start:add-dependency-ios
-  "hyperSdkIOSVersion": "2.1.23",
+  "hyperSdkIOSVersion": "2.1.31",
   //block:end:add-dependency-ios
   "jest": {
     "preset": "react-native"

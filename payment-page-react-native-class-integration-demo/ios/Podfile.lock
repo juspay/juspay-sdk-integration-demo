@@ -74,9 +74,9 @@ PODS:
   - fmt (6.2.1)
   - glog (0.3.5)
   - hyper-sdk-react (3.0.1):
-    - HyperSDK (= 2.1.23)
+    - HyperSDK (= 2.1.31)
     - React
-  - HyperSDK (2.1.23):
+  - HyperSDK (2.1.31):
     - JuspaySafeBrowser (= 0.1.77)
     - Salvator (= 1.0.2)
   - JuspaySafeBrowser (0.1.77)
