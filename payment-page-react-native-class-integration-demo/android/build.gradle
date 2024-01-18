@@ -10,7 +10,7 @@ buildscript {
         // block:start:add-ext-property
         kotlin_version = '1.6.10'
         clientId = "<CLIENT_ID>"
-        hyperSDKVersion = "2.1.31"
+        hyperSDKVersion = "2.1.20"
 
         // block:end:add-ext-property
     }
