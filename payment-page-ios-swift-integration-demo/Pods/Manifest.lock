@@ -1,12 +1,12 @@
 PODS:
-  - HyperSDK (2.1.23):
+  - HyperSDK (2.1.31):
     - JuspaySafeBrowser (= 0.1.77)
     - Salvator (= 1.0.2)
   - JuspaySafeBrowser (0.1.77)
   - Salvator (1.0.2)
 
 DEPENDENCIES:
-  - HyperSDK (= 2.1.23)
+  - HyperSDK (= 2.1.31)
 
 SPEC REPOS:
   trunk:
