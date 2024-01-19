@@ -1,0 +1,24 @@
+"payment_filter": {
+  "allowDefaultOptions": true,
+  "emiOptions": {
+    "standardEmi": {
+      "credit": {
+        "enable": true,
+        "filters": [
+          {
+           "issuerFilter": {
+               "issuers": ["JP_HDFC"],
+              "tenures": ["3::3"],
+              "enable": true
+            },
+            "paymentMethodType": "CARD",
+            "paymentMethod": "CARD",
+            "enable": true
+          }
+        ]
+      },
+      "enable": true
+    }
+  }
+}
+}
