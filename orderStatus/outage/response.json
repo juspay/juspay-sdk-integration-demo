@@ -1,0 +1,39 @@
+{
+    "beneficiarySpecificData": [
+        {
+            "status": "FLUCTUATE",
+            "bankName": "HDFC Bank",
+            "bankCode": "607152",
+            "mode": "VISADIRECT"
+        },
+        {
+            "status": "DOWN",
+            "bankName": "Yes Bank",
+            "ifscIdentifier": "YESB",
+            "bankCode": "607223",
+            "mode": "IMPS"
+        },
+        {
+            "status": "DOWN",
+            "vpaHandler": "@oksbi",
+            "mode": "UPI"
+        }
+    ],
+    "gatewaySpecificData": [
+        {
+            "status": "FLUCTUATE",
+            "mode": "VISADIRECT",
+            "gateway": "JUSPAY"
+        },
+        {
+            "status": "DOWN",
+            "mode": "IMPS",
+            "gateway": "ICICI"
+        },
+        {
+            "status": "DOWN",
+            "mode": "UPI",
+            "gateway": "CASHFREE"
+        }
+    ]
+}
