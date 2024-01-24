@@ -27,10 +27,7 @@ class PHPKit {
         $requestOption = new RequestOptions();
         $requestOption->withCustomerId("testing-customer-one");
         $order = Order::status($params, $requestOption);
-        echo "id: ". $order->orderId . PHP_EOL;
-        echo "amount: ". $order->amount . PHP_EOL;
-        echo "status: " . $order->status . PHP_EOL;
-        echo "order env" . getenv("ORDER_ID") . PHP_EOL;
+        echo "order: ". json_encode($order->__get("*")) . PHP_EOL;
        } catch ( JuspayException $e ) {
             echo "error code" . $e->getHttpResponseCode() . PHP_EOL;
             echo "error message: " . $e->getErrorMessage() . PHP_EOL;
