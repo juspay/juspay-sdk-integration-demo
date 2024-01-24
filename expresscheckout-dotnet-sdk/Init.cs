@@ -34,9 +34,9 @@ namespace  dotnet_server
                     Config.PublicKey = File.ReadAllText(Config.PublicKeyPath);
                 }
                 // block:start:initialize-juspay-config
-                JuspayEnvironment.JuspayJWT = new JuspayJWTRSA(Config.KeyUuid, Config.PublicKey, Config.PrivateKey);
-                JuspayEnvironment.MerchantId = Config.MerchantId;
-                JuspayEnvironment.BaseUrl = "https://smartgatewayuat.hdfcbank.com";
+                JuspayEnvironment.Instance.JuspayJWT = new JuspayJWTRSA(Config.KeyUuid, Config.PublicKey, Config.PrivateKey);
+                JuspayEnvironment.Instance.MerchantId = Config.MerchantId;
+                JuspayEnvironment.Instance.BaseUrl = "https://smartgatewayuat.hdfcbank.com";
                 // block:end:initialize-juspay-config
             }
         }
