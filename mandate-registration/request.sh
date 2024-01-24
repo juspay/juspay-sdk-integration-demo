@@ -13,4 +13,5 @@ curl --location --request POST 'https://api.juspay.in/session' \
     "action":"paymentPage",
     "options.create_mandate":"OPTIONAL/REQUIRED",
     "mandate.max_amount":"1000.00",
+    "tets"
 }'
