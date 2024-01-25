@@ -18,7 +18,7 @@
       "txn_id": "juspay-2348******3498-1",
       "txn_detail": {
         "txn_uuid": "eulmy******y1Syy",
-        "txn_object_type": "EMANDATE_REGISTER",
+        "txn_object_type": "EMANDATE_PAYMENT",
         "txn_id": "juspay-2348******3498-1",
         "txn_amount": 1,
         "tax_amount": null,
