@@ -22,7 +22,7 @@ namespace DotnetServer.Controllers
             string customerId = "testing-customer-one";
             int amount = new Random().Next(0,100);
             RequestOptions requestOptions = new RequestOptions { CustomerId = customerId };
-            CreateOrderSessionInput createOrderSessionInput = new CreateOrderSessionInput(new Dictionary<string, object> { { "amount", amount }, { "order_id", orderId }, { "customer_id", customerId }, { "payment_page_client_id", Init.Config.PaymentPageClientId }, { "action", "paymentPage" }, { "return_url", "http://localhost:5000/handleJuspayResponse" }, { "metadata.GOCASHFREE:gateway_reference_id", "V3Cashfree" } });
+            CreateOrderSessionInput createOrderSessionInput = new CreateOrderSessionInput(new Dictionary<string, object> { { "amount", amount }, { "order_id", orderId }, { "customer_id", customerId }, { "payment_page_client_id", Init.Config.PaymentPageClientId }, { "action", "paymentPage" }, { "return_url", "http://localhost:5000/handleJuspayResponse" } });
             try
             {
                 JuspayResponse sessionRes = await new OrderSession().CreateAsync(createOrderSessionInput, requestOptions);
