@@ -1,0 +1,15 @@
+{
+    "order_id": "o1704808129",
+    "status": "PENDING_VBV",
+    "payment": {
+        "authentication": {
+            "url": "http://localhost:8080/v2/pay/start/azharamin/mozicWi4sesPKYPnPTD",
+            "method": "GET"
+        }
+    },
+    "txn_uuid": "mozicWi4sesPKYPnPTD",
+    "offer_details": {
+        "offers": []
+    },
+    "txn_id": "azharamin-o1704808129-1"
+}

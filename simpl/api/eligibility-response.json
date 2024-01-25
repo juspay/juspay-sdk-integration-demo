@@ -1,0 +1,25 @@
+{
+    "payment_methods_eligibility": [
+        {
+            "status": "SUCCESS",
+            "payment_method": "SIMPL",
+            "payment_method_type": "WALLET",
+            "is_eligible": true,
+            "balance": 0,
+            "gateway_error_code": "pending_dues",
+            "gateway_error_message": "pending_dues",
+            "description": "SIMPL",
+            "eligibility_strategy": "USER"
+        },
+        {
+            "status": "NOT_ACCESSIBLE",
+            "payment_method": "SIMPL_SOD",
+            "payment_method_type": "WALLET",
+            "is_eligible": false,
+            "gateway_error_code": "unable_to_process",
+            "gateway_error_message": "unable_to_process",
+            "description": "Simpl | Pay After Delivery",
+            "eligibility_strategy": "USER"
+        }
+    ]
+}

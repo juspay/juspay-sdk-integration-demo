@@ -1,0 +1,19 @@
+{
+    "order_id": "o1704449235",
+    "status": "SUCCESS",
+    "amount": 1,
+    "sent_to_gateway": true,
+    "unique_request_id": "refund_2384590b-caae-42ae-b6ef-387b84f4cf88",
+    "gateway": "SIMPL",
+    "created": "2024-01-05T10:13:37Z",
+    "initiated_by": "API",
+    "refund_source": "SIMPL",
+    "refund_arn": "97dad49a-a847-40da-b7ff-37a0a13c1e24",
+    "error_message": null,
+    "epg_txn_id": "97dad49a-a847-40da-b7ff-37a0a13c1e24",
+    "txn_id": "azharamin-o1704449235-1",
+    "authorization_id": null,
+    "reference_id": null,
+    "response_code": null,
+    "refund_type": "STANDARD"
+}

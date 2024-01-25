@@ -1,0 +1,32 @@
+{
+    "list": [
+        {
+            "wallet": "SIMPL",
+            "token": "tk_90e2003b211f4fd4a769ccb1ccb3cfc8",
+            "last_refreshed": "2023-12-18T07:38:37Z",
+            "juspay_bank_code": null,
+            "object": "wallet_account",
+            "id": "wlm_b7f2f74e840d4f3ea99659dc183e8a7f",
+            "current_balance": null,
+            "sub_details": [
+                {
+                    "payment_method": "SIMPL_SOD",
+                    "payment_method_type": "WALLET",
+                    "last_refreshed": "2023-12-18T07:38:37Z",
+                    "current_balance": 1997300
+                },
+                {
+                    "payment_method": "SIMPL",
+                    "payment_method_type": "WALLET",
+                    "last_refreshed": "2023-12-18T07:38:37Z",
+                    "current_balance": null
+                }
+            ],
+            "linked": true
+        }
+    ],
+    "offset": 0,
+    "count": 1,
+    "total": 1,
+    "object": "list"
+}
