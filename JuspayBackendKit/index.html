@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+</head>
+<style>
+    .container {
+        height: 80vh;
+        margin-left: auto;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form {
+        margin: 0 auto;
+        margin-top: 3rem;
+        border: 1px solid gray;
+        padding: 40px;
+        border-radius: 5px;
+        box-shadow: 2px 2px gray;
+        display: flex;
+        flex-direction: column;
+    }
+    #submitBtn {
+       align-self: center;
+    }
+
+    .button-1 {
+        background-color: #05f;
+        border-radius: 8px;
+        border-style: none;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 1rem;
+        font-weight: 500;
+        height: 40px;
+        line-height: 20px;
+        padding: 10px;
+        text-align: center;
+        transition: color 100ms;
+        vertical-align: baseline;
+    }
+
+    .button-1:hover,
+    .button-1:focus {
+        background-color: #472ed5;
+    }
+    .heading {
+        display: flex;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div class="heading">
+        <h2>Checkout Screen</h2>
+    </div>
+    <div class="container">
+        <div class="form">
+            <button id="submitBtn" class="button-1">Open Payment Page</button>
+        </div>
+    </div>
+    <script>
+        document.getElementById("submitBtn").addEventListener("click", function() {
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", 'initiateJuspayPayment', true);
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4) {
+                    var response = JSON.parse(xhr.responseText);
+                    if (xhr.status == 200) {
+                        if (response.status === 'NEW') {
+                            var url = response.payment_links.web;
+                            return window.location.href = url;
+                        }
+                    }
+                    alert(`http status code: ${xhr.status} message: ${response.message}`);
+                }
+            };
+            xhr.send(null);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "expresscheckout-nodejs-sample-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "expresscheckout-nodejs": "^1.0.0"
+  }
+}
