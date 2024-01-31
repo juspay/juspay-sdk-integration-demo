@@ -1,0 +1,34 @@
+{
+  "status": "NEW",
+  "id": "ordeh_xxxxxxxxxxxxxxxxxxxx",
+  "order_id": "order1697020098a",
+  "payment_links": {
+    "web": "https://api.juspay.in/orders/ordeh_xxxxxxxxxxxxxxxxxxxx/payment-page"
+  },
+  "sdk_payload": {
+    "requestId": "12398b5571d74c3388a74004bc24370c",
+    "service": "in.juspay.hyperpay",
+    "payload": {
+      "clientId": "yourClientId",
+      "amount": "1.0",
+      "merchantId": "yourMerchantId",
+      "clientAuthToken": "tkn_xxxxxxxxxxxxxxxxxxxxx",
+      "clientAuthTokenExpiry": "2022-03-12T20:29:23Z",
+      "environment": "production",
+      "action": "paymentPage",
+      "customerId": "cth_qYcqE4hVnwL2Esnk",
+      "returnUrl": "https://juspay.in/",
+      "currency": "INR",
+      "firstName": "Sim",
+      "customerPhone": "6369288490",
+      "customerEmail": "juspay.jus@gmail.com",
+      "orderId": "order1697020098a",
+      "mandate.endDate": "1800037800000",
+      "mandate.maxAmount": "3.0",
+      "mandate.startDate": "1705380466766",
+      "options.createMandate": "REQUIRED",
+      "orderType": "TPV_PAYMENT",
+      "metadata.bankAccountDetails": "[{\"bank_account_number\":\"83748239234872\",\"bank_ifsc\":\"AABC0876543\",\"bank_beneficiary_name\":\"Abc\"}]",
+    }
+  }
+}
