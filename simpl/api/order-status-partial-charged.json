@@ -1,0 +1,187 @@
+{
+    "customer_email": "arnab.das@juspay.in",
+    "customer_phone": "9608754682",
+    "customer_id": "cth_iRT3ZLCcNdnigB63",
+    "status_id": 37,
+    "status": "PARTIAL_CHARGED",
+    "id": "ordeh_7f8f8fa6feba401689be0bbb9b9e7690",
+    "merchant_id": "azharamin",
+    "amount": 3,
+    "currency": "INR",
+    "order_id": "o1702617427",
+    "date_created": "2023-12-15T05:17:08Z",
+    "return_url": "https://sandbox.juspay.in",
+    "product_id": "",
+    "payment_links": {
+        "iframe": "http://localhost:8080/merchant/ipay/ordeh_7f8f8fa6feba401689be0bbb9b9e7690",
+        "web": "http://localhost:8080/merchant/pay/ordeh_7f8f8fa6feba401689be0bbb9b9e7690",
+        "mobile": "http://localhost:8080/merchant/pay/ordeh_7f8f8fa6feba401689be0bbb9b9e7690?mobile=true"
+    },
+    "udf1": "",
+    "udf2": "",
+    "udf3": "",
+    "udf4": "",
+    "udf5": "",
+    "udf6": "",
+    "udf7": "",
+    "udf8": "",
+    "udf9": "",
+    "udf10": "",
+    "txn_id": "azharamin-o1702617427-1",
+    "payment_method_type": "WALLET",
+    "auth_type": "",
+    "payment_method": "SIMPL_SOD",
+    "refunded": false,
+    "amount_refunded": 0,
+    "effective_amount": 3,
+    "resp_code": null,
+    "resp_message": null,
+    "bank_error_code": "CHARGED",
+    "bank_error_message": "CHARGED",
+    "txn_uuid": "mozpqjz7Ugzxdtj6KD5",
+    "txn_detail": {
+        "txn_id": "azharamin-o1702617427-1",
+        "order_id": "o1702617427",
+        "status": "PARTIAL_CHARGED",
+        "error_code": "CHARGED",
+        "net_amount": 3,
+        "surcharge_amount": null,
+        "tax_amount": null,
+        "txn_amount": 3,
+        "offer_deduction_amount": null,
+        "gateway_id": 41,
+        "currency": "INR",
+        "express_checkout": false,
+        "redirect": true,
+        "txn_uuid": "mozpqjz7Ugzxdtj6KD5",
+        "gateway": "SIMPL",
+        "error_message": "CHARGED",
+        "created": "2023-12-15T05:17:31Z",
+        "txn_flow_type": "DIRECT_DEBIT"
+    },
+    "payment_gateway_response": {
+        "resp_code": "CHARGED",
+        "rrn": "",
+        "created": "2023-12-15T05:17:33Z",
+        "epg_txn_id": "b8398f8b-063a-4c35-970c-d0f803b4941e",
+        "resp_message": "CHARGED",
+        "auth_id_code": "NA",
+        "txn_id": "azharamin-o1702617427-1",
+        "gateway_response": {
+            "api_version": "1",
+            "data": "<transaction><order_id>azharamin-o1702617427-1</order_id><status>CHARGED</status><display><title>Juspay Sample Merchant (SOD)</title></display><cancelled_amount_in_paise>0</cancelled_amount_in_paise><amount_in_paise>300</amount_in_paise><id>b8398f8b-063a-4c35-970c-d0f803b4941e</id><claimed_amount_in_paise>0</claimed_amount_in_paise><order_data><billing_address><line2></line2><state></state><pincode></pincode><country></country><city>Mumbai</city><line1>Mo</line1></billing_address><shipping_address><line2></line2><state></state><pincode></pincode><country></country><city>Mumbai</city><line1></line1></shipping_address><items><rate_per_item>1</rate_per_item><quantity>1</quantity><sku>12345</sku><rate_per_item>1</rate_per_item><quantity>1</quantity><sku>12346</sku><rate_per_item>1</rate_per_item><quantity>1</quantity><sku>12347</sku></items><metadata><email>arnab.das@juspay.in</email><customer_id>cth_iRT3ZLCcNdnigB63</customer_id></metadata></order_data></transaction>",
+            "id": "b8398f8b-063a-4c35-970c-d0f803b4941e",
+            "success": "true"
+        }
+    },
+    "gateway_id": 41,
+    "metadata": {
+        "SIMPL:gateway_reference_id": "testmode",
+        "payment_links": {
+            "iframe": "http://localhost:8080/merchant/ipay/ordeh_7f8f8fa6feba401689be0bbb9b9e7690",
+            "web": "http://localhost:8080/merchant/pay/ordeh_7f8f8fa6feba401689be0bbb9b9e7690",
+            "mobile": "http://localhost:8080/merchant/pay/ordeh_7f8f8fa6feba401689be0bbb9b9e7690?mobile=true"
+        }
+    },
+    "gateway_reference_id": "testmode",
+    "offers": [],
+    "txn_sub_details": [
+        {
+            "txn_id": "moz1702617823",
+            "order_id": "o1702617427",
+            "status": "CHARGED",
+            "error_code": null,
+            "net_amount": 1,
+            "surcharge_amount": null,
+            "tax_amount": null,
+            "txn_amount": 1,
+            "offer_deduction_amount": null,
+            "gateway_id": 41,
+            "currency": "INR",
+            "express_checkout": false,
+            "redirect": true,
+            "txn_uuid": "mozkQbvE5ZBK4FwWruk",
+            "gateway": "SIMPL",
+            "error_message": "",
+            "txn_object_type": "PARTIAL_CAPTURE",
+            "source_object": "TXN_SUB_DETAIL",
+            "source_object_id": "azharamin-o1702617427-1",
+            "created": "2023-12-15T05:23:43Z",
+            "order_amount": 3,
+            "payment_gateway_response": {
+                "resp_code": "PARTIALLY_CLAIMED",
+                "rrn": "",
+                "created": "2023-12-15T05:23:44Z",
+                "epg_txn_id": "b8398f8b-063a-4c35-970c-d0f803b4941e",
+                "resp_message": "PARTIALLY_CLAIMED",
+                "auth_id_code": "NA",
+                "txn_id": "moz1702617823"
+            },
+            "txn_flow_type": "DIRECT_DEBIT"
+        }
+    ],
+    "captured_amount": 1,
+    "refundable_amount": 1,
+    "wallet": {
+        "txn_flow_type": "DIRECT_DEBIT"
+    },
+    "basket": [
+        {
+            "productName": null,
+            "productUrl": "https://www.abc.def/xyz",
+            "category": "Electronics",
+            "quantity": 1,
+            "customParams": {
+                "name2": "value2",
+                "name1": "value1"
+            },
+            "passenger": null,
+            "id": "LIFECELL",
+            "sku": "12345",
+            "productRisk": null,
+            "unitPrice": 1,
+            "shippingDestinationType": null,
+            "description": "SampleDescription",
+            "productCode": null,
+            "sellerType": "VENDOR"
+        },
+        {
+            "productName": null,
+            "productUrl": "https://www.abc.def/xyz",
+            "category": "Electronics",
+            "quantity": 1,
+            "customParams": {
+                "name2": "value2",
+                "name1": "value1"
+            },
+            "passenger": null,
+            "id": "LIFECELL2",
+            "sku": "12346",
+            "productRisk": null,
+            "unitPrice": 1,
+            "shippingDestinationType": null,
+            "description": "SampleDescription",
+            "productCode": null,
+            "sellerType": "VENDOR"
+        },
+        {
+            "productName": null,
+            "productUrl": "https://www.abc.def/xyz",
+            "category": "Electronics",
+            "quantity": 1,
+            "customParams": {
+                "name2": "value2",
+                "name1": "value1"
+            },
+            "passenger": null,
+            "id": "LIFECELL3",
+            "sku": "12347",
+            "productRisk": null,
+            "unitPrice": 1,
+            "shippingDestinationType": null,
+            "description": "SampleDescription",
+            "productCode": null,
+            "sellerType": "VENDOR"
+        }
+    ]
+}
