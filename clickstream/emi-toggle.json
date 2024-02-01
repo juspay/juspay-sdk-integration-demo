@@ -1,0 +1,11 @@
+{
+  "event": "log_stream",
+  "payload": {
+    "category": "action",
+    "subcategory": "user",
+    "label": "button_clicked",
+    "value": {
+      "button_name": "nocost_toggle_enabled"
+    }
+  }
+}
