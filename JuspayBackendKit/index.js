@@ -1,6 +1,8 @@
 const fs = require('fs')
 const express = require('express')
+// block:start:importing-sdk
 const { Juspay, APIError } = require('expresscheckout-nodejs')
+// block:start:importing-sdk
 
 /**
  * Setup expresscheckout-node sdk
@@ -42,6 +44,8 @@ app.use(express.urlencoded({ extended: true }))
 /**
  * route:- initiateJuspayPayment
  */
+
+// block:start:session-function
 app.post('/initiateJuspayPayment', async (req, res) => {
     const orderId = `order_${Date.now()}`
     const amount = 1 + Math.random() * 100 | 0
@@ -70,10 +74,9 @@ app.post('/initiateJuspayPayment', async (req, res) => {
         return res.json(makeError())
     }
 })
+ // block:end:session-function
 
-/**
- * route:- handleJuspayResponse
- */
+// block:start:order-status-function
 app.post('/handleJuspayResponse', async (req, res) => {
     const orderId = req.body.order_id || req.body.orderId
 
@@ -114,6 +117,7 @@ app.post('/handleJuspayResponse', async (req, res) => {
         return res.json(makeError())
     }
 })
+// block:end:order-status-function
 
 
 app.get('/', function(req,res) {
