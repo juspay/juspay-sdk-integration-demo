@@ -5,8 +5,6 @@
         "action": "upiTxn",
         "orderId": "hyperorder45314",
         "getAvailableApps": true,
-        "getMandateApps": true,
-        "shouldCreateMandate": true,
-        "showLoader": true
+        "getMandateApps": true
     }
 }
