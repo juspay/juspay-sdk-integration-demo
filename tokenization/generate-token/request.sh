@@ -2,7 +2,7 @@ curl --request POST \
      --url https://api.juspay.in/generateToken \
      --header 'Authorization: Basic XXXXAPIKEYXXXXX' \
      --header 'accept: application/json' \
-     --header 'authorization: Basic NkU3RDE3NzA5REU0RkQ5QkY2QUYwMzlEQ0E1QTk5Og==' \
+     --header 'authorization: Basic NxxxxxxxxxxxxxxxxxxxxkY2QUYwMzlEQ0E1QTk5Og==' \
      --header 'content-type: application/json' \
      --header 'x-merchantId: JuspayMID' \
      --data 'orderData={         "consentId" : "ae3877f948bd4c95",         "customerId" : "abcd6831",         "amount" : "1",         "currency": "INR"     }' \
