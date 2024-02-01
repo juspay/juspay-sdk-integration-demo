@@ -3,9 +3,9 @@
   "payload": {
     "category": "action",
     "subcategory": "user",
-    "label": "button_clicked",
+    "label": "item_selected",
     "value": {
-      "button_name": "savedcard_view_emi_plans"
+      "itemName": "addcard_view_emi_plans"
     }
   }
 }
