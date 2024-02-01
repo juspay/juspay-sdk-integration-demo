@@ -1,0 +1,11 @@
+{
+  "event": "log_stream",
+  "payload": {
+    "category": "action",
+    "subcategory": "user",
+    "label": "button_clicked",
+    "value": {
+      "button_name": "SELECTED_STANDARD_EMI"
+    }
+  }
+}
