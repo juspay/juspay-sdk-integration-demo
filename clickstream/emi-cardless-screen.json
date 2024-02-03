@@ -1,0 +1,14 @@
+{
+    "event": "log_stream",
+    "payload": {
+        "category": "screen",
+        "subcategory": "screen",
+        "label": "current_screen",
+        "value": {
+            "url": "",
+            "screen_name": "CardlessEMIPlansScreen",
+            "presentation_type": "screen",
+            "id": 4
+        }
+    }
+}
