@@ -5,4 +5,3 @@ curl -X POST https://api.juspay.in/txns \
 -d "card_token=:card_token" \
 -d "redirect_after_payment=true" \
 -d "format=json"
-Sam
