@@ -1,29 +1,54 @@
 {
-    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+    "requestId": "bfc553f2-bb20-4bc6-b8a1-a4eea116d67c",
     "service": "in.juspay.hyperapi",
     "payload": {
-        "action": "cardList",
         "merchantId": "picasso",
-        "customerId": "test_customer_ns1",
-        "cards": [
-            {
-                "nickname": "",
-                "nameOnCard": "Amaresh",
+        "action": "cardList",
+        "customerId": "test_customer",
+        "cards": [{
+                "cardIsin": "459156",
+                "cardFingerprint": "3rij7q99sdcerj72g82ca59csb",
+                "providerCategory": "NETWORK",
+                "nameOnCard": "name",
+                "cardIssuerCountry": "INDIA",
+                "cardNumber": "XXXX-XXXXXXXX-1614",
+                "provider": "VISA",
                 "expired": false,
-                "cardType": "DEBIT",
-                "cardToken": "934bad8b-a522-4e7f-8c13-a2337e2c5c0e",
-                "cardReference": "afb0e819d00c1006f550d9f8ac37dde4",
-                "cardNumber": "5419-XXXXXXXX-0636",
-                "cardIssuer": "HDFC BANK",
-                "cardIsin": "541919",
-                "cardFingerprint": "43kvhke93lbfrvstuasd4imoot",
-                "cardExpYear": "2023",
+                "cardToken": "tkn_39aa4c3520674d2e96e2fe4c57ae1c3d",
                 "cardExpMonth": "04",
-                "cardBrand": "MASTERCARD"
+                "cardReference": "cref_35b79c2e6c334c24a17967ddfc084b85",
+                "juspayBankCode": "JP_SBI",
+                "cardExpYear": "2026",
+                "cardIssuer": "SBI",
+                "cardType": "DEBIT",
+                "cardSubType": "VISA CLASSIC",
+                "tokenizeSupport": false,
+                "cardBrand": "VISA",
+                "nickname": "",
+                "token": {
+                    "expiryMonth": "04",
+                    "cardIsin": "449136560",
+                    "cardFingerprint": "3rij7q99sdcerj72g82ca59csb",
+                    "lastFourDigits": "9815",
+                    "cvvLessSupport": true,
+                    "par": "VRIPPIFILTERED0014621146339479287179970",
+                    "tokenizationStatus": "ACTIVE",
+                    "cardReference": "cref_35b79c2e6c334c24a17967ddfc084b85",
+                    "cvvLessSupportedGateways": [
+                        "CYBERSOURCE",
+                        "PAYU",
+                        "PAYTM_V2",
+                        "BILLDESK",
+                        "RAZORPAY",
+                        "EASEBUZZ"
+                    ],
+                    "expiryYear": "2026"
+                }
             }
+
         ]
     },
-    "error": false,
     "errorCode": "",
-    "errorMessage": ""
+    "errorMessage": "",
+    "error": false
 }
