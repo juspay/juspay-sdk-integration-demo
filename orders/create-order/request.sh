@@ -34,9 +34,3 @@ curl --location --request POST 'https://api.juspay.in/orders' \
 --data-urlencode 'shipping_address_phone=9962881912' \
 --data-urlencode 'shipping_address_country_code_iso=IND' \
 --data-urlencode 'shipping_address_country=India' \
---data-urlencode 'metadata.PAYTM:PROMO_CAMP_ID=xyz' \
---data-urlencode 'metadata.PAYTM:CUST_ID=1234' \
---data-urlencode 'metadata.PAYU:offer_key=1234' \
---data-urlencode 'metadata.PAYU:gateway_reference_id=bus' \
---data-urlencode 'options.get_client_auth_token=true' \
---data-urlencode 'metadata.subvention_amount=90'
