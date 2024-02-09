@@ -42,4 +42,11 @@ curl --location 'https://api.juspay.in/txns' \
 --data-urlencode 'order.shipping_address_phone=9962881912' \
 --data-urlencode 'order.shipping_address_country_code_iso=IND' \
 --data-urlencode 'order.shipping_address_country=India' \
+--data-urlencode 'order.metadata.PAYTM%3APROMO_CAMP_ID=xyz' \
+--data-urlencode 'order.metadata.PAYTM%3ACUST_ID=1234' \
+--data-urlencode 'order.metadata.PAYU%3Aoffer_key=1234' \
+--data-urlencode 'order.metadata.PAYU%3Agateway_reference_id=bus' \
+--data-urlencode 'order.options.get_client_auth_token=true' \
+--data-urlencode 'order.metadata.subvention_amount=90' \
+--data-urlencode 'order.metadata.auto_refund_post_success=true'
 --data-urlencode 'format=json'
