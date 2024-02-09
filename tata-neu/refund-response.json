@@ -1,0 +1,102 @@
+{
+    "order_id": "jus_1688464018",
+    "udf3": "",
+    "status": "CHARGED",
+    "amount": 2001,
+    "auth_type": "",
+    "wallet": {
+        "txn_flow_type": "DIRECT_DEBIT"
+    },
+    "refunded": false,
+    "udf8": "",
+    "udf5": "",
+    "payment_method": "TATANEU",
+    "gateway_id": 274,
+    "refunds": [
+        {
+            "status": "PENDING",
+            "amount": 1000.56,
+            "sent_to_gateway": false,
+            "unique_request_id": "refund_1688464261",
+            "error_code": null,
+            "created": "2023-07-04T09:51:01Z",
+            "initiated_by": "API",
+            "refund_source": "TATANEU",
+            "error_message": "",
+            "id": null,
+            "refund_type": "STANDARD",
+            "ref": null
+        }
+    ],
+    "udf2": "",
+    "payment_method_type": "WALLET",
+    "txn_uuid": "moziMcc9jqDkXu6PjxW",
+    "udf4": "",
+    "customer_id": "cth_dN9M8u81i16LcLdz",
+    "udf10": "",
+    "bank_pg": null,
+    "payment_links": {
+        "iframe": "https://sandbox.juspay.in/merchant/ipay/ordeh_31968b016bce4cafae0b91f95f71b728",
+        "web": "https://sandbox.juspay.in/merchant/pay/ordeh_31968b016bce4cafae0b91f95f71b728",
+        "mobile": "https://sandbox.juspay.in/merchant/pay/ordeh_31968b016bce4cafae0b91f95f71b728?mobile=true"
+    },
+    "effective_amount": 2001,
+    "udf1": "",
+    "payment_gateway_response": {
+        "auth_id_code": null,
+        "created": "2023-07-04T09:47:07Z",
+        "rrn": null,
+        "epg_txn_id": "tngcrdm64I0J85E40000",
+        "txn_id": "integrations_juspay-jus_1688464018-1",
+        "resp_message": "Transaction successful",
+        "resp_code": "Success"
+    },
+    "product_id": "",
+    "txn_detail": {
+        "order_id": "jus_1688464018",
+        "status": "CHARGED",
+        "net_amount": 2001,
+        "error_code": "",
+        "gateway_id": 274,
+        "surcharge_amount": null,
+        "txn_uuid": "moziMcc9jqDkXu6PjxW",
+        "gateway": "TATANEU",
+        "created": "2023-07-04T09:47:06Z",
+        "tax_amount": null,
+        "txn_amount": 2001,
+        "error_message": "",
+        "currency": "INR",
+        "redirect": true,
+        "express_checkout": false,
+        "txn_id": "integrations_juspay-jus_1688464018-1",
+        "txn_flow_type": "DIRECT_DEBIT"
+    },
+    "amount_refunded": 1000.56,
+    "customer_email": "sivashankari@juspay.in",
+    "currency": "INR",
+    "customer_phone": "8111111185",
+    "metadata": {
+        "TATANEU:gateway_reference_id": "tataneu_uat",
+        "payment_links": {
+            "iframe": "https://sandbox.juspay.in/orders/ordeh_31968b016bce4cafae0b91f95f71b728/payment-page",
+            "web": "https://sandbox.juspay.in/orders/ordeh_31968b016bce4cafae0b91f95f71b728/payment-page",
+            "mobile": "https://sandbox.juspay.in/orders/ordeh_31968b016bce4cafae0b91f95f71b728/payment-page"
+        },
+        "payment_page_client_id": "defaultclient"
+    },
+    "bank_error_message": "",
+    "id": "ordeh_31968b016bce4cafae0b91f95f71b728",
+    "txn_id": "integrations_juspay-jus_1688464018-1",
+    "merchant_id": "integrations_juspay",
+    "maximum_eligible_refund_amount": 1000.44,
+    "udf7": "",
+    "date_created": "2023-07-04T09:46:58Z",
+    "bank_error_code": "",
+    "offers": [],
+    "udf9": "",
+    "gateway_reference_id": "tataneu_uat",
+    "return_url": "https://www.google.co.in",
+    "status_id": 21,
+    "rewards_breakup": null,
+    "udf6": ""
+}
