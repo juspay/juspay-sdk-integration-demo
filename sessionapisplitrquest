@@ -4,11 +4,10 @@ curl --location --request POST 'https://api.juspay.in/session' \
 --header 'Authorization: Basic auth=' \
 --data-raw '{
 "order_id":"NewOrder_10101120",
-"amount":"100.0",
+"amount":"3.00",
 "customer_id":"dummycustomer1",
 "customer_email":"test@gmail.com",
 "customer_phone":"9999999912",
 "payment_page_client_id":"test",
 "action":"paymentPage",
-"metadata.split_settlement_details":"{\"marketplace\":{\"amount\":50},\"mdr_borne_by\":\"ALL\",\"vendor\":{\"split\":[{\"amount\":50,\"merchant_commission\":0,\"sub_mid\":\"Pine Labs Private Limited\"}]}}"
-}'
+"metadata.split_settlement_details":"{\"marketplace\":{\"amount\":1},\"mdr_borne_by\":\"ALL\",\"vendor\":{\"split\":[{\"amount\":1,\"merchant_commission\":0,\"sub_mid\":\"Vendor1\",\"notes\":\"{\\\"note\\\":{\\\"juspayVendorId\\\":\\\"Vendor1\\\",\\\"transactionId\\\":\\\"ID\\\"},\\\"linked_account_notes\\\":[\\\"transactionId\\\",\\\"proposalNumber\\\"]}\"},{\"amount\":1,\"merchant_commission\":0,\"sub_mid\":\"Vendor2\",\"notes\":\"{\\\"note\\\":{\\\"juspayVendorId\\\":\\\"Vendor2\\\",\\\"transactionId\\\":\\\"ID\\\"},\\\"linked_account_notes\\\":[\\\"transactionId\\\",\\\"proposalNumber\\\"]}\"}]}}
