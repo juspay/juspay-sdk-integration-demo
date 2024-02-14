@@ -2,14 +2,14 @@
 "service":"in.juspay.hyperpay",
 "payload":{
 "action":"paymentPage",
-"clientId":"slice",
-"merchantId":"slice",
+"clientId":"test",
+"merchantId":"test",
 "environment":"sandbox",
-"customerId":"9742144874",
-"orderId":"DW-nUw8zGk6f0",
-"amount":"500.00",
+"customerId":"97474",
+"orderId":"DW-TEST",
+"amount":"2.00",
 "endUrls":["https://sandbox.juspay.in/end"],
 "customerMobile":"9742144874",
 "customerEmail":"test007@gmail.com",
 "merchantKeyId":"5317",
-"orderDetails":"{\"order_id\":\"DW-nUw8zGk6f0\",\"first_name\":\"Test\",\"last_name\":\"Customer\",\"customer_phone\":\"7976719949\",\"customer_email\":\"test@gmail.com\",\"merchant_id\":\"slice\",\"amount\":\"500.00\",\"customer_id\":\"9742144874\",\"timestamp\":\"1639590881714\",\"return_url\":\"https://sandbox.juspay.in/end\",\"currency\":\"INR\",\"metadata.split_settlement_details\":\”{\"marketplace\":{\"amount\":0},\"mdr_borne_by\":\"ALL\",\"vendor\":{\"split\":[{\"amount\":225,\"merchant_commission\":25,\"sub_mid\":\"Vendor1\"},{\"amount\":225,\"merchant_commission\":25,\"sub_mid\":\"Vendor2\"}]}}\"}, "signature":"Rxih9qLKfueQ7sLlVT32FYaI5EoS1w5Q+ICXpkw0F796ghU19o9GRhYKSnNoCzkkVsNDtEQQ3AJmVCAT3FfdDj0QOjh8h4DbEW8h7s+Q5GsEKzu2OgaS1dc6p2WSZB+E0EVyLsnf8LIFNw2XrGjKTO55ImcboonT/8TL3R9hg3xgFZQGXD8yDjx3U8Jo0CIM3lnmQYMV8jJhgNNiKuM/YmQXElvDKtB27x9UGuCjq7XgYWfjaExfZRTzZt5hEk99yh9MsQ2UK9f3M4ZoFaOkIf87BScOcI6tFmLJrW8KczFxMgHrwchf6Fa2AxiUnOe+JQ8zZWPGE9IORUTlam5MUQ=="}}
+"orderDetails":"{\"order_id\":\"DW-nUw8zGk6f0\",\"first_name\":\"Test\",\"last_name\":\"Customer\",\"customer_phone\":\"7976719949\",\"customer_email\":\"test@gmail.com\",\"merchant_id\":\"TEST_MID\",\"amount\":\"500.00\",\"customer_id\":\"9742144874\",\"timestamp\":\"1639590881714\",\"return_url\":\"https://sandbox.juspay.in/end\",\"currency\":\"INR\",\"metadata.split_settlement_details\":\"{\"marketplace\":{\"amount\":1},\"mdr_borne_by\":\"ALL\",\"vendor\":{\"split\":[{\"amount\":1,\"merchant_commission\":0,\"sub_mid\":\"Vendor1\",\"notes\":\"{\\\"note\\\":{\\\"juspayVendorId\\\":\\\"Vendor1\\\",\\\"transactionId\\\":\\\"ID\\\"},\\\"linked_account_notes\\\":[\\\"transactionId\\\",\\\"proposalNumber\\\"]}\"},{\"amount\":1,\"merchant_commission\":0,\"sub_mid\":\"Vendor2\",\"notes\":\"{\\\"note\\\":{\\\"juspayVendorId\\\":\\\"Vendor2\\\",\\\"transactionId\\\":\\\"ID\\\"},\\\"linked_account_notes\\\":[\\\"transactionId\\\",\\\"proposalNumber\\\"]}\"}]}},"signature":"Rxih9qLKfueQ7sLlVT32FYaI5EoS1w5Q+ICXpkw0F796ghU19o9GRhYKSnNoCzkkVsNDtEQQ3AJmVCAT3FfdDj0QOjh8h4DbEW8h7s+Q5GsEKzu2OgaS1dc6p2WSZB+E0EVyLsnf8LIFNw2XrGjKTO55ImcboonT/8TL3R9hg3xgFZQGXD8yDjx3U8Jo0CIM3lnmQYMV8jJhgNNiKuM/YmQXElvDKtB27x9UGuCjq7XgYWfjaExfZRTzZt5hEk99yh9MsQ2UK9f3M4ZoFaOkIf87BScOcI6tFmLJrW8KczFxMgHrwchf6Fa2AxiUnOe+JQ8zZWPGE9IORUTlam5MUQ=="}}
