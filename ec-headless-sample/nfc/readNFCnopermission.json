@@ -1,0 +1,12 @@
+{
+  "service": "in.juspay.hyperapi",
+  "requestId": "3d1205fe-f7a6-43a9-8ebb-8f3f4c41c259",
+  "payload": 
+  {
+    "action": "readNFCDetails",
+    "error": "permission denied !!"
+  },
+  "errorMessage": "",
+  "errorCode": "",
+  "error": false
+}

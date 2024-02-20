@@ -1,0 +1,9 @@
+{
+  "service": "in.juspay.hyperapi",
+  "requestId": "e53d340c-3429-4a74-94fe-a14e0470b8b8",
+  "payload": 
+  {
+    "action": "readNFCDetails"
+  },
+  "client_id": "clientID"
+}
