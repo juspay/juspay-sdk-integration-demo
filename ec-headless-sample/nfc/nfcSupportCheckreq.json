@@ -1,0 +1,9 @@
+{
+  "service": "in.juspay.hyperapi",
+  "requestId": "88284034-1dab-45ab-8897-9013bd3914ac",
+  "payload": 
+  {
+    "action": "nfcSupportCheck"
+  },
+  "client_id": "clientID"
+}
