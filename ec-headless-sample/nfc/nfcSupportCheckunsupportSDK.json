@@ -1,0 +1,11 @@
+{
+  "service": "in.juspay.ec",
+  "requestId": "f1702fe1-635c-4da1-85d1-296c5fc433d8",
+  "payload": 
+  {
+    "action": "nfcSupportCheck"
+  },
+  "errorMessage": "Unsupported SDK",
+  "errorCode": "JP_004",
+  "error": true
+}
