@@ -4,7 +4,7 @@ curl --location --request POST 'https://smartgateway.hdfcbank.com/orders' \
 --header 'x-merchantid: merchant_id'\
 --header 'Authorization: Basic QTA0QT*******ODg1Og==' \
 --data-urlencode 'order_id=14183944763' \
---data-urlencode 'amount=100.00' \
+--data-urlencode 'amount=100.00' \test
 --data-urlencode 'currency=INR' \
 --data-urlencode 'customer_id=guest_user_101' \
 --data-urlencode 'customer_email=customer@gmail.com' \
