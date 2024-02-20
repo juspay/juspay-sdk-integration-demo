@@ -1,4 +1,4 @@
-curl --location 'https://sandbox.juspay.in/payout/merchant/v1.1/orders' \
+curl --location 'https://sandbox.juspay.in/payout/merchant/v1/orders/:orderId/attempt' \
 --header 'x-merchantid: <x-merchantid>' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Basic (b64 encoded API key)' \
