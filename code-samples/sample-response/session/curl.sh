@@ -1,11 +1,42 @@
-curl --location --request POST 'https://smartgatewayuat.hdfcbank.com/v4/session' \
---header 'x-merchantid: your_merchant_id' \
---header 'x-customerid: your_customerid' \
---header 'Content-Type: application/json' \
---data-raw '{
-   "encryptedPayload": "O-nBsA9f5BNqwr-zP5Xb7-avmOBQ6qiYs1QQO87OQKgM67ctvTCLqwEk7oyYMsDazyLnERJi_sBtRRvMnL2reTkzM81nfYBaUvbYEez3uADpO-DlmNb_Dxqbtt5KkUW-PKXJuJ2ZfC1XvgWGJ7ZiJ2En6n-bH6KTKeATYPZTzB3DD8dhPs3AiicNZrgACRfrV6iCejDr3GidiKWgp0ZxxpekyvK1njNrLNFJgJW0xwCgJHys3VPgDuwU0sVUNWvFDCmwm1-eyREcd44BpM7AgFtBRMaNqEnWjmy0A1t1ll4xUDnDF1AdZF2XWhHozE3TEMQ34-tKEV5qLro2lqxOKQG2yDH3PNXViUl41jgpl1nmON27gYkKyG07GufVz_ssrP7pCGtZWvb-vO0aFiYcwGTOlXUX8zo73eNjRqRBRaOiIzrafpVIVWUd0oPg5occjtgmxxtvVRbnmVBsUEt4rGeQJ5Q3_pZWQwYoq2XCHvKWqd4TkwP-fCbOX9Xd6Njqv7LqB83QOG7M_qf4ZC4x0cPIEs0BNyYa6OyflEJ1Gw2aUzAQvCHjbwMCA_j0qcz3sm3MiM5FpiMSSFYCt_tNzEwl3nkycpJyTPUGSp4R5bxA1dxVyiSQiLHjNzM3RyftS97IWCLgS7j1b1_e9LR4HAVlzHofsMVH0twx1iD4Mb5FzbcAi-cOL8qpEmRbBP4upEUZj54E82jmuwgcvK94bEgkjc82_aeFJbb1P4ejPT0Vwj6mUTy79I3N5GXiggvvJdVujNJQ45oRFg0rKDNucYbvYidgxbU8Q-v9_dhi6590PUM3a53F_RWRfzVUJx4-8nrsOtR4y0SM-Nce5NBudKavBoOqMfDV8L_KcqLF9KtfZv1YwebkjHkeI9TUyczG_53Y2aoAO4rKKIYmu_yG0E8ZoXcl",
-   "encryptedKey": "a5FRNdn3f6D8nMCRWm63cxuFTouaSEtU2HZyO_7gboZQWawR6vnNMyDNjzbSty6F0RjAcmpb1m2Ecj7eL2LKr0M7C6JZ9wjyXxgTsdBE6dQhCDcjSg1dlthW_X91k9RFFcuvEteJXzHInSpd4f61aqrBwYeICiobMKc2CgAC9ebwj0rNkR4dLQAMJADye6-a-irJaRD0WO19yz19Vnv_FX0mi4VQZNDDC4XUgyO7dwYATc046M82vo-P0yKTCmn3EDxqS2uCkPvxmDsiED8VPKywRQmzQ8zFHmzwNgeUkSGt33-KjoPTYfHk4nN2xv69sF7HHZVA24ordhYa-IBZ_Q",
-   "header": "eyJraWQiOiJ0ZXN0XzEyMyIsImN0eSI6IkpXVCIsImVuYyI6IkEyNTZHQ00iLCJhbGciOiJSU0EtT0FFUC0yNTYifQ",
-   "tag": "JLzwPz9fGim4xJFjLNLW7A",
-   "iv": "F9qGiaM5-oJtVymV"
-}'
+curl --location --request POST 'https://smartgatewayuat.hdfcbank.com/session' \
+--header 'version: 2023-06-30' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'x-merchantid: merchant_id'\
+--header 'Authorization: Basic QTA0QT*******ODg1Og==' \
+--data-urlencode 'order_id=14183944763' \
+--data-urlencode 'amount=100.00' \
+--data-urlencode 'currency=INR' \
+--data-urlencode 'customer_id=guest_user_101' \
+--data-urlencode 'customer_email=customer@gmail.com' \
+--data-urlencode 'customer_phone=9988665522' \
+--data-urlencode 'product_id=prod-141833' \
+--data-urlencode 'return_url=http://shop.merchant.com/payments/handleResponse' \
+--data-urlencode 'description=Sample description' \
+--data-urlencode 'billing_address_first_name=Juspay' \
+--data-urlencode 'billing_address_last_name=Technologies' \
+--data-urlencode 'billing_address_line1=Girija Building' \
+--data-urlencode 'billing_address_line2=Ganapathi Temple Road' \
+--data-urlencode 'billing_address_line3=8th Block, Koramangala' \
+--data-urlencode 'billing_address_city=Bengaluru' \
+--data-urlencode 'billing_address_state=Karnataka' \
+--data-urlencode 'billing_address_country=India' \
+--data-urlencode 'billing_address_postal_code=560095' \
+--data-urlencode 'billing_address_phone=9988775566' \
+--data-urlencode 'billing_address_country_code_iso=IND' \
+--data-urlencode 'shipping_address_first_name=Juspay' \
+--data-urlencode 'shipping_address_last_name=Technologies' \
+--data-urlencode 'shipping_address_line1=Girija Building' \
+--data-urlencode 'shipping_address_line2=Ganapathi Temple Road' \
+--data-urlencode 'shipping_address_line3=8th Block, Koramangala' \
+--data-urlencode 'shipping_address_city=Bengaluru' \
+--data-urlencode 'shipping_address_state=Karnataka' \
+--data-urlencode 'shipping_address_postal_code=560095' \
+--data-urlencode 'shipping_address_phone=9962881912' \
+--data-urlencode 'shipping_address_country_code_iso=IND' \
+--data-urlencode 'shipping_address_country=India' \
+--data-urlencode 'metadata.PAYTM:PROMO_CAMP_ID=xyz' \
+--data-urlencode 'metadata.PAYTM:CUST_ID=1234' \
+--data-urlencode 'metadata.PAYU:offer_key=1234' \
+--data-urlencode 'metadata.PAYU:gateway_reference_id=bus' \
+--data-urlencode 'options.get_client_auth_token=true' \
+--data-urlencode 'metadata.subvention_amount=90'
