@@ -1,0 +1,20 @@
+{
+  "service": "in.juspay.hyperapi",
+  "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+  "payload": {
+    "action": "walletTxn",
+    "status": "CHARGED",
+    "orderId": "hyperorder45314",
+    "offerDetails": {
+      "offers": [
+        {
+          "status": "AVAILED",
+          "offerId": "af096582-f779-4cfa-a6c1-9bd8debbac71"
+        }
+      ]
+    }
+  },
+  "errorMessage": "",
+  "errorCode": "",
+  "error": false
+}
