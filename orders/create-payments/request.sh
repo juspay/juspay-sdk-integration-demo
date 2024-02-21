@@ -1,6 +1,8 @@
 curl --location 'https://smartgateway.hdfcbank.com/txns' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'Authorization: Basic Auth of <your-api-key>' \
+--header 'x-merchant-id: <merchant_id>' \
+--header 'x-customer-id: <customer_id>' \
 --data-urlencode 'order.order_id=ord_1590759422' \
 --data-urlencode 'order.amount=101550.00' \
 --data-urlencode 'order.currency=INR' \
