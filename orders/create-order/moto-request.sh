@@ -1,6 +1,7 @@
 curl --location 'https://smartgatewayuat.hdfcbank.com/txns' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'x-merchant-id: <merchant_id>' \
+--header 'x-customer-id: <customer_id>' \
 --header 'Authorization: Basic <API Key setup on SmartGateway dashboard>' \
 --data-urlencode 'order.order_id=ord_jkbvgusvb' \
 --data-urlencode 'order.customer_id=cust_169' \
