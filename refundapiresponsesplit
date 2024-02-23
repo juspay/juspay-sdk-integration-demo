@@ -1,0 +1,83 @@
+{
+    "bank_pg": null,
+    "payment_method": "",
+    "customer_phone": "FILTERED",
+    "payment_gateway_response": {
+        "txn_id": "xEiJEf7700gp1",
+        "rrn": "40453",
+        "debit_amount": "9995.0",
+        "auth_id_code": "1317",
+        "resp_message": "",
+        "epg_txn_id": "pay_NaGznIU",
+        "resp_code": "captured",
+        "created": "2024-02-13T06:58:33Z"
+    },
+    "udf8": "",
+    "txn_id": "xEiJEf7700gp1",
+    "order_id": "xEiJEf7700gp1",
+    "maximum_eligible_refund_amount": 0,
+    "udf9": "",
+    "customer_id": "636d05b2b8e54",
+    "amount": 9995,
+    "amount_debited": 9995,
+    "refunds": [
+        {
+            "error_code": null,
+            "amount": 9995,
+            "status": "PENDING",
+            "ref": null,
+            "initiated_by": "API",
+            "error_message": "",
+            "refund_source": "",
+            "id": null,
+            "created": "2024-02-19T09:26:04Z",
+            "refund_type": "STANDARD",
+            "unique_request_id": "xEiJEf7700gp1-2qw",
+            "sent_to_gateway": false
+        }
+    ],
+    "split_settlement_response": {
+        "split_details": [
+            {
+                "sub_vendor_id": "FILTERED",
+                "amount": 7996,
+                "merchant_commission": 0,
+                "gateway_sub_account_id": "FILTERED",
+                "notes": "{\"note\":{\"billId\":\"65cb12e54dcfdb\",\"billVersion\":1}}"
+            }
+        ],
+        "split_applied": true
+    },
+    "udf4": "",
+    "status": "CHARGED",
+    "udf5": "",
+    "udf6": "",
+    "status_id": 21,
+    "offers": [],
+    "udf7": "",
+    "product_id": "",
+    "refunded": true,
+    "udf10": "",
+    "gateway_id": 23,
+    "udf1": "",
+    "udf2": "",
+    "udf3": "",
+    "date_created": "2024-02-13T06:57:41Z",
+    "id": "ordeh_524972465ccaaa0",
+    "merchant_id": "TEST_MID",
+    "return_url": "https://www.test.com",
+    "effective_amount": 9995,
+    "currency": "INR",
+    "auth_type": "THREE_DS",
+    "customer_email": "1111111",
+    "payment_method_type": "CARD",
+    "txn_uuid": "mozptaBVay1PT",
+     "payment_links": {
+        "mobile": "https://api.juspay.in/orders/ordeh_524972465c8dcbcaaa0/payment-page",
+        "web": "https://api.juspay.in/orders/ordeh_524972465c8dcbcaaa0/payment-page",
+        "iframe": "https://api.juspay.in/orders/ordeh_524972465c8dcbcaaa0/payment-page"
+    },
+    "amount_refunded": 9995,
+    "bank_error_code": "",
+    "bank_error_message": ""
+}
