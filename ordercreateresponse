@@ -1,15 +1,12 @@
 {
-"status_id": 1, "status": "CREATED", "payment_links": {
-"web":
-"https://sandbox.juspay.in/merchant/pay/ordeu_20dd8d21f49d4a86a92871adf3475
-916",
-"mobile":
-"https://sandbox.juspay.in/merchant/pay/ordeu_20dd8d21f49d4a86a92871adf3475
-916?mobile=true",
-"iframe":
-"https://sandbox.juspay.in/merchant/ipay/ordeu_20dd8d21f49d4a86a92871adf347
-5916"
-},
-"order_id": "test1573726265",
-"id": "ordeu_20dd8d21f49d4a86a92871adf3475916"
+   "status": "CREATED",
+   "status_id": 1,
+   "id": "ordeh_8d6a40c8b314db61b",
+   "order_id": "test",
+   "payment_links": {
+       "iframe": "https://sandbox.juspay.in/orders/ordeh_8d6a40c8b314db61b/payment-page",
+       "web": "https://sandbox.juspay.in/orders/ordeh_8d6a40c8b314db61b/payment-page",
+       "mobile": "https://sandbox.juspay.in/orders/ordeh_8d6a40c8b314db61b/payment-page"
+   }
 }
+
