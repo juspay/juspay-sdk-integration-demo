@@ -4,9 +4,4 @@ curl --location --request POST 'https://api.juspay.in/orders' \
 --data-urlencode 'order_id=test' \
 --data-urlencode 'amount=3' \
 --data-urlencode 'return_url=https://www.google.co.in' \
---data-urlencode'metadata.split_settlement_details=
-{"marketplace":{"amount":1},
-"mdr_borne_by":"ALL",
-"vendor":
-{"split":[{"amount":1,"merchant_commission":0,"sub_mid":"Vendor1","notes":"{\"note\":{\"txnId\":\"123\",\"juspayVendorId\":\"Vendor1\"},\"linked_account_notes\":[\"txnId\"]}"},{"amount":1,"merchant_commission":0,"sub_mid":"vendor2","notes":"{\"note\":{\"txnId\":\"123\",\"juspayVendorId\":\"vendor2\"},\"linked_account_notes\":[\"txnId\"]}"}]
-}}'
+--data-urlencode'metadata.split_settlement_details={"marketplace":{"amount":1},"mdr_borne_by":"ALL","vendor":{"split":[{"amount":1,"merchant_commission":0,"sub_mid":"Vendor1","notes":"{\"note\":{\"txnId\":\"123\",\"juspayVendorId\":\"Vendor1\"},\"linked_account_notes\":[\"txnId\"]}"},{"amount":1,"merchant_commission":0,"sub_mid":"vendor2","notes":"{\"note\":{\"txnId\":\"123\",\"juspayVendorId\":\"vendor2\"},\"linked_account_notes\":[\"txnId\"]}"}]}}'
