@@ -1,0 +1,18 @@
+{
+    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "action": "cardTxn",
+        "orderId": "12345",
+        "paymentMethod": "VISA",
+        "cardNumber": "4**************4",
+        "cardExpMonth": "05",
+        "cardExpYear": "25",
+        "cardSecurityCode": "***",
+        "saveToLocker": true,
+        "clientAuthToken": "tkn_0e37edcdf47fdb606ab48ccfc4213",
+        "tokenize": true,
+        "cardNickName": "User - HDFC"
+        "shouldCreateMandate": true
+    }
+}
