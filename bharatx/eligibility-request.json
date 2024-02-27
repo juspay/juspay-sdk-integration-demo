@@ -1,0 +1,35 @@
+{
+    "version": "2024-02-23",
+    "signature": <Signature> ,
+    "showLoader": false,
+    "shipping_address": null,
+    "requestId": null,
+    "order_details": "<Order Details>",
+    "orderId": "<Order Id>",
+    "merchant_params": null,
+    "merchant_key_id": <Merchant Key ID>,
+    "items": null,
+    "environment": <environment>,
+    "device_params": null,
+    "data": {
+        "wallets": [
+            {
+                "mobileNumber": null,
+                "mobile": "9742144874",
+                "gatewayReferenceId": "<GatewayRefid>",
+                "email": "<customer email>",
+                "customerId": <customer id> ,
+                "checkType": [
+                    "simpl",
+                    "twid"
+                ]
+            }
+        ],
+        "loanMarketplace": null,
+        "cards": [],
+        "apps": []
+    },
+    "clientAuthToken": "<Client Auth Token>",
+    "amount": "<Order Amount>",
+    "action": "eligibility"
+}
