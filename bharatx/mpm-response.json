@@ -1,0 +1,22 @@
+{
+            "juspayBankCode": "JP_BHARATX",
+            "paymentMethodType": "CONSUMER_FINANCE",
+            "walletDirectDebitSupport": false,
+            "supportedFeatures": [
+                {
+                    "supportedReferenceIds": [
+                        "skinnsi"
+                    ],
+                    "featureName": "eligibility",
+                    "supportedByDefault": false
+                }
+            ],
+            "paymentMethod": "BHARATX",
+            "nickName": "BharatX Pay In 3",
+            "supportedReferenceIds": [
+                "skinnsi"
+            ],
+            "description": "BHARATX",
+            "supportedByDefault": false,
+            "paymentMethodSubType": "CF_EMI"
+}
