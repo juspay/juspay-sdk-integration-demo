@@ -1,0 +1,22 @@
+{
+            "description": "BharatX Pay In 3",
+            "juspayBankCode": "BharatX",
+            "nickName": "BharatX Pay In 3",
+            "paymentMethod": "BHARATX",
+            "paymentMethodSubType": "CF_EMI",
+            "paymentMethodType": "CONSUMER_FINANCE",
+            "supportedFeatures": [
+              {
+                "featureName": "eligibility",
+                "supportedReferenceIds": ["toothsi"]
+              }
+            ],
+            "supportedGateways": [
+              {
+                "gateway": "BHARATX",
+                "gatewayId": 275,
+                "supportedReferenceIds": ["toothsi"]
+              }
+            ],
+            "supportedReferenceIds": ["toothsi"]
+    }
