@@ -1,0 +1,20 @@
+{
+      "payload": {
+        "action": "consumerFinanceTxn",
+        "additionalPaymentDetails": [],
+        "amount": "11000",
+        "clientAuthToken": "tkn_2b940a6a8afe41a4ac52104eb0884d54",
+        "endUrls": [
+          ""
+        ],
+        "isEmi": false,
+        "isNewTabFlow": false,
+        "isPopupView": false,
+        "orderId": "ord_C17JTSjnBNmUep",
+        "paymentMethod": "BHARATX",
+        "retry_suggestion_used": false
+      },
+      "requestId": "75ef520c-b290-4cf7-8a11-25a9b0ba8731",
+      "service": "in.juspay.ec"
+}
+
