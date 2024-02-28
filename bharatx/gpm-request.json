@@ -1,0 +1,13 @@
+{
+      "payload": {
+        "action": "paymentMethod",
+        "add_default_reference_id": "true",
+        "add_nick_name": "true",
+        "add_supported_features": "true",
+        "add_surcharge_logic": "false",
+        "onlyLoadFile": false,
+        "refresh": "true"
+      },
+      "requestId": "510e7715-d27d-4408-9e68-22dfd0730eef",
+      "service": "in.juspay.ec"
+ }
