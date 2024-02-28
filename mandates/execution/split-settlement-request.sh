@@ -1,0 +1,11 @@
+curl --location 'https://api.juspay.in/txns' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'Authorization: Basic <base64 of key:>' \
+--data-urlencode 'order.order_id=unique_order_id' \
+--data-urlencode 'order.amount=1.00' \
+--data-urlencode 'order.customer_id=customer_id' \
+--data-urlencode 'order.metadata.split_settlement_details={\"mdr_borne_by\":\"MARKETPLACE\",\"marketplace\":{\"amount\":1999},\"vendor\":{\"split\":[{\"sub_mid\":\"powertrade\",\"amount\":7996,\"merchant_commission\":0,\"notes\":\"{\\\"note\\\":{\\\"billId\\\":\\\"65d5922b2312b56cd477644c\\\",\\\"billVersion\\\":1}}\"}]}}' \
+--data-urlencode 'merchant_id=merchantid' \
+--data-urlencode 'mandate_id=mandate_id' \
+--data-urlencode 'mandate.execution_date=1622369936' \
+--data-urlencode 'format=json'
