@@ -1,0 +1,18 @@
+{
+  "label": "payment_option_selected",
+  "value": {
+    "card_type": null,
+    "emi_tenure": null,
+    "emi_type": null,
+    "is_emi": null,
+    "is_saved": true,
+    "juspay_bank_code": null,
+    "last_used": "2024-02-09T15:32:31Z",
+    "mandate_support": null,
+    "offer_applicable": null,
+    "payment_method": "@ybl",
+    "payment_method_sub_type": null,
+    "payment_method_type": "UPI",
+    "time_to_select": 390357
+  }
+}
