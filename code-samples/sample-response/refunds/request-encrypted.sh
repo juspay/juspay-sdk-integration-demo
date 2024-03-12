@@ -1,5 +1,4 @@
-curl --location --request POST 'https://smartgatewayuat.hdfcbank.com/orders/1418394476/refunds \
--u your_api_key: \
+curl --location --request POST 'https://smartgatewayuat.hdfcbank.com/orders/{order_id}/refunds \
 -H "version:2023-06-30" \
 -H 'Content-Type: application/x-www-form-urlencoded'\
 -H 'x-merchantid: merchant_id'\
