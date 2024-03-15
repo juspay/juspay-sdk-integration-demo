@@ -34,12 +34,13 @@ This is just an example of checkout page and demo page for /refunds api spec
 ### PaymentHandler class
 This is where all the business logic is for calling payments api exists
 
-
+<!-- block:start:run-server -->
 ### run
 ```bash
 php -S localhost:5000
 ```
 Goto:- http://localhost:5000/initiatePaymentDataForm.php
+<!-- block:end:run-server -->
 
 [:warning:]
 <mark>This sample project uses php development web server don't use it in production<mark>
