@@ -122,6 +122,7 @@ class PaymentHandler {
         } catch (Exception $e) {
             $logger = new SimpleLogger();
             $logger->info($e->getMessage());
+            return false;
         }
     }
 

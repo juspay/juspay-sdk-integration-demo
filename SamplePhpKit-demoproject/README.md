@@ -18,8 +18,7 @@ configure this in BASE_URL
 This initiates payment to payment server it calls /session api.
 
 ### handlePaymentResponse.php
-Payment flow ends here, with status call, it's basically return_url configured by you in /session api or in dashboard. Please note that
-it's POST method, hence you'll need a dispatcher for this.
+Payment flow ends here, with hmac verification and order status call. This is the return url specified in /session api call or can be configured through dasboard.
 
 
 ### initiateRefund.php
