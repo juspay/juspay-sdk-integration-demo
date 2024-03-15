@@ -1,0 +1,1 @@
+{"API_KEY": "VALUE:","MERCHANT_ID":"VALUE","PAYMENT_PAGE_CLIENT_ID":"hdfcmaster","BASE_URL":"https://smartgatewayuat.hdfcbank.com","ENABLE_LOGGING": true,"LOGGING_PATH": "./logs/PaymentHandler.log","RESPONSE_KEY": "VALUE",  "CA_PATH": "resources/cacert-2023-12-12.pem"}
