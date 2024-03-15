@@ -1,5 +1,5 @@
 # Sample Kit Using Web Servlets
-This is a sample php kit using web-servlets.
+This is a sample php kit using php web server.
 
 ## Setup
 - Place config.json file inside resources folder, ensure fields like API_KEY, MERCHANT_ID, PAYMENT_PAGE_CLIENT_ID & BASE_URL are populated.
