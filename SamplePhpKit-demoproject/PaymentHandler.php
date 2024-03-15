@@ -71,6 +71,8 @@ class PaymentHandler {
      * @param array $params
      * @return array
      */
+
+    // block:start:session-function
     public function orderSession($params) {
         $this->paramsCheck($params);
         $apiTag = "ORDER_SESSION";
@@ -78,8 +80,8 @@ class PaymentHandler {
             $params["payment_page_client_id"] = $this->paymentHandlerConfig->getPaymentPageClientId();
         }
         return PaymentEntity::makeServiceCall ( "/session", $params, RequestMethod::POST, $apiTag, ContentType::JSON);
-
     }
+    // block:end:session-function
 
     /**
      * @param array $params

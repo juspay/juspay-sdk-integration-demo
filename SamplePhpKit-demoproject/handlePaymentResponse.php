@@ -2,7 +2,7 @@
 use PaymentHandler\APIException;
 require_once realpath("./PaymentHandler.php");
 use PaymentHandler\PaymentHandler;
-
+// block:start:order-status-function
 function getOrder($params) {
     $paymentHandler = new PaymentHandler("resources/config.json");
     if ($paymentHandler->validateHMAC_SHA256($params) === false) {
@@ -13,7 +13,7 @@ function getOrder($params) {
     }
 
 }
-
+// block:end:order-status-function
 function getStatusMessage($order) {
     $message = "Your order with order_id " . $order["order_id"] . " and amount " . $order["amount"] . " has the following status: ";
     $status = $order["status"];
@@ -40,6 +40,7 @@ function getStatusMessage($order) {
 }
  
  // POST ROUTE
+ // block:start:order-status-function
  if (isset($_POST["order_id"])) {
      try {
         $inputParams = $_POST;
@@ -48,6 +49,7 @@ function getStatusMessage($order) {
         $signature = $_POST["signature"];
         $statusId = $_POST["status_id"];
         $params = ["order_id" => $orderId, "status" => $status, "signature" => $signature, "status_id" => $statusId];
+// block:end:order-status-function
         $order = getOrder($params);
         $message = getStatusMessage($order);
      } catch (APIException $e ) {
