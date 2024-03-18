@@ -97,7 +97,7 @@
             "bank_error_code": "failed",
             "metadata": {
                 "split_settlement_details": "{\"mdr_borne_by\":\"MARKETPLACE\",\"marketplace\":{\"amount\":1999},\"vendor\":{\"split\":[{\"sub_mid\":\"powertrade\",\"amount\":7996,\"merchant_commission\":0,\"notes\":\"{\\\"note\\\":{\\\"juspayVendorId\\\":\\\"65cb1f1436b8d\\\"]}}",
-                "payment_page_client_id": "smallcase",
+                "payment_page_client_id": "testmerchant",
                 "payment_page_sdk_payload": "FILTERED",
                 "payment_links": {
                     "mobile": "https://api.juspay.in/orders/ordeh_8917981830dca47/payment-page",
