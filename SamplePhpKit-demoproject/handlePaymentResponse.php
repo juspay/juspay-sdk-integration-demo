@@ -40,7 +40,7 @@ function getStatusMessage($order) {
 }
  
  // POST ROUTE
- // block:start:order-status-function
+ // block:start:cnstruct-params
  if (isset($_POST["order_id"])) {
      try {
         $inputParams = $_POST;
@@ -49,7 +49,7 @@ function getStatusMessage($order) {
         $signature = $_POST["signature"];
         $statusId = $_POST["status_id"];
         $params = ["order_id" => $orderId, "status" => $status, "signature" => $signature, "status_id" => $statusId];
-// block:end:order-status-function
+// block:end:cnstruct-params
         $order = getOrder($params);
         $message = getStatusMessage($order);
      } catch (APIException $e ) {
