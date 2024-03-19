@@ -38,6 +38,7 @@ This is where all the business logic is for calling our payments api
 
 ## Quick run this project using jetty?
 ### Setup
+<!-- block:start:run-server -->
 Inside SampleKitWithoutSdk-DemoProject folder
 ```bash
 mvn clean install
@@ -48,7 +49,7 @@ mvn clean package
 mvn jetty:run
 ```
 Goto:- http://localhost:8080/initiatePayment.jsp
-
+<!-- block:end:run-server -->
 ### Test card credentials
 card_number:- 4012001037141112
 
