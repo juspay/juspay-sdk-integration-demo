@@ -1,0 +1,27 @@
+{
+  "requestId": "576605D9-E998-459E-91DD-D37756065FBD",
+  "error": false,
+  "errorCode": "",
+  "service": "in.juspay.hyperapi",
+  "event": "process_result",
+  "payload": {
+    "offset": 0,
+    "object": "list",
+    "list": [
+      {
+        "wallet": "LAZYPAY",
+        "linked": false,
+        "lastRefreshed": "",
+        "id": "wlt_dR9XYjPXTrrYPdmcJ9",
+        "currentBalance": "",
+        "token": "",
+        "metadata": "",
+        "gatewayReferenceId": "old"
+      }
+    ],
+    "count": 1,
+    "total": 1,
+    "action": "refreshWalletBalances"
+  },
+  "errorMessage": ""
+}
