@@ -1,0 +1,5 @@
+{
+  "status": "Invalid Request",
+  "error_message": "Oops!! Your account seems to be locked",
+  "error_code": "LP_USER_LOCKED"
+}

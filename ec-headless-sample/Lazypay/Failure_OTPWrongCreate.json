@@ -1,0 +1,5 @@
+{
+  "status": "Invalid Request",
+  "error_message": "Oops!! OTP you entered seems to be wrong. 2 more attempts before we lock your account",
+  "error_code": "LP_INCORRECT_OTP"
+}

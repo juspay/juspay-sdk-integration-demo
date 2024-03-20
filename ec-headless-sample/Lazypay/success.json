@@ -1,0 +1,13 @@
+{
+  "payment_methods_eligibility": [
+    {
+      "status": "SUCCESS",
+      "payment_method_type": "WALLET",
+      "payment_method": "LAZYPAY",
+      "is_eligible": true,
+      "eligibility_strategy": "TRANSACTION",
+      "due_date": "18 November 2019",
+      "description": "Lazy Pay Wallet"
+    }
+  ]
+}
