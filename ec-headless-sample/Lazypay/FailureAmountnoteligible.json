@@ -1,0 +1,15 @@
+{
+  "payment_methods_eligibility": [
+    {
+      "status": "INVALID_DATA",
+      "payment_method_type": "WALLET",
+      "payment_method": "LAZYPAY",
+      "is_eligible": false,
+      "gateway_error_message": "Oops!! The transaction value seems to be higher than your available LazyPay credit limit",
+      "gateway_error_code": "LP_EXCEEDS_USER_MAX_TXN_LIMIT",
+      "eligibility_strategy": "TRANSACTION",
+      "due_date": "",
+      "description": "Lazy Pay Wallet"
+    }
+  ]
+}
