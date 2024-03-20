@@ -1,0 +1,10 @@
+{
+  "requestId": "3a15a4bf-f576-49d8-866d-86c2d77a3823",
+  "service": "in.juspay.hyperapi",
+  "payload": {
+    "action": "createWallet",
+    "walletName": "LAZYPAY",
+    "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213",
+    "showLoader": true
+  }
+}
