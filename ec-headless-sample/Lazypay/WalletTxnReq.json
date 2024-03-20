@@ -1,0 +1,15 @@
+{
+  "requestId": "68579cc4-b585-48d4-a1c2-73030fecf78c",
+  "service": "in.juspay.hyperapi",
+  "payload": {
+    "action": "walletTxn",
+    "orderId": "hyperorder45314",
+    "paymentMethod": "LAZYPAY",
+    "directWalletToken": "tkn_nvtQf8DP1A2oGoZu",
+    "endUrls": [
+      "https:\\/\\/shop\\.merchant\\.com\\/payments\\/handleResponse.*"
+    ],
+    "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213",
+    "showLoader": true
+  }
+}
