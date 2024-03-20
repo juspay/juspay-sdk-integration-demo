@@ -1,0 +1,5 @@
+{
+  "status": "Invalid Request",
+  "error_message": "Oops!! OTP you entered seems to be wrong. You seem to have exceeded maximum OTP attempts",
+  "error_code": "LP_INCORRECT_OTP"
+}
