@@ -1,0 +1,15 @@
+{
+  "payment_methods_eligibility": [
+    {
+      "status": "USER_NOT_FOUND",
+      "payment_method_type": "WALLET",
+      "payment_method": "LAZYPAY",
+      "is_eligible": false,
+      "gateway_error_message": "Oops!! We don't seem to have LazyPay open for you as of now. But we promise to throw it open to you soon",
+      "gateway_error_code": "LP_USER_INELIGIBLE",
+      "eligibility_strategy": "TRANSACTION",
+      "due_date": "",
+      "description": "Lazy Pay Wallet"
+    }
+  ]
+}
