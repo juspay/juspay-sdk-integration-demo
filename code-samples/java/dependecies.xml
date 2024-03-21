@@ -1,9 +1,0 @@
-<dependency>
-
-      <groupId>in.juspay</groupId>
-
-      <artifactId>expresscheckout</artifactId>
-
-      <version>1.3.3</version>
-
-</dependency>
