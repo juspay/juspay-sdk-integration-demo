@@ -1,4 +1,4 @@
-curl --location 'https://sandbox.juspay.in/session' \
+curl --location 'https://smartgatewayuat.hdfcbank.com/session' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Basic *********************API_KEY' \
 --data-raw '{
