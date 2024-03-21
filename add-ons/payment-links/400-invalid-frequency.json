@@ -1,0 +1,19 @@
+{
+    "status": "ERROR",
+    "error_code": "INVALID_BLOCK_FUNDS",
+    "error_message": "Block fund should be false for recurring and true for OT mandate.",
+    "status_id": -1,
+    "error_info": {
+        "category": "UNKNOWN",
+        "request_id": "85003090-fd2c-427c-aa96-b4704f0128f2",
+        "developer_message": "Block fund should be false for recurring and true for OT mandate.",
+        "user_message": "INVALID_BLOCK_FUNDS",
+        "code": "UNKNOWN_ERROR",
+        "fields": [
+            {
+                "field_name": "mandate.block_funds",
+                "reason": "Invalid Value"
+            }
+        ]
+    }
+}

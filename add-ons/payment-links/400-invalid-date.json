@@ -1,0 +1,19 @@
+{
+    "status": "ERROR",
+    "error_code": "INVALID_START_DATE",
+    "error_message": "Start date passed is invalid",
+    "status_id": -1,
+    "error_info": {
+        "category": "UNKNOWN",
+        "request_id": "5bf95ac7-ae94-44ce-8f90-3f2a5e777d1a",
+        "developer_message": "Start date passed is invalid",
+        "user_message": "INVALID_START_DATE",
+        "code": "UNKNOWN_ERROR",
+        "fields": [
+            {
+                "field_name": "mandate.start_date",
+                "reason": "Invalid Value"
+            }
+        ]
+    }
+}

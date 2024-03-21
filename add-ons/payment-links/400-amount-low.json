@@ -1,0 +1,19 @@
+{
+    "status": "ERROR",
+    "error_code": "INVALID_REQUEST",
+    "error_message": "mandate_max_amount should be greater than or equal to 1",
+    "status_id": -1,
+    "error_info": {
+        "category": "UNKNOWN",
+        "request_id": "34e0549d-0337-467e-823b-1f9ae19e3075",
+        "developer_message": "mandate_max_amount should be greater than or equal to 1",
+        "user_message": "INVALID_REQUEST",
+        "code": "UNKNOWN_ERROR",
+        "fields": [
+            {
+                "field_name": "mandate.max_amount",
+                "reason": "Invalid Value"
+            }
+        ]
+    }
+}

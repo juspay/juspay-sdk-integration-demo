@@ -1,5 +1,4 @@
 curl --location 'https://sandbox.juspay.in/session' \
---header 'origin: https://sandbox.juspay.in' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Basic *********************API_KEY' \
 --data-raw '{
@@ -16,13 +15,6 @@ curl --location 'https://sandbox.juspay.in/session' \
    "customer_id": "customer_id",
    "order_id": "order_dummy_1",
    "return_url": "https://juspay.in/",
-   "mandate.revokable_by_customer": true,
-   "mandate.block_funds": false,
-   "mandate_max_amount": "1000",
-   "mandate.start_date": "1703768016",
-   "mandate.end_date": "1733011200",
-   "mandate.frequency": "ASPRESENTED",
-   "options.create_mandate": "REQUIRED",
    "send_mail": true,
    "send_sms": false,
    "udf1": "udf1-dummy",
@@ -61,4 +53,4 @@ curl --location 'https://sandbox.juspay.in/session' \
    "metadata.JUSPAY:gateway_reference_id": "payu_test",
    "metadata.expiryInMins": "3397"
   }
-'
+' 
