@@ -15,8 +15,6 @@ curl --location 'https://smartgatewayuat.hdfcbank.com/session' \
    "customer_id": "customer_id",
    "order_id": "order_dummy_1",
    "return_url": "https://juspay.in/",
-   "mandate.revokable_by_customer": true,
-   "mandate.block_funds": false,
    "mandate_max_amount": "1000",
    "mandate.start_date": "1703768016",
    "mandate.end_date": "1733011200",
