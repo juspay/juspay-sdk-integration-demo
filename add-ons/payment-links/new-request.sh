@@ -46,8 +46,7 @@ curl --location --request POST 'https://smartgatewayuat.hdfcbank.com/session' \
 "udf1": "udf1-dummy",
 "udf2": "udf2-dummy",
 "udf3": "udf3-dummy",
-"
-udf4": "udf4-dummy",
+"udf4": "udf4-dummy",
 "udf6": "udf6-dummy",
 "udf5": "udf5-dummy",
 "udf7": "udf7-dummy",
