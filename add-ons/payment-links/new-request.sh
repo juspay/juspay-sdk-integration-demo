@@ -54,7 +54,6 @@ curl --location 'https://smartgatewayuat.hdfcbank.com/session' \
        ],
        "emiOptions": {}
    },
-   "gateway_id": "12",
    "metadata.JUSPAY:gateway_reference_id": "payu_test",
    "metadata.expiryInMins": "3397"
   }
