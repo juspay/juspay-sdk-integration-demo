@@ -11,7 +11,7 @@ curl --location 'https://sandbox.juspay.in/get/altId' \
             "authRefNumber": "20580201098"
     },
     "correlationId" : "tnjhvbjh",
-    "cardBrand" : "VISA",
+    "cardBrand" : "MASTERCARD",
     "keyId" : "key_7fe0fabd2127cbeae1cb09",
     "submerchantId" : "Sub Merchant Identifier"
 }
