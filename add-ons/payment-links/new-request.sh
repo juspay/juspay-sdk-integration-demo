@@ -42,6 +42,7 @@ curl --location --request POST 'https://smartgatewayuat.hdfcbank.com/session' \
 "mandate.end_date":"1763971322",
 "mandate.frequency" : "MONTHLY",
 "metadata.expiryInMins" : "15",
+"metadata.JUSPAY:gatewayReferenceId": "payu_test",
 "source_object" : "PAYMENT_LINK",
 "udf1": "udf1-dummy",
 "udf2": "udf2-dummy",
