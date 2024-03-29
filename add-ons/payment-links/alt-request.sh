@@ -1,56 +1,52 @@
-curl --location 'https://smartgatewayuat.hdfcbank.com/session' \
+curl --location --request POST 'https://smartgatewayuat.hdfcbank.com/session' \
+--header 'Authorization: Basic base_64_encoded_api_key==' \
+--header 'x-merchantid: your_merchant_id' \
 --header 'Content-Type: application/json' \
---header 'Authorization: Basic *********************API_KEY' \
 --data-raw '{
-   "mobile_country_code": "+91",
-   "payment_page_client_id": "picasso",
-   "amount": 100,
-   "currency": "INR",
-   "action": "paymentPage", 
-   "customer_email": "asdf@gmail.com",
-   "customer_phone": "8888899999",
-   "first_name": "John",
-   "last_name" : "Doe",
-   "description": "This is Payment Description.",
-   "customer_id": "customer_id",
-   "order_id": "order_dummy_1",
-   "return_url": "https://juspay.in/",
-   "send_mail": true,
-   "send_sms": false,
-   "udf1": "udf1-dummy",
-   "udf2": "udf2-dummy",
-   "udf3": "udf3-dummy",
-   "udf4": "udf4-dummy",
-   "udf6": "udf6-dummy",
-   "udf5": "udf5-dummy",
-   "udf7": "udf7-dummy",
-   "udf8": "udf8-dummy",
-   "udf9": "udf9-dummy",
-   "udf10": "udf10-dummy",
-   "payment_filter": {
-       "allowDefaultOptions": false,
-       "options": [
-           {
-               "paymentMethodType": "UPI",
-               "enable": true
-           },
-           {
-               "paymentMethodType": "WALLETS",
-               "enable": true
-           },
-           {
-               "paymentMethodType": "CARD",
-               "enable": true
-           },
-           {
-               "paymentMethodType": "NB",
-               "enable": false
-           }
-       ],
-       "emiOptions": {}
-   },
-   "gateway_id": "12",
-   "metadata.JUSPAY:gateway_reference_id": "payu_test",
-   "metadata.expiryInMins": "3397"
-  }
-' 
+    "order_id": "testing-order-one",
+    "amount": "2000.0",
+    "currency" : "INR",
+    "customer_id": "testing-customer-one",
+    "customer_email": "test@mail.com",
+    "customer_phone": "9876543210",
+    "payment_page_client_id": "your_client_id",
+    "action": "paymentPage",
+    "return_url": "https://shop.merchant.com",
+    "description": "Complete your payment",
+    "first_name": "John",
+    "last_name": "wick",
+    "payment_filter" : {
+        "allowDefaultOptions": false,
+        "options": [
+          {
+             "paymentMethodType": "NB",
+             "enable": true
+          },
+          {
+             "paymentMethodType": "UPI",
+             "enable": true
+          },
+          {
+             "paymentMethodType": "CARD",
+             "enable": true
+          },
+          {
+             "paymentMethodType": "WALLET",
+             "enable" : true
+          }
+       ]
+     },
+"metadata.expiryInMins" : "15",
+"source_object" : "PAYMENT_LINK",
+"udf1": "udf1-dummy",
+"udf2": "udf2-dummy",
+"udf3": "udf3-dummy",
+"udf4": "udf4-dummy",
+"udf6": "udf6-dummy",
+"udf5": "udf5-dummy",
+"udf7": "udf7-dummy",
+"udf8": "udf8-dummy",
+"udf9": "udf9-dummy",
+"udf10": "udf10-dummy",
+"send_mail": true,
+"send_sms" : true}'
