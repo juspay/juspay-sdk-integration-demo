@@ -20,8 +20,6 @@
             "mandate.startDate": "1703768016",
             "mandate.endDate": "1733011200",
             "mandate.frequency": "ASPRESENTED",
-            "mandate.blockFunds": false,
-            "mobileCountryCode": "+91",
             "customerId": "customer_id",
             "customerPhone": "8987654567",
             "customerEmail": "asdf@gmail.com",
