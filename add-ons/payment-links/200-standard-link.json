@@ -23,7 +23,6 @@
       "clientAuthToken": "tkn_9e414695b9654c529c8161d1807a47cd",
             "clientAuthTokenExpiry": "2023-12-28T13:24:57Z",
             "environment": "sandbox",
-      "gatewayId": "12",
       "metadata.expiryinmins": "3397",
             "metadata.JUSPAY:gatewayReferenceId": "payu_test",
             "action": "paymentPage",
