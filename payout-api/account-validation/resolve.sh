@@ -16,5 +16,4 @@ curl --location 'https://api.juspay.in/payout/merchant/v1/benedetails' \
     "customerId" : "14212551",
     "email": "test@gmail.com",
     "phone": "8088375524"
-
 }'
