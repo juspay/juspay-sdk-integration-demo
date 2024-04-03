@@ -4,6 +4,13 @@ This is a sample java kit using web-servlets.
 ## Setup
 Place config.json file inside src/main/resources folder, ensure fields like API_KEY, MERCHANT_ID, PAYMENT_PAGE_CLIENT_ID & BASE_URL are populated.
 
+<!-- block:start:pre-requisites -->
+## Prerequisites
+1. Java sdk >= 8
+2. Maven
+3. JAVA_HOME path configured
+<!-- block:end:pre-requisites -->
+
 ### Rest endpoints
 | Environment       | Endpoint                             |
 |-------------------|--------------------------------------|
