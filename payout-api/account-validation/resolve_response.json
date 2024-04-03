@@ -1,0 +1,30 @@
+{
+    "validateResp": {
+        "status": "SUCCESS",
+        "responseMessage": "SUCCESS",
+        "responseCode": "SUCCESS",
+        "payload": {
+            "vpa": "8088375524@mapper.npci",
+            "merchantId": "TEST",
+            "merchantChannelId": "TESTAPP",
+            "isMerchant": "false",
+            "gatewayTransactionId": "751a26e4e0d42419eb48ef65161ba0",
+            "gatewayResponseStatus": "FAILURE",
+            "gatewayResponseMessage": "Upi Number Mapping does not exist",
+            "gatewayResponseCode": "MM2"
+        }
+    },
+    "uniqueId": "beneID11",
+    "status": "ERROR",
+    "responseCode": "UNABLE_TO_VALIDATE",
+    "remark": "unable to validate mobile",
+    "gatewayRefId": "751a26e4e0d42419eb48ef65161ba0",
+    "fulfillmentMethod": "YESBIZ_UPI",
+    "beneDetails": {
+        "details": {
+            "name": "Aditya Kadrolkar",
+            "mobile": "8088375524"
+        },
+        "type": "UPI_ID"
+    }
+}
