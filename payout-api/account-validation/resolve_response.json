@@ -1,30 +1,34 @@
 {
-    "validateResp": {
-        "status": "SUCCESS",
-        "responseMessage": "SUCCESS",
-        "responseCode": "SUCCESS",
-        "payload": {
-            "vpa": "8088375524@mapper.npci",
-            "merchantId": "TEST",
-            "merchantChannelId": "TESTAPP",
-            "isMerchant": "false",
-            "gatewayTransactionId": "751a26e4e0d42419eb48ef65161ba0",
-            "gatewayResponseStatus": "FAILURE",
-            "gatewayResponseMessage": "Upi Number Mapping does not exist",
-            "gatewayResponseCode": "MM2"
-        }
-    },
-    "uniqueId": "beneID11",
-    "status": "ERROR",
-    "responseCode": "UNABLE_TO_VALIDATE",
-    "remark": "unable to validate mobile",
-    "gatewayRefId": "751a26e4e0d42419eb48ef65161ba0",
-    "fulfillmentMethod": "YESBIZ_UPI",
-    "beneDetails": {
-        "details": {
-            "name": "Aditya Kadrolkar",
-            "mobile": "8088375524"
-        },
-        "type": "UPI_ID"
-    }
+	"validateResp": {
+    	"status": "SUCCESS",
+    	"responseMessage": "SUCCESS",
+    	"responseCode": "SUCCESS",
+    	"payload": {
+        	"vpa": "test@upi",
+        	"name": "Aditya",
+        	"merchantId": "ECYBUPITEST",
+        	"merchantChannelId": "ECYBUPITESTAPP",
+        	"isMerchant": "false",
+        	"iin": "500007",
+        	"ifsc": "AABD0000011",
+        	"gatewayTransactionId": "fdbb7168f9d4e90945fa032823f7ea",
+        	"gatewayResponseStatus": "SUCCESS",
+        	"gatewayResponseMessage": "Your transaction is successful",
+        	"gatewayResponseCode": "00"
+    	}
+	},
+	"uniqueId": "beneID11",
+	"status": "VALID",
+	"responseCode": "VALID_VPA",
+	"resolvedVpa": "test@upi",
+	"remark": "Mobile Number Resolved Successfully",
+	"nameAtBank": "Aditya",
+	"gatewayRefId": "fdbb7168f9d4e90945fa032823f7ea",
+	"fulfillmentMethod": "YESBIZ_UPI",
+	"beneDetails": {
+    	"details": {
+        	"mobile": "8088375524"
+    	},
+    	"type": "UPI_ID"
+	}
 }
