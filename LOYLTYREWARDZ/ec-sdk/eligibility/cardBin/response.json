@@ -1,0 +1,16 @@
+{
+  "card_sub_type_category": "RETAIL",
+  "country": "INDIA",
+  "extended_card_type": "DEBIT",
+  "reward_support_gateways": [
+      "LOYLTYREWARDZ"
+  ],
+  "brand": "XXX",
+  "juspay_bank_code": "JP_XXX",
+  "object": "cardbin",
+  "id": "xxxxx",
+  "card_sub_type": "XXX SIGNATURE",
+  "type": "DEBIT",
+  "bank": "XXXX Bank",
+  "reward_supported": true
+}
