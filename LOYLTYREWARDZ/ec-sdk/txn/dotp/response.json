@@ -1,0 +1,25 @@
+{
+  "order_id": "xxxxxxxxxxxxx",
+  "status": "PENDING_VBV",
+  "payment": {
+      "authentication": {
+          "url": "https://sandbox.juspay.in/v2/pay/start/<merchant_id>/<txn_uuid>?cardIssuerBankName%3DLOYLTYREWARDZ%26cardType%3DREWARD%26paymentMethod%3DLOYLTYREWARDZ%26paymentMethodType%3DREWARD&otpWaitPage=true",
+          "params": {
+              "submit_otp_allowed": true,
+              "auth_type": "",
+              "resend_otp_allowed": true,
+              "card_isin": "",
+              "challenge_id": "100001571534",
+              "card_issuer_bank_name": "LOYLTYREWARDZ",
+              "id": "xxxxxxxxxxxxx",
+              "fallback_url": "https://sandbox.juspay.in/v2/pay/start/<merchant_id>/<tan_uuid>?cardIssuerBankName%3DLOYLTYREWARDZ%26cardType%3DREWARD%26paymentMethod%3DLOYLTYREWARDZ%26paymentMethodType%3DREWARD?fallback=otp"
+          },
+          "method": "GET"
+      }
+  },
+  "txn_uuid": "xxxxxxxxxxxxx",
+  "offer_details": {
+      "offers": []
+  },
+  "txn_id": "<merchant_id>-<order_id>-x"
+}
