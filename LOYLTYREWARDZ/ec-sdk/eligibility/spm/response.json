@@ -1,0 +1,69 @@
+{
+  "vpas": [],
+  "wallets": [],
+  "tpvPaymentMethods": [],
+  "merchantPaymentMethods": [
+      {
+          "juspayBankCode": "JP_LOYLTY",
+          "paymentMethodType": "REWARD",
+          "walletDirectDebitSupport": false,
+          "paymentMethod": "LOYLTYREWARDZ",
+          "description": "Loylty Rewards",
+          "paymentMethodSubType": "REWARD"
+      }
+  ],
+  "aadhaarMethods": [],
+  "upiInapp": [],
+  "appsUsed": [],
+  "emandatePaymentMethods": [],
+  "merchantConfigs": {
+      "mustUseGivenOrderIdForTxn": false
+  },
+  "virtualAccounts": [],
+  "restrictedMode": false,
+  "tpvEmandatePaymentMethods": [],
+  "cards": [
+      {
+          "cardFingerprint": "xxxxxxxxxxxxxxxxxxxxxx",
+          "cardBrand": "VISA",
+          "expired": false,
+          "cardIssuerCountry": "xxxx",
+          "cardGlobalFingerprint": "xxxxxxxxxxxxxxxxxxxxxx",
+          "cardToken": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "cardReference": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "tokenizeSupport": false,
+          "nameOnCard": "name",
+          "vaultProvider": "JUSPAY",
+          "count": 10,
+          "cardExpYear": "xxxx",
+          "cardExpMonth": "xx",
+          "tokenDetails": {
+              "tokenizationStatus": "INITIATED"
+          },
+          "cardIsin": "xxxxxx",
+          "cardType": "CREDIT",
+          "cardIssuer": "",
+          "cardNumber": "xxxx-XXXXXXXX-xxxx",
+          "metadata": {
+              "origin_merchant_id": "xxxx"
+          },
+          "lastUsed": "2023-01-30T07:13:19Z",
+          "nickname": "",
+          "cardSubType": "TEST_VARIANT",
+          "extendedCardType": "CREDIT",
+          "rewardSupportGateways": ["LOYLTYREWARDZ"],
+          "providerCategory": "CONTAINER",
+          "provider": "JUSPAY",
+          "rewardSupported": true
+      }
+  ],
+  "customerInfo": {
+      "juspay_customer_id": "xxxxxxxxxxxxxxxxxxxxxx"
+  },
+  "nbMethods": [],
+  "lastUsedPaymentMethod": {},
+  "offers": [],
+  "timestamp": "2024-04-03T07:11:43.427015853Z",
+  "verifyVpaEnabledGateways": [],
+  "outages": []
+}

@@ -1,0 +1,46 @@
+{
+  "merchantId": "xxxxx",
+  "customer_id": "xxxxxxxx",
+  "cards": [
+      {
+          "card_sub_type_category": "RETAIL",
+          "expired": false,
+          "card_issuer_country": "xxxxx",
+          "name_on_card": "name",
+          "card_reference": "xxxxxxxxxxxxxxxxxxxxxx",
+          "card_token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "card_issuer": "",
+          "card_brand": "xxxx",
+          "card_number": "xxxx-XXXXXXXX-xxxx",
+          "card_fingerprint": "xxxxxxxxxxxxxxxxxxxxxx",
+          "extended_card_type": "CREDIT",
+          "card_type": "CREDIT",
+          "token": {
+              "last_four_digits": null,
+              "card_reference": null,
+              "card_fingerprint": null,
+              "par": null,
+              "card_isin": null,
+              "tokenization_status": "INITIATED",
+              "expiry_year": null,
+              "expiry_month": null
+          },
+          "reward_support_gateways": ["LOYLTYREWARDZ"],
+          "provider_category": "CONTAINER",
+          "card_isin": "xxxxxx",
+          "vault_provider": "JUSPAY",
+          "juspay_bank_code": null,
+          "metadata": {
+              "origin_customer_id": "xxxxxxxx",
+              "origin_merchant_id": "xxxxxxxx"
+          },
+          "tokenize_support": false,
+          "nickname": "",
+          "card_sub_type": "TEST_VARIANT",
+          "reward_supported": true,
+          "card_exp_year": "xxxx",
+          "provider": "JUSPAY",
+          "card_exp_month": "xx"
+      }
+  ]
+}

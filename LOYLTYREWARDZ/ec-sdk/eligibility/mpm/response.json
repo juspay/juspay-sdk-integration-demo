@@ -1,0 +1,18 @@
+{
+    "merchant_configs": {
+        "must_use_given_order_id_for_txn": false
+    },
+    "outage": [],
+    "timestamp": "2024-04-03T07:27:26.46395637Z",
+    "restricted_mode": false,
+    "payment_methods": [
+      {
+        "payment_method": "LOYLTYREWARDZ",
+        "payment_method_type": "REWARD",
+        "payment_method_sub_type": "REWARD",
+        "juspay_bank_code": "JP_LOYLTY",
+        "description": "Loylty Rewards"
+      }
+    ],
+    "verify_vpa_enabled_gateways": []
+}
