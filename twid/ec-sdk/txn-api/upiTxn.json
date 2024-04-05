@@ -1,0 +1,22 @@
+{
+  "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+  "service": "in.juspay.hyperapi",
+  "payload": {
+    "action": "upiTxn",
+    "orderId": "hyperorder45314",
+    "custVpa": "90005643210@ybl",
+    "upiSdkPresent": false,
+    "displayNote": "UPI Collect",
+    "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213",
+    "additionalPaymentDetails": [
+      {
+        "direct_wallet_token": "tk_2c799f295ae748e991c78af11bb2c8f2",
+        "payment_method": "TWID",
+        "payment_method_type": "REWARD",
+        "reward_id": "140233615",
+        "reward_mode": "earn",
+        "split_amount": "0"
+      }
+    ]
+  }
+}
