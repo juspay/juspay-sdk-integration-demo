@@ -1,0 +1,8 @@
+"additionalPaymentDetails": 
+[{
+            "payment_method_type": "CARD",
+            "payment_method": "QWIKCILVER",
+            "card_token": "<Gift Card No.>",
+            "card_security_code": "<Gift Card Pin>"
+}  
+],

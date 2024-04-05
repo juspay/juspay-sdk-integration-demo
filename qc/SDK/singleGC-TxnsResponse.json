@@ -1,0 +1,12 @@
+{
+    "error": false,
+    "errorCode": "",
+    "errorMessage": "",
+    "payload": {
+        "action": "giftCardTxn",
+        "orderId": "52062892675",
+        "status": "CHARGED"
+    },
+    "requestId": "27f5e71e-0685-4579-86b1-f7f132798e5e",
+    "service": "in.juspay.hyperapi"
+}

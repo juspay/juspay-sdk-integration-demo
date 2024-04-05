@@ -1,0 +1,16 @@
+{
+    "order_id": "<order Id>",
+    "status": "PENDING_VBV",
+    "payment": {
+        "authentication": {
+            "url": "https://sandbox.juspay.in/v2/pay/start/picasso/mozwi4RGgsBKjCNr61B?cardIssuerBankName%3DBHARATX%26cardType%3D%26paymentMethod%3DBHARATX%26paymentMethodType%3DCONSUMER_FINANCE",
+            "method": "GET"
+        }
+    },
+    "txn_uuid": "<txn uuid>",
+    "merchant_return_url": "https://sandbox.juspay.in/end",
+    "offer_details": {
+        "offers": []
+    },
+    "txn_id": "<txn-id>"
+}

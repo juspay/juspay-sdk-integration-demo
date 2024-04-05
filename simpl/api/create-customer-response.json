@@ -1,0 +1,16 @@
+{
+    "first_name": "Arnab",
+    "mobile_country_code": "91",
+    "last_updated": "2023-12-15T15:26:03.084947Z",
+    "object_reference_id": "ori_1702653963",
+    "mobile_number": "9608754682",
+    "juspay": {
+        "client_auth_token_expiry": "2023-12-15T15:41:03Z",
+        "client_auth_token": "tkn_338cc43756754fd8ac4ee2650553612c"
+    },
+    "last_name": null,
+    "object": "customer",
+    "email_address": "arnab.das@juspay.in",
+    "id": "cth_rn94E73AizRcUCZf",
+    "date_created": "2023-12-15T15:26:03.084947Z"
+}

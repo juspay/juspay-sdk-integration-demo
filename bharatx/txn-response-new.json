@@ -1,0 +1,15 @@
+{
+    "ended": {
+      "error": false,
+      "errorCode": "",
+      "errorMessage": "",
+      "payload": {
+        "action": "consumerFinanceTxn",
+        "orderId": "ord_C17JTSjnBNmUep",
+        "status": "redirected",
+        "txnUuid": "mozmLSD1UXJm2D1pBd6"
+      },
+      "requestId": "75ef520c-b290-4cf7-8a11-25a9b0ba8731",
+      "service": "in.juspay.ec"
+    }
+ }

@@ -1,0 +1,15 @@
+{
+    "order_id": "o1702885187",
+    "status": "AUTHORIZED",
+    "payment": {
+        "authentication": {
+            "url": "http://localhost:8080/v2/pay/finish/azharamin/mozqn43m2xXieQYo1bF/o1702885187",
+            "method": "GET"
+        }
+    },
+    "txn_uuid": "mozqn43m2xXieQYo1bF",
+    "offer_details": {
+        "offers": []
+    },
+    "txn_id": "azharamin-o1702885187-2"
+}

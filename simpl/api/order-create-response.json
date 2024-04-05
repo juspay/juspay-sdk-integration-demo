@@ -1,0 +1,12 @@
+{
+    "status": "CREATED",
+    "status_id": 1,
+    "id": "ordeh_ba1ecdf4312442b4916230b1d31c702c",
+    "order_id": "o1702870101",
+    "payment_links": {
+        "iframe": "http://localhost:8080/merchant/ipay/ordeh_ba1ecdf4312442b4916230b1d31c702c",
+        "web": "http://localhost:8080/merchant/pay/ordeh_ba1ecdf4312442b4916230b1d31c702c",
+        "mobile":
+   "http://localhost:8080/merchant/pay/ordeh_ba1ecdf4312442b4916230b1d31c702c?mobile=true"
+    }
+}

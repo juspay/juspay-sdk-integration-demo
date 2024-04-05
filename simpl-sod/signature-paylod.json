@@ -1,0 +1,18 @@
+"payload": {
+    "action": "paymentPage",
+    "clientId": "picasso",
+    "language": "english",
+    "merchantId": "picasso",
+    "environment": "sandbox",
+    "customerId": "9986028298",
+    "orderId": "DW-FRROJjp0Ij",
+    "amount": "1.00",
+    "endUrls": [
+        "https://sandbox.juspay.in/end"
+    ],
+    "customerEmail": "test007@gmail.com",
+    "merchantKeyId": "8321",
+    "orderDetails": "{\"simplAdditionalInfo\":{\"merchant_params\":{\"email\":\"shshh@gamil.com\",\"user_loyalty_level\":\"Gold\",\"user_blacklist_flag\":\"true\",\"coupon_applied\":\"Coupon Code: MluY-76478694\",\"request_ori_page\":\"precheckout\",\"seller_identifier\":\"123\",\"seller_vintage\":\"4\",\"seller_category\":\"PRIME\",\"additional_order_id\":\"12345\",\"first_name\":\"Simpl\",\"last_name\":\"Simpl\",\"aggregator_flow_ori\":\"seamless\"},\"shippining_address\":{\"line1\":\"54999\",\"line2\":\"300 Randolph Parkways Apt. 902\",\"city\":\"Shauntown\",\"state\":\"Drives\",\"country\":\"French Guiana\",\"pincode\":\"400611\"}},\"order_id\":\"DW-FRROJjp0Ij\",\"first_name\":\"Test\",\"last_name\":\"Customer\",\"customer_phone\":\"9986028298\",\"customer_email\":\"test@gmail.com\",\"merchant_id\":\"picasso\",\"amount\":\"1.00\",\"customer_id\":\"9986028298\",\"timestamp\":\"1692712941234\",\"return_url\":\"https://sandbox.juspay.in/end\",\"currency\":\"INR\",\"mandate.start_date\":\"1692712941234\",\"mandate.end_date\":\"2134731745451\"}",
+    "signature": "sZ2p6OjVQPBj1BHK7+jieXgmprckkwS26iRZj6bbadYSSURBcmKiqjX3xaph6rii8en8aODl8cnvd9vUho9rRon4hFa3ESXTj5VXvDNMQXDl5icdglBtJhh2ZuSqi9rW4sr5sIijDcH5hpvPoODpdb7n4YGCD+h8LzbWSHTPyC8jLBKs0p8Y1PuH5X1W9eNK2t4bEKNm31fgmqrMgnj/r7lATdrqiOBs12hKv1Tmoe1rpI+TmJ41B0F/RuFcKcDvYbuXOJVSCW413QkDHthgvNUWj0m02g+02NukZXrHD1TdEpGS7tDvxlt0FS7o20lbeks9v8f4x3hgcyeHWx5T/Q==",
+    "processStartedTime": 1692712941955
+}

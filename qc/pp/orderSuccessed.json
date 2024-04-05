@@ -1,0 +1,41 @@
+{
+    "event_name": "ORDER_SUCCEEDED",
+    "content": {
+        "order": {
+            "txn_list": "FILTERED",
+            "customer_phone": "FILTERED",
+            "udf8": "",
+            "order_id": "JuspayTest123",
+            "udf9": "",
+            "customer_id": "FILTERED",
+            "amount": 200,
+            "udf4": "",
+            "status": "CHARGED",
+            "udf5": "",
+            "udf6": "",
+            "status_id": 21,
+            "udf7": "",
+            "product_id": "",
+            "refunded": false,
+            "udf10": "",
+            "udf1": "",
+            "udf2": "",
+            "udf3": "",
+            "date_created": "2024-02-15T07:59:56Z",
+            "id": "ordeh_bfdcaa53fe0b4b75984f46796c0767f4",
+            "merchant_id": "testJuspay",
+            "return_url": "https://sandbox.juspay.in",
+            "effective_amount": 200,
+            "currency": "INR",
+            "customer_email": "FILTERED",
+            "payment_links": {
+                "mobile": "https://sandbox.juspay.in/orders/ordeh_bfdca343434375984f46796c0767f4/payment-page",
+                "web": "https://sandbox.juspay.in/orders/ordeh_bfdcaa53f343434f46796c0767f4/payment-page",
+                "iframe": "https://sandbox.juspay.in/orders/ordeh_bfdcaa53fe3433434f46796c0767f4/payment-page"
+            },
+            "amount_refunded": 0
+        }
+    },
+    "date_created": "2024-02-15T08:02:06Z",
+    "id": "evt_V2_763434343434343348346f468bd08673f"
+}

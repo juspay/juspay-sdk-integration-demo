@@ -1,0 +1,17 @@
+{
+    "requestId": "8410b0e0-31fe-41e6-be18-35fff100c9fb",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "action": "giftCardValidate",
+        "orderId": "QC150",
+        "merchantKeyId": "<Merchant-Key-ID>",
+        "merchantId": "<Merchant-ID>",
+        "gatewayReferenceId": "",
+        "gatewayId": "id",
+        "customerId": "9742144874",
+        "clientAuthToken":"<Client-Auth-Token>",
+        "cardType": "QWIKCILVER",
+        "cardToken": "<Gift Card No.>",
+        "cardSecurityCode": "<Card Pin>"
+    }
+}

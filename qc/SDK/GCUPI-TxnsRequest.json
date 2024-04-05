@@ -1,0 +1,22 @@
+{
+    "requestId": "73b8b2c7-0311-4127-b63a-db3a7ae33e5a",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "action": "upiTxn",
+        "orderId": "QC81",
+        "custVpa": "9620684748@ybl",
+        "upiSdkPresent": false,
+        "endUrls": [
+            "https://sandbox.juspay.in/end"
+        ],
+        "additionalPaymentDetails": [
+            {
+                "payment_method_type": "CARD",
+                "payment_method": "QWIKCILVER",
+                "card_token": "<Gift Card No.>",
+                "card_security_code": "<Gift Card Pin>"
+            }
+        ],
+        "displayNote": "UPI Collect"
+    }
+}

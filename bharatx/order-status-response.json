@@ -1,0 +1,122 @@
+"customer_email": "success@eligibility.com",
+    "customer_phone": "8123894779",
+    "customer_id": "cth_v3983WvKa6qZrQzc",
+    "status_id": 21,
+    "status": "CHARGED",
+    "id": "ordeh_062761c8ee57432083c5d63b6a770f68",
+    "merchant_id": "global_sandbox",
+    "amount": 5,
+    "currency": "INR",
+    "order_id": "order_1689161867",
+    "date_created": "2023-07-12T11:37:47Z",
+    "return_url": "https://juspay.in",
+    "product_id": "Shocks",
+    "payment_links": {
+        "iframe": "https://sandbox.juspay.in/orders/ordeh_062761c8ee57432083c5d63b6a770f68/payment-page",
+        "web": "https://sandbox.juspay.in/orders/ordeh_062761c8ee57432083c5d63b6a770f68/payment-page",
+        "mobile": "https://sandbox.juspay.in/orders/ordeh_062761c8ee57432083c5d63b6a770f68/payment-page"
+    },
+    "udf1": "",
+    "udf2": "",
+    "udf3": "",
+    "udf4": "",
+    "udf5": "",
+    "udf6": "",
+    "udf7": "",
+    "udf8": "",
+    "udf9": "",
+    "udf10": "",
+    "txn_id": "global_sandbox-order_1689161867-1",
+    "payment_method_type": "CONSUMER_FINANCE",
+    "auth_type": "",
+    "payment_method": "BHARATX",
+    "refunded": true,
+    "amount_refunded": 5,
+    "effective_amount": 5,
+    "refunds": [
+        {
+            "id": "100000003478",
+            "amount": 5,
+            "unique_request_id": "refund_1689162794",
+            "ref": "7867",
+            "created": "2023-07-12T11:53:15Z",
+            "status": "SUCCESS",
+            "error_message": "",
+            "sent_to_gateway": true,
+            "initiated_by": "API",
+            "refund_source": "BHARATX",
+            "refund_type": "STANDARD"
+        }
+    ],
+    "resp_code": null,
+    "resp_message": null,
+    "bank_error_code": "",
+    "bank_error_message": "",
+    "txn_uuid": "mozoMsSVz4EXeJ2ajTu",
+    "txn_detail": {
+        "txn_id": "global_sandbox-order_1689161867-1",
+        "order_id": "order_1689161867",
+        "status": "CHARGED",
+        "error_code": null,
+        "net_amount": 5,
+        "surcharge_amount": null,
+        "tax_amount": null,
+        "txn_amount": 5,
+        "offer_deduction_amount": null,
+        "gateway_id": 275,
+        "currency": "INR",
+        "express_checkout": false,
+        "redirect": true,
+        "txn_uuid": "mozoMsSVz4EXeJ2ajTu",
+        "gateway": "BHARATX",
+        "error_message": "",
+        "created": "2023-07-12T11:37:58Z",
+        "txn_flow_type": "REDIRECT_DEBIT"
+    },
+    "payment_gateway_response": {
+        "resp_code": "SUCCESS",
+        "rrn": null,
+        "created": "2023-07-12T11:39:03Z",
+        "epg_txn_id": "global_sandbox-order_1689161867-1",
+        "resp_message": "SUCCESS",
+        "auth_id_code": null,
+        "txn_id": "global_sandbox-order_1689161867-1",
+        "gateway_response": {
+            "configuration": null,
+            "transaction": {
+                "status": "SUCCESS",
+                "amount": 500,
+                "partnerId": "testPartnerId",
+                "url": "https://web-v2.bharatx.tech/redirect/814539",
+                "refund": null,
+                "createTimestamp": 1689161881,
+                "emis": [
+                    {
+                        "amount": 167,
+                        "dueTimestamp": 1689161881,
+                        "isPaid": true
+                    },
+                    {
+                        "amount": 167,
+                        "dueTimestamp": 1691773681,
+                        "isPaid": false
+                    },
+                    {
+                        "amount": 166,
+                        "dueTimestamp": 1694365681,
+                        "isPaid": false
+                    }
+                ],
+                "id": "global_sandbox-order_1689161867-1",
+                "notes": {
+                    "description": ""
+                }
+            },
+            "user": null
+        }
+    },
+    "gateway_id": 275,
+    "gateway_reference_id": "suyash_bharatx",
+    "offers": [],
+    "maximum_eligible_refund_amount": 0
+}
