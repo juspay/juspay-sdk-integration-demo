@@ -1,0 +1,39 @@
+{
+    "order_id": "ord_1712738213",
+    "status": "CHARGED",
+    "payment": {
+        "authentication": {
+            "url": "http://api.juspay.in/v2/pay/start/udit_juspay/mozj64HTYYuEYN3EwnR?otpWaitPage=true",
+            "params": {
+                "submit_otp_allowed": true,
+                "auth_type": "",
+                "resend_otp_allowed": true,
+                "card_isin": "",
+                "challenge_id": "1000012447",
+                "card_issuer_bank_name": "LOYLTYREWARDZ",
+                "id": "mozj64HTYYuEYN3EwnR",
+                "fallback_url": "http://api.juspay.in/v2/pay/start/udit_juspay/mozj64HTYYuEYN3EwnR?fallback=otp"
+            },
+            "method": "GET"
+        }
+    },
+    "gateway": "LOYLTYREWARDZ",
+    "created": "2024-04-10T08:36:59Z",
+    "payment_gateway_response": {
+        "auth_id_code": null,
+        "created": "2024-04-10T08:37:06Z",
+        "rrn": null,
+        "epg_txn_id": "a72f3900-c81a-411b-acad-6bcfd45abecd",
+        "txn_id": "udit_juspay-ord_1712738213-1",
+        "resp_message": "",
+        "resp_code": "200"
+    },
+    "id": "mozj64HTYYuEYN3EwnR",
+    "txn_id": "udit_juspay-ord_1712738213-1",
+    "resp_message": "",
+    "payment_info": {
+        "payment_method": "LOYLTYREWARDZ",
+        "payment_method_type": "REWARD"
+    },
+    "resp_code": ""
+}
