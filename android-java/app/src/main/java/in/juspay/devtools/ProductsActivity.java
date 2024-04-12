@@ -62,7 +62,8 @@ public class ProductsActivity extends AppCompatActivity {
     private void initiatePaymentsSDK() {
         if(!hyperServicesHolder.isInitiated()){
             initiatePayload = createInitiatePayload();
-            hyperServicesHolder.initiate(initiatePayload);
+            HyperPaymentsCallbackAdapter callbackAdapter = createHyperPaymentsCallbackAdapter()
+            hyperServicesHolder.initiate(initiatePayload,callbackAdapter);
 
             //Showing snackbar
             Helper helper = new Helper();
