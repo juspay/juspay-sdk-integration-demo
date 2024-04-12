@@ -24,6 +24,16 @@
                         // Hide Loader
                         dialog.hide();
                     }
+                    else if (event.equals("initiate_result")) {
+                        boolean error = jsonObject.optBoolean("error");
+                        JSONObject innerPayload = jsonObject.optJSONObject("payload");
+                        String status = innerPayload.optString("status");
+                        if (status.equals("success")) {
+                            // Initiate was successful, handle accordingly (call Process)
+                        } else {
+                            // Initiate failed, handle accordingly (call initiate() again)
+                        }
+                    }
                     // Handle Process Result
                     // This case will reach once the Hypercheckout screen closes
                     // block:start:handle-process-result
