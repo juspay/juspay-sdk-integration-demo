@@ -63,8 +63,8 @@ public class ProductsActivity extends AppCompatActivity {
         if(!hyperServicesHolder.isInitiated()){
             initiatePayload = createInitiatePayload();
             HyperPaymentsCallbackAdapter callbackAdapter = createHyperPaymentsCallbackAdapter()
-            hyperServicesHolder.initiate(initiatePayload,callbackAdapter);
-
+            hyperServicesHolder.setCallback(callbackAdapter);
+            hyperServicesHolder.initiate(initiatePayload);
             //Showing snackbar
             Helper helper = new Helper();
             CoordinatorLayout coordinatorLayout = findViewById(R.id.coordinatorLayout2);
