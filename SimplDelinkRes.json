@@ -1,0 +1,17 @@
+{
+    "object": "wallet_account",
+    "last_refreshed": null,
+    "token": null,
+    "linked": false,
+    "id": "wlt_a1929568f0bc6bee1eb",
+    "current_balance": null,
+    "sub_details": [
+        {
+            "payment_method": "SIMPL",
+            "last_refreshed": null,
+            "current_balance": null,
+            "payment_method_type": "WALLET"
+        }
+    ],
+    "wallet": "SIMPL"
+}
