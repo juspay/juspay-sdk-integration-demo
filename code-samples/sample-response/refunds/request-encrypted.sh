@@ -1,7 +1,7 @@
-curl --location --request POST 'https://smartgatewayuat.hdfcbank.com/orders/{order_id}/refunds \
--H "version:2023-06-30" \
--H 'Content-Type: application/x-www-form-urlencoded'\
--H 'x-merchantid: merchant_id'\
--H 'x-customerid: customer_id'\
--d "unique_request_id=xyz123" \
--d "amount=100.00"
+curl --location --globoff 'https://smartgatewayuat.hdfcbank.com/orders/{order_id}/refunds' \
+--header 'x-merchantid: merchant_id' \
+--header 'x-customerid: customer_id' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'Authorization: Basic base_64_encoded_api_key==' \
+--data-urlencode 'unique_request_id=xyz123' \
+--data-urlencode 'amount=100.00'
