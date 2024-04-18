@@ -37,7 +37,7 @@
 <%
     } catch (Exception e) {
 %>
-        <p> Unexpected error occurred, Error message:  <%= e.getMessage() %> </p>
+        <p> Unexpected error occurred </p>
 <%
     }
 %>
