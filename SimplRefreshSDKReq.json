@@ -1,0 +1,8 @@
+{
+    "requestId": "1efa0520-0d1b-9993-ab7e11b98296",
+    "service": "in.juspay.ec",
+    "payload": {
+        "action": "refreshWalletBalances",
+        "clientAuthToken": "tkn_b8f4c7c3dc7fc466412a404"
+    }
+}
