@@ -1,0 +1,28 @@
+{
+    "object": "list",
+    "count": 1,
+    "list": [
+        {
+            "object": "wallet_account",
+            "last_refreshed": null,
+            "gateway_reference_id": null,
+            "token": "tk_7c46bbe44fa8cbf4de0fef",
+            "linked": true,
+            "id": "wlm_b2cd9a7b344b6125b663",
+            "current_balance": null,
+            "sub_details": [
+                {
+                    "payment_method": "SIMPL",
+                    "last_refreshed": null,
+                    "current_balance": null,
+                    "payment_method_type": "WALLET"
+                }
+            ],
+            "wallet": "SIMPL",
+            "metadata": null,
+            "juspay_bank_code": "JP_SIMPL"
+        }
+    ],
+    "total": 1,
+    "offset": 0
+}
