@@ -1,0 +1,13 @@
+{
+    "juspayBankCode": "JP_LOYLTY",
+    "paymentMethodType": "REWARD",
+    "walletDirectDebitSupport": false,
+    "paymentMethod": "LOYLTYREWARDZ",
+    "nickName": "Loylty Rewards",
+    "supportedReferenceIds": [
+        "testmode"
+    ],
+    "description": "Loylty Rewards",
+    "supportedByDefault": false,
+    "paymentMethodSubType": "REWARD"
+}
