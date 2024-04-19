@@ -1,0 +1,26 @@
+{
+    "service": "in.juspay.ec",
+    "requestId": "5ccac13f-4c7d-45c0-8977-c37590cd60a8",
+    "payload": {
+        "action": "cardPointsTxn",
+        "txnList": [],
+        "statusId": 21,
+        "status": "CHARGED",
+        "returnUrl": "<return_url>",
+        "otherInfo": {
+            "status": "SUCCESS"
+        },
+        "orderId": "DW-qnur3eewcH",
+        "offerDetails": {
+            "offers": []
+        },
+        "merchantId": "picasso",
+        "gatewayId": 273,
+        "errorInfo": {},
+        "bankErrorMessage": "",
+        "bankErrorCode": ""
+    },
+    "errorMessage": "",
+    "errorCode": "",
+    "error": false
+}

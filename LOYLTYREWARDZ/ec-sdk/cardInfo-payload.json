@@ -1,0 +1,16 @@
+{
+    "payload": {
+        "action": "cardInfo",
+        "cardBin": "512967",
+        "checkMandateSupport": true,
+        "checkTokenizeSupport": true,
+        "checkRewardsSupport": true,
+        "clientAuthToken": "tkn_4f6c2530bff84f7cb2ce83893ead48cd",
+        "currentActivityId": "3abce9cb-a561-4cef-a899-1da94b087158",
+        "merchant_keyboard_mode": 16,
+        "merchant_root_view": "16908290",
+        "processStartedTime": 1713436350376
+    },
+    "requestId": "a92c4dcd-664c-4c25-b191-82bc6630f53a",
+    "service": "in.juspay.ec"
+}

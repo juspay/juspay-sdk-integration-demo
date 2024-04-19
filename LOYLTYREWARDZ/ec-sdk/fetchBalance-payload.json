@@ -1,0 +1,26 @@
+{
+    "service": "in.juspay.ec",
+    "requestId": "7b5fcca3-bf4e-4645-9fcd-a40ab2ef8b07",
+    "ppFlow": null,
+    "payload": {
+        "signaturePayload": "<signature_payload>",
+        "Signature": "<signature>",
+        "mobileNumber": "9620126248",
+        "merchantKeyId": "8321",
+        "merchantId": "picasso",
+        "invoiceAmount": 1000,
+        "gatewayReferenceId": "testmode",
+        "clientAuthToken": "tkn_6ab49f47792c4c7faa8e9fb54b127ce7",
+        "cardType": "LOYLTYREWARDZ",
+        "cardLastFour": "1614",
+        "cardIsin": "459156",
+        "action": "fetchCardPointsBalance"
+    },
+    "orderId": "HI-1ajtLcEQ8O",
+    "merchant_id": "picasso",
+    "lifeCycleId": "sdk:4c8aec7b-a605-48af-841e-84205a15552a/os:40de9637-1d96-462f-9f05-d7b28668c547/hyperpay:260d7c3d-d9e2-4c9c-9f77-a241cd191d37",
+    "environment": "sandbox",
+    "customer_id": "cth_srimitra123",
+    "client_id": "picasso",
+    "service_based": "true"
+}

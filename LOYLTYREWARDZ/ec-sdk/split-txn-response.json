@@ -1,0 +1,59 @@
+{
+    "errorMessage": "",
+    "requestId": "3049bb61-84e2-47f9-8c6b-9eb8445a34af",
+    "service": "in.juspay.ec",
+    "payload": {
+      "txnList": [
+        {
+          "txnUuid": "moz9U1rm9fLKRUj1vAr",
+          "paymentMethodType": "CARD",
+          "paymentMethod": "VISA",
+          "txnId": "picasso-hyperorder1713513285306-1-1",
+          "txnAmount": 2,
+          "txnStatus": "CHARGED"
+        },
+        {
+          "txnUuid": "mozpSCZqcmNaB3oSeg7",
+          "paymentMethodType": "REWARD",
+          "paymentMethod": "LOYLTYREWARDZ",
+          "txnId": "picasso-hyperorder1713513285306-1-2",
+          "txnAmount": 498,
+          "txnStatus": "CHARGED"
+        }
+      ],
+      "merchantId": "picasso",
+      "otherInfo": {
+        "url": "https://sandbox.juspay.in/end?order_id=hyperorder1713513285306&status=CHARGED&status_id=21&signature=6gTOSeUDqVMRROLPiyC9yhgtUhYPB4Oku8NRrtbTOoY%3D&signature_algorithm=HMAC-SHA256",
+        "realtime": {
+          "merchantId": "picasso",
+          "os": "ANDROID",
+          "disableECLoader": "true",
+          "customerId": "cth_srimitra123",
+          "environment": "sandbox",
+          "clientId": "groww",
+          "amazonPay": "true",
+          "signaturePayload": "{\"merchant_id\":\"picasso\",\"customer_id\":\"cth_srimitra123\",\"mobile_number\":\"RIPPIFILTERED\",\"email_address\":\"RIPPIFILTERED\",\"first_name\":\"Test\",\"last_name\":\"Customer\",\"timestamp\":\"1713513288218\"}",
+          "aPayPrefetchResp": "{\"responseValue\":false,\"responseDetails\":\"Register for UPI on the Amazon app\",\"responseCode\":460}",
+          "requestID": "9470682e-4090-4b7e-8fca-b1767923a447",
+          "merchantKeyId": "8321",
+          "requestId": "3049bb61-84e2-47f9-8c6b-9eb8445a34af",
+          "globalHeaders": "{\"headersList\":[{\"headerValue\":null,\"headerKey\":\"x-routing-id\"},{\"headerValue\":\"picasso\",\"headerKey\":\"x-merchantid\"},{\"headerValue\":\"hyperorder1713513285306\",\"headerKey\":\"x-orderid\"}]}",
+          "PPAfterRenderEnd": 1713513301289,
+          "lastVisitedUrl": "https://api.razorpay.com/v1/payments/pay_O0PEgiywaFvR3f/callback/42906857a7cd34594091c9ffbf524f3458dfae62/rzp_test_oauth_Nk8qkIE651jm5E?status=authorized&token_recurring_status=rejected&language_code=en",
+          "shouldCreateCustomer": "false",
+          "isWrapper": "false",
+          "merchantLoader": "false",
+          "signature": "s+RvAES+UBc9s+Dow8jG/7P1X2yxqu1kWyQeZqwW4BFSRdzDx604na7siAT8qMGF1r0wODqTYCG9\nHnYiOZpkxcJ5aZbAyxMq7ZGS6kubLuffdSn1f3XUzJ1uP2bZbl7+d/3PJs3lE2tzc7ICe2Wj2XM7\nyD/ZEgRaO7bUwQoEabpiFLLU1RN1gcgO5UZbxE7ceE5lQed7vxqFIT7V1wqWzt/GtjTm/KxZ8mSF\n3LHG3k0QvXZ+P1uDrVor9RdHs40qnCNn3IXn8pf8P5y/mUXGfQGymuAtKZtow7qzLY46VF9pgypH\nsKLpSHYBaN6/nb5lJ0IoPWvwBmhwE32gAxi/HA==\n",
+          "eligibiltyInInitiate": "false",
+          "clientAuthToken": ""
+        }
+      },
+      "statusId": 21,
+      "status": "CHARGED",
+      "orderId": "hyperorder1713513285306",
+      "action": "cardTxn",
+      "errorInfo": {}
+    },
+    "errorCode": "",
+    "error": false
+}

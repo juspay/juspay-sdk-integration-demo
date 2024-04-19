@@ -1,0 +1,16 @@
+{
+    "service": "in.juspay.ec",
+    "requestId": "7b5fcca3-bf4e-4645-9fcd-a40ab2ef8b07",
+    "payload": {
+        "action": "fetchCardPointsBalance",
+        "rewardDetails": {
+            "programCode": "YesDc",
+            "cardLastFour": "1614"
+        },
+        "isEligible": true,
+        "balance": 1000
+    },
+    "errorMessage": "",
+    "errorCode": "",
+    "error": false
+}

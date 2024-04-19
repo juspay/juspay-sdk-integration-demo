@@ -1,0 +1,47 @@
+{
+  "error": false,
+  "errorCode": "",
+  "errorMessage": "",
+  "payload": {
+    "action": "cardList",
+    "cards": [
+      {
+        "cardBrand": "VISA",
+        "cardExpMonth": "RIPPIFILTERED",
+        "cardExpYear": "RIPPIFILTERED",
+        "cardFingerprint": "4vr1eaobkjwym11p5wds8akeb",
+        "cardIsin": "401704",
+        "cardIssuer": "ICICI Bank",
+        "cardIssuerCountry": "INDIA",
+        "cardNumber": "XXXX-XXXXXXXX-6093",
+        "cardReference": "cref_abf7860679b94ace894c7d8b2a8602d7",
+        "cardSubType": "VISA PLATINUM",
+        "cardToken": "tkn_1b2802721c8b414f9620bb9a9eeba6b9",
+        "cardType": "DEBIT",
+        "expired": false,
+        "juspayBankCode": "JP_ICICI",
+        "nameOnCard": "name",
+        "nickname": "",
+        "provider": "VISA",
+        "providerCategory": "NETWORK",
+        "token": {
+          "cardFingerprint": "4vr1eaobkjwym11p5wds8akeb",
+          "cardIsin": "442305587",
+          "cardReference": "cref_abf7860679b94ace894c7d8b2a8602d7",
+          "expiryMonth": "RIPPIFILTERED",
+          "expiryYear": "RIPPIFILTERED",
+          "lastFourDigits": "8940",
+          "par": "V0010013822352369299779767825",
+          "tokenizationStatus": "ACTIVE"
+        },
+        "tokenizeSupport": false,
+        "rewardSupportGateways": ["LOYLTYREWARDZ"],
+        "rewardSupported": true
+      }
+    ],
+    "customerId": "2f8c9e59383223942eabb81c05d801c3",
+    "merchantId": "slice"
+  },
+  "requestId": "6BA77B76-6011-4706-AA6C-73C8D5B79F5E",
+  "service": "in.juspay.ec"
+}

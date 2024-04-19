@@ -1,0 +1,22 @@
+{
+    "error": false,
+    "errorCode": "",
+    "errorMessage": "",
+    "payload": {
+        "action": "cardInfo",
+        "bank": "Axis Bank",
+        "brand": "MASTERCARD",
+        "cardSubType": "",
+        "country": "INDIA",
+        "extendedCardType": "CREDIT",
+        "id": "533467",
+        "juspayBankCode": "JP_AXIS",
+        "object": "cardbin",
+        "type": "CREDIT",
+        "rewardSupportGateways": ["LOYLTYREWARDZ"],
+        "rewardSupported": true
+        
+    },
+    "requestId": "E5517C4A-6628-469E-82F0-2B35334C9D1C",
+    "service": "in.juspay.ec"
+}
