@@ -30,6 +30,25 @@
     <p>Here is the stringified map response:- </p>
     <p><%= refundResponse %></p>
 
+    <center>
+        <font size="4" color="blue"><b>Response received from order status payment server call</b></font>
+        <table border="1">
+            <%
+                String pair=null, pname=null, pvalue=null;
+                for (Map.Entry<String, Object> entry : refundResponse.entrySet()) {
+                    pname = entry.getKey();
+                    pvalue = entry.getValue() != null ? entry.getValue().toString() : "";
+            %>
+                <tr>
+                    <td><%= pname %> </td>
+                    <td> <%= pvalue %> </td>
+                </tr>
+            <%
+                }
+            %>
+        </table>
+    </center>
+
 <%
     } catch (PaymentHandler.APIException e) {
 %>

@@ -1,4 +1,4 @@
-<%@ page import = "java.io.*,java.util.*,in.samplekit.PaymentHandler" %>
+<%@ page import = "java.io.*,java.util.*,in.samplekit.PaymentHandler,java.security.*" %>
 <html>
 <head>
 	<title>Merchant checkout page</title>
@@ -9,7 +9,7 @@
          PaymentHandler paymentHandler = new PaymentHandler();
 
          String orderId = "ord_" + UUID.randomUUID().toString().replace("-", "").substring(0, 8);
-         int amount = new Random().nextInt(100) + 1;
+         int amount = new SecureRandom().nextInt(100) + 1;
 
          String serverName = request.getServerName();
          int serverPort = request.getServerPort();

@@ -8,6 +8,29 @@
 </head>
 <body>
     <center>
+
+        <!-- block:start:order-status -->
+                <font size="4" color="blue"><b>Return url request body params</b></font>
+                <table border="1">
+
+                    <%
+                        Enumeration enumeration=request.getParameterNames();
+                         String name="", value="";
+                         while(enumeration.hasMoreElements()) {
+                              name = ""+enumeration.nextElement();
+                              value = request.getParameter(name);
+                    %>
+                            <tr>
+                                <td><%= name %></td>
+                                <td><%= value %></td>
+                            </tr>
+                    <%
+                        }
+                    %>
+                </table>
+            </center>
+        <!-- block:end:order-status -->
+
     <%
         try {
             PaymentHandler paymentHandler = new PaymentHandler();
@@ -54,28 +77,6 @@
                     break;
             }
     %>
-
-    <!-- block:start:order-status -->
-            <font size="4" color="blue"><b>Return url request body params</b></font>
-            <table border="1">
-
-                <%
-                    Enumeration enumeration=request.getParameterNames();
-                     String name="", value="";
-                     while(enumeration.hasMoreElements()) {
-                          name = ""+enumeration.nextElement();
-                          value = request.getParameter(name);
-                %>
-                        <tr>
-                            <td><%= name %></td>
-                            <td><%= value %></td>
-                        </tr>
-                <%
-                    }
-                %>
-            </table>
-        </center>
-    <!-- block:end:order-status -->
 
     <h1><%= message %></h1>
 
