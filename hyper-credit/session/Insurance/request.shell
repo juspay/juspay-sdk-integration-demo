@@ -1,0 +1,45 @@
+curl --location 'https://api.juspay.in/session' \
+--header 'Authorization: Basic base_64_encoded_api_key==' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "order_id": "order_123",
+	"customer_policy_ref_no": "test123",
+    "amount": "19999.00",
+    "description":"Policy 12345",
+    "currency": "INR",
+    "customer_id": "faizananwar9",
+    "customer_email": "xyz@gmail.com",
+    "customer_phone": "1234567890",
+    "customer_dob": "11-10-1997", 
+    "customer_first_name": "John",
+    "customer_middle_name": "",
+    "customer_last_name": "Doe",
+    "customer_gender": "Male",
+    "customer_marital_status": "Married",
+    "customer_highest_education": "Graduate",
+    "customer_id_no": "XXXXXXXXXXXX",
+    "customer_id_type": "AADHAR",
+    "customer_address_line1": "address line 1",
+    "customer_address_line2": "",
+    "customer_state": "Karnataka",
+    "customer_pincode": "560034",
+    "customer_annual_income": ">20 Lakhs",
+    "customer_city": "Bengaluru",
+    "customer_employment_type": "Business",
+    "insured_member_details": [
+        {
+            "member_name": "member name",
+            "member_phone": "1234567890"
+        }
+    ],
+    "customer_nominee_name": "nominee name",
+    "customer_nominee_phone": "1234567890",
+    "customer_product_name": "Family Floater",
+    "customer_product_tenure": "1",
+    "is_primary_holder": true,
+    "metadata.sdk_payload": "true",
+    "options.get_client_auth_token": "true",
+    "payment_page_client_id": "starhealth",
+    "action": "paymentPage",
+    "return_url": "https://selleruat.adityabirlahealth.com/prodreplica/#thankyoupage"
+}'
