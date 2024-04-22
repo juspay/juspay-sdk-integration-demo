@@ -1,0 +1,21 @@
+curl --location 'https://api.juspay.in/session' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Basic base_64_encoded_api_key==' \
+--data-raw '{ 
+    "order_id": "testing-order-22",
+    "amount": "35000.0",
+    "customer_id": "cust_123",
+    "customer_email": "test@mail.com",
+    "customer_phone": "1234567890",
+    "payment_page_client_id": "juspay",
+    "action": "paymentPage",
+    "return_url": "https://shop.merchant.com",
+    "description": "Complete your payment",
+    "first_name": "John",
+    "last_name": "wick",
+    "customer_pincode": "560034",
+    "metadata.customer_product_name": "MBA",
+    "metadata.customer_product_payment_type":"6",
+    "metadata.student_name":"John Doe",
+    "metadata.student_admission_type":"NEW"
+}'
