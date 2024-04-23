@@ -1,4 +1,10 @@
-curl --location 'https://sandbox.juspay.in/payout/merchant/v1/orders/:orderId?expand=fulfillment%2Cpayment%2Crefund' \
+curl --location 'https://sandbox.biz.juspay.in/ardra/vt/cvv/v2' \
+--header 'KeyId: <key Id>' \
+--header 'X-merchantid: <merchant id>' \
 --header 'Content-Type: application/json' \
---header 'x-merchantid: <merchant id>' \
---header 'Authorization: Basic (b64 encoded API key)'
+--header 'Authorization: Basic MktCUUJaVVJMQkU3WVVHUjo=' \
+--data '{
+    
+    "payoutId": "Juspay123456789",
+    "isCardImageRequired": true
+}'
