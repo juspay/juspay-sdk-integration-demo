@@ -1,52 +1,28 @@
 {
-    "udf5": "udf5",
-    "udf4": "udf4",
-    "udf3": "udf3",
-    "udf2": "udf2",
-    "udf1": "udf1",
-    "type": "FULFILL_ONLY",
-    "status": "READY_FOR_FULFILLMENT",
-    "payments": [],
-    "orderId": "1703593449",
-    "fulfillments": [
-        {
-            "updatedBy": "DEFAULT",
-            "updatedAt": "2023-12-26T12:24:08Z",
-            "udf5": "String5",
-            "udf4": "String4",
-            "udf3": "String3",
-            "udf2": "String2",
-            "udf1": "String1",
-            "type": "ORDER",
-            "statusUpdatedAt": "2023-12-26T12:24:08Z",
-            "status": "CREATED",
-            "preferredMethodList": [
-                "DUMMY_IMPS"
-            ],
-            "id": "25cbcf3454a445789309dc0b54e681-f1",
-            "fulfillmentMethodList": [],
-            "createdAt": "2023-12-26T12:24:08Z",
-            "beneficiaryDetails": {
-                "details": {
-                    "name": "Aditya Kadrolkar",
-                    "ifsc": "YESB0000262",
-                    "account": "026291800001191"
-                },
-                "type": "ACCOUNT_IFSC"
-            },
-            "amount": 1,
-            "additionalInfo": {
-                "webhookDetails": {
-                    "username": "test",
-                    "url": "https://www.test.com/callback/dynamicwebhook/example",
-                    "customHeader": "123456789"
-                },
-                "useThisAsTR": "ef9eb194e664a319549e644c08be2b",
-                "remark": "Payout Transaction",
-                "attemptThreshold": 25
-            }
+    "status": "SUCCESS",
+    "response": {
+        "expiry": "09/2025",
+        "state": "ISSUED",
+        "payoutAmount": "20.0",
+        "token": "4817XXXXXXXX8569",
+        "cardImage": "{base64-card-image}",
+        "currency": "INR",
+        "cardNetwork": "VISA",
+        "redeemedAmount": "0.00",
+        "cardIssuerBankName": "IndusInd",
+        "userDefinedFields": {
+            "udf1": "XYZ",
+            "udf2": "XYZ",
+            "udf3": "XYZ",
+            "udf4": "XYZ",
+            "udf5": "XYZ",
+            "udf6": "XYZ",
+            "udf7": "XYZ",
+            "udf8": "XYZ",
+            "udf9": "XYZ",
+            "udf10": "XYZ"
         }
-    ],
-    "customerId": "cth_59Yibs1JauYP6WJP",
-    "amount": 1
+    },
+    "message": "Creation of Virtual Token Succeeded",
+    "payoutId": "ZELeJuspay123456789D2yQF4"
 }
