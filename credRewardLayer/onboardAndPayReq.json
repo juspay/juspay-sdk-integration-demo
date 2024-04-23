@@ -20,7 +20,6 @@
       }
     ],
     "clientAuthToken": "tkn_8595258ef79d4f34b70939c0158bc579",
-    "checkCredInAppOffer": true,
     "action": "onboardingAndPay",
     "accountRefId": null
   }
