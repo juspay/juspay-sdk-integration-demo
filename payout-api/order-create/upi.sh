@@ -1,49 +1,55 @@
-curl --location 'https://sandbox.juspay.in/payout/merchant/v1/orders' \
+curl --location 'https://sandbox.biz.juspay.in/ardra/vt/provision/v2' \
+--header 'KeyId: <key Id>>' \
 --header 'Content-Type: application/json' \
---header 'x-merchantid: <merchant id>' \
---header 'Authorization: Basic Basic (b64 encoded API key)' \
---data-raw '{
-    "orderId": "1703597744",
-    "fulfillments": [
-        {
-            "preferredMethodList": ["DUMMY_UPI"],
-            "amount": 1,
-            "beneficiaryDetails": {
-                "details": {
-                    "name": "Aditya Kadrolkar", 
-                    "vpa": "test@upi",
-                    "mobileNo": "9999999999"
-                },
-                "type": "UPI_ID"
-            },
-               "udf1" : "String1"
-            ,  "udf2" : "String2"
-            ,  "udf3" : "String3"
-            ,  "udf4" : "String4"
-            ,  "udf5" : "String5"
-            ,
-            "additionalInfo": {
-                "remark":"Payout Transaction",
-                "useThisAsTR":"ef9eb194e664a319549e644c08be2b",
-                "scheduleTime":"2023-12-23T16:51:51Z",
-                "attemptThreshold": 25,
-                "webhookDetails":{
-                    "url" : "https://www.test.com/callback/dynamicwebhook/example"
-                    , "username" : "test"
-                    , "password" : "password"
-                    , "customHeader" :  "123456789"
-                }
+--header 'X-merchantid: <merchant id>' \
+--header 'Authorization: Basic (b64 encoded API key)' \
+--data '{
+    "payoutId": "Juspay123456789",
+    "orderAmount": "20",
+    "gst": "1",
+    "action": "Create",
+    "startDate": "2024-04-23",
+    "endDate": "2024-05-01",
+    "cardAlias": "{to be taken from JusBiz Dashboard}",
+    "expenseCategoryId":"{to be taken from JusBiz Dashboard}",
+    "currency": "INR",
+    "isCardImageRequired": true,
+    "rules": {
+        "blockPayments": [
+            "ATM"
+        ],
+        "amountRange": {
+            "min": "3",
+            "max": "21"
+        },
+         "exactAmountApply": [
+            "1"
+         ],
+        "mccBlock": [
+            {
+                "min": "5013",
+                "max": "6051"
             }
-        }
-    ],
-    "amount": 1,
-    "customerId": "cth_59Yibs1JauYP6WJP",
-    "customerPhone": "9999999999",
-    "customerEmail": "test@gmail.com",
-    "type": "FULFILL_ONLY",
-    "udf1":"udf1",
-    "udf2":"udf2",
-    "udf3":"udf3",
-    "udf4":"udf4",
-    "udf5":"udf5"
+        ]
+        // "mccAllow": [
+        //     {
+        //         "min": "3",
+        //         "max": "2"
+        //     },
+        //     {
+        //         "min": "3",
+        //         "max": "2"
+        //     }
+        // ]
+    },
+    "udf1": "XYZ",
+    "udf2": "XYZ",
+    "udf3": "XYZ",
+    "udf4": "XYZ",
+    "udf5": "XYZ",
+    "udf6": "XYZ",
+    "udf7": "XYZ",
+    "udf8": "XYZ",
+    "udf9": "XYZ",
+    "udf10": "XYZ"
 }'
