@@ -1,70 +1,9 @@
 {
-    "updatedAt": "2023-12-27T09:45:38Z",
-    "udf5": "udf5",
-    "udf4": "udf4",
-    "udf3": "udf3",
-    "udf2": "udf2",
-    "udf1": "udf1",
-    "type": "FULFILL_ONLY",
-    "status": "FULFILLMENTS_SCHEDULED",
-    "refunds": [],
-    "payments": [],
-    "orderId": "1703670338",
-    "fulfillments": [
-        {
-            "updatedBy": "DEFAULT",
-            "updatedAt": "2023-12-27T09:45:38Z",
-            "udf5": "String5",
-            "udf4": "String4",
-            "udf3": "String3",
-            "udf2": "String2",
-            "udf1": "String1",
-            "type": "ORDER",
-            "transactions": [
-                {
-                    "updatedAt": "2023-12-27T09:45:38Z",
-                    "transactionRef": "3d9fc265e12488f999c92e7b40589d",
-                    "timeStamp": "2023-12-27T09:45:38Z",
-                    "status": "INITIATED",
-                    "fulfillmentMethod": "DUMMY_IMPS",
-                    "createdAt": "2023-12-27T09:45:38Z",
-                    "amount": 1
-                }
-            ],
-            "statusUpdatedAt": "2023-12-27T09:45:38Z",
-            "status": "PENDING",
-            "preferredMethodList": [
-                "DUMMY_IMPS"
-            ],
-            "merchantCustomerId": "cth_59Yibs1JauYP6WJP",
-            "id": "f46f9b8d843416e8c746c3e306a5f4-f1",
-            "fulfillmentMethodList": [
-                "DUMMY_IMPS"
-            ],
-            "createdAt": "2023-12-27T09:45:38Z",
-            "beneficiaryDetails": {
-                "details": {
-                    "name": "Aditya Kadrolkar",
-                    "ifsc": "YESB0000262",
-                    "account": "026291800001191"
-                },
-                "type": "ACCOUNT_IFSC"
-            },
-            "amount": 1,
-            "additionalInfo": {
-                "webhookDetails": {
-                    "username": "test",
-                    "url": "https://www.test.com/callback/dynamicwebhook/example",
-                    "customHeader": "123456789"
-                },
-                "useThisAsTR": "ef9eb194e664a319549e644c08be2b",
-                "remark": "Payout Transaction",
-                "isRetriable": false,
-                "attemptThreshold": 25
-            }
-        }
-    ],
-    "customerId": "cth_59Yibs1JauYP6WJP",
-    "createdAt": "2023-12-27T09:45:38Z",
-    "amount": 1
+    "status": "SUCCESS",
+    "response": {
+        "cardImage": "{base64-encoded-cardImage}",
+        "securityCode": "119"
+    },
+    "message": "Security Code Fetched Successfully",
+    "payoutId": "Juspay123456789"
 }
