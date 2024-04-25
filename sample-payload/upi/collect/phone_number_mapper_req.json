@@ -1,0 +1,12 @@
+{
+    "requestId": "053e6bf7-6075-4201-987f-eed32584ef08",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+      "merchantId": "picasso",
+      "customerId": "test_customer12131",
+      "orderId": "test_order",
+      "action": "vpaFetch",
+      "phoneNumber": "9999999999",
+      "clientAuthToken": "tkn_dcf0a4976fcc4a9aaab27f86def34140"
+    }
+  }
