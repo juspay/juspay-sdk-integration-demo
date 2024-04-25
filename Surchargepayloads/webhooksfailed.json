@@ -1,0 +1,103 @@
+{
+    "id": "evt_V2_f434722af0a14f25bb3a13de6ad5",
+    "event_name": "ORDER_FAILED",
+    "date_created": "2024-04-23T09:45:30Z",
+    "content": {
+        "order": {
+            "offers": [],
+            "txn_id": "merchant-2225237166-1",
+            "udf7": "",
+            "payment_method": "PHONEPE",
+            "txn_uuid": "mozcB8PCQREQtXbXgooHN",
+            "metadata": {
+                "payment_page_client_id": "FILTERED",
+                "merchant_payload": "{"customerPhone":"1111111","customerEmail":"1111111"}",
+                "payment_page_sdk_payload": "FILTERED",
+                "payment_links": {
+                    "web": "https://api.juspay.in/orders/ordeh_2f79baffca3d9d4he7a7e0264f4fd3f7a3/payment-page",
+                    "iframe": "https://api.juspay.in/orders/ordeh_2f79baffca3d9d4he7a7e0264f4fd3f7a3/payment-page",
+                    "mobile": "https://api.juspay.in/orders/ordeh_2f79baffca3d9d4he7a7e0264f4fd3f7a3/payment-page"
+                }
+            },
+            "udf5": "",
+            "resp_message": "Transaction not found at Gateway end",
+            "wallet": {
+                "txn_flow_type": "FILTERED"
+            },
+            "status_id": 26,
+            "resp_code": "TXN_NOT_FOUND",
+            "amount_refunded": 0,
+            "udf9": "",
+            "gateway_reference_id": null,
+            "status": "AUTHENTICATION_FAILED",
+            "bank_error_message": "No Transaction found with the given details.",
+            "id": "ordeh_2f79baffca3d9d4he7a7e0264f4fd3f7a3",
+            "resp_category": "TECHNICAL_ERROR",
+            "auth_type": "",
+            "udf3": "Tablet",
+            "additional_info": {},
+            "udf6": "",
+            "udf10": "",
+            "effective_amount": 1.02,
+            "product_id": "",
+            "order_id": "2225237166",
+            "return_url": "https://api.tajnet.com/v1/juspay/redirect/38/2225237166",
+            "payment_gateway_response": {
+                "txn_id": "merchant-2225237166-1",
+                "created": "2024-04-23T09:45:30Z",
+                "network_error_message": null,
+                "resp_message": "No Transaction found with the given details.",
+                "resp_code": "TRANSACTION_NOT_FOUND",
+                "auth_id_code": "NA",
+                "epg_txn_id": "",
+                "network_error_code": null,
+                "rrn": "NA"
+            },
+            "udf1": "",
+            "currency": "INR",
+            "udf4": "WebUI",
+            "customer_id": "FILTERED",
+            "date_created": "2024-04-23T09:40:19Z",
+            "gateway_id": 39,
+            "payment_links": {
+                "web": "https://api.juspay.in/orders/ordeh_2f79baffca3d9d4he7a7e0264f4fd3f7a3/payment-page",
+                "iframe": "https://api.juspay.in/orders/ordeh_2f79baffca3d9d4he7a7e0264f4fd3f7a3/payment-page",
+                "mobile": "https://api.juspay.in/orders/ordeh_2f79baffca3d9d4he7a7e0264f4fd3f7a3/payment-page"
+            },
+            "txn_detail": {
+                "express_checkout": false,
+                "txn_id": "merchant-2225237166-1",
+                "txn_amount": 1.02,
+                "error_message": "No Transaction found with the given details.",
+                "txn_uuid": "mozcB8PCQREQtXbXgooHN",
+                "created": "2024-04-23T09:40:23Z",
+                "metadata": {
+                    "payment_channel": "ANDROID"
+                },
+                "gateway": "PHONEPE",
+                "status": "AUTHENTICATION_FAILED",
+                "offer_deduction_amount": null,
+                "net_amount": 1,
+                "order_id": "2225237166",
+                "currency": "INR",
+                "error_code": "TRANSACTION_NOT_FOUND",
+                "gateway_id": 39,
+                "surcharge_amount": 0.02,
+                "txn_flow_type": "FILTERED",
+                "tax_amount": 0,
+                "response_code": "TXN_NOT_FOUND",
+                "redirect": true,
+                "response_message": "Transaction not found at Gateway end"
+            },
+            "bank_error_code": "TRANSACTION_NOT_FOUND",
+            "udf8": "",
+            "payment_method_type": "WALLET",
+            "customer_phone": "FILTERED",
+            "merchant_id": "merchant",
+            "customer_email": "FILTERED",
+            "udf2": "39",
+            "amount": 1,
+            "refunded": false
+        }
+    }
+}
