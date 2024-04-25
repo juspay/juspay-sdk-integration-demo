@@ -13,12 +13,14 @@
          } else {
             refundId = (String) refundId;
          }
-
+         // block:start:refund
          Map<String, Object> params = new LinkedHashMap<String, Object>();
          params.put("unique_request_id", refundId);
          params.put("order_id", orderId);
          params.put("amount", amount);
          Map<String, Object> refundResponse = paymentHandler.refund(params);
+         // block:end:refund
+
          String refundStatus = (String) refundResponse.get("status");
 %>
 <html>
