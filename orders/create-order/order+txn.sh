@@ -1,0 +1,13 @@
+curl --location --request POST 'https://api.juspay.in/orders' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'version: 2019-07-01' \
+--header 'Authorization: Basic XXXXX==' \
+--data-urlencode 'order_id=orderIdIs125676' \
+--data-urlencode 'amount=2' \
+--data-urlencode 'customer_id=cth_nfhDAjJf8HmnZ1AK8' \
+--data-urlencode 'return_url=' \
+--data-urlencode 'description=Sample description' \
+--data-urlencode 'options.get_client_auth_token=true' \
+--data-urlencode 'metadata.JUSPAY:gateway_reference_id=testmode' \
+--data-urlencode 'order_fullfillment_threshold_in_mins=60' \
+--data-urlencode 'options_get_upi_deep_links=1'
