@@ -1,0 +1,17 @@
+{
+    "errorMessage": "",
+    "requestId": "a1e1cd96-be56-4c70-9c59-9152b2f71495",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "response": {
+            "errorMessage": "Error in fetching vpa",
+            "vpa": "NA",
+            "customerName": "NA",
+            "errorCode": "Valid VPA Not Found"
+        },
+        "status": "OK",
+        "action": "vpaFetch"
+    },
+    "errorCode": "",
+    "error": false
+}
