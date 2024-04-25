@@ -1,0 +1,15 @@
+{
+    "errorMessage": "",
+    "requestId": "053e6bf7-6075-4201-987f-eed32584ef08",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "response": {
+            "vpa": "test@upi",
+            "customerName": "test"
+        },
+        "status": "OK",
+        "action": "vpaFetch"
+    },
+    "errorCode": "",
+    "error": false
+}
