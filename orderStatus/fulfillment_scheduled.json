@@ -1,52 +1,8 @@
 {
     "status": "SUCCESS",
     "response": {
-        "authRemaining": 1,
-        "settlementDetails": [],
-        "expiry": "09/2025",
-        "state": "ISSUED",
-        "orderAmount": "20.0",
-        "payoutAmount": "20.0",
-        "authList": [],
-        "rules": {
-            "mccAllow": null,
-            "mccBlock": [
-                {
-                    "max": "6051",
-                    "min": "5013"
-                }
-            ],
-            "blockPayments": [
-                "ATM"
-            ],
-            "amountRange": {
-                "max": "21",
-                "min": "3"
-            },
-            "exactAmountApply": [
-                "1"
-            ]
-        },
-        "authPerformed": 0,
-        "endDate": "2024-05-01",
-        "token": "4817XXXXXXXX8569",
-        "cardLastFourDigits": "0602",
-        "startDate": "2024-04-23",
-        "currency": "INR",
-        "cardNetwork": "VISA",
-        "balanceAmount": "20.0",
-        "metadata": null,
-        "gst": "0.0",
-        "redeemedAmount": "0.0",
-        "cardIssuerBankName": "IndusInd",
-        "userDefinedFields": {
-            "udf3": "XYZ",
-            "udf5": "XYZ",
-            "udf2": "XYZ",
-            "udf4": "XYZ",
-            "udf1": "XYZ"
-        }
+        "isDeleted": true
     },
-    "message": "Virtual Token Fetched Successfully",
+    "message": "Virtual Token Deleted Successfully",
     "payoutId": "Juspay123456789"
 }
