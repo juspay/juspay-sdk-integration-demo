@@ -1,0 +1,7 @@
+{
+    "session_id": "NOREQID-7afd223d273c40a49b0180df574283e5",
+    "user_message": "Cancel action not allowed.",
+    "code": "INVALID_REQUEST",
+    "type": "INVALID_REQUEST_ERROR",
+    "message": "No scheduled recurring transactions are found."
+}
