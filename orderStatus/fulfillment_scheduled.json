@@ -1,8 +1,10 @@
+
 {
     "status": "SUCCESS",
     "response": {
-        "isDeleted": true
+        "cardImage": cardImage,
+        "securityCode": "119"
     },
-    "message": "Virtual Token Deleted Successfully",
+    "message": "Security Code Fetched Successfully",
     "payoutId": "Juspay123456789"
 }
