@@ -2,7 +2,7 @@
 {
     "status": "SUCCESS",
     "response": {
-        "cardImage": cardImage,
+        "cardImage": "{base64-encoded-cardImage}",
         "securityCode": "119"
     },
     "message": "Security Code Fetched Successfully",
