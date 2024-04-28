@@ -1,0 +1,73 @@
+{
+  "order_id": "test_order_123",
+  "status": "SUCCESS",
+  "amount": 80000,
+  "txn_list": [
+    {
+      "status": "CHARGED",
+      "refunded": null,
+      "payment_method": "TECHFINO_LSP",
+      "gateway_id": 1,
+      "refunds": null,
+      "payment_method_type": "TECHFINO_LSP",
+      "txn_uuid": "mozgBYk4uasgDpvhL1j",
+      "txn_intent_id": "LSPtg5rfnlpKy0ooUWSXIafBJ",
+      "payment_links": null,
+      "payment_gateway_response": {
+        "created": "2024-04-06 10:03:28.410943 UTC",
+        "rrn": null,
+        "epg_txn_id": "LAI123456",
+        "txn_id": "LSP2db46010d89e40259a571d8554276ead",
+        "resp_message": "{\"Event\":\"application.status.pushed_disbursal\",\"Entities\":[\"Application\",\"Loan\",\"Borrowers\"],\"Payload\":{\"Application\":{\"Status\":\"Pushed for disbursal\",\"CreditApprovedRejectedDate\":\"19-03-2024 11:23 AM\",\"CourseName\":\"MBA\",\"ServicePartner\":\"TCPL\",\"ApplicationCompletedDate\":\"19-03-2024 11:23 AM\",\"LeadId\":\"LD-144-TES-37058\",\"ApplicationId\":\"8ba93631-3d32-4914-b81c-d95c6f20306a\",\"ApplicationInitiateDate\":\"19-03-2024 11:19 AM\",\"Notes\":\"\",\"OrderId\":\"LSP91e3042af39d46308c475d64d1820f6a\"},\"Borrowers\":{\"Applicant\":{\"Email\":\"kirana1@techfino.in\",\"Name\":\"Mr Kirana R\",\"Mobile\":\"7522023037\"},\"CoApplicants\":[{\"Email\":\"\",\"Name\":\"\",\"Mobile\":\"\"}]},\"Loan\":{\"ROI\":4,\"DiscountedCourseFee\":80000,\"BankDisbursedName\":\"dummy bank\",\"SubventionAmount\":0,\"SKIP\":\"\",\"MoratoriumPeriod\":0,\"SubvPercentage\":0,\"Tenor\":12,\"EMIAmount\":8147.4,\"LoanAmount\":80000}},\"CreatedOn\":\"19-03-2024 11:19 AM\"}",
+        "resp_code": null
+      },
+      "txn_detail": {
+        "order_id": "kyashwanthsai_031",
+        "status": "CHARGED",
+        "error_code": null,
+        "gateway_id": 1,
+        "settlement": null,
+        "txn_uuid": "mozgBYk4uasgDpvhL1j",
+        "gateway": "LSP",
+        "created": "2024-04-06 10:03:28.410943 UTC",
+        "txn_amount": "80000.0",
+        "error_message": null,
+        "currency": "INR",
+        "txn_id": "ahdhb123456",
+        "utr": null
+      },
+      "amount_refunded": null,
+      "sub_status": "Loan Active",
+      "txn_intent_amount": "80000.0",
+      "bank_error_message": null,
+      "txn_type": "LOANPAYMENT",
+      "txn_id": "LSP2db46010d89e40259a571d8554276ead",
+      "emi_bank": null,
+      "resp_message": null,
+      "emi_tenure": null,
+      "bank_error_code": null,
+      "gateway_reference_id": "AUO Test Existing INR",
+      "resp_code": null
+    }
+  ],
+  "error_code": null,
+  "error": null,
+  "customer_id": "LSPf6050e2ae6d9425c9e0bee67ad476e86",
+  "payment_links": {
+    "iframe": null,
+    "web": null,
+    "mobile": null
+  },
+  "error_message": null,
+  "customer_email": "customer@gmail.com",
+  "currency": "INR",
+  "customer_phone": "1234567890",
+  "payout_links": null,
+  "user_message": null,
+  "order_status": "CHARGED",
+  "id": "LSP32b1e0bfc7144fb693cded65ad2c2775",
+  "merchant_id": "juspay",
+  "date_created": "2024-04-06T10:02:44.056405Z",
+  "gateway_reference_id": "AUO Test Existing INR",
+  "status_id": 3
+}
