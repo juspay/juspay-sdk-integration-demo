@@ -23,7 +23,7 @@ curl --location --request POST 'https://api.juspay.in/session' \
      "cardFilters": [
              {
                "enable": false,
-               "cardTypes": ["CREDIT"]
+               "cardType": ["CREDIT"]
              }
            ]
          }
