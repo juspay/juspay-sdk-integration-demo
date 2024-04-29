@@ -8,6 +8,6 @@
         "signature": "T9/9GGLY3sDRoYddAXaMaiD19t7lDDg76P5Q1DjRLTg2g==",
         "orderDetails": "{\"order_id\":\"R5317229588\",\"merchant_id\": \"idea_preprod\",\"amount\": \"1.00\",\"customer_id\": \"1234567890\",\"options.create_mandate\": \"REQUIRED\",\"mandate.max_amount\": \"5000\",\"mandate.start_date\": \"1633087969\",\"mandate.end_date\": \"1664623962\",\"mandate.frequency\": \"MONTHLY\",\"mandate.amount_rule\": \"VARIABLE\"}",
         "merchantKeyId": 3003,
-        "paymentMethodType": "NB | CARD"
+        "paymentMethodType": "NB | CARD | AADHAAR"
     }
 }
