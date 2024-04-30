@@ -20,6 +20,7 @@ curl --location --request POST 'https://api.juspay.in/v3/eligibility' \
                 "countryCode": "+91",
                 "phoneNumber": "enc-<encrypted phone number>",
                 "credAppPresent": false/true ,
+                "isWebSupported": "true",
                 "metadata": {
                     "abc": "123",
                     "def": "efe"
