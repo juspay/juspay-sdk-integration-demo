@@ -1,0 +1,32 @@
+{
+  "payment_instrument": [
+    {
+      "command": "verify_user",
+      "payment_method": "CRED",
+      "payment_method_type": "WALLET",
+      "gateway": "CRED",
+      "status": "ELIGIBLE",
+      "command_output": {
+        "status": "OK",
+        "error_code": null,
+        "response": {
+          "reference_id": "59c08c91-1924-449b-a97a-bfa730b9a7c4",
+          "tracking_id": "CRED_testtransaction_1",
+          "web_url": "https://pay.cred.club/pay/b9e7ca47-1783-431e-bb22-202fd668efc1?redirect_to=www.google.com",
+          "checkout_mode": "web",
+          "state": "FLOW_TRIGGERED",
+          "layout": {
+            "title": "CRED pay",
+            "sub_text": "pay using your saved credit cards for instant checkout",
+            "cta_text": "CRED pay",
+            "banner_text": "CRED offers you the most rewarding experience, pay seamlessly using your CRED coins.",
+            "icon": "https://d704ayip06922.cloudfront.net/prod-rewards-assets-data/8271e0702a8911ecb92ec74c5090c4d1.png"
+          }
+        },
+        "error_description": null,
+        "error_message": null
+      },
+      "gateway_reference_id": null
+    }
+  ]
+}
