@@ -4,7 +4,7 @@
 Plugin Name: Juspay Payment Gateway
 Plugin URI: https://juspay.in/
 Description:  WooCommerce payment plugin for Juspay.in
-Version: 1.3.0
+Version: 1.3.1
 Updated: 11/03/2024
 Author: Juspay Technologies
 Author URI: https://juspay.in/
@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-register_activation_hook( __FILE__, 'my_plugin_activation_function' );
+register_activation_hook( __FILE__, 'juspay_plugin_activation_function' );
 
 require_once __DIR__ . '/includes/juspay-webhook.php';
 require_once __DIR__ . '/includes/juspay-payment-handler.php';
@@ -29,7 +29,7 @@ add_action( 'admin_post_nopriv_juspay_wc_webhook', 'juspay_webhook_init', 10 );
 add_action( 'before_woocommerce_init', 'juspay_declare_compatibility', 5 );
 add_action( 'woocommerce_blocks_loaded', 'juspay_woocommerce_blocks_support' );
 
-define( 'JUSPAY_PAYMENT_PLUGIN_VERSION', '1.3.0' );
+define( 'JUSPAY_PAYMENT_PLUGIN_VERSION', '1.3.1' );
 define( 'JUSPAY_PAYMENT_PLUGIN_URL', untrailingslashit( plugins_url( basename( plugin_dir_path( __FILE__ ) ), basename( __FILE__ ) ) ) );
 
 function juspay_init_payment_class() {
@@ -45,9 +45,9 @@ function juspay_init_payment_class() {
 
 		public function __construct() {
 			$this->id = 'juspay_payment';
-			$this->method_title = __( 'Juspay' );
-			$this->method_description = __( 'Allow customers to securely pay via Juspay' );
-			$this->icon = plugins_url( 'images/logo.png', __FILE__ );
+			$this->method_title = __( 'Smart Gateway' );
+			$this->method_description = __( 'Allow customers to securely pay via Smart Gateway' );
+			$this->icon = plugins_url( 'images/logo.png?v=' . JUSPAY_PAYMENT_PLUGIN_URL, __FILE__ );
 
 			$this->has_fields = true;
 
@@ -56,60 +56,61 @@ function juspay_init_payment_class() {
 
 			switch ( $this->get_option( 'mode' ) ) {
 				case "sandbox":
-					$this->base_url = "https://sandbox.juspay.in";
+					$this->base_url = "https://smartgatewayuat.hdfcbank.com";
 					break;
 				case "production":
-					$this->base_url = "https://api.juspay.in";
+					$this->base_url = "https://smartgateway.hdfcbank.com";
 					break;
 				default:
-					$this->base_url = "https://sandbox.juspay.in";
+					$this->base_url = "https://smartgatewayuat.hdfcbank.com";
 					break;
-			}
-
-			try {
-				$this->paymentHandlerConfig = PaymentHandlerConfig::getInstance()
-					->withInstance(
-						$this->get_option( 'merchant_id' ),
-						$this->get_option( 'api_key' ),
-						$this->get_option( 'client_id' ),
-						$this->base_url,
-						false,
-						false,
-						$this->get_option( 'response_key' ),
-					);
-				$this->paymentHandler = new PaymentHandler( null, $this->paymentHandlerConfig );
-			} catch (Exception $e) {
-				http_response_code( 500 ); // Internal Server Error
-				exit();
 			}
 
 			$this->title = $this->get_option( 'title' );
 			$this->description = $this->get_option( 'description' );
 			$this->instructions = $this->get_option( 'instructions' );
-
-
 			$this->notify_url = home_url( '/wc-api/wc_juspay' );
 
-			add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), [ $this, 'plugin_action_links' ] );
+			if ( $this->get_option( 'enabled' ) == "yes" ) {
+				try {
+					$this->paymentHandlerConfig = PaymentHandlerConfig::getInstance()
+						->withInstance(
+							$this->get_option( 'merchant_id' ),
+							$this->get_option( 'api_key' ),
+							$this->get_option( 'client_id' ),
+							$this->base_url,
+							false,
+							false,
+							$this->get_option( 'response_key' ),
+						);
+					$this->paymentHandler = new PaymentHandler( null, $this->paymentHandlerConfig );
+				} catch (Exception $e) {
+					http_response_code( 500 ); // Internal Server Error
+					exit();
+				}
+				wp_enqueue_style( 'juspaycss', plugins_url( '/css/juspay.css', __FILE__ ), array(), JUSPAY_PAYMENT_PLUGIN_URL );
 
-			add_filter( 'woocommerce_thankyou_order_received_text', array( $this, 'juspay_thankyou' ) );
+				add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), [ $this, 'plugin_action_links' ] );
 
-			add_action( 'woocommerce_api_wc_juspay', array( $this, 'check_juspay_response' ) );
+				add_filter( 'woocommerce_thankyou_order_received_text', array( $this, 'juspay_thankyou' ) );
 
-			add_action( 'woocommerce_update_options_payment_gateways_' . $this->id, array( $this, 'process_admin_options' ) );
+				add_action( 'woocommerce_api_wc_juspay', array( $this, 'check_juspay_response' ) );
 
-			add_action( "woocommerce_receipt_" . $this->id, array( $this, 'receipt_page' ) );
+				add_action( 'woocommerce_update_options_payment_gateways_' . $this->id, array( $this, 'process_admin_options' ) );
 
-			add_action( 'woocommerce_order_actions', array( $this, 'juspay_add_manual_actions' ) );
+				add_action( "woocommerce_receipt_" . $this->id, array( $this, 'receipt_page' ) );
 
-			add_action( 'woocommerce_order_action_wc_manual_sync_action', array( $this, 'juspay_process_manual_sync_action' ) );
+				add_action( 'woocommerce_order_actions', array( $this, 'juspay_add_manual_actions' ) );
 
-			wp_register_script(
-				'juspay-checkout-blocks',
-				plugins_url( '/js/juspay-checkout-blocks.js', __FILE__ ),
-				array(),
-				JUSPAY_PAYMENT_PLUGIN_VERSION
-			);
+				add_action( 'woocommerce_order_action_wc_manual_sync_action', array( $this, 'juspay_process_manual_sync_action' ) );
+
+				wp_register_script(
+					'juspay-checkout-blocks',
+					plugins_url( '/js/juspay-checkout-blocks.js?v=' . JUSPAY_PAYMENT_PLUGIN_URL, __FILE__ ),
+					array(),
+					JUSPAY_PAYMENT_PLUGIN_VERSION
+				);
+			}
 		}
 
 		public function init_form_fields() {
@@ -119,7 +120,7 @@ function juspay_init_payment_class() {
 			$this->form_fields = array(
 				'enabled' => array(
 					'title' => 'Enable/Disable',
-					'label' => 'Enable Juspay Payment Gateway',
+					'label' => 'Enable Smart Gateway',
 					'type' => 'checkbox',
 					'description' => '',
 					'default' => 'no'
@@ -128,7 +129,7 @@ function juspay_init_payment_class() {
 					'title' => __( 'Title', 'juspay-payment' ),
 					'type' => 'text',
 					'description' => __( 'This controls the title which the user sees during checkout.', 'juspay-payment' ),
-					'default' => __( "Juspay", 'juspay-payment' )
+					'default' => __( "Smart Gateway", 'juspay-payment' )
 				),
 				'description' => array(
 					'title' => __( 'Description', 'juspay-payment' ),
@@ -148,8 +149,8 @@ function juspay_init_payment_class() {
 				),
 				'merchant_id' => array(
 					'title' => 'Merchant ID',
-					'label' => 'Enter your Juspay Merchant ID',
-					'description' => 'You can find your merchant ID from the Juspay Dashboard',
+					'label' => 'Enter your Merchant ID',
+					'description' => 'You can find your merchant ID from the Dashboard',
 					'type' => 'text'
 				),
 				'client_id' => array(
@@ -159,29 +160,29 @@ function juspay_init_payment_class() {
 				'enable_webhook' => array(
 					'title' => __( 'Enable Webhook', 'juspay-payment' ),
 					'type' => 'checkbox',
-					'description' => "<span>$webhookUrl</span><br/><br/>Use this URL to be entered as Webhook URL on your Juspay dashboard",
-					'label' => __( 'Enable Juspay Webhook', 'juspay-payment' ),
+					'description' => "<span>$webhookUrl</span><br/><br/>Use this URL to be entered as Webhook URL on your Dashboard",
+					'label' => __( 'Enable Webhook', 'juspay-payment' ),
 					'default' => 'no'
 				),
 				'webhook_username' => array(
 					'title' => 'Webhook Username',
 					'type' => 'text',
-					'description' => 'You can find your Webhook Url from the settings section of Juspay Dashboard',
+					'description' => 'You can find your Webhook Url from the settings section of Dashboard',
 				),
 				'webhook_password' => array(
 					'title' => 'Webhook Password',
 					'type' => 'password',
-					'description' => 'You can find your Webhook Password from the settings section of Juspay Dashboard',
+					'description' => 'You can find your Webhook Password from the settings section of Dashboard',
 				),
 				'api_key' => array(
 					'title' => 'API Key',
 					'type' => 'password',
-					'description' => 'You can find your API Keys from the settings section of Juspay Dashboard',
+					'description' => 'You can find your API Keys from the settings section of Dashboard',
 				),
 				'response_key' => array(
 					'title' => 'Response Key',
 					'type' => 'text',
-					'description' => 'You can find your Response Key from the settings section of Juspay Dashboard',
+					'description' => 'You can find your Response Key from the settings section of Dashboard',
 				),
 			);
 		}
@@ -205,16 +206,13 @@ function juspay_init_payment_class() {
 			$msg['class'] = 'error';
 			$msg['message'] = "Thank you for shopping with us. However, the transaction has been declined.";
 
-			$juspay_order_id = $_REQUEST['order_id'];
+			$order_id = $_REQUEST['order_id'];
 			$status = $_REQUEST["status"];
 			$signature = $_REQUEST["signature"];
 			$statusId = $_REQUEST["status_id"];
-			$params = [ "order_id" => $juspay_order_id, "status" => $status, "signature" => $signature, "status_id" => $statusId ];
+			$params = [ "order_id" => $order_id, "status" => $status, "signature" => $signature, "status_id" => $statusId ];
 
 			$status = $this->get_order_status( $params );
-
-			$order_id = explode( '_', $juspay_order_id );
-			$order_id = (int) $order_id[0];
 
 			$order = new WC_Order( $order_id );
 
@@ -229,8 +227,8 @@ function juspay_init_payment_class() {
 
 				if ( $order->status != 'processing' ) {
 					if ( $status == "CHARGED" || $status == "COD_INITIATED" ) {
-						$order->payment_complete( $juspay_order_id );
-						$order->add_order_note( 'Juspay payment successful - Juspay Order ID: ' . $juspay_order_id );
+						$order->payment_complete( $order_id );
+						$order->add_order_note( 'Payment successful - Order ID: ' . $order_id );
 						$woocommerce->cart->empty_cart();
 					} else if ( $status == "PENDING_VBV" ) {
 						$woocommerce->cart->empty_cart();
@@ -264,10 +262,8 @@ function juspay_init_payment_class() {
 
 		function get_order_status( $params ) {
 			if ( $this->paymentHandler->validateHMAC_SHA256( $params ) === false ) {
-				$order_id = explode( '_', $params['order_id'] );
-				$order_id = (int) $order_id[0];
-				$order = wc_get_order( $order_id );
-				$order->add_order_note( 'Signature verification failed - Juspay Order ID: ' . $params['order_id'] );
+				$order = wc_get_order( $params['order_id'] );
+				$order->add_order_note( 'Signature verification failed - Order ID: ' . $params['order_id'] );
 				$order->add_order_note( 'Note: Ensure that the \'Response Key\' is properly configured in plugin settings.' );
 				$order->add_order_note( 'Falling back to Order Status API' );
 				$order = $this->paymentHandler->orderStatus( $params["order_id"] );
@@ -279,12 +275,11 @@ function juspay_init_payment_class() {
 		function juspay_thankyou( $esc_html__ ) {
 			$order_id = wc_get_order_id_by_order_key( $_GET['key'] );
 			$order = wc_get_order( $order_id );
-			$juspay_order_id = $order->get_transaction_id();
-			$paymentResponse = $this->paymentHandler->orderStatus( $juspay_order_id );
+			$paymentResponse = $this->paymentHandler->orderStatus( $order_id );
 			global $woocommerce;
 
 			if ( $paymentResponse['status'] == "CHARGED" || $paymentResponse['status'] == "COD_INITIATED" ) {
-				$order->payment_complete( $juspay_order_id );
+				$order->payment_complete( $order_id );
 				$woocommerce->cart->empty_cart();
 				return esc_html__( $esc_html__, 'juspay-payment' );
 			} else if ( $paymentResponse['status'] == "PENDING_VBV" ) {
@@ -296,26 +291,26 @@ function juspay_init_payment_class() {
 
 		function juspay_add_manual_actions( $actions ) {
 			global $theorder;
-			$this->method_title = __( 'Juspay' );
-			$juspay_order_id = $theorder->get_transaction_id();
+			$this->method_title = __( 'Smart Gateway' );
+			$order_id = $theorder->get_transaction_id();
 			$terminal_status = array( "processing", "refunded" );
-			if ( ! ( in_array( $theorder->status, $terminal_status ) || strlen( $juspay_order_id ) < 3 ) ) {
-				$actions['wc_manual_sync_action'] = __( 'Sync Payment with Juspay', 'juspay-payment' );
+			if ( ! ( in_array( $theorder->status, $terminal_status ) || strlen( $order_id ) < 3 ) ) {
+				$actions['wc_manual_sync_action'] = __( 'Sync Payment', 'juspay-payment' );
 			}
 			return $actions;
 		}
 
 		function juspay_process_manual_sync_action( $order ) {
-			$juspay_order_id = $order->get_transaction_id();
-			$response = $this->paymentHandler->orderStatus( $juspay_order_id );
-			$order->add_order_note( 'Synced Payment Status : ' . $response['status'] . ' - Juspay Order ID: ' . $juspay_order_id );
+			$order_id = $order->get_transaction_id();
+			$response = $this->paymentHandler->orderStatus( $order_id );
+			$order->add_order_note( 'Synced Payment Status : ' . $response['status'] . ' - Order ID: ' . $order_id );
 			if ( $response['status'] == 'CHARGED' || $response['status'] == 'COD_INITIATED' ) {
 				if ( $order->status != 'processing' ) {
-					$order->payment_complete( $juspay_order_id );
-					$order->add_order_note( "Juspay payment successful - Juspay Order Id: " . $juspay_order_id );
+					$order->payment_complete( $order_id );
+					$order->add_order_note( "Payment successful - Order Id: " . $order_id );
 					$paymentMethod = $response['payment_method'];
 					$paymentMethodType = $response['payment_method_type'];
-					$order->add_order_note( "Payment Method : $paymentMethod ($paymentMethodType) - Juspay Payment Id: " . $juspay_order_id );
+					$order->add_order_note( "Payment Method : $paymentMethod ($paymentMethodType) - Juspay Payment Id: " . $order_id );
 				}
 			}
 		}
@@ -352,10 +347,25 @@ function juspay_init_payment_class() {
 
 			$order = wc_get_order( $order_id );
 
-			$order_id = strval( $order_id );
-			$juspay_order_id = $order_id . "_" . substr( hash_hmac( 'sha512', $order_id, time() . "" ), 0, 16 );
+			$transaction_id = $order->get_transaction_id();
+			$juspay_order_exists = ! is_null( $transaction_id ) && $transaction_id != "";
 
-			$order->set_transaction_id( $juspay_order_id );
+			if ( $juspay_order_exists ) {
+
+				$last_order = $this->paymentHandler->orderStatus( $order_id );
+				$redirectUrl = $last_order['payment_links']['web'];
+
+				if ( $return_url ) {
+					return $redirectUrl;
+				} else {
+					header( "Location: $redirectUrl" );
+				}
+				exit();
+			}
+
+			$order_id = strval( $order_id );
+
+			$order->set_transaction_id( $order_id );
 			$order->save();
 
 			$customer = wp_get_current_user();
@@ -378,21 +388,22 @@ function juspay_init_payment_class() {
 				$params = array();
 				$params['amount'] = $amount;
 				$params['currency'] = get_woocommerce_currency();
-				$params['order_id'] = $juspay_order_id;
+				$params['order_id'] = $order_id;
 				$params['udf1'] = "WooCommerce";
 				$params["merchant_id"] = $this->get_option( 'merchant_id' );
+				$params['customer_email'] = $order->get_billing_email();
+				$params['customer_phone'] = $order->get_billing_phone();
+				$params['billing_address_first_name'] = $order->get_billing_first_name();
+				$params['billing_address_last_name'] = $order->get_billing_last_name();
 				$params['customer_id'] = $customer_id;
 				$params['payment_page_client_id'] = $this->get_option( 'client_id' );
 				$params['action'] = "paymentPage";
 				$params['return_url'] = $this->notify_url;
 
-				$response = array();
 				try {
 					$session = $this->paymentHandler->orderSession( $params );
 
-					$response = array( "orderId" => $session["order_id"], "id" => $session["id"], "status" => $session["status"], "paymentLinks" => $session["payment_links"], "sdkPayload" => $session["sdk_payload"] );
-
-					$redirectUrl = $response['paymentLinks']['web'];
+					$redirectUrl = $session['payment_links']['web'];
 
 				} catch (Exception $e) {
 					$order->add_order_note( 'Error: ' . $e->getMessage() );
@@ -429,10 +440,24 @@ function juspay_init_payment_class() {
 		}
 
 		function plugin_action_links( $links ) {
-			$plugin_links = [ 
-				'<a href="admin.php?page=wc-settings&tab=checkout&section=juspay_payment">' . esc_html__( 'Settings', 'juspay-payment' ) . '</a>',
-			];
-			return array_merge( $plugin_links, $links );
+			// Check if the Settings link is already present in the array
+			$link_exists = false;
+			foreach ( $links as $link ) {
+				if ( strpos( $link, 'admin.php?page=wc-settings&tab=checkout&section=juspay_payment' ) !== false ) {
+					$link_exists = true;
+					break;
+				}
+			}
+
+			// If the link is not already present, add it
+			if ( ! $link_exists ) {
+				$plugin_links = [ 
+					'<a href="admin.php?page=wc-settings&tab=checkout&section=juspay_payment">' . esc_html__( 'Settings', 'juspay-payment' ) . '</a>',
+				];
+				$links = array_merge( $plugin_links, $links );
+			}
+
+			return $links;
 		}
 	}
 
@@ -458,7 +483,7 @@ function juspay_declare_compatibility() {
 	}
 }
 
-function my_plugin_activation_function() {
+function juspay_plugin_activation_function() {
 	// Check WooCommerce
 	if ( ! class_exists( 'WooCommerce' ) ) {
 		deactivate_plugins( plugin_basename( __FILE__ ) );
