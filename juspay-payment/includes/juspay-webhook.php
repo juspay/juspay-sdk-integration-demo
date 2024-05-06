@@ -60,20 +60,18 @@ class Juspay_Webhook {
 		//
 		// Order entity should be sent as part of the webhook payload
 		//
-		$juspay_order_id = $data['content']['order']['order_id'];
-		$order_id = explode( '_', $juspay_order_id );
-		$order_id = (int) $order_id[0];
+		$order_id = $data['content']['order']['order_id'];
 
 		$order = wc_get_order( $order_id );
 
 		if ( $order ) {
-			if ( $order->status != 'processing' ) {
-				$order->payment_complete( $juspay_order_id );
-				$order->add_order_note( "Juspay payment successful (via Juspay Webhook) - Juspay Order Id: " . $juspay_order_id );
+			if ( $order->status == 'pending' ) {
+				$order->payment_complete( $order_id );
+				$order->add_order_note( "Payment successful (via Webhook) - Order Id: " . $order_id );
 			}
 			$paymentMethod = $data['content']['order']['payment_method'];
 			$paymentMethodType = $data['content']['order']['payment_method_type'];
-			$order->add_order_note( "Payment Method : $paymentMethod ($paymentMethodType) - Juspay Order Id: " . $juspay_order_id );
+			$order->add_order_note( "Payment Method : $paymentMethod ($paymentMethodType) - Order Id: " . $order_id );
 		}
 		exit;
 	}
@@ -82,15 +80,15 @@ class Juspay_Webhook {
 	 * @param array $data Webook Data
 	 */
 	protected function paymentFailed( array $data ) {
-		$juspay_order_id = $data['content']['order']['order_id'];
+		$order_id = $data['content']['order']['order_id'];
 
-		$order = wc_get_order( $juspay_order_id );
+		$order = wc_get_order( $order_id );
 
 		if ( $order ) {
-			$order->add_order_note( "Juspay payment failed (via Juspay Webhook) - Juspay Order Id: " . $juspay_order_id );
+			$order->add_order_note( "Payment failed (via Webhook) - Order Id: " . $order_id );
 			$paymentMethod = $data['content']['order']['payment_method'];
 			$paymentMethodType = $data['content']['order']['payment_method_type'];
-			$order->add_order_note( "Payment Method : $paymentMethod ($paymentMethodType) - Juspay Order Id: " . $juspay_order_id );
+			$order->add_order_note( "Payment Method : $paymentMethod ($paymentMethodType) - Order Id: " . $order_id );
 		}
 		exit;
 	}
