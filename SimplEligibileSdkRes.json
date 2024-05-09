@@ -8,7 +8,7 @@
                 "customerId": "7c717f87-6a0b-81fc-852394e50e6d",
                 "paymentMethodsEligibility": [
                     {
-                        "balance": 0,
+                        "balance": 1000,
                         "description": "SIMPL",
                         "eligibilityStrategy": "USER",
                         "gatewayErrorCode": "linking_required",
