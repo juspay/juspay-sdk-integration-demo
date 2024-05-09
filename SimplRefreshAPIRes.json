@@ -9,12 +9,12 @@
             "token": "tk_7c46bbe44fa8cbf4de0fef",
             "linked": true,
             "id": "wlm_b2cd9a7b344b6125b663",
-            "current_balance": 100000,
+            "current_balance": 10000,
             "sub_details": [
                 {
                     "payment_method": "SIMPL",
                     "last_refreshed": null,
-                    "current_balance": null,
+                    "current_balance": 10000,
                     "payment_method_type": "WALLET"
                 }
             ],
