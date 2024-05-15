@@ -1,16 +1,17 @@
 {
-  "value": "READY_FOR_FULFILLMENT",
-  "label": "ORDER",
-  "info": {
-    "updatedAt": "2020-05-29T07:24:57Z",
-    "status": "READY_FOR_FULFILLMENT",
-    "orderType": "FULFILL_ONLY",
-    "merchantOrderId": "6lQuvBOixfADPpmD",
-    "merchantCustomerId": "1421255",
-    "id": "95eb968ccdd4f2d9ef31c3e972ca40",
-    "createdAt": "2020-05-29T07:24:13Z",
-    "amount": 10
-  },
-  "id": "5ed06807a0f429e8891847811bd050",
-  "category": "INFO"
+"rqstType": "AUTHORIZATION_FAILURE",
+"payoutId": "XXXXX",
+"payoutAmnt": "1000",
+"payoutCurrCd": "INR",
+"tranId": "L34WHIB532",
+"authTime": "2023-11-04 04:34:09",
+"tranAmnt": "10",
+"tranCurrCd": "USD",
+"merchCatgCd": "5311",
+"mrchCity": "CA",
+"mrchName": "Pizza Store",
+"lastFourTokenNumber": "9875",
+"lastFourCardNumber": "2474",
+"errMsg": "Do Not Honor",
+"cardAlias": "test_card"
 }
