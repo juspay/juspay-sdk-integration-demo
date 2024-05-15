@@ -1,0 +1,8 @@
+{
+    "status": "SUCCESS",
+    "response": {
+        "isDeleted": true
+    },
+    "message": "Virtual Token Deleted Successfully",
+    "payoutId": "Juspay123456789"
+}
