@@ -1,0 +1,33 @@
+{
+    "updatedAt": "2024-05-21T10:41:28Z",
+    "type": "FULFILL_ONLY",
+    "status": "FULFILLMENTS_SCHEDULED",
+    "orderId": "lCWwQVEtjC3sIKZU",
+    "fulfillments": [
+        {
+            "updatedBy": "DEFAULT",
+            "updatedAt": "2024-05-21T10:41:28Z",
+            "type": "ORDER",
+            "transactions": [],
+            "statusUpdatedAt": "2024-05-21T10:41:28Z",
+            "status": "PENDING",
+            "readyForSubmit": true,
+            "merchantCustomerId": "cth_aC7pPDuatTkYsXHr",
+            "id": "9c01a866d374bf684991328c7b36f9-f1",
+            "fulfillmentMethodList": [],
+            "createdAt": "2024-05-21T10:41:28Z",
+            "beneficiaryDetails": {
+                "details": {
+                    "payoutLink": "https://integ-expresscheckout-api.juspay.in/credit/staging/c/aK7iwT",
+                    "name": "Test Name",
+                    "mobileNo": "8408099821"
+                },
+                "type": "PAYOUT_LINK"
+            },
+            "amount": 9
+        }
+    ],
+    "customerId": "cth_aC7pPDuatTkYsXHr",
+    "createdAt": "2024-05-21T10:41:28Z",
+    "amount": 9
+}
