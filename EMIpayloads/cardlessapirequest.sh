@@ -1,0 +1,11 @@
+curl -X POST https://api.juspay.in/txns \
+-d “order_id=:order_id” \
+-d “merchant_id=:merchant_id” \
+-d “payment_method_type=CONSUMER_FINANCE” \
+-d “payment_method=HDFC_CLEMI” \
+-d “redirect_after_payment=true” \
+-d “format=json”\
+-d “is_emi=true” \
+-d “emi_bank=HDFC_CLEMI” \
+-d “emi_tenure=3” \
+-d “emi_type=NO_COST_EMI”
