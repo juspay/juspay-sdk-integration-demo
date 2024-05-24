@@ -1,0 +1,14 @@
+{
+    “requestId”: “eee6f65e-23dc-42xxe1-ad7c-ec3cddd64ac9",
+    “service”: “in.juspay.hyperapi”,
+    “payload”: {
+        “action”: “consumerFinanceTxn”,
+        “orderId”: “hyperorder45314”,
+        “clientAuthToken”: “tkn_0e37edc63xxxxd647fdb606ab48ccfc4213”,
+        “paymentMethod”: “HDFC_CLEMI”,
+        “emiBank”: “HDFC_CLEMI”,
+        “isEmi”: true,
+        “emiType”: “NO_COST_EMI”,
+        “emiTenure”: 3
+    }
+}
