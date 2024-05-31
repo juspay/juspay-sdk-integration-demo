@@ -1,0 +1,13 @@
+{
+    "payload": {
+      "event": "log_stream",
+      "payload": {
+        "category": "action",
+        "label": "button_clicked",
+        "subcategory": "user",
+        "value": {
+          "button_name": "SELECTED_LOW_COST_EMI"
+        }
+      }
+    }
+  }

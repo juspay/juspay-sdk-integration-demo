@@ -1,0 +1,15 @@
+{
+    "label": "payment_instrument_group",
+    "value": {
+        "pig_name": "stored_card",
+        "po_selected": {
+            "card_details": {
+                "bank_name": "Union Bank of India",
+                "card_brand": "RUPAY",
+                "card_type": "CREDIT"
+            }
+        },
+        "screen": "paymentpagescreen",
+        "section": "recent_options"
+    }
+}

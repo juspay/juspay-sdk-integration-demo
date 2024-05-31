@@ -1,0 +1,20 @@
+{
+  "label": "payment_option_selected",
+  "value": {
+    "card_type": "CREDIT",
+    "emi_tenure": 9,
+    "emi_type": "NO_COST_EMI",
+    "is_emi": true,
+    "is_saved": null,
+    "is_selected": true,
+    "surcharge_amount": 11.04,
+    "juspay_bank_code": "JP_ICICI",
+    "last_used": null,
+    "mandate_support": false,
+    "offer_applicable": null,
+    "payment_method": "VISA",
+    "payment_method_sub_type": null,
+    "payment_method_type": "CARD",
+    "time_to_select": 50104
+  }
+}

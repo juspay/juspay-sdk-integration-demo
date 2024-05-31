@@ -1,0 +1,6 @@
+{
+  "label": "on_event",
+  "value": {
+    "hide_loader": true
+  }
+}

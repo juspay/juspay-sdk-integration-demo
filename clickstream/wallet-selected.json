@@ -1,0 +1,9 @@
+
+{
+   "category":"action",
+   "subcategory":"user",
+   "label":"wallet_selected",
+   "value":{
+      "unlinked_wallet":"Paytm Wallet"
+   }
+}

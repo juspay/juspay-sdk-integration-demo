@@ -1,0 +1,14 @@
+{
+    "label": "payment_instrument_group",
+    "value": {
+        "pig_name": "upi",
+        "po_selected": {
+            "upi_app_selected": {
+                "appName": "PhonePe",
+                "packageName": "phonepe://pay"
+            }
+        },
+        "screen": "paymentpagescreen",
+        "section": "other_options"
+    }
+}

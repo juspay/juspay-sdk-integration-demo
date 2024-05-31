@@ -1,0 +1,12 @@
+{
+    "label": "payment_instrument_group",
+    "value": {
+        "pig_name": "rewards",
+        "po_selected": {
+            "walletName": "TWID",
+            "walletType": "rewards"
+        },
+        "screen": "rewardsscreen",
+        "section": "null"
+    }
+}

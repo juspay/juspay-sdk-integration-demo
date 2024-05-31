@@ -1,0 +1,16 @@
+{
+    "label": "payment_instrument_group",
+    "value": {
+        "pig_name": "card",
+        "po_selected": {
+            "card_details": {
+                "bank_name": "SBI",
+                "card_brand": "VISA",
+                "card_type": "DEBIT",
+                "mandateSupport": true
+            }
+        },
+        "screen": "addcardscreen",
+        "section": null
+    }
+}

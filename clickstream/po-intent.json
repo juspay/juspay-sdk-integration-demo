@@ -1,0 +1,20 @@
+{
+  "label": "payment_option_selected",
+  "value": {
+    "card_type": null,
+    "emi_tenure": null,
+    "emi_type": null,
+    "is_emi": null,
+    "is_saved": null,
+    "is_selected": false,
+    "surcharge_amount": 11.04,
+    "juspay_bank_code": null,
+    "last_used": null,
+    "mandate_support": null,
+    "offer_applicable": null,
+    "payment_method": "com.goibibo",
+    "payment_method_sub_type": null,
+    "payment_method_type": "UPI",
+    "time_to_select": 390357
+  }
+}

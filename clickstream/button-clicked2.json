@@ -1,0 +1,10 @@
+{
+    "category": "action",
+    "subcategory": "user",
+    "label": "button_clicked",
+    "value": {
+        "section": "product_summary",
+        "button_name": "collapse_accordian",
+        "screen": "PaymentPageScreen"
+    }
+}

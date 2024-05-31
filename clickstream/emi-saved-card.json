@@ -1,0 +1,16 @@
+{
+    "payload": {
+      "event": "log_stream",
+      "payload": {
+        "category": "screen",
+        "label": "current_screen",
+        "subcategory": "screen",
+        "value": {
+          "id": 35,
+          "presentation_type": "screen",
+          "screen_name": "EMISavedCardCheckoutScreen",
+          "url": ""
+        }
+      }
+    }
+}

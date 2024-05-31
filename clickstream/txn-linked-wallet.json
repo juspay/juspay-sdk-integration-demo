@@ -1,0 +1,11 @@
+{
+  "label": "payment_instrument_group",
+  "value": {
+    "pig_name": "wallet",
+    "po_selected": {
+      "linked_wallet": "LAZYPAY"
+    },
+    "screen": "paymentpagescreen",
+    "section": "saved_options"
+  }
+}

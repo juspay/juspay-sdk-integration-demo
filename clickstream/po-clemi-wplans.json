@@ -1,0 +1,20 @@
+{
+  "label": "payment_option_selected",
+  "value": {
+    "card_type": null,
+    "emi_tenure": null,
+    "emi_type": null,
+    "is_emi": true,
+    "is_saved": null,
+    "is_selected": true,
+    "surcharge_amount": null,
+    "juspay_bank_code": null,
+    "last_used": null,
+    "mandate_support": false,
+    "offer_applicable": null,
+    "payment_method": "ICICI_CLEMI",
+    "payment_method_sub_type": "CF_EMI",
+    "payment_method_type": "CONSUMER_FINANCE",
+    "time_to_select": 390357
+  }
+}

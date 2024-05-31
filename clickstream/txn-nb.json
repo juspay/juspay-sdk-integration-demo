@@ -1,0 +1,12 @@
+{
+    "label": "payment_instrument_group",
+    "value": {
+        "pig_name": "nb",
+        "po_selected": {
+            "bank_code": "NB_SBI",
+            "bank_name": "NB_SBI"
+        },
+        "screen": "netbankingscreen",
+        "section": ""
+    }
+}
