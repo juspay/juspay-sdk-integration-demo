@@ -1,8 +1,0 @@
-{
-    "label": "render_time",
-    "value": {
-        "latency": "4328",
-        "stage": "INITIAL",
-        "type": "overall"
-    }
-}

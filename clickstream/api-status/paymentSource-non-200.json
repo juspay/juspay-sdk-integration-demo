@@ -1,9 +1,0 @@
-{
-    "label": "api_status",
-    "value": {
-        "type": "paymentSource",
-        "error_message": "Signature expired / invalid signature",
-        "status_code": 401,
-        "api_latency": 82
-    }
-}

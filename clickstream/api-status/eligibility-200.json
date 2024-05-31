@@ -1,9 +1,0 @@
-{
-    "label": "api_status",
-    "value": {
-        "type": "eligibility",
-        "error_message": null,
-        "status_code": 200,
-        "api_latency": 3537
-    }
-}

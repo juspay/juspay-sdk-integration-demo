@@ -1,9 +1,0 @@
-{
-    "label": "api_status",
-    "value": {
-        "api_latency": 1284,
-        "error_message": null,
-        "status_code": 200,
-        "type": "linkWallet"
-    }
-}
