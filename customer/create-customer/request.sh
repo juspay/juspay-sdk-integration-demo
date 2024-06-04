@@ -1,4 +1,4 @@
-curl -X POST https://api.juspay.in/customers\
+curl -X POST https://api.hyperpg.in/customers\
 -u your_api_key:\
 -H 'x-merchantid: merchant_id'\
 -H 'Content-Type: application/x-www-form-urlencoded'\
