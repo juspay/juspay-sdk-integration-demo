@@ -1,4 +1,4 @@
-curl --location --request POST 'https://api.juspay.in/orders' \
+curl --location --request POST 'https://api.hyperpg.in/orders' \
 --header 'version: 2023-06-30' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'x-merchantid: merchant_id'\
