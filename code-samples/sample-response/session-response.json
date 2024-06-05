@@ -3,7 +3,7 @@
   "id": "ordeh_xxxxxxxxxxxxxxxxxxxx",
   "order_id": "testing-order-one",
   "payment_links": {
-      "web": "https://smartgatewayuat.hdfcbank.com/merchant/ipay/ordeh_57dfd768bb7d4896bc042y0b90bc9ad77/payment-page"
+      "web": "https://sandbox.portal.juspay.in/merchant/ipay/ordeh_57dfd768bb7d4896bc042y0b90bc9ad77/payment-page"
   },
   "sdk_payload": {
       "requestId": "12398b5571d74c3388a74004bc24370c",
