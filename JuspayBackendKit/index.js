@@ -7,8 +7,8 @@ const { Juspay, APIError } = require('expresscheckout-nodejs')
 /**
  * Setup expresscheckout-node sdk
  */
-const SANDBOX_BASE_URL = "https://smartgatewayuat.hdfcbank.com"
-const PRODUCTION_BASE_URL = "https://smartgateway.hdfcbank.com"
+const SANDBOX_BASE_URL = "https://sandbox.juspay.in"
+const PRODUCTION_BASE_URL = "https://api.juspay.in"
 
 
 /**
