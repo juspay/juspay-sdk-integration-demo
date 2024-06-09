@@ -36,7 +36,7 @@ namespace  dotnet_server
                 // block:start:initialize-juspay-config
                 JuspayEnvironment.Instance.JuspayJWT = new JuspayJWTRSA(Config.KeyUuid, Config.PublicKey, Config.PrivateKey);
                 JuspayEnvironment.Instance.MerchantId = Config.MerchantId;
-                JuspayEnvironment.Instance.BaseUrl = "https://smartgatewayuat.hdfcbank.com";
+                JuspayEnvironment.Instance.BaseUrl = "https://sandbox.juspay.in";
                 // block:end:initialize-juspay-config
             }
         }
