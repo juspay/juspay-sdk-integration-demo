@@ -22,8 +22,8 @@ public class JuspayConfig implements ServletContextListener {
     public static String key_uuid;
     public static String payment_page_client_id;
 
-    public static final String SANDBOX_BASE_URL = "https://smartgatewayuat.hdfcbank.com";
-    public static final String PRODUCTION_BASE_URL = "https://smartgateway.hdfcbank.com";
+    public static final String SANDBOX_BASE_URL = "https://sandbox.juspay.in";
+    public static final String PRODUCTION_BASE_URL = "https://api.juspay.in";
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {
