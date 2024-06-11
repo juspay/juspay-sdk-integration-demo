@@ -17,6 +17,6 @@ curl --location 'https://smartgatewayuat.hdfcbank.com/session' \
     "description": "Complete your payment",
     "first_name": "John",
     "last_name": "wick"
-
+    "metadata.JUSPAY:gatewayReferenceId": "payu_test",
 }
 '
