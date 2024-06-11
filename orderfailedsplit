@@ -1,0 +1,118 @@
+{
+    "event_name": "ORDER_FAILED",
+    "content": {
+        "order": {
+            "bank_pg": null,
+            "payer_vpa": "FILTERED",
+            "payment_method": "COLLECT",
+            "customer_phone": "FILTERED",
+            "payment_gateway_response": {
+                "txn_id": "aveg9eO",
+                "rrn": "",
+                "debit_amount": "9995.0",
+                "auth_id_code": "",
+                "resp_message": "",
+                "epg_txn_id": "pay_NaHxifq",
+                "resp_code": "failed",
+                "created": "2024-02-13T07:54:46Z"
+            },
+            "udf8": "",
+            "txn_id": "ave9eO",
+            "order_id": "TEST",
+            "gateway_reference_id": null,
+            "udf9": "",
+            "txn_detail": {
+                "txn_id": "ave9eO",
+                "order_id": "TEST",
+                "error_code": "failed",
+                "source_object": "",
+                "txn_flow_type": "COLLECT",
+                "txn_object_type": "",
+                "status": "AUTHORIZATION_FAILED",
+                "express_checkout": false,
+                "gateway_id": 23,
+                "error_message": "",
+                "tax_amount": null,
+                "currency": "INR",
+                "source_object_id": "1103948",
+                "txn_amount": 9995,
+                "created": "2024-02-13T07:54:13Z",
+                "gateway": "",
+                "surcharge_amount": null,
+                "txn_uuid": "mozc6xZim",
+                "net_amount": 9995,
+                "redirect": true
+            },
+            "customer_id": "63dcaa457",
+            "amount": 9995,
+            "amount_debited": 9995,
+            "split_settlement_response": {
+                "split_details": [
+                    {
+                        "sub_vendor_id": "FILTERED",
+                        "amount": 7996,
+                        "merchant_commission": 0,
+                        "gateway_sub_account_id": "FILTERED",
+                        "notes": "{\"note\":{\"juspayVendorId\":\"65cb1f1b6b8d\"}}"
+                    }
+                ],
+                "split_applied": false
+            },
+            "udf4": "",
+            "status": "AUTHORIZATION_FAILED",
+            "udf5": "",
+            "udf6": "",
+            "status_id": 27,
+            "offers": [],
+            "udf7": "",
+            "product_id": "",
+            "refunded": false,
+            "udf10": "",
+            "gateway_id": 23,
+            "udf1": "",
+            "udf2": "",
+            "udf3": "",
+            "date_created": "2024-02-13T07:53:57Z",
+            "id": "ordeh_8917981830dca47",
+            "rewards_breakup": null,
+            "merchant_id": "TEST_MID",
+            "return_url": "https://www.TEST.com",
+            "effective_amount": 9995,
+            "currency": "INR",
+            "auth_type": "",
+            "customer_email": "1111111",
+            "upi": {
+                "payer_vpa": "FILTERED",
+                "txn_flow_type": "COLLECT"
+            },
+            "payment_method_type": "UPI",
+            "txn_uuid": "mozcim"
+            },
+            "payment_links": {
+                "mobile": "https://api.juspay.in/orders/ordeh_8917981830dca47/payment-page",
+                "web": "https://api.juspay.in/orders/ordeh_8917981830dca47/payment-page",
+                "iframe": "https://api.juspay.in/orders/ordeh_8917981830dca47/payment-page"
+            },
+            "amount_refunded": 0,
+            "bank_error_code": "failed",
+            "metadata": {
+                "split_settlement_details": "{\"mdr_borne_by\":\"MARKETPLACE\",\"marketplace\":{\"amount\":1999},\"vendor\":{\"split\":[{\"sub_mid\":\"powertrade\",\"amount\":7996,\"merchant_commission\":0,\"notes\":\"{\\\"note\\\":{\\\"juspayVendorId\\\":\\\"65cb1f1436b8d\\\"]}}",
+                "payment_page_client_id": "testmerchant",
+                "payment_page_sdk_payload": "FILTERED",
+                "payment_links": {
+                    "mobile": "https://api.juspay.in/orders/ordeh_8917981830dca47/payment-page",
+                    "web": "https://api.juspay.in/orders/ordeh_8917981830dca47/payment-page",
+                    "iframe": "https://api.juspay.in/orders/ordeh_8917981830dca47/payment-page"
+                },
+                "RAZORPAY:notes[cust_id]": "FILTERED",
+                "merchant_payload": "{\"customerPhone\":\"1111111\",\"customerEmail\":\"1111111\"}",
+                "payment_locking": {
+                    "payment_filter": "{\"allowDefaultOptions\":true,\"options\":[{\"upiFilters\":[{\"enable\":false,\"upiType\":\"INTENT\"},{\"enable\":true,\"upiType\":\"COLLECT\"}],\"paymentMethodType\":\"UPI\",\"enable\":true},{\"cardFilters\":[{\"cardTypes\":[\"DEBIT\",\"CREDIT\"],\"enable\":true}],\"paymentMethodType\":\"CARD\",\"enable\":true}]}"
+                }
+            },
+            "bank_error_message": ""
+        }
+    },
+    "date_created": "2024-02-13T07:54:46Z",
+    "id": "evt_V2_06eb070597ef3a2064"
+}

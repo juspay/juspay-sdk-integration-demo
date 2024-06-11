@@ -1,0 +1,12 @@
+{
+    "txn_uuid": "eulp3hoDBesVEV",
+    "txn_id": "merchantid-12345-1",
+    "status": "PENDING_VBV",
+    "payment": {
+        "authentication": {
+            "url": "https://sandbox.juspay.in/v2/pay/start/merchantid/eulp3hoDBesVEV",
+            "method": "GET"
+        }
+    },
+    "order_id": "12345"
+}

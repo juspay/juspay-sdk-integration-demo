@@ -1,0 +1,106 @@
+{
+    "id": "evt_V2_a18f9a905cdc1ae3f137926",
+    "event_name": "ORDER_SUCCEEDED",
+    "date_created": "2024-04-24T10:32:11Z",
+    "content": {
+        "order": {
+            "offers": [],
+            "txn_id": "Merchant-order70C2E68FB4B63DO-1",
+            "udf7": "",
+            "payment_method": "UPI",
+            "txn_uuid": "mozfFq7MYqpytyhsoq3",
+            "metadata": {
+                "payment_locking": {
+                    "offer_details": "{"offer_applied":"false","offer_payment_methods":[{"offer_payment_card_issuer":null,"offer_payment_method_type":"giftCards","offer_payment_card_type":null,"filter_type":"blacklist","offer_payment_method":["NEFT"]}],"support_reordering":"false","merge_with_default_payment_methods":"true"}"
+                },
+                "payment_page_client_id": "Merchant",
+                "payment_links": {
+                    "web": "https://api.juspay.in/orders/ordeh_b91cb2847a7d4ed1944e4172/payment-page",
+                    "iframe": "https://api.juspay.in/orders/ordeh_b91cbd1910d67ffd44e4172/payment-page",
+                    "mobile": "https://api.juspay.in/orders/ordeh_b91cb2847a7d4ed1944e4172/payment-page"
+                }
+            },
+            "udf5": "",
+            "resp_message": null,
+            "status_id": 21,
+            "resp_code": null,
+            "amount_refunded": 0,
+            "udf9": "",
+            "gateway_reference_id": null,
+            "status": "CHARGED",
+            "bank_error_message": "",
+            "id": "ordeh_b91cb2847a7d4ed1944e4172",
+            "resp_category": null,
+            "auth_type": "",
+            "udf3": "",
+            "udf6": "",
+            "udf10": "",
+            "effective_amount": 200,
+            "product_id": "",
+            "order_id": "order70C2E68FB4B63DO",
+            "return_url": "https://www.Merchant.com/your-orders",
+            "payment_gateway_response": {
+                "txn_id": "Merchant-order70C2E68FB4B63DO-1",
+                "created": "2024-04-24T10:32:10Z",
+                "network_error_message": null,
+                "resp_message": "00::Transaction Success.",
+                "resp_code": "SUCCESS",
+                "auth_id_code": "NA",
+                "epg_txn_id": "2675063729",
+                "network_error_code": null,
+                "rrn": "411540954522"
+            },
+            "udf1": "",
+            "currency": "INR",
+            "udf4": "",
+            "customer_id": "ORGBMT8S1DjUlVGF789hZTM",
+            "date_created": "2024-04-24T10:32:00Z",
+            "payer_vpa": "FILTERED",
+            "gateway_id": 70,
+            "upi": {
+                "payer_app": "com.google.android.apps.nbu.paisa.user",
+                "payer_vpa": "FILTERED",
+                "txn_flow_type": "INTENT"
+            },
+            "payment_links": {
+                "web": "https://api.juspay.in/orders/ordeh_b91cb2847a7d4ed1944e4172/payment-page",
+                "iframe": "https://api.juspay.in/orders/ordeh_b91cb2847a7d4ed1944e4172/payment-page",
+                "mobile": "https://api.juspay.in/orders/ordeh_b91cb2847a7d4ed1944e4172/payment-page"
+            },
+            "maximum_eligible_refund_amount": 200,
+            "txn_detail": {
+                "express_checkout": false,
+                "txn_id": "Merchant-order70C2E68FB4B63DO-1",
+                "txn_amount": 200,
+                "error_message": "",
+                "txn_uuid": "mozfFq7MYqpytyhsoq3",
+                "created": "2024-04-24T10:32:00Z",
+                "metadata": {
+                    "payment_channel": "ANDROID"
+                },
+                "gateway": "GOCASHFREE",
+                "status": "CHARGED",
+                "offer_deduction_amount": null,
+                "net_amount": 200,
+                "order_id": "order70C2E68FB4B63DO",
+                "currency": "INR",
+                "error_code": null,
+                "gateway_id": 70,
+                "surcharge_amount": "FILTERED",
+                "txn_flow_type": "INTENT",
+                "tax_amount": 0,
+                "redirect": true
+            },
+            "bank_error_code": "",
+            "udf8": "",
+            "payment_method_type": "UPI",
+            "customer_phone": "FILTERED",
+            "merchant_id": "Merchant",
+            "customer_email": "1111111",
+            "udf2": "",
+            "amount": 200,
+            "payer_app_name": "com.google.android.apps.nbu.paisa.user",
+            "refunded": false
+        }
+    }
+}

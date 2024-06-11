@@ -1,0 +1,27 @@
+curl --location 'https://sandbox.juspay.in/ecr/orders' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'Authorization: Basic API KEY' \
+--data-urlencode 'order_id=Snap_123456' \
+--data-urlencode 'customer_id=' \
+--data-urlencode 'customer_email=test@gmail.com' \
+--data-urlencode 'customer_phone=7878787878' \
+--data-urlencode 'billing_address_city=Bangalore' \
+--data-urlencode 'shipping_address_city=Bangalore' \
+--data-urlencode 'billing_address_line1=whitefield' \
+--data-urlencode 'shipping_address_first_name=avcs' \
+--data-urlencode 'shipping_address_last_name=hello2' \
+--data-urlencode 'return_url=https://sandbox.juspay.in' \
+--data-urlencode
+'basket=[{"id":"Merchant","description":"SampleDescription","quantity":1,"unitP
+rice":1000.0,"sku":"12345","category":"Electronics","productUrl":"https://www.a
+bc.def/xyz","sellerType":"VENDOR","customParams":{"name1":"value1","name2":"val
+ue2"}}]' \
+--data-urlencode 'amount=1000' \
+--data-urlencode 'metadata.SNAPMINT%3Agateway_reference_id=test_snapmint' \
+--data-urlencode 'shipping_address_postal_code=560037' \
+--data-urlencode 'billing_address_postal_code=560037' \
+--data-urlencode 'shipping_address_line1=kormangla' \
+--data-urlencode 'metadata.txns.auto_capture=0' \
+--data-urlencode 'gateway_id=263' \
+--data-urlencode 'billing_address_first_name=abc' \
+--data-urlencode 'billing_address_last_name=def

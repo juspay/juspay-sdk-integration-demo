@@ -1,0 +1,17 @@
+curl --location 'https://sandbox.juspay.in/session' \
+--header 'Authorization: Basic MD******************g==' \
+--header 'Content-Type: application/json' \
+--data-raw '{   
+    "action": "enach",
+    "service": "in.juspay.ec",
+    "payment_page_client_id": "juspay",
+    "order_id": "12345",
+    "amount": "1.00",
+    "customer_id": "test123",
+    "customer_email": "test@gmail.com",
+    "customer_phone": "9004490044",
+    "mandate.max_amount":"1000.00",
+    "mandate.start_date":"1714030518",
+    "mandate.end_date":"2660715307",
+    "metadata.bank_account_details": "[{\"bank_account_number\":\"00111111111111\",\"bank_ifsc\":\"UTIB0000007\",\"bank_beneficiary_name\":\"Test\"}]"
+}'
