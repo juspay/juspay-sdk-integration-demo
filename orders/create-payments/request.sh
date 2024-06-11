@@ -45,3 +45,4 @@ curl --location 'https://smartgateway.hdfcbank.com/txns' \
 --data-urlencode 'order.shipping_address_country_code_iso=IND' \
 --data-urlencode 'order.shipping_address_country=India' \
 --data-urlencode 'format=json'
+--data-urlencode 'metadata.JUSPAY:gateway_reference_id=payu_test' \
