@@ -1,0 +1,137 @@
+{
+    "payment_method": "RUPAY",
+    "customer_phone": "FILTERED",
+    "payment_gateway_response": {
+        "network_error_message": null,
+        "txn_id": "Merchant-M52404340175-2",
+        "rrn": "",
+        "auth_id_code": "",
+        "resp_message": "Sorry, you do not have enough balance in your bank account. Please try again with different payment option.",
+        "epg_txn_id": "20240603204389607670718",
+        "resp_code": "202",
+        "created": "2024-06-03T08:35:59Z",
+        "network_error_code": null
+    },
+    "udf8": "",
+    "txn_id": "Merchant-M52404340175-2",
+    "order_id": "M52404340175",
+    "udf9": "",
+    "customer_id": "163xx81739",
+    "amount": 21049,
+    "udf4": "",
+    "status": "AUTHORIZATION_FAILED",
+    "udf5": "",
+    "udf6": "",
+    "status_id": 27,
+    "offers": [
+        {
+            "offer_code": "FILTERED",
+            "offer_id": "21a2d7cc-e346-4924-9a9d-f2c3dbeca789",
+            "product_discounts": [
+                {
+                    "emi_discount": "FILTERED",
+                    "discount_amount": "0.00",
+                    "product_id": "53274",
+                    "merchant_discount_amount": "FILTERED",
+                    "cashback_amount": "FILTERED",
+                    "unit_price": "21049.00",
+                    "product_quantity": 1,
+                    "product_applicable_quantity": 1
+                }
+            ],
+            "error_code": "JP706",
+            "status": "FAILED",
+            "error_message": "Offer Application failed due to transaction failure",
+            "benefits": [
+                {
+                    "amount": 1337.31,
+                    "type": "EMI_DISCOUNT",
+                    "calculation_info": {
+                        "calculation_rule": "FILTERED",
+                        "emi_type": "NO_COST",
+                        "value": 100
+                    }
+                }
+            ],
+            "metadata": "{"minimum_order_amount":"1.00"}"
+        }
+    ],
+    "udf7": "",
+    "resp_message": "User doesn't have sufficient balance in the account",
+    "emi_tenure": 9,
+    "product_id": "",
+    "refunded": false,
+    "udf10": "",
+    "gateway_id": 19,
+    "udf1": "SDK",
+    "udf2": "",
+    "emi_type": "JUSPAY_NO_COST_EMI",
+    "udf3": "",
+    "date_created": "2024-06-03T08:34:06Z",
+    "id": "ordeh_2cb278351493",
+    "merchant_id": "Merchant",
+    "return_url": "https://in-pay.Merchant.com/callback/298",
+    "effective_amount": "FILTERED",
+    "currency": "INR",
+    "auth_type": "THREE_DS",
+    "customer_email": "1111111",
+    "resp_code": "INSUFFICIENT_BALANCE",
+    "card": {
+        "saved_to_locker": "FILTERED",
+        "extended_card_type": "FILTERED",
+        "card_isin": "FILTERED",
+        "payment_account_reference": "FILTERED",
+        "name_on_card": "FILTERED",
+        "card_brand": "FILTERED",
+        "last_four_digits": "FILTERED",
+        "card_issuer": "FILTERED",
+        "card_type": "CREDIT",
+        "tokens": "FILTERED",
+        "expiry_month": "FILTERED",
+        "card_issuer_country": "FILTERED",
+        "tokenization_user_consent": "FILTERED",
+        "card_reference": "",
+        "expiry_year": "FILTERED",
+        "using_saved_card": "FILTERED",
+        "using_token": "FILTERED",
+        "token_type": "CARD",
+        "card_fingerprint": "FILTERED",
+        "juspay_bank_code": "JP_HDFC"
+    },
+    "payment_method_type": "CARD",
+    "txn_uuid": "mozqsc6heRVYJT7U4Lt",
+    "resp_category": "BUSINESS_ERROR",
+    "risk": {
+        "recommended_action": "proceed",
+        "status": "COMPLETED",
+        "provider": "JUSPAYFRM",
+        "flagged": false
+    },
+    "payment_links": {
+        "mobile": "FILTERED",
+        "web": "https://payments.juspay.in/payment-page/order/ordeh_2cb278351493",
+        "iframe": "https://payments.juspay.in/payment-page/order/ordeh_2cb278351493"
+    },
+    "amount_refunded": 0,
+    "basket": [
+        {
+            "shippingDestinationType": null,
+            "productName": null,
+            "sellerType": null,
+            "customParams": null,
+            "productRisk": null,
+            "sku": null,
+            "id": "53274",
+            "productCode": null,
+            "quantity": 1,
+            "description": null,
+            "category": null,
+            "unitPrice": "FILTERED",
+            "passenger": null,
+            "productUrl": null
+        }
+    ],
+    "bank_error_code": "202",
+    "emi_bank": "HDFC",
+    "bank_error_message": "Sorry, you do not have enough balance in your bank account. Please try again with different payment option."
+}
