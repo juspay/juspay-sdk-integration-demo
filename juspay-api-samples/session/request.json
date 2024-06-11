@@ -10,5 +10,5 @@
   "description": "Complete your payment",
   "first_name": "John",
   "last_name": "wick",
-  "metadata.JUSPAY:gatewayReferenceId": "payu_test"
+  "metadata.JUSPAY:gateway_reference_id": "payu_test"
 }
