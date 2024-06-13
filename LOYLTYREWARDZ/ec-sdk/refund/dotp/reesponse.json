@@ -1,0 +1,19 @@
+{
+  "order_id": "ord_1712313308",
+  "status": "SUCCESS",
+  "amount": 10500,
+  "sent_to_gateway": true,
+  "unique_request_id": "refund_1712314361_1",
+  "gateway": "LOYLTYREWARDZ",
+  "created": "2024-04-05T10:52:41Z",
+  "initiated_by": "API",
+  "refund_source": "LOYLTYREWARDZ",
+  "refund_arn": "",
+  "error_message": null,
+  "epg_txn_id": "7a282d9c-f4a1-4f12-be2c-82147e54d2e0",
+  "txn_id": "udit_juspay-ord_1712313308-1-2",
+  "authorization_id": null,
+  "reference_id": null,
+  "response_code": null,
+  "refund_type": "STANDARD"
+}
