@@ -1,0 +1,11 @@
+{
+            "juspayBankCode": "UPI_COLLECT",
+            "paymentMethodType": "UPI",
+            "paymentMethod": "UPI_COLLECT",
+            "nickName": "COLLECT",
+            "supportedReferenceIds": [
+                "DEFAULT_NULL"
+            ],
+            "description": "UPI_COLLECT",
+            "supportedByDefault": true
+        }
