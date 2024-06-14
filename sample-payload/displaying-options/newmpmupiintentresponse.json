@@ -1,0 +1,11 @@
+{
+            "juspayBankCode": "UPI_PAY",
+            "paymentMethodType": "UPI",
+            "paymentMethod": "UPI_PAY",
+            "nickName": "INTENT",
+            "supportedReferenceIds": [
+                "DEFAULT_NULL"
+            ],
+            "description": "UPI_PAY",
+            "supportedByDefault": true
+        }
