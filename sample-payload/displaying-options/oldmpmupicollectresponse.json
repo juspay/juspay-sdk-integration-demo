@@ -1,0 +1,11 @@
+{
+  "juspayBankCode": "JP_UPI",
+  "paymentMethodType": "UPI",
+  "paymentMethod": "UPI",
+  "nickName": "UPI",
+  "supportedReferenceIds": [
+    "DEFAULT_NULL"
+  ],
+  "description": "UPI",
+  "supportedByDefault": true
+}
