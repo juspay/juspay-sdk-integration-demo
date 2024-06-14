@@ -1,0 +1,24 @@
+{
+  "juspayBankCode": "PAY",
+  "paymentMethodType": "UPI",
+  "metadata": {
+    "supportedPackageNames": [
+      "com.phonepe.app",
+      "com.infra.boiupi",
+      "com.phonepe.PhonePeApp",
+      "com.infra.boiupi",
+      "com.canarabank.mobility",
+      "com.bankofbaroda.upi",
+      "com.upi.axispay",
+      "com.fss.ippbpsp",
+      "com.mobikwik_new",
+      "in.amazon.mShop.android.shopping"
+    ]
+  },
+  "paymentMethod": "PAY",
+  "supportedReferenceIds": [
+    "DEFAULT_NULL"
+  ],
+  "description": "UPI Intent Pay",
+  "supportedByDefault": true
+}
