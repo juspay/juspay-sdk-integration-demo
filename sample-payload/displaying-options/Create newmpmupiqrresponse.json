@@ -1,0 +1,11 @@
+{
+            "juspayBankCode": "UPI_QR",
+            "paymentMethodType": "UPI",
+            "paymentMethod": "UPI_QR",
+            "nickName": "QR",
+            "supportedReferenceIds": [
+                "DEFAULT_NULL"
+            ],
+            "description": "UPI_QR",
+            "supportedByDefault": true
+        }
