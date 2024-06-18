@@ -1,0 +1,31 @@
+{
+    "action": "eligibility",
+    "apps": [
+        {
+            "paymentMethodsEligibility": [
+                {
+                    "paymentMethodType": "UPI",
+                    "paymentMethod": "UPI",
+                    "layout": {
+                        "preActionNudge": "Get Upto ₹100 cashback on CRED app",
+                        "postActionNudge": "Save Upto ₹100 on next order using CRED Pay"
+                    },
+                    "isEligible": true,
+                    "flowType": "InApp",
+                    "description": "Cred Inapp Offer"
+                },
+                {
+                    "paymentMethodType": "CARD",
+                    "paymentMethod": "CREDIT",
+                    "layout": {
+                        "preActionNudge": "Use credit card & get ₹10 cashback on CRED app",
+                        "postActionNudge": "Claim your cashback on CRED app"
+                    },
+                    "isEligible": true,
+                    "flowType": "Card",
+                    "description": "Cred Card Offer"
+                }
+            ]
+        } 
+           ] 
+}
