@@ -1,0 +1,26 @@
+{
+    "service": "in.juspay.ec",
+    "requestId": "e17ee878-d1d1-44fc-924a-73926e0268d1",
+    "payload": {
+        "merchant_key_id": "8321",
+        "environment": "sandbox",
+        "data": {
+            "apps": [
+                {
+                    "mobile": "7224996066",
+                    "gatewayReferenceId": null,
+                    "checkType": [
+                        "credInappOffer",
+                        "credCreditCardOffer"
+                    ]
+                }
+            ]
+        },
+        "clientAuthToken": "tkn_a8ebe4d5a8c54c648e4ac4f7869e7c1f",
+        "amount": "1.00",
+        "action": "eligibility"
+    },
+    "merchant_id": "test_merchant",
+    "customer_id": "7224996066ffairha",
+    "client_id": "test_merchant"
+}
