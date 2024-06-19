@@ -1,0 +1,57 @@
+{
+    "payment_instrument": [
+        {
+            "payment_method_type": "UPI",
+            "payment_method": "UPI",
+            "gateway": "CRED",
+            "gateway_reference_id": "test",
+            "command_input": {
+                "phoneNumber": "8437166180",
+                "metadata": {
+                    "session_id": "865627a7-32d0-4b6d-8b77-a55c1284f1293211",
+                    "transaction_amount": 200
+                },
+                "countryCode": "+91"
+            },
+            "command": "verify_user"
+        },
+        {
+            "payment_method_type": "CARD",
+            "payment_method": "CREDIT",
+            "gateway": "CRED",
+            "gateway_reference_id": "test",
+            "command_input": {
+                "phoneNumber": "8437166180",
+                "metadata": {
+                    "session_id": "865627a7-32d0-4b6d-8b77-a55c1284f1293211",
+                    "transaction_amount": 200
+                },
+                "countryCode": "+91"
+            },
+            "command": "verify_user"
+        },
+        {
+            "payment_method": "CRED",
+            "payment_method_type": "WALLET",
+            "command": "verify_user",
+            "gateway": "CRED",
+            "gateway_reference_id": "test",
+            "command_input": {
+                "platform": "web",
+                "os": "web",
+                "device": "desktop",
+                "countryCode": "+91",
+                "phoneNumber": "8437166180",
+                "credAppPresent": false,
+                "metadata": {
+                    "session_id": "865627a7-32d0-4b6d-8b77-a55c1284f1293211",
+                    "transaction_amount": 2,
+                    "isWebSupported": "true"
+                }
+            }
+        }
+    ],
+    "merchant_id": "test_merchant",
+    "customer_id": "8437166180",
+    "amount": 1
+}
