@@ -1,0 +1,29 @@
+{
+    "service": "in.juspay.ec",
+    "requestId": "f7700655-4afb-4809-9255-a20aabf27cbc",
+    "payload": {
+        "orderId": "hyperorder1698417375765",
+        "paymentMethod": "VISA",
+        "cardNumber": "4591560000000007",
+        "cardExpMonth": "12",
+        "cardExpYear": "25",
+        "cardSecurityCode": "240",
+        "credOfferData": [
+            {
+                "paymentMethodType": "card",
+                "offerData": [
+                    {
+                        "preActionNudge": "Use credit card & get ₹10 cashback on CRED app",
+                        "postActionNudge": "Claim your cashback on CRED app",
+                        "paymentMethodType": "CARD",
+                        "paymentMethod": "CREDIT",
+                        "isEligible": true
+                    }          
+       ]
+            }
+        ],    
+        "clientAuthToken": "tkn_8595258ef79d4f34b70939c0158bc579",
+        "action": "cardTxn",
+        "accountRefId": null
+    }
+}
