@@ -1,0 +1,83 @@
+{
+    "payment_instrument": [
+        {
+            "status": "ELIGIBLE",
+            "command": "verify_user",
+            "payment_method": "UPI",
+            "payment_method_type": "UPI",
+            "gateway": "CRED",
+            "command_output": {
+                "status": "OK",
+                "error_code": null,
+                "response": {
+                    "state": "ELIGIBLE",
+                    "layout": {
+                        "coupon_code": null,
+                        "post_action_nudge": "you won up to ₹150 cashback",
+                        "pre_action_nudge": "get up to ₹150 cashback on CRED. valid only once per user."
+                    },
+                    "error_code": null,
+                    "information": null,
+                    "message": null
+                },
+                "error_description": null,
+                "error_message": null
+            },
+            "gateway_reference_id": "test"
+        },
+        {
+            "status": "ELIGIBLE",
+            "command": "verify_user",
+            "payment_method": "CREDIT",
+            "payment_method_type": "CARD",
+            "gateway": "CRED",
+            "command_output": {
+                "status": "OK",
+                "error_code": null,
+                "response": {
+                    "state": "ELIGIBLE",
+                    "layout": {
+                        "coupon_code": null,
+                        "post_action_nudge": "claim your cashback on CRED",
+                        "pre_action_nudge": "Pay via any credit card & get up to ₹150 cashback on CRED."
+                    },
+                    "error_code": null,
+                    "information": null,
+                    "message": null
+                },
+                "error_description": null,
+                "error_message": null
+            },
+            "gateway_reference_id": "test"
+        },
+        {
+            "status": "ELIGIBLE",
+            "command": "verify_user",
+            "payment_method": "CRED",
+            "payment_method_type": "WALLET",
+            "gateway": "CRED",
+            "command_output": {
+                "status": "OK",
+                "error_code": null,
+                "response": {
+                    "checkout_mode": "collect",
+                    "state": "ELIGIBLE",
+                    "layout": {
+                        "icon": "https://d704ayip06922.cloudfront.net/prod-rewards-assets-data/8271e0702a8911ecb92ec74c5090c4d1.png",
+                        "banner_text": "CRED offers you the most rewarding experience, pay seamlessly using your CRED coins.",
+                        "sub_text": "pay using your saved credit cards for instant checkout",
+                        "cta_text": "CRED pay",
+                        "title": "CRED pay"
+                    },
+                    "tracking_id": "CRED55b6963a8aa841e18bdcc1d59ae0bb7f",
+                    "web_url": null,
+                    "intent_url": null,
+                    "reference_id": null
+                },
+                "error_description": null,
+                "error_message": null
+            },
+            "gateway_reference_id": "test"
+        }
+    ]
+}
