@@ -1,0 +1,26 @@
+{
+    "service": "in.juspay.ec",
+    "requestId": "f7700655-4afb-4809-9255-a20aabf27cbc",
+    "payload": {
+        "txnUuid": "moz3x7M5MLsEkM5ZjJC",
+        "status": "CHARGED",
+        "otherInfo": {
+            "url": "https://api.juspay.in/end?status_id=21&status=CHARGED&order_id=hyperorder75189&signature=6O7eP9XnT0BVyaBgdjL92xSwBpeUjgs85VuxecfRd2c%3D&signature_algorithm=HMAC-SHA256",
+            "realtime": {
+            	"merchantId": "test_merchant",
+            	"customerId": "balas0011@gmail.com",
+            	"clientId": "test_merchant",
+            	"environment": "production",
+            	"merchantLoader": "false",
+               "lastVisitedUrl": "https://test.payu.in/0f573e02a5c1ca13e6b0594af4252a1ca42e1602f8da237d0f9a15dc2802bcad/CommonPgResponseHandler.php"
+            }
+        },
+        "orderId": "hyperorder1698417375765",
+        "gatewayResponseMessage": "Your transaction is successful",
+        "gatewayResponseCode": "00",
+        "action": "cardTxn",
+    },
+    "errorMessage": "",
+    "errorCode": "",
+    "error": false
+}
