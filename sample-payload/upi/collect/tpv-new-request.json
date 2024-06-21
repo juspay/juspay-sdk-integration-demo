@@ -1,2 +1,14 @@
 {
+    "requestId": "ccfad467-391a-43c7-b69f-147233f6414f",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "action": "upiTxn",
+        "clientAuthToken": "tkn_bc83bb096607424d9f405e17c93c80e4",
+        "displayNote": "UPI Collect ",
+        "orderId": "82374941",
+        "custVpa": "90005643210@ybl",
+        "paymentMethod": "UPI_COLLECT",
+        "upiSdkPresent": false,
+        "tpvEnabled": true
+    }
 }
