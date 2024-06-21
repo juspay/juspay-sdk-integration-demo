@@ -6,7 +6,7 @@ Payload
 	payment_method_type=CARD,
 	payment_channel=WEB,
 	order_id=MDHBJSIA3e84,
-	metadata= {"pp_mode":"RELEASE","payment_channel":"ANDROID", "cred_offer_data" : [{ "payment_method_type" : "card"}]},
+	metadata= {"pp_mode":"RELEASE","payment_channel":"ANDROID", "cred_offer_data" : [{ "payment_method_type" : "card"}], "cred_user_id" : "testUserId134232"},
 	merchant_id=test_merchant,
 	format=json,
 	client_auth_token=tkn_cdba4878f984432092d2fb7be4654609,
