@@ -1,0 +1,9 @@
+curl --location --request POST 'https://api.juspay.in/orders' \
+--header 'Authorization: Basic N0JBRDA4OUExRjYwNEYwREEyNDlCNjY3QTVCMUQzM0Q6' \
+--form 'order_id="TEST_ORDER"' \
+--form 'amount="1"' \
+--form 'options.get_upi_qr="true"' \
+–-form 'order_fullfillment_threshold_in_mins="60"' \
+--form 'customer_id="cust_Test"' \
+--form 'customer_email="test@email.com"' \
+--form 'metadata.JUSPAY:gateway_reference_id="testmode"'
