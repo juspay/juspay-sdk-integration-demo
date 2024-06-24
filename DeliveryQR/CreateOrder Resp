@@ -1,0 +1,33 @@
+{
+    "status": "NEW",
+    "status_id": 10,
+    "id": "ordeh_fab5fc85809d45ee8000c",
+    "order_id": "TEST_ORDER",
+    "payment_links": {
+        "iframe": "http://localhost:8080/merchant/ipay/ordeh_fab5fc85809d45ee8000c",
+        "web": "http://localhost:8080/merchant/pay/ordeh_fab5fc85809d45ee8000c",
+        "mobile": "http://localhost:8080/merchant/pay/ordeh_fab5fc85809d45ee8000c?mobile=true"
+    },
+    "base64_encoded_qr": "qr-image-in-bas64-encoded-for,at",
+    "deep_link": "upi://pay?tr=mandate_juspay-TEST_ORDER-1&mc=516&pa=test@ybl&pn=test&am=1.00&cu=INR",
+    "udf9": "",
+    "udf8": "",
+    "udf7": "",
+    "udf6": "",
+    "udf5": "",
+    "udf4": "",
+    "udf3": "",
+    "udf2": "",
+    "udf10": "",
+    "udf1": "",
+    "refunded": false,
+    "merchant_id": "TestMid",
+    "date_created": "2024-02-12T07:44:57.150265Z",
+    "customer_id": "cust_Test",
+    "customer_email": "test@email.com",
+    "amount_refunded": 0,
+    "source_object": "",
+    "source_object_id": "",
+    "amount": 1
+    }
+}
