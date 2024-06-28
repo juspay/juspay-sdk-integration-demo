@@ -1,0 +1,6 @@
+{
+    "order_id": "test_recurring_1697711432",
+    "txn_uuid": "moz2u5XNtZg2bB8czZ2",
+    "txn_status": "JUSPAY_DECLINED",
+    "response_message": "Transaction successfully terminated at Juspay end."
+}
