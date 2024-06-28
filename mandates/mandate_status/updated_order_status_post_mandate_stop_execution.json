@@ -13,9 +13,9 @@
     "return_url": "",
     "product_id": "",
     "payment_links": {
-        "iframe": "http://localhost:8080/orders/ordeu_e2a4ce9dcb004d2c84be20926aa23759/payment-page",
-        "web": "http://localhost:8080/orders/ordeu_e2a4ce9dcb004d2c84be20926aa23759/payment-page",
-        "mobile": "http://localhost:8080/orders/ordeu_e2a4ce9dcb004d2c84be20926aa23759/payment-page"
+        "iframe": "http://smartgatewayuat.hdfcbank.com/orders/ordeu_e2a4ce9dcb004d2c84be20926aa23759/payment-page",
+        "web": "http://smartgatewayuat.hdfcbank.com/orders/ordeu_e2a4ce9dcb004d2c84be20926aa23759/payment-page",
+        "mobile": "http://smartgatewayuat.hdfcbank.com/orders/ordeu_e2a4ce9dcb004d2c84be20926aa23759/payment-page"
     },
     "udf1": "",
     "udf2": "",
