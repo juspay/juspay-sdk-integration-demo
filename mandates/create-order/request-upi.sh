@@ -21,5 +21,4 @@ curl POST 'https://smartgatewayuat.hdfcbank.com/orders' \
 -d 'mandate.frequency=MONTHLY' \
 -d 'mandate.rule_value=1' \
 -d 'mandate.rule_type=ON' \
--d 'gateway_id=19' \
--d 'metadata.PAYTM_V2:gateway_reference_id=upimandate'
+
