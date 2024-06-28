@@ -1,4 +1,4 @@
-curl --location --request POST 'https://smartgateway.hdfcbank.com/mandates/b70vxxxxxjGyUhVrV8' \
+curl --location --request POST 'https://smartgatewayuat.hdfcbank.com/mandates/b70vxxxxxjGyUhVrV8' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'Authorization: Basic BaxxxxxxxxERTxxxxxxxxx0Og==' \
 --data-urlencode 'command=pre_debit_notify' \

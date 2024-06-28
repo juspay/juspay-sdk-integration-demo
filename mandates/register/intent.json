@@ -25,7 +25,7 @@
       "scheme": "mandate"
     },
     "authentication": {
-      "url": "https://smartgateway.hdfcbank.com/v2/pay/start/merchantid/exxcEPzPd2xxxfrGShFpH",
+      "url": "https://smartgatewayuat.hdfcbank.com/v2/pay/start/merchantid/exxcEPzPd2xxxfrGShFpH",
       "method": "GET"
     }
   },

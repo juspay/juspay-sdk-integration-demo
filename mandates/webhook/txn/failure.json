@@ -38,15 +38,15 @@
       },
       "status_id": "26",
       "status": "AUTHENTICATION_FAILED",
-      "return_url": "https://smartgateway.hdfcbank.com/end",
+      "return_url": "https://smartgatewayuat.hdfcbank.com/end",
       "refunded": false,
       "product_id": "",
       "payment_method_type": "CARD",
       "payment_method": "VISA",
       "payment_links": {
-        "web": "https://smartgateway.hdfcbank.com/merchant/pay/ordeu_9a092980*******4d0206",
-        "mobile": "https://smartgateway.hdfcbank.com/merchant/pay/ordeu_9a092980*******4d0206?mobile=true",
-        "iframe": "https://smartgateway.hdfcbank.com/merchant/ipay/ordeu_9a092980*******4d0206"
+        "web": "https://smartgatewayuat.hdfcbank.com/merchant/pay/ordeu_9a092980*******4d0206",
+        "mobile": "https://smartgatewayuat.hdfcbank.com/merchant/pay/ordeu_9a092980*******4d0206?mobile=true",
+        "iframe": "https://smartgatewayuat.hdfcbank.com/merchant/ipay/ordeu_9a092980*******4d0206"
       },
       "payment_gateway_response": {
         "txn_id": "test_store-DW-SEfX7hcqZe-1",

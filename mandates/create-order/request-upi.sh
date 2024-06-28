@@ -1,4 +1,4 @@
-curl POST 'https://smartgateway.hdfcbank.com/orders' \
+curl POST 'https://smartgatewayuat.hdfcbank.com/orders' \
 -H 'x-merchantid: merchant' \
 -H 'Content-Type: application/x-www-form-urlencoded'\
 -d 'order_id=234823498237423894273498' \

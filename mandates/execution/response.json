@@ -4,7 +4,7 @@
   "status": "PENDING_VBV",
   "payment": {
     "authentication": {
-      "url": "https://smartgateway.hdfcbank.com/v2/pay/finish/merchant_id/eulmN9X8JpeCxxxxxJq/26234761248249834753485721",
+      "url": "https://smartgatewayuat.hdfcbank.com/v2/pay/finish/merchant_id/eulmN9X8JpeCxxxxxJq/26234761248249834753485721",
       "method": "GET"
     }
   },

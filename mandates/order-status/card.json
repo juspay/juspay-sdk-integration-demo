@@ -40,9 +40,9 @@
   "payment_method_type": "CARD",
   "payment_method": "VISA",
   "payment_links": {
-    "web": "https://smartgateway.hdfcbank.com/merchant/pay/ordeu_c1c4139c20a84fa799d1c41cdfbwsws",
-    "mobile": "https://smartgateway.hdfcbank.com/merchant/pay/ordeu_c1c4139c20a84fa799d1c41cdfb?mobile=truewsws",
-    "iframe": "https://smartgateway.hdfcbank.com/merchant/ipay/ordeu_c1c4139c20a84fa799d1c41cdfb"
+    "web": "https://smartgatewayuat.hdfcbank.com/merchant/pay/ordeu_c1c4139c20a84fa799d1c41cdfbwsws",
+    "mobile": "https://smartgatewayuat.hdfcbank.com/merchant/pay/ordeu_c1c4139c20a84fa799d1c41cdfb?mobile=truewsws",
+    "iframe": "https://smartgatewayuat.hdfcbank.com/merchant/ipay/ordeu_c1c4139c20a84fa799d1c41cdfb"
   },
   "payment_gateway_response": {
     "txn_id": "merchantId-juspay12281-1",

@@ -1,4 +1,4 @@
-curl --location --request POST 'https://smartgateway.hdfcbank.com/session' \
+curl --location --request POST 'https://smartgatewayuat.hdfcbank.com/session' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Basic base_64_encoded_api_key==' \
 --header 'version: 2023-08-01' \

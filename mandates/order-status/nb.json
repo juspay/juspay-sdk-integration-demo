@@ -34,15 +34,15 @@
   },
   "status_id": 21,
   "status": "CHARGED",
-  "return_url": "https://smartgateway.hdfcbank.com",
+  "return_url": "https://smartgatewayuat.hdfcbank.com",
   "refunded": false,
   "product_id": "prod-141833",
   "payment_method_type": "NB",
   "payment_method": "JP_HDFC",
   "payment_links": {
-    "web": "https://smartgateway.hdfcbank.com/merchant/pay/ordeh_2a07a0f1707447c096d3u4fa172caeda3",
-    "mobile": "https://smartgateway.hdfcbank.com/merchant/pay/ordeh_2a07a0f1707447c096d3u4fa172caeda3?mobile=true",
-    "iframe": "https://smartgateway.hdfcbank.com/merchant/ipay/ordeh_2a07a0f1707447c096d3u4fa172caeda3"
+    "web": "https://smartgatewayuat.hdfcbank.com/merchant/pay/ordeh_2a07a0f1707447c096d3u4fa172caeda3",
+    "mobile": "https://smartgatewayuat.hdfcbank.com/merchant/pay/ordeh_2a07a0f1707447c096d3u4fa172caeda3?mobile=true",
+    "iframe": "https://smartgatewayuat.hdfcbank.com/merchant/ipay/ordeh_2a07a0f1707447c096d3u4fa172caeda3"
   },
   "payment_gateway_response": {
     "txn_id": "ORD1622098688",

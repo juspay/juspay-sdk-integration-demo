@@ -1,4 +1,4 @@
-curl POST \ https://smartgateway.hdfcbank.com/txns \
+curl POST \ https://smartgatewayuat.hdfcbank.com/txns \
 -H 'x-merchantid: merchant' \
 -H 'Content-Type: application/x-www-form-urlencoded'\
  -d "order_id=152664118690577-910" \

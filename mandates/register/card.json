@@ -4,7 +4,7 @@
   "status": "PENDING_VBV",
   "payment": {
     "authentication": {
-      "url": "https://smartgateway.hdfcbank.com/v2/pay/start/paypal/eulmycxxxxxso6y1Syy",
+      "url": "https://smartgatewayuat.hdfcbank.com/v2/pay/start/paypal/eulmycxxxxxso6y1Syy",
       "method": "GET"
     }
   },
