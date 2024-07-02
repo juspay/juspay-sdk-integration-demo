@@ -1,0 +1,169 @@
+{
+  "event_name": "ORDER_SUCCEEDED",
+  "content": {
+    "order": {
+      "txn_list": [
+        {
+          "payer_app_name": "upi://pay",
+          "payer_vpa": "FILTERED",
+          "payment_method": "UPI",
+          "payment_gateway_response": {
+            "network_error_message": null,
+            "txn_id": "test-kCu4JuZixrGmcqu4-1-1",
+            "rrn": "413481094441",
+            "debit_amount": "500.0",
+            "auth_id_code": "",
+            "resp_message": "",
+            "epg_txn_id": "pay_O9pGYiofwswtLf",
+            "resp_code": "captured",
+            "created": "2024-05-13T03:14:52Z",
+            "network_error_code": null
+          },
+          "txn_id": "test-kCu4JuZixrGmcqu4-1-1",
+          "gateway_reference_id": null,
+          "txn_detail": {
+            "txn_id": "test-kCu4JuZixrGmcqu4-1-1",
+            "order_id": "kCu4JuZixrGmcqu4",
+            "error_code": null,
+            "txn_flow_type": "INTENT",
+            "status": "CHARGED",
+            "express_checkout": false,
+            "gateway_id": 23,
+            "error_message": "",
+            "offer_deduction_amount": null,
+            "tax_amount": null,
+            "currency": "INR",
+            "txn_amount": 500,
+            "created": "2024-05-13T03:14:40Z",
+            "gateway": "RAZORPAY",
+            "surcharge_amount": null,
+            "txn_uuid": "mozvSYwDrhbSQiFLeyE",
+            "net_amount": 500,
+            "redirect": true,
+            "metadata": {
+              "payment_channel": "ANDROID"
+            }
+          },
+          "status": "CHARGED",
+          "offers": [],
+          "resp_message": null,
+          "refunded": false,
+          "gateway_id": 23,
+          "effective_amount": 500,
+          "auth_type": "",
+          "resp_code": null,
+          "upi": {
+            "payer_vpa": "FILTERED",
+            "txn_flow_type": "INTENT",
+            "payer_app": "FILTERED"
+          },
+          "payment_method_type": "UPI",
+          "txn_uuid": "mozvSYwDrhbSQiFLeyE",
+          "resp_category": null,
+          "bank_error_code": "",
+          "metadata": {
+            "webhook_url": "FILTERED",
+            "payment_page_client_id": "test",
+            "payment_links": {
+              "mobile": "FILTERED",
+              "web": "https://api.juspay.in/orders/ordeh_0cd90c68700347dcaf667394245bce83/payment-page",
+              "iframe": "https://api.juspay.in/orders/ordeh_0cd90c68700347dcaf667394245bce83/payment-page"
+            }
+          },
+          "bank_error_message": ""
+        },
+        {
+          "payment_method": "TWID",
+          "payment_gateway_response": {
+            "network_error_message": null,
+            "txn_id": "test-kCu4JuZixrGmcqu4-1-2",
+            "rrn": null,
+            "auth_id_code": null,
+            "resp_message": "success",
+            "epg_txn_id": "20522801",
+            "resp_code": "True",
+            "created": "2024-05-13T03:14:53Z",
+            "network_error_code": null
+          },
+          "txn_id": "test-kCu4JuZixrGmcqu4-1-2",
+          "gateway_reference_id": null,
+          "txn_detail": {
+            "txn_id": "test-kCu4JuZixrGmcqu4-1-2",
+            "order_id": "kCu4JuZixrGmcqu4",
+            "error_code": null,
+            "txn_flow_type": "DIRECT_DEBIT",
+            "status": "CHARGED",
+            "express_checkout": false,
+            "gateway_id": 92,
+            "error_message": "",
+            "offer_deduction_amount": null,
+            "tax_amount": null,
+            "currency": "INR",
+            "txn_amount": 0,
+            "created": "2024-05-13T03:14:40Z",
+            "gateway": "TWID_V2",
+            "surcharge_amount": null,
+            "txn_uuid": "mozeD7Vn1qB2Bx7wMNZ",
+            "net_amount": 500,
+            "redirect": false
+          },
+          "status": "CHARGED",
+          "offers": [],
+          "resp_message": null,
+          "refunded": false,
+          "gateway_id": 92,
+          "effective_amount": 0,
+          "auth_type": "",
+          "resp_code": null,
+          "payment_method_type": "REWARD",
+          "txn_uuid": "mozeD7Vn1qB2Bx7wMNZ",
+          "resp_category": null,
+          "bank_error_code": "",
+          "metadata": {
+            "webhook_url": "FILTERED",
+            "payment_page_client_id": "test",
+            "payment_links": {
+              "mobile": "FILTERED",
+              "web": "https://api.juspay.in/orders/ordeh_0cdjsjdsfjdsfdscaf667394245bce83/payment-page",
+              "iframe": "https://api.juspay.in/orders/ordeh_0cd9dskfjadsfjdsjf7394245bce83/payment-page"
+            }
+          },
+          "bank_error_message": ""
+        }
+      ],
+      "customer_phone": "FILTERED",
+      "udf8": "106.195.10.83",
+      "order_id": "kCu4JuZixrGmcqu4",
+      "udf9": "5",
+      "customer_id": "d6383df1ee4009ff77827e3ca8d12716",
+      "amount": 500,
+      "udf4": "NA",
+      "status": "CHARGED",
+      "udf5": "false",
+      "udf6": "APS",
+      "status_id": 21,
+      "udf7": "Maharashtra",
+      "product_id": "",
+      "refunded": false,
+      "udf10": "premium",
+      "udf1": "",
+      "udf2": "",
+      "udf3": "",
+      "date_created": "2024-05-13T03:14:39Z",
+      "id": "ordeh_0cd90c68700347dcaf667394245bce83",
+      "merchant_id": "test",
+      "return_url": "https://www.a23.com/",
+      "effective_amount": 500,
+      "currency": "INR",
+      "customer_email": "1111111",
+      "payment_links": {
+        "mobile": "FILTERED",
+        "web": "https://api.juspay.in/orders/ordeh_0cd90c68700sdfdsfdsf347dcaf667394245bce83/payment-page",
+        "iframe": "https://api.juspay.in/orders/ordeh_0cd90c6870sdfdsfds347dcaf667394245bce83/payment-page"
+      },
+      "amount_refunded": 0
+    }
+  },
+  "date_created": "2024-05-13T03:14:53Z",
+  "id": "evt_V2_80b168f48c894962998e058dc7400caf"
+}

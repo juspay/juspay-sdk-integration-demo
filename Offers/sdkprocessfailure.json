@@ -1,0 +1,27 @@
+{
+        "payload": {
+            "service": "in.juspay.ec",
+            "requestId": "bab1bfb5-d4dd-48da-aa69-1e993a89dddc",
+            "payload": {
+            "action": "cardTxn",
+            "status": "JUSPAY_DECLINED",
+            "otherInfo": {
+                "offers": [
+                {
+                    "status": "FAILED",
+                    "offerId": "CARDOFFER",
+                    "errorMessage": "System error",
+                    "errorCode": "JP702"
+                }
+                ]
+            },
+            "orderId": "DW-DW-61jcPnvRkQ",
+            "bankErrorMessage": "Offer Application failed",
+            "bankErrorCode": "JP701"
+            },
+            "errorMessage": "Offer application failed",
+            "errorCode": "JP_012",
+            "error": true
+    },
+    "event": "process_result"
+}

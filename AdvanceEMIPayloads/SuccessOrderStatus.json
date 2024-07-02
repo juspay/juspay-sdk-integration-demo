@@ -1,0 +1,183 @@
+{
+    "payment_method": "MASTERCARD",
+    "customer_phone": "FILTERED",
+    "payment_gateway_response": {
+        "network_error_message": null,
+        "txn_id": "Merchant-M52406w037r85110vb21-1",
+        "rrn": "20245209865783187",
+        "auth_id_code": "036003",
+        "resp_message": "Txn Success",
+        "epg_txn_id": "20240603218704389897634925823",
+        "resp_code": "01",
+        "created": "2024-06-03T08:37:15Z",
+        "network_error_code": null
+    },
+    "udf8": "",
+    "txn_id": "Merchant-M52406w037r85110vb21-1",
+    "order_id": "M52406w037r85110vb21",
+    "gateway_reference_id": null,
+    "maximum_eligible_refund_amount": 18997,
+    "udf9": "",
+    "txn_detail": {
+        "txn_id": "Merchant-M52406w037r85110vb21-1",
+        "order_id": "M52406w037r85110vb21",
+        "error_code": null,
+        "txn_flow_type": "EMI",
+        "status": "CHARGED",
+        "express_checkout": false,
+        "gateway_id": 19,
+        "error_message": "",
+        "offer_deduction_amount": 2611.77,
+        "tax_amount": null,
+        "currency": "INR",
+        "txn_amount": 18999,
+        "created": "2024-06-03T08:36:50Z",
+        "gateway": "PAYTM_V2",
+        "surcharge_amount": null,
+        "txn_uuid": "moz57dDDhpiczahgopHEj",
+        "net_amount": 18999,
+        "redirect": true,
+        "metadata": {
+            "payment_channel": "WEB"
+        }
+    },
+    "customer_id": "1684557897",
+    "amount": 18999,
+    "udf4": "",
+    "status": "CHARGED",
+    "udf5": "",
+    "udf6": "",
+    "status_id": 21,
+    "offers": [
+        {
+            "offer_code": "FILTERED",
+            "offer_id": "61e147f6-e89a-4229-8d19-bddfb64625b8",
+            "product_discounts": [
+                {
+                    "emi_discount": "FILTERED",
+                    "discount_amount": "1500.00",
+                    "product_id": "52829",
+                    "merchant_discount_amount": "FILTERED",
+                    "cashback_amount": "FILTERED",
+                    "unit_price": "18999.00",
+                    "product_quantity": 1,
+                    "product_applicable_quantity": 1
+                }
+            ],
+            "status": "AVAILED",
+            "benefits": [
+                {
+                    "amount": 1500,
+                    "type": "DISCOUNT",
+                    "calculation_info": {
+                        "calculation_rule": "FILTERED",
+                        "value": 1500
+                    }
+                },
+                {
+                    "amount": 1111.77,
+                    "type": "EMI_DISCOUNT",
+                    "calculation_info": {
+                        "calculation_rule": "FILTERED",
+                        "emi_type": "NO_COST",
+                        "value": 100
+                    }
+                }
+            ],
+            "metadata": "{"minimum_order_amount":"2.00"}"
+        }
+    ],
+    "udf7": "",
+    "resp_message": null,
+    "emi_tenure": 9,
+    "product_id": "",
+    "refunded": false,
+    "udf10": "",
+    "gateway_id": 19,
+    "udf1": "WEB",
+    "udf2": "",
+    "emi_type": "JUSPAY_NO_COST_EMI",
+    "udf3": "",
+    "date_created": "2024-06-03T08:36:50Z",
+    "id": "ordeh_04072f2e9c6b4d48ad",
+    "merchant_id": "Merchant",
+    "return_url": "https://in-pay.merchant.com/callback/global/200110vb21/28",
+    "effective_amount": "FILTERED",
+    "currency": "INR",
+    "auth_type": "THREE_DS",
+    "customer_email": "1111111",
+    "resp_code": null,
+    "card": {
+        "saved_to_locker": "FILTERED",
+        "extended_card_type": "FILTERED",
+        "card_isin": "FILTERED",
+        "payment_account_reference": "FILTERED",
+        "name_on_card": "FILTERED",
+        "token_created": "FILTERED",
+        "token": "FILTERED",
+        "card_brand": "FILTERED",
+        "last_four_digits": "FILTERED",
+        "card_issuer": "FILTERED",
+        "card_type": "CREDIT",
+        "tokens": "FILTERED",
+        "expiry_month": "FILTERED",
+        "card_issuer_country": "FILTERED",
+        "tokenization_user_consent": "FILTERED",
+        "card_reference": "FILTERED",
+        "expiry_year": "FILTERED",
+        "using_saved_card": "FILTERED",
+        "using_token": "FILTERED",
+        "token_type": "ALT_ID",
+        "card_fingerprint": "FILTERED",
+        "juspay_bank_code": "JP_HDFC"
+    },
+    "payment_method_type": "CARD",
+    "txn_uuid": "moz57dDDhpiczahgopHEj",
+    "risk_checks": [
+        {
+            "invocation_mode": "PARALLEL",
+            "txn_id": "Merchant-M52406w037r85110vb21-1",
+            "recommended_action": "proceed",
+            "status": "COMPLETED",
+            "provider": "JUSPAYFRM",
+            "flagged": false
+        }
+    ],
+    "resp_category": null,
+    "payment_links": {
+        "mobile": "FILTERED",
+        "web": "https://payments.juspay.in/payment-page/order/ordeh_04072f2e9c6b4d48ad",
+        "iframe": "https://payments.juspay.in/payment-page/order/ordeh_04072f2e9c6b4d48ad"
+    },
+    "amount_refunded": 0,
+    "basket": [
+        {
+            "shippingDestinationType": null,
+            "productName": null,
+            "sellerType": null,
+            "customParams": null,
+            "productRisk": null,
+            "sku": null,
+            "id": "52829",
+            "productCode": null,
+            "quantity": 1,
+            "description": null,
+            "category": null,
+            "unitPrice": "FILTERED",
+            "passenger": null,
+            "productUrl": null
+        }
+    ],
+    "bank_error_code": "",
+    "emi_bank": "HDFC",
+    "metadata": {
+        "payment_page_client_id": "Merchant",
+        "payment_links": {
+            "mobile": "FILTERED",
+            "web": "https://payments.juspay.in/payment-page/order/ordeh_04072f2e9c6b4d48ad",
+            "iframe": "https://payments.juspay.in/payment-page/order/ordeh_04072f2e9c6b4d48ad"
+        },
+        "payment_locking": "FILTERED"
+    },
+    "bank_error_message": ""
+}

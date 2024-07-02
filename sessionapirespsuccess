@@ -1,0 +1,27 @@
+{
+   "status": "NEW",
+   "id": "ordeh_cc7177bf16d",
+   "order_id": "TEST",
+   "payment_links": {
+       "web": "https://sandbox.juspay.in/orders/ordeh_cc7177bf16d/payment-page",
+       "expiry": null
+   },
+   "sdk_payload": {
+       "requestId": "8162c92851c8bd9",
+       "service": "in.juspay.hyperpay",
+       "payload": {
+           "clientId": "TEST",
+           "amount": "3.0",
+           "merchantId": "TEST",
+           "clientAuthToken": "tkn_20f89d52522335",
+           "clientAuthTokenExpiry": "2024-02-14T10:36:13Z",
+           "environment": "sandbox",
+           "action": "paymentPage",
+           "customerId": "9999999999",
+           "currency": "INR",
+           "customerPhone": "9999999999",
+           "customerEmail": "test@gmail.com",
+           "orderId": "TEST"
+       }
+   }
+}

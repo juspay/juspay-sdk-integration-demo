@@ -1,0 +1,24 @@
+{
+    "requestId": "eee5565e-23dc-42e1-ad7c-ec3cdd777ac9",
+    "service": "in.juspay.hyperapi",
+    "error": false,
+    "payload": {
+        "orderId": "order12345",
+        "status": "CHARGED",
+        "otherInfo": {
+            "url": "https://api.juspay.in/end?status_id=21&status=CHARGED&order_id=order12345&signature=634577grejngfidbxbsjey677gbdu%3D&signature_algorithm=HMAC-SHA256",
+            "realtime": {
+                "requestId": "d5de56539-7eff-4ebb-9510-540rrtty656",
+                "merchantId": "juspaytest",
+                "customerId": "abc0011@gmail.com",
+                "clientId": "juspaytest_android",
+                "environment": "production",
+                "merchantLoader": "false",
+                "isWrapper": "false",
+                "lastVisitedUrl": "https://test.payu.in/0f573e02a5c1ca13e6b0594af4252a1ca42e1602f8da237d0f9a15dc2802bcad/CommonPgResponseHandler.php"
+            }
+        }
+    },
+    "errorCode": "",
+    "errorMessage": ""
+}

@@ -1,0 +1,181 @@
+{
+    "id": "evt_V2_773f8b7e42754f898b8e34873aa5",
+    "event_name": "AUTO_REFUND_SUCCEEDED",
+    "date_created": "2024-04-18T16:57:04Z",
+    "content": {
+        "order": {
+            "offers": [],
+            "txn_id": "merchant-JUSPLP0037001-1",
+            "udf7": "FILTERED",
+            "payment_method": "MASTERCARD",
+            "txn_uuid": "ugnmozcpDn1KnnPA",
+            "metadata": {
+                "payment_page_client_id": "FILTERED",
+                "JUSPAY:gateway_reference_id": "abc",
+                "payment_links": {
+                    "web": "https://api.juspay.in/orders/ordeh_cd5390a5734e93a1b4c5b/payment-page",
+                    "iframe": "https://api.juspay.in/orders/ordeh_cd5390a5734e93a1b4c5b/payment-page",
+                    "mobile": "https://api.juspay.in/orders/ordeh_cd5390a5734e93a1b4c5b/payment-page"
+                }
+            },
+            "udf5": "",
+            "resp_message": null,
+            "status_id": 36,
+            "resp_code": null,
+            "amount_refunded": 665.34,
+            "udf9": "FILTERED",
+            "gateway_reference_id": "abc",
+            "status": "AUTO_REFUNDED",
+            "bank_error_message": "",
+            "id": "ordeh_cd5390a5734e93a1b4c5b",
+            "resp_category": null,
+            "auth_type": "THREE_DS",
+            "udf3": "",
+            "additional_info": {},
+            "udf6": "FILTERED",
+            "udf10": "FILTERED",
+            "effective_amount": 665.34,
+            "product_id": "",
+            "order_id": "JUSPLP0037001",
+            "return_url": "https://api.juspay.in/end",
+            "payment_gateway_response": {
+                "txn_id": "merchant-JUSPLP0037001-1",
+                "gateway_response": {
+                    "entity": "payment",
+                    "tax": 0,
+                    "method": "card",
+                    "email": "FILTERED",
+                    "contact": "FILTERED",
+                    "acquirer_data": {
+                        "auth_code": "FILTERED",
+                        "rrn": "41091612076857776"
+                    },
+                    "card_id": "FILTERED",
+                    "amount_refunded": 0,
+                    "international": false,
+                    "status": "captured",
+                    "fee": 0,
+                    "id": "pay_O09p1Z7Ct8dCu2PS",
+                    "created_at": 1713459069,
+                    "order_id": "order_O09p0oZ1SWKmYC",
+                    "currency": "INR",
+                    "notes": {
+                        "txn_uuid": "ugnmozcpDn1KnnPA",
+                        "transaction_id": "merchant-JUSPLP0037001-1"
+                    },
+                    "auth_code": "FILTERED",
+                    "amount": 66534,
+                    "rrn": "41091612076857776",
+                    "captured": true
+                },
+                "debit_amount": "665.34",
+                "created": "2024-04-18T16:40:08Z",
+                "network_error_message": null,
+                "resp_message": "",
+                "resp_code": "captured",
+                "auth_id_code": "T34689",
+                "epg_txn_id": "pay_O09p1Z7Ct8dCu2PS",
+                "network_error_code": null,
+                "rrn": "41091612076857776"
+            },
+            "udf1": "",
+            "currency": "INR",
+            "udf4": "",
+            "customer_id": "FILTERED",
+            "date_created": "2024-04-18T16:35:01Z",
+            "gateway_id": 23,
+            "payment_links": {
+                "web": "https://api.juspay.in/orders/ordeh_cd5390a5734e93a1b4c5b/payment-page",
+                "iframe": "https://api.juspay.in/orders/ordeh_cd5390a5734e93a1b4c5b/payment-page",
+                "mobile": "https://api.juspay.in/orders/ordeh_cd5390a5734e93a1b4c5b/payment-page"
+            },
+            "txn_detail": {
+                "express_checkout": false,
+                "txn_id": "merchant-JUSPLP0037001-1",
+                "txn_amount": 665.34,
+                "error_message": "",
+                "txn_uuid": "ugnmozcpDn1KnnPA",
+                "created": "2024-04-18T16:35:03Z",
+                "metadata": {
+                    "payment_channel": "ANDROID"
+                },
+                "gateway": "RAZORPAY",
+                "status": "AUTO_REFUNDED",
+                "offer_deduction_amount": null,
+                "net_amount": 650,
+                "order_id": "JUSPLP0037001",
+                "currency": "INR",
+                "error_code": null,
+                "gateway_id": 23,
+                "surcharge_amount": 13,
+                "txn_flow_type": "FILTERED",
+                "tax_amount": 2.34,
+                "redirect": true
+            },
+            "bank_error_code": "",
+            "udf8": "FILTERED",
+            "payment_method_type": "CARD",
+            "customer_phone": "FILTERED",
+            "merchant_id": "merchant",
+            "customer_email": "FILTERED",
+            "udf2": "",
+            "amount": 650,
+            "refunded": true,
+            "refunds": [
+                {
+                    "error_message": "processed",
+                    "unique_request_id": "ARusUHcaxxGXd5D6",
+                    "created": "2024-04-18T16:51:35Z",
+                    "metadata": {
+                        "speed_requested": "normal",
+                        "speed_processed": "normal"
+                    },
+                    "status": "SUCCESS",
+                    "id": "ARusUHcaxxGXd5D6",
+                    "refund_type": "STANDARD",
+                    "pg_processed_at": "FILTERED",
+                    "sent_to_gateway": true,
+                    "refund_source": "RAZORPAY",
+                    "ref": "rfnd_O09vAix0mk6WvdXm",
+                    "error_code": "processed",
+                    "amount": 665.34,
+                    "initiated_by": "AUTO_REFUNDED"
+                }
+            ],
+            "card": {
+                "name_on_card": "FILTERED",
+                "card_reference": "cref_c70c2d808ffef74ec626fbb94",
+                "saved_to_locker": "FILTERED",
+                "tokenization_user_consent": "FILTERED",
+                "card_issuer_country": "FILTERED",
+                "tokens": "FILTERED",
+                "using_token": "FILTERED",
+                "card_fingerprint": "FILTERED",
+                "card_type": "CREDIT",
+                "expiry_month": "FILTERED",
+                "juspay_bank_code": "JP_SBI",
+                "using_saved_card": "FILTERED",
+                "token_created": "FILTERED",
+                "last_four_digits": "FILTERED",
+                "card_isin": "FILTERED",
+                "card_issuer": "FILTERED",
+                "card_brand": "MASTERCARD",
+                "payment_account_reference": "FILTERED",
+                "token_type": "ALT_ID",
+                "expiry_year": "FILTERED",
+                "extended_card_type": "FILTERED",
+                "token": {
+                    "card_reference": "cref_c70c2d808ffef74ec626fbb94",
+                    "card_fingerprint": "FILTERED",
+                    "expiry_month": "FILTERED",
+                    "provider_category": "FILTERED",
+                    "provider": "MASTERCARD",
+                    "tokenization_status": "ACTIVE",
+                    "last_four_digits": "FILTERED",
+                    "card_isin": "FILTERED",
+                    "expiry_year": "FILTERED"
+                }
+            }
+        }
+    }
+}

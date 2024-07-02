@@ -1,0 +1,105 @@
+{
+  "event_name": "ORDER_FAILED",
+  "content": {
+    "order": {
+      "bank_pg": null,
+      "payment_method": "CRED",
+      "customer_phone": "FILTERED",
+      "payment_gateway_response": {
+        "txn_id": "com.test-191996639000669-1",
+        "rrn": null,
+        "auth_id_code": null,
+        "resp_message": null,
+        "gateway_response": {
+          "error_description": null,
+          "error_code": null,
+          "status": "OK",
+          "error_message": null,
+          "response": {
+            "user": "FILTERED",
+            "amount": {
+              "currency": "INR",
+              "value": 209
+            },
+            "payment_modes": null,
+            "tracking_id": "com.test-191996639000669-1",
+            "state": "FAILED",
+            "refunds": null,
+            "reference_id": "2639952e-3a5d-4e4b-872b-853bd5e8468c",
+            "provider_ref_id": "FILTERED",
+            "error_message": null
+          }
+        },
+        "epg_txn_id": "jyRLwVvDRybDvLzbPMv8",
+        "resp_code": null,
+        "created": "2024-02-26T04:24:30Z"
+      },
+      "udf8": "",
+      "txn_id": "com.test-191996639000669-1",
+      "order_id": "191996000669",
+      "gateway_reference_id": null,
+      "udf9": "",
+      "txn_detail": {
+        "txn_id": "com.test-191996639000669-1",
+        "order_id": "191996639000669",
+        "error_code": "",
+        "txn_flow_type": "INTENT",
+        "status": "AUTHENTICATION_FAILED",
+        "express_checkout": false,
+        "gateway_id": 49,
+        "error_message": "",
+        "tax_amount": null,
+        "currency": "INR",
+        "txn_amount": 209,
+        "created": "2024-02-26T04:24:00Z",
+        "gateway": "CRED",
+        "surcharge_amount": null,
+        "txn_uuid": "moz6bvDXPXZeHJWFEKm",
+        "net_amount": 209,
+        "redirect": true,
+        "metadata": {
+          "payment_channel": "ANDROID"
+        }
+      },
+      "customer_id": "23808869",
+      "amount": 209,
+      "udf4": "",
+      "status": "AUTHENTICATION_FAILED",
+      "udf5": "",
+      "udf6": "test-Android",
+      "status_id": 26,
+      "offers": [],
+      "udf7": "",
+      "product_id": "",
+      "refunded": false,
+      "udf10": "",
+      "gateway_id": 49,
+      "udf1": "23808869",
+      "udf2": "",
+      "udf3": "",
+      "date_created": "2024-02-26T04:23:59Z",
+      "id": "ordeh_1b0dd36ffefc400ab341e0b4d0376c6f",
+      "merchant_id": "com.test",
+      "return_url": "http://www.test.com/justpay/response.php",
+      "effective_amount": 209,
+      "currency": "INR",
+      "auth_type": "",
+      "customer_email": "1111111",
+      "payment_method_type": "WALLET",
+      "wallet": {
+        "txn_flow_type": "INTENT"
+      },
+      "txn_uuid": "moz6bvDXPXZeHJWFEKm",
+      "payment_links": {
+        "mobile": "https://api.juspay.in/orders/ordeh_1b0dd36ffefc400376c6f/payment-page",
+        "web": "https://api.juspay.in/orders/ordeh_1b0dd36ffefc44d0376c6f/payment-page",
+        "iframe": "https://api.juspay.in/orders/ordeh_1b0dd36ffb341e0b4d0376c6f/payment-page"
+      },
+      "amount_refunded": 0,
+      "bank_error_code": "",
+      "bank_error_message": ""
+    }
+  },
+  "date_created": "2024-02-26T04:24:30Z",
+  "id": "evt_V2_752dad06aa2e2a5ac936aff3"
+}

@@ -1,0 +1,22 @@
+{
+    "event_name": "MANDATE_CREATED",
+    "content": {
+        "mandate": {
+            "max_amount": 1000,
+            "mandate_id": "asdfg12345",
+            "start_date": "1714374755",
+            "payment_info": "FILTERED",
+            "order_id": "12345",
+            "frequency": "ASPRESENTED",
+            "mandate_type": "EMANDATE",
+            "customer_id": "test123",
+            "mandate_token": "FILTERED",
+            "status": "CREATED",
+            "revokable_by_customer": true,
+            "currency": "INR",
+            "amount_rule": "VARIABLE",
+            "block_fund": false,
+            "last_updated": "2024-01-01T07:12:36Z",
+            "end_date": "1861833600"
+        }
+    }

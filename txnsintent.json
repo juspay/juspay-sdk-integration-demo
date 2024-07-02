@@ -1,0 +1,29 @@
+{
+    "txn_uuid": "eulz456781E1EAUjSFKb",
+    "txn_id": "Symbol-test_1610009874-17",
+    "status": "PENDING_VBV",
+    "payment": {
+        "sdk_params": {
+            "status": "OK",
+            "response": {
+                "intent_url": "credpay:\/\/checkout?ref_id=0e57fe61-0e1e-401f-33c22e559441&is_collect=false&redirect_to=com.mid.customer.cred%3A%2F%2F",
+                "reference_id": "b224accf-4a7c-4ba0-ba98-ef0bf8d4b505",
+                "state": "FLOW_TRIGGERED",
+                "checkout_mode": "intent",
+                "tracking_id": "mid-AF9B6DSDG64883-1",
+                "layout": {
+                    "icon": "https:\/\/d704ayip06922.cloudfront.net\/prod-rewards-assets-data\/8271e0702a8911ecb92ec74c5090c4d1.png",
+                    "sub_text": "unlock rewards and extra cashback",
+                    "banner_text": "CRED offers you the most rewarding experience, pay seamlessly using your CRED coins.",
+                    "cta_text": "CRED pay",
+                    "title": "CRED pay"
+                }
+            }
+        },
+        "authentication": {
+            "url": "https:\/\/api.juspay.in\/v2\/pay\/start\/mid\/mozWsjZpkNtx2zMuibf?cardIssuerBankName%3DCRED%26cardType%3DWALLET%26paymentMethod%3DCRED%26paymentMethodType%3DWALLET",
+            "method": "GET"
+        }
+    },
+    "order_id": "test_1610009874"
+}
