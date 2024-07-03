@@ -38,4 +38,5 @@ curl --location --request POST 'https://api.juspay.in/orders' \
 --data-urlencode 'metadata.PAYU:offer_key=1234' \
 --data-urlencode 'metadata.PAYU:gateway_reference_id=bus' \
 --data-urlencode 'options.get_client_auth_token=true' \
---data-urlencode 'metadata.subvention_amount=90'
+--data-urlencode 'metadata.subvention_amount=90' \
+--data-urlencode 'mutual_fund_details=[{"memberId": "ABCDE","userId": "ABCDEFGHIJ","mfPartner": "BSE","folioNumber": "190983010","orderNumber": "order_zer12345","amount": "5000.00","schemeCode": "LT","amcCode": "UYTIUI","panNumber": "TYLIO7823U","investmentType": "LUMPSUM"},{"memberId": "ERTYU","userId": "VTYUIOPFT","mfPartner": "BSE","folioNumber": "190983011","orderNumber": "order_zer12346","amount": "5000.00","schemeCode": "LT","amcCode": "UYTIFT","panNumber": "TYLIO7823U","investmentType": "LUMPSUM"}]'
