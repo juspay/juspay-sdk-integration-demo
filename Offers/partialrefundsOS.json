@@ -82,7 +82,10 @@
                     }
                 }
             ],
-            "metadata": "{"minimum_order_amount":"200.00"}"
+            "metadata": {
+                "minimum_order_amount":"200.00"
+            }
+        }
     ],
     "udf7": "",
     "resp_message": null,
