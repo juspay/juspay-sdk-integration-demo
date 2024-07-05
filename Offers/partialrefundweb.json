@@ -73,7 +73,9 @@
                     "offer_id": "56f38ff9-4c9e-78ef5a543b95",
                     "status": "PARTIALLY_REFUNDED",
                     "benefits": "FILTERED",
-                    "metadata": "{"minimum_order_amount":"200.00"}"
+                    "metadata": {
+                        "minimum_order_amount":"200.00"
+                    }
                 }
             ],
             "udf7": "",
