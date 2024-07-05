@@ -1,0 +1,107 @@
+{
+    "payer_app_name": "net.one97.paytm",
+    "payment_method": "UPI",
+    "customer_phone": "FILTERED",
+    "payment_gateway_response": {
+        "network_error_message": null,
+        "txn_id": "Merchant-M2DOYYEYYVA7SAA-1",
+        "rrn": "",
+        "auth_id_code": "",
+        "resp_message": "Your transaction has been declined by the bank. Remitting account is blocked or frozen",
+        "epg_txn_id": "20240705210320000015959785768371193",
+        "resp_code": "843",
+        "created": "2024-07-05T06:52:12Z",
+        "network_error_code": null
+    },
+    "udf8": "",
+    "txn_id": "Merchant-M2DOYYEYYVA7SAA-1",
+    "order_id": "M2DOYYEYYVA7SAA",
+    "gateway_reference_id": null,
+    "udf9": "",
+    "txn_detail": {
+        "response_message": "Account is Dormant or closed",
+        "txn_id": "Merchant-M2DOYYEYYVA7SAA-1",
+        "order_id": "M2DOYYEYYVA7SAA",
+        "error_code": "843",
+        "txn_flow_type": "INTENT",
+        "status": "AUTHORIZATION_FAILED",
+        "express_checkout": false,
+        "gateway_id": 19,
+        "error_message": "Your transaction has been declined by the bank. Remitting account is blocked or frozen",
+        "offer_deduction_amount": 0,
+        "tax_amount": null,
+        "currency": "INR",
+        "txn_amount_breakup": "FILTERED",
+        "txn_amount": 616,
+        "created": "2024-07-05T06:51:28Z",
+        "gateway": "PAYTM_V2",
+        "surcharge_amount": null,
+        "txn_uuid": "moz7h1UFWzR6dc4",
+        "net_amount": 616,
+        "redirect": true,
+        "metadata": {
+            "payment_channel": "ANDROID"
+        },
+        "response_code": "ACCOUNT_CLOSED"
+    },
+    "customer_id": "41845716",
+    "amount": 616,
+    "udf4": "",
+    "status": "AUTHORIZATION_FAILED",
+    "udf5": "",
+    "udf6": "",
+    "status_id": 27,
+    "offers": [
+        {
+            "offer_code": "FILTERED",
+            "offer_id": "56f38ff9-78ef5a543b95",
+            "error_code": "JP706",
+            "status": "FAILED",
+            "error_message": "Offer Application failed due to transaction failure",
+            "benefits": [
+                {
+                    "amount": 0,
+                    "type": "CASHBACK",
+                    "calculation_info": {
+                        "calculation_rule": "FILTERED",
+                        "value": 0
+                    }
+                }
+            ],
+            "metadata": "{"minimum_order_amount":"200.00"}"
+        }
+    ],
+    "udf7": "",
+    "resp_message": "Account is Dormant or closed",
+    "product_id": "",
+    "refunded": false,
+    "udf10": "",
+    "gateway_id": 19,
+    "udf1": "enable",
+    "udf2": "headlessAndroid",
+    "udf3": "",
+    "date_created": "2024-07-05T06:51:27Z",
+    "id": "ordeh_08bda5b855d9bae014c08a8",
+    "merchant_id": "Merchant",
+    "return_url": "https://www.Merchant.com/mcheckout/orderStatus",
+    "effective_amount": "FILTERED",
+    "currency": "INR",
+    "auth_type": "",
+    "customer_email": "1111111",
+    "resp_code": "ACCOUNT_CLOSED",
+    "upi": {
+        "txn_flow_type": "INTENT",
+        "payer_app": "net.one97.paytm"
+    },
+    "payment_method_type": "UPI",
+    "txn_uuid": "moz7h1UFWzR6dc4",
+    "resp_category": "BUSINESS_ERROR",
+    "payment_links": {
+        "mobile": "https://payments.juspay.in/payment-page/order/ordeh_08bda5b855d9bae014c08a8",
+        "web": "https://payments.juspay.in/payment-page/order/ordeh_08bda5b855d9bae014c08a8",
+        "iframe": "https://payments.juspay.in/payment-page/order/ordeh_08bda5b855d9bae014c08a8"
+    },
+    "amount_refunded": 0,
+    "bank_error_code": "843",
+    "bank_error_message": "Your transaction has been declined by the bank. Remitting account is blocked or frozen"
+}
