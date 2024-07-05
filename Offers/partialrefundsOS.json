@@ -1,0 +1,121 @@
+{
+    "payer_app_name": "net.one97.paytm",
+    "payment_method": "UPI",
+    "customer_phone": "FILTERED",
+    "payment_gateway_response": {
+        "network_error_message": null,
+        "txn_id": "Merchant-M2CSGYCCWQTPWCQ-1",
+        "rrn": "455195823788",
+        "auth_id_code": "",
+        "resp_message": "Txn Success",
+        "epg_txn_id": "20240703210420078589",
+        "resp_code": "01",
+        "created": "2024-07-03T10:09:56Z",
+        "network_error_code": null
+    },
+    "udf8": "",
+    "txn_id": "Merchant-M2CSGYCCWQTPWCQ-1",
+    "order_id": "M2CSGYCCWQTPWCQ",
+    "gateway_reference_id": null,
+    "maximum_eligible_refund_amount": 0,
+    "udf9": "",
+    "txn_detail": {
+        "txn_id": "Merchant-M2CSGYCCWQTPWCQ-1",
+        "order_id": "M2CSGYCCWQTPWCQ",
+        "error_code": null,
+        "txn_flow_type": "INTENT",
+        "status": "CHARGED",
+        "express_checkout": false,
+        "gateway_id": 19,
+        "error_message": "",
+        "offer_deduction_amount": 0,
+        "tax_amount": null,
+        "currency": "INR",
+        "txn_amount_breakup": "FILTERED",
+        "txn_amount": 242,
+        "created": "2024-07-03T10:09:45Z",
+        "gateway": "PAYTM_V2",
+        "surcharge_amount": null,
+        "txn_uuid": "mozxj5z4mBhahxnnLjs",
+        "net_amount": 242,
+        "redirect": true,
+        "metadata": {
+            "payment_channel": "ANDROID"
+        }
+    },
+    "customer_id": "7630321126",
+    "amount": 242,
+    "refunds": [
+        {
+            "reversal_type": "FILTERED",
+            "amount": 121,
+            "status": "SUCCESS",
+            "ref": "202407032242850482257938589",
+            "initiated_by": "API",
+            "error_message": "Refund Successfull",
+            "refund_source": "PAYTM_V2",
+            "id": "M2CSKOHV3D7457Q",
+            "created": "2024-07-03T10:17:28Z",
+            "refund_type": "STANDARD",
+            "unique_request_id": "M2CSKOHV3D7457Q",
+            "sent_to_gateway": true,
+            "arn": "4551240"
+        }
+    ],
+    "udf4": "",
+    "status": "CHARGED",
+    "udf5": "",
+    "udf6": "",
+    "status_id": 21,
+    "offers": [
+        {
+            "offer_code": "FILTERED",
+            "offer_id": "56f38ff9-4c9e-78ef5a543b95",
+            "status": "PARTIALLY_REFUNDED",
+            "benefits": [
+                {
+                    "amount": 0,
+                    "type": "CASHBACK",
+                    "calculation_info": {
+                        "calculation_rule": "FILTERED",
+                        "value": 0
+                    }
+                }
+            ],
+            "metadata": "{"minimum_order_amount":"200.00"}"
+        }
+    ],
+    "udf7": "",
+    "resp_message": null,
+    "product_id": "",
+    "refunded": false,
+    "udf10": "",
+    "gateway_id": 19,
+    "udf1": "enable",
+    "udf2": "headlessAndroid",
+    "udf3": "",
+    "date_created": "2024-07-03T10:09:39Z",
+    "id": "ordeh_555259ddc6e74325",
+    "merchant_id": "Merchant",
+    "return_url": "https://www.Merchant.com/mcheckout/orderStatus",
+    "effective_amount": "FILTERED",
+    "currency": "INR",
+    "auth_type": "",
+    "customer_email": "1111111",
+    "resp_code": null,
+    "upi": {
+        "txn_flow_type": "INTENT",
+        "payer_app": "net.one97.paytm"
+    },
+    "payment_method_type": "UPI",
+    "txn_uuid": "mozxj5z4mBhahxnnLjs",
+    "resp_category": null,
+    "payment_links": {
+        "mobile": "https://payments.juspay.in/payment-page/order/ordeh_555259ddc6e74325",
+        "web": "https://payments.juspay.in/payment-page/order/ordeh_555259ddc6e74325",
+        "iframe": "https://payments.juspay.in/payment-page/order/ordeh_555259ddc6e74325"
+    },
+    "amount_refunded": 121,
+    "bank_error_code": "",
+    "bank_error_message": ""
+}
