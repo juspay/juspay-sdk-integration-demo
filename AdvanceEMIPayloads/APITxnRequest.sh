@@ -17,7 +17,7 @@ curl -X POST https://api.juspay.in/txns \
 -d "emi_bank=HDFC" \
 -d "emi_tenure=3" \
 -d "emi_type=STANDARD_EMI"\
--d "offer_ids=[3a8fc1dc-2ace-4f15-8bae-16b376785692]"                                
+-d "offers=[3a8fc1dc-2ace-4f15-8bae-16b376785692]"                                
 
 
 //For a stored card transaction
@@ -33,4 +33,4 @@ curl -X POST https://api.juspay.in/txns \
 -d "emi_bank=HDFC" \
 -d "emi_tenure=3" \
 -d "emi_type=STANDARD_EMI"\
--d "offer_ids=[3a8fc1dc-2ace-4f15-8bae-16b376785692]"
+-d "offers=[3a8fc1dc-2ace-4f15-8bae-16b376785692]"
