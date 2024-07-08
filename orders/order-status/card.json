@@ -84,7 +84,7 @@
         "surcharge_amount": null,
         "tax_amount": null,
         "txn_amount": 9000,
-        "offer_deduction_amount": null,
+        "offer_deduction_amount": 500,
         "gateway_id": 23,
         "currency": "INR",
         "express_checkout": true,
