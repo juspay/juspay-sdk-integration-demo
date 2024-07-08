@@ -6,7 +6,7 @@
     "status": "CHARGED",
     "id": "ordeh_a3cfc9c7f77e4fc581f19aewe23925",
     "merchant_id": "merchantId",
-    "amount": 2,
+    "amount": 9000,
     "currency": "INR",
     "order_id": "JPAYNEW032",
     "date_created": "2021-09-10T09:01:36Z",
@@ -44,11 +44,11 @@
       "order_id": "JPAYNEW032",
       "status": "CHARGED",
       "error_code": null,
-      "net_amount": 2,
+      "net_amount": 9000,
       "surcharge_amount": null,
       "tax_amount": null,
-      "txn_amount": 2,
-      "offer_deduction_amount": null,
+      "txn_amount": 9000,
+      "offer_deduction_amount": 500,
       "gateway_id": 12,
       "currency": "INR",
       "express_checkout": false,
@@ -56,7 +56,8 @@
       "txn_uuid": "eulbAxqZAR324cwzgo",
       "gateway": "PAYU",
       "error_message": "",
-      "created": "2021-09-10T09:02:03Z"
+      "created": "2021-09-10T09:02:03Z",
+      "txn_amount_breakup": "[{\"name\":\"BASE\",\"value\":9000,\"sno\":1,\"method\":\"ADD\"},{\"name\":\"ADD_ON\",\"value\":500,\"sno\":2,\"method\":\"ADD\",\"desc\":\"SampleAddOnAmount1\"},{\"name\":\"ADD_ON\",\"value\":200,\"sno\":3,\"method\":\"ADD\",\"desc\":\"SampleAddOnAmount2\"},{\"name\":\"OFFER\",\"value\":500,\"sno\":4,\"method\":\"SUB\"}]"
     },
     "payment_gateway_response": {
       "resp_code": "success",
