@@ -1,1 +1,1 @@
-implementation 'in.juspay:webview.sdk:1.0.2'
+implementation 'in.juspay:webview.sdk:1.0.3'
