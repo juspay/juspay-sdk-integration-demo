@@ -33,7 +33,7 @@
     "payment_method": "NB_HDFC",
     "refunded": false,
     "amount_refunded": 0,
-    "effective_amount": 2,
+    "effective_amount": 9700,
     "resp_code": null,
     "resp_message": null,
     "bank_error_code": "",
@@ -57,7 +57,7 @@
       "gateway": "PAYU",
       "error_message": "",
       "created": "2021-09-10T09:02:03Z",
-      "txn_amount_breakup": "[{\"name\":\"BASE\",\"value\":9000,\"sno\":1,\"method\":\"ADD\"},{\"name\":\"ADD_ON\",\"value\":500,\"sno\":2,\"method\":\"ADD\",\"desc\":\"SampleAddOnAmount1\"},{\"name\":\"ADD_ON\",\"value\":200,\"sno\":3,\"method\":\"ADD\",\"desc\":\"SampleAddOnAmount2\"},{\"name\":\"OFFER\",\"value\":500,\"sno\":4,\"method\":\"SUB\"}]"
+      "txn_amount_breakup": "[{\"name\":\"BASE\",\"value\":9000,\"sno\":1,\"method\":\"ADD\"},{\"name\":\"ADD_ON\",\"value\":500,\"sno\":2,\"method\":\"ADD\",\"desc\":\"SampleAddOnAmount1\"},{\"name\":\"ADD_ON\",\"value\":200,\"sno\":3,\"method\":\"ADD\",\"desc\":\"SampleAddOnAmount2\"}]"
     },
     "payment_gateway_response": {
       "resp_code": "success",
