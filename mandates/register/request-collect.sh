@@ -4,6 +4,7 @@ curl -X POST 'https://smartgatewayuat.hdfcbank.com/txns' \
 -d 'merchant_id=merchant' \
 -d 'payment_method_type=UPI' \
 -d 'payment_method=COLLECT' \
+-d 'txn_type=UPI_COLLECT' \
 -d 'upi_vpa=9483407288@hdfc' \
 -d 'redirect_after_payment=true' \
 -d 'format=json' \
