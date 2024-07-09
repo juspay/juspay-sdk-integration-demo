@@ -4,6 +4,5 @@ curl -X  POST 'https://smartgatewayuat.hdfcbank.com/txns' \
 -d 'order.order_id=26234761248249834753485721' \
 -d 'order.amount=100.00' \
 -d 'mandate_id=4rKxSj3bNXs7RQcdtajAkb' \
--d 'mandate.execution_date=1622369936' \
 -d 'merchant_id=merchantid' \
 -d 'format=json'
