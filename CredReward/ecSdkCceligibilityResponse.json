@@ -16,7 +16,6 @@
                 },
                 {
                     "paymentMethodType": "CARD",
-                    "paymentMethod": "CREDIT",
                     "layout": {
                         "preActionNudge": "Use credit card & get ₹10 cashback on CRED app",
                         "postActionNudge": "Claim your cashback on CRED app"
