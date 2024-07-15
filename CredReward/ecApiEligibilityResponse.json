@@ -28,7 +28,6 @@
         {
             "status": "ELIGIBLE",
             "command": "verify_user",
-            "payment_method": "CREDIT",
             "payment_method_type": "CARD",
             "gateway": "CRED",
             "command_output": {
