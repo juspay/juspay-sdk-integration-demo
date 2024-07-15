@@ -10,13 +10,13 @@
         "cardSecurityCode": "240",
         "credOfferData": [
             {
-                "paymentMethodType": "card",
+                "paymentMethodType": "CARD",
+                "cardType": "CREDIT",
                 "offerData": [
                     {
                         "preActionNudge": "Use credit card & get ₹10 cashback on CRED app",
                         "postActionNudge": "Claim your cashback on CRED app",
                         "paymentMethodType": "CARD",
-                        "paymentMethod": "CREDIT",
                         "isEligible": true
                     }          
        ]
