@@ -17,7 +17,6 @@
         },
         {
             "payment_method_type": "CARD",
-            "payment_method": "CREDIT",
             "gateway": "CRED",
             "gateway_reference_id": "test",
             "command_input": {
