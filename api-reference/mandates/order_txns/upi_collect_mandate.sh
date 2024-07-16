@@ -1,4 +1,4 @@
-curl --location 'https://euler-api-test-utils.internal.staging.mum.juspay.net/blackbox/proxy/ecr/orders' \
+curl --location 'https://api.juspay.in/txns' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'x-merchantid: mandate_juspay' \
 --data-urlencode 'order.order_id=test_123' \
