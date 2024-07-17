@@ -1,0 +1,16 @@
+curl --location 'https://sandbox.juspay.in/session' \
+--header 'x-merchantid: lendenclub' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Basic OTA5NTI4RUZGMEE0MEI3ODBFMDM3RkM3QkQ2NzcxOg==' \
+--data-raw '{
+    "order_id": "1715238732",
+    "amount": "1.00",
+    "customer_id": "6309869931",
+    "customer_email": "test@gmail.com",
+    "customer_phone": "6309869931",
+    "payment_page_client_id": "creditsaison",
+    "action": "paymentPage",
+    "metadata.JUSPAY:gateway_reference_id": "PAY_TPV",
+    "order_type": "TPV_PAYMENT",
+    "metadata.bank_account_details": "[{\"bank_account_number\":\"11131890\",\"bank_ifsc\":\"ICICI0000300\",\"bank_beneficiary_name\":\"S TestName\"}]"
+}'
