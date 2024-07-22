@@ -1,0 +1,162 @@
+{
+  "event_name": "ORDER_REFUNDED",
+  "content": {
+    "order": {
+      "payer_vpa": "abc@okaxis",
+      "payment_method": "COLLECT",
+      "customer_phone": "FILTERED",
+      "payment_gateway_response": {
+        "network_error_message": null,
+        "txn_id": "Merchant-AUCAV55FU1SR-1",
+        "rrn": "42019291",
+        "debit_amount": "10000.0",
+        "auth_id_code": "",
+        "resp_message": "",
+        "gateway_response": {
+          "tax": 18,
+          "vpa": "FILTERED",
+          "order_id": "order_OaV1t6kQtSXHcS",
+          "amount": 1000000,
+          "email": "FILTERED",
+          "rrn": "42019291",
+          "status": "captured",
+          "entity": "payment",
+          "captured": true,
+          "created_at": 1721393998,
+          "fee": 118,
+          "id": "pay_OaV1tA3WD0dAlO",
+          "contact": "FILTERED",
+          "description": "Initial Funding to open Current Account for AUCA01J24V580NJJ",
+          "currency": "INR",
+          "method": "upi",
+          "upi": {
+            "payer_account_type": "FILTERED",
+            "vpa": "FILTERED"
+          },
+          "international": false,
+          "amount_refunded": 0,
+          "acquirer_data": {
+            "rrn": "42019291"
+          },
+          "notes": {
+            "transaction_id": "Merchant-AUCAV55FU1SR-1",
+            "txn_uuid": "mozxxH35BxM3AyBdjMA"
+          }
+        },
+        "epg_txn_id": "pay_OaV1tA3WD0dAlO",
+        "resp_code": "captured",
+        "created": "2024-07-19T13:00:59Z",
+        "network_error_code": null
+      },
+      "udf8": "",
+      "txn_id": "Merchant-AUCAV55FU1SR-1",
+      "order_id": "AUCAV55FU1SR",
+      "gateway_reference_id": "Ref1",
+      "maximum_eligible_refund_amount": 0,
+      "udf9": "",
+      "txn_detail": {
+        "txn_id": "Merchant-AUCAV55FU1SR-1",
+        "order_id": "AUCAV55FU1SR",
+        "error_code": null,
+        "source_object": "UPI_COLLECT",
+        "txn_flow_type": "COLLECT",
+        "txn_object_type": "FILTERED",
+        "status": "CHARGED",
+        "express_checkout": false,
+        "gateway_id": 23,
+        "error_message": "",
+        "offer_deduction_amount": null,
+        "tax_amount": null,
+        "currency": "INR",
+        "txn_amount_breakup": "FILTERED",
+        "txn_amount": 10000,
+        "created": "2024-07-19T12:59:57Z",
+        "gateway": "RAZORPAY",
+        "surcharge_amount": null,
+        "txn_uuid": "mozxxH35BxM3AyBdjMA",
+        "net_amount": 10000,
+        "redirect": true,
+        "metadata": {
+          "payment_channel": "WEB"
+        }
+      },
+      "customer_id": "FILTERED",
+      "amount": 10000,
+      "refunds": [
+        {
+          "reversal_type": "FILTERED",
+          "error_code": "processed",
+          "amount": 10000,
+          "status": "SUCCESS",
+          "ref": "rfnd_OaXwl7uCgiso",
+          "initiated_by": "API",
+          "pg_processed_at": "FILTERED",
+          "error_message": "processed",
+          "refund_source": "RAZORPAY",
+          "id": "cHlg6WnvzJSxh1C",
+          "created": "2024-07-19T13:22:33Z",
+          "refund_type": "STANDARD",
+          "unique_request_id": "cHlg6WnvzJSxh1C",
+          "sent_to_gateway": true,
+          "metadata": {
+            "speed_requested": "normal",
+            "speed_processed": "normal"
+          }
+        }
+      ],
+      "udf4": "",
+      "status": "CHARGED",
+      "udf5": "",
+      "udf6": "",
+      "status_id": 21,
+      "offers": [],
+      "udf7": "",
+      "resp_message": null,
+      "product_id": "",
+      "refunded": true,
+      "udf10": "",
+      "gateway_id": 23,
+      "udf1": "AUCA01J24V580NJJ",
+      "udf2": "094901003542",
+      "udf3": "ICIC0000949",
+      "date_created": "2024-07-19T12:58:57Z",
+      "id": "ordeh_1cb7251523xx53xx5fc09a26b6d77",
+      "merchant_id": "Merchant",
+      "return_url": "https://merchant.in/application/details/auca01j24v580njj?cajnsts=2&locked=N",
+      "effective_amount": 10000,
+      "currency": "INR",
+      "auth_type": "",
+      "customer_email": "FILTERED",
+      "resp_code": null,
+      "upi": {
+        "payer_vpa": "abc@okaxis",
+        "txn_flow_type": "COLLECT"
+      },
+      "payment_method_type": "UPI",
+      "txn_uuid": "mozxxH35BxM3AyBdjMA",
+      "resp_category": null,
+      "payment_links": {
+        "mobile": "https://payments.juspay.in/payment-page/order/ordeh_1cb7251523xx53xx5fc09a26b6d77",
+        "web": "https://payments.juspay.in/payment-page/order/ordeh_1cb7251523xx53xx5fc09a26b6d77",
+        "iframe": "https://payments.juspay.in/payment-page/order/ordeh_1cb7251523xx53xx5fc09a26b6d77"
+      },
+      "amount_refunded": 10000,
+      "bank_error_code": "",
+      "metadata": {
+        "bank_account_details": "FILTERED",
+        "webhook_url": "FILTERED",
+        "JUSPAY:gateway_reference_id": "Ref1",
+        "payment_page_client_id": "ausfbank",
+        "payment_page_sdk_payload": "FILTERED",
+        "payment_links": {
+          "mobile": "https://payments.juspay.in/payment-page/order/ordeh_1cb7251523xx53xx5fc09a26b6d77",
+          "web": "https://payments.juspay.in/payment-page/order/ordeh_1cb7251523xx53xx5fc09a26b6d77",
+          "iframe": "https://payments.juspay.in/payment-page/order/ordeh_1cb7251523xx53xx5fc09a26b6d77"
+        }
+      },
+      "bank_error_message": ""
+    }
+  },
+  "date_created": "2024-07-19T13:47:00Z",
+  "id": "evt_V2_03ef3038874f4866b546be80df430017"
+}
