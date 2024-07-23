@@ -101,12 +101,6 @@
     "payment_method_type": "CARD",
     "txn_uuid": "mozqsc6heRVYJT7U4Lt",
     "resp_category": "BUSINESS_ERROR",
-    "risk": {
-        "recommended_action": "proceed",
-        "status": "COMPLETED",
-        "provider": "JUSPAYFRM",
-        "flagged": false
-    },
     "payment_links": {
         "mobile": "FILTERED",
         "web": "https://payments.juspay.in/payment-page/order/ordeh_2cb278351493",
