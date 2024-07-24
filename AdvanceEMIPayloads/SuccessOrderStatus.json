@@ -133,16 +133,6 @@
     },
     "payment_method_type": "CARD",
     "txn_uuid": "moz57dDDhpiczahgopHEj",
-    "risk_checks": [
-        {
-            "invocation_mode": "PARALLEL",
-            "txn_id": "Merchant-M52406w037r85110vb21-1",
-            "recommended_action": "proceed",
-            "status": "COMPLETED",
-            "provider": "JUSPAYFRM",
-            "flagged": false
-        }
-    ],
     "resp_category": null,
     "payment_links": {
         "mobile": "FILTERED",
