@@ -93,8 +93,8 @@
             "udf3": "",
             "date_created": "2024-06-03T08:12:58Z",
             "id": "ordeh_5e3de000b32",
-            "merchant_id": "oneplus",
-            "return_url": "https://payment-in.oneplus.com/callback/juspay/M20240603x89974",
+            "merchant_id": "merchant",
+            "return_url": "https://payment-in.merchant.com/callback/juspay/M20240603x89974",
             "effective_amount": 62742.33,
             "currency": "INR",
             "auth_type": "THREE_DS",
@@ -126,16 +126,6 @@
             },
             "payment_method_type": "CARD",
             "txn_uuid": "mozi5cXScdXdSrHxRcSj",
-            "risk_checks": [
-                {
-                    "invocation_mode": "PARALLEL",
-                    "txn_id": "Merchant-M20240603x89974-1",
-                    "recommended_action": "proceed",
-                    "status": "COMPLETED",
-                    "provider": "JUSPAYFRM",
-                    "flagged": false
-                }
-            ],
             "resp_category": null,
             "payment_links": {
                 "mobile": "FILTERED",
@@ -165,41 +155,13 @@
             "emi_bank": "HDFCDC",
             "metadata": {
                 "JUSPAY:gateway_reference_id": "OT",
-                "payment_page_client_id": "oneplus",
+                "payment_page_client_id": "merchant",
                 "payment_links": {
                     "mobile": "FILTERED",
                     "web": "https://payments.juspay.in/payment-page/order/ordeh_5e3d5aae000b32",
                     "iframe": "https://payments.juspay.in/payment-page/order/ordeh_5e3d5aae000b32"
                 },
                 "payment_locking": {
-                    "payment_filter": ""{
-                        "allowDefaultMerchanttions": true,
-                        "emiMerchanttions": {
-                            "noCostEmi": {
-                                "enable": true,
-                                "credit": {
-                                    "enable": true,
-                                    "filters": [
-                                        {
-                                            "issuerFilter": {
-                                                "issuers": [
-                                                    "JP_BAJAJ"
-                                                ],
-                                                "enable": false,
-                                                "tenures": [
-                                                    "3::3",
-                                                    "6::6"
-                                                ]
-                                            },
-                                            "paymentMethodType": "CARD",
-                                            "paymentMethod": "CARD",
-                                            "enable": true
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }"",
                     "offer_details": "{}"
                 }
             },
