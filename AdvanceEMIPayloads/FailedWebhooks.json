@@ -87,7 +87,7 @@
             "date_created": "2024-06-03T07:43:26Z",
             "id": "ordeh_a9e3c6b7ca98726219c220",
             "rewards_breakup": {},
-            "merchant_id": "oneplus",
+            "merchant_id": "merchant",
             "return_url": "https://payment-merchant.com/callback/juspay/202986370",
             "effective_amount": 4864.61,
             "currency": "INR",
@@ -118,16 +118,6 @@
             },
             "payment_method_type": "CARD",
             "txn_uuid": "mozoSEtAMs5z",
-            "risk_checks": [
-                {
-                    "invocation_mode": "PARALLEL",
-                    "txn_id": "Merchant-202406084456370-1",
-                    "recommended_action": "proceed",
-                    "status": "COMPLETED",
-                    "provider": "JUSPAYFRM",
-                    "flagged": false
-                }
-            ],
             "resp_category": "BUSINESS_ERROR",
             "payment_links": {
                 "mobile": "FILTERED",
@@ -157,7 +147,7 @@
             "emi_bank": "SBI",
             "metadata": {
                 "JUSPAY:gateway_reference_id": "OT",
-                "payment_page_client_id": "oneplus",
+                "payment_page_client_id": "merchant",
                 "payment_links": {
                     "mobile": "FILTERED",
                     "web": "https://payments.juspay.in/payment-page/order/ordeh_a9e3c6b7ca98726219c220",
