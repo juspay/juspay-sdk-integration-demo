@@ -1,0 +1,19 @@
+{
+    "error_message": "Invalid card expiry year",
+    "status": "error",
+    "error_code": "invalid",
+    "error_info": {
+        "category": "USER_ERROR",
+        "code": "INVALID_INPUT",
+        "developer_message": "Invalid card expiry year.",
+        "fields": [
+            {
+                "field_name": "card_exp_year",
+                "reason": "Invalid value."
+            }
+        ],
+        "href": "NA",
+        "request_id": "bb2059af-4925-460f-b15c-345baa6bc137",
+        "user_message": "Invalid card expiry year."
+    }
+}
