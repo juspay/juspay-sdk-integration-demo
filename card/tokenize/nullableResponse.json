@@ -1,0 +1,19 @@
+{
+    "error_message": "Card security code should be present.",
+    "status": "error",
+    "error_code": "nullable",
+    "error_info": {
+        "category": "USER_ERROR",
+        "code": "INVALID_INPUT",
+        "developer_message": "Card security code is required.",
+        "fields": [
+            {
+                "field_name": "card_security_code",
+                "reason": "Missing value."
+            }
+        ],
+        "href": "NA",
+        "request_id": "c7e4ac85-bffc-485b-b0c0-431ca1ed1ee5",
+        "user_message": "Missing cvv."
+    }
+}
