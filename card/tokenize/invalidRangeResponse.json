@@ -1,0 +1,19 @@
+{
+    "error_message": "Card expiry month should be between 1 and 12",
+    "status": "error",
+    "error_code": "invalidRange",
+    "error_info": {
+        "category": "USER_ERROR",
+        "code": "INVALID_INPUT",
+        "developer_message": "Invalid card expiry month.",
+        "fields": [
+            {
+                "field_name": "card_exp_month",
+                "reason": "Invalid value."
+            }
+        ],
+        "href": "NA",
+        "request_id": "59a880c5-1ae3-4ea5-9149-87e706c20799",
+        "user_message": "Invalid card expiry month."
+    }
+}
