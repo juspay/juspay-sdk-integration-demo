@@ -1,0 +1,34 @@
+{
+    "status": "NEW",
+    "id": "ordeh_051adff5c45f4fd4894f6b421609c1b6",
+    "order_id": "testing-order-2205241516",
+    "payment_links": {
+        "web": "https://sandbox.assets.juspay.in/payment-page/order/ordeh_051adf4fd4894f6b421609c1b6",
+        "expiry": "2024-01-01T04:17:57Z"
+    },
+    "sdk_payload": {
+        "requestId": "2a522264ce24f3bd3fdb8a60",
+        "service": "in.juspay.hyperpay",
+        "payload": {
+            "action": "paymentPage",
+            "amount": "1000.0",
+            "clientAuthToken": "tkn_0b6e8a24887f68f53cda0fc5",
+            "clientAuthTokenExpiry": "2024-01-01T04:32:57Z",
+            "clientId": "juspay",
+            "collectAvsInfo": false,
+            "currency": "INR",
+            "customerEmail": "test@mail.com",
+            "customerPhone": "9876543210",
+            "displayBusinessAs": "MS",
+            "environment": "sandbox",
+            "firstName": "first",
+            "lastName": "last",
+            "merchantId": "juspay",
+            "metadata.merchantContainerList": "[{\"payment_method\":\"JUSPAY_WALLET\",\"payment_method_type\":\"MERCHANT_CONTAINER\",\"display_name\":\"Juspay Wallet\",\"balance_amount\":10,\"eligible_amount\":10}]",
+            "orderId": "testing-order-2205241516",
+            "service": "in.juspay.hyperpay"
+        },
+        "expiry": "2024-01-01T04:17:57Z"
+    },
+    "order_expiry": "2024-01-01T04:17:57Z"
+}
