@@ -1,0 +1,14 @@
+{
+    "status_id": 1,
+    "status": "CREATED",
+    "payment_links": {
+        "web":
+"https://sandbox.juspay.in/merchant/pay/ordeu_20dd8d271adf3475916",
+"mobile":
+"https://sandbox.juspay.in/merchant/pay/ordeu_20dd8d271adf3475916?mobile=true",
+"iframe":
+"https://sandbox.juspay.in/merchant/ipay/ordeu_20dd8d271adf34755916"
+    },
+    "order_id": "12345",
+    "id": "ordeu_20dd8d271adf3475916"
+}

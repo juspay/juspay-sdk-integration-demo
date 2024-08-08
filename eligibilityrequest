@@ -1,0 +1,38 @@
+{
+    "requestId": "0c4aa7ad-329b-4574-b03a-31f0f8950671",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "action": "eligibility",
+        "amount": "1.00",
+        "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213",
+        "orderId": "hyperorder45314",
+        "data": {
+            "wallets": [
+                {
+                    "checkType": [
+                        "simpl"
+                    ],
+                    "customerId": "1234567890",
+                    "mobile": "9999999999"
+                }
+            ],
+            "cards": [],
+            "wallets": [],
+            "apps": []
+        },
+        "merchant_params": {
+            "email": "shshh@gamil.com",
+            "first_txn_date": "2019-07-17",
+            "user_loyalty_level": "Gold",
+            "user_blacklist_flag": "true",
+            "request_ori_page": "precheckout",
+            "seller_identifier": "123",
+            "seller_vintage": "4",
+            "seller_category": "PRIME",
+            "additional_order_id": "12345",
+            "first_name": "Simpl",
+            "last_name": "Simpl",
+            "aggregator_flow_ori": "headless"
+        }
+    }
+}

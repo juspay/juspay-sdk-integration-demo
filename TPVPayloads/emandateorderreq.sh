@@ -1,0 +1,20 @@
+curl --location --request POST 'https://sandbox.juspay.in/orders' \
+--header 'version: 2024-05-01' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'Authorization: Basic XXXXXXXXXXXXXXXXXXXXX==' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'order_id=158997003' \
+--data-urlencode 'amount=1' \
+--data-urlencode 'currency=INR' \
+--data-urlencode 'return_url=https://google.com' \
+--data-urlencode 'customer_id=cst_cho0oz8maetw' \
+--data-urlencode 'customer_phone=99448xxxx4' \
+--data-urlencode 'customer_email=Star@gmail.com' \
+--data-urlencode 'metadata.bank_account_details=[{"bank_account_number":"02691698032772","bank_ifsc":"HDFC011211", "juspay_bank_code" : "JP_HDFC", "bank_beneficiary_name" : "Star"}]' \
+--data-urlencode 'order_type=TPV_PAYMENT'
+--data-urlencode options.create_mandate=REQUIRED' \
+--data-urlencode 'gateway_id=505' \
+--data-urlencode 'mandate.max_amount=1' \
+--data-urlencode 'mandate.start_date=1636464409' \
+--data-urlencode 'mandate.end_date=1637118262' \
+--data-urlencode 'mandate.frequency=ONETIME/ DAILY/ WEEKLY/ MONTHLY

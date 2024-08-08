@@ -1,0 +1,75 @@
+{
+    "status": "NEW",
+    "id": "ordeh_775d80d0fe2252a6b0",
+    "order_id": "12345",
+    "payment_links": {
+        "web": "https://sandbox.juspay.in/orders/ordeh_775d80d0fe2252a6b0/payment-page",
+        "expiry": "2024-03-19T12:05:29Z"
+    },
+    "sdk_payload": {
+        "requestId": "8b7263a3f34fc1e5d5f85",
+        "service": "in.juspay.hyperpay",
+        "payload": {
+            "clientId": "test",
+            "amount": "1.0",
+            "merchantId": "test",
+            "clientAuthToken": "tkn_8384c8c88214b477930ce5",
+            "clientAuthTokenExpiry": "2024-03-18T12:20:29Z",
+            "environment": "sandbox",,
+            "action": "paymentpage",
+            "customerId": "cust_test",
+            "simplAdditionalInfo": {
+                "device_params": {
+                    "simpl_device_model": "FT-159",
+                    "simpl_dres": "5570",
+                    "simpl_ipa": "192.118.\n1.1",
+                    "simpl_device_manufacturer": "Samsung",
+                    "user_agent": "Mozilla/5.0 (Linux; Android 8.1.0;\nRedmi 5A Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko)\nVersion/4.0Chrome/97.0.4692.70 Mobile Safari/537.36",
+                    "simpl_fontsize": "11",
+                    "simpl_can": "Walker, Dominguez and Davis",
+                    "simpl_duptime": "1161165",
+                    "simpl_amem": "2325",
+                    "simpl_pav": "testing",
+                    "simpl_ltln": "-22.629812, -11.583188",
+                    "simpl_isr": "false",
+                    "simpl_adisk": "1666",
+                    "simpl_pan": "6.6.4"
+                },
+                "merchant_params": {
+                    "first_txn_date": "2019-07-17",
+                    "email": "shshh@gamil.com",
+                    "additional_order_id": "123456789",
+                    "first_name": "Simpl",
+                    "billing_address": {
+                        "line2": "300 Randolph Parkways Apt. 902",
+                        "postal_code": "400611",
+                        "state": "Drives",
+                        "country": "French Guiana",
+                        "city": "Shauntown",
+                        "line1": "54999"
+                    },
+                    "user_loyalty_level": "Gold",
+                    "seller_identifier": "123",
+                    "seller_vintage": "4",
+                    "user_blacklist_flag": "true",
+                    "shipping_address": {
+                        "line2": "300 Randolph\nParkways Apt 902",
+                        "postal_code": "400611",
+                        "state": "Drives",
+                        "country": "French\nGuiana",
+                        "city": "Shauntown",
+                        "line1": "54999"
+                    },
+                    "request_ori_page": "precheckout",
+                    "aggregator_flow_ori": "PP",
+                    "last_name": "Simpl",
+                    "seller_category": "PRIME"
+                }
+            },
+            "currency": "INR",
+            "customerPhone": "9999999999",
+            "customerEmail": "test@gmail.com",
+            "orderId": "12345"
+        }
+    }
+}

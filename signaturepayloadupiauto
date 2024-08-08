@@ -1,0 +1,21 @@
+"payload": {
+        "action": "paymentPage",
+        "amount": "49.00",
+        "clientId": "test",
+        "currentActivityId": "a1a5b55-d04a-4cb8-9bb0-fdd164678971",
+        "customerEmail": "RIPPIFILTERED",
+        "customerId": "customer100",
+        "customerMobile": "RIPPIFILTERED",
+        "endUrls": ["https://www.endurl.in/"],
+        "environment": "production",
+        "merchantKeyId": "12323",
+        "orderDetails": "{\"timestamp\":\"1604738587\",\"order_id\":\"123test\",\"merchant_id\":\"test\",\"amount\":\"49.00\",\"customer_email\":\"RIPPIFILTERED\",\"description\":\" Rs. 49 per month\",\"customer_phone\":\"RIPPIFILTERED\",\"currency\":\"INR\",\"options.create_mandate\":\"REQUIRED\",\"mandate.max_amount\":\"49.00\",\"mandate.start_date\":\"1604738587\",\"mandate.end_date\":\"1862591387\"}",
+        "orderId": "123test",
+        "processStartedTime": 1604738588018,
+        "signature": "signaturekey"
+      },
+      "requestId": "1112345575790-0088665",
+      "service": "in.juspay.hyperpay",
+    }
+  }
+}

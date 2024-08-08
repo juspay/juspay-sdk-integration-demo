@@ -1,0 +1,27 @@
+{
+  "service": "in.juspay.ec",
+  "requestId": "1cdae6a6-b622-4daf-865f-98a78f24396b",
+  "payload": {
+    "vpa": "abcaa51452@axisbiz",
+    "shouldCreateMandate": null,
+    "orderId": "hyperorder1698414304631",
+    "merchantKeyId": "8321",
+    "credOfferData": [
+      {
+        "paymentMethodType": "upiinapp",
+        "offerData": [
+          {
+            "preActionNudge": "Get Upto ₹100 cashback on CRED app",
+            "postActionNudge": "Save Upto ₹100 on next order using CRED Pay",
+            "paymentMethodType": "UPI",
+            "paymentMethod": "UPI",
+            "isEligible": true
+          }
+        ]
+      }
+    ],
+    "clientAuthToken": "tkn_a8ebe4d5a8c54c648e4ac4f7869e7c1f",
+    "action": "upiTxn",
+    "accountRefId": "Afa9eb4b5157455883f8244104c0a1"
+  }
+}

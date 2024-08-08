@@ -1,0 +1,377 @@
+{
+    "cart_amount": "25123.25",
+    "emi_plans": {
+        "STANDARD_EMI": {
+            "CREDIT": {
+                "payment_method": "CARD",
+                "payment_method_type": "CARD",
+                "issuers": [
+                    {
+                        "emi_bank": "AMEX",
+                        "issuer_name": "American Express",
+                        "juspay_bank_code": "JP_AMEX",
+                        "bank_plan_description": null,
+                        "tenures": [
+                            {
+                                "offer_type": null,
+                                "additional_processing_fee": "0.00",
+                                "bank_interest_rate": "12.00",
+                                "tenure": 3,
+                                "total_amount_payable": "25627.38",
+                                "total_interest_amount": "504.13",
+                                "total_monthly_amount_payable": "8542.46",
+                                "total_instant_discount_amount": null,
+                                "total_cashback_amount": null,
+                                "additional_discount_amount": null,
+                                "supported_gateways": [
+                                    {
+                                        "gateway": "RAZORPAY",
+                                        "gateway_id": 23
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "emi_bank": "AXIS",
+                        "issuer_name": "Axis Bank",
+                        "juspay_bank_code": "JP_AXIS",
+                        "bank_plan_description": null,
+                        "tenures": [
+                            {
+                                "offer_type": null,
+                                "additional_processing_fee": "0.00",
+                                "bank_interest_rate": "12.00",
+                                "tenure": 3,
+                                "total_amount_payable": "25627.38",
+                                "total_interest_amount": "504.13",
+                                "total_monthly_amount_payable": "8542.46",
+                                "total_instant_discount_amount": null,
+                                "total_cashback_amount": null,
+                                "additional_discount_amount": null,
+                                "supported_gateways": [
+                                    {
+                                        "gateway": "PINELABS",
+                                        "gateway_id": 74
+                                    }
+                                ]
+                            },
+                            {
+                                "offer_type": null,
+                                "additional_processing_fee": "0.00",
+                                "bank_interest_rate": "13.00",
+                                "tenure": 6,
+                                "total_amount_payable": "26084.39",
+                                "total_interest_amount": "961.14",
+                                "total_monthly_amount_payable": "4347.40",
+                                "total_instant_discount_amount": null,
+                                "total_cashback_amount": null,
+                                "additional_discount_amount": null,
+                                "supported_gateways": [
+                                    {
+                                        "gateway": "PINELABS",
+                                        "gateway_id": 74
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "DEBIT": {
+                "payment_method": "CARD",
+                "payment_method_type": "CARD",
+                "issuers": [
+                    {
+                        "emi_bank": "HDFCDC",
+                        "issuer_name": "HDFC Bank",
+                        "juspay_bank_code": "JP_HDFC",
+                        "bank_plan_description": null,
+                        "tenures": [
+                            {
+                                "offer_type": null,
+                                "additional_processing_fee": "0.00",
+                                "bank_interest_rate": "13.00",
+                                "tenure": 6,
+                                "total_amount_payable": "26084.39",
+                                "total_interest_amount": "961.14",
+                                "total_monthly_amount_payable": "4347.40",
+                                "total_instant_discount_amount": null,
+                                "total_cashback_amount": null,
+                                "additional_discount_amount": null,
+                                "supported_gateways": [
+                                    {
+                                        "gateway": "PAYU",
+                                        "gateway_id": 12
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "CARDLESS": {
+                "payment_method": "SHOPSE",
+                "payment_method_type": "CONSUMER_FINANCE",
+                "issuers": [
+                    {
+                        "emi_bank": "HDFC_CLEMI",
+                        "issuer_name": "HDFC Bank",
+                        "juspay_bank_code": "JP_HDFC",
+                        "bank_plan_description": null,
+                        "tenures": [
+                            {
+                                "additional_processing_fee": "0.00",
+                                "bank_interest_rate": "16.00",
+                                "tenure": 3,
+                                "total_amount_payable": "25123.26",
+                                "total_interest_amount": "655.38",
+                                "total_monthly_amount_payable": "8374.42",
+                                "total_instant_discount_amount": "655.37",
+                                "total_cashback_amount": "0.00",
+                                "product_details": null,
+                                "supported_gateways": [
+                                    {
+                                        "gateway": "SHOPSE",
+                                        "gateway_id": 256,
+                                        "supported_features": null
+                                    }
+                                ],
+                                "metadata": null,
+                                "offer_type": null,
+                                "offer_ids": null,
+                                "interest_discount_amount": "655.37",
+                                "additional_discount_amount": null,
+                                "tnc": null,
+                                "txn_emi_type": "STANDARD_EMI",
+                                "other_payment_info": null,
+                                "kfs_link": "https://sandbox.juspay.in/kfs?token=TkRZMlltVmxOVE00WmpCak5qaGxZekV3TWpSaVkyWTJPRFZqWmpoak5ERXRPSkdwT1JPcUs3S2FMb01CSWcwNW1FOTk4UGVkUUR2TmdnWiszM2JxemVPSERsLzdZYmQ3aDFobUxra3JWakdHc2Vqbm5ZaFhONUFRRkw4azE2L3hqb2dDcGp5dFJrY3RjMVp6aExXemg2cENzLzZZL0ptWjFQMHZEOXBLeFMvb3ZTQWIvZWFibGtzUFlkL0VnSTNOMHRaaXhGQmpTWC9rTzA5cU1PMVgyV09MU0RUQnVkS2VIV0RDUGhod3pjMEg1WHNa",
+                                "additional_processing_fee_info": null,
+                                "schedule_of_charges": null
+                            }
+                        ]
+                    },
+                    {
+                        "emi_bank": "ICICI_CLEMI",
+                        "issuer_name": "ICICI Bank",
+                        "juspay_bank_code": "JP_ICICI",
+                        "bank_plan_description": null,
+                        "tenures": [
+                            {
+                                "additional_processing_fee": "0.00",
+                                "bank_interest_rate": "16.00",
+                                "tenure": 6,
+                                "total_amount_payable": "25123.26",
+                                "total_interest_amount": "1131.96",
+                                "total_monthly_amount_payable": "4187.21",
+                                "total_instant_discount_amount": "1131.95",
+                                "total_cashback_amount": "0.00",
+                                "product_details": null,
+                                "supported_gateways": [
+                                    {
+                                        "gateway": "SHOPSE",
+                                        "gateway_id": 256,
+                                        "supported_features": null
+                                    }
+                                ],
+                                "metadata": null,
+                                "offer_type": null,
+                                "offer_ids": null,
+                                "interest_discount_amount": "1131.95",
+                                "additional_discount_amount": null,
+                                "tnc": null,
+                                "txn_emi_type": "STANDARD_EMI",
+                                "other_payment_info": null,
+                                "kfs_link": null,
+                                "additional_processing_fee_info": null,
+                                "schedule_of_charges": null
+                            },
+                            {
+                                "additional_processing_fee": "0.00",
+                                "bank_interest_rate": "17.00",
+                                "tenure": 3,
+                                "total_amount_payable": "25123.26",
+                                "total_interest_amount": "695.40",
+                                "total_monthly_amount_payable": "8374.42",
+                                "total_instant_discount_amount": "695.39",
+                                "total_cashback_amount": "0.00",
+                                "product_details": null,
+                                "supported_gateways": [
+                                    {
+                                        "gateway": "SHOPSE",
+                                        "gateway_id": 256,
+                                        "supported_features": null
+                                    }
+                                ],
+                                "metadata": null,
+                                "offer_type": null,
+                                "offer_ids": null,
+                                "interest_discount_amount": "695.39",
+                                "additional_discount_amount": null,
+                                "tnc": null,
+                                "txn_emi_type": "STANDARD_EMI",
+                                "other_payment_info": null,
+                                "kfs_link": null,
+                                "additional_processing_fee_info": null,
+                                "schedule_of_charges": null
+                            },
+                            {
+                                "additional_processing_fee": "0.00",
+                                "bank_interest_rate": "20.00",
+                                "tenure": 9,
+                                "total_amount_payable": "25123.23",
+                                "total_interest_amount": "1971.78",
+                                "total_monthly_amount_payable": "2791.47",
+                                "total_instant_discount_amount": "1971.80",
+                                "total_cashback_amount": "0.00",
+                                "product_details": null,
+                                "supported_gateways": [
+                                    {
+                                        "gateway": "SHOPSE",
+                                        "gateway_id": 256,
+                                        "supported_features": null
+                                    }
+                                ],
+                                "metadata": null,
+                                "offer_type": null,
+                                "offer_ids": null,
+                                "interest_discount_amount": "1971.80",
+                                "additional_discount_amount": null,
+                                "tnc": null,
+                                "txn_emi_type": "STANDARD_EMI",
+                                "other_payment_info": null,
+                                "kfs_link": null,
+                                "additional_processing_fee_info": null,
+                                "schedule_of_charges": null
+                            }
+                        ]
+                    },
+                    {
+                        "emi_bank": "KOTAK_CLEMI",
+                        "issuer_name": "Kotak Mahindra Bank",
+                        "juspay_bank_code": "JP_KOTAK",
+                        "bank_plan_description": null,
+                        "tenures": [
+                            {
+                                "additional_processing_fee": "0.00",
+                                "bank_interest_rate": "16.00",
+                                "tenure": 3,
+                                "total_amount_payable": "25123.26",
+                                "total_interest_amount": "655.38",
+                                "total_monthly_amount_payable": "8374.42",
+                                "total_instant_discount_amount": "655.37",
+                                "total_cashback_amount": "0.00",
+                                "product_details": null,
+                                "supported_gateways": [
+                                    {
+                                        "gateway": "SHOPSE",
+                                        "gateway_id": 256,
+                                        "supported_features": null
+                                    }
+                                ],
+                                "metadata": null,
+                                "offer_type": null,
+                                "offer_ids": null,
+                                "interest_discount_amount": "655.37",
+                                "additional_discount_amount": null,
+                                "tnc": null,
+                                "txn_emi_type": "STANDARD_EMI",
+                                "other_payment_info": null,
+                                "kfs_link": null,
+                                "additional_processing_fee_info": null,
+                                "schedule_of_charges": null
+                            },
+                            {
+                                "additional_processing_fee": "0.00",
+                                "bank_interest_rate": "16.00",
+                                "tenure": 6,
+                                "total_amount_payable": "25123.26",
+                                "total_interest_amount": "1131.96",
+                                "total_monthly_amount_payable": "4187.21",
+                                "total_instant_discount_amount": "1131.95",
+                                "total_cashback_amount": "0.00",
+                                "product_details": null,
+                                "supported_gateways": [
+                                    {
+                                        "gateway": "SHOPSE",
+                                        "gateway_id": 256,
+                                        "supported_features": null
+                                    }
+                                ],
+                                "metadata": null,
+                                "offer_type": null,
+                                "offer_ids": null,
+                                "interest_discount_amount": "1131.95",
+                                "additional_discount_amount": null,
+                                "tnc": null,
+                                "txn_emi_type": "STANDARD_EMI",
+                                "other_payment_info": null,
+                                "kfs_link": null,
+                                "additional_processing_fee_info": null,
+                                "schedule_of_charges": null
+                            },
+                            {
+                                "additional_processing_fee": "0.00",
+                                "bank_interest_rate": "16.00",
+                                "tenure": 9,
+                                "total_amount_payable": "25123.23",
+                                "total_interest_amount": "1596.15",
+                                "total_monthly_amount_payable": "2791.47",
+                                "total_instant_discount_amount": "1596.17",
+                                "total_cashback_amount": "0.00",
+                                "product_details": null,
+                                "supported_gateways": [
+                                    {
+                                        "gateway": "SHOPSE",
+                                        "gateway_id": 256,
+                                        "supported_features": null
+                                    }
+                                ],
+                                "metadata": null,
+                                "offer_type": null,
+                                "offer_ids": null,
+                                "interest_discount_amount": "1596.17",
+                                "additional_discount_amount": null,
+                                "tnc": null,
+                                "txn_emi_type": "STANDARD_EMI",
+                                "other_payment_info": null,
+                                "kfs_link": null,
+                                "additional_processing_fee_info": null,
+                                "schedule_of_charges": null
+                            },
+                            {
+                                "additional_processing_fee": "0.00",
+                                "bank_interest_rate": "16.00",
+                                "tenure": 12,
+                                "total_amount_payable": "25124.16",
+                                "total_interest_amount": "2048.45",
+                                "total_monthly_amount_payable": "2093.68",
+                                "total_instant_discount_amount": "2047.54",
+                                "total_cashback_amount": "0.00",
+                                "product_details": null,
+                                "supported_gateways": [
+                                    {
+                                        "gateway": "SHOPSE",
+                                        "gateway_id": 256,
+                                        "supported_features": null
+                                    }
+                                ],
+                                "metadata": null,
+                                "offer_type": null,
+                                "offer_ids": null,
+                                "interest_discount_amount": "2047.54",
+                                "additional_discount_amount": null,
+                                "tnc": null,
+                                "txn_emi_type": "STANDARD_EMI",
+                                "other_payment_info": null,
+                                "kfs_link": null,
+                                "additional_processing_fee_info": null,
+                                "schedule_of_charges": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}
