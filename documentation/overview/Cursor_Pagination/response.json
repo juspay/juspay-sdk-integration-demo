@@ -1,0 +1,22 @@
+{
+    "object": "list",
+    "url": "/v1/nach_banks",
+    "has_more": true,
+    "data": [
+        {
+            "id": "AACX",
+            "name": "AKHAND ANAND CO.OP BANK LTD.",
+            "display_name": "Akhand Anand Co-operative Bank Ltd."
+        },
+        {
+            "id": "ABCX",
+            "name": "THE AURANGABAD DISTRICT CENTRAL COOP BANK LIMITED",
+            "display_name": "The Aurangabad District Central Co-operative Bank Ltd."
+        },
+        {
+            "id": "ABDX",
+            "name": "DR. AMBEDKAR NAGRIK SAHAKARI BANK MYDT GWALIOR",
+            "display_name": "Dr. Ambedkar Nagrik Sahakari Bank Mydt Gwalior"
+        }
+    ]
+}
