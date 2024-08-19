@@ -11,7 +11,7 @@
   "creditor_name": "LOTUSPAY SOLUTIONS PVT LTD",
   "creditor_utility_code": "NACH00000000005549",
   "date_charge": "2020-01-01",
-  "date_response": "2020-01-01",
+  "date_response": null,
   "debtor_account_name": "Amit Jain",
   "debtor_account_number": "****5678",
   "debtor_agent_code": "HDFC",
@@ -19,16 +19,16 @@
   "mandate_reference1": "LOAN123",
   "product_type: "10",
   "reference": "LOTUSPAY44332211AA",
-  "reference_creditor": "ABCDE12345",
+  "reference_creditor": null,
   "umrn": "HDFC000012345678"
-  "response_code": "00",
-  "response_description": "Accepted",
-  "response_flag": "1",
-  "response_sequence_number": "6858307575",
-  "status": "confirmed",
-  "ach_debit_collection": "DO001122AABBDD",
+  "response_code": null,
+  "response_description": null,
+  "response_flag": null,
+  "response_sequence_number": null,
+  "status": "cancelled",
+  "ach_debit_collection": null,
   "customer": "CU001234DDAABB",
   "mandate": "MD0011DD22RR33",
   "nach_profile": "NP00AABBCC11DD",
-  "settlement": "SM00GGDD22XX"
+  "settlement": null
 }
