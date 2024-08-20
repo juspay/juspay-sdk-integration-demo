@@ -15,12 +15,12 @@
         "additionalPaymentDetails": [
             {
                 "voucher_id": null,
-                "split_amount": "98",              // --> Mandatory Field
-                "reward_mode": "burn",             // --> Mandatory Field
-                "reward_id": "252039",             // --> Mandatory Field
+                "split_amount": "98",             
+                "reward_mode": "burn",            
+                "reward_id": "252039",             
                 "reward_details": null,
-                "payment_method_type": "REWARD",   // --> Mandatory Field
-                "payment_method": "TWID",          // --> Mandatory Field
+                "payment_method_type": "REWARD",   
+                "payment_method": "TWID",         
                 "mobile_number": null,
                 "direct_wallet_token": null,
                 "card_token": null,
