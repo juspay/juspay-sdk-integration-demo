@@ -1,0 +1,32 @@
+{
+    "service": "in.juspay.ec",
+    "requestId": "70a92203-01ae-49c9-9e95-ee8704da00c0",
+    "payload": {
+        "signature": "<signature>",
+        "paymentMethod": "NB_SBI",
+        "orderId": "HI-AWi538bQ3I",
+        "orderDetails": "<orderDetails>",
+        "merchantKeyId": "1234",
+        "endUrls": [
+            ""
+        ],
+        "clientAuthToken": "<clientAuthToken>",
+        "amount": 100,
+        "additionalPaymentDetails": [
+            {
+                "voucher_id": null,
+                "split_amount": "98",              // --> Mandatory Field
+                "reward_mode": "burn",             // --> Mandatory Field
+                "reward_id": "252039",             // --> Mandatory Field
+                "reward_details": null,
+                "payment_method_type": "REWARD",   // --> Mandatory Field
+                "payment_method": "TWID",          // --> Mandatory Field
+                "mobile_number": null,
+                "direct_wallet_token": null,
+                "card_token": null,
+                "card_security_code": null
+            }
+        ],
+        "action": "nbTxn"
+    },
+}
