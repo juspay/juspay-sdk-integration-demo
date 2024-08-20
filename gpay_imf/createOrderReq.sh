@@ -1,0 +1,17 @@
+curl --location 'https://api.juspay.in/ecr/orders' \
+--header 'x-merchant-id: azhar_test' \
+--header 'Authorization: Basic OUI2QzNDMDU2RDA0MkU2OUY3MjAyNUM4NjhEOTE1Og==' \
+--form 'order_id="order_1706877781"' \
+--form 'amount="1.00"' \
+--form 'currency="INR"' \
+--form 'customer_id="cth_hRDcD6K8RX8VX4xN"' \
+--form 'customer_email="nagendra.p@juspay.com"' \
+--form 'customer_phone="8123894779"' \
+--form 'billing_address_first_name="Parth"' \
+--form 'billing_address_city="Bengaluru"' \
+--form 'shipping_address_city="Mumbai"' \
+--form 'shipping_address_first_name="Parth"' \
+--form 'description="Hello"' \
+--form 'return_url="https://e3eddc853c4779a74c935d89cb74c3c4.m.pipedream.net"' \
+--form 'gateway_id="517"' \
+--form 'metadata.GPAY_IMF:gateway_reference_id="prodgpayimf"'

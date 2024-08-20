@@ -1,0 +1,11 @@
+curl --location 'https://api.juspay.in/txns' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'order_id=order_1706877388' \
+--data-urlencode 'merchant_id=paypal-juspay' \
+--data-urlencode 'payment_method_type=UPI' \
+--data-urlencode 'payment_method=UPI' \
+--data-urlencode 'format=json' \
+--data-urlencode 'txn_type=UPI_PAY' \
+--data-urlencode 'sdk_params=true' \
+--data-urlencode 'upi_app=com.google.android.apps.nbu.paisa.user' \
+--data-urlencode 'redirect_after_payment=true'

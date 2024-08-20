@@ -1,0 +1,12 @@
+{
+    "status": "CREATED",
+    "status_id": 1,
+    "id": "ordeh_96df475aad024f23b878dd3a3752acc2",
+    "order_id": "order_1706877388",
+    "payment_links": {
+        "iframe": "https://jusp.in/r/rV4CI7",
+        "web": "https://jusp.in/r/FXWvkE",
+        "mobile": "https://jusp.in/r/VqXcGB"
+    },
+    "order_expiry": "2024-02-05T12:36:28Z"
+}

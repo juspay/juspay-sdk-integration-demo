@@ -1,0 +1,25 @@
+{
+    "order_id": "order_1706877388",
+    "status": "PENDING_VBV",
+    "payment": {
+        "sdk_params": {
+            "amount": 1,
+            "tn": "SUCCEEDED",
+            "customer_last_name": "R",
+            "customer_first_name": "Parth",
+            "merchant_vpa": "gpayonlinepa@okpayaxis",
+            "merchant_name": "x",
+            "mcc": "5946",
+            "tr": "order_1706877388"
+        },
+        "authentication": {
+            "url": "https://api.juspay.in/v2/pay/start/paypal-juspay/mozdyGqerApGooPj3he?cardIssuerBankName%3DUPI%26cardType%3DUPI%26paymentMethod%3DUPI%26paymentMethodType%3DUPI",
+            "method": "GET"
+        }
+    },
+    "txn_uuid": "mozdyGqerApGooPj3he",
+    "offer_details": {
+        "offers": []
+    },
+    "txn_id": "order_1706877388"
+}
