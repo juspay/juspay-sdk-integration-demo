@@ -1,0 +1,56 @@
+{
+    "request_id": "a00fa583-50c4-442d-93fa-0533d4c41dc5",
+    "service": "ec",
+    "value": {
+        "ended": {
+            "error": false,
+            "errorCode": "",
+            "errorMessage": "",
+            "payload": {
+                "action": "nbTxn",
+                "errorInfo": {},
+                "merchantId": "<merchantID>",
+                "orderId": "s07QmOTbo3oRRn7I",
+                "otherInfo": {
+                    "realtime": {
+                        "clientAuthToken": "",
+                        "clientId": "<client_id>",
+                        "customerId": "qo0dhh1cstv2dmx",
+                        "environment": "production",
+                        "isWrapper": "false",
+                        "lastVisitedUrl": "https://www.tpsl-india.in/PaymentGateway/txnres.mer",
+                        "merchantId": "<merchant_id>",
+                        "merchantKeyId": "",
+                        "requestID": "4cc6c662-ff2c-4cfa-852c-87bad1e1194b",
+                        "requestId": "a00fa583-50c4-442d-93fa-0533d4c41dc5",
+                        "signature": "",
+                        "signaturePayload": "",
+                    },
+                    "url": "https://api.juspay.in/v2/pay/finish/client_id/mozvErD1UPtMtrun5KK/s07QmOTbo3oRRn7I?useClientType=true"
+                },
+                "status": "CHARGED",
+                "statusId": 21,
+                "txnList": [
+                    {
+                        "paymentMethod": "NB_SBI",
+                        "paymentMethodType": "NB",
+                        "txnAmount": 200,
+                        "txnId": "s07QmOTbo3oRRn7I-1-1",
+                        "txnStatus": "CHARGED",
+                        "txnUuid": "mozvErD1UPtMtrun5KK"
+                    },
+                    {
+                        "paymentMethod": "TWID",
+                        "paymentMethodType": "REWARD",
+                        "txnAmount": 0,
+                        "txnId": "s07QmOTbo3oRRn7I-1-2",
+                        "txnStatus": "CHARGED",
+                        "txnUuid": "moz2SCwYng7dRw9uKd7"
+                    }
+                ]
+            },
+            "requestId": "a00fa583-50c4-442d-93fa-0533d4c41dc5",
+            "service": "in.juspay.ec"
+        }
+    }
+}
