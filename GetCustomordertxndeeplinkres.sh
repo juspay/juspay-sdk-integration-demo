@@ -4,9 +4,9 @@
     "id": "ordeh_5d4f1f5d2135453aadd08703297c0c2b",
     "order_id": "orderIdIs67267",
     "payment_links": {
-        "iframe": "https://sandbox.hyperpg.in/orders/ordeh_5d4f1f5d2135453aadd08703297c0c2b/payment-page",
-        "web": "https://sandbox.hyperpg.in/orders/ordeh_5d4f1f5d2135453aadd08703297c0c2b/payment-page",
-        "mobile": "https://sandbox.hyperpg.in/orders/ordeh_5d4f1f5d2135453aadd08703297c0c2b/payment-page"
+        "iframe": "https://api.hyperpg.in/orders/ordeh_5d4f1f5d2135453aadd08703297c0c2b/payment-page",
+        "web": "https://api.hyperpg.in/orders/ordeh_5d4f1f5d2135453aadd08703297c0c2b/payment-page",
+        "mobile": "https://api.hyperpg.in/orders/ordeh_5d4f1f5d2135453aadd08703297c0c2b/payment-page"
     },
     "deep_link": "upi://pay?tr=mandate_juspay-orderIdIs67267-1&mc=5816&pa=STAGEONLINE@ybl&pn=Stage&am=2.00&cu=INR",
     "udf9": "",
