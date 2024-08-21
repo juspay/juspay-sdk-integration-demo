@@ -1,0 +1,16 @@
+{
+    "id": "EV004433221AA",
+    "object": "event",
+    "created": 1530224170,
+    "livemode": false,
+    "data": {
+      "id": "SC00AABBCCDD11",
+      "object": "customer",
+      "created": 1530224170
+      },
+    "type": "customer.created",
+    "resource_id": "SC00AABBCCDD11",
+    "webhook_sent": true,
+    "webhook_attempts": 0,
+    "webhook_notified": true
+  }
