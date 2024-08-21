@@ -1,0 +1,17 @@
+{
+    "object": "list",
+    "url": "/v1/ach_debit_collections",
+    "has_more": false,
+    "data": [
+          {
+              "id": "DO004433221AA"
+          },
+          {
+              "id": "DO004433221BB"
+          },
+          {
+              "id": "DO004433221CC"
+          }
+    ]
+  }
+  

@@ -1,0 +1,12 @@
+{
+    "id": "DO0011DD2211AA",
+    "object": "ach_debit_collection",
+    "created": 1530224170,
+    "livemode": false,
+    "amount": 2212300,
+    "count": 3,
+    "date_value": "2021-03-24",
+    "bank_account": "BA00CC332211AA",
+    "nach_profile": "NP00AABBCC1122"
+  }
+  
