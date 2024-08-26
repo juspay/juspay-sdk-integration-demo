@@ -5,7 +5,7 @@ curl --location --request POST 'https://sandbox.juspay.in/orders' \
 --data-urlencode 'order_id=12345 \
 --data-urlencode 'amount=10' \
 --data-urlencode 'currency=INR' \
---data-urlencode 'customer_id=cust_test \
+--data-urlencode 'customer_id=cust_test' \
 --data-urlencode 'customer_email=aa@aa.com' \
 --data-urlencode 'return_url=https://requestbin.juspay.net' \
 --data-urlencode 'product_id=123' \
