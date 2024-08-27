@@ -72,7 +72,7 @@
                     "risk_checks": [
                         {
                             "invocation_mode": "PARALLEL",
-                            "txn_id": "hopscotch-123-1-1",
+                            "txn_id": "juspay-123-1-1",
                             "recommended_action": "proceed",
                             "status": "COMPLETED",
                             "provider": "JUSPAYFRM",
@@ -179,7 +179,7 @@
                 }
             ],
             "customer_phone": "FILTERED",
-            "order_id": "36980366",
+            "order_id": "123",
             "customer_id": "8244155",
             "amount": 1673,
             "status": "AUTHORIZATION_FAILED",
