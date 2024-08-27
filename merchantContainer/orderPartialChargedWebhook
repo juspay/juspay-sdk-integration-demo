@@ -1,0 +1,181 @@
+{
+    "event_name": "ORDER_PARTIAL_CHARGED",
+    "content": {
+        "order": {
+            "txn_list": [
+                {
+                    "payer_app_name": "phonepe://pay",
+                    "payer_vpa": "FILTERED",
+                    "payment_method": "UPI",
+                    "payment_gateway_response": {
+                        "network_error_message": null,
+                        "txn_id": "juspay-123-1-1",
+                        "rrn": "1122334455",
+                        "auth_id_code": "NA",
+                        "resp_message": "Transaction Successful",
+                        "gateway_response": {
+                            "payment_status": "SUCCESS",
+                            "payment_method": {
+                                "upi": {
+                                    "channel": "FILTERED",
+                                    "upi_id": "FILTERED"
+                                }
+                            },
+                            "cf_payment_id": 1234213,
+                            "order_id": "juspay-123",
+                            "entity": "payment",
+                            "upi_id": "FILTERED",
+                            "payment_message": "Transaction Successful",
+                            "payment_time": "2024-01-01T08:54:38+05:30",
+                            "payment_currency": "FILTERED",
+                            "payment_amount": 1951,
+                            "payment_group": "upi",
+                            "bank_reference": "FILTERED",
+                            "order_amount": 1951,
+                            "payment_completion_time": "2024-01-01T08:54:48+05:30",
+                            "is_captured": true
+                        },
+                        "epg_txn_id": "1234213",
+                        "gateway_merchant_id": null,
+                        "resp_code": "SUCCESS",
+                        "created": "2024-01-01T03:24:47Z",
+                        "eci": null,
+                        "network_error_code": null,
+                        "arn": null
+                    },
+                    "txn_id": "juspay-123-1-1",
+                    "gateway_reference_id": null,
+                    "txn_detail": {
+                        "txn_id": "juspay-123-1-1",
+                        "order_id": "123",
+                        "error_code": null,
+                        "txn_flow_type": "INTENT",
+                        "status": "CHARGED",
+                        "express_checkout": false,
+                        "gateway_id": 100,
+                        "error_message": "",
+                        "offer_deduction_amount": null,
+                        "tax_amount": null,
+                        "currency": "INR",
+                        "txn_amount_breakup": [
+                            {
+                                "amount": 1951,
+                                "method": "ADD",
+                                "sno": "FILTERED",
+                                "name": "BASE"
+                            }
+                        ],
+                        "txn_amount": 1951,
+                        "created": "2024-01-01T03:24:37Z",
+                        "gateway": "DUMMY",
+                        "surcharge_amount": null,
+                        "last_updated": "2024-01-01T03:24:49Z",
+                        "txn_uuid": "moz********LkQ",
+                        "net_amount": 5950,
+                        "redirect": true,
+                        "metadata": {
+                            "payment_channel": "IOS"
+                        }
+                    },
+                    "status": "CHARGED",
+                    "offers": [],
+                    "resp_message": null,
+                    "refunded": false,
+                    "gateway_id": 100,
+                    "effective_amount": 1951,
+                    "auth_type": "",
+                    "resp_code": null,
+                    "upi": {
+                        "payer_vpa": "FILTERED",
+                        "txn_flow_type": "INTENT",
+                        "payer_app": "phonepe://pay"
+                    },
+                    "payment_method_type": "UPI",
+                    "txn_uuid": "moz********LkQ",
+                    "resp_category": null,
+                    "bank_error_code": "",
+                    "bank_error_message": ""
+                },
+                {
+                    "payment_method": "JUSPAY_WALLET",
+                    "txn_id": "juspay-123-1-2",
+                    "gateway_reference_id": null,
+                    "txn_detail": {
+                        "txn_id": "juspay-123-1-2",
+                        "order_id": "123",
+                        "error_code": null,
+                        "status": "TO_BE_CHARGED",
+                        "express_checkout": false,
+                        "gateway_id": 267,
+                        "error_message": "",
+                        "offer_deduction_amount": null,
+                        "tax_amount": null,
+                        "currency": "INR",
+                        "txn_amount_breakup": [
+                            {
+                                "amount": 3999,
+                                "method": "ADD",
+                                "sno": "FILTERED",
+                                "name": "BASE"
+                            }
+                        ],
+                        "txn_amount": 3999,
+                        "created": "2024-01-01T03:24:37Z",
+                        "gateway": "MERCHANT_CONTAINER",
+                        "surcharge_amount": null,
+                        "last_updated": "2024-01-01T03:24:37Z",
+                        "txn_uuid": "moz********nfsZ",
+                        "net_amount": 5950,
+                        "redirect": false
+                    },
+                    "status": "TO_BE_CHARGED",
+                    "offers": [],
+                    "resp_message": null,
+                    "refunded": false,
+                    "gateway_id": 267,
+                    "effective_amount": 3999,
+                    "auth_type": "",
+                    "resp_code": null,
+                    "payment_method_type": "MERCHANT_CONTAINER",
+                    "txn_uuid": "moz********fsZ",
+                    "resp_category": null,
+                    "bank_error_code": "",
+                    "bank_error_message": ""
+                }
+            ],
+            "customer_phone": "FILTERED",
+            "udf8": "",
+            "order_id": "3593869207",
+            "udf9": "",
+            "customer_id": "testCustomer",
+            "amount": 5950,
+            "udf4": "",
+            "status": "PARTIAL_CHARGED",
+            "udf5": "",
+            "udf6": "",
+            "status_id": 37,
+            "udf7": "",
+            "product_id": "",
+            "udf10": "",
+            "udf1": "",
+            "udf2": "",
+            "udf3": "",
+            "date_created": "2024-01-01T03:24:37Z",
+            "id": "ordeh_123",
+            "merchant_id": "Curefit",
+            "return_url": "https://www.juspay.in",
+            "effective_amount": 5950,
+            "currency": "INR",
+            "customer_email": "1111111",
+            "last_updated": "2024-01-01T03:24:49Z",
+            "payment_links": {
+                "mobile": "https://payments.juspay.in/payment-page/order/ordeh_123",
+                "web": "https://payments.juspay.in/payment-page/order/ordeh_123",
+                "iframe": "https://payments.juspay.in/payment-page/order/ordeh_123"
+            },
+            "amount_refunded": 0
+        }
+    },
+    "date_created": "2024-01-01T03:24:49Z",
+    "id": "evt_V2_90sjdfhjkasjhkedsfsd231237"
+}
