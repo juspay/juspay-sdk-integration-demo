@@ -1,0 +1,218 @@
+{
+    "event_name": "ORDER_FAILED",
+    "content": {
+        "order": {
+            "txn_list": [
+                {
+                    "payer_app_name": "tez://upi/pay",
+                    "payment_method": "UPI",
+                    "payment_gateway_response": {
+                        "network_error_message": null,
+                        "txn_id": "juspay-123-1-1",
+                        "rrn": null,
+                        "auth_id_code": null,
+                        "resp_message": "REQUEST_EXPIRED",
+                        "epg_txn_id": null,
+                        "gateway_merchant_id": null,
+                        "resp_code": "REQUEST_EXPIRED",
+                        "created": "2024-01-01T04:33:00Z",
+                        "network_error_code": null,
+                        "arn": null
+                    },
+                    "txn_id": "juspay-123-1-1",
+                    "gateway_reference_id": null,
+                    "txn_detail": {
+                        "response_message": "Transaction failed as it could not be completed in time. Please retry",
+                        "txn_id": "juspay-123-1-1",
+                        "order_id": "123",
+                        "error_code": "REQUEST_EXPIRED",
+                        "txn_flow_type": "INTENT",
+                        "status": "AUTHORIZATION_FAILED",
+                        "express_checkout": false,
+                        "gateway_id": 100,
+                        "error_message": "REQUEST_EXPIRED",
+                        "offer_deduction_amount": null,
+                        "tax_amount": null,
+                        "currency": "INR",
+                        "txn_amount_breakup": [
+                            {
+                                "amount": 1655,
+                                "method": "ADD",
+                                "sno": "FILTERED",
+                                "name": "BASE"
+                            }
+                        ],
+                        "txn_amount": 1655,
+                        "created": "2024-01-01T04:27:55Z",
+                        "gateway": "DUMMY",
+                        "surcharge_amount": null,
+                        "last_updated": "2024-01-01T04:40:03Z",
+                        "txn_uuid": "moz*******vno",
+                        "net_amount": 1673,
+                        "redirect": true,
+                        "metadata": {
+                            "payment_channel": "IOS"
+                        },
+                        "response_code": "TXN_EXPIRED"
+                    },
+                    "status": "AUTHORIZATION_FAILED",
+                    "offers": [],
+                    "resp_message": "Transaction failed as it could not be completed in time. Please retry",
+                    "refunded": false,
+                    "gateway_id": 100,
+                    "effective_amount": 1655,
+                    "auth_type": "",
+                    "resp_code": "TXN_EXPIRED",
+                    "upi": {
+                        "txn_flow_type": "INTENT",
+                        "payer_app": "tez://upi/pay"
+                    },
+                    "payment_method_type": "UPI",
+                    "txn_uuid": "moz*******vno",
+                    "risk_checks": [
+                        {
+                            "invocation_mode": "PARALLEL",
+                            "txn_id": "hopscotch-123-1-1",
+                            "recommended_action": "proceed",
+                            "status": "COMPLETED",
+                            "provider": "JUSPAYFRM",
+                            "flagged": false
+                        },
+                        {
+                            "invocation_mode": "PARALLEL",
+                            "txn_id": "juspay-123-1-2",
+                            "recommended_action": "proceed",
+                            "status": "COMPLETED",
+                            "provider": "JUSPAYFRM",
+                            "flagged": false
+                        }
+                    ],
+                    "resp_category": "USER_DROPPED",
+                    "bank_error_code": "REQUEST_EXPIRED",
+                    "metadata": {
+                        "payment_page_client_id": "juspay",
+                        "merchant_container_list": "FILTERED",
+                        "payment_page_sdk_payload": "FILTERED",
+                        "payment_links": {
+                            "mobile": "https://payments.juspay.in/payment-page/order/ordeh_123",
+                            "web": "https://payments.juspay.in/payment-page/order/ordeh_123",
+                            "iframe": "https://payments.juspay.in/payment-page/order/ordeh_123"
+                        },
+                        "merchant_payload": "{\"customerEmail\":\"1111111\",\"customerPhone\":\"1111111\",\"metadata.merchantContainerList\":\"[{\\\"payment_method\\\":\\\"JUSPAY_WALLET\\\",\\\"payment_method_type\\\":\\\"MERCHANT_CONTAINER\\\",\\\"display_name\\\":\\\"Juspay Wallet\\\",\\\"walletIconURL\\\":\\\"https://juspay.png\\\",\\\"balance_amount\\\":18.0,\\\"eligible_amount\\\":18.0,\\\"isPreSelected\\\":true}]\"}"
+                    },
+                    "bank_error_message": "REQUEST_EXPIRED"
+                },
+                {
+                    "payment_method": "JUSPAY_WALLET",
+                    "txn_id": "juspay-123-1-2",
+                    "gateway_reference_id": null,
+                    "txn_detail": {
+                        "txn_id": "juspay-123-1-2",
+                        "order_id": "123",
+                        "error_code": null,
+                        "status": "TO_BE_CHARGED",
+                        "express_checkout": false,
+                        "gateway_id": 267,
+                        "error_message": "",
+                        "offer_deduction_amount": null,
+                        "tax_amount": null,
+                        "currency": "INR",
+                        "txn_amount_breakup": [
+                            {
+                                "amount": 18,
+                                "method": "ADD",
+                                "sno": "FILTERED",
+                                "name": "BASE"
+                            }
+                        ],
+                        "txn_amount": 18,
+                        "created": "2024-01-01T04:27:54Z",
+                        "gateway": "MERCHANT_CONTAINER",
+                        "surcharge_amount": null,
+                        "last_updated": "2024-01-01T04:27:55Z",
+                        "txn_uuid": "moz*******QJN",
+                        "net_amount": 1673,
+                        "redirect": false
+                    },
+                    "status": "TO_BE_CHARGED",
+                    "offers": [],
+                    "resp_message": null,
+                    "refunded": false,
+                    "gateway_id": 267,
+                    "effective_amount": 18,
+                    "auth_type": "",
+                    "resp_code": null,
+                    "payment_method_type": "MERCHANT_CONTAINER",
+                    "txn_uuid": "moz*******QJN",
+                    "risk_checks": [
+                        {
+                            "invocation_mode": "PARALLEL",
+                            "txn_id": "juspay-123-1-1",
+                            "recommended_action": "proceed",
+                            "status": "COMPLETED",
+                            "provider": "JUSPAYFRM",
+                            "flagged": false
+                        },
+                        {
+                            "invocation_mode": "PARALLEL",
+                            "txn_id": "juspay-123-1-2",
+                            "recommended_action": "proceed",
+                            "status": "COMPLETED",
+                            "provider": "JUSPAYFRM",
+                            "flagged": false
+                        }
+                    ],
+                    "resp_category": null,
+                    "bank_error_code": "",
+                    "metadata": {
+                        "payment_page_client_id": "juspay",
+                        "merchant_container_list": "FILTERED",
+                        "payment_page_sdk_payload": "FILTERED",
+                        "payment_links": {
+                            "mobile": "https://payments.juspay.in/payment-page/order/ordeh_123",
+                            "web": "https://payments.juspay.in/payment-page/order/ordeh_123",
+                            "iframe": "https://payments.juspay.in/payment-page/order/ordeh_123"
+                        },
+                        "merchant_payload": "{\"customerEmail\":\"1111111\",\"customerPhone\":\"1111111\",\"metadata.merchantContainerList\":\"[{\\\"payment_method\\\":\\\"JUSPAY_WALLET\\\",\\\"payment_method_type\\\":\\\"MERCHANT_CONTAINER\\\",\\\"display_name\\\":\\\"Juspay Wallet\\\",\\\"walletIconURL\\\":\\\"https://juspay.png\\\",\\\"balance_amount\\\":18.0,\\\"eligible_amount\\\":18.0,\\\"isPreSelected\\\":true}]\"}"
+                    },
+                    "bank_error_message": ""
+                }
+            ],
+            "customer_phone": "FILTERED",
+            "order_id": "36980366",
+            "customer_id": "8244155",
+            "amount": 1673,
+            "status": "AUTHORIZATION_FAILED",
+"ItPQj1qMqcEydWyyF4851kK1GB0Jpy95UXq+MT9jig+9",
+            "status_id": 27,
+            "date_created": "2024-01-01T04:27:50Z",
+            "id": "ordeh_123",
+            "merchant_id": "juspay",
+            "return_url": "https://www.juspay.in",
+            "effective_amount": 1673,
+            "currency": "INR",
+            "customer_email": "1111111",
+            "additional_info": {},
+            "last_updated": "2024-01-01T04:40:03Z",
+            "payment_links": {
+                "mobile": "https://payments.juspay.in/payment-page/order/ordeh_123",
+                "web": "https://payments.juspay.in/payment-page/order/ordeh_123",
+                "iframe": "https://payments.juspay.in/payment-page/order/ordeh_123"
+            },
+            "amount_refunded": 0,
+            "metadata": {
+                "payment_page_client_id": "juspay",
+                "merchant_container_list": "FILTERED",
+                "payment_page_sdk_payload": "FILTERED",
+                "payment_links": {
+                    "mobile": "https://payments.juspay.in/payment-page/order/ordeh_123",
+                    "web": "https://payments.juspay.in/payment-page/order/ordeh_123",
+                    "iframe": "https://payments.juspay.in/payment-page/order/ordeh_123"
+                },
+                "merchant_payload": "{\"customerEmail\":\"1111111\",\"customerPhone\":\"1111111\",\"metadata.merchantContainerList\":\"[{\\\"payment_method\\\":\\\"JUSPAY_WALLET\\\",\\\"payment_method_type\\\":\\\"MERCHANT_CONTAINER\\\",\\\"display_name\\\":\\\"Juspay Wallet\\\",\\\"walletIconURL\\\":\\\"https://juspay.png\\\",\\\"balance_amount\\\":18.0,\\\"eligible_amount\\\":18.0,\\\"isPreSelected\\\":true}]\"}"
+            }
+        }
+    },
+    "date_created": "2024-01-01T04:40:03Z",
+    "id": "evt_V2_c75664sdfjhksefd62e97c39"
+}
