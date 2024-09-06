@@ -8,7 +8,7 @@ sample_payload/infoplist.jsonclass WebViewController: UIViewController, WKNaviga
     ...
     
     
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
         if (hyper == nil) {
             hyper = HyperWebViewServices(webView: webView, isIframeIntegration: false)
         }
