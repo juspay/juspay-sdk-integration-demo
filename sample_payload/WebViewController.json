@@ -1,4 +1,4 @@
-sample_payload/infoplist.jsonclass WebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate{
+class WebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     var webView: WKWebView!
     var hyper: HyperWebViewServices?
     ...
