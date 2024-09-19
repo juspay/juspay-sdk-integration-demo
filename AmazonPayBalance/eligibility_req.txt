@@ -1,0 +1,4 @@
+curl --location 'https://sandbox.juspay.in/customers/customer_id/eligibility' \
+--header 'Authorization: Basic xxxxxxxxx' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'amount=10' \
