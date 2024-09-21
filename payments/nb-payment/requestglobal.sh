@@ -1,7 +1,13 @@
-curl -X POST https://api.juspay.in/txns \
--d "order_id=:order_id" \
--d "merchant_id=:merchant_id" \
--d "payment_method_type=NB" \
--d "payment_method=NB_BCA" \
--d "redirect_after_payment=true" \
--d "format=json"
+curl --location 'https://api.juspay.in/txns' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'Authorization: Basic xxx==xxx345' \
+--data-urlencode 'merchant_id=:merchant_id' \
+--data-urlencode 'payment_method_type=NB' \
+--data-urlencode 'payment_method=NB_BCA' \
+--data-urlencode 'redirect_after_payment=true' \
+--data-urlencode 'format=json' \
+--data-urlencode 'order.order_id=:order_id' \
+--data-urlencode 'order.amount=100' \
+--data-urlencode 'order.currency=IDR' \
+--data-urlencode 'order.customer_id=test123' \
+--data-urlencode 'order.customer_phone=9164326296'
