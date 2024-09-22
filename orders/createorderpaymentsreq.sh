@@ -1,27 +1,28 @@
-{
-"order.order_id":"ord_1590759422",
-"order.amount":"1",
-"order.currency":"HKD",
-"payment_page_client_id":"merchant",
-"order.customer_id":"sgtest9",
-"order.return_url":"https://juspay.in/return/confirmationpage",
-"merchant_id":"merchant",
-//"order.metadata.txns.auto_capture":"false",
-//"order.metadata.JUSPAY:gateway_reference_id":"entity1",
-"payment_method_type":"CARD",
-//"payment_method":"VISA",
-//"card_number":"4854989897599015",
-//"card_exp_month":"07",
-//"card_exp_year":"24",
-//"name_on_card":"Name",
-//"card_security_code":"608",
-"save_to_locker":"true",
-"redirect_after_payment":"true",
-//"order.customer_email":"customer@gmail.com",
-//"order.customer_phone":"9874545331",
-"order.description":"Sample description",
-"card_token":"tkn_4ce192bbc23f98756882524f28159bfa3",
-"order.metadata.txns.allow_card_no_3ds":"true",
-"auth_type":"NO_THREE_DS",
-"format":"json"
-}
+curl --location 'https://api.juspay.in/txns' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'Authorization: Basic xxx==xxx345' \
+--data-urlencode 'merchant_id=:merchant_id' \
+--data-urlencode 'payment_method_type=CARD' \
+--data-urlencode 'payment_method=VISA' \
+--data-urlencode 'redirect_after_payment=true' \
+--data-urlencode 'format=json' \
+--data-urlencode 'order.order_id=:ord_1590759422' \
+--data-urlencode 'order.amount=1' \
+--data-urlencode 'order.currency=HKD' \
+--data-urlencode 'order.customer_id=test123' \
+--data-urlencode 'order.customer_phone=9164326296'\
+--data-urlencode 'payment_page_client_id=merchant'\
+--data-urlencode 'order.return_url=https://juspay.in/return/confirmationpage'\
+--data-urlencode 'order.metadata.txns.auto_capture=false'\
+--data-urlencode 'order.metadata.JUSPAY:gateway_reference_id=entity1'\
+--data-urlencode 'card_number=4854989897599015'\
+--data-urlencode 'card_exp_month=07'\
+--data-urlencode 'card_exp_year=24'\
+--data-urlencode 'name_on_card=Name'\
+--data-urlencode 'card_security_code=808'\
+--data-urlencode 'save_to_locker=true'\
+--data-urlencode 'order.customer_email=customer@gmail.com'\
+--data-urlencode 'order.description=Sample description'\
+--data-urlencode 'card_token=tkn_4ce192bbc23f987562524f28159bfa3'\
+--data-urlencode 'order.metadata.txns.allow_card_no_3ds=true'\
+--data-urlencode 'auth_type=NO_THREE_DS'
