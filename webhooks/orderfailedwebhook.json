@@ -1,0 +1,113 @@
+{
+    "event_name": "ORDER_FAILED",
+    "content": {
+      "order": {
+        "payment_method": "PAYPAY",
+        "customer_phone": null,
+        "payment_gateway_response": {
+          "auth_ref_num": null,
+          "network_error_message": null,
+          "txn_id": "Merchant-137288-10-160866-1",
+          "rrn": null,
+          "auth_id_code": null,
+          "resp_message": "Failed - Transaction timed out",
+          "epg_txn_id": "a0ucmaud63tyo9nf98b",
+          "gateway_merchant_id": null,
+          "resp_code": "6",
+          "created": "2024-09-20T18:28:17Z",
+          "eci": null,
+          "network_error_code": null,
+          "arn": null
+        },
+        "udf8": "",
+        "txn_id": "Merchant-137288-10-160866-1",
+        "order_id": "137288-10-160866",
+        "gateway_reference_id": null,
+        "udf9": "",
+        "txn_detail": {
+          "response_message": "Transaction timed out",
+          "txn_id": "Merchant-137288-10-160866-1",
+          "order_id": "137288-10-160866",
+          "error_code": "6",
+          "txn_flow_type": "REDIRECT_DEBIT",
+          "status": "AUTHENTICATION_FAILED",
+          "express_checkout": false,
+          "gateway_id": 1117,
+          "error_message": "Failed - Transaction timed out",
+          "offer_deduction_amount": null,
+          "tax_amount": null,
+          "currency": "JPY",
+          "txn_amount_breakup": [
+            {
+              "amount": 9150,
+              "method": "ADD",
+              "sno": "FILTERED",
+              "name": "BASE"
+            }
+          ],
+          "txn_amount": 9150,
+          "created": "2024-09-20T18:27:05Z",
+          "gateway": "BOKU",
+          "surcharge_amount": null,
+          "last_updated": "2024-09-21T06:27:45Z",
+          "txn_uuid": "moz6yNp1JR1vGFk",
+          "net_amount": 9150,
+          "redirect": true,
+          "response_code": "TECHNICAL_ERROR"
+        },
+        "customer_id": "80d14961e20151189788afc1dc22d66863130ec",
+        "amount": 9150,
+        "udf4": "",
+        "status": "AUTHENTICATION_FAILED",
+        "udf5": "",
+        "udf6": "",
+        "status_id": 26,
+        "offers": [],
+        "udf7": "",
+        "resp_message": "Transaction timed out",
+        "product_id": "",
+        "refunded": false,
+        "udf10": "",
+        "gateway_id": 1117,
+        "udf1": "",
+        "udf2": "",
+        "udf3": "",
+        "date_created": "2024-09-20T18:27:05Z",
+        "id": "ordeh_f7ac94855b8247f3b0d957616a",
+        "merchant_id": "Merchant",
+        "return_url": "https://www.Merchant.com/status",
+        "effective_amount": 9150,
+        "currency": "JPY",
+        "auth_type": "",
+        "customer_email": null,
+        "resp_code": "TECHNICAL_ERROR",
+        "payment_method_type": "WALLET",
+        "additional_info": {},
+        "wallet": {
+          "txn_flow_type": "REDIRECT_DEBIT"
+        },
+        "last_updated": "2024-09-21T06:27:45Z",
+        "txn_uuid": "moz6yNp1JR1vGFk",
+        "resp_category": "TECHNICAL_ERROR",
+        "payment_links": {
+          "mobile": "https://payments.juspay.in/payment-page/order/ordeh_f7ac94855b8247f3b0d957616a",
+          "web": "https://payments.juspay.in/payment-page/order/ordeh_f7ac94855b8247f3b0d957616a",
+          "iframe": "https://payments.juspay.in/payment-page/order/ordeh_f7ac94855b8247f3b0d957616a"
+        },
+        "amount_refunded": 0,
+        "bank_error_code": "6",
+        "metadata": {
+          "payment_page_client_id": "Merchant",
+          "payment_links": {
+            "mobile": "https://payments.juspay.in/payment-page/order/ordeh_f7ac94855b8247f3b0d957616a",
+            "web": "https://payments.juspay.in/payment-page/order/ordeh_f7ac94855b8247f3b0d957616a",
+            "iframe": "https://payments.juspay.in/payment-page/order/ordeh_f7ac94855b8247f3b0d957616a"
+          }
+        },
+        "emi_details": "FILTERED",
+        "bank_error_message": "Failed - Transaction timed out"
+      }
+    },
+    "date_created": "2024-09-21T06:27:45Z",
+    "id": "evt_V2_65b486e859c242d898482c0e7ef1db14"
+  }
