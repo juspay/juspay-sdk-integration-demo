@@ -1,0 +1,23 @@
+curl --location 'https://api.juspay.in/txns' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'Authorization: Basic xxx==xxx345' \
+--data-urlencode 'merchant_id=:merchant_id' \
+--data-urlencode 'payment_method_type=CARD' \
+--data-urlencode 'payment_method=VISA' \
+--data-urlencode 'card_token=tkn_4ce192bbc23f987568524f28159bfa3'\
+--data-urlencode 'card_security_code=808'\
+--data-urlencode 'order.metadata.txns.allow_card_no_3ds=true'\
+--data-urlencode 'auth_type=NO_THREE_DS'
+--data-urlencode 'redirect_after_payment=true' \
+--data-urlencode 'format=json' \
+--data-urlencode 'order.customer_id=test123' \
+--data-urlencode 'order.customer_phone=9184325496'\
+--data-urlencode 'order.mobile_country_code=966'\
+--data-urlencode 'order.customer_email=customer@gmail.com'\
+--data-urlencode 'order.order_id=:ord_1590759422' \
+--data-urlencode 'order.amount=1' \
+--data-urlencode 'order.currency=HKD' \
+--data-urlencode 'order.description=Sample description'\
+--data-urlencode 'order.return_url=https://juspay.in/return/confirmationpage'\
+--data-urlencode 'order.metadata.txns.auto_capture=false'\
+--data-urlencode 'order.metadata.JUSPAY:gateway_reference_id=entity1'\
