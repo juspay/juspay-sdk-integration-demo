@@ -1,5 +1,4 @@
 {
-    "req_body": {
       "event_name": "ORDER_SUCCEEDED",
       "content": {
         "order": {
@@ -110,5 +109,4 @@
       },
       "date_created": "2024-09-21T18:27:18Z",
       "id": "evt_V2_3bec4e70e1984c6093c566754f929fee"
-    }
   }
