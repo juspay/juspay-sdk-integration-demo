@@ -1,0 +1,16 @@
+{
+  "cardLastFour": "3497",
+  "tavv": "XXXXXXXXXXXXXXXX",                // Cryptogram is required to be passed in tavv
+  "requestorId": "{trid}",                   // token.requestor_id
+  "eci": "{eci}",
+  "cardNumber": "4788080252078243",          // Token number is required to be passed in card_number
+  "par": "V0010014622122423467188903638",
+  "cardExpMonth": "11",                      // token_expiry_month
+  "orderId": "test123",
+  "cardExpYear": "2029",                     // token_expiry_month
+  "action": "cardTxn",
+  "cardBin": "559344",
+  "amount": "805.00",
+  "cardSecurityCode": "123",
+  "clientAuthToken": "tkn_df6fbf7efd214f82ae85d1a0ff92097d"
+}
