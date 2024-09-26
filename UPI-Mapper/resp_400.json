@@ -1,0 +1,13 @@
+{
+    "status": "error",
+    "error_code": "invalid_request",
+    "error_message": "Bad request, Invalid Mobile Number",
+    "error_info": {
+        "category": "USER_ERROR",
+        "request_id": "89debb43-272f-4f00-a8a4-5b08eca4ac5a",
+        "href": "NA",
+        "developer_message": "Invalid request params",
+        "user_message": "Invalid request params. Please verify your input.",
+        "code": "INVALID_INPUT"
+    }
+}
