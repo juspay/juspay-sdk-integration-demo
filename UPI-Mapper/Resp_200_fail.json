@@ -1,0 +1,10 @@
+{
+  "status": "OK",
+  "response": {
+    "vpa": "NA",
+    "error_code": "Error in fetching vpa",
+    "error_message": "VN",
+    "customer_name": "NA"
+  },
+  "code": 200
+}
