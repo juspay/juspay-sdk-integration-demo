@@ -1,0 +1,13 @@
+curl --location 'https://api.juspay.in/orders' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'Authorization: Basic MzJCNDM3QxxxTZCNUI0OEE5O' \
+--data-urlencode 'order_id=test_17221138542' \
+--data-urlencode 'amount=1' \
+--data-urlencode 'currency=SKD' \
+--data-urlencode 'return_url=https://google.com' \
+--data-urlencode 'customer_id=cth_d7bYTYX1XKSFWjjTZ' \
+--data-urlencode 'customer_email=aasdkj@gmail.com' \
+--data-urlencode 'product_id=Testing' \
+--data-urlencode 'options.create_mandate=REQUIRED' \
+--data-urlencode 'mandate_max_amount=100' \
+--data-urlencode 'metadata.auto_refund_post_success=True'
