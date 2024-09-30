@@ -5,5 +5,5 @@
   "otp": "1234",
   "gatewayReferenceId": null,
   "clientAuthToken": "tkn_b82039848c504825aaa070a81f4e1086",
-  "action": "linkWallet"
+  "action": "linkWallet" 
 }
