@@ -1,29 +1,22 @@
 {
-    "service": "in.juspay.ec",
-    "requestId": "a9dab6ef-05ad-4f36-9305-11dafdb9af4e",
-    "payload": {
-        "wallet": "TWID_V2",
-        "token": "tkn_4739ad910fde4c50a7f0196b1fa3836f",
-        "auth_params": {
-            "is_resend_allowed": false,
-            "resend_wait_time": "15",
-            "is_submit_allowed": false
-        },
-        "last_refreshed": null,
-        "object": "wallet_account",
-        "id": "wlm_q2UkPy9Qk8gadYjc",
-        "current_balance": null,
-        "sub_details": [
-            {
-                "payment_method": "TWID",
-                "payment_method_type": "REWARD",
-                "last_refreshed": null,
-                "current_balance": null
-            }
-        ],
-        "linked": true
-    },
-    "errorMessage": "",
-    "errorCode": "",
-    "error": false
+  "wallet": "TWID_V2",
+  "token": "tkn_4739ad910fde4c50a7f0196b1fa3836f",
+  "auth_params": {
+    "is_resend_allowed": false,
+    "resend_wait_time": "15",
+    "is_submit_allowed": false
+  },
+  "last_refreshed": null,
+  "object": "wallet_account",
+  "id": "wlm_q2UkPy9Qk8gadYjc",
+  "current_balance": null,
+  "sub_details": [
+    {
+      "payment_method": "TWID",
+      "payment_method_type": "REWARD",
+      "last_refreshed": null,
+      "current_balance": null
+    }
+  ],
+  "linked": true
 }
