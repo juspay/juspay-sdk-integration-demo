@@ -1,26 +1,33 @@
 {
-  "wallet": "TWID_V2",
-  "token": null,
-  "auth_params": {
-    "is_resend_allowed": true,
-    "resend_wait_time": "15",
-    "is_submit_allowed": true
+  "service": "in.juspay.ec",
+  "requestId": "a9dab6ef-05ad-4f36-9305-11dafdb9af4e",
+  "payload": {
+    "wallet": "TWID_V2",
+    "token": null,
+    "auth_params": {
+      "is_resend_allowed": true,
+      "resend_wait_time": "15",
+      "is_submit_allowed": true
+    },
+    "last_refreshed": null,
+    "object": "wallet_account",
+    "metadata": {
+      "mobile_number": "9078814008"
+    },
+    "id": "wlm_q2UkPy9Qk8gadYjc",
+    "current_balance": null,
+    "gateway_reference_id": "twid-s2s",
+    "sub_details": [
+      {
+        "payment_method": "TWID",
+        "payment_method_type": "REWARD",
+        "last_refreshed": null,
+        "current_balance": null
+      }
+    ],
+    "linked": false
   },
-  "last_refreshed": null,
-  "object": "wallet_account",
-  "metadata": {
-    "mobile_number": "907***4008"
-  },
-  "id": "wlm_q2UkPy9Qk8gadYjc",
-  "current_balance": null,
-  "gateway_reference_id": "twid-s2s",
-  "sub_details": [
-    {
-      "payment_method": "TWID",
-      "payment_method_type": "REWARD",
-      "last_refreshed": null,
-      "current_balance": null
-    }
-  ],
-  "linked": false
+  "errorMessage": "",
+  "errorCode": "",
+  "error": false
 }
