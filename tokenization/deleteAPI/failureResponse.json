@@ -1,0 +1,5 @@
+{
+  "error": true,
+   "error_message": "INVALID_REQUEST",
+   "user_message": "card_reference or customer_id is invalid"
+}
