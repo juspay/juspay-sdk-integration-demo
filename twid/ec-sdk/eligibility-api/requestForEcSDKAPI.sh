@@ -1,23 +1,8 @@
-{
-    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
-    "service": "in.juspay.hyperapi",
-    "payload": {
-        "action": "eligibility",
-        "amount": "1.00",
-        "data": {
-            "wallets": [
-                {
-                    "mobileNumber": "1111111111",
-                    "mobile": "1111111111",
-                    "gatewayReferenceId": "amazon_test",
-                    "email": "test@mail.com",
-                    "customerId": "cth_pKL9ayw75febC1Dd",
-                 }
-            ],
-            "cards": []
-        },
-        "device_params": null,
-        "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213",
-        "showLoader": true,
-    }
-}
+curl --location 'https://api.juspay.in/customers/<customerId>/eligibility' \
+--header 'Authorization: <Auth Key>' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'version: <current date>' \           --- This is mandatory for Twid v2
+--data-urlencode 'amount=100' \
+--data-urlencode 'gateway_reference_id=refId' \
+--data-urlencode 'order_id=orderId' \
+--data-urlencode 'mobile_number=mobile_number'
