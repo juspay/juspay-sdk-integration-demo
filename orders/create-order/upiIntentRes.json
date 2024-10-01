@@ -1,0 +1,30 @@
+{
+    "order_id": "mandateJuspay_1727354822",
+    "status": "PENDING_VBV",
+    "payment": {
+        "sdk_params": {
+            "scheme": "FILTERED",
+            "uri_params": {
+                "tn": "FILTERED",
+                "mode": "FILTERED",
+                "mn": "JUSPAY",
+                "cu": "INR",
+                "pn": "FILTERED",
+                "tid": "FILTERED",
+                "pa": "FILTERED",
+                "am": "500.00",
+                "tr": "mozekx85fkTvZ4BRVBK",
+                "mc": "7322",
+            }
+        },
+        "authentication": {
+            "url": "https://sandbox.juspay.in/v2/pay/start/simpl/mozekx85fkTvZ4BRVBK?cardIssuerBankName%3DPAY%26cardType%3DUPI%26paymentMethod%3DPAY%26paymentMethodType%3DUPI",
+            "method": "GET"
+        }
+    },
+    "txn_uuid": "mozekx85fkTvZ4BRVBK",
+    "offer_details": {
+        "offers": []
+    },
+    "txn_id": "s-mandateJuspay_1727354822-1"
+}
