@@ -1,0 +1,15 @@
+{
+    "order_id": "1727353428",
+    "status": "PENDING_VBV",
+    "payment": {
+        "authentication": {
+            "url": "https://sandbox.juspay.in/v2/pay/start/kotaksecurities/moz9sjMcDYKzNfDqp77?cardIssuerBankName%3DCOLLECT%26cardType%3DUPI%26paymentMethod%3DCOLLECT%26paymentMethodType%3DUPI",
+            "method": "GET"
+        }
+    },
+    "txn_uuid": "moz9sjMcDYKzNfDqp77",
+    "offer_details": {
+        "offers": []
+    },
+    "txn_id": "kotaksecurities-1727353428-1"
+}
