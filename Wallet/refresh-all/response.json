@@ -1,10 +1,10 @@
 {
   "list": [
     {
-      "wallet": "PAYTM",
+      "wallet": "PAYPAL",
       "token": "tk_04ec****cff6f4095a",
       "last_refreshed": "2022-02-17T06:58:08Z",
-      "juspay_bank_code": "JP_PAYTM",
+      "juspay_bank_code": "JP_PAYPAL",
       "object": "wallet_account",
       "metadata": {
         "mobile_number": "77****78"

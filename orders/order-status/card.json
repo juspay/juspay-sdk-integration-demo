@@ -7,7 +7,7 @@
     "id": "ordeh_57dfd768bb7d4896bc042y0b90bc9ad77",
     "merchant_id": "merchant_success",
     "amount": 1,
-    "currency": "SGD",
+    "currency": "BRL",
     "order_id": "JP1636474794",
     "date_created": "2021-11-09T16:19:55Z",
     "return_url": "",
@@ -60,7 +60,7 @@
             "error_message": "processed",
             "sent_to_gateway": true,
             "initiated_by": "API",
-            "refund_source": "STRIPE",
+            "refund_source": "PAYPAL",
             "refund_type": "STANDARD",
            "pg_processed_at": "2022-11-24T08:07:43Z",
            "error_code": "processed"
@@ -82,11 +82,11 @@
         "txn_amount": 1,
         "offer_deduction_amount": null,
         "gateway_id": 23,
-        "currency": "SGD",
+        "currency": "BRL",
         "express_checkout": true,
         "redirect": true,
         "txn_uuid": "eulwh5QbZSBvw35eWnH",
-        "gateway": "STRIPE",
+        "gateway": "PAYPAL",
         "error_message": "",
         "created": "2021-11-09T16:20:52Z"
     },
@@ -101,7 +101,7 @@
     },
     "gateway_id": 23,
     "metadata": {
-        "STRIPE:gateway_reference_id": "testmid"
+        "PAYPAL:gateway_reference_id": "testmid"
     },
     "gateway_reference_id": "testmid",
     "offers": []

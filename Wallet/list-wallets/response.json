@@ -4,7 +4,7 @@
     {
       "id": "wlt_q23xzki3pazgtezo",
       "object": "wallet_account",
-      "wallet": "MOBIKWIK",
+      "wallet": "PAYPAL",
       "token": "tok_winysteev9eftrwcv6me",
       "current_balance": 250,
       "linked": true,
@@ -13,7 +13,7 @@
     {
       "id": "wlt_mu2xfwb4mr18flbs",
       "object": "wallet_account",
-      "wallet": "FREECHARGE",
+      "wallet": "MERCADOPAGO",
       "token": null,
       "current_balance": null,
       "linked": false,
