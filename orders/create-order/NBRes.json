@@ -1,0 +1,15 @@
+{
+    "order_id": "1727353510",
+    "status": "PENDING_VBV",
+    "payment": {
+        "authentication": {
+            "url": "https://sandbox.juspay.in/v2/pay/start/kotaksecurities/moznpcLq8FqMyZN6J1q?cardIssuerBankName%3DJP_DUMMY%26cardType%3DNB%26paymentMethod%3DJP_DUMMY%26paymentMethodType%3DNB",
+            "method": "GET"
+        }
+    },
+    "txn_uuid": "moznpcLq8FqMyZN6J1q",
+    "offer_details": {
+        "offers": []
+    },
+    "txn_id": "kotaksecurities-1727353510-1"
+}
