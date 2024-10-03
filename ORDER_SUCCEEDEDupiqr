@@ -1,0 +1,87 @@
+{
+    "event_name": "ORDER_SUCCEEDED",
+    "content": {
+        "order": {
+            "payer_app_name": "",
+            "bank_pg": "UPI-PG",
+            "payment_method": "UPI",
+            "customer_phone": "FILTERED",
+            "payment_gateway_response": {
+                "txn_id": "test-40071826911-1",
+                "rrn": "43888933",
+                "auth_id_code": "880599",
+                "resp_message": "SUCCESS|Completed Using Callback",
+                "epg_txn_id": "190236",
+                "resp_code": "success",
+                "created": "2024-01-22T03:28:35Z"
+            },
+            "udf8": "",
+            "txn_id": "test-40071826911-1",
+            "order_id": "40071826911",
+            "gateway_reference_id": "",
+            "maximum_eligible_refund_amount": "FILTERED",
+            "udf9": "",
+            "txn_detail": {
+                "txn_id": "test-40071826911-1",
+                "order_id": "40071826911",
+                "error_code": "",
+                "txn_flow_type": "QR",
+                "status": "CHARGED",
+                "express_checkout": false,
+                "gateway_id": ,
+                "error_message": "",
+                "tax_amount": null,
+                "currency": "INR",
+                "txn_amount": 1295,
+                "created": "2024-01-22T03:28:05Z",
+                "gateway": "PAYU",
+                "surcharge_amount": null,
+                "txn_uuid": "mozcFisaWkZZPn",
+                "net_amount": 1295,
+                "redirect": true,
+                "metadata": {
+                    "payment_channel": "WEB"
+                }
+            },
+            "customer_id": null,
+            "amount": 1295,
+            "udf4": "",
+            "status": "CHARGED",
+            "udf5": "",
+            "udf6": "FAID87",
+            "status_id": 21,
+            "offers": [],
+            "udf7": "",
+            "product_id": "",
+            "refunded": false,
+            "udf10": "",
+            "gateway_id": ,
+            "udf1": "circleId_0008",
+            "udf2": "",
+            "udf3": "",
+            "date_created": "2024-01-22T03:28:05Z",
+            "id": "ordeh_cd352322f5f6842aa4ecce7",
+            "merchant_id": "test",
+            "return_url": "https://www.test.in",
+            "effective_amount": 1295,
+            "currency": "INR",
+            "auth_type": "",
+            "customer_email": "1111111",
+            "upi": {
+                "txn_flow_type": "QR"
+            },
+            "payment_method_type": "UPI",
+            "txn_uuid": "mozcFisaWkZZPn",
+            "payment_links": {
+                "mobile": "https://api.juspay.in/orders/ordeh_cd352322f5f6842aa4ecce7/payment-page",
+                "web": "https://api.juspay.in/orders/ordeh_cd352322f5f6842aa4ecce7/payment-page",
+                "iframe": "https://api.juspay.in/orders/ordeh_cd352322f5f6842aa4ecce7/payment-page"
+            },
+            "amount_refunded": 0,
+            "bank_error_code": "",
+            "bank_error_message": ""
+        }
+    },
+    "date_created": "2024-01-22T03:28:35Z",
+    "id": "evt_V2_1f3700949481544"
+}

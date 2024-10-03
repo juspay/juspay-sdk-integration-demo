@@ -1,0 +1,11 @@
+{
+  "requestId": "118722343fd-23sdf-9c85-6e5ab1cfb1d2",
+  "service": "in.juspay.ec",
+  "payload": {
+    "action": "enach",
+    "orderDetails": "{\"mandate.amount_rule\":\"VARIABLE\",\"mandate_max_amount\":\"1000.00\",\"options.create_mandate\":\"REQUIRED\",\"return_url\":\"https://sandbox.juspay.in/end\",\"timestamp\":\"1695362695797\",\"customer_id\":\"test_customer\",\"amount\":\"1\",\"merchant_id\":\"juspay\",\"customer_email\":\"test@gmail.com\",\"customer_phone\":\"9094490944\",\"last_name\":\"Customer\",\"first_name\":\"Test\",\"order_id\":\"12345\"}",
+    "orderId": "12345",
+    "merchantKeyId": "2221",
+    "signature": "TTbsdf233PGnQsaNAdr12tHqTL4fOasdfjadreJSG8g6x2hsi1TytX7u49YSd4c3xBcKs4VKTQq3gO/yFnpsXz/l9V5K4uUd7pYlbfgRnI2Xt69cwyVaxcFSyNtT02t2TbXPGdxOxv+xapylTekwjr3sTGnzs9IVva47vmYSq+juTsYANkL+NxIyVXCNIRKAdMnjBPUsg1UEeM3utrriaoDVNn5rMHxg+ddTJgw7ozrke7hrpxiQRKKfGMqx08=="
+  }
+}

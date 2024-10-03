@@ -1,0 +1,29 @@
+curl --location --request POST 'https://sandbox.juspay.in/orders' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'version: 2020-02-17' \
+--header 'Authorization: Basic apikeyvalue' \
+--data-urlencode 'order_id=1676534303' \
+--data-urlencode 'amount=10' \
+--data-urlencode 'currency=INR' \
+--data-urlencode 'customer_id=7760250078' \
+--data-urlencode 'customer_email=aa@aa.com' \
+--data-urlencode 'return_url=https://requestbin.juspay.net' \
+--data-urlencode 'product_id=123' \
+--data-urlencode 'quantity=1' \
+--data-urlencode 'metadata.SIMPL:session_start_time=06/09/2022 12:12:12' \
+--data-urlencode 'metadata.SIMPL:coupon_code=SIMPLPARTY' \
+--data-urlencode 'metadata.SIMPL:additional_order_id=123456789ABC'' \
+--data-urlencode 'metadata.SIMPL:discount=0' \
+--data-urlencode 'metadata.SIMPL:initial_cart_value=200' \
+--data-urlencode 'billing_address_line1=test' \
+--data-urlencode 'billing_address_line2=test' \
+--data-urlencode 'billing_address_city=test' \
+--data-urlencode 'billing_address_state=test' \
+--data-urlencode 'billing_address_country=India' \
+--data-urlencode 'billing_address_postal_code=400095' \
+--data-urlencode 'shipping_address_line1=Juspay' \
+--data-urlencode 'shipping_address_line2=tech' \
+--data-urlencode 'shipping_address_city=test' \
+--data-urlencode 'shipping_address_state=Karnataka' \
+--data-urlencode 'shipping_address_country=India' \
+--data-urlencode 'shipping_address_postal_code=400095'

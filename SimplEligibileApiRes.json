@@ -1,0 +1,15 @@
+{
+    "payment_methods_eligibility": [
+        {
+            "payment_method": "SIMPL",
+            "gateway_error_code": "linking_required",
+            "status": "SUCCESS",
+            "gateway_error_message": "linking_required",
+            "eligibility_strategy": "USER",
+            "is_eligible": true,
+            "description": "SIMPL",
+            "payment_method_type": "WALLET",
+            "balance": "FILTERED"
+        }
+    ]
+}

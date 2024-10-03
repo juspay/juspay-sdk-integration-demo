@@ -1,0 +1,32 @@
+{
+    "status": "NEW",
+    "id": "ordeh_dlfj1232142cad4420d",
+    "order_id": "12345",
+    "payment_links": {
+        "web": "https://sandbox.juspay.in/orders/ordeh_12345/payment-page",
+        "expiry": null
+    },
+    "sdk_payload": {
+        "requestId": "ab5de045458623fdf2dcef106fce1",
+        "service": "in.juspay.hyperpay",
+        "payload": {
+            "clientId": "juspay",
+            "amount": "1.0",
+            "merchantId": "juspay",
+            "clientAuthToken": "tkn_7a69e8csdfdf234f3f4b3440d412",
+            "service": "in.juspay.ec",
+            "clientAuthTokenExpiry": "2024-04-20T07:52:11Z",
+            "environment": "sandbox",
+            "mandate.maxAmount": "1000.00",
+            "mandate.endDate": "2660715307",
+            "metadata.bankAccountDetails": "[{\"bank_account_number\":\"00111111111111\",\"bank_ifsc\":\"UTIB0000007\",\"bank_beneficiary_name\":\"Test\"}]",
+            "action": "enach",
+            "customerId": "test123",
+            "mandate.startDate": "1714030518",
+            "currency": "INR",
+            "customerPhone": "9004490044",
+            "customerEmail": "test@gmail.com",
+            "orderId": "12345"
+        }
+    }
+}

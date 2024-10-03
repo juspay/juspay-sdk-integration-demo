@@ -1,0 +1,16 @@
+"payload": {
+        "action": "paymentPage",
+        "amount": "1000",
+        "clientId": "juspay",
+        "customerEmail": test@mail.com,
+        "customerId": "test_customer",
+        "customerMobile": "9876543210",
+        "merchantId": "juspay",
+        "merchantKeyId": "112233",
+        "orderDetails": "{\"order_id\":\"123\",\"merchant_id\":\"juspay\",\"amount\":\"1000\",\"timestamp\":\"1622247095063\",\"customer_id\":\"test_customer\",\"currency\":\"INR\",\"customer_email\":\"test@mail.com\",\"customer_phone\":\"9876543210\",\"return_url\":\"https://juspay.com/checkout\",\"metadata.merchant_container_list\":\"[{\\\"payment_method\\\":\\\"JUSPAY_WALLET\\\",\\\"payment_method_type\\\":\\\"MERCHANT_CONTAINER\\\",\\\"display_name\\\":\\\"Juspay Wallet\\\",\\\"eligible_amount\\\":2000,\\\"walletIconURL\\\":\\\"https://juspay.png\\\",\\\"isPreSelected\\\":true}]\"}}",
+        "orderId": "3572547771",
+        "processStartedTime": 1622247096849,
+        "signature": "iSBXym5sRMzyWJDCVnkICx6Jsxxnb2gMeRDQpbbXXY7WAXMyALGy0Mclnf8Fle3qzkAe6A/h0Ts7jyJ76**************NEfxg/+Aj5YNKJuqTavg6aqiAVhGkjxPQV8fYYi8loRxj3YtDA2l+571t5/9TttpgLghJpPt1T4uzX/BA=="
+      },
+      "requestId": "32de2-38f6ebcca0c4",
+      "service": "in.juspay.hyperpay"

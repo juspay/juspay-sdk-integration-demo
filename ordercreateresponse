@@ -1,0 +1,12 @@
+{
+   "status": "CREATED",
+   "status_id": 1,
+   "id": "ordeh_8d6a40c8b314db61b",
+   "order_id": "test",
+   "payment_links": {
+       "iframe": "https://sandbox.juspay.in/orders/ordeh_8d6a40c8b314db61b/payment-page",
+       "web": "https://sandbox.juspay.in/orders/ordeh_8d6a40c8b314db61b/payment-page",
+       "mobile": "https://sandbox.juspay.in/orders/ordeh_8d6a40c8b314db61b/payment-page"
+   }
+}
+
