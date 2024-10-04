@@ -1,0 +1,18 @@
+curl --location --request POST 'https://smartgatewayuat.hdfcbank.com/txns' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'x-merchantid: SG1151' \
+--header 'Authorization: Basic Q***********************************COg==' \
+--data-urlencode 'order_id=T_1728043428' \
+--data-urlencode 'merchant_id=testhdfc1' \
+--data-urlencode 'payment_method_type=CARD' \
+--data-urlencode 'payment_method=VISA' \
+--data-urlencode 'card_number=enc-g58QkfHkZIAKUDEZW5e9NbmObCgQp9ds2u2+38tCvkgKx2RLuZ7s0QLuQezFQ3c1kHl/kQB+PmYCIdIE7lfBqX4sTinHz1HtHxf7RfsAigUVm9DOUvIT2/9H5KeFHvU7gbHYKt3HFl8kKehf9KJEzkXZCyR2cCoGva52jwJBsbxxKowlcqjELj/xSzDEkfs51VUGh4wtVj/p2aFVnf+MCkxU+HjWHl22H8DHPJs1gQGW5Kq+G45zFNwpGp210xuw+7A5NKBuN4qeuQgXVs2BjSzNjFnHYQijxC8m/V+W3blOvifO4KzEnKn+U8yJ6T45/+QCWEnl8G5yzXM0taFv9w==' \
+--data-urlencode 'card_exp_month=enc-ZI0/VIrNtoJFIfh5M5D4ng5fMIiXr+SMH/EuPInFw+MewkthIRQzW+A3o4tO4kDBmyKbNlce18NJWR+WeBSskPlKiYS2xaAAcQwwydqOkY3CqYX0ZsXEW9XeOw0c63aoB4aMWKqK0L5M803l8XILp4ohw3E06oWii9XeufatfoFxJGU8o9Feed2W3SGnczsdXPh6ANK2Lowd97DhacplGk4cqJ4bcRHAzQNDkbXAGwPb/VQQoZa+JtS2x3CnvlDrsiSW+2bDh7L02Oj82Yd8mR37AkwfUoH29GiFnOtP0jB2vU95QwW92P25rU4m8AfEGWhsEE7on9PjuGdqTHLePQ==' \
+--data-urlencode 'card_exp_year=enc-FdDtDTXUTxeE/+3hYqeBctTamAuvNCnN0xGoGriCkoQaAIOvnTu1cNMfXPJ1rP190phcgEBeZ1Ghb1uWePa84Gm8x3b1RcMOwKseL57MRHFdfO4eopfm1PT7d6NgYaRG8FHpk7ZJccP4WOCAhJkzTh6XWsbs97Ft9Nl8Uxwndsmif/iyAOLy96puF3FllyM/SC8maE7RoQzLNALbEcn76KDOlxvKD1KDsLsNiEs69wchmWQdtik3/x1vX3QNnC6WdKBHncBYhNENjB/++3kIxYXBjbJTfo2rY69u6Wl3YhwSJlReQJjmee5tzXKqT8vjil/BCQPCvDBJHu8h3w6vsw==' \
+--data-urlencode 'name_on_card=TEST' \
+--data-urlencode 'card_security_code=enc-hNQl+3VvGn499rRweLHXjXuZs14aiZr5mP2JJXrqzLd5CL6j4WmQvyI15/3SbPXa0HFEY+7iykbZXlAOrItbhVNayVFNCC+DnyUOV19fSzRAtWkaNl91/SCc7dZIb4elKn61HVr9WEIiKfjxgV1WPRgbeuAq7K8fjcX+ZLb5Vr4NNYHnFO6rNlVneKZyZZpYHtMLcvuqwA0dgohqiCbZXz2zcJHytpxJpNrMtbFzBr2qTcARIHlnrLUiahQCWZrVeeBfSWsD1chCM56y7zN7GIOPtWAlNIoXc4b2xlE3ipXWaZ7jlDj0n0KisQk/XSm5VO5d2RDaDwubq1ZdwvNwCA==' \
+--data-urlencode 'save_to_locker=true' \
+--data-urlencode 'tokenize=true' \
+--data-urlencode 'redirect_after_payment=true' \
+--data-urlencode 'format=json' \
+--data-urlencode 'card_encoding_version=2023-04-04'
