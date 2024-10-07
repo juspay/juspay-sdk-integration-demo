@@ -37,6 +37,9 @@
     "occurrence_sequence_type": "RCUR",
     "reference1": "LOAN_ID_123",
     "reference2": null,
+    "reference3": null,
+    "reference4": null,
+    "reference5": null,
     "variant": "physical"
   },
   "origin": "API",

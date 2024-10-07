@@ -37,6 +37,9 @@
     "occurrence_sequence_type": "RCUR",
     "reference1": "CUSTOMER_123",
     "reference2": "PRODUCT_ABC",
+    "reference3": "MERCHANT's ID",
+    "reference4":{"name":"xxx"},
+    "reference5": {"name":"xxx"},
     "variant": "emandate_api"
   },
   "origin": "API",
