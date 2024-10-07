@@ -1,24 +1,25 @@
 {
-    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
-    "service": "in.juspay.hyperapi",
+    "service": "in.juspay.ec",
+    "requestId": "445dc8cf-9fec-4f3e-8286-45af2146cdfb",
     "payload": {
-        "action": "eligibility",
-        "amount": "1.00",
+        "version": "2024-10-07",
+        "requestId": null,
         "data": {
             "wallets": [
                 {
-                    "mobileNumber": "1111111111",
-                    "mobile": "1111111111",
-                    "gatewayReferenceId": "amazon_test",
-                    "email": "test@mail.com",
-                    "customerId": "cth_pKL9ayw75febC1Dd",
-                 }
-            ],
-            "cards": []
+                    "mobile": "9742144874",
+                    "gatewayReferenceId": null,
+                    "email": "test@gmail.com",
+                    "customerId": "test_customer",
+                    "checkType": [
+                        "twid"
+                    ]
+                }
+            ]
         },
-        "device_params": null,
-        "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213",
-        "showLoader": true,
-        "version": "YYYY-MM-DD"       //current date to be passed (Mandatory for TWID S2S)
+        "clientAuthToken": "tkn_15af534ad81a4a0b9fc317a97542965c",
+        "signature": "<signature>",
+        "amount": "100",
+        "action": "eligibility"
     }
 }
