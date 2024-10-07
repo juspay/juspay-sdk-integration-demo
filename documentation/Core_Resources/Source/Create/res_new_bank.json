@@ -37,6 +37,9 @@
     "occurrence_sequence_type": "RCUR",
     "reference1": "CUSTOMER_123",
     "reference2": null,
+    "reference3": null,
+    "reference4": null,
+    "reference5": null,
     "variant": "emandate_api"
   },
   "origin": "API",
