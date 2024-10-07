@@ -1,0 +1,16 @@
+{
+  "object": "list",
+  "url": "/v1/ach_debits",
+  "has_more": false,
+  "data": [
+        {
+            "id": "ND004433221AA"
+        },
+        {
+            "id": "ND004433221BB"
+        },
+        {
+            "id": "ND004433221CC"
+        }
+  ]
+}

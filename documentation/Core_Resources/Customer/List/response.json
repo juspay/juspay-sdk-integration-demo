@@ -1,0 +1,19 @@
+{
+    "object": "list",
+    "url": "/v1/customers",
+    "has_more": false,
+    "data": [
+          {
+              "id": "CU004433221AA"
+          },
+          {
+              "id": "CU004433221BB"
+          },
+          {
+              "id": "CU004433221CC"
+          },
+          {
+              "id": "CU004433221DD"
+          }
+    ]
+  }

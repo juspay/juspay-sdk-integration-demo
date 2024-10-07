@@ -1,0 +1,19 @@
+{
+    "object": "list",
+    "url": "/v1/subscriptions",
+    "has_more": false,
+    "data": [
+          {
+              "id": "SB004433221AA"
+          },
+          {
+              "id": "SB004433221BB"
+          },
+          {   
+              "id": "SB004433221CC"
+          },
+          {   
+              "id": "SB004433221DD"
+          }
+    ]
+  }

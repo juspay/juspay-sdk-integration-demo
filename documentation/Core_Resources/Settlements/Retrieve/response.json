@@ -1,0 +1,17 @@
+{
+    "id": "SM0011DD2211AA",
+    "object": "settlement",
+    "created": 1530224170,
+    "livemode": false,
+    "amount": 2212300,
+    "amount_fee": 0,
+    "amount_tax": 0,
+    "amount_gross": 2212300,
+    "date_charge": "2021-01-01",
+    "date_value": "2021-01-01",
+    "date_settled": "2021-01-02",
+    "method": "instant",
+    "status": "settled",
+    "bank_account": "BA00CC33221AA"
+  }
+  

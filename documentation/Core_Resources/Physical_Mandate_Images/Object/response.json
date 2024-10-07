@@ -1,0 +1,10 @@
+{
+    "id": "PS00AABBCCDDEE",
+    "object": "physical_mandate_image",
+    "created": 1530224170,
+    "livemode": false,
+    "reference1": "LOANID123",
+    "mandate": null,
+    "source": null
+  }
+  
