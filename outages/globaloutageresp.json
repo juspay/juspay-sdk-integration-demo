@@ -1,0 +1,38 @@
+{
+  "outage": [
+    {
+      "stage": "Merchant",
+      "status": "FLUCTUATE",
+      "payment_method": "MADA",
+      "payment_method_type": "CARD",
+      "juspay_bank_code": "MADA",
+      "description": "Mada"
+    },
+    {
+      "stage": "Global",
+      "status": "FLUCTUATE",
+      "payment_method": "JKOPAY",
+      "payment_method_type": "WALLET",
+      "issuer_name": "Jkopay",
+      "juspay_bank_code": "JP_JKOPAY",
+      "description": "Jkopay Wallet"
+    },
+    {
+      "stage": "Merchant",
+      "status": "FLUCTUATE",
+      "payment_method": "LINEPAY",
+      "payment_method_type": "WALLET",
+      "issuer_name": "LinePay",
+      "juspay_bank_code": "JP_LINEPAY",
+      "description": "LinePay"
+    },
+     {
+      "stage": "Merchant",
+      "status": "DOWN",
+      "payment_method": "PROMPTPAY_QR",
+      "payment_method_type": "RTP",
+      "juspay_bank_code": "JP_PROMPTPAY",
+      "description": "PromptPay"
+    }
+  ]
+}
