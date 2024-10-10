@@ -1,0 +1,18 @@
+curl --location --request POST 'https://smartgatewayuat.hdfcbank.com/txns' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'x-merchantid: testhdfc1' \
+--data-urlencode 'order_id=order_1727338641' \
+--data-urlencode 'merchant_id=udit_juspay' \
+--data-urlencode 'payment_method_type=CARD' \
+--data-urlencode 'payment_method=DINERS' \
+--data-urlencode 'card_number=XXXXXXXXX' \
+--data-urlencode 'card_exp_month=XX' \
+--data-urlencode 'card_exp_year=XXX' \
+--data-urlencode 'token.requestor_id=XXXX02' \
+--data-urlencode 'card_security_code=XXX' \
+--data-urlencode 'tavv=XXXX0NDQ=' \
+--data-urlencode 'redirect_after_payment=true' \
+--data-urlencode 'format=json' \
+--data-urlencode 'token.card_last_four=XXXX' \
+--data-urlencode 'token.type=ALT_ID' \
+--data-urlencode 'token.provider_reference_id=XXXXXXXXaa8'

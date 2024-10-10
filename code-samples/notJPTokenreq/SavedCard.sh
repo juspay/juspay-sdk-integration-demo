@@ -1,0 +1,15 @@
+curl --location 'https://smartgatewayuat.hdfcbank.com/txns' \
+--header 'Authorization: Basic RTYyN0Y********************U5' \
+--header 'Accept: /' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'order_id=Ord_XXXXXXXX' \
+--data-urlencode 'merchant_id=azhar_test' \
+--data-urlencode 'payment_method_type=CARD' \
+--data-urlencode 'card_number=XXXXXXXXXXXX' \
+--data-urlencode 'card_exp_month=XX' \
+--data-urlencode 'card_exp_year=XXXX' \
+--data-urlencode 'name_on_card=TestCard' \
+--data-urlencode 'redirect_after_payment=true' \
+--data-urlencode 'tavv=XXXXXXXXXXX' \
+--data-urlencode 'format=json' \
+--data-urlencode 'token.card_last_four=XXXX'
