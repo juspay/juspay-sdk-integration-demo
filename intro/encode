@@ -1,0 +1,4 @@
+import base64
+api_key = "your_api_key"
+encoded_key = base64.b64encode(api_key.encode()).decode()
+print(encoded_key)
