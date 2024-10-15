@@ -1,420 +1,274 @@
 {
-  "tpv_payment_methods": [
-    
-    {
-      "payment_method": "NB_AXIS",
-      "payment_method_type": "NB",
-      "description": "Axis Bank"
-    },
-    {
-      "payment_method": "NB_CBI",
-      "payment_method_type": "NB",
-      "description": "Central Bank Of India"
-    },
-    {
-      "payment_method": "NB_HDFC",
-      "payment_method_type": "NB",
-      "description": "HDFC Bank"
-    },
-    {
-      "payment_method": "NB_ICICI",
-      "payment_method_type": "NB",
-      "description": "ICICI Netbanking"
-    },
-    {
-      "payment_method": "NB_SBI",
-      "payment_method_type": "NB",
-      "description": "State Bank of India"
-    },
-    {
-      "payment_method": "PAYTM",
-      "payment_method_type": "WALLET",
-      "description": "Paytm Wallet"
-    },
-    {
-      "payment_method": "LAZYPAY",
-      "payment_method_type": "WALLET",
-      "description": "Lazy Pay Wallet"
-    },
-    {
-      "payment_method": "PAYZAPP",
-      "payment_method_type": "WALLET",
-      "description": "PayZapp Wallet"
-    },
-    {
-      "payment_method": "NB_BOI",
-      "payment_method_type": "NB",
-      "description": "Bank of India"
-    },
-    {
-      "payment_method": "NB_BOM",
-      "payment_method_type": "NB",
-      "description": "Bank of Maharashtra"
-    },
-    {
-      "payment_method": "NB_IDBI",
-      "payment_method_type": "NB",
-      "description": "Industrial Development Bank of India"
-    },
-    {
-      "payment_method": "MOBIKWIK",
-      "payment_method_type": "WALLET",
-      "description": "Mobikwik Wallet"
-    },
-    {
-      "payment_method": "FREECHARGE",
-      "payment_method_type": "WALLET",
-      "description": "Freecharge Wallet"
-    },
-    {
-      "payment_method": "ZESTMONEY",
-      "payment_method_type": "CONSUMER_FINANCE",
-      "description": "ZestMoney"
-    },
-    {
-      "payment_method": "PHONEPE",
-      "payment_method_type": "WALLET",
-      "description": "PhonePe Wallet"
-    },
-    {
-      "payment_method": "AMEX",
-      "payment_method_type": "CARD",
-      "description": "American Express"
-    },
-    {
-      "payment_method": "DISCOVER",
-      "payment_method_type": "CARD",
-      "description": "Discover"
-    },
-    {
-      "payment_method": "DINERS",
-      "payment_method_type": "CARD",
-      "description": "Diners"
-    },
-    {
-      "payment_method": "JCB",
-      "payment_method_type": "CARD",
-      "description": "JCB"
-    },
-    {
-      "payment_method": "SIMPL",
-      "payment_method_type": "WALLET",
-      "description": "SIMPL PayLater"
-    },
-    {
-      "payment_method": "GOOGLEPAY",
-      "payment_method_type": "WALLET",
-      "description": "Googlepay Wallet"
-    },
-    {
-      "payment_method": "ITZCASH",
-      "payment_method_type": "WALLET",
-      "description": "ItzCash Wallet"
-    },
-    {
-      "payment_method": "AMAZONPAY",
-      "payment_method_type": "WALLET",
-      "description": "Amazonpay Wallet"
-    },
-    {
-      "payment_method": "NB_AVENUETEST",
-      "payment_method_type": "NB",
-      "description": "Avenue Test"
-    },
-    {
-      "payment_method": "SODEXO",
-      "payment_method_type": "CARD",
-      "description": "Sodexo"
-    },
-    {
-      "payment_method": "PAYUMONEY",
-      "payment_method_type": "WALLET",
-      "description": "PayU Money Wallet"
-    },
-    {
-      "payment_method": "OLAMONEY",
-      "payment_method_type": "WALLET",
-      "description": "Olamoney Wallet"
-    },
-    {
-      "payment_method": "AMEXEZECLICK",
-      "payment_method_type": "WALLET",
-      "description": "AMEX eZeClick"
-    },
-    {
-      "payment_method": "AIRTELMONEY",
-      "payment_method_type": "WALLET",
-      "description": "Airtel Money"
-    },
-    {
-      "payment_method": "SBIBUDDY",
-      "payment_method_type": "WALLET",
-      "description": "SBI Buddy Wallet"
-    },
-    {
-      "payment_method": "YPAYCASH",
-      "payment_method_type": "WALLET",
-      "description": "YPayCash Wallet"
-    },
-    {
-      "payment_method": "PAYPAL",
-      "payment_method_type": "WALLET",
-      "description": "PayPal"
-    },
-    {
-      "payment_method": "FREECHARGE_V2",
-      "payment_method_type": "WALLET",
-      "description": "Freecharge Wallet"
-    },
-    {
-      "payment_method": "BAJAJ",
-      "payment_method_type": "CARD",
-      "description": "BAJAJFINSERV EMI"
-    },
-    {
-      "payment_method": "NB_UNIB",
-      "payment_method_type": "NB",
-      "description": "Punjab National Bank (Erstwhile United Bank of India)"
-    },
-    {
-      "payment_method": "NB_OBC",
-      "payment_method_type": "NB",
-      "description": "Punjab National Bank (Erstwhile Oriental Bank of Commerce)"
-    },
-    {
-      "payment_method": "NB_PNB",
-      "payment_method_type": "NB",
-      "description": "Punjab National Bank Retail"
-    },
-    {
-      "payment_method": "NB_IDFC",
-      "payment_method_type": "NB",
-      "description": "IDFC Bank"
-    },
-    {
-      "payment_method": "NB_FINC",
-      "payment_method_type": "NB",
-      "description": "Fincare Bank"
-    },
-    {
-      "payment_method": "NB_PAYTMV2TEST",
-      "payment_method_type": "NB",
-      "description": "Paytm V2 Test"
-    },
-    {
-      "payment_method": "JANACASH",
-      "payment_method_type": "WALLET",
-      "description": "Jana Cash"
-    },
-    {
-      "payment_method": "JIOMONEY",
-      "payment_method_type": "WALLET",
-      "description": "Jiomoney Wallet"
-    },
-    {
-      "payment_method": "OXIGEN",
-      "payment_method_type": "WALLET",
-      "description": "Oxigen Wallet"
-    },
-    {
-      "payment_method": "NB_KARN",
-      "payment_method_type": "NB",
-      "description": "Karnataka Bank"
-    },
-    {
-      "payment_method": "EPAYLATER",
-      "payment_method_type": "CONSUMER_FINANCE",
-      "description": "EPaylater"
-    },
-    {
-      "payment_method": "LOANTAP",
-      "payment_method_type": "WALLET",
-      "description": "Loantap Wallet"
-    },
-    {
-      "payment_method": "NB_INDUS",
-      "payment_method_type": "NB",
-      "description": "IndusInd Bank"
-    },
-    {
-      "payment_method": "NB_IOB",
-      "payment_method_type": "NB",
-      "description": "Indian Overseas Bank"
-    },
-    {
-      "payment_method": "NB_SOIB",
-      "payment_method_type": "NB",
-      "description": "South Indian Bank"
-    },
-    {
-      "payment_method": "NB_CANR",
-      "payment_method_type": "NB",
-      "description": "Canara Bank"
-    },
-    {
-      "payment_method": "NB_KOTAK",
-      "payment_method_type": "NB",
-      "description": "Kotak Bank"
-    },
-    {
-      "payment_method": "NB_CORP",
-      "payment_method_type": "NB",
-      "description": "Union Bank of India (Erstwhile Corporation Bank)"
-    },
-    {
-      "payment_method": "NB_VJYB",
-      "payment_method_type": "NB",
-      "description": "Vijaya Bank"
-    },
-    {
-      "payment_method": "NB_SBP",
-      "payment_method_type": "NB",
-      "description": "State Bank of Patiala"
-    },
-    {
-      "payment_method": "NB_ALLB",
-      "payment_method_type": "NB",
-      "description": "Allahabad Bank"
-    },
-    {
-      "payment_method": "NB_LVBCORP",
-      "payment_method_type": "NB",
-      "description": "Lakshmi Vilas Bank Corporate"
-    },
-    {
-      "payment_method": "NB_LVB",
-      "payment_method_type": "NB",
-      "description": "Lakshmi Vilas Bank Retail"
-    },
-    {
-      "payment_method": "NB_PNJSB",
-      "payment_method_type": "NB",
-      "description": "Punjab and Sind Bank"
-    },
-    {
-      "payment_method": "NB_RBL",
-      "payment_method_type": "NB",
-      "description": "RBL"
-    },
-    {
-      "payment_method": "NB_KVBCORP",
-      "payment_method_type": "NB",
-      "description": "Karur Vysya Corporate Banking"
-    },
-    {
-      "payment_method": "NB_AIRTEL",
-      "payment_method_type": "NB",
-      "description": "Airtel Payments Bank"
-    },
-    {
-      "payment_method": "NB_DCB",
-      "payment_method_type": "NB",
-      "description": "Development Credit Bank"
-    },
-    {
-      "payment_method": "MRUPEE",
-      "payment_method_type": "WALLET",
-      "description": "mRupee Wallet"
-    },
-    {
-      "payment_method": "CITI",
-      "payment_method_type": "REWARD",
-      "description": "Citi Reward"
-    },
-    {
-      "payment_method": "IDEAMONEY",
-      "payment_method_type": "WALLET",
-      "description": "Idea Money"
-    },
-    {
-      "payment_method": "OXICASH",
-      "payment_method_type": "WALLET",
-      "description": "OxiCash Wallet"
-    },
-    {
-      "payment_method": "NB_FED",
-      "payment_method_type": "NB",
-      "description": "Federal Bank"
-    },
-    {
-      "payment_method": "NB_INDB",
-      "payment_method_type": "NB",
-      "description": "Indian Bank "
-    },
-    {
-      "payment_method": "INSTACRED",
-      "payment_method_type": "CONSUMER_FINANCE",
-      "description": "Instacred"
-    },
-    {
-      "payment_method": "HDFC_FLEXIPAY",
-      "payment_method_type": "CONSUMER_FINANCE",
-      "description": "Hdfc Flexipay"
-    },
-    {
-      "payment_method": "TATAPAY",
-      "payment_method_type": "WALLET",
-      "description": "TATA Pay Wallet"
-    },
-    {
-      "payment_method": "NB_UBI",
-      "payment_method_type": "NB",
-      "description": "Union Bank of India"
-    },
-    {
-      "payment_method": "NB_YESB",
-      "payment_method_type": "NB",
-      "description": "Yes Bank"
-    },
-    {
-      "payment_method": "NB_JNK",
-      "payment_method_type": "NB",
-      "description": "Jammu and Kashmir Bank"
-    },
-    {
-      "payment_method": "QR_CODE",
-      "payment_method_type": "UPI",
-      "description": "UPI QR"
-    },
-    {
-      "payment_method": "NB_KVB",
-      "payment_method_type": "NB",
-      "description": "Karur Vysya "
-    },
-    {
-      "payment_method": "NB_SBT",
-      "payment_method_type": "NB",
-      "description": "State Bank of Travancore"
-    },
-    {
-      "payment_method": "NB_SBM",
-      "payment_method_type": "NB",
-      "description": "State Bank of Mysore"
-    },
-    {
-      "payment_method": "NB_SBBJ",
-      "payment_method_type": "NB",
-      "description": "State Bank of Bikaner and Jaipur"
-    },
-    {
-      "payment_method": "NB_SBH",
-      "payment_method_type": "NB",
-      "description": "State Bank of Hyderabad"
-    },
-    {
-      "payment_method": "NB_CUB",
-      "payment_method_type": "NB",
-      "description": "CityUnion"
-    },
-    {
-      "payment_method": "MPESA",
-      "payment_method_type": "WALLET",
-      "description": "MPESA Wallet"
-    },
-    {
-      "payment_method": "FLEXMONEY",
-      "payment_method_type": "CONSUMER_FINANCE",
-      "description": "Flexmoney"
-    }
-  ]
+"tpv_payment_methods": [
+        {
+            "description": "Allahabad Bank",
+            "juspay_bank_code": "JP_ALLB",
+            "payment_method": "JP_ALLB",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Andhra Bank",
+            "juspay_bank_code": "JP_ANDHRA",
+            "payment_method": "JP_ANDHRA",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "AU Small Finance Bank",
+            "juspay_bank_code": "JP_AUB",
+            "payment_method": "JP_AUB",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Axis Bank",
+            "juspay_bank_code": "JP_AXIS",
+            "payment_method": "JP_AXIS",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Bandhan Bank",
+            "juspay_bank_code": "JP_BANDHAN",
+            "payment_method": "JP_BANDHAN",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "BOB Card",
+            "juspay_bank_code": "JP_BOB",
+            "payment_method": "JP_BOB",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Bank of India",
+            "juspay_bank_code": "JP_BOI",
+            "payment_method": "JP_BOI",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Bank of Maharashtra",
+            "juspay_bank_code": "JP_BOM",
+            "payment_method": "JP_BOM",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "The Catholic Syrian Bank",
+            "juspay_bank_code": "JP_CSB",
+            "payment_method": "JP_CSB",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Canara Bank",
+            "juspay_bank_code": "JP_CANR",
+            "payment_method": "JP_CANR",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Central Bank of India",
+            "juspay_bank_code": "JP_CBI",
+            "payment_method": "JP_CBI",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "City Union Bank",
+            "juspay_bank_code": "JP_CUB",
+            "payment_method": "JP_CUB",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Corporation Bank",
+            "juspay_bank_code": "JP_CORP",
+            "payment_method": "JP_CORP",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Deutsche Bank",
+            "juspay_bank_code": "JP_DEUT",
+            "payment_method": "JP_DEUT",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "DCB",
+            "juspay_bank_code": "JP_DCB",
+            "payment_method": "JP_DCB",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Dhanalakshmi Bank",
+            "juspay_bank_code": "JP_DLS",
+            "payment_method": "JP_DLS",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Equitas Bank",
+            "juspay_bank_code": "JP_EQUITAS",
+            "payment_method": "JP_EQUITAS",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Federal Bank",
+            "juspay_bank_code": "JP_FED",
+            "payment_method": "JP_FED",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "HDFC Bank",
+            "juspay_bank_code": "JP_HDFC",
+            "payment_method": "JP_HDFC",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "ICICI Bank",
+            "juspay_bank_code": "JP_ICICI",
+            "payment_method": "JP_ICICI",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "IDBI Bank",
+            "juspay_bank_code": "JP_IDBI",
+            "payment_method": "JP_IDBI",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "IDFC FIRST Bank",
+            "juspay_bank_code": "JP_IDFC",
+            "payment_method": "JP_IDFC",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Indian Bank",
+            "juspay_bank_code": "JP_INDB",
+            "payment_method": "JP_INDB",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Indian Overseas Bank",
+            "juspay_bank_code": "JP_IOB",
+            "payment_method": "JP_IOB",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "IndusInd Bank",
+            "juspay_bank_code": "JP_INDUS",
+            "payment_method": "JP_INDUS",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Jammu and Kashmir Bank",
+            "juspay_bank_code": "JP_JNK",
+            "payment_method": "JP_JNK",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Karnataka Bank",
+            "juspay_bank_code": "JP_KARN",
+            "payment_method": "JP_KARN",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Karur Vysya Bank",
+            "juspay_bank_code": "JP_KVB",
+            "payment_method": "JP_KVB",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Kotak Mahindra Bank",
+            "juspay_bank_code": "JP_KOTAK",
+            "payment_method": "JP_KOTAK",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Punjab National Bank",
+            "juspay_bank_code": "JP_PNB",
+            "payment_method": "JP_PNB",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Saraswat Bank",
+            "juspay_bank_code": "JP_SARASB",
+            "payment_method": "JP_SARASB",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "South Indian Bank",
+            "juspay_bank_code": "JP_SOIB",
+            "payment_method": "JP_SOIB",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Standard Chartered Bank",
+            "juspay_bank_code": "JP_SCB",
+            "payment_method": "JP_SCB",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "SBI",
+            "juspay_bank_code": "JP_SBI",
+            "payment_method": "JP_SBI",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "The Shamrao Vithal Cooperative Bank",
+            "juspay_bank_code": "JP_SVCB",
+            "payment_method": "JP_SVCB",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Tamilnad Mercantile Bank",
+            "juspay_bank_code": "JP_TMB",
+            "payment_method": "JP_TMB",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Lakshmi Vilas Bank",
+            "juspay_bank_code": "JP_LVB",
+            "payment_method": "JP_LVB",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "RBL Bank",
+            "juspay_bank_code": "JP_RBL",
+            "payment_method": "JP_RBL",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Union Bank of India",
+            "juspay_bank_code": "JP_UBI",
+            "payment_method": "JP_UBI",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "UCO Bank",
+            "juspay_bank_code": "JP_UCOB",
+            "payment_method": "JP_UCOB",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Yes Bank",
+            "juspay_bank_code": "JP_YESB",
+            "payment_method": "JP_YESB",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "Jammu and Kashmir",
+            "juspay_bank_code": "JP_JMK",
+            "payment_method": "JP_JMK",
+            "payment_method_type": "NB"
+        },
+        {
+            "description": "UPI Intent Pay",
+            "juspay_bank_code": "PAY",
+            "payment_method": "PAY",
+            "payment_method_type": "UPI"
+        },
+        {
+            "description": "UPI Collect",
+            "juspay_bank_code": "COLLECT",
+            "payment_method": "COLLECT",
+            "payment_method_type": "UPI"
+        },
+        {
+            "description": "DBS Bank",
+            "juspay_bank_code": "JP_DBS",
+            "payment_method": "JP_DBS",
+            "payment_method_type": "NB"
+        }
+    ]
 }
