@@ -1,0 +1,16 @@
+{
+    "txn_id": "test-test_1729084726-1",
+    "order_id": "test_1729084726",
+    "status": "AUTHORIZED",
+    "payment": {
+        "authentication": {
+            "url": "https://api.juspay.in/v2/pay/finish/test/moztwCQq4CbDuKhABVN/test_1729084726",
+            "method": "GET"
+        }
+    },
+    "offer_details": {
+        "offers": []
+    },
+    "merchant_return_url": "https://merchant.in/payments",
+    "txn_uuid": "moztwCQq4CbDuKhABVN"
+}
