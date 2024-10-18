@@ -47,7 +47,7 @@
           },
           "offer_rules": {
               "amount": {
-                  "currency": "SGD",
+                  "currency": "BRL",
                   "min_order_amount": "500.00"
               },
               "payment_instrument": [
@@ -111,7 +111,7 @@
           },
           "offer_rules": {
               "amount": {
-                  "currency": "SGD",
+                  "currency": "BRL",
                   "min_order_amount": "500.00"
               },
               "payment_instrument": [

@@ -4,7 +4,7 @@
       "clientAuthToken": "tkn_a2ef311f47b04165b5a7ddbc01804220",
       "mandateType": "EMANDATE",
       "orderId": "JP9************48610",
-      "paymentMethod": "JP_PAYTM",
+      "paymentMethod": "JP_MERCADOPAGO",
       "retry_suggestion_used": false,
       "shouldCreateMandate": true
     },

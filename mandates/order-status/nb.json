@@ -29,7 +29,7 @@
     "express_checkout": false,
     "error_message": "Payment completed",
     "error_code": "00",
-    "currency": "SGD",
+    "currency": "BRL",
     "created": "2021-05-27T06:58:19Z"
   },
   "status_id": 21,
@@ -80,7 +80,7 @@
   "customer_phone": "98763210",
   "customer_id": "testcustomer1",
   "customer_email": "test@gmail.com",
-  "currency": "SGD",
+  "currency": "BRL",
   "bank_error_message": "Payment completed",
   "bank_error_code": "00",
   "auth_type": "THREE_DS",

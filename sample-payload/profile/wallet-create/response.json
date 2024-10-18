@@ -3,7 +3,7 @@
     "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
     "payload": {
         "action": "createWallet",
-        "wallet": "PAYTM",
+        "wallet": "MERCADOPAGO",
         "token": "",
         "metadata": "",
         "linked": false,

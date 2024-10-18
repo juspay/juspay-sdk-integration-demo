@@ -12,7 +12,7 @@
         "cardSecurityCode": "***",
         "saveToLocker": true,
         "nameOnCard": "Test Customer",
-        "emiBank": "HDFC",
+        "emiBank": "ITAU",
         "isEmi": true,
         "supportedGatewayId": [74,21],
         "emiType": "NO_COST_EMI",

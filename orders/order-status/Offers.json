@@ -61,7 +61,7 @@
     "customer_phone": "88888888",
     "customer_id": "cst_s35j8cghim6qncud",
     "customer_email": "x@something.com",
-    "currency": "SGD",
+    "currency": "BRL",
     "card": {
         "using_saved_card": false,
         "saved_to_locker": true,

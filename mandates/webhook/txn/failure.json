@@ -33,7 +33,7 @@
         "gateway": "BILLDESK",
         "error_message": "payment_authentication_error. 3D Secure authentication failure",
         "error_code": "0399",
-        "currency": "SGD",
+        "currency": "BRL",
         "created": "2021-12-27T12:42:08Z"
       },
       "status_id": "26",
@@ -82,7 +82,7 @@
       "customer_phone": "FILTERED",
       "customer_id": "FILTERED",
       "customer_email": "FILTERED",
-      "currency": "SGD",
+      "currency": "BRL",
       "card": "FILTERED",
       "bank_pg": null,
       "bank_error_message": "payment_authentication_error. 3D Secure authentication failure",

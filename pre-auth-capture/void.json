@@ -40,7 +40,7 @@
   "customer_phone": null,
   "customer_id": "FUR14920977945",
   "customer_email": null,
-  "currency": "SGD",
+  "currency": "BRL",
   "card": {
     "using_saved_card": true,
     "saved_to_locker": false,

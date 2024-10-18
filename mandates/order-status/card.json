@@ -29,7 +29,7 @@
     "express_checkout": false,
     "error_message": "",
     "error_code": "",
-    "currency": "SGD",
+    "currency": "BRL",
     "created": "2021-11-27T12:33:12Z"
   },
   "status_id": 21,
@@ -80,7 +80,7 @@
   "customer_phone": "98743210",
   "customer_id": "cst_zqqmw0vrfbhvvj2zzdzg",
   "customer_email": "test@juspay.in",
-  "currency": "SGD",
+  "currency": "BRL",
   "card": {
     "using_token": false,
     "using_saved_card": false,

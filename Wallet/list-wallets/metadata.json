@@ -4,13 +4,13 @@
     {
       "id": "wlt_d10hncoc6xldk",
       "object": "wallet_account",
-      "wallet": "PAYTM",
+      "wallet": "MERCADOPAGO",
       "token": null,
       "current_balance": null,
       "linked": false,
       "last_refreshed": null,
       "metadata": {
-        "mobile_number": "99999999"
+        "mobile_number": "9999XXX9999"
       },
       "gateway_reference_id": null
     }

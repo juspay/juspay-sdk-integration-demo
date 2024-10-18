@@ -5,7 +5,7 @@ curl --location --request POST 'https://api.juspay.in/v1/offers/list' \
     "order": {
         "order_id": "SDEA5645",
         "amount": "1000",
-        "currency": "SGD"
+        "currency": "BRL"
     },
     "payment_method_info": [
         {
@@ -20,8 +20,8 @@ curl --location --request POST 'https://api.juspay.in/v1/offers/list' \
         },
         {
             "payment_method_type": "WALLET",
-            "payment_method_reference": "MOBIKWIK",
-            "payment_method": "MOBIKWIK"
+            "payment_method_reference": "PAYPAL",
+            "payment_method": "PAYPAL"
         },
         {
             "upi_vpa": "navyamotaiah@oksbi",

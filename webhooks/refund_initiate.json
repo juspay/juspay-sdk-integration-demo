@@ -52,7 +52,7 @@
         "rrn": null
       },
       "udf1": "",
-      "currency": "SGD",
+      "currency": "BRL",
       "udf4": "",
       "customer_id": "FILTERED",
       "date_created": "1111111T07:21:01Z",
@@ -75,7 +75,7 @@
         "status": "CHARGED",
         "net_amount": 8,
         "order_id": "sample_ord_403",
-        "currency": "SGD",
+        "currency": "BRL",
         "error_code": "",
         "gateway_id": 100,
         "surcharge_amount": "FILTERED",

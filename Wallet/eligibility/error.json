@@ -3,11 +3,11 @@
     {
       "status": "USER_NOT_FOUND",
       "payment_method_type": "WALLET",
-      "payment_method": "OLAPOSTPAID",
+      "payment_method": "MERCADOPAGO",
       "is_eligible": false,
       "gateway_error_code": "OC_011",
       "gateway_error_message": "user not found",
-      "description": "Olapostpaid Wallet"
+      "description": "Mercadopago Wallet"
     }
   ]
 }

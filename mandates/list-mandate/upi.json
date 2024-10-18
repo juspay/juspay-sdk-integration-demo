@@ -19,7 +19,7 @@
       "mandate_id": "uwgyQa*****bnCty4",
       "frequency": "MONTHLY",
       "end_date": "1606435200",
-      "currency": "SGD",
+      "currency": "BRL",
       "block_fund": false,
       "amount_rule": "VARIABLE"
     },
@@ -39,7 +39,7 @@
       "mandate_id": "qvjcv*****Hety1siP",
       "frequency": "MONTHLY",
       "end_date": "1606521600",
-      "currency": "SGD",
+      "currency": "BRL",
       "block_fund": false,
       "amount_rule": "VARIABLE"
     },
@@ -51,7 +51,7 @@
       "revokable_by_customer": true,
       "payment_info": {
         "upi": {
-          "payer_vpa": "99999999@paytm"
+          "payer_vpa": "99999999@MERCADOPAGO"
         },
         "payment_method_type": "UPI",
         "payment_method": "COLLECT"
@@ -62,7 +62,7 @@
       "mandate_id": "7SucJZ2P*****W8Xa26",
       "frequency": "MONTHLY",
       "end_date": "1606521600",
-      "currency": "SGD",
+      "currency": "BRL",
       "block_fund": false,
       "amount_rule": "VARIABLE",
       "activated_at": "2020-08-30T09:08:53Z"
@@ -75,7 +75,7 @@
       "revokable_by_customer": true,
       "payment_info": {
         "upi": {
-          "payer_vpa": "99999999@paytm"
+          "payer_vpa": "99999999@MERCADOPAGO"
         },
         "payment_method_type": "UPI",
         "payment_method": "COLLECT"
@@ -87,7 +87,7 @@
       "mandate_debit_token": "tkn_8027ce*****69456ad5590569",
       "frequency": "MONTHLY",
       "end_date": "1606521600",
-      "currency": "SGD",
+      "currency": "BRL",
       "block_fund": false,
       "amount_rule": "VARIABLE",
       "activated_at": "2020-08-30T09:54:10Z"

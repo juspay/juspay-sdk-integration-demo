@@ -48,7 +48,7 @@
         "rrn": "202238567896952"
       },
       "udf1": "",
-      "currency": "SGD",
+      "currency": "BRL",
       "udf4": "",
       "customer_id": "FILTERED",
       "date_created": "RIPPIFILTEREDT14:32:05Z",
@@ -71,7 +71,7 @@
         "offer_deduction_amount": "FILTERED",
         "net_amount": 1000,
         "order_id": "sampleorder507",
-        "currency": "SGD",
+        "currency": "BRL",
         "error_code": null,
         "gateway_id": 12,
         "surcharge_amount": "FILTERED",

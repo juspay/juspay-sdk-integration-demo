@@ -26,7 +26,7 @@
     "express_checkout": true,
     "error_message": "",
     "error_code": "",
-    "currency": "SGD",
+    "currency": "BRL",
     "created": "2021-11-09T16:20:52Z"
   },
   "status_id": 21,
@@ -81,7 +81,7 @@
   "customer_phone": "99999999",
   "customer_id": "testcardenc1",
   "customer_email": "test@gmail.com",
-  "currency": "SGD",
+  "currency": "BRL",
   "card": {
     "using_token": false,
     "using_saved_card": true,

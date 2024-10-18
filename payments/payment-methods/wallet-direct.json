@@ -14,8 +14,8 @@
     },
     {
       "payment_method_type": "WALLET",
-      "payment_method": "PAYTM",
-      "description": "Paytm",
+      "payment_method": "MERCADOPAGO",
+      "description": "MERCADOPAGO",
       "wallet_direct_debit_support": true
     },
     {

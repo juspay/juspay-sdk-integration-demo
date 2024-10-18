@@ -96,7 +96,7 @@
         "txn_amount": 21769.17,
         "error_message": "",
         "txn_object_type": "FILTERED",
-        "currency": "SGD",
+        "currency": "BRL",
         "redirect": true,
         "metadata": {
           "payment_channel": "ANDROID"
@@ -108,7 +108,7 @@
       },
       "amount_refunded": 0,
       "customer_email": "FILTERED",
-      "currency": "SGD",
+      "currency": "BRL",
       "customer_phone": "FILTERED",
       "bank_error_message": "",
       "id": "ordeu_9a2b2895e7434ba4b79476f8cfa1e3f9",

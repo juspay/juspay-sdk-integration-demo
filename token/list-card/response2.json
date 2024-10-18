@@ -18,7 +18,7 @@
             "card_fingerprint": "4ip95rsikuprlcojscp3p0b7pq",
             "juspay_bank_code": "JP_X",
             "card_sub_type": "NA",
-            "card_issuer_country": "SINGAPORE",
+            "card_issuer_country": "BRAZIL",
               "tokenize_support": false,
             "provider_category": "VAULT",
             "provider": "JUSPAY"

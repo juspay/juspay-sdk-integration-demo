@@ -3,9 +3,9 @@
   "object": "cardbin",
   "brand": "MASTERCARD",
   "bank": "JP MORGAN",
-  "country": "SINGAPORE",
+  "country": "BRAZIL",
   "type": "DEBIT",
   "card_sub_type": "PLATINUM",
   "juspay_bank_code": "JP_X",
-  "tokenize_support”: true
+  "tokenize_support": true
 }

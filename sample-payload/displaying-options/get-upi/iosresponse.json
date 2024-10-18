@@ -12,9 +12,9 @@
             "iconUrl": "https://assets.juspay.in/juspay/assets/images/phonepe_upi.png",
             "packageName": "phonepe://pay"
         }, {
-            "appName": "Paytm",
-            "iconUrl": "https://assets.juspay.in/juspay/assets/images/paytm_upi.png",
-            "packageName": "paytmmp://upi/pay"
+            "appName": "MERCADOPAGO",
+            "iconUrl": "https://assets.juspay.in/juspay/assets/images/MERCADOPAGO_upi.png",
+            "packageName": "MERCADOPAGOmp://upi/pay"
         }, {
             "appName": "Airtel",
             "iconUrl": "https://assets.juspay.in/juspay/assets/images/airtel_upi.png",

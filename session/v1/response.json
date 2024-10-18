@@ -20,7 +20,7 @@
           "action": "paymentPage",
           "customerId": "testing-customer-one",
           "returnUrl": "https://shop.merchant.com",
-          "currency": "SGD",
+          "currency": "BRL",
           "billingAddressFirstName": "John",
           "customerPhone": "99999999",
           "customerEmail": "test@mail.com",

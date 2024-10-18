@@ -67,7 +67,7 @@
   "customer_phone": "99870393",
   "customer_id": "cst_1845074",
   "customer_email": "juspay@juspay.in",
-  "currency": "SGD",
+  "currency": "BRL",
   "card": {
     "using_saved_card": true,
     "saved_to_locker": false,

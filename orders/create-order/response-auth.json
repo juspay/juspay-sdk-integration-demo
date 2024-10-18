@@ -30,7 +30,7 @@
   "customer_phone": "99999999",
   "customer_id": "1235677",
   "customer_email": "test@gmail.com",
-  "currency": "SGD",
+  "currency": "BRL",
   "amount_refunded": 0,
   "amount": 1
 }

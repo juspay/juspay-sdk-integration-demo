@@ -12,7 +12,7 @@ curl --location --request POST 'https://api.juspay.in/payout/merchant/v1/orders/
             "beneficiaryDetails": {
                 "details": {
                     "name": "Taral Shah",
-                    "brand": "PAYTM",
+                    "brand": "MERCADOPAGO",
                     "walletIdentifier" : "99999999"
                 },
                 "type": "WALLET"

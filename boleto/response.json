@@ -1,0 +1,26 @@
+{
+    "order_id": "1726818935",
+    "payment": {
+        "authentication": {
+            "method": "GET",
+            "url": "http://sandbox.juspay.in/v2/pay/start/test/moz56DQUJFvHp"
+        },
+        "sdk_params": {
+            "contents": {
+                "acquirer_info": [
+                    {
+                        "acquirer_name": "boletobancario",
+                        "barCodeData": "03399.02447 50467.155052 88642.701010 4 98710000000100",
+                        "downloadUrl": "https://checkoutshopper-test.adyen.com/checkoutshopper/utility/v1/boletobancario.pdf?data=BQABAQBCQNzr9c39KklSjS5JlMQ6v%2F0vgx8eWq%2FGQ1hPhxIXVTN8Hz9Vq1ASQMaNMNS%2Byole9zserqXGuPbEUNuqs%2FN6JOMeO7MsDKoxE55jxeTKZlWqUQdBR30zSyJary49YmDlFSYNGWBzlSxO%2BJqqRswI4RnylbGNxrx1twnWBdrbSVh7i3P3yquE3B2HU%2FwyJhx0PIWxNhRX8WEfgWh4usgaAJpkFvmMlF4pMOOOS71c4BYKShuMdGlNULg9FoeCtm09iiTgyHBeCfq%2BI0PHMe2GKomtsFlCqj97DkDGoIiInashPHbHcFVgAAcc4BkJ19AEaXoXtS8wXKSgvX6TaYo1B65yz6dbiwC7MgFQW9PQxWVa%2FsbKswvYXVDnAkuuipTaR90eeaBUsOG4%2FsJLyNCoTXTERvQNG3bd57JTkmnWMiX%2BbVKVzyabapLJMfQYSLJS6uJdlhQSosuI21iLeW9ivks96QfVuW7oFAm4dzN1huWvCUuKuw%3D",
+                        "expiry_time": "2024-10-15T00:00:00",
+                        "payment_instrument": "boletobancario"
+                    }
+                ]
+            },
+            "tag": "ACQUIRER_PARAMS"
+        }
+    },
+    "status": "PENDING_VBV",
+    "txn_id": "1726818935-3",
+    "txn_uuid": "mozcvdCcU56DQUJFvHp"
+}

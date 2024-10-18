@@ -1,0 +1,19 @@
+{
+    "order_id": "1728899031",
+    "payment": {
+        "authentication": {
+            "method": "GET",
+            "url": "https://sandbox.juspay.in/v2/pay/start/test/mozsRnRYPs4ApqgYBmr?cardIssuerBankName%3DPIX_QR%26cardType%3DRTP%26paymentMethod%3DPIX_QR%26paymentMethodType%3DRTP"
+        },
+        "sdk_params": {
+            "contents": {
+                "name": "generate-qr-code",
+                "qrString": "000201******014BR.GOV.BCB.PIX2569spi-h.itau.com.br/pix/qr/v2/af581bdc-624e-4333-af38-1adaddfa6ce05204000053039865802BR5914PMD BASHAR RIO6009SAO PAULO62070503***6304E7DB"
+            },
+            "tag": "RTP_PARAM"
+        }
+    },
+    "status": "PENDING_VBV",
+    "txn_id": "test-1728899031-1",
+    "txn_uuid": "mozsRnRYPs4ApqgYBmr"
+}

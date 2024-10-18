@@ -25,7 +25,7 @@
         "epg_txn_id": null,
         "rrn": null
       },
-      "currency": "SGD",
+      "currency": "BRL",
       "error_code": "03",
       "gateway_id": 100,
       "surcharge_amount": null,

@@ -16,10 +16,10 @@
     },
     {
       "status": "FLUCTUATE",
-      "payment_method": "FREECHARGE",
+      "payment_method": "PICPAY",
       "payment_method_type": "WALLET",
-      "juspay_bank_code": "JP_FREECHARGE",
-      "description": "Freecharge Wallet"
+      "juspay_bank_code": "JP_PICPAY",
+      "description": "PICPAY Wallet"
     },
     {
       "status": "DOWN",
@@ -63,7 +63,7 @@
         },
         {
           "status": "FLUCTUATE",
-          "upi_app": "net.one97.paytm"
+          "upi_app": "net.one97.MERCADOPAGO"
         }
       ]
     }
@@ -137,9 +137,9 @@
     },
     {
       "wallet_direct_debit_support": false,
-      "payment_method": "PAYTM",
+      "payment_method": "MERCADOPAGO",
       "payment_method_type": "WALLET",
-      "description": "Paytm Wallet"
+      "description": "MERCADOPAGO Wallet"
     },
     {
       "wallet_direct_debit_support": true,
@@ -170,15 +170,15 @@
     },
     {
       "wallet_direct_debit_support": false,
-      "payment_method": "MOBIKWIK",
+      "payment_method": "PAYPAL",
       "payment_method_type": "WALLET",
-      "description": "Mobikwik Wallet"
+      "description": "PAYPAL Wallet"
     },
     {
       "wallet_direct_debit_support": false,
-      "payment_method": "FREECHARGE",
+      "payment_method": "PICPAY",
       "payment_method_type": "WALLET",
-      "description": "Freecharge Wallet"
+      "description": "PICPAY Wallet"
     },
     {
       "payment_method": "ZESTMONEY",
@@ -289,9 +289,9 @@
     },
     {
       "wallet_direct_debit_support": true,
-      "payment_method": "FREECHARGE_V2",
+      "payment_method": "PICPAY_V2",
       "payment_method_type": "WALLET",
-      "description": "Freecharge Wallet"
+      "description": "PICPAY Wallet"
     },
     {
       "payment_method": "BAJAJ",
@@ -324,9 +324,9 @@
       "description": "Fincare Bank"
     },
     {
-      "payment_method": "NB_PAYTMV2TEST",
+      "payment_method": "NB_MERCADOPAGOV2TEST",
       "payment_method_type": "NB",
-      "description": "Paytm V2 Test"
+      "description": "MERCADOPAGO V2 Test"
     },
     {
       "wallet_direct_debit_support": false,

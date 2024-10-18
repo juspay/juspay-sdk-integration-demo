@@ -4,7 +4,7 @@
     "payload": {
         "action": "getWallet",
         "walletId": "wlt_nvtQf8DP1A2oGoZu",
-        "walletName": "PAYTM",
+        "walletName": "MERCADOPAGO",
         "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213"
     }
 }
