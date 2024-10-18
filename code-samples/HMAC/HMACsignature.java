@@ -17,9 +17,10 @@ public class SignatureVerification {
         params.put("myQP", "aGVsbG9Xb3JsZA==");
 
         String expectedHash = "8Esx2nrz3KE059rdsTkffYKu6AXXk07KzBo3KOexl3I=";
-        String localHooposResponseKey = "92206A0A4A75499C9B11206C2B3B9A53";
-        System.out.println(validateHMAC_SHA256(params, expectedHash, localHooposResponseKey));
+        String secretKey = "YOUR_RESPONSE_KEY";
+        System.out.println(validateHMAC_SHA256(params, expectedHash, secretKey));
     }
+
 
     public static boolean validateHMAC_SHA256(Map<String, String> params, String expectedHash, String key) throws java.security.NoSuchAlgorithmException,
             java.security.InvalidKeyException, java.io.UnsupportedEncodingException {
