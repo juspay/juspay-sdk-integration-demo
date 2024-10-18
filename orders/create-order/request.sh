@@ -9,6 +9,6 @@ curl --location 'https://sandbox.juspay.in/txns' \
 --data-urlencode 'format=json'
 --data-urlencode 'order.order_id=ord_1590759422' \
 --data-urlencode 'order.amount=1015.00' \
---data-urlencode 'order.currency=SGD' \
+--data-urlencode 'order.currency=BRL' \
 --data-urlencode 'order.customer_id=cst_1590759422' \
 --data-urlencode 'order.return_url=https://merchant.in/payments' \

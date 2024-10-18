@@ -1,7 +1,7 @@
 {
   "id": "wlt_q23xzki3pazgtezo",
   "object": "wallet_account",
-  "wallet": "MOBIKWIK",
+  "wallet": "PAYPAL",
   "token": null,
   "current_balance": null,
   "linked": false,

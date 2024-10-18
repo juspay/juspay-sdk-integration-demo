@@ -3,6 +3,6 @@
     "service": "in.juspay.hyperapi",
     "payload": {
         "action": "isDeviceReady",
-        "sdkPresent": "ANDROID_PAYTM"
+        "sdkPresent": "ANDROID_MERCADOPAGO"
     }
 }

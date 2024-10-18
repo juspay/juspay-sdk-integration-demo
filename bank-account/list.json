@@ -11,7 +11,7 @@
       "account_number": "40002323422",
       "beneficiary_name": "test",
       "validation_amount": 1,
-      "currency": "SGD",
+      "currency": "BRL",
       "validation_status": "PENDING",
       "last_validated": null,
       "metadata": {
@@ -29,7 +29,7 @@
       "account_number": "40002323422",
       "beneficiary_name": "test",
       "validation_amount": 1,
-      "currency": "SGD",
+      "currency": "BRL",
       "validation_status": "ACTIVE",
       "last_validated ": "2019-12-21T14:50:23Z",
       "metadata": {

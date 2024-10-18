@@ -23,7 +23,7 @@
                    {
                        "upiType": "INTENT",
                        "enable": false,
-                       "upiMethods": ["PHONEPE", "GPAY", "PAYTM"]
+                       "upiMethods": ["PHONEPE", "GPAY", "MERCADOPAGO"]
                    }]
                }
            ]

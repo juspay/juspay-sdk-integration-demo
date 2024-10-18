@@ -20,8 +20,8 @@
             },
             {
                 "paymentMethodType": "WALLET",
-                "paymentMethod": "PAYTM",
-                "description": "Paytm"
+                "paymentMethod": "MERCADOPAGO",
+                "description": "MERCADOPAGO"
             }
         ]
     },

@@ -7,7 +7,7 @@
     "id": "ordeh_1894a9c3450194ff39db6e7356382d56e",
     "merchant_id": "TEST",
     "amount": 15122,
-    "currency": "SGD",
+    "currency": "BRL",
     "order_id": "XXXX1234",
     "date_created": "2023-03-07T04:36:08Z",
     "return_url": "www.google.com",
@@ -60,7 +60,7 @@
         "par": "50XXXXXXXXXXXXXXXXXXXX6",
         "tokenization_status": "ACTIVE"
       },
-      "card_issuer_country": "SINGAPORE",
+      "card_issuer_country": "BRAZIL",
       "juspay_bank_code": "JP_XXXX",
       "extended_card_type": "CREDIT"
     },
@@ -84,7 +84,7 @@
       "txn_amount": 15122,
       "offer_deduction_amount": null,
       "gateway_id": 12,
-      "currency": "SGD",
+      "currency": "BRL",
       "metadata": {
         "microapp": "hyperpay",
         "payment_channel": "MWEB"

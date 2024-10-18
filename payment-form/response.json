@@ -23,7 +23,7 @@
     "token": "4788080252078243"
   },
   "nickname": null,
-  "issuer": "Paytm",
+  "issuer": "MERCADOPAGO",
   "card_details": {
     "last_four": "9426",
     "par": "V0010014622122423467188903638",

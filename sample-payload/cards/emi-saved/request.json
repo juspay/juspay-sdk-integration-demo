@@ -8,7 +8,7 @@
         "cardToken": "tkn_844ce1fb-9810-4b87-82a5-c8a62b30ded0",
         "cardSecurityCode": "123",
         "isEmi": true,
-        "emiBank": "HDFC",
+        "emiBank": "ITAU",
         "emiTenure": 3,
         "supportedGatewayId": [74,21],
         "emiType": "NO_COST_EMI",

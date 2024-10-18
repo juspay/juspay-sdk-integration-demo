@@ -3,4 +3,4 @@ curl --location --request POST 'https://api.juspay.in/wallets/wlt_yvuidaupkvz3' 
 --header 'version: 2023-06-30' \
 --header 'Authorization: Basic MTkx*****RGODBDNDg2Og==' \
 --data-urlencode 'command=update' \
---data-urlencode 'mobile_number=77777777'
+--data-urlencode 'mobile_number=77****777777'

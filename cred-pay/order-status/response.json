@@ -37,7 +37,7 @@
                   "response": {
                           "amount": {
                               "value": 2,
-                              "currency": "SGD"
+                              "currency": "BRL"
                           },
                           "state": "COMPLETED",
                           "refunds": null,
@@ -45,7 +45,7 @@
                                 {
                                     "amount": {
                                         "value": 1,
-                                        "currency": "SGD"
+                                        "currency": "BRL"
                                     },
                                     "funding_source": null,
                                     "gateway_reference_id": null
@@ -86,7 +86,7 @@
   "customer_phone": "73313542",
   "customer_id": "test_customer",
   "customer_email": "test007@gmail.com",
-  "currency": "SGD",
+  "currency": "BRL",
   "bank_error_message": "",
   "bank_error_code": "",
   "auth_type": "",

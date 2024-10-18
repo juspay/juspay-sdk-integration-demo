@@ -29,7 +29,7 @@
     "express_checkout": false,
     "error_message": "",
     "error_code": "",
-    "currency": "SGD",
+    "currency": "BRL",
     "created": "2020-08-30T09:53:17Z"
   },
   "status_id": 21,
@@ -51,7 +51,7 @@
     "created": "2020-08-30T09:54:10Z",
     "auth_id_code": ""
   },
-  "payer_vpa": "99999999@paytm",
+  "payer_vpa": "99999999@MERCADOPAGO",
   "order_id": "234823498237423894273498",
   "metadata": {
     "OVO:gateway_reference_id": "mandate"
@@ -80,7 +80,7 @@
   "customer_phone": "99999999",
   "customer_id": "cst_lz7zmpemoo5okv",
   "customer_email": "customer@gmail.com",
-  "currency": "SGD",
+  "currency": "BRL",
   "bank_error_message": "",
   "bank_error_code": "",
   "auth_type": "",

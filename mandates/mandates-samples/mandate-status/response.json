@@ -25,7 +25,7 @@
     "order_id": "234823498237423894273498",
     "net_amount": 1,
     "gateway_id": 19,
-    "gateway": "PAYTM_V2",
+    "gateway": "MERCADOPAGO_V2",
     "express_checkout": false,
     "error_message": "",
     "error_code": "",
@@ -51,10 +51,10 @@
     "created": "2020-08-30T09:54:10Z",
     "auth_id_code": ""
   },
-  "payer_vpa": "9999999999@paytm",
+  "payer_vpa": "9999999999@MERCADOPAGO",
   "order_id": "234823498237423894273498",
   "metadata": {
-    "PAYTM_V2:gateway_reference_id": "upimandate"
+    "MERCADOPAGO_V2:gateway_reference_id": "upimandate"
   },
   "merchant_id": "juspay",
   "mandate": {

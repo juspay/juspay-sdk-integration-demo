@@ -1,0 +1,11 @@
+curl --location 'https://sandbox.juspay.in/txns' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'Authorization: Basic R*********RTV***g==' \
+--data-urlencode 'order_id=1728385008' \
+--data-urlencode 'merchant_id=azhar_test' \
+--data-urlencode 'payment_method_type=RTP' \
+--data-urlencode 'redirect_after_payment=true' \
+--data-urlencode 'format=json' \
+--data-urlencode 'payment_method=PIX_QR' \
+--data-urlencode 'sdk_params=true' \
+--data-urlencode 'identity_credentials={"cpf":"5****509"}'

@@ -1,0 +1,15 @@
+curl --location 'http://sandbox.juspay.in/txns' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'version: 2023-01-01' \
+--header 'Authorization: Basic N0JBRDA4OUExRjYwNEYwREEyNDlCNjY3QTVCMUQzM0Q6' \
+--data-urlencode 'order.order_id=b1726818935' \
+--data-urlencode 'order.customer_id=1726818935' \
+--data-urlencode 'merchant_id=test' \
+--data-urlencode 'payment_method_type=OTC' \
+--data-urlencode 'redirect_after_payment=true' \
+--data-urlencode 'format=json' \
+--data-urlencode 'order.amount=1.00' \
+--data-urlencode 'order.return_url=https://google.com' \
+--data-urlencode 'payment_method=BOLETO' \
+--data-urlencode 'sdk_params=true' \
+--data-urlencode 'order.currency=BRL'

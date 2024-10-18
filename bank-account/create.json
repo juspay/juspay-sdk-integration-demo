@@ -8,7 +8,7 @@
   "account_number": "40002323422",
   "beneficiary_name": "test",
   "validation_amount": 1,
-  "currency": "SGD",
+  "currency": "BRL",
   "validation_status": "CREATED",
   "last_validated": null,
   "metadata": {

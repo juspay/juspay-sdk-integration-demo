@@ -5,7 +5,7 @@ curl --location --request POST 'https://api.juspay.in/orders' \
 --header 'Authorization: Basic QTA0QT*******ODg1Og==' \
 --data-urlencode 'order_id=14183944763' \
 --data-urlencode 'amount=100.00' \
---data-urlencode 'currency=SGD' \
+--data-urlencode 'currency=BRL' \
 --data-urlencode 'customer_id=guest_user_101' \
 --data-urlencode 'customer_email=customer@gmail.com' \
 --data-urlencode 'customer_phone=9988665522' \

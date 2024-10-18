@@ -5,7 +5,7 @@
         "signature": "",
         "shouldCreateMandate": "",
         "paymentMethodType": "",
-        "paymentMethod": "NB_SBI",
+        "paymentMethod": "NB_ITAU",
         "orderId": "hyperorder45314",
         "orderDetails": "",
         "offerToken": "",
@@ -19,7 +19,7 @@
         "additionalPaymentDetails": {
             "should_create_mandate": "true",
             "payment_method_type": "NB",
-            "payment_method": "JP_SBI",
+            "payment_method": "JP_ITAU",
             "mandate_type": "EMANDATE",
             "bank_ifsc": "YESB0000132",
             "bank_beneficiary_name": "qwertyuio",

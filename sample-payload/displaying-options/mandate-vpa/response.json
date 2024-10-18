@@ -5,7 +5,7 @@
         "action": "getMandateVpas",
         "list": [
             "@upi",
-            "@paytm"
+            "@MERCADOPAGO"
         ]
     },
     "errorMessage": "",

@@ -3,7 +3,7 @@
     <input type="hidden" class="order_id" value="guest_order_101"/>
     <input type="hidden" class="payment_method_type" value="WALLET"/>
     <select class="payment_method">
-        <option value="FREECHARGE" label="Freecharge Wallet">Freecharge Wallet</option>
+        <option value="PICPAY" label="PICPAY Wallet">PICPAY Wallet</option>
         <option>...</option>
         <!-- More wallets -->
         <option value="SBIBUDDY" label="SBI Buddy">SBI Buddy</option>

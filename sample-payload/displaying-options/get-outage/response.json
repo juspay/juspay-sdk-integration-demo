@@ -31,18 +31,18 @@
         "status": "DOWN"
       },
       {
-        "description": "Mobikwik",
-        "issuerName": "Mobikwik",
-        "juspayBankCode": "JP_MOBIKWIK",
-        "paymentMethod": "MOBIKWIK",
+        "description": "PAYPAL",
+        "issuerName": "PAYPAL",
+        "juspayBankCode": "JP_PAYPAL",
+        "paymentMethod": "PAYPAL",
         "paymentMethodType": "WALLET",
         "status": "DOWN"
       },
       {
-        "description": "Freecharge",
-        "issuerName": "Freecharge",
-        "juspayBankCode": "JP_FREECHARGE",
-        "paymentMethod": "FREECHARGE",
+        "description": "PICPAY",
+        "issuerName": "PICPAY",
+        "juspayBankCode": "JP_PICPAY",
+        "paymentMethod": "PICPAY",
         "paymentMethodType": "WALLET",
         "status": "FLUCTUATE"
       },
@@ -64,8 +64,8 @@
       },
       {
         "description": "Rupay",
-        "issuerName": "SBI",
-        "juspayBankCode": "JP_SBI",
+        "issuerName": "ITAU",
+        "juspayBankCode": "JP_ITAU",
         "paymentMethod": "RUPAY",
         "paymentMethodType": "CARD",
         "status": "FLUCTUATE"
@@ -95,10 +95,10 @@
         "status": "DOWN"
       },
       {
-        "description": "Paytm",
-        "issuerName": "Paytm",
-        "juspayBankCode": "JP_PAYTM",
-        "paymentMethod": "PAYTM",
+        "description": "MERCADOPAGO",
+        "issuerName": "MERCADOPAGO",
+        "juspayBankCode": "JP_MERCADOPAGO",
+        "paymentMethod": "MERCADOPAGO",
         "paymentMethodType": "WALLET",
         "status": "DOWN"
       }

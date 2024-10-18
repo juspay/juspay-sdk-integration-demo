@@ -22,7 +22,7 @@
       "order_id": "145678234",
       "net_amount": 1,
       "gateway_id": 19,
-      "gateway": "PAYTM_V2",
+      "gateway": "MERCADOPAGO_V2",
       "express_checkout": false,
       "error_message": "",
       "error_code": "",

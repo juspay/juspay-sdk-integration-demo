@@ -7,7 +7,7 @@
   "id": "ordeh_4b9501d714624eretry677i",
   "merchant_id": "merchantId",
   "amount": 90,
-  "currency": "SGD",
+  "currency": "BRL",
   "order_id": "JPAYNEW035",
   "date_created": "2021-09-10T09:24:06Z",
   "return_url": "https://api.juspay.in",
