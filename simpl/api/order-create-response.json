@@ -1,12 +1,36 @@
 {
-    "status": "CREATED",
-    "status_id": 1,
-    "id": "ordeh_ba1ecdf4312442b4916230b1d31c702c",
-    "order_id": "o1702870101",
-    "payment_links": {
-        "iframe": "http://localhost:8080/merchant/ipay/ordeh_ba1ecdf4312442b4916230b1d31c702c",
-        "web": "http://localhost:8080/merchant/pay/ordeh_ba1ecdf4312442b4916230b1d31c702c",
-        "mobile":
-   "http://localhost:8080/merchant/pay/ordeh_ba1ecdf4312442b4916230b1d31c702c?mobile=true"
-    }
+  "udf9": "",
+  "udf8": "",
+  "udf7": "",
+  "udf6": "",
+  "udf5": "",
+  "udf4": "",
+  "udf3": "",
+  "udf2": "",
+  "udf10": "",
+  "udf1": "",
+  "status_id": 10,
+  "status": "NEW",
+  "return_url": "https://www.google.com/",
+  "refunded": false,
+  "product_id": "",
+  "payment_links": {
+    "web": "https://api.juspay.in/merchant/pay/ordeu_8bddad1e87f485eab3db4528575c01b",
+    "mobile": "https://api.juspay.in/merchant/pay/ordeu_8bddad1e87f485eab3db4528575c01b?mobile=true",
+    "iframe": "https://api.juspay.in/merchant/ipay/ordeu_8bddad1e87f485eab3db4528575c01b"
+  },
+  "order_id": "o1702883646",
+  "merchant_id": "merchantId",
+  "juspay": {
+    "client_auth_token_expiry": "2020-06-16T10:43:35Z",
+    "client_auth_token": "tkn_753275c49a44a1a313eb2567f2fd6b"
+  },
+  "id": "ordeu_8bddad1e87f485eab3db4528575c01b",
+  "date_created": "2020-06-16T10:28:35Z",
+  "customer_phone": "9787776757",
+  "customer_id": "cth_rn94E53AizRcUCZf",
+  "customer_email": "test@gmail.com",
+  "currency": "INR",
+  "amount_refunded": 0,
+  "amount": 3
 }
