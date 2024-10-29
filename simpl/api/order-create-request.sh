@@ -1,13 +1,16 @@
-curl --location 'https://sandbox.juspay.in/ecr/orders' \
+curl --location 'https://api.juspay.in/orders' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
---header 'Authorization: Basic N0JBRDA4OUExRjYxxxxxxxxxxxxCNjY3QTVCMUQzM0Q6' \ --data-urlencode 'order_id=o1702883646' \
---data-urlencode 'customer_id=cth_rn94E73AizRcUCZf' \
---data-urlencode 'customer_email=arnab.das@juspay.in' \
---data-urlencode 'customer_phone=9608754682' \
+--header 'Authorization: Basic N0JBRDA4OUExRjYxxxxxxxxxxxxCNjY3QTVCMUQzM0Q6' \
+--header 'x-merchantid: merchantId'\
+--data-urlencode 'order_id=o1702883646' \
+--data-urlencode 'customer_id=cth_rn94E53AizRcUCZf' \
+--data-urlencode 'customer_email=test@gmail.com' \
+--data-urlencode 'customer_phone=9787776757' \
 --data-urlencode 'billing_address_city=Mumbai' \
 --data-urlencode 'shipping_address_city=Mumbai' \
---data-urlencode 'billing_address_line1=Mo' \
---data-urlencode 'shipping_address_last_name=hello2' \
---data-urlencode 'return_url=https://sandbox.juspay.in' \
+--data-urlencode 'billing_address_line1=Street1' \
+--data-urlencode 'shipping_address_last_name=Star' \
+--data-urlencode 'return_url=https://www.google.com/' \
+--data-urlencode 'options.get_client_auth_token=true' \
 --data-urlencode 'amount=3' \
---data-urlencode 'basket=[{"id":"LIFECELL","description":"SampleDescription","quantity":1,"unitP rice":1.0,"category":"Electronics","sku":"12345","productUrl":"https://www.abc. def/xyz","sellerType":"VENDOR","customParams":{"name1":"value1","name2":"value2 "}},{"id":"LIFECELL2","description":"SampleDescription","quantity":1,"unitPrice ":1.0,"category":"Electronics","sku":"12346","productUrl":"https://www.abc.def/ xyz","sellerType":"VENDOR","customParams":{"name1":"value1","name2":"value2"}}, {"id":"LIFECELL3","description":"SampleDescription","quantity":1,"unitPrice":1. 0,"category":"Electronics","sku":"12347","productUrl":"https://www.abc.def/xyz" ,"sellerType":"VENDOR","customParams":{"name1":"value1","name2":"value2"}}]' \ --data-urlencode 'metadata.SIMPL%3Agateway_reference_id=testmode'
+--data-urlencode 'basket=[{"id":"Mercury","description":"SampleDescription","quantity":1,"unitP rice":1.0,"category":"Electronics","sku":"12345","productUrl":"https://www.abc. def/xyz","sellerType":"VENDOR","customParams":{"name1":"value1","name2":"value2 "}},{"id":"Mercury2","description":"SampleDescription","quantity":1,"unitPrice ":1.0,"category":"Electronics","sku":"12346","productUrl":"https://www.abc.def/ xyz","sellerType":"VENDOR","customParams":{"name1":"value1","name2":"value2"}}, {"id":"Mercury3","description":"SampleDescription","quantity":1,"unitPrice":1. 0,"category":"Electronics","sku":"12347","productUrl":"https://www.abc.def/xyz" ,"sellerType":"VENDOR","customParams":{"name1":"value1","name2":"value2"}}]' \ --data-urlencode 'metadata.SIMPL%3Agateway_reference_id=testsimpl'
