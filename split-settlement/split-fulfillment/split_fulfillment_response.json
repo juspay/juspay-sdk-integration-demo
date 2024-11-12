@@ -1,0 +1,13 @@
+{
+    "order_id": "order1730187936",
+    "status": "SUCCESS",
+    "commands": [
+        {
+            "status": "SUCCESS",
+            "command": "POST_TXN_SPLIT_SETTLEMENT",
+            "error_message": "SUCCESS",
+            "date_created": "2024-10-29T07:48:46Z"
+        }
+    ],
+    "merchant_id": "azhar_test"
+}
