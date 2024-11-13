@@ -1,0 +1,19 @@
+{
+    "error": true,
+    "error_message": "BAD_REQUEST",
+    "user_message": "Invalid CardNumber",
+    "error_info": {
+        "code": "INVALID_INPUT",
+        "category": "USER_ERROR",
+        "href": "NA",
+        "request_id": "c58fc8ca-405a-4978-a0bd-c3b29e6f896f",
+        "user_message": "Invalid card number.",
+        "developer_message": "Invalid card number.",
+        "fields": [
+            {
+                "field_name": "card_number",
+                "reason": "Luhn Check Failed."
+            }
+        ]
+    }
+}
