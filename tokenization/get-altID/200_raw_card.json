@@ -1,0 +1,15 @@
+{
+    "errorCode": null,
+    "errorMessage": null,
+    "payload": {
+        "altIdDetails": "eyJhbGciOiJSU0EtT0FFUC0yNTYiLCJlbmMiOiJBMTI4R0NNIn0.B2g3CJinjam4V7a4Hzp3tUDUTEysLpKBdaFOQ6y81kg3P_V-fEWr9ftIF4g_0oZzPjdOMwNo8jO9FdyO_ynOB2c7DX1sxgetj5HDJ1T0lhC4E5sngctXtz6oieH6V7CY8AM4E8u_beW9SZ-Ntm5rjAcwwRqL18wcJS9zQrZjNX5goqvUNVBmlAsh9QUNKbxSmoiaMa4wj4wLakexdUkZuQyYUmUIZLtKsExihVFX8a7wNbihsH1tFEXQjppoRSHM9CfyC6Z2VcusYw7N39xzodQFUx9D7fF0z7k1R-uUPwiGItfBTQrUmwxrcM-dPrbToU4SNmbam23sVS_-N6cPFO1Bw.C3Po9U2GyN5vAh1J.IpHZM9Wh52RvyUvBH1ajsc9lH-EHEbq3oWGBRB2oemvSVnqoLpNKqoMXcKQxz8OwYF2x0g0Zwp-XkK_pYbSjdypOnDAsOTXU7ezsTr0OZVeG6A.0aj97mv9kfUbiBIxIB568Q",
+        "cardBrand": "VISA",
+        "cardIssuerBank": "WELLS FARGO BANK, NATIONAL ASSOCIATION",
+        "cardIssuerCountry": "UNITEDSTATES",
+        "correlationId": "QZ7HISUbcqefdCJFMA",
+        "isRawCard": true,
+        "provider": "VISA",
+        "providerCategory": "NETWORK"
+    },
+    "status": "SUCCESS"
+}
