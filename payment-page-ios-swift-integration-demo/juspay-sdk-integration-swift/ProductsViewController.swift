@@ -45,14 +45,14 @@ class ProductsViewController: UIViewController {
     func createInitiatePayload() -> [String: Any] {
         let innerPayload : [String: Any] = [
             "action": "initiate",
-            "merchantId": "testhdfc1",
-            "clientId": "hdfcmaster",
-            "environment": "sandbox"
+            "merchantId": "flipkart",
+            "clientId": "flipkart",
+            "environment": "production"
         ];
         
         let sdkPayload : [String: Any] = [
             "requestId": UUID().uuidString,
-            "service": "in.juspay.hyperpay",
+            "service": "in.juspay.safe",
             "payload": innerPayload
         ]
         
