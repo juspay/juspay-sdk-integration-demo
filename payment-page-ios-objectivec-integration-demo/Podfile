@@ -7,7 +7,7 @@ use_frameworks!
 target 'ObjectiveC' do
   # Adding Hyper SDK dependecy
   # block:start:adding-hyper-sdk-pod
-  pod 'HyperSDK', '2.1.31'
+  pod 'HyperSDK', '2.2.1.12'
   # block:end:adding-hyper-sdk-pod
 end
 
