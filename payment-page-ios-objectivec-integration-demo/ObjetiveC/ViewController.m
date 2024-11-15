@@ -29,14 +29,14 @@
 - (NSDictionary *)createInitiatePayload {
     NSDictionary *innerPayload = @{
         @"action": @"initiate",
-        @"merchantId": @"<MERCHANT_ID>",
-        @"clientId": @"<CLIENT_ID>",
+        @"merchantId": @"flipkart",
+        @"clientId": @"flipkart",
         @"environment": @"production"
     };
 
     NSDictionary *sdkPayload = @{
         @"requestId": @"12398b5571d74c3388a74004bc24370c",
-        @"service": @"in.juspay.hyperpay",
+        @"service": @"in.juspay.safe",
         @"payload": innerPayload
     };
 
@@ -51,27 +51,16 @@
     // Make an API Call to your server to create Session and return SDK Payload
     //Payload received from Session API call
     NSDictionary *sdkProcessPayload = @{
-        @"clientId": @"<your_client_id>",
         @"amount": @"1.0",
-        @"merchantId": @"<your_merchant_id>",
-        @"clientAuthToken": @"tkn_xxxxxxxxxxxxxxxxxxxxx",
-        @"clientAuthTokenExpiry": @"2022-03-12T20:29:23Z",
-        @"environment": @"sandbox",
-        @"lastName": @"wick",
-        @"action": @"paymentPage",
-        @"customerId": @"testing-customer-one",
-        @"returnUrl": @"https://shop.merchant.com",
-        @"currency": @"INR",
-        @"firstName": @"John",
-        @"customerPhone": @"9876543210",
-        @"customerEmail": @"test@mail.com",
+        @"action": @"startJuspaySafe",
+        @"url": @"<https://shop.merchant.com>",
         @"orderId": @"testing-order-one",
-        @"description": @"Complete your payment"
+        @"endUrls": ["<testingURL"]
     };
     
     NSDictionary *sdkPayload = @{
         @"requestId": NSUUID.UUID.UUIDString,
-        @"service": @"in.juspay.hyperpay",
+        @"service": @"in.juspay.safe",
         @"payload": sdkProcessPayload
     };
 
