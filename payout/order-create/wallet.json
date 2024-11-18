@@ -2,32 +2,45 @@
   "type": "FULFILL_ONLY",
   "status": "READY_FOR_FULFILLMENT",
   "payments": [],
-  "orderId": "e6J4OxzzbpJ1G2Lu",
+  "orderId": "ONaajHngrONssVSu",
   "fulfillments": [
-    {
-      "updatedBy": "DEFAULT",
-      "updatedAt": "2020-03-06T19:55:21Z",
-      "type": "ORDER",
-      "statusUpdatedAt": "2020-03-06T19:55:21Z",
-      "status": "CREATED",
-      "preferredMethodList": [
-        "CASHFREE_IMPS"
-      ],
-      "id": "9e7a542cd1744c7a612333c58ecefa-f1",
-      "fulfillmentMethodList": [],
-      "createdAt": "2020-03-06T19:55:21Z",
-      "beneficiaryDetails": {
-        "details": {
-          "name": "Taral Shah",
-          "brand": "MERCADOPAGO",
-          "walletIdentifier": "99999999"
-        },
-        "type": "WALLET"
-      },
-      "amount": 1
-    }
+      {
+          "updatedBy": "DEFAULT",
+          "updatedAt": "2024-11-13T12:33:38Z",
+          "type": "ORDER",
+          "statusUpdatedAt": "2024-11-13T12:33:38Z",
+          "status": "CREATED",
+          "preferredMethodList": [
+              "PAGSEGURO_WALLET"
+          ],
+          "id": "43795f01ccc402a9848313ee0101c2-f1",
+          "fulfillmentMethodList": [],
+          "fulfillmentCurrency": "BRL",
+          "createdAt": "2024-11-13T12:33:38Z",
+          "beneficiaryDetails": {
+              "details": {
+                  "walletIdentifier": "a1f4XXXXXXXXXXXXXXXXXXXXXXXXXXXXc1d2",
+                  "payeeAdditionalDetails": {
+                      "name": "TuXXar",
+                      "documents": [
+                          {
+                              "docType": "CNPJ",
+                              "docId": "853.XXXXXX8-93"
+                          }
+                      ],
+                      "country": "BRA"
+                  },
+                  "brand": "PIX_KEY"
+              },
+              "type": "WALLET"
+          },
+          "amount": 1,
+          "additionalInfo": {
+              "transactionType": "B2C"
+          }
+      }
   ],
-  "customerId": "m123",
+  "customerId": "dsgsdgfsdgfsg",
   "amount": 1,
   "udf1": "udf1",
   "udf2": "udf2",
