@@ -1,87 +1,94 @@
 {
-  "updatedAt": "2020-03-07T10:25:04Z",
+  "updatedAt": "2024-11-13T13:50:27Z",
   "type": "FULFILL_ONLY",
-  "status": "FULFILLMENTS_SUCCESSFUL",
-  "orderId": "Z3ags1v7S6FioDQA",
+  "status": "FULFILLMENTS_SCHEDULED",
+  "orderId": "m1wSW75lfwt14fQG",
   "fulfillments": [
-    {
-      "updatedBy": "DEFAULT",
-      "updatedAt": "2020-03-07T10:25:04Z",
-      "type": "ORDER",
-      "transactions": [
-        {
-          "updatedAt": "2020-03-07T10:24:43Z",
-          "txnResponse": {
-            "status": "SUCCESS",
-            "requestId": "3c424431d0243a6a4ff15d1ddac443",
-            "amount": 1
+      {
+          "updatedBy": "DEFAULT",
+          "updatedAt": "2024-11-13T13:50:27Z",
+          "type": "ORDER",
+          "transactions": [
+              {
+                  "updatedAt": "2024-11-13T13:50:28Z",
+                  "txnResponse": {
+                      "type": "success",
+                      "payout": {
+                          "uid": "51eb04107d782a9ae7138550f1f1c5c6678f5fc9",
+                          "target_account": "a1f4102e-a446-4a57-bcce-6fa48899c1d2",
+                          "target": "pix_key",
+                          "status": "OP",
+                          "request_exchange_rate": "3.2320",
+                          "request_date": "2024-11-13 13:50:28",
+                          "request_currency": "BRL",
+                          "request_amount": "1.00",
+                          "payee": {
+                              "phone": "12XXXXXX92",
+                              "name": "TXXXXr",
+                              "email": "tuXXXXXXXXXXXXXom",
+                              "document_type": "CNPJ",
+                              "document": "00085351346893",
+                              "bank_info": {
+                                  "target_account_type": "random",
+                                  "target_account": "a1f4102e-a446-4a57-bcce-6fa48899c1d2"
+                              }
+                          },
+                          "local_tax_amount": "0.00",
+                          "local_exchange_rate": "1.0000",
+                          "local_currency": "BRL",
+                          "local_amount_total": "1.00",
+                          "external_reference": "acc989d9d2b4c8ca8557de56a6a97e",
+                          "debit_fee": "0.00",
+                          "debit_currency": "USD",
+                          "debit_amount_total": "0.31",
+                          "debit_amount": "0.31"
+                      }
+                  },
+                  "transactionRef": "acc989d9d2b4c8ca8557de56a6a97e",
+                  "timeStamp": "2024-11-13T13:50:28Z",
+                  "status": "INITIATED",
+                  "fulfillmentMethod": "EBANX_WALLET",
+                  "createdAt": "2024-11-13T13:50:28Z",
+                  "amount": 1
+              }
+          ],
+          "statusUpdatedAt": "2024-11-13T13:50:27Z",
+          "status": "PENDING",
+          "preferredMethodList": [
+              "EBANX_WALLET"
+          ],
+          "merchantCustomerId": "dsgsdgfsdgfsg",
+          "id": "3fd48caabc2405c8d8d394fad57fde-f1",
+          "fulfillmentMethodList": [
+              "EBANX_WALLET",
+              "PAYPAL_WALLET"
+          ],
+          "fulfillmentCurrency": "BRL",
+          "createdAt": "2024-11-13T13:50:27Z",
+          "beneficiaryDetails": {
+              "details": {
+                  "walletIdentifier": "a1f4XXXXXXXXXXXXXXXXXXXXXXXXXXXXc1d2",
+                  "payeeAdditionalDetails": {
+                      "name": "TuXXar",
+                      "documents": [
+                          {
+                              "docType": "CNPJ",
+                              "docId": "853.XXXXXX8-93"
+                          }
+                      ],
+                      "country": "BRA"
+                  },
+                  "brand": "PIX_KEY"
+              },
+              "type": "WALLET"
           },
-          "transactionRef": "3c424431d0243a6a4ff15d1ddac443",
-          "timeStamp": "2020-03-07T10:24:43Z",
-          "status": "SUCCESS",
-          "gatewayRefId": "3c424431d0243a6a4ff15d1ddac443",
-          "fulfillmentMethod": "DUMMY_IMPS",
-          "createdAt": "2020-03-07T10:24:05Z",
           "amount": 1,
-           "responseMessage": "COMPLETED",
-           "responseCode": "00",
-           "responseDescription" : "Approved",
-        },
-        {
-                    "updatedAt": "2022-10-18T11:51:20Z",
-                    "txnResponse": {
-                        "transactionType": "CRED VOUCHER",
-                        "transactionTime": "11:51:18",
-                        "transactionIdentifier": "302291426784098",
-                        "transactionDate": "18-10-2022",
-                        "systemsTraceAuditNumber": "998265",
-                        "statusCode": "FAILURE",
-                        "retrievalReferenceNumber": "229117998265",
-                        "responseCode": "C",
-                        "approvalCode": "",
-                        "actionCode": "57",
-                        "acquiringBin": "478384"
-                    },
-                    "transactionRef": "229117998265",
-                    "timeStamp": "2020-03-06T11:51:20Z",
-                    "status": "FAILURE",
-                    "responseMessage": "FAILURE",
-                    "responseCode": "57",
-                    "responseDescription" : "Transaction Not Permitted to card holder",
-                    "gatewayRefId": "229117998265",
-                    "fulfillmentMethod": "JUSPAY_VISADIRECT",
-                    "epgTxnId": "302291426784098",
-                    "createdAt": "2020-03-06T11:51:17Z",
-                    "amount": 36
-                }
-       
-      ],
-      "statusUpdatedAt": "2020-03-07T10:25:04Z",
-      "status": "SUCCESS",
-      "preferredMethodList": [
-        "DUMMY_IMPS",
-        "CASHFREE_IMPS"
-      ],
-      "merchantCustomerId": "ce1d3404-dc3d-4886-a46e-43a48ddd0324",
-      "id": "f9c2f6669ba4f3fa70c4d4d01d4dee-f1",
-      "fulfillmentMethodList": [
-        "DUMMY_IMPS",
-        "CASHFREE_IMPS",
-        "DUMMY_NEFT"
-      ],
-      "createdAt": "2020-03-07T10:23:28Z",
-      "beneficiaryDetails": {
-        "details": {
-          "name": "Shubham Kumar",
-          "ifsc": "YESB0000262",
-          "account": "026291800001191"
-        },
-        "type": "ACCOUNT_IFSC"
-      },
-      "amount": 1
-    }
+          "additionalInfo": {
+              "transactionType": "B2C"
+          }
+      }
   ],
-  "customerId": "ce1d3404-dc3d-4886-a46e-43a48ddd0324",
-  "createdAt": "2020-03-07T10:23:28Z",
+  "customerId": "dsgsdgfsdgfsg",
+  "createdAt": "2024-11-13T13:50:27Z",
   "amount": 1
 }
