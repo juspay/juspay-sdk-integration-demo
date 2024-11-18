@@ -1,14 +1,14 @@
 {
-  "customer_email": "krishna.gprasad@juspay.in",
-  "customer_phone": "7093125824",
-  "customer_id": "cth_gdSPLGw37EgtJBXw",
+  "customer_email": "test@juspay.in",
+  "customer_phone": "9999999999",
+  "customer_id": "gdSPLGw37EgtJBXw",
   "status_id": 21,
   "status": "CHARGED",
   "id": "ordeh_fe7a2de881b14549bc550adaaab8b6c1",
-  "merchant_id": "azhar_test",
+  "merchant_id": "juspay_test",
   "amount": 1000,
   "currency": "INR",
-  "order_id": "HD-1699336785",
+  "order_id": "test-1699336785",
   "date_created": "2023-11-07T05:59:45Z",
   "return_url": "http://www.google.com/",
   "product_id": "1",
@@ -32,7 +32,7 @@
   "effective_amount": 1000,
   "txn_list": [
     {
-      "txn_id": "azhar_test-HD-1699336785-1-1",
+      "txn_id": "test-HD-1699336785-1-1",
       "payment_method_type": "UPI",
       "auth_type": "",
       "payment_method": "UPI",
@@ -65,8 +65,8 @@
       "bank_error_message": "",
       "txn_uuid": "mozsTQdwb1L6pQymAgD",
       "txn_detail": {
-        "txn_id": "azhar_test-HD-1699336785-1-1",
-        "order_id": "HD-1699336785",
+        "txn_id": "test-1699336785-1-1",
+        "order_id": "test-1699336785",
         "status": "CHARGED",
         "error_code": null,
         "net_amount": 1000,
@@ -113,7 +113,7 @@
       "status": "CHARGED"
     },
     {
-      "txn_id": "azhar_test-HD-1699336785-1-2",
+      "txn_id": "test-1699336785-1-2",
       "payment_method_type": "REWARD",
       "auth_type": "",
       "payment_method": "TWID",
@@ -148,7 +148,7 @@
       "bank_error_message": "",
       "txn_uuid": "mozmNoLkQJLeMvvVTZS",
       "txn_detail": {
-        "txn_id": "azhar_test-HD-1699336785-1-2",
+        "txn_id": "test-1699336785-1-2",
         "order_id": "HD-1699336785",
         "status": "CHARGED",
         "error_code": null,
