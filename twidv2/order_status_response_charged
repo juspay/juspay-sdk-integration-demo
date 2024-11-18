@@ -120,28 +120,6 @@
       "refunded": true,
       "amount_refunded": 998,
       "effective_amount": 2,
-      "refunds": [
-        {
-          "id": null,
-          "amount": 2,
-          "unique_request_id": "refund1699336957-1",
-          "ref": "RF-2558",
-          "created": "2023-11-07T06:02:37Z",
-          "status": "SUCCESS",
-          "error_message": "Transaction Cancelled Successfully",
-          "sent_to_gateway": true,
-          "expected_refund_credit_time": "2023-11-18T07:00:00Z",
-          "initiated_by": "API",
-          "refund_source": "TWID_V2",
-          "refund_type": "STANDARD",
-          "metadata": {
-            "refund_pg_amount": null,
-            "refund_points_amount": null,
-            "refund_total_amount": null
-          },
-          "error_code": null
-        }
-      ],
       "resp_code": null,
       "resp_message": null,
       "bank_error_code": "",
