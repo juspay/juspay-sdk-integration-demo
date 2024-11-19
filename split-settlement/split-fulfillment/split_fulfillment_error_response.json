@@ -1,0 +1,13 @@
+{
+    "error_message": "The request is redundant,command has been previously executed successfully",
+    "status": "ERROR",
+    "error_code": "invalid_request",
+    "error_info": {
+        "user_message": "Request has already been executed successfully.",
+        "request_id": "964bcaac-553a-4abb-af66-4993eaa2b252",
+        "href": "NA",
+        "developer_message": "Duplicate request. Provided command has already been executed previously.",
+        "code": "ALREADY_EXISTS",
+        "category": "USER_ERROR"
+    }
+}
