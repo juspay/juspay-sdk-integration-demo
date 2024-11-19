@@ -1,4 +1,4 @@
-curl --location --globoff '{{local}}/txns' \
+curl --location --globoff 'https://api.juspay.in/txns' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'Authorization: Basic RThGQjJCMDBDODA5NDU3RkE5MzU2RDIxMzI1QUYxRDU6' \
 --data-urlencode 'order.order_id=recurring960' \
