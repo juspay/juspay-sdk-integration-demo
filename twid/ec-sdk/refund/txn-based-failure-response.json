@@ -1,0 +1,319 @@
+{
+    "customer_email": "aaa@aa.com",
+    "customer_phone": "8892526772",
+    "customer_id": "cth_k2bTwtMZFo1qKjpN",
+    "status_id": 21,
+    "status": "CHARGED",
+    "id": "ordeh_3d316be64e4f4b16a8a47c9523b17d39",
+    "merchant_id": "azhar_test",
+    "amount": 1500,
+    "currency": "INR",
+    "order_id": "twid_1732013031",
+    "date_created": "2024-11-19T10:43:50Z",
+    "return_url": "https://requestbin.juspay.net",
+    "product_id": "",
+    "payment_links": {
+        "iframe": "https://sandbox.juspay.in/orders/ordeh_3d316be64e4f4b16a8a47c9523b17d39/payment-page",
+        "mobile": "https://sandbox.juspay.in/orders/ordeh_3d316be64e4f4b16a8a47c9523b17d39/payment-page",
+        "web": "https://sandbox.juspay.in/orders/ordeh_3d316be64e4f4b16a8a47c9523b17d39/payment-page"
+    },
+    "udf1": "",
+    "udf2": "",
+    "udf3": "",
+    "udf4": "",
+    "udf5": "",
+    "udf6": "",
+    "udf7": "",
+    "udf8": "",
+    "udf9": "",
+    "udf10": "",
+    "refunded": true,
+    "amount_refunded": 1500,
+    "effective_amount": 1500,
+    "metadata": {
+        "PAYTM_V2:gateway_reference_id": "paytmv2_testing",
+        "TWID_V2:gateway_reference_id": "twid-s2s",
+        "order_expiry": "2024-11-19T10:53:50Z",
+        "payment_links": {
+            "iframe": "https://sandbox.juspay.in/orders/ordeh_3d316be64e4f4b16a8a47c9523b17d39/payment-page",
+            "mobile": "https://sandbox.juspay.in/orders/ordeh_3d316be64e4f4b16a8a47c9523b17d39/payment-page",
+            "web": "https://sandbox.juspay.in/orders/ordeh_3d316be64e4f4b16a8a47c9523b17d39/payment-page"
+        },
+        "payment_page_client_id": "change"
+    },
+    "txn_list": [
+        {
+            "txn_id": "azhar_test-twid_1732013031-1-1",
+            "payment_method_type": "CARD",
+            "auth_type": "THREE_DS",
+            "card": {
+                "expiry_year": "2025",
+                "card_reference": "",
+                "saved_to_locker": false,
+                "expiry_month": "12",
+                "name_on_card": "Test",
+                "card_issuer": "HDFC Bank",
+                "last_four_digits": "1111",
+                "using_saved_card": false,
+                "card_fingerprint": "4t6fpp90t9ghlbvk0b0ahqo2lj",
+                "card_isin": "411111",
+                "card_type": "DEBIT",
+                "card_brand": "VISA",
+                "using_token": false,
+                "tokens": [],
+                "token_type": "CARD",
+                "card_issuer_country": "INDIA",
+                "juspay_bank_code": "JP_HDFC",
+                "extended_card_type": "DEBIT",
+                "payment_account_reference": ""
+            },
+            "payment_method": "VISA",
+            "refunded": true,
+            "amount_refunded": 1000,
+            "effective_amount": 1000,
+            "refunds": [
+                {
+                    "id": "refund_split_1732013483",
+                    "amount": 1000,
+                    "unique_request_id": "refund_split_1732013483",
+                    "ref": "20241119021670656684265775554570418",
+                    "created": "2024-11-19T10:51:23Z",
+                    "last_updated": "2024-11-19T10:55:53Z",
+                    "status": "Failure",
+                    "error_message": "Refund Failure",
+                    "sent_to_gateway": true,
+                    "gateway_refund_response": {
+                        "refund_break_up_details": [
+                            {
+                                "card_scheme": "VISA",
+                                "issuing_bank_name": "ICICI Bank",
+                                "masked_card_number": "************1111",
+                                "pay_method": "CREDIT_CARD",
+                                "refund_amount": "1000.00",
+                                "refund_type": "TO_SOURCE",
+                                "rrn": "6974605507046771805045",
+                                "user_credit_expected_date": "2024-11-24 16:25:52.0"
+                            }
+                        ]
+                    },
+                    "arn": "6974605507046771805045",
+                    "expected_refund_credit_time": "2024-11-24T17:00:00Z",
+                    "initiated_by": "API",
+                    "refund_source": "PAYTM_V2",
+                    "refund_type": "STANDARD",
+                    "pg_processed_at": "2024-11-19T10:55:53Z",
+                    "bank_processed_at": "2024-11-19T10:55:53Z",
+                    "error_code": "10"
+                }
+            ],
+            "resp_code": null,
+            "resp_message": null,
+            "bank_error_code": "",
+            "bank_error_message": "",
+            "txn_uuid": "mozr2oTGMt62uin1A7k",
+            "txn_detail": {
+                "txn_id": "azhar_test-twid_1732013031-1-1",
+                "order_id": "twid_1732013031",
+                "status": "CHARGED",
+                "error_code": null,
+                "net_amount": 1500,
+                "surcharge_amount": null,
+                "tax_amount": null,
+                "txn_amount": 1000,
+                "offer_deduction_amount": null,
+                "gateway_id": 19,
+                "currency": "INR",
+                "express_checkout": false,
+                "redirect": true,
+                "txn_uuid": "mozr2oTGMt62uin1A7k",
+                "gateway": "PAYTM_V2",
+                "error_message": "",
+                "created": "2024-11-19T10:44:01Z",
+                "last_updated": "2024-11-19T10:44:09Z",
+                "txn_flow_type": "CARD_TRANSACTION",
+                "is_cvv_less_txn": false,
+                "txn_amount_breakup": [
+                    {
+                        "name": "BASE",
+                        "amount": 1000,
+                        "sno": 1,
+                        "method": "ADD"
+                    }
+                ]
+            },
+            "payment_gateway_response": {
+                "resp_code": "01",
+                "rrn": "6877574014556983306097",
+                "created": "2024-11-19T10:44:07Z",
+                "epg_txn_id": "20241119011670000065665453403220418",
+                "resp_message": "Txn Success",
+                "auth_id_code": "621494",
+                "txn_id": "azhar_test-twid_1732013031-1-1",
+                "gateway_response": {
+                    "authCode": "621494",
+                    "bankName": "ICICI Bank",
+                    "bankTxnId": "6877574014556983306097",
+                    "cardScheme": "VISA",
+                    "gatewayName": "HDFCPAY",
+                    "merchantUniqueReference": "NA",
+                    "mid": "Juspay67815894107156",
+                    "orderId": "azhar_test-twid_1732013031-1-1",
+                    "paymentMode": "CC",
+                    "refundAmt": "0.0",
+                    "resultCode": "01",
+                    "resultInfo": {
+                        "resultCode": "01",
+                        "resultMsg": "Txn Success",
+                        "resultStatus": "TXN_SUCCESS"
+                    },
+                    "resultMsg": "Txn Success",
+                    "resultStatus": "TXN_SUCCESS",
+                    "rrnCode": "6877574014556983306097",
+                    "txnAmount": "1000.00",
+                    "txnDate": "2024-11-19 16:14:03.0",
+                    "txnId": "20241119011670000065665453403220418",
+                    "txnType": "SALE"
+                },
+                "network_error_message": null,
+                "network_error_code": null,
+                "arn": "",
+                "gateway_merchant_id": null,
+                "eci": null,
+                "auth_ref_num": null
+            },
+            "gateway_id": 19,
+            "gateway_reference_id": "paytmv2_testing",
+            "metadata": {
+                "PAYTM_V2:gateway_reference_id": "paytmv2_testing",
+                "TWID_V2:gateway_reference_id": "twid-s2s",
+                "order_expiry": "2024-11-19T10:53:50Z",
+                "payment_links": {
+                    "iframe": "https://sandbox.juspay.in/orders/ordeh_3d316be64e4f4b16a8a47c9523b17d39/payment-page",
+                    "mobile": "https://sandbox.juspay.in/orders/ordeh_3d316be64e4f4b16a8a47c9523b17d39/payment-page",
+                    "web": "https://sandbox.juspay.in/orders/ordeh_3d316be64e4f4b16a8a47c9523b17d39/payment-page"
+                },
+                "payment_page_client_id": "change"
+            },
+            "offers": [],
+            "status": "CHARGED",
+            "resp_category": null
+        },
+        {
+            "txn_id": "azhar_test-twid_1732013031-1-2",
+            "payment_method_type": "REWARD",
+            "auth_type": "",
+            "payment_method": "TWID",
+            "refunded": true,
+            "amount_refunded": 500,
+            "effective_amount": 500,
+            "refunds": [
+                {
+                    "id": null,
+                    "amount": 500,
+                    "unique_request_id": "refund_split_1732013518",
+                    "ref": "RF-4177",
+                    "created": "2024-11-19T10:51:57Z",
+                    "last_updated": "2024-11-19T10:58:39Z",
+                    "status": "FAILURE",
+                    "error_message": "Failure",
+                    "sent_to_gateway": true,
+                    "expected_refund_credit_time": "2024-12-03T11:00:00Z",
+                    "initiated_by": "API",
+                    "refund_source": "TWID_V2",
+                    "refund_type": "STANDARD",
+                    "metadata": {
+                        "refund_pg_amount": null,
+                        "refund_points_amount": null,
+                        "refund_total_amount": null
+                    },
+                    "pg_processed_at": "2024-11-19T10:58:39Z",
+                    "error_code": "Failure"
+                }
+            ],
+            "resp_code": null,
+            "resp_message": null,
+            "bank_error_code": "",
+            "bank_error_message": "",
+            "txn_uuid": "mozgcZT2s9YeF1UEbvX",
+            "txn_detail": {
+                "txn_id": "azhar_test-twid_1732013031-1-2",
+                "order_id": "twid_1732013031",
+                "status": "CHARGED",
+                "error_code": null,
+                "net_amount": 1500,
+                "surcharge_amount": null,
+                "tax_amount": null,
+                "txn_amount": 500,
+                "offer_deduction_amount": null,
+                "gateway_id": 92,
+                "currency": "INR",
+                "express_checkout": false,
+                "redirect": false,
+                "txn_uuid": "mozgcZT2s9YeF1UEbvX",
+                "gateway": "TWID_V2",
+                "error_message": "",
+                "created": "2024-11-19T10:44:00Z",
+                "last_updated": "2024-11-19T10:44:09Z",
+                "txn_flow_type": "DIRECT_DEBIT",
+                "txn_amount_breakup": [
+                    {
+                        "name": "BASE",
+                        "amount": 500,
+                        "sno": 1,
+                        "method": "ADD"
+                    }
+                ]
+            },
+            "payment_gateway_response": {
+                "resp_code": "True",
+                "rrn": null,
+                "created": "2024-11-19T10:44:09Z",
+                "epg_txn_id": "83671",
+                "resp_message": "success",
+                "auth_id_code": null,
+                "txn_id": "azhar_test-twid_1732013031-1-2",
+                "gateway_response": {
+                    "data": {
+                        "bill_amount": 1500,
+                        "bill_amount_remaining": 1000,
+                        "cashback_voucher_earned": null,
+                        "merchant_transaction_id": "azhar_test-twid_1732013031-1-2",
+                        "redeemed_points": 2000,
+                        "reward_amount_redeemed": 500,
+                        "reward_points_earned": 0,
+                        "total_amount_redeemed": null,
+                        "transaction_date": null,
+                        "twid_transaction_id": 83671,
+                        "voucher_amount_redeemed": null
+                    },
+                    "error_code": null,
+                    "message": "success",
+                    "status": true
+                },
+                "network_error_message": null,
+                "network_error_code": null,
+                "arn": null,
+                "gateway_merchant_id": null,
+                "eci": null,
+                "auth_ref_num": null
+            },
+            "gateway_id": 92,
+            "gateway_reference_id": "twid-s2s",
+            "metadata": {
+                "PAYTM_V2:gateway_reference_id": "paytmv2_testing",
+                "TWID_V2:gateway_reference_id": "twid-s2s",
+                "order_expiry": "2024-11-19T10:53:50Z",
+                "payment_links": {
+                    "iframe": "https://sandbox.juspay.in/orders/ordeh_3d316be64e4f4b16a8a47c9523b17d39/payment-page",
+                    "mobile": "https://sandbox.juspay.in/orders/ordeh_3d316be64e4f4b16a8a47c9523b17d39/payment-page",
+                    "web": "https://sandbox.juspay.in/orders/ordeh_3d316be64e4f4b16a8a47c9523b17d39/payment-page"
+                },
+                "payment_page_client_id": "change"
+            },
+            "offers": [],
+            "status": "CHARGED",
+            "resp_category": null
+        }
+    ],
+    "additional_info": {}
+}
