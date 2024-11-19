@@ -1,23 +1,131 @@
 {
-  "juspayBankCode": "JP_TWID",
-  "paymentMethodType": "REWARD",
-  "walletDirectDebitSupport": true,
-  "supportedFeatures": [
-    {
-      "supportedReferenceIds": ["twidtestmode", "testmode"],
-      "featureName": "wallet_direct_debit",
-      "supportedByDefault": false
-    },
-    {
-      "supportedReferenceIds": ["twidtestmode", "testmode"],
-      "featureName": "eligibility",
-      "supportedByDefault": false
-    }
-  ],
-  "paymentMethod": "TWID",
-  "nickName": "Twid",
-  "supportedReferenceIds": ["twidtestmode", "testmode"],
-  "description": "Twid Rewards",
-  "supportedByDefault": false,
-  "paymentMethodSubType": "REWARD"
+    "payment_methods_eligibility": [
+        {
+            "status": "SUCCESS",
+            "reward_details": {
+                "best_reward_type": "burn",
+                "best_reward_id": 212267,
+                "sub_title": "Save Rs 998 using 998 HDFC Bank Points"
+            },
+            "payment_method": "TWID",
+            "payment_method_type": "REWARD",
+            "redeemable_info": [
+                {
+                    "issuer_type": "bank",
+                    "toggle": false,
+                    "reward_id": "212267",
+                    "reward_type": "BURN",
+                    "value": 998,
+                    "payment_locking_payload": {
+                        "reward_rules": [
+                            {
+                                "filters": {
+                                    "card_bins": [
+                                        "531849",
+                                        "536303",
+                                        "524167",
+                                        "549921",
+                                        "558918",
+                                        "553204",
+                                        "356165",
+                                        "356166",
+                                        "356139",
+                                        "404652",
+                                        "405023",
+                                        "404638",
+                                        "405204",
+                                        "405210",
+                                        "512345",
+                                        "627581"
+                                    ]
+                                },
+                                "payment_instrument": {
+                                    "payment_method": [],
+                                    "payment_method_type": "CARD",
+                                    "app": [],
+                                    "type": [],
+                                    "issuer": [
+                                        "JP_HDFC"
+                                    ]
+                                }
+                            }
+                        ],
+                        "reward_rules_v2": {
+                            "allow_default_options": false,
+                            "options": [
+                                {
+                                    "payment_method_type": "CARD",
+                                    "card_filters": [
+                                        {
+                                            "enable": true,
+                                            "card_bins": [
+                                                "356139::356139",
+                                                "356165::356166",
+                                                "404638::404638",
+                                                "404652::404652",
+                                                "405023::405023",
+                                                "405204::405204",
+                                                "405210::405210",
+                                                "512345::512345",
+                                                "524167::524167",
+                                                "531849::531849",
+                                                "536303::536303",
+                                                "549921::549921",
+                                                "553204::553204",
+                                                "558918::558918",
+                                                "627581::627581"
+                                            ]
+                                        }
+                                    ],
+                                    "enable": true
+                                }
+                            ]
+                        }
+                    },
+                    "brand_logo": "https://cdn.twidpay.com/co/s2s_issuer_images/hdfc_square.svg",
+                    "title": "Save Rs 998 using 998 HDFC Bank Points",
+                    "type": "BURN",
+                    "brand_name": "HDFC Bank"
+                },
+                {
+                    "issuer_type": "brand",
+                    "toggle": false,
+                    "reward_id": "215863",
+                    "reward_type": "BURN",
+                    "value": 2,
+                    "brand_logo": "",
+                    "title": "Save Rs 2 using 2 twid Cash Points",
+                    "type": "BURN",
+                    "brand_name": "twid Cash"
+                },
+                {
+                    "issuer_type": "brand",
+                    "earnable_points": 20,
+                    "toggle": false,
+                    "reward_id": "212217",
+                    "reward_type": "EARN",
+                    "value": null,
+                    "payment_locking_payload": {
+                        "reward_rules_v2": {
+                            "allow_default_options": true,
+                            "options": [
+                                {
+                                    "payment_method_type": "CASH",
+                                    "enable": false
+                                }
+                            ]
+                        }
+                    },
+                    "brand_logo": "https://cdn.twidpay.com/co/s2s_issuer_images/cobb_square.png",
+                    "title": "Earn 4X rewards. 20 Cobb Points",
+                    "type": "EARN",
+                    "brand_name": "Cobb"
+                }
+            ],
+            "is_eligible": true,
+            "gateway_error_message": "success",
+            "description": "Twid Rewards",
+            "eligibility_strategy": "USER"
+        }
+    ]
 }
