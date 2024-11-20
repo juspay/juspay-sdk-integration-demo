@@ -13,4 +13,4 @@ curl --location --request POST 'https://api.juspay.in/orders' \
 --data-urlencode 'return_url=http://shop.merchant.com/payments/handleResponse' \
 --data-urlencode 'description=Sample description' \
 --data-urlencode 'options.get_client_auth_token=true' \
---data-urlencode 'order_basket=[{"id":"491838009","description":"Test Product","quantity":1,"unitPrice":1000.00,"category":"Electronics","sku":"12345","productUrl":"https://www.google.com","sellerType":"VENDOR","customParams":{"name1":"value1","name2":"value2"}}]'
+--data-urlencode 'basket=[{"id":"id_1","unitPrice":25,"quantity":1},{"id":"id_2","unitPrice":25,"quantity":3}]'
