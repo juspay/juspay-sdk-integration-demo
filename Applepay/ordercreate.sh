@@ -7,8 +7,8 @@ curl --location 'https://sandbox.juspay.in/orders' \
 --data-urlencode 'amount=100' \
 --data-urlencode 'currency=SGD' \
 --data-urlencode 'return_url=https://google.com' \
---data-urlencode 'customer_id=customer_test \
---data-urlencode 'customer_phone=9999999999 \
+--data-urlencode 'customer_id=customer_test' \
+--data-urlencode 'customer_phone=9999999999' \
 --data-urlencode 'customer_email=test@juspay.in' \
 --data-urlencode 'product_id=Dress' \
 --data-urlencode 'shipping_address_first_name=Nakshu ' \
