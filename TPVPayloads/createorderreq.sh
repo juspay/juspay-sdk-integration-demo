@@ -11,5 +11,5 @@ curl --location --request POST 'https://sandbox.juspay.in/orders' \
 --data-urlencode 'customer_phone=7076654366' \
 --data-urlencode 'customer_email=abc@juspay.in' \
 --data-urlencode 'metadata.PAYU:gateway_reference_id=TPV' \
---data-urlencode 'metadata.bank_account_details=[{"bank_account_number":"08791610032772","bank_ifsc":"HDFC011211", "juspay_bank_code" : "JP_HDFC", "bank_beneficiary_name" : "ABC"},{"bank_account_number":"055971532221"}]' \
+--data-urlencode 'metadata.bank_account_details=[{"bank_account_number":"08791610032772","bank_ifsc":"HDFC011211", "juspay_bank_code" : "JP_HDFC", "bank_beneficiary_name" : "ABC"},{"bank_account_number":"055971532221","bank_ifsc":"ICICI015214", "juspay_bank_code" : "JP_ICICI"}]' \
 --data-urlencode 'order_type=TPV_PAYMENT'
