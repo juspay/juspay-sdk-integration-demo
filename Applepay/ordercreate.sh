@@ -1,0 +1,33 @@
+curl --location 'https://sandbox.juspay.in/orders' \
+--header 'version: 2019-06-14' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'x-merchantid: merchant_id'\
+--header 'Authorization: Basic Oxxxxxxxxxxxxxxxxxxxx==' \
+--data-urlencode 'order_id=test_1728727687' \
+--data-urlencode 'amount=100' \
+--data-urlencode 'currency=SGD' \
+--data-urlencode 'return_url=https://google.com' \
+--data-urlencode 'customer_id=customer_test \
+--data-urlencode 'customer_phone=9999999999 \
+--data-urlencode 'customer_email=test@juspay.in' \
+--data-urlencode 'product_id=Dress' \
+--data-urlencode 'shipping_address_first_name=Nakshu ' \
+--data-urlencode 'shipping_address_last_name=Suriya' \
+--data-urlencode 'shipping_address_line1=444, Stelar Enclave' \
+--data-urlencode 'shipping_address_line2=6th Block, Koramagala' \
+--data-urlencode 'shipping_address_line3=Bangalore' \
+--data-urlencode 'shipping_address_city=Bangalore' \
+--data-urlencode 'shipping_address_state=Karnataka' \
+--data-urlencode 'shipping_address_postal_code=560095' \
+--data-urlencode 'shipping_address_phone=+919999999999' \
+--data-urlencode 'billing_address_country_code_iso=IND' \
+--data-urlencode 'shipping_address_country=India' \
+--data-urlencode 'billing_address_first_name=Sanvika' \
+--data-urlencode 'billing_address_last_name=Suriya' \
+--data-urlencode 'billing_address_line1=1 Market St' \
+--data-urlencode 'billing_address_city=san francisco' \
+--data-urlencode 'billing_address_postal_code=94105' \
+--data-urlencode 'billing_address_phone=+14158880000' \
+--data-urlencode 'billing_address_country=IN' \
+--data-urlencode 'metadata.Adyen%3Agateway_reference_id=applepay_test' \
+--data-urlencode 'metadata.Adyen%3AwalletUdf1=applepay'
