@@ -1,0 +1,39 @@
+{
+    "status": "NEW",
+    "status_id": 10,
+    "id": "ordeh_eea75753e6bd4fa1dd4f50f7d0da3f",
+    "order_id": "test_1728728387",
+    "payment_links": {
+        "iframe": "https://sandbox.assets.juspay.in/payment-page/order/ordeh_eea75753e6bd4fa1dd4f50f7d0da3f",
+        "mobile": "https://sandbox.assets.juspay.in/payment-page/order/ordeh_eea75753e6bd4fa1dd4f50f7d0da3f",
+        "web": "https://sandbox.assets.juspay.in/payment-page/order/ordeh_eea75753e6bd4fa1dd4f50f7d0da3f"
+    },
+    "udf9": "",
+    "udf8": "",
+    "udf7": "",
+    "udf6": "",
+    "udf5": "",
+    "udf4": "",
+    "udf3": "",
+    "udf2": "",
+    "udf10": "",
+    "udf1": "",
+    "return_url": "https://google.com",
+    "refunded": false,
+    "product_id": "Dress",
+    "merchant_id": "Merchant",
+    "date_created": "2024-10-12T10:19:47Z",
+    "customer_phone": "9999999999",
+    "customer_id": "customer_test",
+    "customer_email": "test@juspay.in",
+    "currency": "SGD",
+    "amount_refunded": 0,
+    "source_object": "",
+    "source_object_id": "",
+    "amount": 100,
+    "juspay": {
+        "client_auth_token": "tkn_d43ae0fbc8494397e218fed03a6f7b",
+        "client_auth_token_expiry": "2024-10-12T10:34:47Z"
+    },
+    "order_expiry": "2024-10-12T10:49:47Z"
+}
