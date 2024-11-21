@@ -1,0 +1,11 @@
+curl --location 'https://sandbox.juspay.in/txns' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'Authorization: Basic Oxxxxxxxxxxxxxxxxxxxx==' \
+--data-urlencode 'order_id=test_1728659731' \
+--data-urlencode 'merchant_id=seamena \
+--data-urlencode 'payment_method_type=WALLET' \
+--data-urlencode 'payment_method=APPLEPAY' \
+--data-urlencode 'redirect_after_payment=true' \
+--data-urlencode 'format=json' \
+--data-urlencode 'sdk_params=true' \
+--data-urlencode 'metadata={"requestor_domain":"29af-152-58-24-143.ngrok-free.app"}'
