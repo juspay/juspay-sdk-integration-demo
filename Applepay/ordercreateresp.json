@@ -4,9 +4,9 @@
     "id": "ordeh_eea75753e6bd4fa1dd4f50f7d0da3f",
     "order_id": "test_1728728387",
     "payment_links": {
-        "iframe": "https://sandbox.assets.juspay.in/payment-page/order/ordeh_eea75753e6bd4fa1dd4f50f7d0da3f",
-        "mobile": "https://sandbox.assets.juspay.in/payment-page/order/ordeh_eea75753e6bd4fa1dd4f50f7d0da3f",
-        "web": "https://sandbox.assets.juspay.in/payment-page/order/ordeh_eea75753e6bd4fa1dd4f50f7d0da3f"
+        "iframe": "https://sandbox.juspay.in/payment-page/order/ordeh_eea75753e6bd4fa1dd4f50f7d0da3f",
+        "mobile": "https://sandbox.juspay.in/payment-page/order/ordeh_eea75753e6bd4fa1dd4f50f7d0da3f",
+        "web": "https://sandbox.juspay.in/payment-page/order/ordeh_eea75753e6bd4fa1dd4f50f7d0da3f"
     },
     "udf9": "",
     "udf8": "",
