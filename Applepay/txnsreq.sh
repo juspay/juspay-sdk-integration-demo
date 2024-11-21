@@ -2,7 +2,7 @@ curl --location 'https://sandbox.juspay.in/txns' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'Authorization: Basic Oxxxxxxxxxxxxxxxxxxxx==' \
 --data-urlencode 'order_id=test_1728659731' \
---data-urlencode 'merchant_id=seamena \
+--data-urlencode 'merchant_id=Merchant' \
 --data-urlencode 'payment_method_type=WALLET' \
 --data-urlencode 'payment_method=APPLEPAY' \
 --data-urlencode 'redirect_after_payment=true' \
