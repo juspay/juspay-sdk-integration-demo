@@ -1,0 +1,39 @@
+{
+    "status": "NEW",
+    "status_id": 10,
+    "id": "ordeh_d49df91309c841a54d60c60801f2f1",
+    "order_id": "test_1728734749",
+    "payment_links": {
+        "iframe": "https://sandbox.assets.juspay.in/payment-page/order/ordeh_d49df91309c841a54d60c60801f2f1",
+        "mobile": "https://sandbox.assets.juspay.in/payment-page/order/ordeh_d49df91309c841a54d60c60801f2f1",
+        "web": "https://sandbox.assets.juspay.in/payment-page/order/ordeh_d49df91309c841a54d60c60801f2f1"
+    },
+    "udf9": "",
+    "udf8": "",
+    "udf7": "",
+    "udf6": "",
+    "udf5": "",
+    "udf4": "",
+    "udf3": "",
+    "udf2": "",
+    "udf10": "",
+    "udf1": "",
+    "return_url": "https://google.com",
+    "refunded": false,
+    "product_id": "Shocks",
+    "merchant_id": "MerchantID",
+    "date_created": "2024-10-12T12:05:46Z",
+    "customer_phone": "9999999999",
+    "customer_id": "cst_zqqmw0v4exfbhvvj2zzdzg",
+    "customer_email": "test@juspay.in",
+    "currency": "SGD",
+    "amount_refunded": 0,
+    "source_object": "",
+    "source_object_id": "",
+    "amount": 100,
+    "juspay": {
+        "client_auth_token": "tkn_85616184f99347ef9dff0dfe9d35c9fd",
+        "client_auth_token_expiry": "2024-10-12T12:20:46Z"
+    },
+    "order_expiry": "2024-10-12T12:35:46Z"
+}
