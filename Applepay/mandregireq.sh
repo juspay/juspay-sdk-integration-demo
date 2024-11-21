@@ -1,0 +1,34 @@
+curl --location 'https://sandbox.juspay.in/orders' \
+--header 'version: 2018-07-01' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'Authorization: Basic R*********==' \
+--data-urlencode 'order_id=test_1728734749' \
+--data-urlencode 'amount=100' \
+--data-urlencode 'currency=SGD' \
+--data-urlencode 'return_url=https://google.com' \
+--data-urlencode 'customer_id=cst_zqqmw0v4exfbhvvj2zzdzg' \
+--data-urlencode 'customer_phone=9999999999' \
+--data-urlencode 'customer_email=test@juspay.in' \
+--data-urlencode 'product_id=Shocks' \
+--data-urlencode 'billing_address_first_name=Suyash' \
+--data-urlencode 'billing_address_last_name=Kasat' \
+--data-urlencode 'billing_address_line1=1 Market St' \
+--data-urlencode 'billing_address_city=san francisco' \
+--data-urlencode 'billing_address_state=CA' \
+--data-urlencode 'billing_address_postal_code=94105' \
+--data-urlencode 'billing_address_phone=4158880000' \
+--data-urlencode 'billing_address_country_code_iso=USA' \
+--data-urlencode 'billing_address_country=US' \
+--data-urlencode 'options.get_client_auth_token=true' \
+--data-urlencode 'options.create_mandate=REQUIRED' \
+--data-urlencode 'mandate_max_amount=1000' \
+--data-urlencode 'metadata.CHECKOUT%3Agateway_reference_id=suyash_applepay_test' \
+--data-urlencode 'shipping_address_first_name=Suyash' \
+--data-urlencode 'shipping_address_last_name=Kasat' \
+--data-urlencode 'shipping_address_line1=1 Market St' \
+--data-urlencode 'shipping_address_city=san francisco' \
+--data-urlencode 'shipping_address_state=CA' \
+--data-urlencode 'shipping_address_postal_code=94105' \
+--data-urlencode 'shipping_address_phone=4158880000' \
+--data-urlencode 'shipping_address_country=US' \
+--data-urlencode 'description=socks'
