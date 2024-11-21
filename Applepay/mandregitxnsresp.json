@@ -1,0 +1,62 @@
+{
+    "order_id": "test_1728734749",
+    "status": "PENDING_VBV",
+    "payment": {
+        "sdk_params": {
+            "tag": "APPLEPAY_MERCHANT_SESSION_ID",
+            "contents": {
+                "payload": {
+                    "signature": "x*******Y",
+                    "epochTimestamp": 1700758437552,
+                    "operationalAnalyticsIdentifier": "T******B",
+                    "expiresAt": 1700762037552,
+                    "retries": 0,
+                    "domainName": "29af-152-58-24-143.ngrok-free.app",
+                    "merchantSessionIdentifier": "S******4",
+                    "displayName": "TestJuspay",
+                    "merchantIdentifier": "9******B",
+                    "nonce": "a7a65ace"
+                },
+                "metadata": {
+                    "currencyCode": "USD",
+                    "merchantCapabilities": [
+                        "supports3DS"
+                    ],
+                    "applePayMerchantId": "merchant.in.juspay.test",
+                    "recurringPaymentRequest": {
+                        "paymentDescription": "Online Payment",
+                        "regularBilling": {
+                            "amount": "100.0",
+                            "recurringPaymentEndDate": "2053-11-23T22:23:57Z",
+                            "recurringPaymentStartDate": "2023-11-23T22:23:56Z",
+                            "paymentTiming": "recurring",
+                            "type": "pending",
+                            "label": "Subscription"
+                        }
+                    },
+                    "total": {
+                        "amount": "100.0",
+                        "type": "pending",
+                        "label": "globalSandbox"
+                    },
+                    "countryCode": "US",
+                    "supportedNetworks": [
+                        "mada",
+                        "masterCard",
+                        "visa",
+                        "amex"
+                    ]
+                }
+            }
+        },
+        "authentication": {
+            "url": "https://sandbox.juspay.in/v2/pay/start/MerchantID/mozKAeyfiVxj9XNVbco?cardIssuerBankName%3DJP_APPLEPAY%26cardType%3DWALLET%26paymentMethod%3DJP_APPLEPAY%26paymentMethodType%3DWALLET",
+            "method": "GET"
+        }
+    },
+    "txn_uuid": "mozKAeyfiVxj9XNVbco",
+    "offer_details": {
+        "offers": []
+    },
+    "txn_id": "MerchantID-test_1728734749-1"
+}
