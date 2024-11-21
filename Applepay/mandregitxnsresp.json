@@ -18,7 +18,7 @@
                     "nonce": "a7a65ace"
                 },
                 "metadata": {
-                    "currencyCode": "USD",
+                    "currencyCode": "SGD",
                     "merchantCapabilities": [
                         "supports3DS"
                     ],
