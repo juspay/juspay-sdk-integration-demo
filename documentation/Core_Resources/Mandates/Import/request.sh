@@ -1,0 +1,21 @@
+$ curl https://api-test.lotuspay.com/v1/mandates/import \
+    -u sk_test_XjIHowXWSI23uvjepz2X82 \
+    -d amount_collection=10000 \
+    -d category_code="L001" \
+    -d category_description="Loan installment amount" \
+    -d creditor_agent_mmbid="HDFC0999999" \
+    -d creditor_agent_name="HDFC BANK" \
+    -d creditor_name="LOTUSPAY SOLUTIONS PVT LTD" \
+    -d creditor_utility_code="NACH00000000005549" \
+    -d date_first_collection="2019-01-01" \
+    -d debtor_account_name="AMIT JAIN" \
+    -d debtor_account_number="12345678" \
+    -d debtor_account_type="savings" \
+    -d debtor_agent_mmbid="ICIC0000001" \
+    -d debtor_agent_name="ICICI BANK" \
+    -d frequency="ADHO" \
+    -d reference1="CUSTOMER_123" \
+    -d umrn="ICIC0000000000272000" \
+    -d date_acknowledged="2020-01-01" \
+    -d date_responded="2020-01-05" \
+    -d mandate_request_id="ABC123"

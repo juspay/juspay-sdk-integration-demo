@@ -1,0 +1,14 @@
+$ curl https://api-test.lotuspay.com/v1/sources \
+    -u sk_test_XjIHowXWSI23uvjepz2X82: \
+    -d type="nach_debit" \
+    -d nach_debit[amount_maximum]=10000 \
+    -d nach_debit[date_first_collection]="2020-01-01" \
+    -d nach_debit[debtor_account_name]="AMIT JAIN" \
+    -d nach_debit[debtor_account_number]="12345678" \
+    -d nach_debit[debtor_account_type]="savings" \
+    -d nach_debit[debtor_agent_mmbid]="ICIC0000001" \
+    -d nach_debit[debtor_email]="test@lotuspay.com" \
+    -d nach_debit[debtor_mobile]="9123456789" \
+    -d nach_debit[frequency]="MNTH" \
+    -d nach_debit[reference1]="LOAN_ID_123" \
+    -d nach_debit[variant]="physical"

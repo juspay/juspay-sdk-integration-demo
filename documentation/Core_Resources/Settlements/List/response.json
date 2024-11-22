@@ -1,0 +1,17 @@
+{
+    "object": "list",
+    "url": "/v1/settlements",
+    "has_more": false,
+    "data": [
+          {
+              "id": "SM004433221AA"
+          },
+          {
+              "id": "SM004433221BB"
+          },
+          {
+              "id": "SM004433221CC"
+          }
+    ]
+  }
+  

@@ -1,0 +1,34 @@
+{
+    "object": "list",
+    "url": "/v1/agents",
+    "has_more": false,
+    "data": [
+          {
+              "id": "AG004433221AA",
+              "code": "EMPLOYEE1",
+              "email": "test+1@lotuspay.com",
+              "identification": "EMPLOYEE1",
+              "mobile": "9876543210",
+              "name": "TEST AGENT1",
+              "status": "active"
+          },
+          {
+              "id": "AG004433221BB",
+              "code": "EMPLOYEE2",
+              "email": "test+2@lotuspay.com",
+              "identification": "EMPLOYEE2",
+              "mobile": "9876543211",
+              "name": "TEST AGENT2",
+              "status": "active"
+          },
+          {
+              "id": "AG004433221CC",
+              "code": "EMPLOYEE3",
+              "email": "test+3@lotuspay.com",
+              "identification": "EMPLOYEE3",
+              "mobile": "9876543212",
+              "name": "TEST AGENT3",
+              "status": "active"
+          }
+    ]
+  }
