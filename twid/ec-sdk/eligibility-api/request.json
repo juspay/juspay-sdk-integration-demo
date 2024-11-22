@@ -2,13 +2,12 @@
     "service": "in.juspay.ec",
     "requestId": "445dc8cf-9fec-4f3e-8286-45af2146cdfb",
     "payload": {
-        "version": "2024-10-07",
+        "version": "2024-10-07", // current date
         "requestId": null,
         "data": {
             "wallets": [
                 {
                     "mobile": "9742144874",
-                    "gatewayReferenceId": null,
                     "email": "test@gmail.com",
                     "customerId": "test_customer",
                     "checkType": [

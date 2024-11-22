@@ -16,7 +16,8 @@
         "payment_method_type": "REWARD",
         "reward_id": "140233615",
         "reward_mode": "earn",
-        "split_amount": "0"
+        "split_amount": "0",
+        "voucher_id": "628389"
       }
     ]
   }
