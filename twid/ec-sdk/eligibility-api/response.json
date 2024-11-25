@@ -85,7 +85,42 @@
                               "title": "Save Rs 998 using 998 HDFC Bank Points",
                               "type": "BURN",
                               "brandName": "HDFC Bank"
-                          }
+                          },
+                          {
+                                "issuerType": "brand",
+                                "brandLogo": "https://cdn.twidpay.com/co/s2s_issuer_images/cobb_square.png",
+                                "brandName": "Cobb",
+                                "earnablePoints": 20,
+                                "rewardId": "212217",
+                                "rewardType": "EARN",
+                                "title": "Earn 4X rewards. 20 Cobb Points",
+                                "toggle": true,
+                                "type": "EARN",
+                                "value": null
+                            },
+                            {
+                                "brandLogo": "https://cdn.twidpay.com/co/s2s_issuer_images/cobb_square.png",
+                                "brandName": "Cobb",
+                                "issuerType": "brand",
+                                "paymentLockingPayloadV2": {
+                                    "rewardRules":{
+                                       "allowDefaultOptions": true,
+                                       "options": [
+                                        {
+                                            "enable": false,
+                                            "paymentMethodType": "CASH"
+                                        }
+                                       ]
+                                    }
+                                },
+                                "rewardId": "212217",
+                                "rewardType": "BURN_EARN",
+                                "title": "Save Rs 2 using 8 Cobb Points + Earn 20 Cobb Points",
+                                "toggle": true,
+                                "type": "BURN_EARN",
+                                "value": 2,
+                                "earnablePoints": 20
+                            }
                         ],
                         "paymentMethodType": "REWARD",
                         "paymentMethod": "TWID",
