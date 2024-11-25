@@ -1,0 +1,15 @@
+{
+    "order_id": "rec_1700760426",
+    "status": "CHARGED",
+    "payment": {
+        "authentication": {
+            "url": "https://sandbox.juspay.in/v2/pay/finish/MerchantID/moz3RMCJSJZrKKCQiFj/rec_1700760426",
+            "method": "GET"
+        }
+    },
+    "txn_uuid": "moz3RMCJSJZrKKCQiFj",
+    "offer_details": {
+        "offers": []
+    },
+    "txn_id": "MerchantID-rec_1700760426-1"
+}
