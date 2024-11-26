@@ -3,7 +3,6 @@
     "requestId": "3e2dc248-f7f1-417d-950e-60dabbf409eb",
     "payload": {
         "action": "eligibility",
-        "responseId": "3e2dc248-f7f1-417d-950e-60dabbf409eb",
         "wallets": [
             {
                 "paymentMethodsEligibility": [
@@ -132,13 +131,6 @@
                 ],
                 "orderId": "IAOY2386DEKZ1189UUSN",
                 "customerId": "9742144874"
-            }
-        ],
-        "consumerFinance": [],
-        "apps": [
-            {
-                "paymentMethodsEligibility": [],
-                "orderId": "IAOY2386DEKZ1189UUSN"
             }
         ]
     },

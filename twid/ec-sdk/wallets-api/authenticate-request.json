@@ -1,9 +1,11 @@
 {
-  "walletName": "TWID_V2",
-  "requestId": null,
-  "mobileNumber": "7093125824",
-  "gatewayReferenceId": null,
-  "clientAuthToken": "tkn_99ade0fcd97f4d4aaf0d1e84f472a4ac",
-  "command": "authenticate",
-  "action": "createWallet"
+  "service": "in.juspay.ec",
+  "requestId": "048227ea-91f6-4f41-8e36-39e44bd3158c",
+  "payload": {
+    "walletName": "TWID_V2",
+    "mobileNumber": "7093125824",
+    "clientAuthToken": "tkn_99ade0fcd97f4d4aaf0d1e84f472a4ac",
+    "command": "authenticate",
+    "action": "createWallet"
+  }
 }

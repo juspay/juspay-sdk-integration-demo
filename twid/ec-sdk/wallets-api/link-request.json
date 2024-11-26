@@ -1,9 +1,12 @@
 {
-  "walletName": "TWID_V2",
-  "walletId": "wlm_q2UkPy9Qk8gadYjc",
-  "requestId": null,
-  "otp": "1234",
-  "gatewayReferenceId": null,
-  "clientAuthToken": "tkn_b82039848c504825aaa070a81f4e1086",
-  "action": "linkWallet" 
+  "service": "in.juspay.ec",
+  "requestId": "048227ea-91f6-4f41-8e36-39e44bd3158c",
+  "payload":{
+    "walletName": "TWID_V2",
+    "walletId": "wlm_q2UkPy9Qk8gadYjc",
+    "requestId": null,
+    "otp": "1234",
+    "clientAuthToken": "tkn_b82039848c504825aaa070a81f4e1086",
+    "action": "linkWallet"
+  }
 }
