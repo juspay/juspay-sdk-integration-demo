@@ -1,30 +1,34 @@
 {
-    "tpvPaymentMethods": [],
-    "emandatePaymentMethods": [],
-    "paymentMethods": [
-        {
-            "wallet_direct_debit_support": true,
-            "payment_method": "TWID",
-            "payment_method_type": "REWARD",
-            "supported_features": [
-                {
-                    "feature_name": "wallet_direct_debit",  // only for linking flow
-                    "supported_by_default": true
-                },
-                {
-                    "feature_name": "link_and_pay",  // only for linking flow
-                    "supported_by_default": true
-                },
-                {
-                    "feature_name": "eligibility",
-                    "supported_by_default": true
-                }
-            ],
-            "payment_method_sub_type": "REWARD",
-            "juspay_bank_code": "JP_TWID",
-            "nick_name": "Twid",
-            "supported_by_default": true,
-            "description": "Twid Rewards"
-        }
-    ]
+    "service": "in.juspay.ec",
+    "requestId": "efdd0cb3-bd51-47ea-99f3-546b3fe71484",
+    "payload":{
+        "tpvPaymentMethods": [],
+        "emandatePaymentMethods": [],
+        "paymentMethods": [
+            {
+                "wallet_direct_debit_support": true,
+                "payment_method": "TWID",
+                "payment_method_type": "REWARD",
+                "supported_features": [
+                    {
+                        "feature_name": "wallet_direct_debit",  // only for linking flow
+                        "supported_by_default": true
+                    },
+                    {
+                        "feature_name": "link_and_pay",  // only for linking flow
+                        "supported_by_default": true
+                    },
+                    {
+                        "feature_name": "eligibility",
+                        "supported_by_default": true
+                    }
+                ],
+                "payment_method_sub_type": "REWARD",
+                "juspay_bank_code": "JP_TWID",
+                "nick_name": "Twid",
+                "supported_by_default": true,
+                "description": "Twid Rewards"
+            }
+        ]
+    }
 }
