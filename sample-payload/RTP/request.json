@@ -2,12 +2,17 @@
     "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
     "service": "in.juspay.hyperapi",
     "payload": {
-        "action": "qrTxn",
+        "action": "rtpTxn",
         "orderId": "hyperorder45314",
-        "paymentMethod": "PROMPTPAY_QR",
-        "paymentMethodType": "RTP"
+        "paymentMethod": "PIX",
+        "paymentMethodType": "RTP",
         "sdkParams": true,
-        "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213",
-        "showLoader": true
+        "clientAuthToken": "tkn_0e37606ab48ccfc4213",
+        "showLoader": true,
+        "identityCredential": {
+           "cpf": "123456789",
+           "cpnj": null,
+           "pix_key": null
+         }
     }
 }
