@@ -1,11 +1,12 @@
 {
   "status": "CREATED",
   "status_id": 1,
-  "id": "ord_e294a26e66ad4336a992ceab81ad704c",
-  "order_id": "14183944763",
+  "id": "ordeh_c6f802bfe9cd47a8af05fcc510ad18f7",
+  "order_id": "1692783824",
   "payment_links": {
-    "web": "https://api.juspay.in/merchant/pay/ord_e294a26e66ad4336a992ceab81ad704c",
-    "mobile": "https://api.juspay.in/merchant/pay/ord_e294a26e66ad4336a992ceab81ad704c?mobile=true",
-    "iframe": "https://api.juspay.in/merchant/ipay/ord_e294a26e66ad4336a992ceab81ad704c"
-  }
+      "iframe": "https://sandbox.assets.juspay.in/payment-page/order/ordeh_c6f802bfe9cd47a8af05fcc510ad18f7",
+      "mobile": "https://sandbox.assets.juspay.in/payment-page/order/ordeh_c6f802bfe9cd47a8af05fcc510ad18f7",
+      "web": "https://sandbox.assets.juspay.in/payment-page/order/ordeh_c6f802bfe9cd47a8af05fcc510ad18f7"
+  },
+  "order_expiry": "2024-11-25T11:40:32Z"
 }

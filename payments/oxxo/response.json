@@ -1,0 +1,16 @@
+{
+    "payment": {
+    "authentication": {
+    "method": "GET",
+    "url": "https://sandbox.juspay.in/v2/pay/start/test/mozgiP2BNQL?cardIssuerBankName%3DOXXO%26cardType%3DOTC%26paymentMethod%3DOXXO%26paymentMethodType%3DOTC"
+    }
+    },
+    "status": "PENDING_VBV",
+    "txn_uuid": "mozg2BNQL",
+    "offer_details": {
+    "offers": []
+    },
+    "order_id": "ord1732543246",
+    "txn_id": "test-ord1732543246-1"
+    }
+    
