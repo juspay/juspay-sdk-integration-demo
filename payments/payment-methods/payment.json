@@ -1,24 +1,42 @@
 {
+  "merchant_configs": {
+      "must_use_given_order_id_for_txn": false
+  },
+  "outage": [],
   "payment_methods": [
-    {
-      "payment_method_type": "CARD",
-      "payment_method": "VISA",
-      "description": "Visa"
-    },
-    {
-      "payment_method_type": "CARD",
-      "payment_method": "MASTER",
-      "description": "Master Card"
-    },
-    {
-      "payment_method_type": "NB",
-      "payment_method": "NB_BCA",
-      "description": "BCA"
-    },
-    {
-      "payment_method_type": "WALLET",
-      "payment_method": "GOPAY",
-      "description": "Gopay Wallet"
-    }
-  ]
+      {
+          "description": "PayPal",
+          "juspay_bank_code": "JP_PAYPAL",
+          "payment_method": "PAYPAL",
+          "payment_method_sub_type": "WALLET",
+          "payment_method_type": "WALLET"
+      },
+      {
+          "description": "BOLETO",
+          "juspay_bank_code": "JP_BOLETO",
+          "payment_method": "BOLETO",
+          "payment_method_sub_type": "STORE",
+          "payment_method_type": "OTC"
+      },
+      {
+          "description": "Test",
+          "juspay_bank_code": "JP_DUMMY",
+          "payment_method": "DUMMY",
+          "payment_method_sub_type": "WALLET",
+          "payment_method_type": "WALLET"
+      },
+      {
+          "description": "PIX",
+          "payment_method": "PIX",
+          "payment_method_type": "RTP"
+      },
+      {
+          "description": "SPEI",
+          "payment_method": "SPEI",
+          "payment_method_type": "RTP"
+      }
+  ],
+  "restricted_mode": false,
+  "timestamp": "2024-11-25T11:26:45.121016153Z",
+  "verify_vpa_enabled_gateways": []
 }
