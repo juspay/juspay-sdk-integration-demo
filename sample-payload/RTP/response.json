@@ -1,6 +1,6 @@
 {
-    "action": "qrTxn",
-    "txnUuid": "mozaKoFEMyHpplnjBea",
+    "action": "rtpTxn",
+    "txnUuid": "mozaKnjBea",
     "txnId": "abc-hyperorder45314-1",
     "status": "PENDING_VBV",
     "payment": {
@@ -8,11 +8,11 @@
             "tag": "RTP_PARAM",
             "contents": {
                 "name": "generate-qr-code",
-                "qrString": "00020011021230620019A000000677010112011500000000000020810516236030779771075204599953037645406100.005802TH59182C2P Test merchant6007Bangkok6254010810516236050810516236070110821abc-hyperorder45314-16304515E"
+                "qrString": "00020011021230620019A00810516236030779771075204599953037645406100.005802TH59182C2P Test merchant6007Bangkok6254010810516236050810821abc-hyperorder45314-16304515E"
             }
         },
         "authentication": {
-            "url": "https://sandbox.juspay.in/v2/pay/start/abc/mozaKoFEMyHpplnjBea?cardIssuerBankName%3DPROMPTPAY_QR%26cardType%3DRTP%26paymentMethod%3DPROMPTPAY_QR%26paymentMethodType%3DRTP",
+            "url": "https://sandbox.juspay.in/v2/pay/start/abc/mozapplnjBea?cardIssuerBankName%3DPIX_QR%26cardType%3DRTP%26paymentMethod%3DPIX_QR%26paymentMethodType%3DRTP",
             "method": "GET"
         }
     },
