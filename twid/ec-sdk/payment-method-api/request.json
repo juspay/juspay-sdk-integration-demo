@@ -1,0 +1,7 @@
+{
+    "service": "in.juspay.ec",
+    "requestId": "efdd0cb3-bd51-47ea-99f3-546b3fe71484",
+    "payload": {
+        "action": "paymentMethod"
+    }
+}

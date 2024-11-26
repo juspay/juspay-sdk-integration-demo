@@ -11,22 +11,22 @@
                             {
                                 "voucherTnc": "Visit the link https://bit.ly/3YcF7EO to Download *Mc Delivery* App from App/Play store.\r\nOffer Valid on McDelivery Orders Only.\r\nOffer Valid till stock ends.\r\nOffer Valid on App /Web & Msite.\r\nOffer Applicable on Advance & Regular orders.\r\nOffer Valid in West & South McDonald's India",
                                 "voucherId": 628389,
-                                "voucherAmount": 1,
+                                "voucherAmount": 25,
                                 "type": "VOUCHER",
-                                "title": "cashback",
+                                "title": "cashback", // cashback voucher
                                 "subTitle": "Get a Free Medium Fries + piri piri mix on purchase of ₹299 or more",
                                 "expiresOn": "Expires on 31st Dec 2024",
                                 "code": "TWIDCRISPY"
                             },
                             {
-                                "voucherTnc": "Cashback will be credited within 24 hrs of the transaction.\r\nThe coupon is applicable once per customer.\r\nRs.50 will be added to your Pay with Rewards account, which can be used across all partner brands.\r\nOnce credited, the cashback will be valid for 7 days.\r\nThe cashback coupon is non-reusable.\r\nCashback will be cancelled in case of partial refunds.\r\nA minimum order value of Rs.599 is required to redeem the cashback\r\nTwid reserves the right to change the condition of usage of the Cashback i.e.; Minimum Order Value, Part release of Cashback, Applicable merchants, Applicable product.\r\nTwid reserves the right to vary or discontinue the Cashback Voucher scheme at any time.\r\nOther T&Cs apply",
-                                "voucherId": 634705,
                                 "voucherAmount": 50,
+                                "voucherId": 1596,
+                                "code": "TestDicsount50",
+                                "title": "discount", // instant discount voucher
                                 "type": "VOUCHER",
-                                "title": "cashback",
-                                "subTitle": "Get flat Rs.50 cashback on minimum order value of Rs.839",
-                                "expiresOn": "Expires on 30th Nov 2024",
-                                "code": "PRIMENOV"
+                                "subTitle": "Get a Free Medium Fries + piri piri mix on purchase of ₹299 or more",
+                                "expiresOn": "Expires on September 20, 2023",
+                                "voucherTnc": "Coupon is valid till date 9th Sep 2023\nCoupon is applicable only once per customer and is non-refundable\nCoupons can not be clubbed with any other offers\nIf the bill value is less than the cashback amount, the coupon code will be fully 100% utilized. The balance amount is not refundable.\nOther T&Cs may apply\n"
                             }
                         ],
                         "status": "SUCCESS",
