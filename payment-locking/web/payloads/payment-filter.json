@@ -1,4 +1,5 @@
-{ 
-allowDefaultOptions :: Maybe Boolean, 
-options :: Array PaymentMethodFilter
+{
+allowDefaultOptions :: Maybe Boolean,
+options :: Array PaymentMethodFilter,
+emiOptions: Maybe EmiFilter
 }
