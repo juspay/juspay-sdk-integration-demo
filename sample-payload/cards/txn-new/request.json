@@ -12,6 +12,11 @@
         "saveToLocker": true,
         "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213",
         "tokenize": true,
-        "cardNickName": "User - ITAU"
+        "cardNickName": "User - ITAU",
+        "identityCredential": {
+           "cpf": "12xxx789",
+           "cnpj": null,
+           "pix_key": null
+         }
     }
 }
