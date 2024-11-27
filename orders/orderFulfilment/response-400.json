@@ -1,0 +1,11 @@
+{
+    "status": "ERROR",
+    "error_code": "No txn Found",
+    "error_message": "No successfull txn found for given order_id ",
+    "error_info": {
+        "request_id": "22359ce5-07d5-43bb-bdcb-6e35c46714d1",
+        "developer_message": "No successfull txn found for given order_id",
+        "user_message": "Cannot process your request as no transaction found for this order.",
+        "code": "RESOURCE_NOT_FOUND"
+    }
+}
