@@ -1,0 +1,419 @@
+{
+  "emandate_payment_methods": [
+    {
+      "description": "APPLEPAY",
+      "juspay_bank_code": "JP_APPLEPAY",
+      "payment_method": "JP_APPLEPAY",
+      "payment_method_type": "WALLET"
+    }
+  ],
+  "outage": [],
+  "payment_methods": [
+    {
+      "description": "Axis Bank",
+      "juspay_bank_code": "JP_AXIS",
+      "payment_method": "NB_AXIS",
+      "payment_method_type": "NB",
+      "reference_id_data": [
+        {
+          "data": [
+            {
+              "currencies": [
+                "INR"
+              ],
+              "gateways": [
+                {
+                  "gateway": "DUMMY",
+                  "gateway_id": 100
+                }
+              ]
+            }
+          ],
+          "reference_id": "DEFAULT_NULL"
+        }
+      ]
+    },
+    {
+      "description": "Bank of Maharashtra",
+      "juspay_bank_code": "JP_BOM",
+      "payment_method": "NB_BOM",
+      "payment_method_type": "NB",
+      "reference_id_data": [
+        {
+          "data": [
+            {
+              "currencies": [
+                "INR"
+              ],
+              "gateways": [
+                {
+                  "gateway": "DUMMY",
+                  "gateway_id": 100
+                }
+              ]
+            }
+          ],
+          "reference_id": "DEFAULT_NULL"
+        }
+      ]
+    },
+    {
+      "description": "UPI",
+      "juspay_bank_code": "JP_UPI",
+      "payment_method": "UPI",
+      "payment_method_type": "UPI",
+      "reference_id_data": [
+        {
+          "data": [
+            {
+              "currencies": [
+                "INR"
+              ],
+              "gateways": [
+                {
+                  "gateway": "DUMMY",
+                  "gateway_id": 100
+                }
+              ]
+            }
+          ],
+          "reference_id": "DEFAULT_NULL"
+        },
+        {
+          "data": [
+            {
+              "currencies": [
+                "INR"
+              ],
+              "gateways": [
+                {
+                  "gateway": "IATAPAY",
+                  "gateway_id": 1115
+                }
+              ]
+            }
+          ],
+          "reference_id": "testingiata"
+        }
+      ]
+    },
+    {
+      "description": "Cash Payment",
+      "juspay_bank_code": "JP_CASH",
+      "payment_method": "CASH",
+      "payment_method_type": "CASH",
+      "reference_id_data": [
+        {
+          "data": [
+            {
+              "currencies": [
+                "INR"
+              ],
+              "gateways": [
+                {
+                  "gateway": "DUMMY",
+                  "gateway_id": 100
+                }
+              ]
+            }
+          ],
+          "reference_id": "DEFAULT_NULL"
+        }
+      ]
+    },
+    {
+      "description": "Mastercard",
+      "payment_method": "MASTER",
+      "payment_method_type": "CARD",
+      "reference_id_data": [
+        {
+          "data": [
+            {
+              "currencies": [
+                "AED",
+                "KWD"
+              ],
+              "gateways": [
+                {
+                  "gateway": "TAP",
+                  "gateway_id": 1123
+                }
+              ]
+            }
+          ],
+          "reference_id": "3ds"
+        },
+        {
+          "data": [
+            {
+              "currencies": [
+                "EGP"
+              ],
+              "gateways": [
+                {
+                  "gateway": "PAYMOB",
+                  "gateway_id": 1128
+                }
+              ]
+            }
+          ],
+          "reference_id": "TestPaymob"
+        },
+        {
+          "data": [
+            {
+              "currencies": [
+                "USD",
+                "EUR",
+                "AUD",
+                "NZD",
+                "PLN",
+                "BRL",
+                "SGD"
+              ],
+              "gateways": [
+                {
+                  "gateway": "CHECKOUT",
+                  "gateway_id": 601
+                }
+              ]
+            },
+            {
+              "currencies": [
+                "INR"
+              ],
+              "gateways": [
+                {
+                  "gateway": "DUMMY",
+                  "gateway_id": 100
+                },
+                {
+                  "gateway": "HYPERPG",
+                  "gateway_id": 88
+                },
+                {
+                  "gateway": "CHECKOUT",
+                  "gateway_id": 601
+                }
+              ]
+            },
+            {
+              "currencies": [
+                "EGP",
+                "OMR",
+                "JOD",
+                "LBP",
+                "BHD"
+              ],
+              "gateways": [
+                {
+                  "gateway": "NOON",
+                  "gateway_id": 81
+                }
+              ]
+            },
+            {
+              "currencies": [
+                "SAR",
+                "QAR"
+              ],
+              "gateways": [
+                {
+                  "gateway": "NOON",
+                  "gateway_id": 81
+                },
+                {
+                  "gateway": "CHECKOUT",
+                  "gateway_id": 601
+                }
+              ]
+            },
+            {
+              "currencies": [
+                "AED",
+                "KWD"
+              ],
+              "gateways": [
+                {
+                  "gateway": "TAP",
+                  "gateway_id": 1123
+                },
+                {
+                  "gateway": "NOON",
+                  "gateway_id": 81
+                },
+                {
+                  "gateway": "CHECKOUT",
+                  "gateway_id": 601
+                }
+              ]
+            }
+          ],
+          "reference_id": "DEFAULT_NULL"
+        },
+        {
+          "data": [
+            {
+              "currencies": [
+                "EGP"
+              ],
+              "gateways": [
+                {
+                  "gateway": "FAWRYPAY",
+                  "gateway_id": 1126
+                }
+              ]
+            }
+          ],
+          "reference_id": "Dummy"
+        },
+        {
+          "data": [
+            {
+              "currencies": [
+                "INR",
+                "THB",
+                "SGD",
+                "MYR",
+                "PHP",
+                "HKD"
+              ],
+              "gateways": [
+                {
+                  "gateway": "TWOC_TWOP",
+                  "gateway_id": 1119
+                }
+              ]
+            }
+          ],
+          "reference_id": "MALAYSIA"
+        },
+        {
+          "data": [
+            {
+              "currencies": [
+                "AED"
+              ],
+              "gateways": [
+                {
+                  "gateway": "TAP",
+                  "gateway_id": 1123
+                }
+              ]
+            }
+          ],
+          "reference_id": "No3ds"
+        },
+        {
+          "data": [
+            {
+              "currencies": [
+                "AED",
+                "SAR",
+                "INR",
+                "USD",
+                "EGP"
+              ],
+              "gateways": [
+                {
+                  "gateway": "PAYFORT",
+                  "gateway_id": 75
+                }
+              ]
+            }
+          ],
+          "reference_id": "testpayfort"
+        },
+        {
+          "data": [
+            {
+              "currencies": [
+                "KWD",
+                "AED",
+                "SAR"
+              ],
+              "gateways": [
+                {
+                  "gateway": "MYFATOORAH",
+                  "gateway_id": 1125
+                }
+              ]
+            }
+          ],
+          "reference_id": "TestMYFATOORAH"
+        },
+         {
+      "description": "Hong Leong Bank (Malaysia)",
+      "payment_method": "NB_MY_HLB",
+      "payment_method_type": "NB",
+      "reference_id_data": [
+        {
+          "data": [
+            {
+              "currencies": [
+                "MYR"
+              ],
+              "gateways": [
+                {
+                  "gateway": "AIRWALLEX",
+                  "gateway_id": 1130
+                }
+              ]
+            }
+          ],
+          "reference_id": "new"
+        },
+        {
+          "data": [
+            {
+              "currencies": [
+                "MYR"
+              ],
+              "gateways": [
+                {
+                  "gateway": "AIRWALLEX",
+                  "gateway_id": 1130
+                }
+              ]
+            }
+          ],
+          "reference_id": "new_test"
+        }
+      ],
+      "validations": {
+        "MYR": {
+          "max_amount": 2000,
+          "min_amount": 1.01
+        }
+      }
+    },
+    {
+      "description": "First Iraqi Bank",
+      "juspay_bank_code": "JP_FIB",
+      "payment_method": "FIB",
+      "payment_method_sub_type": "WALLET",
+      "payment_method_type": "WALLET",
+      "reference_id_data": [
+        {
+          "data": [
+            {
+              "currencies": [
+                "IQD"
+              ],
+              "gateways": [
+                {
+                  "gateway": "FIB",
+                  "gateway_id": 1137
+                }
+              ]
+            }
+          ],
+          "reference_id": "fib_testing"
+        }
+      ]
+    }
+  ],
+  "restricted_mode": false,
+  "timestamp": "2024-11-27T08:27:25.174445842Z",
+  "verify_vpa_enabled_gateways": []
+}
