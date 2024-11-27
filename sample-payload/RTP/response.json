@@ -1,24 +1,30 @@
 {
-    "action": "rtpTxn",
-    "txnUuid": "mozaKnjBea",
-    "txnId": "abc-hyperorder45314-1",
-    "status": "PENDING_VBV",
-    "payment": {
-        "sdkParams": {
-            "tag": "RTP_PARAM",
-            "contents": {
-                "name": "generate-qr-code",
-                "qrString": "00020011021230620019A00810516236030779771075204599953037645406100.005802TH59182C2P Test merchant6007Bangkok6254010810516236050810821abc-hyperorder45314-16304515E"
+    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "action": "rtpTxn",
+        "status": "CHARGED",
+        "returnUrl": "https:\/\/juspay.in\/end?order_id=hyperorder1732628972790&status=CHARGED&status_id=21&signature=Lia%2FBIkblGQNr7vWbpisRPFeNILWsntCoSqcaiuIVKI%3D&signature_algorithm=HMAC-SHA256",
+        "otherInfo": {
+            "url": "https:\/\/juspay.in\/v2\/pay\/finish\/juspaylatam\/moz5Q9ypHjT1ou8paLR\/hyperorder1732628972790?useClientType=true",
+            "realtime": {
+                "requestId": "43a5bbe1-0eed-40d3-93ed-f4a0994211c6",
+                "os": "ANDROID",
+                "merchantId": "test",
+                "customerId": "97*******",
+                "clientId": "test",
+                "environment": "production",
+                "merchantLoader": "false",
+                "isWrapper": "false",
+                "lastVisitedUrl": "https:\/\/juspay.in\/v2\/pay\/start\/juspaylatam\/moz5Q9ypHjT1ou8paLR?cardIssuerBankName%3DPIX_QR%26cardType%3DRTP%26paymentMethod%3DPIX_QR%26paymentMethodType%3DRTP=&client_type=HEADLESS_GODEL_SDK",
+                "backPressed": "true"
             }
         },
-        "authentication": {
-            "url": "https://sandbox.juspay.in/v2/pay/start/abc/mozapplnjBea?cardIssuerBankName%3DPIX_QR%26cardType%3DRTP%26paymentMethod%3DPIX_QR%26paymentMethodType%3DRTP",
-            "method": "GET"
-        }
+        "orderId": "hyperorder1732628972790",
+        "merchantId": "test"
     },
-    "orderId": "hyperorder45314",
-    "offerDetails": {
-        "offers": []
-    },
-    "merchantReturnUrl": "https://google.co.in"
+    "errorMessage": "",
+    "errorCode": "",
+    "error": false,
+    "event": "process_result"
 }

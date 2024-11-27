@@ -10,8 +10,8 @@
         "clientAuthToken": "tkn_0e37606ab48ccfc4213",
         "showLoader": true,
         "identityCredential": {
-           "cpf": "123456789",
-           "cpnj": null,
+           "cpf": "12xxx789",
+           "cnpj": null,
            "pix_key": null
          }
     }
