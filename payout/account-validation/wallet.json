@@ -1,0 +1,16 @@
+{
+  "updatedAt": "2024-11-14T06:08:45Z",
+  "uniqueId": "paypal8",
+  "status": "CREATED",
+  "preferredGatewayList": [
+      "PAYPAL_WALLET"
+  ],
+  "createdAt": "2024-11-14T06:08:45Z",
+  "beneDetails": {
+      "details": {
+          "walletIdentifier": "FSMRXXXXX8PSG",
+          "brand": "PAYPAL"
+      },
+      "type": "WALLET"
+  }
+}
