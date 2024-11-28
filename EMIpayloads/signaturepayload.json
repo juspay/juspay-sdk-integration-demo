@@ -1,0 +1,19 @@
+{
+"payload": {
+      "action": "paymentPage",
+      "amount": "88648.0",
+      "clientId": "test",
+      "currentActivityId": "a1a5b55-d04a-4cb8-9bb0-fdd164678971",
+      "customerEmail": "test@gmail.com",
+      "customerId": "6d895624c36b6f86e4561ccdaff2322d",
+      "customerMobile": "RIPPIFILTERED",
+      "environment": "production",
+      "merchantKeyId": "12323",
+      "orderDetails": "{\"metadata.emi:gateway_data\":\"{\\\"PINELABS\\\":{\\\"productInfo\\\":[{\\\"product_id\\\":\\\"30191\\\",\\\"product_amount\\\":\\\"88648.0\\\"}]}}\",\"metadata.webhook_url\":\"https://api.com/useraccount/responsefromjuspay\",\"order_id\":\"123test\",\"first_name\":\"John\",\"last_name\":\"Wick\",\"isCartPODEligible\":false,\"metadata.apply_offer\":\"false\",\"amount\":\"88648.0\",\"customer_id\":\"6d895624c36b6f86e4561ccdaff2322d\",\"merchant_id\":\"Merchant\",\"email_address\":\"test@gmail.com\",\"mobile_number\":\"9876543210\",\"return_url\":\"https://www.google.com/order-confirmation\",\"timestamp\":\"1732603927962\",\"basket\":\"[{\\\"id\\\":\\\"30191\\\",\\\"quantity\\\":1,\\\"unitPrice\\\":88648.0,\\\"productName\\\":\\\"iphone\\\"}]\",\"currency\":\"INR\",\"payment_filter\":{\"allowDefaultOptions\":false,\"options\":[{\"enable\":true,\"paymentMethodType\":\"NB\"},{\"enable\":true,\"paymentMethodType\":\"TATAPAY\"},{\"enable\":true,\"paymentMethodType\":\"UPI\"},{\"enable\":true,\"paymentMethodType\":\"CREDITLINE\"},{\"enable\":true,\"paymentMethodType\":\"CARD\"}],\"emiOptions\":{\"standardEmi\":{\"enable\":true,\"credit\":{\"enable\":true},\"debit\":{\"enable\":false}},\"lowCostEmi\":{\"enable\":true,\"credit\":{\"enable\":true},\"debit\":{\"enable\":false}},\"noCostEmi\":{\"enable\":true,\"credit\":{\"enable\":true},\"debit\":{\"enable\":false}},\"showOnlyEmi\":false}},\"udf1\":\"636003|45/15, Gundu Pillaiyar Koil street,Ammapet, Salem,SALEM,TAMIL NADU\",\"udf2\":\"636003|45/15, Gundu Pillaiyar Koil street,Ammapet, Salem,SALEM,TAMIL NADU\",\"udf3\":\"308191\",\"udf6\":\"STAR\",\"udf8\":\"V2\"}",
+      "orderId": "123test",
+      "processStartedTime": 1604738588018,
+      "signature": "signaturekey"
+    },
+    "requestId": "1112345575790-0088665",
+    "service": "in.juspay.hyperpay",
+  }
