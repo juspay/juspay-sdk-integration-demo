@@ -1,0 +1,45 @@
+{
+    "value": "VALID",
+    "label": "VALIDATION_V2",
+    "info": {
+        "validationType": "PENNYLESS",
+        "createdAt": "2024-10-09T15:18:10Z",
+        "status": "VALID",
+        "transactions": [
+            {
+                "createdAt": "2024-10-09T15:18:10Z",
+                "status": "VALID",
+                "transactionRef": "02eb08cfa8d42f285f65deb0675781",
+                "updatedAt": "2024-10-09T15:18:11Z",
+                "gatewayRefId": "428320001444",
+                "responseMessage": "VALIDATION_SUCCESSFULL",
+                "validateResp": {
+                    "clientRefId": "02eb08cfa8d42f285f65deb0675781",
+                    "transDateTime": "09/10/2024 20:48:11",
+                    "rrn": "428320001444",
+                    "status": "SUCCESS",
+                    "responseMsg": "SUCCESS",
+                    "beneficiaryName": "RAMESH",
+                    "responseCode": "00"
+                },
+                "nameAtBank": "YESBANK",
+                "validationMethod": "NSDL'JUSPAY_PNL",
+                "responseCode": "ACCOUNT_IS_VALID"
+            }
+        ],
+        "updatedAt": "2024-10-09T15:18:11Z",
+        "uniqueId": "PIP091024EdGwtt1sx",
+        "responseMessage": "VALIDATION_SUCCESSFULL",
+        "beneDetails": {
+            "details": {
+                "ifsc": "HDFC0000035",
+                "account": "**************"
+            },
+            "type": "ACCOUNT_IFSC"
+        },
+        "nameAtBank": "YESBANK",
+        "responseCode": "ACCOUNT_IS_VALID"
+    },
+    "id": "ab90a68c8ed4059beb7acce805edd8",
+    "category": "INFO"
+}
