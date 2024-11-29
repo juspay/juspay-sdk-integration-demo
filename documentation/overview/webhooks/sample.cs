@@ -1,44 +1,67 @@
-// Sample code in C#
+// Sample in c#
 
-using System;  
-using System.IO;  
-using System.Security.Cryptography;  
-using System.Text;  
+using System;
+using System.Security.Cryptography;
+using System.Text;
 
-public class WebHookDecrypt
-{   
-    public static void Main(string[] args) 
-    {   
-        // webhook_payload => {serialized_response: <encrypted_json_string>}
-        string encr_data = <encrypted_json_string>;
-        string key = <webhook_encryption_key>; 
-        var decr_data = decrypt(ref encr_data, ref key);  
+public class AES128CBCDecryptor
+{
+    public static string DecryptAES128CBC(string encryptedData, byte[] key)
+    {
+        if (key.Length != 16)
+        {
+            throw new ArgumentException("Key must be 16 bytes (AES-128 requires a 128-bit key).");
+        }
 
-        Console.WriteLine("DeCrypted Text : "+ decr_data);
+        // Extract IV from the encrypted data (first 16 bytes)
+        byte[] iv = Encoding.UTF8.GetBytes(encryptedData.Substring(0, 16));
+        string base64Data = encryptedData.Substring(16);
+        byte[] encryptedBytes = Convert.FromBase64String(base64Data);
+
+        if (encryptedBytes.Length % 16 != 0)
+        {
+            throw new ArgumentException("Encrypted data length must be a multiple of the block size (16 bytes for AES).");
+        }
+
+        using (Aes aes = Aes.Create())
+        {
+            aes.Key = key;
+            aes.IV = iv;
+            aes.Mode = CipherMode.CBC;
+            aes.Padding = PaddingMode.None;
+
+            using (ICryptoTransform decryptor = aes.CreateDecryptor())
+            {
+                byte[] decryptedBytes = decryptor.TransformFinalBlock(encryptedBytes, 0, encryptedBytes.Length);
+
+                // Remove PKCS7 padding
+                int paddingLength = decryptedBytes[^1];
+                if (paddingLength > 16)
+                {
+                    throw new ArgumentException("Invalid padding detected.");
+                }
+
+                byte[] unpaddedBytes = new byte[decryptedBytes.Length - paddingLength];
+                Array.Copy(decryptedBytes, unpaddedBytes, decryptedBytes.Length - paddingLength);
+
+                return Encoding.UTF8.GetString(unpaddedBytes);
+            }
+        }
     }
 
-    public static string decrypt (ref string cipherText, ref string key)
+    public static void Main(string[] args)
     {
-            byte[] iv = new byte[16];  
-            byte[] buffer =  Convert.FromBase64String(cipherText.Substring(16));  
+        string encryptedData = "<encrypted_string>";
+        byte[] key = Encoding.UTF8.GetBytes("<webhook_key>");
 
-            using (Aes aes = Aes.Create())  
-            {  
-                aes.Key = Encoding.UTF8.GetBytes(key);  
-                aes.IV = iv;  
-                ICryptoTransform decryptor = aes.CreateDecryptor(aes.Key, aes.IV);  
-
-                using (MemoryStream memoryStream = new MemoryStream(buffer))  
-                {  
-                    using (CryptoStream cryptoStream = new CryptoStream((Stream)memoryStream, decryptor, CryptoStreamMode.Read))  
-                    {  
-                        using (StreamReader streamReader = new StreamReader((Stream)cryptoStream))  
-                        {  
-                            return streamReader.ReadToEnd();  
-                        }  
-                    }  
-                }  
-            }  
-
+        try
+        {
+            string decryptedText = DecryptAES128CBC(encryptedData, key);
+            Console.WriteLine("Decrypted text: " + decryptedText);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error during decryption: " + ex.Message);
+        }
     }
 }
