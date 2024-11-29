@@ -1,0 +1,29 @@
+{
+   "status": "SUCCESS",
+   "product_details": [
+       {
+           "imei_details": [
+               {
+                   "state_code": null,
+                   "dealer_code": null,
+                   "imei_no": "351204850035422",
+                   "imei_status": "ERROR",
+                   "model_number": null,
+                   "err_code": "-116",
+                   "err_msg": "EITHER NO_PRODUCT IS ELIGIBLE FOR IMEI OPERATION OR IMEI OPERATION IS NOT SUCESSFULL FOR ANY PRODUCT"
+               }
+           ],
+           "product_id": "30191"
+       }
+   ],
+   "merchant_id": "Merchant",
+   "order_id": "123test",
+   "commands": [
+       {
+           "error_message": "",
+           "status": "SUCCESS",
+           "date_created": "2024-11-25T14:09:03Z",
+           "command": "BLOCK_IMEI"
+       }
+   ]
+}
