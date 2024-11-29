@@ -1,0 +1,43 @@
+{
+    "value": "ERROR",
+    "label": "VALIDATION_V2",
+    "info": {
+        "validationType": "PENNYLESS",
+        "createdAt": "2024-10-09T14:53:22Z",
+        "status": "ERROR",
+        "transactions": [
+            {
+                "createdAt": "2024-10-09T14:53:22Z",
+                "status": "ERROR",
+                "transactionRef": "afba189d09240469f652c6a5ce76a4",
+                "updatedAt": "2024-10-09T14:53:23Z",
+                "gatewayRefId": "428320000745",
+                "responseMessage": "UNABLE_TO_VALIDATE",
+                "validateResp": {
+                    "clientRefId": "afba189d09240469f652c6a5ce76a4",
+                    "transDateTime": "09/10/2024 20:23:23",
+                    "rrn": "428320000745",
+                    "status": "FAILURE",
+                    "responseMsg": "ISSUER NODE OFFLINE",
+                    "beneficiaryName": "",
+                    "responseCode": "08"
+                },
+                "validationMethod": "NSDL'JUSPAY_PNL",
+                "responseCode": "UNABLE_TO_VALIDATE"
+            }
+        ],
+        "updatedAt": "2024-10-09T14:53:22Z",
+        "uniqueId": "PIP091024pRA6zHSfA",
+        "responseMessage": "UNABLE_TO_VALIDATE",
+        "beneDetails": {
+            "details": {
+                "ifsc": "CIUB0000507",
+                "account": "***************"
+            },
+            "type": "ACCOUNT_IFSC"
+        },
+        "responseCode": "UNABLE_TO_VALIDATE"
+    },
+    "id": "ab90a68c8ed4059beb7acce805edd8",
+    "category": "INFO"
+}
