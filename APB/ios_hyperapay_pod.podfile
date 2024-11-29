@@ -1,0 +1,4 @@
+pod 'HyperAPay', '2.1.41'
+
+//The HyperAPay version is tied to the version of your iOS Hyper SDK.// 
+//If you're using the latest SDK version (2.1.41), the corresponding HyperAPay version should also be 2.1.41.//

@@ -1,0 +1,65 @@
+{
+    "payment_method": "",
+    "customer_phone": "FILTERED",
+    "payment_gateway_response": {
+        "network_error_message": null,
+        "txn_id": "id-test-1",
+        "rrn": "40444",
+        "debit_amount": "9428.0",
+        "auth_id_code": "R098",
+        "resp_message": "",
+        "epg_txn_id": "pay_NaK2rOJSi",
+        "resp_code": "captured",
+        "created": "2024-02-13T09:57:50Z",
+        "network_error_code": null
+    },
+    "udf8": "",
+    "txn_id": "id-test-1",
+    "order_id": "test",
+    "maximum_eligible_refund_amount": 9428,
+    "udf9": "",
+    "customer_id": "c5f83b4850b5ae8",
+    "amount": 9428,
+    "split_settlement_response": {
+        "split_details": [
+            {
+                "sub_vendor_id": "FILTERED",
+                "amount": 9428,
+                "merchant_commission": 0,
+                "gateway_sub_account_id": "FILTERED",
+                "epg_txn_id": "trf_NaK2qkzlA6",
+                "notes": "{\"note\":{\"juspayVendorId\":\"47586\",\"leadId\":\"65cb2adc9925c1d\",\"transactionId\":\"ID-test\",\"proposalNumber\":\"2955\"},\"linked_account_notes\":[\"transactionId\",\"leadId\",\"proposalNumber\"]}"
+            }
+        ],
+        "split_applied": true
+    },
+    "status": "CHARGED",
+    "udf5": "",
+    "udf6": "",
+    "status_id": 21,
+    "offers": [],
+    "udf7": "",
+    "resp_message": null,
+    "product_id": "",
+    "refunded": false,
+    "gateway_id": ,
+    "date_created": "2024-02-13T09:56:01Z",
+    "id": "ordeh_174d12d0b749b7e10",
+    "merchant_id": "TEST_MID",
+    "return_url": "https://test/juspay/success/test",
+    "effective_amount": "FILTERED",
+    "currency": "INR",
+    "auth_type": "",
+    "customer_email": "1111111",
+    "resp_code": null,
+    "payment_method_type": "CARD",
+    "txn_uuid": "mozvMas6UaG",
+    "resp_category": null,
+    "payment_links": {
+        "mobile": "https://api.juspay.in/orders/ordeh_174d12d0b749b7e10/payment-page",
+        "web": "https://api.juspay.in/orders/ordeh_174d12d0b749b7e10/payment-page",
+        "iframe": "https://api.juspay.in/orders/ordeh_174d12d0b749b7e10/payment-page"
+    },
+    "amount_refunded": 0,
+    "bank_error_code": "",
+    "bank_error_message": ""

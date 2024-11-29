@@ -1,0 +1,19 @@
+{
+"payload": {
+      "action": "paymentPage",
+      "amount": "1230.00",
+      "clientId": "test",
+      "currentActivityId": "a1a5b55-d04a-4cb8-9bb0-fdd164678971",
+      "customerEmail": "test@mail.com",
+      "customerId": "customer100",
+      "customerMobile": "9876543210",
+      "environment": "production",
+      "merchantKeyId": "12323",
+      "orderDetails": "{\"order_id\": \"testing-order-one\",\"merchant_id\": \"Merchant\",\"amount\": \"1230.0\",\"cod_advance_payment_amount\": \"123.0\",\"timestamp\": \"1718987667309\",\"customer_id\": \"testing-customer-one\",\"customer_email\": \"test@mail.com\",\"customer_phone\": \"9876543210\",\"currency\": \"INR\",\"return_url\": \"https://google.com/\",\"udf1\": \"testing123\",\"udf2\": \"Star50\"}",
+      "orderId": "testing-order-one",
+      "processStartedTime": 1604738588018,
+      "signature": "signaturekey"
+    },
+    "requestId": "1112345575790-0088665",
+    "service": "in.juspay.hyperpay",
+  }

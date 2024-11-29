@@ -1,0 +1,27 @@
+{
+    "action": "refreshWalletBalances",
+    "count": 1,
+    "list": [
+      {
+        "currentBalance": 0,
+        "id": "wlm_aejF986G9JYiTqru",
+        "juspayBankCode": "JP_AMAZONPAY",
+        "lastRefreshed": "2024-08-26T06:37:02Z",
+        "linked": true,
+        "metadata": {},
+        "subDetails": [
+          {
+            "currentBalance": 230,
+            "lastRefreshed": "2024-08-26T06:37:02Z",
+            "paymentMethod": "AMAZONPAY",
+            "paymentMethodType": "WALLET"
+          }
+        ],
+        "token": "tk_54bdaec839844eecb3ec4095b88742e3",
+        "wallet": "AMAZONPAY"
+      }
+    ],
+    "object": "list",
+    "offset": 0,
+    "total": 1
+  }

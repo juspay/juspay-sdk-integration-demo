@@ -1,0 +1,127 @@
+{
+  "event_name": "ORDER_SUCCEEDED",
+  "content": {
+    "order": {
+      "payment_method": "AMAZONPAY",
+      "customer_phone": "FILTERED",
+      "payment_gateway_response": {
+        "auth_ref_num": null,
+        "network_error_message": null,
+        "txn_id": "123-1",
+        "rrn": "NA",
+        "auth_id_code": "NA",
+        "resp_message": "CaptureApproved",
+        "gateway_response": {
+          "merchantId": "A34OPQFI6Z2YW4",
+          "status": "CaptureApproved",
+          "createTime": "FILTERED",
+          "approvedAmount": "138.76",
+          "updateTime": "FILTERED",
+          "amazonChargeId": "FILTERED",
+          "requestedAmount": "FILTERED",
+          "chargeId": "FILTERED",
+          "currencyCode": "INR"
+        },
+        "epg_txn_id": "asdf12345",
+        "gateway_merchant_id": null,
+        "resp_code": "CaptureApproved",
+        "created": "2024-01-01T11:54:50Z",
+        "eci": null,
+        "network_error_code": null,
+        "arn": null
+      },
+      "udf8": "",
+      "txn_id": "123-1",
+      "order_id": "123",
+      "gateway_reference_id": null,
+      "maximum_eligible_refund_amount": 138.76,
+      "udf9": "",
+      "txn_detail": {
+        "txn_id": "123-1",
+        "order_id": "123",
+        "error_code": null,
+        "txn_flow_type": "DIRECT_DEBIT",
+        "status": "CHARGED",
+        "express_checkout": false,
+        "gateway_id": 38,
+        "error_message": "",
+        "offer_deduction_amount": null,
+        "tax_amount": null,
+        "currency": "INR",
+        "txn_amount_breakup": [
+          {
+            "amount": 138.76,
+            "method": "ADD",
+            "sno": "FILTERED",
+            "name": "BASE"
+          }
+        ],
+        "txn_amount": 138.76,
+        "created": "2024-01-01T11:54:48Z",
+        "gateway": "AMAZONPAY",
+        "surcharge_amount": null,
+        "last_updated": "2024-01-01T11:54:50Z",
+        "txn_uuid": "moz*******7oD5d",
+        "net_amount": 138.76,
+        "redirect": true,
+        "metadata": {
+          "payment_channel": "ANDROID"
+        }
+      },
+      "customer_id": "testcustomer",
+      "amount": 138.76,
+      "udf4": "",
+      "status": "CHARGED",
+      "udf5": "",
+      "udf6": "",
+      "status_id": 21,
+      "offers": [],
+      "udf7": "",
+      "resp_message": null,
+      "product_id": "",
+      "refunded": false,
+      "udf10": "",
+      "gateway_id": 38,
+      "udf1": "",
+      "udf2": "",
+      "udf3": "",
+      "date_created": "2024-01-01T11:54:48Z",
+      "id": "ordeh_123",
+      "merchant_id": "mid",
+      "return_url": "juspay.in",
+      "effective_amount": 138.76,
+      "currency": "INR",
+      "auth_type": "",
+      "customer_email": "1111111",
+      "resp_code": null,
+      "payment_method_type": "WALLET",
+      "wallet": {
+        "txn_flow_type": "DIRECT_DEBIT"
+      },
+      "last_updated": "2024-01-01T11:54:50Z",
+      "txn_uuid": "moz*******7oD5d",
+      "resp_category": null,
+      "payment_links": {
+        "mobile": "https://payments.juspay.in/payment-page/order/ordeh_123",
+        "web": "https://payments.juspay.in/payment-page/order/ordeh_123",
+        "iframe": "https://payments.juspay.in/payment-page/order/ordeh_123"
+      },
+      "amount_refunded": 0,
+      "bank_error_code": "",
+      "metadata": {
+        "amount_category": "FILTERED",
+        "payment_page_client_id": "juspay",
+        "payment_links": {
+          "mobile": "https://payments.juspay.in/payment-page/order/ordeh_123",
+          "web": "https://payments.juspay.in/payment-page/order/ordeh_123",
+          "iframe": "https://payments.juspay.in/payment-page/order/ordeh_123"
+        }
+      },
+      "emi_details": "FILTERED",
+      "bank_error_message": ""
+    }
+  },
+  "date_created": "2024-01-01T11:54:51Z",
+  "id": "evt_V2_wdjfkhwkehri23243b320abd5"
+}
+

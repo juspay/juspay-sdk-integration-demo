@@ -1,0 +1,24 @@
+{
+    "requestId": "0576305c-3c91-9844-51a0c0b4cd4b",
+    "service": "in.juspay.ec",
+    "payload": {
+        "action": "eligibility",
+        "consumerFinance": [
+            {
+                "customerId": "18a1e6a2-00d2-bcbd-dae7c60e093c",
+                "paymentMethodsEligibility": [
+                    {
+                        "description": "SIMPL",
+                        "eligibilityStrategy": "USER",
+                        "gatewayErrorCode": "user_unauthorized",
+                        "gatewayErrorMessage": "user_unauthorized",
+                        "isEligible": false,
+                        "paymentMethod": "SIMPL",
+                        "paymentMethodType": "WALLET",
+                        "status": "UNAUTHORIZED"
+                    }
+                ]
+            }
+        ]
+    }
+}

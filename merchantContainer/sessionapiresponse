@@ -1,0 +1,33 @@
+{
+    "status": "NEW",
+    "id": "ordeh_123",
+    "order_id": "test123",
+    "payment_links": {
+        "web": "https://sandbox.assets.juspay.in/payment-page/order/ordeh_123",
+        "expiry": "2024-11-24T14:50:49Z"
+    },
+    "sdk_payload": {
+        "requestId": "d6dc437b44a185ce7079e40345f4",
+        "service": "in.juspay.hyperpay",
+        "payload": {
+            "action": "paymentPage",
+            "amount": "1000.0",
+            "clientAuthToken": "tkn_3d97206af24d34964887*****1e0d63",
+            "clientAuthTokenExpiry": "2024-11-24T14:50:49Z",
+            "clientId": "juspay",
+            "collectAvsInfo": false,
+            "currency": "INR",
+            "customerEmail": "test@mail.com",
+            "customerPhone": "9876543210",
+            "environment": "sandbox",
+            "firstName": "first",
+            "lastName": "last",
+            "merchantId": "juspay",
+            "metadata.merchantContainerList": "[{\"payment_method\":\"JUSPAY_WALLET\",\"payment_method_type\":\"MERCHANT_CONTAINER\",\"display_name\":\"Juspay Wallet\",\"balance_amount\":10,\"eligible_amount\":10,\"isPreSelected\":true,\"walletIconURL\":\"https://www.juspay.in/images/logo.png\"}]",
+            "orderId": "test123",
+            "service": "in.juspay.hyperpay"
+        },
+        "expiry": "2024-11-24T14:50:49Z"
+    },
+    "order_expiry": "2024-11-24T14:50:49Z"
+}

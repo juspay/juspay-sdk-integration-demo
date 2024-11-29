@@ -1,0 +1,15 @@
+curl --location --request POST 'https://api.juspay.in/session' \
+    --header 'x-merchantid: yourMerchantId' \
+    --header 'Authorization: Basic base64encodedkey==' \
+    --header 'Content-Type: application/json' \
+    --data-raw '{
+    "amount":"3.00",
+    "order_id":"yourUniqueOrderId",
+    "customer_id":"yourUniqueCustId",
+    "customer_phone":"9876543210",
+    "customer_email":"dummyemail@gmail.com",
+    "payment_page_client_id":"merchant",
+    "action":"paymentPage",
+    "order_type": "TPV_PAYMENT",
+    "metadata.bank_account_details": "[{\"bank_account_number\":\"198731890\",\"bank_ifsc\":\"ICICI0000300\",\"bank_beneficiary_name\":\"TestName\"}]"
+}'

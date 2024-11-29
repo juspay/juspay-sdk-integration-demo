@@ -1,0 +1,16 @@
+curl --location 'https://sandbox.juspay.in/session' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Basic M******************==' \
+--data-raw '{
+    "order_id": "test123",
+    "amount": "1000",
+    "currency":"INR",
+    "customer_email": "test@mail.com",
+    "customer_phone": "9876543210",
+    "payment_page_client_id": "juspay",
+    "action": "paymentPage",
+    "first_name": "first",
+    "last_name": "last",
+    "metadata.merchant_container_list" :"[{\"payment_method\":\"JUSPAY_WALLET\",\"payment_method_type\":\"MERCHANT_CONTAINER\",\"display_name\":\"Juspay Wallet\",\"balance_amount\":10,\"eligible_amount\":10,\"isPreSelected\":true,\"walletIconURL\":\"https://www.juspay.in/images/logo.png\"}]"
+ } 
+'
