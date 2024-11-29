@@ -1,0 +1,42 @@
+{
+    "value": "INVALID",
+    "label": "VALIDATION_V2",
+    "info": {
+        "validationType": "PENNYDROP",
+        "createdAt": "2024-10-09T14:40:15Z",
+        "status": "INVALID",
+        "transactions": [
+            {
+                "createdAt": "2024-10-09T14:40:15Z",
+                "status": "INVALID",
+                "transactionRef": "ade8bde9c894764a3912b9faab37ab",
+                "updatedAt": "2024-10-09T14:40:19Z",
+                "gatewayRefId": "428320032658",
+                "responseMessage": "VALIDATION_SUCCESSFULL",
+                "validateResp": {
+                    "nwtxnrefid": "428320032658",
+                    "txnid": "JSE20241009201016811955852",
+                    "nwrespmessg": "U31",
+                    "nwrespcode": "12",
+                    "respcode": "99",
+                    "response": "*******************"
+                },
+                "validationMethod": "NSDL'JUSPAY_IMPS",
+                "responseCode": "INVALID_BANK_ACCOUNT"
+            }
+        ],
+        "updatedAt": "2024-10-09T14:40:19Z",
+        "uniqueId": "PIP091024ncrhfObtK",
+        "responseMessage": "VALIDATION_SUCCESSFULL",
+        "beneDetails": {
+            "details": {
+                "ifsc": "IDIB000S022",
+                "account": "*****************"
+            },
+            "type": "ACCOUNT_IFSC"
+        },
+        "responseCode": "INVALID_BANK_ACCOUNT"
+    },
+    "id": "ab90a68c8ed4059beb7acce805edd8",
+    "category": "INFO"
+}
