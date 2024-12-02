@@ -1,3 +1,3 @@
-curl GET 'https://smartgatewayuat.hdfcbank.com/customers/cst_lz7zmpemoo5okgav/mandates' \
--H 'Authorization: Basic <Base-64 Key>' \
--H 'version:2023-06-30
+curl --location 'https://smartgatewayuat.hdfcbank.com/customers/<customer_id>/mandates' \
+--header 'x-merchant-id: <merchant_id>' \
+--header 'Authorization: Basic <api key in base64 format>' 
