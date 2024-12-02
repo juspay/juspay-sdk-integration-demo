@@ -1,4 +1,6 @@
 {
-  "mandate_status": "REVOKED",
-  "mandate_id": "7SucJZ2PCyoGY5vvW8Xa26"
+    "mandate_id": "4GHbgXDQ4ov5L1qBZ7uVbG",
+    "gateway_response_code": "S",
+    "mandate_status": "REVOKED",
+    "gateway_response_message": "Mandate has been revoked successfully"
 }
