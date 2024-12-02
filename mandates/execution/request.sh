@@ -1,8 +1,9 @@
-curl -X  POST 'https://smartgatewayuat.hdfcbank.com/txns' \
--H 'Content-Type: application/x-www-form-urlencoded' \
--H 'Authorization: Basic <base64 of key:>'
--d 'order.order_id=26234761248249834753485721' \
--d 'order.amount=100.00' \
--d 'mandate_id=4rKxSj3bNXs7RQcdtajAkb' \
--d 'merchant_id=merchantid' \
--d 'format=json'
+curl --location 'https://smartgatewayuat.hdfcbank.com/txns' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'x-merchant-id: <merchant_id>' \
+--header 'Authorization: Basic <api key in base64 format>' \
+--data-urlencode 'order.order_id=mandateexecution1' \
+--data-urlencode 'order.amount=1' \
+--data-urlencode 'merchant_id=<merchant_id>' \
+--data-urlencode 'mandate_id=<mandate_id>' \
+--data-urlencode 'format=json'

@@ -1,4 +1,5 @@
-curl --location 'https://smartgatewayuat.hdfcbank.com/mandates/hyhTD5Ga4jJ2KXZwwnyh4A' \
+curl --location 'https://smartgatewayuat.hdfcbank.com/mandates/<mandate_id>' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
---header 'Authorization: your api key' \
+--header 'x-merchant-id: <merchant_id>' \
+--header 'Authorization: Basic <api key in base64 format>' \
 --data-urlencode 'command=check_status'
