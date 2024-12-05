@@ -1,5 +1,5 @@
 {
-"rqstType": "AUTHORIZATION_FAILURE",
+"rqstType": "AuthorizationFailure",
 "payoutId": "Juspay123456789",
 "payoutAmnt": "1000",
 "payoutCurrCd": "INR",
