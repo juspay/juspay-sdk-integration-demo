@@ -1,0 +1,14 @@
+{
+    "payment_methods_eligibility": [
+        {
+            "payment_method": "SIMPL",
+            "gateway_error_code": "user_unauthorized",
+            "status": "UNAUTHORIZED",
+            "gateway_error_message": "user_unauthorized",
+            "eligibility_strategy": "USER",
+            "is_eligible": false,
+            "description": "SIMPL",
+            "payment_method_type": "WALLET"
+        }
+    ]
+}

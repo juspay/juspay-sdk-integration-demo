@@ -1,0 +1,9 @@
+{
+    "requestId": "4d73cc62-538a-45f1-9c9e-5233456234579c",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "action": "cardInfo",
+        "cardBin": "459162",
+        "checkDirectOtpSupport":true,      // Optional parameter to check DOTP Eligibility
+        "clientAuthToken": "tkn_123455677899876542345"
+    }

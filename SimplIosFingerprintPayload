@@ -1,0 +1,5 @@
+let user = GSUser(phoneNumber: "<user_phone_number>", email: "user_email") let
+fp = GSFingerPrint(merchantId: "<merchant_client_id>",andUser: user)
+fp.generateEncryptedPayload { (payload: String?) in
+// use encrypted payload
+}

@@ -1,0 +1,3 @@
+curl --location 'https://sandbox.juspay.in/orders/Snap_123456'?options.add_full_gateway_response=true' \
+--header 'version: 2021-12-31' \
+--header 'Authorization: Basic API KEY' \ --data ''

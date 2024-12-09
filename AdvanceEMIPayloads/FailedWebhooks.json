@@ -1,0 +1,165 @@
+{
+    "event_name": "ORDER_FAILED",
+    "content": {
+        "order": {
+            "payment_method": "VISA",
+            "customer_phone": "FILTERED",
+            "payment_gateway_response": {
+                "network_error_message": null,
+                "txn_id": "Merchant-202406084456370-1",
+                "rrn": "000000",
+                "auth_id_code": "000000",
+                "resp_message": "payment_authorization_error. Restricted card",
+                "epg_txn_id": "ZHQMPA20315",
+                "resp_code": "0399",
+                "created": "2024-06-03T07:43:57Z",
+                "network_error_code": null
+            },
+            "udf8": "",
+            "txn_id": "Merchant-202406084456370-1",
+            "order_id": "202406084456370",
+            "gateway_reference_id": "OT",
+            "udf9": "",
+            "txn_detail": {
+                "response_message": "Transaction failed at Bank's end",
+                "txn_id": "Merchant-202406084456370-1",
+                "order_id": "202406084456370",
+                "error_code": "0399",
+                "txn_flow_type": "EMI",
+                "status": "AUTHORIZATION_FAILED",
+                "express_checkout": false,
+                "gateway_id": 27,
+                "error_message": "payment_authorization_error. Restricted card",
+                "offer_deduction_amount": 134.39,
+                "tax_amount": null,
+                "currency": "INR",
+                "txn_amount": 4999,
+                "created": "2024-06-03T07:43:26Z",
+                "gateway": "BILLDESK",
+                "surcharge_amount": null,
+                "txn_uuid": "mozoSEtAMs5z",
+                "net_amount": 4999,
+                "redirect": true,
+                "metadata": {
+                    "payment_channel": "MWEB"
+                },
+                "response_code": "BANK_DECLINED"
+            },
+            "customer_id": "1222123",
+            "amount": 4999,
+            "udf4": "",
+            "status": "AUTHORIZATION_FAILED",
+            "udf5": "",
+            "udf6": "",
+            "status_id": 27,
+            "offers": [
+                {
+                    "offer_code": "JUto30",
+                    "offer_id": "b94d69ab-85e0-dfc1da3ee709",
+                    "error_code": "JP706",
+                    "status": "FAILED",
+                    "error_message": "Offer Application failed due to transaction failure",
+                    "benefits": [
+                        {
+                            "amount": 134.39,
+                            "type": "EMI_DISCOUNT",
+                            "calculation_info": {
+                                "calculation_rule": "PERCENTAGE",
+                                "emi_type": "NO_COST",
+                                "value": 100
+                            }
+                        }
+                    ],
+                    "metadata": "{"minimum_order_amount":"2500.00"}"
+                }
+            ],
+            "udf7": "",
+            "resp_message": "Transaction failed at Bank's end",
+            "emi_tenure": 3,
+            "product_id": "",
+            "refunded": false,
+            "udf10": "",
+            "gateway_id": 27,
+            "udf1": "M11240603",
+            "udf2": "",
+            "emi_type": "JUSPAY_NO_COST_EMI",
+            "udf3": "",
+            "date_created": "2024-06-03T07:43:26Z",
+            "id": "ordeh_a9e3c6b7ca98726219c220",
+            "rewards_breakup": {},
+            "merchant_id": "merchant",
+            "return_url": "https://payment-merchant.com/callback/juspay/202986370",
+            "effective_amount": 4864.61,
+            "currency": "INR",
+            "auth_type": "THREE_DS_2",
+            "customer_email": "1111111",
+            "resp_code": "BANK_DECLINED",
+            "card": {
+                "saved_to_locker": "FILTERED",
+                "extended_card_type": "FILTERED",
+                "card_isin": "FILTERED",
+                "payment_account_reference": "FILTERED",
+                "name_on_card": "FILTERED",
+                "card_brand": "VISA",
+                "last_four_digits": "FILTERED",
+                "card_issuer": "FILTERED",
+                "card_type": "CREDIT",
+                "tokens": "FILTERED",
+                "expiry_month": "FILTERED",
+                "card_issuer_country": "FILTERED",
+                "tokenization_user_consent": "FILTERED",
+                "card_reference": "",
+                "expiry_year": "FILTERED",
+                "using_saved_card": "FILTERED",
+                "using_token": "FILTERED",
+                "token_type": "ALT_ID",
+                "card_fingerprint": "FILTERED",
+                "juspay_bank_code": "JP_SBI"
+            },
+            "payment_method_type": "CARD",
+            "txn_uuid": "mozoSEtAMs5z",
+            "resp_category": "BUSINESS_ERROR",
+            "payment_links": {
+                "mobile": "FILTERED",
+                "web": "https://payments.juspay.in/payment-page/order/ordeh_a9e3c6b7ca98726219c220",
+                "iframe": "https://payments.juspay.in/payment-page/order/ordeh_a9e3c6b7ca98726219c220"
+            },
+            "amount_refunded": 0,
+            "basket": [
+                {
+                    "shippingDestinationType": null,
+                    "productName": null,
+                    "sellerType": null,
+                    "customParams": null,
+                    "productRisk": null,
+                    "sku": null,
+                    "id": "5011102525",
+                    "productCode": null,
+                    "quantity": 1,
+                    "description": null,
+                    "category": null,
+                    "unitPrice": "FILTERED",
+                    "passenger": null,
+                    "productUrl": null
+                }
+            ],
+            "bank_error_code": "0399",
+            "emi_bank": "SBI",
+            "metadata": {
+                "JUSPAY:gateway_reference_id": "OT",
+                "payment_page_client_id": "merchant",
+                "payment_links": {
+                    "mobile": "FILTERED",
+                    "web": "https://payments.juspay.in/payment-page/order/ordeh_a9e3c6b7ca98726219c220",
+                    "iframe": "https://payments.juspay.in/payment-page/order/ordeh_a9e3c6b7ca98726219c220"
+                },
+                "payment_locking": {
+                    "offer_details": "{}"
+                }
+            },
+            "bank_error_message": "payment_authorization_error. Restricted card"
+        }
+    },
+    "date_created": "2024-06-03T07:43:57Z",
+    "id": "evt_V2_23d4beb1a1764241802ec713d5a1bf92"
+}

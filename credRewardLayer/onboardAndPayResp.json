@@ -1,0 +1,34 @@
+{
+  "service": "in.juspay.ec",
+  "requestId": "f7700655-4afb-4809-9255-a20aabf27cbc",
+  "payload": {
+    "txnUuid": "moz3x7M5MLsEkM5ZjJC",
+    "status": "SUCCESS",
+    "selectedAccount": {
+      "vpa": "XXXX80@axisbiz",
+      "account": {
+        "type": "XOD",
+        "referenceId": "Afa9eb4b5157455883f8244104c0a1",
+        "name": "XBC",
+        "mpinSet": "true",
+        "maskedAccountNumber": "XXXXXXXXXX325878",
+        "isPrimary": "true",
+        "ifsc": "AABD0000011",
+        "branchName": "",
+        "bankName": "Mybank",
+        "bankCode": "500007",
+        "accountNumber": ""
+      }
+    },
+    "orderId": "hyperorder1698417375765",
+    "mutualFundDetails": null,
+    "mandate": null,
+    "gatewayResponseMessage": "Your transaction is successful",
+    "gatewayResponseCode": "00",
+    "action": "onboardingAndPay",
+    "accountRefId": "Afa9eb4b5157455883f8244104c0a1"
+  },
+  "errorMessage": "",
+  "errorCode": "",
+  "error": false
+}
