@@ -1,0 +1,33 @@
+{
+    "requestId": "0asdhf08wgf08sgfasuhf1",
+    "merchants": [
+        {
+            "tokenDateCreated": null,
+            "merchantId": "<Merchant Id>",
+            "tokenRequestorId": "<Token Requestor Id>",
+            "merchantName": "<Merchant Name>",
+            "logoUrl": "<Logo URL>",
+            "isTokenized": false,
+            "tokenCreationChannel": null
+        },
+        {
+            "tokenDateCreated": null,
+            "merchantId": "<Merchant Id>",
+            "tokenRequestorId": "<Token Requestor Id>",
+            "merchantName": "<Merchant Name>",
+            "logoUrl": "<Logo URL>",
+            "isTokenized": false,
+            "tokenCreationChannel": null
+        },
+        {
+            "tokenDateCreated": null,
+            "merchantId": "<Merchant Id>",
+            "tokenRequestorId": "<Token Requestor Id>",
+            "merchantName": "<Merchant Name>",
+            "logoUrl": "<Logo URL>",
+            "isTokenized": false,
+            "tokenCreationChannel": null
+        },
+        
+    ]
+}
