@@ -1,2 +1,13 @@
 {
+    "requestId": "0asdhf08wgf08sgfasuhf1",
+    "merchants": [
+        {
+            "merchantId": "<Merchant Id>",
+            "merchantStatusDesc": "Card already tokenized.",
+            "tokenRequestorId": "<Token Requestor ID>",
+            "merchantName": "<Merchant Name>",
+            "logoUrl": "<Image URL>",
+            "merchantStatusCode": "ALREADY_TOKENIZED"
+        }
+    ]
 }
