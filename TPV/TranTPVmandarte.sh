@@ -1,0 +1,17 @@
+curl --location 'https://smartgatewayuat.hdfcbank.com/orders' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'x-merchantid: <merchant_id>' \
+--header 'x-customerid: CUST001' \
+--header 'Authorization: Basic base_64_encoded_api_key==' \
+--data-urlencode 'order_id=TPVTEST14' \
+--data-urlencode 'amount=1' \
+--data-urlencode 'currency=INR' \
+--data-urlencode 'return_url=https://www.google.com' \
+--data-urlencode 'customer_id=CUST007' \
+--data-urlencode 'customer_phone=7076607677' \
+--data-urlencode 'customer_email=abc@gmail.com' \
+--data-urlencode 'merchant_id=<merchant_id>' \
+--data-urlencode 'metadata.bank_account_details=[{"bank_account_number":"50100101674487"}]' \
+--data-urlencode 'order_type=TPV_PAYMENT' \
+--data-urlencode 'options.create_mandate=REQUIRED' \
+--data-urlencode 'mandate.max_amount=1000.00' 
