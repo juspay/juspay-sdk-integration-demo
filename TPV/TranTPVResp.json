@@ -1,0 +1,12 @@
+{
+    "status": "CREATED",
+    "status_id": 1,
+    "id": "ordeh_768a44c8f98041c2a8c9c56e4b241880",
+    "order_id": "TPVTEST13",
+    "payment_links": {
+        "mobile": "https://smartgatewayuat.hdfcbank.com/payment-page/order/ordeh_768a44c8f98041c2a8c9c56e4b241880",
+        "web": "https://smartgatewayuat.hdfcbank.com/payment-page/order/ordeh_768a44c8f98041c2a8c9c56e4b241880",
+        "iframe": "https://smartgatewayuat.hdfcbank.com/payment-page/order/ordeh_768a44c8f98041c2a8c9c56e4b241880"
+    },
+    "order_expiry": "2024-12-18T05:39:19Z"
+}

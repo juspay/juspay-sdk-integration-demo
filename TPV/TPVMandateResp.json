@@ -1,0 +1,37 @@
+{
+    "status": "NEW",
+    "id": "ordeh_5e85048a635d4250b81fcf81c91ec328",
+    "order_id": "dedSddfd4",
+    "payment_links": {
+        "web": "https://smartgatewayuat.hdfcbank.com/payment-page/order/ordeh_5e85048a635d4250b81fcf81c91ec328",
+        "expiry": "2024-12-18T05:28:44Z"
+    },
+    "sdk_payload": {
+        "requestId": "77ffa91fe2ba46a38357ea0c813d5c5a",
+        "service": "in.juspay.hyperpay",
+        "payload": {
+            "clientId": "hdfcmaster",
+            "metadata.bankAccountDetails": "[{\"bank_account_number\":\"83748239234872\",\"bank_ifsc\":\"HDFC0876543\"}]",
+            "customerId": "CUST001",
+            "displayBusinessAs": "TEST HDFC SECURITIES",
+            "orderId": "dedSddfd4",
+            "returnUrl": "https://www.google.com",
+            "currency": "INR",
+            "customerEmail": "rahuls@gmail.in",
+            "customerPhone": "8604613494",
+            "service": "in.juspay.hyperpay",
+            "options.createMandate": "REQUIRED",
+            "mandate.maxAmount": "300",
+            "environment": "sandbox",
+            "merchantId": "testhdfc1",
+            "amount": "1.0",
+            "clientAuthTokenExpiry": "2024-12-11T05:43:44Z",
+            "clientAuthToken": "tkn_c5a3899abe2c4d9b9c638c4f78410cbe",
+            "action": "paymentPage",
+            "orderType": "TPV_PAYMENT",
+            "collectAvsInfo": false
+        },
+        "expiry": "2024-12-18T05:28:44Z"
+    },
+    "order_expiry": "2024-12-18T05:28:44Z"
+}
