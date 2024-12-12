@@ -30,7 +30,7 @@
     "debtor_agent_name": "ICICI BANK",
     "debtor_email": "test@lotuspay.com",
     "debtor_mobile": "9999123456",
-    "debtor_pan": "AABBC1234B",
+    "debtor_pan": "******234B",
     "debtor_phone": null,
     "frequency": "MNTH",
     "instrument": "DEBIT",
