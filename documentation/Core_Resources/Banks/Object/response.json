@@ -1,0 +1,42 @@
+{
+    "object": "bank",
+    "livemode": true,
+    "ifsc": "ICIC0000047",
+    "micr": "560229003",
+    "name": "ICICI Bank",
+    "branch": "BANGALORE - KORAMANGALA",
+    "city": "BANGALORE",
+    "bank_data": {
+        "UPI": true,
+        "BANK": "ICICI Bank",
+        "CITY": "BANGALORE",
+        "IFSC": "ICIC0000047",
+        "IMPS": true,
+        "MICR": "560229003",
+        "NEFT": true,
+        "RTGS": true,
+        "STATE": "KARNATAKA",
+        "SWIFT": null,
+        "BRANCH": "BANGALORE - KORAMANGALA",
+        "CENTRE": "BANGALORE URBAN",
+        "ADDRESS": "ICICI Bank Ltd., No 584, 80 Ft Road, Opp. Bethany High, Koramangala 8th Block, Bangalore, Karnataka - 560095",
+        "CONTACT": null,
+        "ISO3166": "IN-KA",
+        "DISTRICT": "BANGALORE URBAN"
+    },
+    "nach_bank": true,
+    "nach_bank_data": {
+        "object": "nach_bank",
+        "livemode": true,
+        "bank_code": "ICIC",
+        "display_name": "ICICI Bank",
+        "name": "ICICI BANK LTD.",
+        "ifsc": "ICIC0TREA00",
+        "ach_dr": true,
+        "emandate_esign": true,
+        "emandate_api": true,
+        "emandate_api_debitcard": true,
+        "emandate_api_netbanking": true,
+        "emandate_api_aadhaar": true
+    }
+}

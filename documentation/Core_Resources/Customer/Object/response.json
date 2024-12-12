@@ -1,0 +1,47 @@
+{
+    "id": "CU004433221AA",
+    "object": "customer",
+    "created": 1530224170,
+    "livemode": false,
+    "metadata": {
+    },
+    "bank_accounts": {
+      "object": "list",
+      "data": [
+      {
+          "id": "BA0011223344BB"
+      }
+      ],
+      "total_count": 1,
+      "url": "/v1/customers/CU004433221AA/bank_accounts"
+    },
+    "description": null,
+    "email": "amit@gmail.com",
+    "identification": "ABCDE1234A",
+    "mandates": {
+      "object": "list",
+      "data": [
+          {
+              "id": "MD0011223366A"
+          },
+          {
+              "id": "MD00123459DDA"
+          }
+      ],
+      "total_count": 2,
+      "url": "/v1/customers/CU004433221AA/mandates"
+      },
+    "mobile": "9123456789",
+    "name": "Amit Jain",
+    "phone": "9123456789",
+    "subscriptions": {
+      "object": "list",
+      "data": [
+          {
+              "id": "SB0011223322D"
+          }
+      ],
+      "total_count": 1,
+      "url": "/v1/customers/CU004433221AA/subscriptions"
+    }
+  }

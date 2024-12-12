@@ -1,0 +1,14 @@
+{
+    "object": "nach_bank",
+    "livemode": true,
+    "id": "YESB",
+    "display_name": "Yes Bank",
+    "name": "YES BANK",
+    "ifsc": "YESB0000001",
+    "ach_dr": true,
+    "variant_esign": true,
+    "variant_api": true,
+    "variant_api_debitcard": true,
+    "variant_api_netbanking": true,
+    "variant_api_aadhaar": false
+}

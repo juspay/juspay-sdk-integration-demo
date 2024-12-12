@@ -1,0 +1,39 @@
+{
+    "object": "nach_bank",
+    "livemode": true,
+    "id": "AUBL",
+    "display_name": "AU Small Finance Bank",
+    "name": "AU SMALL FINANCE BANK LTD",
+    "ifsc": "AUBL0000001",
+    "ach_dr": true,
+    "variant_esign": true,
+    "variant_api": true,
+    "variant_api_debitcard": true,
+    "variant_api_netbanking": true,
+    "variant_api_aadhaar": true,
+    "variant_api_others": false,
+    "mandate_amend": {
+        "net_banking": false,
+        "aadhaar": true,
+        "debit_card": true,
+        "others": false
+    },
+    "mandate_cancel": {
+        "net_banking": false,
+        "aadhaar": true,
+        "debit_card": true,
+        "others": false
+    },
+    "mandate_pause": {
+        "net_banking": false,
+        "aadhaar": true,
+        "debit_card": true,
+        "others": false
+    },
+    "mandate_resume": {
+        "net_banking": false,
+        "aadhaar": false,
+        "debit_card": false,
+        "others": false
+    }
+}
