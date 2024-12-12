@@ -11,7 +11,7 @@
     "first_name": "John",
     "last_name": "wick",
     "payment_filter": {
-       "allowDefaultOptions" : true,
+       "allowDefaultOptions" : false,
        "options": [
          {
            "paymentMethodType": "CARD",
