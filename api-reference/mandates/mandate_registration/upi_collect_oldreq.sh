@@ -1,0 +1,11 @@
+curl -X POST 'https://api.hyperpg.in/txns' \
+-H 'Content-Type: application/x-www-form-urlencoded' \
+-d 'order_id=234823498237423894273498' \
+-d 'merchant_id=merchant' \
+-d 'payment_method_type=UPI' \
+-d 'payment_method=COLLECT' \
+-d 'upi_vpa=9483407288@paytm' \
+-d 'redirect_after_payment=true' \
+-d 'format=json' \
+-d 'should_create_mandate=true' \
+-d 'mandate_type=EMANDATE'
