@@ -1,6 +1,6 @@
 {
     "requestId": "7bd92330-2c0f-4dbc-91d0-8f2484910b40",
-    "service": "in.juspay.hyperapi",
+    "service": "hyperapi",
     "payload": {
         "action": "upiTxn",
         "orderId": "hyperorder95862",

@@ -1,6 +1,6 @@
 {
     "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
-    "service": "in.juspay.hyperapi",
+    "service": "hyperapi",
     "payload": {
         "action": "deleteCard",
         "cardToken": "tkn_844ce1fb-9810-4b87-82a5-c8a62b30ded0",

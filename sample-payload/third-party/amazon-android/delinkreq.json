@@ -5,5 +5,5 @@
         "walletId": "wlt_vYsJ1rkzeSEXeWWW",
         "clientAuthToken": "tkn_0a101f272c6442d8aaf89f9b1b2c6d7e",
     },
-    "service": "in.juspay.hyperapi"
+    "service": "hyperapi"
 }

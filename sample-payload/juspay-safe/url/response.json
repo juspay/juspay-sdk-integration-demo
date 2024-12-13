@@ -1,5 +1,5 @@
 {
-    "service": "in.juspay.hyperapi",
+    "service": "hyperapi",
     "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
     "payload": {
         "action": "startJuspaySafe",
