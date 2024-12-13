@@ -1,0 +1,16 @@
+{
+  "order_id": ":order_id",
+  "txn_id": ":txn_id",
+  "status": "PENDING_VBV",
+  "payment": {
+    "authentication": {
+      "method": "POST",
+      "url": "https://bank-url.com/payment-path/start",
+      "params": {
+        "key1": "v1",
+        "key2": "v2",
+        "key3": "v3"
+      }
+    }
+  }
+}
