@@ -1,6 +1,6 @@
 {
     "requestId": "4d73cc62-538a-45f1-9c9e-5f002a65e89c",
-    "service": "in.juspay.hyperapi",
+    "service": "hyperapi",
     "payload": {
         "action": "cardInfo",
         "cardBin": "459162",

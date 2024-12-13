@@ -1,5 +1,5 @@
 {
-    "service": "in.juspay.hyperapi",
+    "service": "hyperapi",
     "requestId": "c5db944e-ebd6-4056-9e80-a6f2424f47a6",
     "payload": {
         "action": "upiTxn",
