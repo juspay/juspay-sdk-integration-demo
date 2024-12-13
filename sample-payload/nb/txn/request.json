@@ -4,7 +4,8 @@
     "payload": {
         "action": "nbTxn",
         "orderId": "hyperorder45314",
-        "paymentMethod": "NB_AXIS",
+        "paymentMethod": "NB_TRUSTLY",
+        "paymentMethodType": "NB",
         "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213"
     }
 }

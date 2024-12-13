@@ -1,0 +1,10 @@
+{
+    "requestId": "7f2e852d-a337-47d3-a0f8-3266c8eeeaed",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "action": "walletTxn",
+        "orderId": "hyperorder45314",
+        "paymentMethod": "APPLEPAY",
+        "sdkPresent": "APPLEPAY"
+    }
+ }
