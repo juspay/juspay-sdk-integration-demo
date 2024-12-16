@@ -1,0 +1,8 @@
+<!-- Example for handling GET response -->
+<script type="text/javascript">
+ // assuming that you are passing the JSON response of /txns API directly here
+ function handleHyperpgGetResponse(hyperpgResponse) {
+   window.location.href = hyperpgResponse.payment.authentication.url
+ }
+ handleHyperpgGetResponse(response)
+</script>
