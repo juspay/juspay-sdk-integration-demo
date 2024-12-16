@@ -1,5 +1,5 @@
 curl POST \
-https://api.juspay.in/orders \
+https://api.juspay.io/orders \
  -H 'Authorization: Basic <base64 of key:>' \
  -H 'Content-Type: application/x-www-form-urlencoded'\
  -d "order_id=152664118690577-910" \

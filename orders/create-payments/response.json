@@ -3,7 +3,7 @@
   "status": "PENDING_VBV",
   "payment": {
     "authentication": {
-      "url": "https://api.juspay.in/v2/pay/start/MID/moz3BDvrJSbBzuqFiw1?cardIssuerBankName%3DAxisBank%26cardType%3DDEBIT%26paymentMethod%3DVISA%26paymentMethodType%3DCARD",
+      "url": "https://api.juspay.io/v2/pay/start/MID/moz3BDvrJSbBzuqFiw1?cardIssuerBankName%3DAxisBank%26cardType%3DDEBIT%26paymentMethod%3DVISA%26paymentMethodType%3DCARD",
       "method": "GET"
     }
   },

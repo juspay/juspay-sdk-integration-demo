@@ -34,13 +34,13 @@
   },
   "status_id": 21,
   "status": "CHARGED",
-  "return_url": "https://api.juspay.in",
+  "return_url": "https://api.juspay.io",
   "refunded": false,
   "product_id": "",
   "payment_method_type": "UPI",
   "payment_method": "UPI",
   "payment_links": {
-    "web": "https://api.juspay.in/merchant/pay/ordeu_9a0929803da644df8036133cf14d0206"
+    "web": "https://api.juspay.io/merchant/pay/ordeu_9a0929803da644df8036133cf14d0206"
   },
   "payment_gateway_response": {
     "txn_id": "juspay-234823498237423894273498-1",

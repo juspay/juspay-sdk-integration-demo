@@ -54,9 +54,9 @@
   "payment_method_type": "CARD",
   "payment_method": "VISA",
   "payment_links": {
-    "web": "https://api.juspay.in/merchant/pay/ordeh_57dfd768bb7d4896bc0c3f30bc9ad77",
-    "mobile": "https://api.juspay.in/merchant/pay/ordeh_57dfd768bb7d4896bc0c3f30bc9ad77?mobile=true",
-    "iframe": "https://api.juspay.in/merchant/ipay/ordeh_57dfd768bb7d4896bc0c3f30bc9ad77"
+    "web": "https://api.juspay.io/merchant/pay/ordeh_57dfd768bb7d4896bc0c3f30bc9ad77",
+    "mobile": "https://api.juspay.io/merchant/pay/ordeh_57dfd768bb7d4896bc0c3f30bc9ad77?mobile=true",
+    "iframe": "https://api.juspay.io/merchant/ipay/ordeh_57dfd768bb7d4896bc0c3f30bc9ad77"
   },
   "payment_gateway_response": {
     "txn_id": "merchant_success-JP1636474794-1",

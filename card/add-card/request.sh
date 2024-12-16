@@ -1,4 +1,4 @@
-curl https://api.juspay.in/card/add \
+curl https://api.juspay.io/card/add \
     -u api_key: \
     -d "merchant_id=guest" \
     -d "customer_id=user_101" \

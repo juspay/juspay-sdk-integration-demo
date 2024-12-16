@@ -1,4 +1,4 @@
-curl --location --request POST 'https://api.juspay.in/txns' \
+curl --location --request POST 'https://api.juspay.io/txns' \
 --header 'Authorization: Basic Auth of <your-api-key>' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'order.order_id=ord_1590759422' \

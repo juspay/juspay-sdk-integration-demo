@@ -1,4 +1,4 @@
-curl --location --request POST 'https://api.juspay.in/payout/merchant/v1/orders' \
+curl --location --request POST 'https://api.juspay.io/payout/merchant/v1/orders' \
 -u your_api_key: \
 --header 'Content-Type: application/json' \
 --header 'x-merchantid: <merchant-id>' \

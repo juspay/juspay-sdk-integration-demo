@@ -4,7 +4,7 @@
   "order_id": "FC37B98B00",
   "payment_links": {
     "web": 
-    "https://api.juspay.in/orders/ordeh_1662a30d94224d4a9a2cdc4c26ee9f37/payment-page"
+    "https://api.juspay.io/orders/ordeh_1662a30d94224d4a9a2cdc4c26ee9f37/payment-page"
   },
   "sdk_payload": {
     "requestId": "76a19a48b9344be683430a99fde5fd8f",

@@ -1,1 +1,1 @@
-curl -X GET https://api.juspay.in/cardbins/524368
+curl -X GET https://api.juspay.io/cardbins/524368

@@ -6,7 +6,7 @@
         "orderId": "hyperorder45314",
         "status": "CHARGED",
         "otherInfo": {
-            "url": "https://api.juspay.in/end?status_id=21&status=CHARGED&order_id=hyperorder75189&signature=6O7eP9XnT0BVyaBgdjL92xSwBpeUjgs85VuxecfRd2c%3D&signature_algorithm=HMAC-SHA256",
+            "url": "https://api.juspay.io/end?status_id=21&status=CHARGED&order_id=hyperorder75189&signature=6O7eP9XnT0BVyaBgdjL92xSwBpeUjgs85VuxecfRd2c%3D&signature_algorithm=HMAC-SHA256",
             "realtime": {
                 "requestId": "d5de7279-7eff-4ebb-9510-54053298f723",
                 "merchantId": "picasso",

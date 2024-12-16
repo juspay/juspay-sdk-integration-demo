@@ -10,12 +10,12 @@
   "currency": "BRL",
   "order_id": "JPAYNEW035",
   "date_created": "2021-09-10T09:24:06Z",
-  "return_url": "https://api.juspay.in",
+  "return_url": "https://api.juspay.io",
   "product_id": "",
   "payment_links": {
-    "iframe": "https://api.juspay.in/merchant/ipay/ordeh_4b9501d7146243ac8a9d9c4a42ed7b59",
-    "web": "https://api.juspay.in/merchant/pay/ordeh_4b9501d7146243ac8a9d9c4a42ed7b59",
-    "mobile": "https://api.juspay.in/merchant/pay/ordeh_4b9501d7146243ac8a9d9c4a42ed7b59?mobile=true"
+    "iframe": "https://api.juspay.io/merchant/ipay/ordeh_4b9501d7146243ac8a9d9c4a42ed7b59",
+    "web": "https://api.juspay.io/merchant/pay/ordeh_4b9501d7146243ac8a9d9c4a42ed7b59",
+    "mobile": "https://api.juspay.io/merchant/pay/ordeh_4b9501d7146243ac8a9d9c4a42ed7b59?mobile=true"
   },
   "udf1": "",
   "udf2": "",

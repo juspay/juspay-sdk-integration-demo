@@ -1,4 +1,4 @@
-curl --location 'https://api.juspay.in/orders' \
+curl --location 'https://api.juspay.io/orders' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'Authorization: Basic MzJCNDM3QxxxTZCNUI0OEE5O' \
 --data-urlencode 'order_id=test_17221138542' \

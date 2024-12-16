@@ -1,4 +1,4 @@
-curl --location --request POST 'https://api.juspay.in/session' \
+curl --location --request POST 'https://api.juspay.io/session' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Basic base_64_encoded_api_key==' \
 --header 'version: 2023-08-01' \
