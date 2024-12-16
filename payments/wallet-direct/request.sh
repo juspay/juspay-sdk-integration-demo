@@ -1,4 +1,4 @@
-curl --location 'https://api.juspay.in/txns' \
+curl --location 'https://api.juspay.io/txns' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'Authorization: Basic xxx==' \
 --data-urlencode 'merchant_id=azharamin' \

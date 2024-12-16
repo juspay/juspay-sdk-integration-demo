@@ -1,4 +1,4 @@
-curl --location --request POST 'https://api.juspay.in/mandates/b70vxxxxxjGyUhVrV8' \
+curl --location --request POST 'https://api.juspay.io/mandates/b70vxxxxxjGyUhVrV8' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'Authorization: Basic BaxxxxxxxxERTxxxxxxxxx0Og==' \
 --data-urlencode 'command=pre_debit_notify' \

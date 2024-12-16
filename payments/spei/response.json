@@ -2,7 +2,7 @@
     "payment": {
     "authentication": {
     "method": "GET",
-    "url": "https://sandbox.juspay.in/v2/pay/start/yourmerchantId/mozhQC9Zgk?cardIssuerBankName%3DSPEI%26cardType%3DRTP%26paymentMethod%3DSPEI%26paymentMethodType%3DRTP"
+    "url": "https://sandbox.juspay.io/v2/pay/start/yourmerchantId/mozhQC9Zgk?cardIssuerBankName%3DSPEI%26cardType%3DRTP%26paymentMethod%3DSPEI%26paymentMethodType%3DRTP"
     }
     },
     "status": "PENDING_VBV",

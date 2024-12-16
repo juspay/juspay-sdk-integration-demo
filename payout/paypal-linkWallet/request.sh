@@ -1,5 +1,5 @@
 curl --request GET \ 
---url https://api.juspay.in/payout/client/v1/linkwallet \
+--url https://api.juspay.io/payout/client/v1/linkwallet \
 --header 'x-merchantid: <merchant id>' \
 --header 'Content-Type: application/json' \
 --data-raw '{

@@ -5,6 +5,6 @@
   "payment": {
     "authentication": {
       "method": "GET",
-      "url": "https://api.juspay.in/pay/finish/:merchant-id/:txn-id/:order-id"
+      "url": "https://api.juspay.io/pay/finish/:merchant-id/:txn-id/:order-id"
     }
 }

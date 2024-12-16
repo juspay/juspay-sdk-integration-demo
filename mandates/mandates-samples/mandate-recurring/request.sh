@@ -1,4 +1,4 @@
-curl POST 'https://api.juspay.in/txns' \
+curl POST 'https://api.juspay.io/txns' \
 -H 'Content-Type: application/x-www-form-urlencoded' \
 -H 'Authorization: Basic YOUR_API_KEY'
 -d 'order.order_id=UNIQUE_ORDER_ID' \

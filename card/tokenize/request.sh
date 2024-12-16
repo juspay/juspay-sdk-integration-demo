@@ -1,4 +1,4 @@
-curl https://api.juspay.in/card/tokenize \
+curl https://api.juspay.io/card/tokenize \
     -d "card_number=4111111111111111" \
     -d "card_exp_year=2025" \
     -d "card_exp_month=07" \

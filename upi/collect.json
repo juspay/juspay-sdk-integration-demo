@@ -6,7 +6,7 @@
     "payment": {
       "authentication": {
         "method": "GET",
-        "url": "https://api.juspay.in/pay/start/aman_prod/dev8pyieixvxxxxt"
+        "url": "https://api.juspay.io/pay/start/aman_prod/dev8pyieixvxxxxt"
       }
     }
   }

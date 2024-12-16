@@ -1,4 +1,4 @@
-curl --location --request POST ‘https://sandbox.juspay.in/session’ \
+curl --location --request POST ‘https://sandbox.juspay.io/session’ \
 --header ‘x-merchantid: yourMerchantId’ \
 --header ‘Authorization: Basic base64encodedkey==’ \
 --header ‘Content-Type: application/json’ \

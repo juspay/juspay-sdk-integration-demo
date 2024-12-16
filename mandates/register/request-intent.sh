@@ -1,4 +1,4 @@
-curl --location --request POST 'https://api.juspay.in/txns' \
+curl --location --request POST 'https://api.juspay.io/txns' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'order_id=DW-1dvn6nL9AD' \
 --data-urlencode 'merchant_id=merchantId' \

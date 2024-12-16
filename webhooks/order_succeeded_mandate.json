@@ -35,7 +35,7 @@
       },
       "bank_pg": "CC-PG",
       "payment_links": {
-        "web": "https://api.juspay.in/merchant/pay/ordeu_9a0929803da644df8036133cf14d0206"
+        "web": "https://api.juspay.io/merchant/pay/ordeu_9a0929803da644df8036133cf14d0206"
       },
       "effective_amount": 21769.17,
       "udf1": "",
@@ -121,7 +121,7 @@
       "offers": [],
       "udf9": "",
       "gateway_reference_id": "TRAIN",
-      "return_url": "https://api.juspay.in",
+      "return_url": "https://api.juspay.io",
       "status_id": 21,
       "udf6": ""
     }

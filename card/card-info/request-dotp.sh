@@ -1,1 +1,1 @@
-curl --location --request GET 'https://api.juspay.in/cardbins/541919?merchant_id=firstcry&options.check_direct_otp_support=true'
+curl --location --request GET 'https://api.juspay.io/cardbins/541919?merchant_id=firstcry&options.check_direct_otp_support=true'

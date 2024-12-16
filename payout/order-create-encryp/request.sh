@@ -1,4 +1,4 @@
-curl -X POST ' https://api.juspay.in/payout/merchant/v1.1/orders' \
+curl -X POST ' https://api.juspay.io/payout/merchant/v1.1/orders' \
   -u 'x-merchantid: <merchant-id>'\
   -u your_api_key:\
   -d '{

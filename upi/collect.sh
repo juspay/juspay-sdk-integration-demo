@@ -1,5 +1,5 @@
 curl -X POST \
-  https://api.juspay.in/txns \
+  https://api.juspay.io/txns \
   -H 'Content-Type: application/x-www-form-urlencoded' \
   -H 'Postman-Token: 080f8d26-14a0-xxxx-xxxx-c762677c1798' \
   -H 'cache-control: no-cache' \

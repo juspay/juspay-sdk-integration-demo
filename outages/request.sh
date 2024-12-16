@@ -1,2 +1,2 @@
-curl -X GET https://api.juspay.in/outages \
+curl -X GET https://api.juspay.io/outages \
 -u your_api_key:

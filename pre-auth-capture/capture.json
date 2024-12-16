@@ -13,15 +13,15 @@
   "txn_id": "merchant_id-order_id-1",
   "status_id": 21,
   "status": "CHARGED",
-  "return_url": "https://api.juspay.in",
+  "return_url": "https://api.juspay.io",
   "refunded": false,
   "product_id": "",
   "payment_method_type": "CARD",
   "payment_method": "MASTERCARD",
   "payment_links": {
-      "web": "https://api.juspay.in/merchant/pay/ord_7f609710bf6f4379b5917ee5afd8386b",
-      "mobile": "https://api.juspay.in/merchant/pay/ord_7f609710bf6f4379b5917ee5afd8386b?mobile=true",
-      "iframe": "https://api.juspay.in/merchant/ipay/ord_7f609710bf6f4379b5917ee5afd8386b"
+      "web": "https://api.juspay.io/merchant/pay/ord_7f609710bf6f4379b5917ee5afd8386b",
+      "mobile": "https://api.juspay.io/merchant/pay/ord_7f609710bf6f4379b5917ee5afd8386b?mobile=true",
+      "iframe": "https://api.juspay.io/merchant/ipay/ord_7f609710bf6f4379b5917ee5afd8386b"
   },
   "payment_gateway_response": {
       "txn_id": "merchant_id-order_id-1",

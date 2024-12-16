@@ -1,4 +1,4 @@
-curl -L -X POST 'https://api.juspay.in/v2/emi/plans' \
+curl -L -X POST 'https://api.juspay.io/v2/emi/plans' \
 -H 'Authorization: Basic <base64 of Merchant API Key>' \
 -H 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'order_amount=25123.25' \

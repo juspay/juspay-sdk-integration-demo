@@ -3,13 +3,13 @@
     "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
     "payload": {
         "action": "startJuspaySafe",
-        "url": "https://api.juspay.in/end?order_id=R3437800250&status=CHARGED&status_id=21&signature=XzIHnfOkSkY6C3kQG1peTKAGyIba8toY1G5sR%2BP0soo%3D&signature_algorithm=HMAC-SHA256",
+        "url": "https://api.juspay.io/end?order_id=R3437800250&status=CHARGED&status_id=21&signature=XzIHnfOkSkY6C3kQG1peTKAGyIba8toY1G5sR%2BP0soo%3D&signature_algorithm=HMAC-SHA256",
         "realtime": {
             "merchantId": "merchant_id",
             "customerId": "customer_id",
             "clientId": "client_id",
             "environment": "production",
-            "lastVisitedUrl": "https://api.juspay.in/pay/start/merchant_id/euljxAq6QEzVgj8iyfh"
+            "lastVisitedUrl": "https://api.juspay.io/pay/start/merchant_id/euljxAq6QEzVgj8iyfh"
         }
     },
     "errorMessage": "",

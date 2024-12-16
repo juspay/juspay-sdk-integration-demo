@@ -1,4 +1,4 @@
-curl --location --request POST 'https://api.juspay.in/wallets/wlt_yvuidaupkvz3' \
+curl --location --request POST 'https://api.juspay.io/wallets/wlt_yvuidaupkvz3' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'version: 2023-06-30' \
 --header 'Authorization: Basic MTkx*****RGODBDNDg2Og==' \

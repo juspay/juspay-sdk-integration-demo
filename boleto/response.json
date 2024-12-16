@@ -3,7 +3,7 @@
     "payment": {
         "authentication": {
             "method": "GET",
-            "url": "http://sandbox.juspay.in/v2/pay/start/test/moz56DQUJFvHp"
+            "url": "http://sandbox.juspay.io/v2/pay/start/test/moz56DQUJFvHp"
         },
         "sdk_params": {
             "contents": {

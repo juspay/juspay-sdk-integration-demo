@@ -1,2 +1,2 @@
-curl https://api.juspay.in/orders \
+curl https://api.juspay.io/orders \
     -u "$your_api_key:"

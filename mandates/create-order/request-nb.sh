@@ -1,4 +1,4 @@
-curl POST \ https://api.juspay.in/txns \
+curl POST \ https://api.juspay.io/txns \
 -H 'x-merchantid: merchant' \
 -H 'Content-Type: application/x-www-form-urlencoded'\
  -d "order_id=152664118690577-910" \

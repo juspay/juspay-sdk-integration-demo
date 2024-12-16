@@ -1,4 +1,4 @@
-curl --location 'https://sandbox.juspay.in/txns' \
+curl --location 'https://sandbox.juspay.io/txns' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'Authorization: Basic R*********RTV***g==' \
 --data-urlencode 'order_id=1728385008' \

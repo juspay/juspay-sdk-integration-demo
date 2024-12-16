@@ -30,7 +30,7 @@ var requestOptions = {
   body: requestPayload
 };
 
-fetch("https://api.juspay.in/session", requestOptions)
+fetch("https://api.juspay.io/session", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));

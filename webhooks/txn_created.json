@@ -14,9 +14,9 @@
         "merchant_payload": "{\"customerPhone\":\"999999999\",\"customerEmail\":\"1111111\"}",
         "payment_page_sdk_payload": "FILTERED",
         "payment_links": {
-          "web": "https://api.juspay.in/orders/ordeh_a9eb2884e4fe4738b70c3d51e6397d34/payment-page",
-          "iframe": "https://api.juspay.in/orders/ordeh_a9eb2884e4fe4738b70c3d51e6397d34/payment-page",
-          "mobile": "https://api.juspay.in/orders/ordeh_a9eb2884e4fe4738b70c3d51e6397d34/payment-page"
+          "web": "https://api.juspay.io/orders/ordeh_a9eb2884e4fe4738b70c3d51e6397d34/payment-page",
+          "iframe": "https://api.juspay.io/orders/ordeh_a9eb2884e4fe4738b70c3d51e6397d34/payment-page",
+          "mobile": "https://api.juspay.io/orders/ordeh_a9eb2884e4fe4738b70c3d51e6397d34/payment-page"
         }
       },
       "udf5": "",
@@ -43,9 +43,9 @@
       "date_created": "1111111T07:00:40Z",
       "gateway_id": 100,
       "payment_links": {
-        "web": "https://api.juspay.in/merchant/pay/ordeh_a9eb2884e4fe4738b70c3d51e6397d34",
-        "iframe": "https://api.juspay.in/merchant/ipay/ordeh_a9eb2884e4fe4738b70c3d51e6397d34",
-        "mobile": "https://api.juspay.in/merchant/pay/ordeh_a9eb2884e4fe4738b70c3d51e6397d34?mobile=true"
+        "web": "https://api.juspay.io/merchant/pay/ordeh_a9eb2884e4fe4738b70c3d51e6397d34",
+        "iframe": "https://api.juspay.io/merchant/ipay/ordeh_a9eb2884e4fe4738b70c3d51e6397d34",
+        "mobile": "https://api.juspay.io/merchant/pay/ordeh_a9eb2884e4fe4738b70c3d51e6397d34?mobile=true"
       },
       "txn_detail": {
         "express_checkout": true,

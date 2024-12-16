@@ -1,1 +1,1 @@
-curl --location --request GET 'https://api.juspay.in/cardbins/424242?merchant_id=merchantId&options.check_mandate_support=true'
+curl --location --request GET 'https://api.juspay.io/cardbins/424242?merchant_id=merchantId&options.check_mandate_support=true'

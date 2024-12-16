@@ -1,4 +1,4 @@
-curl --location --request POST 'https://api.juspay.in/orders' \
+curl --location --request POST 'https://api.juspay.io/orders' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'x-merchantid: merchant_id'\
 --header 'Authorization: Basic QTA0QT*******ODg1Og==' \
