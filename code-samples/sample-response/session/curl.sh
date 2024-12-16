@@ -1,4 +1,4 @@
-curl --location 'https://sandbox.juspay.in/session' \
+curl --location 'https://sandbox.juspay.io/session' \
 --header 'Authorization: Basic base_64_encoded_api_key==' \
 --header 'Content-Type: application/json' \
 --header 'x-merchantid: merchant_id' \

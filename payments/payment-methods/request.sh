@@ -1,2 +1,2 @@
-curl --location 'https://sandbox.juspay.in/merchants/yourMerchantId/paymentmethods' \
+curl --location 'https://sandbox.juspay.io/merchants/yourMerchantId/paymentmethods' \
 --header 'Authorization: Basic OTgwQjzMEZERERCOg=='

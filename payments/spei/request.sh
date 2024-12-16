@@ -1,4 +1,4 @@
-curl --location 'https://sandbox.juspay.in/txns' \
+curl --location 'https://sandbox.juspay.io/txns' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'version: 2023-01-01' \
 --header 'Authorization: Basic OTgwQjERERCOg==' \

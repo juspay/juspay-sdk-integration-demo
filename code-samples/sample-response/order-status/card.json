@@ -13,9 +13,9 @@
     "return_url": "",
     "product_id": "",
     "payment_links": {
-        "iframe": "https://sandbox.juspay.in/merchant/ipay/ordeh_57dfd768bb7d4896bc042y0b90bc9ad77",
-        "web": "https://sandbox.juspay.in/merchant/ipay/ordeh_57dfd768bb7d4896bc042y0b90bc9ad77",
-        "mobile": "https://sandbox.juspay.in/merchant/ipay/ordeh_57dfd768bb7d4896bc042y0b90bc9ad77?mobile=true"
+        "iframe": "https://sandbox.juspay.io/merchant/ipay/ordeh_57dfd768bb7d4896bc042y0b90bc9ad77",
+        "web": "https://sandbox.juspay.io/merchant/ipay/ordeh_57dfd768bb7d4896bc042y0b90bc9ad77",
+        "mobile": "https://sandbox.juspay.io/merchant/ipay/ordeh_57dfd768bb7d4896bc042y0b90bc9ad77?mobile=true"
     },
     "udf1": "",
     "udf2": "",
