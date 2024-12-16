@@ -2,9 +2,9 @@
 target 'YourAppTarget' do 
 # Other pods 
 # Adding Hyper SDK dependecy
-# block:start:adding-hyper-sdk-pod
+# block:start:adding-global-juspay-payments-sdk-pod
   pod 'GlobalJuspayPaymentsSDK', :podspec => 'https://payments.juspay.io/hyper/bundles/in.juspay.merchants/<clientId>/ios/release/2.2.2/sdk_build_config.podspec' 
-# block:end:adding-hyper-sdk-pod
+# block:end:adding-global-juspay-payments-sdk-pod
 end
 
 
