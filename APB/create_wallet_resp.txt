@@ -1,0 +1,24 @@
+{
+  "error": false,
+  "errorCode": "",
+  "errorMessage": "",
+  "event": "process_result",
+  "payload": {
+    "action": "createWallet",
+    "currentBalance": 1398.98,
+    "id": "wlm_urC4BuijzSbWEqzV",
+    "lastRefreshed": "2024-08-26T04:29:26.000Z",
+    "linked": true,
+    "metadata": {},
+    "subDetails": [
+      {
+        "currentBalance": 1398.98,
+        "lastRefreshed": "2024-08-26T04:29:26Z",
+        "paymentMethod": "AMAZONPAY",
+        "paymentMethodType": "WALLET"
+      }
+    ],
+    "token": "tkn_062cc31e556a441a83b7ed72d433235b",
+    "wallet": "AMAZONPAY"
+  }
+}
