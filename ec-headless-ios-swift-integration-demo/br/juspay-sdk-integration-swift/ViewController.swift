@@ -40,7 +40,7 @@ class ViewController: UIViewController {
 
         let sdkPayload : [String: Any] = [
             "requestId": UUID().uuidString,
-            "service": "in.juspay.hyperapi",
+            "service": "hyperapi",
             "payload": innerPayload
         ]
 
