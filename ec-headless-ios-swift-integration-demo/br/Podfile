@@ -1,0 +1,22 @@
+
+target 'YourAppTarget' do 
+# Other pods 
+# Adding Hyper SDK dependecy
+# block:start:adding-global-juspay-payments-sdk-pod
+  pod 'GlobalJuspayPaymentsSDK', :podspec => 'https://payments.juspay.io/hyper/bundles/in.juspay.merchants/<clientId>/ios/release/2.2.2/sdk_build_config.podspec' 
+# block:end:adding-global-juspay-payments-sdk-pod
+end
+
+
+# Adding Hyper SDK dependecy
+# block:start:adding-plugin-installation-script
+
+post_install do |installer|
+  fuse_path = "./Pods/GlobalJuspayPaymentsSDK/Fuse.rb"
+  clean_assets = true # Pass true to re-download all the assets
+  if File.exist?(fuse_path)
+    if system("ruby", fuse_path.to_s, clean_assets.to_s)
+    end
+  end
+end
+# block:end:adding-plugin-installation-script
