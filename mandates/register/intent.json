@@ -1,36 +1,41 @@
 {
-  "txn_uuid": "eulcEPzPd244hfrGShFpH",
-  "txn_id": "merchantId-DW-1dvn6nL9AD-1",
-  "status": "PENDING_VBV",
-  "payment": {
-    "sdk_params": {
-      "uri_params": {
-        "validitystart": "20062022",
-        "validityend": "24082037",
-        "tr": "PAYTMSUBS202206203480824046791145",
-        "tn": "Amount%20to%20be%20paid%20now%20is%20Rs%201.00",
-        "tid": "PYTM20220620937257791803424",
-        "recur": "ASPRESENTED",
-        "purpose": "14",
-        "pn": "test",
-        "pa": "test@paytm",
-        "orgid": "000000",
-        "mode": "00",
-        "mn": "Subscription%20for%20testaccount",
-        "mc": "5811",
-        "cu": "INR",
-        "amrule": "MAX",
-        "am": "1000.00"
-      },
-      "scheme": "mandate"
+    "payment": {
+        "sdk_params": {
+            "uri_params": {
+                "mode": "04",
+                "fam": "10.0",
+                "mc": "6012",
+                "mam": "10.00",
+                "tr": "HdfcMndtmozLNwqRDFcz2UdPMz2",
+                "mn": "CREATE Mandate",
+                "pa": "jphdfc01@hdfcbank",
+                "validityend": "20122054",
+                "tn": "Request Initiated",
+                "recur": "ASPRESENTED",
+                "cu": "INR",
+                "rev": "Y",
+                "amrule": "MAX",
+                "block": "N",
+                "txnType": "CREATE",
+                "purpose": "14",
+                "tid": "tidmozLNwqRDFcz2UdPMz2",
+                "pn": "JPTEST",
+                "am": "1000.00",
+                "orgid": "000000",
+                "validitystart": "20122024"
+            },
+            "scheme": "mandate"
+        },
+        "authentication": {
+            "method": "GET",
+            "url": "https://smartgatewayuat.hdfcbank.com/v2/pay/start/testhdfc1/mozLNwqRDFcz2UdPMz2?cardIssuerBankName%3DUPI_PAY%26cardType%3DUPI%26paymentMethod%3DUPI_PAY%26paymentMethodType%3DUPI"
+        }
     },
-    "authentication": {
-      "url": "https://smartgatewayuat.hdfcbank.com/v2/pay/start/merchantid/exxcEPzPd2xxxfrGShFpH",
-      "method": "GET"
-    }
-  },
-  "order_id": "DW-1dvn6nL9AD",
-  "offer_details": {
-    "offers": []
-  }
+    "status": "PENDING_VBV",
+    "txn_uuid": "mozLNwqRDFcz2UdPMz2",
+    "offer_details": {
+        "offers": []
+    },
+    "order_id": "TPVTEST236",
+    "txn_id": "testhdfc1-TPVTEST23-1"
 }
