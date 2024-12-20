@@ -1,10 +1,11 @@
-curl -X POST https://smartgateway.hdfcbank.com/txns \
--d "order_id=9727125664Q20200107180320" \
--d "merchant_id=juspay" \
--d "payment_method_type=UPI" \
--d "payment_method=UPI" \
--d "txn_type=UPI_PAY"
--d "redirect_after_payment=true" \
--d "format=json"\
--d "sdk_params=true"\
--d "upi_app=com.phonepe.app"
+curl --location 'https://smartgatewayuat.hdfcbank.com/txns' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'x-merchantid: merchant_id' \
+--data-urlencode 'order_id=TEST23' \
+--data-urlencode 'merchant_id=merchant_id' \
+--data-urlencode 'payment_method_type=UPI' \
+--data-urlencode 'payment_method=UPI_PAY' \
+--data-urlencode 'txn_type=UPI_PAY' \
+--data-urlencode 'sdk_params=true' \
+--data-urlencode 'redirect_after_payment=true' \
+--data-urlencode 'format=json'
