@@ -1,12 +1,13 @@
-curl -X POST 'https://smartgatewayuat.hdfcbank.com/txns' \
--H 'Content-Type: application/x-www-form-urlencoded' \
--d 'order_id=234823498237423894273498' \
--d 'merchant_id=merchant' \
--d 'payment_method_type=UPI' \
--d 'payment_method=UPI_COLLECT' \
--d 'txn_type=UPI_COLLECT' \
--d 'upi_vpa=9483407288@hdfc' \
--d 'redirect_after_payment=true' \
--d 'format=json' \
--d 'should_create_mandate=true' \
--d 'mandate_type=EMANDATE'
+curl --location 'https://smartgatewayuat.hdfcbank.com/txns' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'x-merchantid: merchant_id' \
+--data-urlencode 'order_id=TEST23' \
+--data-urlencode 'merchant_id=merchant_id' \
+--data-urlencode 'payment_method_type=UPI' \
+--data-urlencode 'payment_method=UPI_COLLECT' \
+--data-urlencode 'txn_type=UPI_COLLECT' \
+--data-urlencode 'upi_vpa=test@hdfcbank' \
+--data-urlencode 'should_create_mandate=true' \
+--data-urlencode 'mandate_type=EMANDATE' \
+--data-urlencode 'redirect_after_payment=true' \
+--data-urlencode 'format=json'
