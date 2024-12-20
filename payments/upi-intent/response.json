@@ -1,20 +1,31 @@
 {
-  "txn_uuid": "eulgxNx4mgcnKwoqe2",
-  "txn_id": "9727125664Q20200107180320",
-  "status": "PENDING_VBV",
-  "payment": {
-    "sdk_params": {
-      "tr": "202101345671229366",
-      "tid": "121313202101345671229366",
-      "merchant_vpa": "juspay@axisbank",
-      "merchant_name": "juspay",
-      "mcc": "1234",
-      "amount": "1"
+    "payment": {
+        "sdk_params": {
+            "mode": "04",
+            "tr": "testhdfc1-TPVTEST23-1",
+            "merchant_vpa": "jphdfc03@hdfcbank",
+            "customer_last_name": "",
+            "tn": "",
+            "mcc": "6012",
+            "qrMedium": "06",
+            "merchant_name": "TEST HDFC SECURITIES",
+            "pgIntentUrl": "upi://pay?ver=01&mode=04&tr=testhdfc1-TPVTEST235-2&tn=&pn=TEST%20HDFC%20SECURITIES&pa=jphdfc03@hdfcbank&mc=6012&am=10.00&cu=INR&qrMedium=06",
+            "currency": "INR",
+            "ver": "01",
+            "amount": "10.00",
+            "tid": "mozpxhGZuNSEhxbKgim",
+            "customer_first_name": ""
+        },
+        "authentication": {
+            "method": "GET",
+            "url": "https://smartgatewayuat.hdfcbank.com/v2/pay/start/testhdfc1/mozpxhGZuNSEhxbKgim?cardIssuerBankName%3DUPI_PAY%26cardType%3DUPI%26paymentMethod%3DUPI_PAY%26paymentMethodType%3DUPI"
+        }
     },
-    "authentication": {
-      "url": "https://smartgateway.hdfcbank.com/v2/pay/start/juspay/eulgxNxxxxcnKwoqe2",
-      "method": "GET"
-    }
-  },
-  "order_id": "9727125664Q20200107180320"
+    "status": "PENDING_VBV",
+    "txn_uuid": "mozpxhGZuNSEhxbKgim",
+    "offer_details": {
+        "offers": []
+    },
+    "order_id": "TPVTEST23",
+    "txn_id": "testhdfc1-TPVTEST23-1"
 }

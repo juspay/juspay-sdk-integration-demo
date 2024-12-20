@@ -1,11 +1,15 @@
 {
-  "order_id": ":order_id",
-  "txn_id": ":txn_id",
-  "status": "PENDING_VBV",
-  "payment": {
-    "authentication": {
-      "method": "GET",
-      "url": "https://smartgateway.hdfcbank.com/pay/start/guest/8646a7a029974fxxxx95fec00340a507"
-    }
-  }
+    "payment": {
+        "authentication": {
+            "method": "GET",
+            "url": "https://smartgatewayuat.hdfcbank.com/v1/currency-conversion/testhdfc1/mozd3JTEeKaMepMxKtu?cardIssuerBankName%3DICICI%20BANK%26cardType%3DCREDIT%26paymentMethod%3DVISA%26paymentMethodType%3DCARD"
+        }
+    },
+    "status": "PENDING_VBV",
+    "txn_uuid": "mozd3JTEeKaMepMxKtu",
+    "offer_details": {
+        "offers": []
+    },
+    "order_id": "TEST23",
+    "txn_id": "testhdfc1-TEST23-1"
 }
