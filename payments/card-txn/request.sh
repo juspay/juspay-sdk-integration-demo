@@ -1,22 +1,19 @@
 // A regular card transaction
-curl -X POST https://smartgateway.hdfcbank.com/txns \
+curl --location 'https://smartgatewayuat.hdfcbank.com/txns' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
---header 'x-merchantid: merchant_id'\
---header 'x-routing-id: customer_id'\
---header 'Authorization: Basic QTA0QT*******ODg1Og==' \
--d "order_id=:order_id" \
--d "merchant_id=:merchant_id" \
--d "payment_method_type=CARD" \
--d "payment_method=VISA" \
--d "card_number=4242424242424242" \
--d "card_exp_month=10" \
--d "card_exp_year=20" \
--d "name_on_card=Name" \
--d "card_security_code=111" \
--d "save_to_locker=true" \
--d "tokenize=true" \
--d "redirect_after_payment=true" \
--d "format=json"
+--header 'x-merchantid: merchant_id' \
+--data-urlencode 'order_id=TEST23' \
+--data-urlencode 'merchant_id=merchant_id' \
+--data-urlencode 'payment_method_type=CARD' \
+--data-urlencode 'payment_method=VISA' \
+--data-urlencode 'card_number=4012000000001097' \
+--data-urlencode 'card_exp_month=08' \
+--data-urlencode 'card_exp_year=26' \
+--data-urlencode 'name_on_card=testing' \
+--data-urlencode 'card_security_code=123' \
+--data-urlencode 'save_to_locker=true' \
+--data-urlencode 'redirect_after_payment=true' \
+--data-urlencode 'format=json'
 
 // A Stored card transaction
 curl -X POST https://smartgateway.hdfcbank.com/txns \
