@@ -20,7 +20,11 @@ public class CheckoutActivity extends FragmentActivity {
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
 
-        hyperServiceHolder = new HyperServiceHolder(this);
+        /**
+         * TENANT_NAME : 'global' for business running outside india, otherwise 'india'
+         * CLIENT_ID : client ID shared by Juspay for that specific tenant
+         */
+        hyperServiceHolder = new HyperServiceHolder(this, "<TENANT_NAME>", "<CLIENT_ID>");
     }
 
     private void startPayment(JSONObject processPayload) {

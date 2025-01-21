@@ -32,7 +32,11 @@ public class ProductsActivity extends AppCompatActivity {
         super.onStart();
         //block:start:create-hyper-services-instance
         
-        hyperServicesHolder = new HyperServiceHolder(this);
+        /**
+         * TENANT_NAME : 'global' for business running outside india, otherwise 'india'
+         * CLIENT_ID : client ID shared by Juspay for that specific tenant
+         */
+        hyperServiceHolder = new HyperServiceHolder(this, "<TENANT_NAME>", "<CLIENT_ID>");
 
         //block:end:create-hyper-services-instance
         initiatePaymentsSDK();
