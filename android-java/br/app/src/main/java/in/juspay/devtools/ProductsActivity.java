@@ -10,13 +10,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 import org.json.JSONObject;
 import java.util.UUID;
-import io.juspay.payments.hyperinteg.GlobalPaymentsServiceHolder;
+import in.juspay.hyperinteg.HyperServiceHolder;
 
 
 public class ProductsActivity extends AppCompatActivity {
     private Button proceedButton;
     private TextView itemCountTv1, itemCountTv2;
-    private GlobalPaymentsServiceHolder globalPaymentsServicesHolder;
+    private HyperServiceHolder hyperServicesHolder;
     private JSONObject initiatePayload;
     protected CoordinatorLayout coordinatorLayout;
     private int item1Count = 1, item2Count = 0, item1Price = 1, item2Price = 1;
@@ -32,7 +32,7 @@ public class ProductsActivity extends AppCompatActivity {
         super.onStart();
         //block:start:create-hyper-services-instance
         
-        globalPaymentsServicesHolder = new GlobalPaymentsServiceHolder(this);
+        hyperServicesHolder = new HyperServiceHolder(this);
 
         //block:end:create-hyper-services-instance
         initiatePaymentsSDK();
@@ -60,18 +60,17 @@ public class ProductsActivity extends AppCompatActivity {
     //block:start:call-initiate
     //This function initiate the Juspay SDK
     private void initiatePaymentsSDK() {
-       if(!globalPaymentsServicesHolder.isInitialised()){
-           initiatePayload = createInitiatePayload();
-           globalPaymentsServicesHolder.initiate(initiatePayload);
-
-
-           //Showing snackbar
-           Helper helper = new Helper();
-           CoordinatorLayout coordinatorLayout = findViewById(R.id.coordinatorLayout2);
-           helper.showSnackbar("Initiate Called!", coordinatorLayout);
-       }
-   }
-
+        if(!hyperServicesHolder.isInitiated()){
+            initiatePayload = createInitiatePayload();
+            HyperPaymentsCallbackAdapter callbackAdapter = createHyperPaymentsCallbackAdapter()
+            hyperServicesHolder.setCallback(callbackAdapter);
+            hyperServicesHolder.initiate(initiatePayload);
+            //Showing snackbar
+            Helper helper = new Helper();
+            CoordinatorLayout coordinatorLayout = findViewById(R.id.coordinatorLayout2);
+            helper.showSnackbar("Initiate Called!", coordinatorLayout);
+        }
+    }
     //block:end:call-initiate
 
     
@@ -79,25 +78,24 @@ public class ProductsActivity extends AppCompatActivity {
     //block:start:create-initiate-payload
     // This function creates intiate payload.
     private JSONObject createInitiatePayload() {
-       JSONObject sdkPayload = new JSONObject();
-       JSONObject innerPayload = new JSONObject();
-       try {
-           // generating inner payload
-           innerPayload.put("action", "initiate");
-           innerPayload.put("merchantId", "<MERCHANT_ID>");    // Put your Merchant ID here
-           innerPayload.put("clientId", "<CLIENT_ID>");          // Put your Client ID here
-           innerPayload.put("environment", "production");
-           sdkPayload.put("requestId",  ""+ UUID.randomUUID());
-           sdkPayload.put("service", "hyperapi");
-           sdkPayload.put("payload", innerPayload);
+        JSONObject sdkPayload = new JSONObject();
+        JSONObject innerPayload = new JSONObject();
+        try {
+            // generating inner payload
+            innerPayload.put("action", "initiate");
+            innerPayload.put("merchantId", "<MERCHANT_ID>");    // Put your Merchant ID here
+            innerPayload.put("clientId", "<CLIENT_ID>");          // Put your Client ID here
+            innerPayload.put("customerId", "<CUSTOMER_Id>"); //Any unique refrences to current customer
+            innerPayload.put("environment", "prod");
+            sdkPayload.put("requestId",  ""+ UUID.randomUUID());
+            sdkPayload.put("service", "in.juspay.hyperapi");
+            sdkPayload.put("payload", innerPayload);
 
-
-       } catch (Exception e) {
-           e.printStackTrace();
-       }
-       return sdkPayload;
-   }
-
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return sdkPayload;
+    }
     //block:end:create-initiate-payload
 
 

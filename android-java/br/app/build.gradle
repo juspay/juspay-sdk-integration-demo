@@ -1,7 +1,7 @@
 plugins {
     id 'com.android.application'
     // block:start:apply-plugin
-    id 'globalpaymentssdk.plugin'
+    id 'hypersdk.plugin'
     // block:end:apply-plugin
 }
 
@@ -43,8 +43,8 @@ dependencies {
 }
 
 //block:start:add-sdk-implementation
-globalPaymentsSdkPlugin {
-   clientId = "<CLIENT_ID>"
-   sdkVersion = "2.2.1-rc.20"
+hyperSdkPlugin {
+    clientId = "<CLIENT_ID>"
+    sdkVersion = "2.2.1"
 }
 //block:end:add-sdk-implementation
