@@ -4,14 +4,14 @@ buildscript {
         google()
         mavenCentral()
         // block:start:assets-plugin-maven-url
-         maven { url "https://maven.juspay.in/jp-build-packages/hyper-sdk/" }
+         maven { url "https://maven.juspay.in/hyper-sdk/" }
         // block:end:assets-plugin-maven-url
     }
     dependencies {
         classpath "com.android.tools.build:gradle:7.0.0"
 
         // block:start:assets-class-path
-        classpath 'in.juspay:hypersdk.plugin:2.2.7'
+        classpath 'in.juspay:hypersdk.plugin:2.2.8'
         // block:end:assets-class-path
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -24,9 +24,7 @@ allprojects {
         google()
         mavenCentral()
         //block:start:hyper-sdk-maven-url
-        maven {
-            url "https://maven.juspay.in/jp-build-packages/hyper-sdk/" 
-        }
+        maven { url "https://maven.juspay.in/hyper-sdk/" }
         //block:end:hyper-sdk-maven-url
     }
 }

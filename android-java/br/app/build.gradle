@@ -44,7 +44,17 @@ dependencies {
 
 //block:start:add-sdk-implementation
 hyperSdkPlugin {
-    clientId = "<CLIENT_ID>"
-    sdkVersion = "2.2.1"
+    clientConfigs {
+        <india_client_id> {
+            tenantName = "juspayindia"
+        }
+        <global_client_id> {
+            tenantName = "juspayglobal"
+        }
+    }
+    sdkVersion = "2.2.2-rc.01"
 }
+// Note : minimum of 1 client config is required in clientConfigs. If the SDK is not required to be used in India then the global client config can be used.
+// <india_client> : The client id provided by Juspay for India.
+// <global_client> : The client id provided by Juspay for Global Business.
 //block:end:add-sdk-implementation

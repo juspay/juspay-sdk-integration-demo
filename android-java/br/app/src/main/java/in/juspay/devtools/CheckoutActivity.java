@@ -21,14 +21,15 @@ public class CheckoutActivity extends FragmentActivity {
         super.onCreate(savedInstanceState, persistentState);
 
         /**
-         * TENANT_NAME : 'global' for business running outside india, otherwise 'india'
-         * CLIENT_ID : client ID shared by Juspay for that specific tenant
+         * TENANT_NAME : `juspayglobal` for business running outside india, otherwise `juspayindia`
+         * CLIENT_ID : client ID shared by Juspay Team for that specific tenant.
          */
         hyperServiceHolder = new HyperServiceHolder(this, "<TENANT_NAME>", "<CLIENT_ID>");
     }
 
     private void startPayment(JSONObject processPayload) {
         //block:start:process-sdk-call
+        hyperServiceHolder.setCallback(createHyperPaymentsCallbackAdapter());
         if (hyperServiceHolder.isInitialised()){
             hyperServiceHolder.process(processPayload);
         }
