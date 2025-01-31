@@ -7,7 +7,7 @@
 
 @interface ViewController ()
 
-// Create an instance of GlobalJuspayPaymentsServices
+// Create an instance of HyperServices class
 // block:start:create-global-juspay-payments-services-instance
 @property (nonatomic, strong) HyperServices *hyperInstance;
 // block:end:create-global-juspay-payments-services-instance
@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Initialize GlobalJuspayPaymentsServices
+    // Initialize HyperServices class
     // Creating an object of HyperServices class.
     // block:start:create-hyper-services-instance
     self.hyperInstance = [[HyperServices alloc] initWithTenantId:"TENANT_NAME" clientId:"CLIENT_ID"];

@@ -5,7 +5,7 @@
 //
 import UIKit
 
-// Importing GlobalJuspayPaymentsSDK
+// Importing HyperSDK
 // block:start:import-global-juspay-payments-sdk
 import HyperSDK
 // block:end:import-global-juspay-payments-sdk
@@ -13,7 +13,7 @@ import HyperSDK
 
 class ViewController: UIViewController {
 
-    // Create an instance of GlobalJuspayPaymentsServices
+    // Create an instance of HyperServices
     // block:start:create-global-juspay-payments-services-instance
 
     let hyperInstance = HyperServices(tenantId: "TENANT_NAME", clientId: "CLIENT_ID" )

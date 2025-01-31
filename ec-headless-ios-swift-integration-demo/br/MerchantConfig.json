@@ -1,7 +1,7 @@
 {
    "clientConfigs": {
       "<clientId1>": {
-         "tenantName": "<tenant_name>"
+         "tenantName": "<TENANT_NAME>"
       }
    }
 }
