@@ -1,0 +1,40 @@
+{
+    "status": "VALID",
+    "uniqueId": "339178511402",
+    "beneDetails": {
+        "details": {
+            "name": "Aditya Kadrolkar",
+            "vpa": "success@upi"
+        },
+        "type": "UPI_ID"
+    },
+    "nameAtBank": "Aditya Kadrolkar",
+    "responseCode": "VALID_VPA",
+    "responseMessage": "Vpa is valid",
+    "validationType": "UPI",
+    "createdAt": "2024-05-29T13:57:00Z",
+    "updatedAt": "2024-05-29T13:59:33Z",
+    "transactions": [
+        {
+            "transactionRef": "2184138101023940213491",
+            "createdAt": "2024-05-29T13: 58: 07Z",
+            "updatedAt": "2024-05-29T13: 59: 02Z",
+            "nameAtBank ": "Ramesh Vyas",
+            "status": "VALID",
+            "responseCode": "VALID_VPA",
+            "responseMessage": "Vpa is valid",
+            "validateResp": {
+                "subCode": "200",
+                "status": "SUCCESS",
+                "message": "Vpa is valid",
+                "data": {
+                    "nameAtBank": "Aditya Kadrolkar",
+                    "accountExists": "YES"
+                },
+                "validationMethod": "YESBIZ_UPI",
+                "gatewayRefId": "87419437121",
+                "gatewayCredRefId": "YJP3E294E19100E8347"
+            }
+        }
+    ]
+}
