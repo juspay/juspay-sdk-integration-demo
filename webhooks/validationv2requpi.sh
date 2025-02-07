@@ -7,7 +7,7 @@ curl --location 'https://sandbox.juspay.in/payout/merchant/v2/benedetails' \
     "beneDetails" : {
                 "details": {
                     "name": "Aditya Kadrolkar",
-                    "vpa": "success@upi",
+                    "vpa": "success@upi"
                     },
                 "type": "UPI_ID"
             },
