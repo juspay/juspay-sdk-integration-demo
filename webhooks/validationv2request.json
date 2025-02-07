@@ -12,7 +12,6 @@ curl --location 'https://sandbox.juspay.in/payout/merchant/v2/benedetails' \
                     },
                 "type": "ACCOUNT_IFSC"
             },
-    "preferredGateway" : "DUMMY",
     "command" : "VALIDATE",
     "customerId" : "cth_59Yibs1JauYP6WJP",
     "email": "test@gmail.com",
