@@ -1,7 +1,7 @@
 curl --location 'https://api.juspay.in/payout/merchant/v2/benedetails' \
 --header 'Content-Type: application/json' \
 --header 'x-merchantid: <merchantId>' \
---header 'Authorization: *****' \
+--header 'Authorization: ••••••' \
 --data-raw '{
     "beneId":"34143110214",
     "beneDetails" : {
