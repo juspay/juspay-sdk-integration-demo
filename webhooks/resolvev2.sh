@@ -3,7 +3,7 @@ curl --location 'https://api.juspay.in/payout/merchant/v2/benedetails' \
 --header 'x-merchantid: <merchantId>' \
 --header 'Authorization: *****' \
 --data-raw '{
-    "beneId":"beneID11",
+    "beneId":"34143110214",
     "beneDetails" : {
                 "details": {
                     "name": "Aditya Kadrolkar",
@@ -13,7 +13,7 @@ curl --location 'https://api.juspay.in/payout/merchant/v2/benedetails' \
             },
     "preferredGatewayList" : ["YESBIZ_UPI"],
     "command" : "RESOLVE",
-    "customerId" : "14212551",
+    "customerId" : "cth_59Yibs1JauYP6WJP",
     "email": "test@gmail.com",
     "phone": "8088375524"
 }'
