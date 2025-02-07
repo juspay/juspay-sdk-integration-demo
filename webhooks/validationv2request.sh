@@ -1,6 +1,6 @@
 curl --location 'https://sandbox.juspay.in/payout/merchant/v2/benedetails' \
 --header 'Content-Type: application/json' \
---header 'x-merchantId: morpheusdemo' \
+--header 'x-merchantId: <merchantId>' \
 --header 'Authorization: ••••••' \
 --data-raw '{
     "beneId":"339178511401",
