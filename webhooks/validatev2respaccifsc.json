@@ -1,0 +1,42 @@
+{
+    "status": "VALID",
+    "uniqueId": "339178511401",
+    "beneDetails": {
+        "details": {
+            "name": "Aditya Kadrolkar",
+            "account": "02014457596967",
+            "ifsc": "CITI0000001"
+        },
+        "type": "ACCOUNT_IFSC"
+    },
+    "nameAtBank": "Aditya Kadrolkar",
+    "responseCode" : "ACCOUNT_IS_VALID",
+    "responseMessage": "VALIDATION_SUCCESSFULL",
+    "validationType": "PennyDrop",
+    "createdAt": "2024-05-29T13:57:00Z",
+    "updatedAt": "2024-05-29T13:59:33Z",
+    "transactions": [
+        {
+            "transactionRef": "a3c95727ea24bde9ede56704504e71",
+            "createdAt" : "2024-05-29T13: 58: 07Z",
+            "updatedAt" : "2024-05-29T13: 59: 02Z",
+            "nameAtBank ": "Ramesh Vyas",
+            "status" : "VALID",
+            "responseCode" : "ACCOUNT_IS_VALID",
+            "responseMessage" : "VALIDATION_SUCCESSFULL",
+            "validateResp" : {
+                "subCode": "200",
+                "status": "SUCCESS",
+                "message": "VALIDATION_SUCCESSFULL",
+                "data": {
+                    "nameAtBank": "Aditya Kadrolkar",
+                    "accountExists": "YES"
+                },
+                "validationMethod" : "KOTAK'JUSPAY_IMPS",
+                "gatewayRefId" : "786652737",
+                "gatewayCredRefId" : "2142101245111"
+            }
+
+        }
+    ]
+}
