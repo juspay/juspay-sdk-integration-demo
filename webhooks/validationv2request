@@ -1,0 +1,20 @@
+curl --location 'https://sandbox.juspay.in/payout/merchant/v2/benedetails' \
+--header 'Content-Type: application/json' \
+--header 'x-merchantId: morpheusdemo' \
+--header 'Authorization: Basic ZmM3OTc0Mmxxxxxxxxxx3ODBlNWMxNWM1Og==' \
+--data-raw '{
+    "beneId":"339178511401",
+    "beneDetails" : {
+                "details": {
+                    "name": "Aditya Kadrolkar",
+                    "ifsc": "CITI0000001",
+                    "account": "02014457596967" 
+                    },
+                "type": "ACCOUNT_IFSC"
+            },
+    "command" : "VALIDATE",
+    "customerId" : "cth_59Yibs1JauYP6WJP",
+    "email": "test@gmail.com",
+    "phone": "9999999999"
+
+}'
