@@ -1,0 +1,50 @@
+{
+    "id": "EV00924ZA4TKZZ",
+    "object": "event",
+    "created": 1733814726,
+    "livemode": false,
+    "data": {
+        "id": "CU0079XBAWDEKY",
+        "object": "customer",
+        "created": 1733814725,
+        "livemode": false,
+        "metadata": null,
+        "bank_accounts": {
+            "object": "list",
+            "data": [
+                {
+                    "id": "BA0089YTMXBBCI"
+                }
+            ],
+            "total_count": 1,
+            "url": "/v1/customers/CU0079XBAWDEKY/bank_accounts"
+        },
+        "description": null,
+        "email": null,
+        "identification": null,
+        "mandates": {
+            "object": "list",
+            "data": [
+                {
+                    "id": "MD0020NAVKT7YK"
+                }
+            ],
+            "total_count": 1,
+            "url": "/v1/customers/CU0079XBAWDEKY/mandates"
+        },
+        "mobile": null,
+        "name": "TESTING IDFB",
+        "phone": null,
+        "subscriptions": {
+            "object": "list",
+            "data": [],
+            "total_count": 0,
+            "url": "/ v1/customers/CU0079XBAWDEKY/subscriptions"
+        }
+    },
+    "type": "customer.active",
+    "resource_id": "CU0079XBAWDEKY",
+    "webhook_sent": true,
+    "webhook_attempts": 1,
+    " webhook_notified": true
+}
