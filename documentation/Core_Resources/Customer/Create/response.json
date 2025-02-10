@@ -1,0 +1,35 @@
+{
+    "id": "CU004433221AA",
+    "object": "customer",
+    "created": 1530224170,
+    "livemode": false,
+    "metadata": {
+    },
+    "bank_accounts": {
+      "object": "list",
+      "data": [
+      ],
+      "total_count": 0,
+      "url": "/v1/customers/CU004433221AA/bank_accounts"
+    },
+    "description": null,
+    "email": "test@lotuspay.com",
+    "identification": "ABCDE1234A",
+    "mandates": {
+      "object": "list",
+      "data": [
+      ],
+      "total_count": 0,
+      "url": "/v1/customers/CU004433221AA/mandates"
+      },
+    "mobile": "9123456789",
+    "name": "Amit Jain",
+    "phone": "9123456789",
+    "subscriptions": {
+      "object": "list",
+      "data": [
+      ],
+      "total_count": 0,
+      "url": "/v1/customers/CU004433221AA/subscriptions"
+    }
+  }

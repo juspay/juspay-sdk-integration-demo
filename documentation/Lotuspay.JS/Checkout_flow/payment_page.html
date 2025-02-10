@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://js.lotuspay.com/"></script>
+    <title>Example</title>
+</head>
+
+<body>
+    <p>This is an example of a simple HTML page with one paragraph.</p>
+
+    <!-- This button triggers the element, and should have id="myLpBtn" -->
+    <button id="myLpBtn">LP elem</button>
+
+    <script>
+        const config = {
+            // Insert your company name here.
+            "name": "Merchant Name",
+            // Insert your server mandate creation URL here, which you'll get in Step 2.
+            "serverUrl": "http://{your_site}/createMandate.php",
+            // Insert `test` for the testing environment and `live` for the live environment.
+            "env": "test",
+            // Insert URL of your small logo to show in the element.
+            "image": "https://s3.ap-south-1.amazonaws.com/js.lotuspay.com/logo.png",
+            // Insert the source mandate arguments here. See https://docs.lotuspay.com/ for details.
+            "mandateDetails": {
+                "amount_maximum": 10800,
+                "date_first_collection": "2020-01-01",
+                "frequency": "MNTH",
+                "creditor_agent_code": "HDFC",
+                "creditor_utility_code": "NACH00000000005549"
+            },
+            // Custom styling can be passed to options when creating an Element.
+            "theme": {
+                "color": "#0b5a87"
+            }
+        }
+        var lotusPay = new lotusPay(config);
+    </script>
+</body>
+
+</html>

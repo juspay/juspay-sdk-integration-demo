@@ -1,0 +1,19 @@
+{
+    "object": "list",
+    "url": "/v1/physical_mandate_images",
+    "has_more": true,
+    "data": [
+        {
+            "id": "PS00AABBCCDDEE",
+            "reference1": "loanid456",
+            "mandate": "MD00AABBCCDDEE",
+            "source": "SC00AABBCCDDEE"
+        },
+        {
+            "id": "PS00AABBCCDD11",
+            "reference1": "loanid123",
+            "mandate": "MD00AABBCCDD11",
+            "source": "SC00AABBCCDD11"
+        }
+    ]
+}

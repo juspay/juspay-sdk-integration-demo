@@ -1,0 +1,9 @@
+{
+    "error": {
+        "code": "parameter_invalid_integer",
+        "doc_url": "https://docs.lotuspay.com/#errors",
+        "message": "Invalid positive integer",
+        "param": "amount",
+        "type": "invalid_request_error"
+    }
+}

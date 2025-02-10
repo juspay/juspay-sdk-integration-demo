@@ -1,0 +1,20 @@
+{
+    "id": "BA004433221AA",
+    "object": "bank_account",
+    "created": 1530224170,
+    "livemode": false,
+    "account_ifsc": "ICIC0000047",
+    "account_holder_name": "Amit Jain",
+    "account_last4": "1234",
+    "account_type": "savings",
+    "bank_name": "ICICI BANK",
+    "customer": "CU004433221AA",
+    "mandates": {
+      "object": "list",
+      "data": [
+      ],
+      "total_count": 0,
+      "url": "/v1/customers/CU004433221AA/bank_accounts/BA004433221AA/mandates"
+      },
+    "status": "enabled"
+  }

@@ -1,0 +1,5 @@
+{
+    "status": "Request received",
+    "message": "Ask customer to authorize it on given authorization link",
+    "auth_link": "https://test.lotuspay.com/v2/mandates/cancel/auth?request_id=TUQwMDg2V0VBOFU1Q0g="
+} 

@@ -1,0 +1,13 @@
+{
+    "id": "EV004433221AA",
+    "object": "event",
+    "created": 1530224170,
+    "livemode": false,
+    "data": {
+      "id": "CU004433221AA",
+      "object": "customer",
+      "created": 1530224170
+    },
+    "type": "customer.created"
+  }
+  

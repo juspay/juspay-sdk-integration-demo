@@ -1,0 +1,5 @@
+$ curl https://api-test.lotuspay.com/v1/ach_debits \
+   -u sk_test_XjIHowXWSI23uvjepz2X82: \
+   -H "Idempotency-Key: Xh18zd8kbkg1eqp4" \
+   -d amount=10000 \
+   -d umrn="HDFC000012345678"

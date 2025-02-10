@@ -1,0 +1,23 @@
+{
+    "object": "list",
+    "url": "/v1/mandates",
+    "has_more": false,
+    "data": [
+      {
+          "id": "MD004433221AA",
+          "reference1": "test1"
+      },
+      {
+          "id": "MD004433221BB",
+          "reference1": "test2"
+      },
+      {
+          "id": "MD004433221CC",
+          "reference1": "test3"
+      },
+      {
+          "id": "MD004433221DD",
+          "reference1": "test4"
+      }
+    ]
+  }

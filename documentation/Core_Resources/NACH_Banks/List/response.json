@@ -1,0 +1,16 @@
+{
+    "object": "list",
+    "url": "/v1/nach_banks",
+    "has_more": false,
+    "data": [
+          {
+              "id": "AACX"
+          },
+          {
+              "id": "ABCX"
+          },
+          {
+              "id": "ABDX"
+          }
+    ]
+  }
