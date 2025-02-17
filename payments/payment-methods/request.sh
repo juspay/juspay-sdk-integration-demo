@@ -5,3 +5,5 @@ curl -X GET https://smartgateway.hdfcbank.com/merchants/guest/paymentmethods?opt
 curl -X GET https://smartgateway.hdfcbank.com/merchants/guest/paymentmethods?options.add_supported_reference_ids=true
 
 curl -X GET https://smartgateway.hdfcbank.com/merchants/guest/paymentmethods?options.add_outage=true
+
+curl -X GET https://smartgateway.hdfcbank.com/merchants/guest/paymentmethods?options.add_tpv_payment_methods=true
