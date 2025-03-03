@@ -38,15 +38,7 @@
             },
             "amount": 1,
             "additionalInfo": {
-                "webhookDetails": {
-                    "username": "test",
-                    "url": "https://www.test.com/callback/dynamicwebhook/example",
-                    "customHeader": "123456789"
-                },
-                "useThisAsTR": "ef9eb194e664a319549e644c08be2b",
-                "remark": "Payout Transaction",
-                "originalTxnRef": "D111298977788800000",
-                "attemptThreshold": 1440
+                "remark": "Payout Transaction"
             }
         }
     ],
