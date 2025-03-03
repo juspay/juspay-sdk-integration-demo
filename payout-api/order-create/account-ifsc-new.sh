@@ -19,11 +19,7 @@
             ,  "udf5" : "String5"// Not Mandatory
             ,
             "additionalInfo": {
-                "remark":"Payout Transaction",
-                "useThisAsTR":"ef9eb194e664a319549e644c08be2b",
-                "scheduleTime":"2023-12-23T16:51:51Z",
-                "attemptThreshold": 25,
-                "isRetriable": false
+                "remark":"Payout Transaction"
             }
         }
     ],
