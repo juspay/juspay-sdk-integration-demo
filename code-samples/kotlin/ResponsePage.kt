@@ -18,6 +18,7 @@ class ResponsePage : AppCompatActivity() {
         setContentView(R.layout.activity_response_page)
         constraintLayout = findViewById(R.id.responsePageLayout);
     }
+    
 
     override fun onStart() {
         super.onStart()
