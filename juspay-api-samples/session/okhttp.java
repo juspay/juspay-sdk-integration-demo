@@ -7,6 +7,7 @@ public JSONObject createSession() {
     String apiKey = "<your_api_key>";
     String clientId = "<your_client_id>";
     String merchantId = "<your_merchant_id>";
+    const xRoutingId = "<your_routing_id>";
 
 
     payload.put("order_id", "testing-order-id-four");
@@ -36,6 +37,7 @@ public JSONObject createSession() {
             .addHeader("x-merchantid", merchantId)
             .addHeader("Authorization", authorization)
             .addHeader("Content-Type", "application/json")
+            .addHeader("x-routing-id", xRoutingId)
             .build();
     Response response = okHttpClient.newCall(request).execute();
     JSONObject responseJSON = new JSONObject(response.body().string());
