@@ -1,5 +1,6 @@
 curl --location --request POST 'https://api.juspay.in/orders' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'x-routing-id: customer_1122'\
 --header 'Authorization: Basic <base64 of Merchant API Key>' \
 --data-urlencode 'order_id=splitsettlement_1619009418_test' \
 --data-urlencode 'amount=5' \
