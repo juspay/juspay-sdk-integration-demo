@@ -1,8 +1,9 @@
 curl -X POST \
  https://api.juspay.in/refunds \
- -u your_api_key: \
+-u your_api_key: \
+-H 'x-routing-id: customer_1122'\
 -H 'Content-Type: application/x-www-form-urlencoded' \
- -d “unique_request_id”:”rfd_1234” \
+-d “unique_request_id”:”rfd_1234” \
 -d “amount”:”98.20” \
 -d “order_id”:”ord_123” \ 
 -d “refund_type”:”INSTANT” \
