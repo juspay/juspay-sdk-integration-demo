@@ -2,7 +2,7 @@
 
 ### What is this repository for? ###
 
-* This repo is being used for Juspay Documentation made using tesseract repo
+* This repo is being used for Juspay Documentation made using tesseract repo 
 
 ### How do I get set up? ###
 
