@@ -9,7 +9,8 @@ $request->setConfig(array(
 $request->setHeader(array(
   'Authorization' => 'Basic base_64_encoded_api_key==',
   'x-merchantid' => 'your_merchant_id',
-  'Content-Type' => 'application/json'
+  'Content-Type' => 'application/json',
+  'x-routing-id' => 'your_x_routing_id'
 ));
 $request->setBody('{\n    
     "order_id": "testing-order-one",\n    
