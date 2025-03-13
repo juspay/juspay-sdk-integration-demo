@@ -1,5 +1,6 @@
 curl --location --request POST 'https://api.juspay.in/txns' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'x-routing-id: customer_1122'\
 --data-urlencode 'order_id=DW-1dvn6nL9AD' \
 --data-urlencode 'merchant_id=merchantId' \
 --data-urlencode 'should_create_mandate=true' \
