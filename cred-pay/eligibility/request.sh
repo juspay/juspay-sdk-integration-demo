@@ -1,6 +1,7 @@
 curl --location --request POST 'https://api.juspay.in/v3/eligibility' \
 --header 'Authorization: Basic <API_KEY>' \
 --header 'Content-Type: application/json' \
+--header 'x-routing-id: customer_1122'\
 --data-raw '{
 "merchant_id": "merchant_id", //mandatory field
 "order_id": "order_id", //non-mandatory field
