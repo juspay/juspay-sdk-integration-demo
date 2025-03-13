@@ -1,5 +1,6 @@
 curl --location --request POST 'https://api.juspay.in/cards' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'x-routing-id: customer_1122'\
 --header 'Authorization: Basic QTVFNTNBM*****kQ5M0EzOg==' \
 --data-urlencode 'merchant_id=guest' \
 --data-urlencode 'customer_id=testcustomer' \
