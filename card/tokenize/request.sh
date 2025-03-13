@@ -1,4 +1,5 @@
 curl https://api.juspay.in/card/tokenize \
+    -H 'x-routing-id: customer_1122'\
     -d "card_number=4111111111111111" \
     -d "card_exp_year=2015" \
     -d "card_exp_month=07" \
