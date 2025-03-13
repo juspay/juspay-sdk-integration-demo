@@ -1,6 +1,7 @@
 curl --location 'https://sandbox.juspay.in/txns' \
 --header 'x-merchantid: <merchant_id>' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'x-routing-id: customer_1122'\
 --header 'Authorization: Basic <Api key>' \
 --data-urlencode 'order.order_id=o_1698225314' \
 --data-urlencode 'order.amount=1' \
