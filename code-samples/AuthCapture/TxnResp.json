@@ -1,0 +1,15 @@
+{
+    "payment": {
+        "authentication": {
+            "method": "GET",
+            "url": "https://smartgateway.hdfcbank.com/v2/txns/deviceInformation/34436/T1740144839/mozdt1MD57QVScgqunX"
+        }
+    },
+    "status": "PENDING_VBV",
+    "txn_uuid": "mozdt1MD57QVScgqunX",
+    "offer_details": {
+        "offers": []
+    },
+    "order_id": "T1740144839",
+    "txn_id": "34436-T1740144839-1"
+}

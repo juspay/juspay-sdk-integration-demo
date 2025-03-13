@@ -1,0 +1,35 @@
+curl --location --request POST 'https://smartgateway.hdfcbank.com/orders' \
+--header 'version: 2023-06-30' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'x-merchantid: 34436' \
+--header 'x-routing-id: customer_id' \
+--header 'Authorization: Basic <Base64EncodedAPIKEY>' \
+--data-urlencode 'order_id=T1740145281' \
+--data-urlencode 'amount=1.00' \
+--data-urlencode 'currency=INR' \
+--data-urlencode 'customer_id=test12121' \
+--data-urlencode 'return_url=https://google.co.in' \
+--data-urlencode 'description=Sample description' \
+--data-urlencode 'billing_address_first_name=Juspay' \
+--data-urlencode 'billing_address_last_name=Technologies' \
+--data-urlencode 'billing_address_line1=Girija Building' \
+--data-urlencode 'billing_address_line2=Ganapathi Temple Road' \
+--data-urlencode 'billing_address_line3=8th Block, Koramangala' \
+--data-urlencode 'billing_address_city=Bengaluru' \
+--data-urlencode 'billing_address_state=Karnataka' \
+--data-urlencode 'billing_address_country=India' \
+--data-urlencode 'billing_address_postal_code=560095' \
+--data-urlencode 'billing_address_phone=9988775566' \
+--data-urlencode 'billing_address_country_code_iso=IND' \
+--data-urlencode 'shipping_address_first_name=Juspay' \
+--data-urlencode 'shipping_address_last_name=Technologies' \
+--data-urlencode 'shipping_address_line1=Girija Building' \
+--data-urlencode 'shipping_address_line2=Ganapathi Temple Road' \
+--data-urlencode 'shipping_address_line3=8th Block, Koramangala' \
+--data-urlencode 'shipping_address_city=Bengaluru' \
+--data-urlencode 'shipping_address_state=Karnataka' \
+--data-urlencode 'shipping_address_postal_code=560095' \
+--data-urlencode 'shipping_address_phone=9962881912' \
+--data-urlencode 'shipping_address_country_code_iso=IND' \
+--data-urlencode 'shipping_address_country=India' \
+--data-urlencode 'metadata.txns.auto_capture=false' \

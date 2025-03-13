@@ -1,0 +1,18 @@
+curl --location --request POST 'https://smartgateway.hdfcbank.com/txns' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'x-merchantid: 34436' \
+--header 'x-routing-id: customer_id' \
+--header 'Authorization: Basic <Base64EncodedAPIKEY>' \
+--data-urlencode 'order_id=T1740144839' \
+--data-urlencode 'merchant_id=34436' \
+--data-urlencode 'payment_method_type=CARD' \
+--data-urlencode 'payment_method=VISA' \
+--data-urlencode 'card_number=424242424242424242' \
+--data-urlencode 'card_exp_month=11' \
+--data-urlencode 'card_exp_year=31' \
+--data-urlencode 'name_on_card=SRIKANTH MITRA' \
+--data-urlencode 'card_security_code=494' \
+--data-urlencode 'save_to_locker=true' \
+--data-urlencode 'tokenize=true' \
+--data-urlencode 'redirect_after_payment=true' \
+--data-urlencode 'format=json'
