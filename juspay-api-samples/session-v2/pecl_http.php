@@ -23,7 +23,8 @@ $request->setOptions(array());
 $request->setHeaders(array(
   'Authorization' => 'Basic base_64_encoded_api_key==',
   'x-merchantid' => 'your_merchant_id',
-  'Content-Type' => 'application/json'
+  'Content-Type' => 'application/json',
+  'x-routing-id' => 'your_x_routing_id'
 ));
 $client->enqueue($request)->send();
 $response = $client->getResponse();
