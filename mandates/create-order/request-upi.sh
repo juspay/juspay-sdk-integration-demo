@@ -1,6 +1,7 @@
 curl POST 'https://api.juspay.in/orders' \
 -H 'x-merchantid: merchant' \
 -H 'Content-Type: application/x-www-form-urlencoded'\
+-H 'x-routing-id: customer_1122'\
 -d 'order_id=234823498237423894273498' \
 -d 'amount=1.00' \
 -d 'currency=INR' \
