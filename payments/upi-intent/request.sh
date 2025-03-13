@@ -1,4 +1,5 @@
 curl -X POST https://api.juspay.in/txns \
+-H 'x-routing-id: customer_1122'\
 -d "order_id=9727125664Q20200107180320" \
 -d "merchant_id=juspay" \
 -d "payment_method_type=UPI" \
