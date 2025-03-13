@@ -1,5 +1,6 @@
 curl --location 'https://api.juspay.in/txns' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'x-routing-id: customer_1122'\
 --header 'Authorization: Basic Auth of <your-api-key>' \
 --data-urlencode 'order.order_id=ord_1590759422' \
 --data-urlencode 'order.amount=101550.00' \
