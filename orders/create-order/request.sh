@@ -1,6 +1,7 @@
 curl --location --request POST 'https://api.juspay.in/orders' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'x-merchantid: merchant_id'\
+--header 'x-routing-id: customer_1122'\
 --header 'Authorization: Basic QTA0QT*******ODg1Og==' \
 --data-urlencode 'order_id=14183944763' \
 --data-urlencode 'amount=100.00' \
