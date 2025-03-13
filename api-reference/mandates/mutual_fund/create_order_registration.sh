@@ -1,6 +1,7 @@
 curl --location 'http/api.juspay.in/ecr/orders' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'version: 2020-02-17' \
+--header 'x-routing-id: customer_1122'\
 --header 'x-merchantid: azhar_test' \
 --header 'Authorization: Basic N0JBRDA4OUExRjYwNEYwREEyNDlCNjY3QTVCMUQzM0Q6' \
 --data-urlencode 'order_id=HS1720178554asds' \
