@@ -1,6 +1,7 @@
 curl -L -X POST 'https://api.juspay.in/v2/emi/plans' \
 -H 'Authorization: Basic <base64 of Merchant API Key>' \
 -H 'Content-Type: application/x-www-form-urlencoded' \
+-H 'x-routing-id: customer_1122'\
 --data-urlencode 'order_amount=25123.25' \
 --data-urlencode 'merchant_id=<JusPay Merchant ID>' \
 --data-urlencode 'mobile_number=9999999999' \
