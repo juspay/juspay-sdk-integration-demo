@@ -1,5 +1,6 @@
 curl https://api.juspay.in/card/add \
     -u api_key: \
+    -H 'x-routing-id: customer_1122'\
     -d "merchant_id=guest" \
     -d "customer_id=user_101" \
     -d "customer_email=customer@mail.com" \
