@@ -3,6 +3,7 @@ import fetch from 'node-fetch';
 const apiKey = "<your_api_key>";
 const merchantId = "<your_merchant_id>";
 const clientId = "<your_client_id>";
+const xRoutingId = "<your_routing_id>"\
 const authorization = "Basic " + Buffer.from(apiKey + ":").toString("base64");
 
 var requestPayload = JSON.stringify({
@@ -25,7 +26,8 @@ var requestOptions = {
   headers: {
     'Authorization': authorization,
     'x-merchantid': merchantId,
-    'Content-Type': 'application/json'
+    'Content-Type': 'application/json',
+    'x-routing-id': xRoutingId
   },
   body: requestPayload
 };
