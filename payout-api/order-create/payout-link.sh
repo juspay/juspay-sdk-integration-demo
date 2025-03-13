@@ -1,6 +1,7 @@
 curl --location 'https://sandbox.juspay.in/payout/merchant/v1/orders' \
 --header 'Content-Type: application/json' \
 --header 'x-merchantid: <merchant id>' \
+--header 'x-routing-id: customer_1122'\
 --header 'Authorization: Basic (b64 encoded API key)' \
 --data-raw '{
     "orderId": "1716370593",
