@@ -1,5 +1,6 @@
 curl -L 'https://api.juspay.in/v4/card/get' \
 -H 'Content-Type: application/json' \
+-H 'x-routing-id: customer_1122'\
 -H 'Authorization: Basic XXXXXXk0QjJEQTlBQjc0QThCOg==' \
 -d '{
     "card_reference": "token_a0c16957f9bf46b0966a91a35b555353",
