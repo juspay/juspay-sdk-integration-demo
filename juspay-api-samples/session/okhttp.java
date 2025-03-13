@@ -7,7 +7,7 @@ public JSONObject createSession() {
     String apiKey = "<your_api_key>";
     String clientId = "<your_client_id>";
     String merchantId = "<your_merchant_id>";
-    const xRoutingId = "<your_routing_id>";
+    String xRoutingId = "<your_routing_id>";
 
 
     payload.put("order_id", "testing-order-id-four");
