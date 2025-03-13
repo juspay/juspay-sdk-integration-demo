@@ -1,5 +1,6 @@
 curl --location --request POST 'https://api.juspay.in/v1/offers/list' \
 --header 'Authorization: <API KEY>' \
+--header 'x-routing-id: customer_1122'\
 --header 'Content-Type: application/json' \
 --data-raw '{
     "order": {
