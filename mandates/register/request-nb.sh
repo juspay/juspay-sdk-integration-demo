@@ -1,5 +1,6 @@
 curl -X POST 'https://api.juspay.in/txns' \
 -H 'Content-Type: application/x-www-form-urlencoded' \
+-H 'x-routing-id: customer_1122'\
 -d 'order_id=ORD1622098688' \
 -d 'merchant_id=guest' \
 -d 'payment_method_type=NB' \
