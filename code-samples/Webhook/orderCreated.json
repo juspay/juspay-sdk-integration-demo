@@ -1,0 +1,71 @@
+{
+  "id": "evt_V2_8e6fa0512c9341e287ae3ae86bd44560",
+  "date_created": "2025-03-26T07:09:47Z",
+  "content": {
+    "order": {
+      "udf4": "",
+      "emi_details": {
+        "bank": null,
+        "monthly_payment": null,
+        "interest": null,
+        "conversion_details": null,
+        "principal_amount": null,
+        "additional_processing_fee_info": null,
+        "tenure": null,
+        "subvention_info": [],
+        "emi_type": null,
+        "processed_by": null
+      },
+      "udf8": "",
+      "udf3": "",
+      "udf6": "",
+      "source_object_id": "DASHBOARD",
+      "offers": [],
+      "status": "NEW",
+      "order_expiry": "2025-04-02T07:09:46Z",
+      "id": "ordeh_19235629b08c40439c0f34d2e31e3437",
+      "return_url": "",
+      "last_updated": "2025-03-26T07:09:46Z",
+      "source_object": "PAYMENT_LINK",
+      "metadata": {
+        "order_expiry": "2025-04-02T07:09:46Z",
+        "payment_locking": {
+          "payment_filter": "{\"emiOptions\":{\"noCostEmi\":{\"enable\":false,\"credit\":{\"enable\":false},\"cardless\":{\"enable\":false},\"debit\":{\"enable\":false}},\"standardEmi\":{\"enable\":false,\"credit\":{\"enable\":false},\"cardless\":{\"enable\":false},\"debit\":{\"enable\":false}},\"lowCostEmi\":{\"enable\":false,\"credit\":{\"enable\":false},\"cardless\":{\"enable\":false},\"debit\":{\"enable\":false}},\"showOnlyEmi\":false},\"allowDefaultOptions\":true,\"options\":[{\"enable\":true,\"paymentMethodType\":\"UPI\"},{\"enable\":false,\"paymentMethodType\":\"WALLET\"},{\"enable\":true,\"paymentMethodType\":\"CARD\"},{\"enable\":true,\"paymentMethodType\":\"NB\"},{\"enable\":false,\"paymentMethodType\":\"OTC\"},{\"enable\":false,\"paymentMethodType\":\"VIRTUAL_ACCOUNT\"},{\"enable\":false,\"paymentMethodType\":\"CONSUMER_FINANCE\"}]}"
+        },
+        "payment_page_client_id": "hdfcmaster",
+        "payment_links": {
+          "mobile": "https://smartgatewayuat.hdfcbank.com/payment-page/order/ordeh_19235629b08c40439c0f34d2e31e3437",
+          "web": "https://smartgatewayuat.hdfcbank.com/payment-page/order/ordeh_19235629b08c40439c0f34d2e31e3437",
+          "iframe": "https://smartgatewayuat.hdfcbank.com/payment-page/order/ordeh_19235629b08c40439c0f34d2e31e3437"
+        },
+        "merchant_payload": "{\"displayBusinessAs\":\"Test hdfc securities 2\"}",
+        "payment_page_sdk_payload": "{\"displayBusinessAs\":\"Test hdfc securities 2\",\"currency\":\"INR\",\"service\":\"in.juspay.hyperpay\",\"amount\":13,\"paymentFilter\":{\"emiOptions\":{\"noCostEmi\":{\"enable\":false,\"credit\":{\"enable\":false},\"cardless\":{\"enable\":false},\"debit\":{\"enable\":false}},\"standardEmi\":{\"enable\":false,\"credit\":{\"enable\":false},\"cardless\":{\"enable\":false},\"debit\":{\"enable\":false}},\"lowCostEmi\":{\"enable\":false,\"credit\":{\"enable\":false},\"cardless\":{\"enable\":false},\"debit\":{\"enable\":false}},\"showOnlyEmi\":false},\"allowDefaultOptions\":true,\"options\":[{\"enable\":true,\"paymentMethodType\":\"UPI\"},{\"enable\":false,\"paymentMethodType\":\"WALLET\"},{\"enable\":true,\"paymentMethodType\":\"CARD\"},{\"enable\":true,\"paymentMethodType\":\"NB\"},{\"enable\":false,\"paymentMethodType\":\"OTC\"},{\"enable\":false,\"paymentMethodType\":\"VIRTUAL_ACCOUNT\"},{\"enable\":false,\"paymentMethodType\":\"CONSUMER_FINANCE\"}]},\"collectAvsInfo\":false}"
+      },
+      "currency": "INR",
+      "date_created": "2025-03-26T07:09:46Z",
+      "udf2": "",
+      "payment_links": {
+        "mobile": "https://smartgatewayuat.hdfcbank.com/payment-page/order/ordeh_19235629b08c40439c0f34d2e31e3437",
+        "web": "https://smartgatewayuat.hdfcbank.com/payment-page/order/ordeh_19235629b08c40439c0f34d2e31e3437",
+        "iframe": "https://smartgatewayuat.hdfcbank.com/payment-page/order/ordeh_19235629b08c40439c0f34d2e31e3437"
+      },
+      "customer_email": null,
+      "customer_phone": null,
+      "udf5": "",
+      "status_id": 10,
+      "merchant_id": "testhdfc1",
+      "udf9": "",
+      "amount": 13,
+      "refunded": false,
+      "order_id": "TEST009",
+      "udf7": "",
+      "udf10": "",
+      "effective_amount": 13,
+      "product_id": "",
+      "customer_id": null,
+      "amount_refunded": 0,
+      "udf1": ""
+    }
+  },
+  "event_name": "ORDER_CREATED"
+}
