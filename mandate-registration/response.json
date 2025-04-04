@@ -1,0 +1,30 @@
+{
+  "status": "NEW",
+  "id": "ordeh_1662a30d94224d4a9a2cdc4c26ee9f37",
+  "order_id": "FC37B98B00",
+  "payment_links": {
+    "web": 
+    "https://api.juspay.in/orders/ordeh_1662a30d94224d4a9a2cdc4c26ee9f37/payment-page"
+  },
+  "sdk_payload": {
+    "requestId": "76a19a48b9344be683430a99fde5fd8f",
+    "service": "in.juspay.hyperpay",
+    "payload": {
+      "options.createMandate": "REQUIRED",
+      "clientId": "client_id",
+      "amount": "2.0",
+      "merchantId": "merchant_id",
+      "environment": "production",
+      "mandate.maxAmount": "10.00",
+      "mandate.endDate": "1646234827",
+      "action": "paymentPage",
+      "customerId": "yourUniqueCustId",
+      "returnUrl": "http://localhost:3111/dashboard/systems/orderStatus",
+      "mandate.startDate": "1644420442",
+      "currency": "INR",
+      "customerPhone": "9876543210",
+      "customerEmail": "dummyemail@gmail.com",
+      "orderId": "yourUniqueOrderId"
+    }
+  }
+}
