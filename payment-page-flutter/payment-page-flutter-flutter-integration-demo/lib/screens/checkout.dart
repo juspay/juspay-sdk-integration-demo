@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hypersdk/hypersdk.dart';
+import 'package:hypersdkflutter/hypersdkflutter.dart';
 
 import '../widgets/app_bar.dart';
 import '../widgets/bottom_button.dart';

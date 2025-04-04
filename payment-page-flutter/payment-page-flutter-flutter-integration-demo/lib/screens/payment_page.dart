@@ -4,9 +4,9 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'package:hypersdk/hypersdk.dart';
+import 'package:hypersdkflutter/hypersdkflutter.dart';
 
-import '../utils/generate_payload.dart';
+// import '../utils/generate_payload.dart';
 import './success.dart';
 import './failed.dart';
 
@@ -65,7 +65,29 @@ class _PaymentPageState extends State<PaymentPage> {
 
     // Get process payload from backend
     // block:start:fetch-process-payload
-    var processPayload = await getProcessPayload(widget.amount);
+    var processPayload = {
+      "requestId": "12398b5571d74c3388a74004bc24370c",
+      "service": "in.juspay.hyperpay",
+      "payload": {
+        "clientId": "geddit",
+        "amount": "1.0",
+        "merchantId": "geddit",
+        "clientAuthToken": "tkn_xxxxxxxxxxxxxxxxxxxxx",
+        "clientAuthTokenExpiry": "2022-03-12T20:29:23Z",
+        "environment": "production",
+        "options.getUpiDeepLinks": "true",
+        "lastName": "wick",
+        "action": "paymentPage",
+        "customerId": "testing-customer-one",
+        "returnUrl": "https://shop.merchant.com",
+        "currency": "INR",
+        "firstName": "John",
+        "customerPhone": "9876543210",
+        "customerEmail": "test@mail.com",
+        "orderId": "testing-order-one",
+        "description": "Complete your payment"
+      }
+    };
     // block:end:fetch-process-payload
 
     // Calling process on hyperSDK to open payment page
