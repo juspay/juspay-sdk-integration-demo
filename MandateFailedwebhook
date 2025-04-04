@@ -1,0 +1,26 @@
+{
+    "event_name": "MANDATE_FAILED",
+    "content": {
+        "mandate": {
+            "max_amount": 100,
+            "mandate_id": "si7890",
+            "start_date": "1704805968",
+            "payment_info": "FILTERED",
+            "order_id": "12345",
+            "frequency": "ASPRESENTED",
+            "mandate_type": "MANDATE",
+            "customer_id": "test",
+            "mandate_token": "FILTERED",
+            "pg_response": "FILTERED",
+            "status": "FAILURE",
+            "revokable_by_customer": true,
+            "currency": "INR",
+            "amount_rule": "VARIABLE",
+            "block_fund": false,
+            "last_updated": "2024-01-01T05:14:33Z",
+            "end_date": "2003013968"
+        }
+    },
+    "date_created": "2024-01-01T05:14:33Z",
+    "id": "evt_V2_12345asddf5b73ac899e09b1103"
+}

@@ -1,0 +1,21 @@
+curl --location --request POST 'https://sandbox.juspay.in/customers/cth_avWQeBoXuFCvyTt3/eligibility' \
+--header 'Authorization: Basic APIKEY' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'amount=10' \
+--data-urlencode 'gateway_reference_id=amazonpaylater_test' \
+--data-urlencode 'gateway_id=38’
+Response:
+{
+    "payment_methods_eligibility": [
+        {
+            "status": "SUCCESS",
+            "payment_method": "AMAZONPAYLATER",
+            "payment_method_type": "CONSUMER_FINANCE",
+            "is_eligible": true,
+            "balance": 100,
+            "kfs_link": "https://amazonpay.amazon.in/v1/????,
+            "description": "Amazon Pay Later",
+            "eligibility_strategy": "TRANSACTION"
+        }
+    ]
+}

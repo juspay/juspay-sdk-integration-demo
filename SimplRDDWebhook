@@ -1,0 +1,89 @@
+ "event_name": "ORDER_SUCCEEDED",
+   "content": {
+       "order": {
+           "bank_pg": null,
+           "payment_method": "SIMPL",
+           "customer_phone": "FILTERED",
+           "payment_gateway_response": {
+               "txn_id": "test-1234-1",
+               "rrn": "",
+               "auth_id_code": "NA",
+               "resp_message": "CLAIMED",
+               "epg_txn_id": "9c27c-b41d-e711128",
+               "resp_code": "CLAIMED",
+               "created": "2024-04-29T18:31:24Z"
+           },
+           "udf8": "",
+           "txn_id": "test-1234-1",
+           "order_id": "1234",
+           "gateway_reference_id": null,
+           "maximum_eligible_refund_amount": 379,
+           "udf9": "",
+           "txn_detail": {
+               "txn_id": "test-1234-1",
+               "order_id": "1234",
+               "error_code": "",
+               "txn_flow_type": "REDIRECT_DEBIT",
+               "status": "CHARGED",
+               "express_checkout": false,
+               "gateway_id": 41,
+               "error_message": "",
+               "tax_amount": null,
+               "currency": "INR",
+               "txn_amount": 778,
+               "created": "2024-04-29T18:31:09Z",
+               "gateway": "SIMPL",
+               "surcharge_amount": null,
+               "txn_uuid": "moz5Sx5s1uANw",
+               "net_amount": 778,
+               "redirect": true
+           },
+           "customer_id": "17984",
+           "amount": 778,
+           "udf4": "",
+           "status": "CHARGED",
+           "udf5": "",
+           "udf6": "",
+           "status_id": 21,
+            "udf7": "",
+           "product_id": "",
+           "refunded": false,
+           "udf10": "",
+           "gateway_id": 41,
+           "udf1": "enable",
+           "udf2": "headlessWeb",
+           "udf3": "",
+           "date_created": "2024-04-29T18:31:08Z",
+           "id": "ordeh_f3bfe557ce364e4fb07f8",
+           "merchant_id": "test",
+           "return_url": "https://www.test.com/mcheckout/orderStatus",
+           "effective_amount": 778,
+           "currency": "INR",
+           "auth_type": "",
+           "customer_email": "1111111",
+           "payment_method_type": "WALLET",
+           "wallet": {
+               "txn_flow_type": "REDIRECT_DEBIT"
+           },
+           "txn_uuid": "moz5Sx5s1uANw",
+           "payment_links": {
+               "mobile": "https://api.juspay.in/orders/ordeh_f3bfe557ce364e4fb07f8/payment-page",
+               "web": "https://api.juspay.in/orders/ordeh_f3bfe557ce364e4fb07f8/payment-page",
+               "iframe": "https://api.juspay.in/orders/ordeh_f3bfe557ce364e4fb07f8/payment-page"
+           },
+           "amount_refunded": 0,
+           "bank_error_code": "",
+           "metadata": {
+               "payment_page_client_id": "test",
+               "payment_links": {
+                   "mobile": "https://api.juspay.in/orders/ordeh_f3bfe557ce364e4fb07f8/payment-page",
+                   "web": "https://api.juspay.in/orders/ordeh_f3bfe557ce364e4fb07f8/payment-page",
+                   "iframe": "https://api.juspay.in/orders/ordeh_f3bfe557ce364e4fb07f8/payment-page"
+               }
+           },
+           "bank_error_message": ""
+       }
+   },
+   "date_created": "2024-04-29T18:31:24Z",
+   "id": "evt_V2_98f14427abab426a982e9a2870e9ac78"
+}

@@ -1,0 +1,28 @@
+{
+"requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+"service": "in.juspay.hyperapi"
+"payload": {
+    "action": "cardTxn",
+    "bankErrorCode": "",
+    "bankErrorMessage": "",
+    "offerDetails": {
+        "offers": []
+    },
+    "orderId": "12345",
+    "otherInfo": {
+        "code": -1,
+        "realtime": {
+            "clientId": "juspay",
+            "customerId": "testcustomer",
+            "environment": "prod",
+            "lastVisitedUrl": "",
+            "merchantId": "juspay",
+            "os": "android",
+            "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9"
+        },
+        "status": "{\"url\":\"https:\\/\\/www.test.com\\/api\\/v1\\/paymentGateway\\/payu_surl?order_id=12345&status=CHARGED&mandate_status=ACTIVE&mandate_id=si7890&mandate_token=338sdfkhj321d5ca2ea3e&status_id=21&signature=c43I7zxqgOwd%2F*********%2F3s11IBRKMMkvs%3D&signature_algorithm=HMAC-SHA256\"}",
+        "url": "https://www.test.com/api/v1/paymentGateway/payu_surl?order_id=12345&status=CHARGED&mandate_status=ACTIVE&mandate_id=si7890&mandate_token=338sdfkhj321d5ca2ea3e&status_id=21&signature=c43I7zxqgOwd%2F********1IBRKMMkvs%3D&signature_algorithm=HMAC-SHA256"
+    },
+    "status": "CHARGED"
+}
+}

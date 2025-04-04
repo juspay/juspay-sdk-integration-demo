@@ -1,0 +1,2 @@
+curl --location --request GET 'https://api.juspay.in/cardbins/405028700?merchant_id=juspay&options.check_mandate_support=true' \
+-u your_api_key:

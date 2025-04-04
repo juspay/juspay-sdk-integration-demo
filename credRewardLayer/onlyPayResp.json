@@ -1,0 +1,36 @@
+{
+  "service": "in.juspay.ec",
+  "requestId": "1cdae6a6-b622-4daf-865f-98a78f24396b",
+  "payload": {
+    "txnUuid": "mozixDA8i5WV1unmzMT",
+    "status": "SUCCESS",
+    "selectedAccount": {
+      "vpa": "abcaa51452@axisbiz",
+      "account": {
+        "type": "SOD",
+        "referenceId": "Afa9eb4b5157455883f8244104c0a1",
+        "otpLength": "6",
+        "name": "ABC",
+        "mpinSet": "true",
+        "mpinLength": "6",
+        "maskedAccountNumber": "XXXXXXXXXX325878",
+        "isPrimary": "true",
+        "ifsc": "AABD0000011",
+        "branchName": "",
+        "bankName": "Mybank",
+        "bankCode": "500007",
+        "bankAccountUniqueId": "7cfeac090d01a0eca9d644946ac82cb3731203691a2d30ca45a5dfb986c3f2a8",
+        "atmPinLength": "4"
+      }
+    },
+    "otherInfo": "{}",
+    "orderId": "hyperorder1698414304631",
+    "gatewayResponseMessage": "Your transaction is successful",
+    "gatewayResponseCode": "00",
+    "action": "upiTxn",
+    "accountRefId": "Afa9eb4b5157455883f8244104c0a1"
+  },
+  "errorMessage": "",
+  "errorCode": "",
+  "error": false
+}

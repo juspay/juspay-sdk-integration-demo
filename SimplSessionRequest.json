@@ -1,0 +1,58 @@
+curl --location --request POST 'https://sandbox.juspay.in/session' \
+--header 'Authorization: Basic MTUyMENDQkRCOTA0MUY0OTY3NzZGNTY0RDRBNzRCOg==' \
+--header 'x-merchantid: your_merchant_id' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+"order_id": "12345",
+"amount": "1.0",
+"customer_id": "cst_test",
+"customer_email": "test@mail.com",
+"customer_phone": "9999999999",
+"payment_page_client_id": "test",
+"action": "paymentPage",
+"return_url": "https://shop.merchant.com",
+"description": "Complete your payment",
+"first_name": "John",
+"last_name": "wick",
+"product_id": "test123",
+"quantity": "1",
+"metadata.SIMPL:session_start_time": "06/09/2022 12:12:12",
+"metadata.SIMPL:coupon_code": "dfsdfdsfdsfsdfdsfsdffdsf",
+"metadata.SIMPL:additional_order_id": "123456789",
+"metadata.SIMPL:initial_cart_value":"200.00",
+"metadata.SIMPL:discount":"0.00",
+"merchant_id": "test",
+"currency": "INR",
+"billing_address_line1":"54999",
+"billing_address_line2":"300 Randolph Parkways Apt. 902",
+"billing_address_city":"Shauntown",
+"billing_address_state":"Drives",
+"billing_address_country":"French Guiana",
+"billing_address_postal_code":"400611",
+"shipping_address_line1":"54999",
+"shipping_address_line2":"300 Randolph Parkways Apt. 902",
+"shipping_address_city":"Shauntown",
+"shipping_address_state":"Drives",
+"shipping_address_country":"French Guiana",
+"shipping_address_postal_code":"400611",
+"simpl_additional_info": {
+"merchant_params":{"email":"shshh@gamil.com","first_txn_date":
+"2019-07-17","user_loyalty_level": "Gold","user_blacklist_flag":
+"true","request_ori_page": "precheckout","seller_identifier":
+"123","seller_vintage": "4","seller_category": "PRIME",
+"additional_order_id": "123456789","first_name": "Simpl","last_name":
+"Simpl","aggregator_flow_ori": "PP","billing_address": {"line1":
+"54999","line2": "300 Randolph Parkways Apt. 902","city": "Shauntown","state":
+"Drives","country": "French Guiana","postal_code":
+"400611"},"shipping_address": {"line1": "54999","line2": "300 Randolph
+Parkways Apt. 902","city": "Shauntown","state": "Drives","country": "French
+Guiana","postal_code": "400611"}},"device_params":
+{"simpl_device_manufacturer": "Samsung","simpl_device_model":
+"FT-129459","simpl_isr": "false","simpl_dres": "561, 570","simpl_duptime":
+"1100877165","simpl_can": "Walker, Dominguez and Davis","simpl_ipa": "192.168.
+1.1","simpl_pav": "testing","user_agent": "Mozilla/5.0 (Linux; Android 8.1.0;
+Redmi 5A Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko)
+Version/4.0Chrome/97.0.4692.70 Mobile Safari/537.36","simpl_amem":
+"2395","simpl_adisk": "1666","simpl_fontsize": "11","simpl_pan":
+"6.6.4","simpl_ltln": "-22.629812, -11.583188"}}
+}'

@@ -1,0 +1,116 @@
+{
+  "cart_amount": "25123.25",
+  "emi_plans": {
+    "STANDARD_EMI": {
+      "CREDIT": {
+        "payment_method": "CARD",
+        "payment_method_type": "CARD",
+        "issuers": [
+          {
+            "emi_bank": "AMEX",
+            "issuer_name": "American Express",
+            "juspay_bank_code": "JP_AMEX",
+            "bank_plan_description": null,
+            "tenures": [
+              {
+                "offer_type": null,
+                "additional_processing_fee": "0.00",
+                "bank_interest_rate": "12.00",
+                "tenure": 3,
+                "total_amount_payable": "25627.38",
+                "total_interest_amount": "504.13",
+                "total_monthly_amount_payable": "8542.46",
+                "total_instant_discount_amount": null,
+                "total_cashback_amount": null,
+                "additional_discount_amount": null,
+                "supported_gateways": [
+                  {
+                    "gateway": "RAZORPAY",
+                    "gateway_id": 23
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "emi_bank": "AXIS",
+            "issuer_name": "Axis Bank",
+            "juspay_bank_code": "JP_AXIS",
+            "bank_plan_description": null,
+            "tenures": [
+              {
+                "offer_type": null,
+                "additional_processing_fee": "0.00",
+                "bank_interest_rate": "12.00",
+                "tenure": 3,
+                "total_amount_payable": "25627.38",
+                "total_interest_amount": "504.13",
+                "total_monthly_amount_payable": "8542.46",
+                "total_instant_discount_amount": null,
+                "total_cashback_amount": null,
+                "additional_discount_amount": null,
+                "supported_gateways": [
+                  {
+                    "gateway": "PINELABS",
+                    "gateway_id": 74
+                  }
+                ]
+              },
+              {
+                "offer_type": null,
+                "additional_processing_fee": "0.00",
+                "bank_interest_rate": "13.00",
+                "tenure": 6,
+                "total_amount_payable": "26084.39",
+                "total_interest_amount": "961.14",
+                "total_monthly_amount_payable": "4347.40",
+                "total_instant_discount_amount": null,
+                "total_cashback_amount": null,
+                "additional_discount_amount": null,
+                "supported_gateways": [
+                  {
+                    "gateway": "PINELABS",
+                    "gateway_id": 74
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "DEBIT": {
+        "payment_method": "CARD",
+        "payment_method_type": "CARD",
+        "issuers": [
+          {
+            "emi_bank": "HDFCDC",
+            "issuer_name": "HDFC Bank",
+            "juspay_bank_code": "JP_HDFC",
+            "bank_plan_description": null,
+            "tenures": [
+              {
+                "offer_type": null,
+                "additional_processing_fee": "0.00",
+                "bank_interest_rate": "13.00",
+                "tenure": 6,
+                "total_amount_payable": "26084.39",
+                "total_interest_amount": "961.14",
+                "total_monthly_amount_payable": "4347.40",
+                "total_instant_discount_amount": null,
+                "total_cashback_amount": null,
+                "additional_discount_amount": null,
+                "supported_gateways": [
+                  {
+                    "gateway": "PAYU",
+                    "gateway_id": 12
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "CARDLESS": null
+    }
+  }
+}

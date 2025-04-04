@@ -1,0 +1,3 @@
+curl -X GET \ https://sandbox.juspay.in/customers/:customer_id/wallets \
+-H 'Authorization: Basicapikeyvalue' \
+-H 'cache-control: no-cache' \

@@ -1,0 +1,149 @@
+{
+    "event_name": "ORDER_FAILED",
+    "content": {
+        "order": {
+            "bank_pg": null,
+            "payment_method": "VISA",
+            "customer_phone": "FILTERED",
+            "payment_gateway_response": {
+                "txn_id": "12345-1",
+                "rrn": null,
+                "auth_id_code": "NA",
+                "resp_message": "insufficient_funds_error. Insufficient funds",
+                "epg_txn_id": "1122334455",
+                "resp_code": "0399",
+                "created": "2024-01-01T01:15:37Z"
+            },
+            "udf8": "",
+            "txn_id": "12345-1",
+            "order_id": "12345",
+            "gateway_reference_id": null,
+            "udf9": "",
+            "txn_detail": {
+                "txn_id": "12345-1",
+                "order_id": "12345",
+                "error_code": "0399",
+                "source_object": "MANDATE",
+                "txn_object_type": "MANDATE_PAYMENT",
+                "status": "AUTHORIZATION_FAILED",
+                "express_checkout": false,
+                "gateway_id": 100,
+                "error_message": "insufficient_funds_error. Insufficient funds",
+                "tax_amount": null,
+                "currency": "INR",
+                "source_object_id": "1111111",
+                "txn_amount": 100,
+                "created": "2024-01-01T01:15:22Z",
+                "gateway": "DUMMY",
+                "surcharge_amount": null,
+                "txn_uuid": "asdfg12345",
+                "net_amount": 100,
+                "redirect": false
+            },
+            "customer_id": "test123",
+            "amount": 100,
+            "udf4": "",
+            "status": "AUTHORIZATION_FAILED",
+            "udf5": "",
+            "udf6": "",
+            "status_id": 27,
+            "offers": [],
+            "udf7": "",
+            "resp_message": "User doesn't have sufficient balance in the account",
+            "product_id": "",
+            "refunded": false,
+            "udf10": "",
+            "notification": {
+                "object": "notification",
+                "notification_type": "FILTERED",
+                "effective_notification_amount": "FILTERED",
+                "provider_response": {
+                    "provider_response_message": "FILTERED",
+                    "provider_ref_id": "FILTERED",
+                    "provider_response_code": "FILTERED"
+                },
+                "object_reference_id": "sdjerh2341",
+                "source_object": "MANDATE",
+                "status": "SUCCESS",
+                "date_created": "170126522",
+                "id": "12345",
+                "last_updated": "1734996727",
+                "mandate": {
+                    "mandate_id": "sfdhksdhf*****"
+                },
+                "source_info": {
+                    "mandate.display_invoice_number": "FILTERED",
+                    "txn_date": "1734169322",
+                    "amount": "100.0"
+                },
+                "provider_name": "FILTERED"
+            },
+            "gateway_id": 27,
+            "udf1": "",
+            "udf2": "",
+            "udf3": "",
+            "date_created": "2024-01-01T01:15:22Z",
+            "id": "ordeh_12345",
+            "merchant_id": "juspay",
+            "return_url": "https://juspay.in/",
+            "effective_amount": 100,
+            "currency": "INR",
+            "auth_type": "THREE_DS_2",
+            "customer_email": "1111111",
+            "resp_code": "INSUFFICIENT_BALANCE",
+            "card": {
+                "saved_to_locker": "FILTERED",
+                "extended_card_type": "FILTERED",
+                "card_isin": "FILTERED",
+                "payment_account_reference": "FILTERED",
+                "name_on_card": "FILTERED",
+                "token": {
+                    "card_isin": "FILTERED",
+                    "par": "V0023473247367806737077006",
+                    "last_four_digits": "FILTERED",
+                    "provider_category": "FILTERED",
+                    "expiry_month": "FILTERED",
+                    "provider": "VISA",
+                    "card_reference": "cref_e23432jknde13fd33687d07",
+                    "expiry_year": "FILTERED",
+                    "tokenization_status": "ACTIVE",
+                    "card_fingerprint": "FILTERED"
+                },
+                "card_brand": "VISA",
+                "last_four_digits": "FILTERED",
+                "card_issuer": "FILTERED",
+                "card_type": "CREDIT",
+                "tokens": "FILTERED",
+                "expiry_month": "FILTERED",
+                "card_issuer_country": "FILTERED",
+                "card_reference": "cref_e23432jknde13fd33687d07",
+                "expiry_year": "FILTERED",
+                "using_saved_card": "FILTERED",
+                "using_token": "FILTERED",
+                "token_type": "TOKEN",
+                "card_fingerprint": "FILTERED"
+            },
+            "payment_method_type": "CARD",
+            "txn_uuid": "asdfg12345",
+            "resp_category": "BUSINESS_ERROR",
+            "payment_links": {
+                "mobile": "https://api.juspay.in/orders/ordeh_12345/payment-page",
+                "web": "https://api.juspay.in/orders/ordeh_12345/payment-page",
+                "iframe": "https://api.juspay.in/orders/ordeh_12345/payment-page"
+            },
+            "amount_refunded": 0,
+            "bank_error_code": "0399",
+            "metadata": {
+                "payment_page_client_id": "juspay",
+                "payment_links": {
+                    "mobile": "https://api.juspay.in/orders/ordeh_12345/payment-page",
+                    "web": "https://api.juspay.in/orders/ordeh_12345/payment-page",
+                    "iframe": "https://api.juspay.in/orders/ordeh_12345/payment-page"
+                }
+            },
+            "bank_error_message": "insufficient_funds_error. Insufficient funds"
+        }
+    },
+    "date_created": "2024-01-01T03:31:32Z",
+    "id": "evt_V2_1dkjsdfhks23432d5726acea51"
+}

@@ -1,0 +1,22 @@
+curl --location --request POST 'https://sandbox.juspay.in/customers/cth_avWQeBoXuFCvyTt3/eligibility' \
+--header 'Authorization: Basic APIKEY' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'amount=10' \
+--data-urlencode 'gateway_reference_id=amazonpaylater_test' \
+--data-urlencode 'gateway_id=38’
+Response:
+{
+    "payment_methods_eligibility": [
+        {
+            "status": "SUCCESS",
+            "payment_method": "AMAZONPAYLATER",
+            "payment_method_type": "CONSUMER_FINANCE",
+            "is_eligible": false,
+            "balance": 0,
+           "gateway_error_code": "Your KYC has expired, please update on the Amazon app.",
+            "gateway_error_message": "Your KYC has expired, please update on the Amazon app.",
+            "description": "Amazon Pay Later",
+            "eligibility_strategy": "TRANSACTION"
+        }
+    ]
+}

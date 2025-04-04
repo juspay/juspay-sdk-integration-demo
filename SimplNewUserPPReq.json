@@ -1,0 +1,14 @@
+{
+    "requestId": "87df247f-7b84-ac5d-1c5523dd26af",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "action": "walletTxn",
+        "orderId": "12345",
+        "paymentMethod": "SIMPL",
+        "sdkPresent": "ANDROID_SIMPL",
+        "endUrls": [
+            "https:\\/\\/test\\.merchant\\.com\\/payments\\/handleResponse.*"
+        ],
+        "clientAuthToken": "tkn_0e37edc6cfc4213"
+    }
+}
