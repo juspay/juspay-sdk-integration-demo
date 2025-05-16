@@ -4,7 +4,7 @@ curl --location 'https://smartgatewayuat.hdfcbank.com/txns' \
 --data-urlencode 'order_id=TEST23' \
 --data-urlencode 'merchant_id=merchant_id' \
 --data-urlencode 'payment_method_type=UPI' \
---data-urlencode 'payment_method=UPI_PAY \
+--data-urlencode 'payment_method=UPI_PAY' \
 --data-urlencode 'txn_type=UPI_PAY' \
 --data-urlencode 'sdk_params=true' \
 --data-urlencode 'should_create_mandate=true' \
