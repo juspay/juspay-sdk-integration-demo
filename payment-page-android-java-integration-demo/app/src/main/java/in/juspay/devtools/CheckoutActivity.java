@@ -10,13 +10,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import in.juspay.hypersdk.data.JuspayResponseHandler;
-import in.juspay.hypersdk.ui.HyperPaymentsCallbackAdapter;
 import org.json.JSONObject;
 import okhttp3.*;
 import java.io.IOException;
 import java.util.Base64;
-import android.webkit.WebView;
 import in.juspay.hyperinteg.HyperServiceHolder;
 
 public class CheckoutActivity extends AppCompatActivity {
@@ -24,7 +21,7 @@ public class CheckoutActivity extends AppCompatActivity {
     private Button processButton;
     private HyperServiceHolder hyperServicesHolder;
     private CoordinatorLayout coordinatorLayout;
-    private ProgressDialog dialog;
+    static ProgressDialog dialog;
     private String amountString;
     private int item1Price, item2Price, item1Count, item2Count;
     private TextView item1PriceTv, item2PriceTv, item1CountTv, item2CountTv, totalAmountTv, taxTv, totalPayableTv;
@@ -44,7 +41,6 @@ public class CheckoutActivity extends AppCompatActivity {
         updatingUI();
 
         hyperServicesHolder = new HyperServiceHolder(this);
-        hyperServicesHolder.setCallback(createHyperPaymentsCallbackAdapter());
         processButton = findViewById(R.id.rectangle_9);
         processButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -152,96 +148,6 @@ public class CheckoutActivity extends AppCompatActivity {
     }
     // -----------------------------------------------------------------
     // block:end:fetch-process-payload
-
-    // block:start:create-hyper-callback
-    private HyperPaymentsCallbackAdapter createHyperPaymentsCallbackAdapter() {
-        return new HyperPaymentsCallbackAdapter() {
-            @Override
-            public void onEvent(JSONObject jsonObject, JuspayResponseHandler responseHandler) {
-                Intent redirect = new Intent(CheckoutActivity.this, ResponsePage.class);
-                redirect.putExtra("responsePayload", jsonObject.toString());
-                System.out.println("jsonObject>>> " +jsonObject);
-                try {
-                    String event = jsonObject.getString("event");
-                    if (event.equals("hide_loader")) {
-                        // Hide Loader
-                        dialog.hide();
-                    }
-                    // Handle Process Result
-                    // This case will reach once the Hypercheckout screen closes
-                    // block:start:handle-process-result
-                    else if (event.equals("process_result")) {
-                        boolean error = jsonObject.optBoolean("error");
-                        JSONObject innerPayload = jsonObject.optJSONObject("payload");
-                        String status = innerPayload.optString("status");
-
-                        if (!error) {
-                            switch (status) {
-                                case "charged":
-                                    // Successful Transaction
-                                    // check order status via S2S API
-                                    redirect.putExtra("status", "OrderSuccess");
-                                    startActivity(redirect);
-                                    break;
-                                case "cod_initiated":
-                                    redirect.putExtra("status", "CODInitiated");
-                                    startActivity(redirect);
-                                    break;
-                            }
-                        } else {
-                            switch (status) {
-                                case "backpressed":
-                                    // user back-pressed from PP without initiating transaction
-
-                                    break;
-                                case "user_aborted":
-                                    // user initiated a txn and pressed back
-                                    // check order status via S2S API
-                                    Intent successIntent = new Intent(CheckoutActivity.this, ResponsePage.class);
-                                    redirect.putExtra("status", "UserAborted");
-                                    startActivity(redirect);
-                                    break;
-                                case "pending_vbv":
-                                    redirect.putExtra("status", "PendingVBV");
-                                    startActivity(redirect);
-                                    break;
-                                case "authorizing":
-                                    // txn in pending state
-                                    // check order status via S2S API
-                                    redirect.putExtra("status", "Authorizing");
-                                    startActivity(redirect);
-                                    break;
-                                case "authorization_failed":
-                                    redirect.putExtra("status", "AuthorizationFailed");
-                                    startActivity(redirect);
-                                    break;
-                                case "authentication_failed":
-                                    redirect.putExtra("status", "AuthenticationFailed");
-                                    startActivity(redirect);
-                                    break;
-                                case "api_failure":
-                                    redirect.putExtra("status", "APIFailure");
-                                    startActivity(redirect);
-                                    break;
-                                    // txn failed
-                                    // check order status via S2S API
-                                default:
-                                    redirect.putExtra("status", "APIFailure");
-                                    startActivity(redirect);
-                                    break;
-                            }
-                        }
-                    }
-                    // block:end:handle-process-result
-                } catch (Exception e) {
-                    // merchant code...
-                }
-            }
-        };
-    }
-    // block:end:create-hyper-callback
-
-
 
     //block:start:onBackPressed
     @Override

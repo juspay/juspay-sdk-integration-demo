@@ -24,7 +24,6 @@ class CheckoutActivity : AppCompatActivity() {
     var processButton: Button? = null
     var hyperServicesHolder: HyperServiceHolder? = null
     var coordinatorLayout: CoordinatorLayout? = null
-    var dialog: ProgressDialog? = null
     var amountString: String? = null
     var item1Price = 0
     var item2Price = 0
@@ -48,7 +47,6 @@ class CheckoutActivity : AppCompatActivity() {
         super.onStart()
         updatingUI()
         hyperServicesHolder = HyperServiceHolder(this)
-        hyperServicesHolder!!.setCallback(createHyperPaymentsCallbackAdapter())
         processButton = findViewById(R.id.rectangle_9)
         processButton?.setOnClickListener(View.OnClickListener {
             dialog!!.show()
@@ -135,83 +133,6 @@ class CheckoutActivity : AppCompatActivity() {
     // -----------------------------------------------------------------
     //block:end:fetch-process-payload
 
-    //block:start:create-hyper-callback
-    private fun createHyperPaymentsCallbackAdapter(): HyperPaymentsCallbackAdapter {
-        return object : HyperPaymentsCallbackAdapter() {
-            override fun onEvent(jsonObject: JSONObject, responseHandler: JuspayResponseHandler?) {
-                val redirect = Intent(this@CheckoutActivity, ResponsePage::class.java)
-                redirect.putExtra("responsePayload", jsonObject.toString())
-                try {
-                    val event = jsonObject.getString("event")
-                    if (event == "hide_loader") {
-                        // Hide Loader
-                        dialog!!.hide()
-                    } else if (event == "process_result") {
-                        //block:start:handle-process-result
-                        val error = jsonObject.optBoolean("error")
-                        val innerPayload = jsonObject.optJSONObject("payload")
-                        val status = innerPayload.optString("status")
-                        if (!error) {
-                            when (status) {
-                                "charged" -> {
-                                    // Successful Transaction
-                                    // check order status via S2S API
-                                    redirect.putExtra("status", "OrderSuccess")
-                                    startActivity(redirect)
-                                }
-                                "cod_initiated" -> {
-                                    redirect.putExtra("status", "CODInitiated")
-                                    startActivity(redirect)
-                                }
-                            }
-                        } else {
-                            when (status) {
-                                "backpressed" -> {
-                                }
-                                "user_aborted" -> {
-                                    // user initiated a txn and pressed back
-                                    // check order status via S2S API
-                                    val successIntent = Intent(
-                                        this@CheckoutActivity,
-                                        ResponsePage::class.java
-                                    )
-                                    redirect.putExtra("status", "UserAborted")
-                                    startActivity(redirect)
-                                }
-                                "pending_vbv" -> {
-                                    redirect.putExtra("status", "PendingVBV")
-                                    startActivity(redirect)
-                                }
-                                "authorizing" -> {
-                                    // txn in pending state
-                                    // check order status via S2S API
-                                    redirect.putExtra("status", "Authorizing")
-                                    startActivity(redirect)
-                                }
-                                "authorization_failed" -> {
-                                    redirect.putExtra("status", "AuthorizationFailed")
-                                    startActivity(redirect)
-                                }
-                                "authentication_failed" -> {
-                                    redirect.putExtra("status", "AuthenticationFailed")
-                                    startActivity(redirect)
-                                }
-                                "api_failure" -> {
-                                    redirect.putExtra("status", "APIFailure")
-                                    startActivity(redirect)
-                                }
-                            }
-                        }
-                        // block:end:handle-process-result
-                    }
-                } catch (e: Exception) {
-                    // merchant code...
-                }
-            }
-        }
-    }
-
-    // block:end:create-hyper-callback
     fun showSnackbar(message: String?) {
         coordinatorLayout = findViewById(R.id.coordinatorLayout)
         val snackbar = Snackbar.make(coordinatorLayout!!, message!!, Snackbar.LENGTH_LONG)
@@ -302,6 +223,7 @@ class CheckoutActivity : AppCompatActivity() {
     }
 
     companion object {
+        var dialog: ProgressDialog? = null
         fun round(value: Double, places: Int): Double {
             var value = value
             require(places >= 0)
