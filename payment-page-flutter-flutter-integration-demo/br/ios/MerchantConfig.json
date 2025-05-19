@@ -1,0 +1,7 @@
+{
+  "clientConfigs": {
+      "<client_id>": {
+          "tenantName": "<tenant_name>"
+      }
+  }
+}
