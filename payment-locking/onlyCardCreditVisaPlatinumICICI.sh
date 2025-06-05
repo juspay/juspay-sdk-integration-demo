@@ -28,7 +28,7 @@
                             "PLATINUM"
                         ],
                         "cardBanks": [
-                            "ICICI"
+                            "ICICI Bank"
                         ]
                     }
                 ]
