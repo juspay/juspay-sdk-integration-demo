@@ -8,6 +8,16 @@
     <div class="security_code_div"></div>
     <input type="checkbox"  class="juspay_locker_save"> Save card information
     <input type="hidden" class="redirect" value="true"/>
+
+    <div class="avs_fields" style="display: none;">
+        <input type="text" class="billing_address_line1" placeholder="House No" />
+        <input type="text" class="billing_address_line2" placeholder="Street" />
+        <input type="text" class="billing_address_city" placeholder="City" />
+        <input type="text" class="billing_address_state" placeholder="State" />
+        <input type="text" class="billing_address_postal_code" placeholder="Postal Code" />
+        <input type="text" class="billing_address_country" placeholder="Country" />
+    </div>
+    
 <!-- For mandates transaction 
      <input type="radio" class="should_create_mandate" value="true" name="should_create_mandate" checked="checked"> Yes
      <input type="radio" class="should_create_mandate" value="false" name="should_create_mandate"> No -->
