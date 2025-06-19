@@ -1,0 +1,32 @@
+{
+    "gateway": "HDFC_UPI",
+    "mandate_id": "b3bykyek5XsAouAoKULG9q",
+    "status": "EXPIRED",
+    "frequency": "ONETIME",
+    "last_updated": "2025-06-15T22:34:07Z",
+    "start_date": "1750025772",
+    "max_amount": 3,
+    "block_fund": true,
+    "currency": "INR",
+    "payment_info": {
+        "payment_method": "UPI_COLLECT",
+        "upi": {
+            "payer_vpa": "curiousrikanth@oksbi"
+        },
+        "payment_method_type": "UPI"
+    },
+    "last_activated_at": "2025-06-15T22:34:07Z",
+    "pg_response": {
+        "response_message": "Expiring the mandate since it one time mandate transaction",
+        "response_code": "EXPIRE_MANDATE"
+    },
+    "amount_rule": "VARIABLE",
+    "gateway_reference_id": "autopay",
+    "revokable_by_customer": false,
+    "order_id": "T_1750025760",
+    "end_date": "1750436118",
+    "customer_id": "C_AYUSH",
+    "activated_at": "2025-06-15T22:16:33Z",
+    "mandate_token": "43736862e23c476cbc24b25989775901",
+    "mandate_type": "EMANDATE"
+}
