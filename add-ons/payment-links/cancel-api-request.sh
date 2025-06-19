@@ -1,6 +1,6 @@
-curl --location 'https://smartgateway.hdfcbank.com/merchants/{merchant_id}}/order/{order_id}/cancel' \
+curl --location 'https://smartgateway.hdfcbank.com/merchants/{merchant_id}/order/{order_id}/cancel' \
 --header 'version: 2019-08-19' \
---header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'Content-Type: application/json' \
 --header 'x-merchantid: merchant_id' \
 --header 'Authorization: BASE 64 Encoded API KEY' \
 --data '{
