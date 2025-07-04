@@ -7,9 +7,6 @@ Diff and markup HTML with `<ins>` and `<del>` tags.
 
 Quote from the original source of this fork:
 
-*`htmldiff.js` is a JavaScript port of [https://github.com/myobie/htmldiff](https://github.com/myobie/htmldiff) by
-[Keanu Lee](http://keanulee.com) at [Inkling](https://www.inkling.com/).*
-
 **htmldiff.js** is based on [this fork](https://github.com/inkling/htmldiff.js) and adds a few things:
 
 - Diffing of video, math, widget, iframe, img and svg tags.
