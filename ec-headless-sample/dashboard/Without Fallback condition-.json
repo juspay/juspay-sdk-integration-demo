@@ -1,9 +1,0 @@
-if (systemtimemills < 50) {
-
-      priorities = ['GATEWAY A','GATEWAY B']
-    
-     } else if (systemtimemills < 100) {
-    
-      priorities = ['GATEWAY B','GATEWAY A']
-    
-     }

@@ -1,8 +1,0 @@
-// Define handler for inititate callback
-// block:start:initiate-callback-handler
-void initiateCallbackHandler(MethodCall methodCall) {
-  if (methodCall.method == "initiate_result") {
-    // check initiate result
-  }
- }
-// block:end:initiate-callback-handler

@@ -1,5 +1,0 @@
-// Calling initiate on hyperService instance to boot up payment engine.
-    // block:start:initiate-sdk
-    NSDictionary *initPayload = [self createInitiatePayload];
-    [self.hyperInstance initiate:self payload:initPayload callback:self.hyperCallbackHandler];
-    // block:end:initiate-sdk

@@ -1,8 +1,0 @@
- // Calling initiate on hyperService instance to boot up payment engine.
-        // block:start:initiate-sdk
-        hyperInstance.initiate(
-            self,
-            payload: createInitiatePayload(),
-            callback: hyperCallbackHandler
-        )
-        // block:end:initiate-sdk

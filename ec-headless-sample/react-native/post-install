@@ -1,8 +1,0 @@
-post_install do |installer|
-  fuse_path = "./Pods/HyperSDK/Fuse.rb"
-  clean_assets = false # Pass true to re-download all the assets
-  if File.exist?(fuse_path)
-    if system("ruby", fuse_path.to_s, clean_assets.to_s)
-    end
-  end
- end

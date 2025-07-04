@@ -1,8 +1,0 @@
-{
-  "category":"action",
-  "subcategory":"user",
-  "label":"button_clicked",
-  "value":{
-     "button_name":"back_button_pressed"
-  }
-}
