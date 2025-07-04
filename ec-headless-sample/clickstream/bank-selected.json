@@ -1,8 +1,0 @@
-{
-   "category":"action",
-   "subcategory":"user",
-   "label":"bank_selected",
-   "value":{
-      "bank_name":"Axis Bank"
-   }
-}

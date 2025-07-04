@@ -1,8 +1,0 @@
-{
-  "category":"action",
-  "subcategory":"user",
-  "label":"payment_instrument_group",
-  "value":{
-     "pig_name":"nb"
-  }
-}

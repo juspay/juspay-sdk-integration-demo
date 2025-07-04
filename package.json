@@ -1,0 +1,30 @@
+{
+    "name": "jp-node-htmldiff",
+    "version": "0.0.1",
+    "description": "Diff and markup HTML with <ins> and <del> tags (custom fork)",
+    "main": "js/htmldiff.js",
+    "types": "js/htmldiff.d.ts",
+    "keywords": [
+        "diff",
+        "html",
+        "htmldiff",
+        "ins",
+        "del"
+    ],
+    "author": {
+        "name": "Madhan5422i"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Madhan5422i/node-htmldiff.git"
+    },
+    "files": [
+        "js/htmldiff.js",
+        "js/htmldiff.d.ts"
+    ],
+    "scripts": {
+        "test": "echo \"No tests specified\" && exit 0"
+    },
+    "private": false
+}

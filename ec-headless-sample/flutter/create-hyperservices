@@ -1,5 +1,0 @@
-//block:start:create-hyper-services-instance
-
-hyperSDKRef = cordova.plugins.HyperSDKPlugin
-
-//block:end:create-hyper-services-instance
