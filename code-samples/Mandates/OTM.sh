@@ -14,8 +14,8 @@ curl --location --request POST 'https://smartgateway.hdfcbank.com/session' \
     "last_name": "Mitra",
     "options.create_mandate": "REQUIRED",
     "mandate.max_amount": "3.00",
-    "mandate.revokable_by_customer": true,
-    "mandate.block_funds": false,
+    "mandate.revokable_by_customer": false,
+    "mandate.block_funds": true,
     "mandate.frequency": "ONETIME",
     "mandate.end_date": "1747534895"
 }'
