@@ -3,11 +3,11 @@ allprojects {
         google()
         jcenter()
         maven {
-          url "https://sdk.getsimpl.com/"
+          url "https://maven.getsimpl.com/"
        }
     }
 }
 
 dependencies {  
-    implementation "com.simpl.android:fingerprintSDK:1.1.4"
+    implementation "com.simpl.android:fingerprintSDK:1.1.6"
 }
