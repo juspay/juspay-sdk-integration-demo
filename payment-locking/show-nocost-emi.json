@@ -1,8 +1,7 @@
-{
-    "payment_filter": {
-        "allowDefaultOptions": true,
-        "options": [],
-        "emiOptions": {
+"payment_filter": {
+    "allowDefaultOptions": true,
+    "options": [],
+    "emiOptions": {
         "standardEmi" : {
           "enable" : false
         },
@@ -11,8 +10,7 @@
         },
         "noCostEmi" : {
           "enable" : true
-        }
-      }
-     
-     }
+        },
+    "showOnlyEmi" : true
+   }
 }
