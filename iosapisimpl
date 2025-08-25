@@ -1,8 +1,8 @@
 
 pod 'SimplFingerPrint'
 
-#Installs the latest version of the pod available in the CocoaPods Specs repo (or your private repo, if that’s where it’s hosted).
-#If you already have a Podfile.lock, it will lock to the version recorded there until you run pod update SimplFingerPrint.
+//Installs the latest version of the pod available in the CocoaPods Specs repo (or your private repo, if that’s where it’s hosted).
+//If you already have a Podfile.lock, it will lock to the version recorded there until you run pod update SimplFingerPrint.
 
 
 pod 'SimplFingerPrint', '<version>'
