@@ -1,5 +1,5 @@
 curl --location 'https://smartgatewayuat.hdfcbank.com/txns' \
---header 'Authorization: Basic RTYyN0Y********************U5' \
+--header 'Authorization: Basic <Base64 Encoded API KEY>' \
 --header 'Accept: /' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'order_id=Ord_XXXXXXXX' \
@@ -12,4 +12,6 @@ curl --location 'https://smartgatewayuat.hdfcbank.com/txns' \
 --data-urlencode 'redirect_after_payment=true' \
 --data-urlencode 'tavv=XXXXXXXXXXX' \
 --data-urlencode 'format=json' \
---data-urlencode 'token.card_last_four=XXXX'
+--data-urlencode 'token.card_last_four=XXXX' \
+--data-urlencode 'token.type=TOKEN' \
+--data-urlencode 'token.par=V0010013925017224434990776776'
