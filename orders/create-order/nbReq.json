@@ -1,20 +1,17 @@
-{
-    "merchant_id": "kotaksecurities",
-    "order.order_id": "{{$timestamp}}",
-    "order.amount": "1",
-    "order.metadata.bank_account_details": "[{\"bank_account_number\":\"00011111111623\",\"bank_ifsc\":\"JUS0011222\"},{\"bank_account_number\":\"00011111111623\",\"bank_ifsc\":\"JUS0011222\"}]",
+curl --location 'https://sandbox.juspay.in/txns' \
+--header 'Content-Type: application/json' \
+--header 'x-merchantid: juspay_test' \
+--header 'x-routing-id: customer_1' \
+--header 'Authorization: Basic ************' \
+--data '{
+    "merchant_id": "juspay_test",
+    "order.order_id": "test123",
+    "order.amount": "1.00",
+    "order.metadata.bank_account_details": "[{\"bank_account_number\":\"00011111111623\", \"bank_ifsc\":\"JUS0011222\"},{\"bank_account_number\":\"00011111111623\", \"bank_ifsc\":\"JUS0011222\"}]",
     "order.udf1": "A",
-    "order.udf2": "B",
-    "order.udf3": "C",
-    "order.udf4": "D",
-    "order.udf5": "E",
-    "order.udf6": "F",
-    "order.udf7": "G",
-    "order.customer_id": "kcustomer_1",
-    "order.return_url": "kotaksecurities.com",
+    "order.customer_id": "customer_1",
     "order.order_type": "TPV_PAYMENT",
     "payment_method_type": "NB",
     "payment_method": "JP_DUMMY",
-    "redirect_after_payment": "true",
     "format": "json"
-}
+}'
