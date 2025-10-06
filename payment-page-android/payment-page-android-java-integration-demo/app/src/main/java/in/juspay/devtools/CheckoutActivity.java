@@ -238,12 +238,11 @@ public class CheckoutActivity extends AppCompatActivity {
     //block:start:onBackPressed
     @Override
     public void onBackPressed() {
-        boolean handleBackpress = hyperServicesHolder.handleBackPress();
-        if(handleBackpress) {
-            super.onBackPressed();
-        }
-
-    }
+    boolean handled = hyperServicesHolder.handleBackPress();
+      if (!handled) { // only call super if not handled
+        super.onBackPressed();
+       }
+   }
     //block:end:onBackPressed
 
     private void updatingUI(){
