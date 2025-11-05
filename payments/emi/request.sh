@@ -1,5 +1,5 @@
 
-curl --location 'https://smartgateway.hdfcbank.com/v2/emi/plans' \
+curl --location 'https://smartgateway.hdfc.bank.in/v2/emi/plans' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'Authorization: Basic <base64 of Merchant API Key>' \
 --data-urlencode 'merchant_id=merchant_id' \
