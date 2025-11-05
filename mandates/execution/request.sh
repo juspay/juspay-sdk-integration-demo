@@ -1,4 +1,4 @@
-curl --location 'https://smartgatewayuat.hdfcbank.com/txns' \
+curl --location 'https://smartgateway.hdfc.bank.in/txns' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'x-merchant-id: <merchant_id>' \
 --header 'Authorization: Basic <api key in base64 format>' \

@@ -1,5 +1,5 @@
 curl POST \
-https://smartgatewayuat.hdfcbank.com/orders \
+https://smartgateway.hdfc.bank.in/orders \
  -H 'Authorization: Basic <base64 of key:>' \
  -H 'Content-Type: application/x-www-form-urlencoded'\
  -d "order_id=152664118690577-910" \

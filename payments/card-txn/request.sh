@@ -1,5 +1,5 @@
 // A regular card transaction
-curl --location 'https://smartgatewayuat.hdfcbank.com/txns' \
+curl --location 'https://smartgateway.hdfc.bank.in/txns' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'x-merchantid: merchant_id' \
 --data-urlencode 'order_id=TEST23' \
@@ -16,7 +16,7 @@ curl --location 'https://smartgatewayuat.hdfcbank.com/txns' \
 --data-urlencode 'format=json'
 
 // A Stored card transaction
-curl -X POST https://smartgateway.hdfcbank.com/txns \
+curl -X POST https://smartgateway.hdfc.bank.in/txns \
 -d "order_id=:order_id" \
 -d "merchant_id=:merchant_id" \
 -d "payment_method_type=CARD" \
