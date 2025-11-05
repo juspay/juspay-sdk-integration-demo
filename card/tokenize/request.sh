@@ -1,4 +1,4 @@
-curl https://smartgateway.hdfcbank.com/card/tokenize \
+curl https://smartgateway.hdfc.bank.in/card/tokenize \
     -d "card_number=4111111111111111" \
     -d "card_exp_year=2015" \
     -d "card_exp_month=07" \
