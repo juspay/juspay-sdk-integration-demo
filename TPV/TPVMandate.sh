@@ -1,4 +1,4 @@
-curl --location 'https://smartgatewayuat.hdfcbank.com/session' \
+curl --location 'https://smartgateway.hdfcuat.bank.in/session' \
 --header 'Content-Type: application/json' \
 --header 'x-merchantid: <merchant_id>' \
 --header 'x-customerid: CUST001' \
