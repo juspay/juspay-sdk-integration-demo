@@ -1,4 +1,4 @@
-curl --location -g --request POST 'https://smartgatewayuat.hdfcbank.com/v4/orders/{order_id}/refunds' \
+curl --location -g --request POST 'https://smartgateway.hdfcuat.bank.in/v4/orders/{order_id}/refunds' \
 --header 'x-merchantid: testhdfc1' \
 --header 'Content-Type: application/json' \
 --data-raw '{
