@@ -34,9 +34,9 @@
         },
         "payment_page_client_id": "hdfcmaster",
         "payment_links": {
-          "mobile": "https://smartgatewayuat.hdfcbank.com/payment-page/order/ordeh_19235629b08c40439c0f34d2e31e3437",
-          "web": "https://smartgatewayuat.hdfcbank.com/payment-page/order/ordeh_19235629b08c40439c0f34d2e31e3437",
-          "iframe": "https://smartgatewayuat.hdfcbank.com/payment-page/order/ordeh_19235629b08c40439c0f34d2e31e3437"
+          "mobile": "https://smartgateway.hdfcuat.bank.in/payment-page/order/ordeh_19235629b08c40439c0f34d2e31e3437",
+          "web": "https://smartgateway.hdfcuat.bank.in/payment-page/order/ordeh_19235629b08c40439c0f34d2e31e3437",
+          "iframe": "https://smartgateway.hdfcuat.bank.in/payment-page/order/ordeh_19235629b08c40439c0f34d2e31e3437"
         },
         "merchant_payload": "{\"displayBusinessAs\":\"Test hdfc securities 2\"}",
         "payment_page_sdk_payload": "{\"displayBusinessAs\":\"Test hdfc securities 2\",\"currency\":\"INR\",\"service\":\"in.juspay.hyperpay\",\"amount\":13,\"paymentFilter\":{\"emiOptions\":{\"noCostEmi\":{\"enable\":false,\"credit\":{\"enable\":false},\"cardless\":{\"enable\":false},\"debit\":{\"enable\":false}},\"standardEmi\":{\"enable\":false,\"credit\":{\"enable\":false},\"cardless\":{\"enable\":false},\"debit\":{\"enable\":false}},\"lowCostEmi\":{\"enable\":false,\"credit\":{\"enable\":false},\"cardless\":{\"enable\":false},\"debit\":{\"enable\":false}},\"showOnlyEmi\":false},\"allowDefaultOptions\":true,\"options\":[{\"enable\":true,\"paymentMethodType\":\"UPI\"},{\"enable\":false,\"paymentMethodType\":\"WALLET\"},{\"enable\":true,\"paymentMethodType\":\"CARD\"},{\"enable\":true,\"paymentMethodType\":\"NB\"},{\"enable\":false,\"paymentMethodType\":\"OTC\"},{\"enable\":false,\"paymentMethodType\":\"VIRTUAL_ACCOUNT\"},{\"enable\":false,\"paymentMethodType\":\"CONSUMER_FINANCE\"}]},\"collectAvsInfo\":false}"
@@ -45,9 +45,9 @@
       "date_created": "2025-03-26T07:09:46Z",
       "udf2": "",
       "payment_links": {
-        "mobile": "https://smartgatewayuat.hdfcbank.com/payment-page/order/ordeh_19235629b08c40439c0f34d2e31e3437",
-        "web": "https://smartgatewayuat.hdfcbank.com/payment-page/order/ordeh_19235629b08c40439c0f34d2e31e3437",
-        "iframe": "https://smartgatewayuat.hdfcbank.com/payment-page/order/ordeh_19235629b08c40439c0f34d2e31e3437"
+        "mobile": "https://smartgateway.hdfcuat.bank.in/payment-page/order/ordeh_19235629b08c40439c0f34d2e31e3437",
+        "web": "https://smartgateway.hdfcuat.bank.in/payment-page/order/ordeh_19235629b08c40439c0f34d2e31e3437",
+        "iframe": "https://smartgateway.hdfcuat.bank.in/payment-page/order/ordeh_19235629b08c40439c0f34d2e31e3437"
       },
       "customer_email": null,
       "customer_phone": null,
