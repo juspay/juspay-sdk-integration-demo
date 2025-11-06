@@ -1,4 +1,4 @@
-curl --location --globoff 'https://smartgatewayuat.hdfcbank.com/orders/{order_id}/refunds' \
+curl --location --globoff 'https://smartgateway.hdfcuat.bank.in/orders/{order_id}/refunds' \
 --header 'x-merchantid: merchant_id' \
 --header 'x-customerid: customer_id' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
