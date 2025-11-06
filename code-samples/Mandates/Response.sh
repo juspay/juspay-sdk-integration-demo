@@ -3,7 +3,7 @@
     "id": "ordeh_7198be7d5cae492ebdbacf61a0d56e82",
     "order_id": "JP_1724825476",
     "payment_links": {
-        "web": "https://smartgatewayuat.hdfcbank.com/payment-page/order/ordeh_7198be7d5cae492ebdbacf61a0d56e82",
+        "web": "https://smartgateway.hdfcuat.bank.in/payment-page/order/ordeh_7198be7d5cae492ebdbacf61a0d56e82",
         "expiry": "2024-09-04T06:11:16Z"
     },
     "sdk_payload": {
