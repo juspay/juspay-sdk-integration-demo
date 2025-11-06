@@ -3,7 +3,7 @@
     "id": "ordeh_5e85048a635d4250b81fcf81c91ec328",
     "order_id": "dedSddfd4",
     "payment_links": {
-        "web": "https://smartgatewayuat.hdfcbank.com/payment-page/order/ordeh_5e85048a635d4250b81fcf81c91ec328",
+        "web": "https://smartgateway.hdfcuat.bank.in/payment-page/order/ordeh_5e85048a635d4250b81fcf81c91ec328",
         "expiry": "2024-12-18T05:28:44Z"
     },
     "sdk_payload": {

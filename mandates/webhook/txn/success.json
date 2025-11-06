@@ -39,15 +39,15 @@
       },
       "status_id": 21,
       "status": "CHARGED",
-      "return_url": "https://smartgatewayuat.hdfcbank.com",
+      "return_url": "https://smartgateway.hdfcuat.bank.in",
       "refunded": false,
       "product_id": "",
       "payment_method_type": "UPI",
       "payment_method": "UPI",
       "payment_links": {
-        "web": "https://smartgatewayuat.hdfcbank.com/merchant/pay/ordeu_9a092980*******4d0206",
-        "mobile": "https://smartgatewayuat.hdfcbank.com/merchant/pay/ordeu_9a092980*******4d0206?mobile=true",
-        "iframe": "https://smartgatewayuat.hdfcbank.com/merchant/ipay/ordeu_9a092980*******4d0206"
+        "web": "https://smartgateway.hdfcuat.bank.in/merchant/pay/ordeu_9a092980*******4d0206",
+        "mobile": "https://smartgateway.hdfcuat.bank.in/merchant/pay/ordeu_9a092980*******4d0206?mobile=true",
+        "iframe": "https://smartgateway.hdfcuat.bank.in/merchant/ipay/ordeu_9a092980*******4d0206"
       },
       "payment_gateway_response": {
         "txn_id": "juspay-2348******3498-1",

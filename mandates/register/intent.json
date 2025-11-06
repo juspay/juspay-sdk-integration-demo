@@ -28,7 +28,7 @@
         },
         "authentication": {
             "method": "GET",
-            "url": "https://smartgatewayuat.hdfcbank.com/v2/pay/start/testhdfc1/mozLNwqRDFcz2UdPMz2?cardIssuerBankName%3DUPI_PAY%26cardType%3DUPI%26paymentMethod%3DUPI_PAY%26paymentMethodType%3DUPI"
+            "url": "https://smartgateway.hdfcuat.bank.in/v2/pay/start/testhdfc1/mozLNwqRDFcz2UdPMz2?cardIssuerBankName%3DUPI_PAY%26cardType%3DUPI%26paymentMethod%3DUPI_PAY%26paymentMethodType%3DUPI"
         }
     },
     "status": "PENDING_VBV",
