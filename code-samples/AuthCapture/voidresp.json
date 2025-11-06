@@ -30,9 +30,9 @@
     "resp_message": null,
     "udf2": "",
     "payment_links": {
-        "mobile": "https://smartgateway.hdfcbank.com/payment-page/order/ordeh_bd553e4f8be846af8aa72cd4ecc38f36",
-        "web": "https://smartgateway.hdfcbank.com/payment-page/order/ordeh_bd553e4f8be846af8aa72cd4ecc38f36",
-        "iframe": "https://smartgateway.hdfcbank.com/payment-page/order/ordeh_bd553e4f8be846af8aa72cd4ecc38f36"
+        "mobile": "https://smartgateway.hdfc.bank.in/payment-page/order/ordeh_bd553e4f8be846af8aa72cd4ecc38f36",
+        "web": "https://smartgateway.hdfc.bank.in/payment-page/order/ordeh_bd553e4f8be846af8aa72cd4ecc38f36",
+        "iframe": "https://smartgateway.hdfc.bank.in/payment-page/order/ordeh_bd553e4f8be846af8aa72cd4ecc38f36"
     },
     "customer_email": "prathamesh.rane@juspay.in",
     "customer_phone": "8604613494",
