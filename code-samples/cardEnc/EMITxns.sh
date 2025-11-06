@@ -1,4 +1,4 @@
-curl --location --request POST 'https://smartgateway.hdfcbank.com/txns' \
+curl --location --request POST 'https://smartgateway.hdfc.bank.in/txns' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'Authorization: Basic Base64Encoded API KEY' \
 --data-urlencode 'order_id=T_1750263333' \
