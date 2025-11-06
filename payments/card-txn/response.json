@@ -2,7 +2,7 @@
     "payment": {
         "authentication": {
             "method": "GET",
-            "url": "https://smartgatewayuat.hdfcbank.com/v1/currency-conversion/testhdfc1/mozd3JTEeKaMepMxKtu?cardIssuerBankName%3DICICI%20BANK%26cardType%3DCREDIT%26paymentMethod%3DVISA%26paymentMethodType%3DCARD"
+            "url": "https://smartgatewayuat.hdfc.bank.in/v1/currency-conversion/testhdfc1/mozd3JTEeKaMepMxKtu?cardIssuerBankName%3DICICI%20BANK%26cardType%3DCREDIT%26paymentMethod%3DVISA%26paymentMethodType%3DCARD"
         }
     },
     "status": "PENDING_VBV",
