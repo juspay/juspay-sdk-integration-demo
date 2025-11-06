@@ -36,9 +36,9 @@
       "resp_message": null,
       "udf2": "",
       "payment_links": {
-        "mobile": "https://smartgateway.hdfcbank.com/payment-page/order/ordeh_2633f5a7c8744053b521dc20be55dbe8",
-        "web": "https://smartgateway.hdfcbank.com/payment-page/order/ordeh_2633f5a7c8744053b521dc20be55dbe8",
-        "iframe": "https://smartgateway.hdfcbank.com/payment-page/order/ordeh_2633f5a7c8744053b521dc20be55dbe8"
+        "mobile": "https://smartgateway.hdfc.bank.in/payment-page/order/ordeh_2633f5a7c8744053b521dc20be55dbe8",
+        "web": "https://smartgateway.hdfc.bank.in/payment-page/order/ordeh_2633f5a7c8744053b521dc20be55dbe8",
+        "iframe": "https://smartgateway.hdfc.bank.in/payment-page/order/ordeh_2633f5a7c8744053b521dc20be55dbe8"
       },
       "customer_email": null,
       "customer_phone": "9999999999",
