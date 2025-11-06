@@ -1,4 +1,4 @@
-curl --location 'https://smartgatewayuat.hdfcbank.com/orders' \
+curl --location 'https://smartgateway.hdfcuat.bank.in/orders' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'x-merchantid: <merchant_id>' \
 --header 'x-customerid: CUST001' \
