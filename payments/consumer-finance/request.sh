@@ -1,5 +1,5 @@
 curl --request POST \
-     --url https://smartgateway.hdfcbank.com/txns \
+     --url https://smartgateway.hdfc.bank.in/txns \
      --header 'accept: application/json' \
      --header 'authorization: Basic OUU4xxxxxEU2NjxxxxxxQTQzMEM2RkFDMjcyQjM5Og==' \
      --header 'content-type: application/x-www-form-urlencoded'
