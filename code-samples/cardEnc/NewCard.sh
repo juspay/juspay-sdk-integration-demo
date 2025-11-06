@@ -1,4 +1,4 @@
-curl --location --request POST 'https://smartgatewayuat.hdfcbank.com/txns' \
+curl --location --request POST 'https://smartgateway.hdfcuat.bank.in/txns' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'x-merchantid: SG1151' \
 --header 'Authorization: Basic Q***********************************COg==' \
