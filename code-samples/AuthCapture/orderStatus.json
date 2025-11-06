@@ -13,9 +13,9 @@
     "return_url": "https://google.co.in",
     "product_id": "",
     "payment_links": {
-        "mobile": "https://smartgateway.hdfcbank.com/payment-page/order/ordeh_20488000296743c49501b866bbc99d37",
-        "web": "https://smartgateway.hdfcbank.com/payment-page/order/ordeh_20488000296743c49501b866bbc99d37",
-        "iframe": "https://smartgateway.hdfcbank.com/payment-page/order/ordeh_20488000296743c49501b866bbc99d37"
+        "mobile": "https://smartgateway.hdfc.bank.in/payment-page/order/ordeh_20488000296743c49501b866bbc99d37",
+        "web": "https://smartgateway.hdfc.bank.in/payment-page/order/ordeh_20488000296743c49501b866bbc99d37",
+        "iframe": "https://smartgateway.hdfc.bank.in/payment-page/order/ordeh_20488000296743c49501b866bbc99d37"
     },
     "udf1": "",
     "udf2": "",

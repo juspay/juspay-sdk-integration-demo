@@ -4,8 +4,8 @@
     "id": "ordeh_fbcf7cb4d496481bb7cc82ecc225e2f6",
     "order_id": "T1740144839",
     "payment_links": {
-        "mobile": "https://smartgateway.hdfcbank.com/payment-page/order/ordeh_fbcf7cb4d496481bb7cc82ecc225e2f6",
-        "web": "https://smartgateway.hdfcbank.com/payment-page/order/ordeh_fbcf7cb4d496481bb7cc82ecc225e2f6",
-        "iframe": "https://smartgateway.hdfcbank.com/payment-page/order/ordeh_fbcf7cb4d496481bb7cc82ecc225e2f6"
+        "mobile": "https://smartgateway.hdfc.bank.in/payment-page/order/ordeh_fbcf7cb4d496481bb7cc82ecc225e2f6",
+        "web": "https://smartgateway.hdfc.bank.in/payment-page/order/ordeh_fbcf7cb4d496481bb7cc82ecc225e2f6",
+        "iframe": "https://smartgateway.hdfc.bank.in/payment-page/order/ordeh_fbcf7cb4d496481bb7cc82ecc225e2f6"
     }
 }

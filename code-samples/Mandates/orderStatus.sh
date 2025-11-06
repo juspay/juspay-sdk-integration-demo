@@ -13,9 +13,9 @@
     "return_url": "https://www.google.com",
     "product_id": "",
     "payment_links": {
-        "iframe": "https://smartgatewayuat.hdfcbank.com/payment-page/order/ordeh_11cd7357643848f184357757b12ff620",
-        "web": "https://smartgatewayuat.hdfcbank.com/payment-page/order/ordeh_11cd7357643848f184357757b12ff620",
-        "mobile": "https://smartgatewayuat.hdfcbank.com/payment-page/order/ordeh_11cd7357643848f184357757b12ff620"
+        "iframe": "https://smartgateway.hdfcuat.bank.in/payment-page/order/ordeh_11cd7357643848f184357757b12ff620",
+        "web": "https://smartgateway.hdfcuat.bank.in/payment-page/order/ordeh_11cd7357643848f184357757b12ff620",
+        "mobile": "https://smartgateway.hdfcuat.bank.in/payment-page/order/ordeh_11cd7357643848f184357757b12ff620"
     },
     "udf1": "",
     "udf2": "",
@@ -101,9 +101,9 @@
         "payment_page_sdk_payload": "{\"amount\":\"1.00\",\"service\":\"in.juspay.hyperpay\",\"lastName\":\"rane\",\"action\":\"paymentPage\",\"currency\":\"INR\",\"firstName\":\"prathamesh\",\"customerPhone\":\"8604613494\",\"customerEmail\":\"prathamesh.rane@juspay.in\",\"description\":\"Complete your payment\",\"displayBusinessAs\":\"Fashion Retailer\"}",
         "merchant_payload": "{\"customerPhone\":\"8604613494\",\"customerEmail\":\"prathamesh.rane@juspay.in\",\"displayBusinessAs\":\"Fashion Retailer\"}",
         "payment_links": {
-            "iframe": "https://smartgatewayuat.hdfcbank.com/payment-page/order/ordeh_11cd7357643848f184357757b12ff620",
-            "web": "https://smartgatewayuat.hdfcbank.com/payment-page/order/ordeh_11cd7357643848f184357757b12ff620",
-            "mobile": "https://smartgatewayuat.hdfcbank.com/payment-page/order/ordeh_11cd7357643848f184357757b12ff620"
+            "iframe": "https://smartgateway.hdfcuat.bank.in/payment-page/order/ordeh_11cd7357643848f184357757b12ff620",
+            "web": "https://smartgateway.hdfcuat.bank.in/payment-page/order/ordeh_11cd7357643848f184357757b12ff620",
+            "mobile": "https://smartgateway.hdfcuat.bank.in/payment-page/order/ordeh_11cd7357643848f184357757b12ff620"
         },
         "order_expiry": "2024-06-07T13:18:24Z",
         "payment_page_client_id": "hdfcmaster"
