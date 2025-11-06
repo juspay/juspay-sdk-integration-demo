@@ -52,9 +52,9 @@
     "payment_method_type": "WALLET",
     "payment_method": "GOOGLEPAY",
     "payment_links": {
-      "web": "https://smartgatewayuat.hdfcbank.com/merchant/ipay/ordeh_57dfd768bb7d4896bc042y0b90bc9ad77",
-      "mobile": "https://smartgatewayuat.hdfcbank.com/merchant/ipay/ordeh_57dfd768bb7d4896bc042y0b90bc9ad77?mobile=true",
-      "iframe": "https://smartgatewayuat.hdfcbank.com/merchant/ipay/ordeh_57dfd768bb7d4896bc042y0b90bc9ad77"
+      "web": "https://smartgateway.hdfcuat.bank.in/merchant/ipay/ordeh_57dfd768bb7d4896bc042y0b90bc9ad77",
+      "mobile": "https://smartgateway.hdfcuat.bank.in/merchant/ipay/ordeh_57dfd768bb7d4896bc042y0b90bc9ad77?mobile=true",
+      "iframe": "https://smartgateway.hdfcuat.bank.in/merchant/ipay/ordeh_57dfd768bb7d4896bc042y0b90bc9ad77"
     },
     "payment_gateway_response": {
       "txn_id": "merchantId-145678234-1",
