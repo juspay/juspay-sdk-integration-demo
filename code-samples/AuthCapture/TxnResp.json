@@ -2,7 +2,7 @@
     "payment": {
         "authentication": {
             "method": "GET",
-            "url": "https://smartgateway.hdfcbank.com/v2/txns/deviceInformation/34436/T1740144839/mozdt1MD57QVScgqunX"
+            "url": "https://smartgateway.hdfcuat.bank.in/v2/txns/deviceInformation/34436/T1740144839/mozdt1MD57QVScgqunX"
         }
     },
     "status": "PENDING_VBV",
