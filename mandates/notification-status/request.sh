@@ -1,1 +1,1 @@
-curl GET 'https://smartgatewayuat.hdfcbank.com/notifications/2QNPw8KSbpHL122bNPgA04' \
+curl GET 'https://smartgateway.hdfcuat.bank.in/notifications/2QNPw8KSbpHL122bNPgA04' \
