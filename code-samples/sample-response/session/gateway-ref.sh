@@ -1,4 +1,4 @@
-curl --location --request POST ‘https://smartgatewayuat.hdfcbank.com/session’ \
+curl --location --request POST ‘https://smartgateway.hdfcuat.bank.in/session’ \
 --header ‘x-merchantid: yourMerchantId’ \
 --header ‘Authorization: Basic base64encodedkey==’ \
 --header ‘Content-Type: application/json’ \
