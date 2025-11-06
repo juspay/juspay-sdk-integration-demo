@@ -1,4 +1,4 @@
-curl --location 'https://smartgatewayuat.hdfcbank.com/txns' \
+curl --location 'https://smartgateway.hdfcuat.bank.in/txns' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'x-merchantid: merchantid \
 --data-urlencode 'order_id=DW-1dvn6nL9AD' \
