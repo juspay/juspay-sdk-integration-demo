@@ -1,4 +1,4 @@
-curl --location --request POST 'https://smartgateway.hdfcbank.com/session' \
+curl --location --request POST 'https://smartgateway.hdfc.bank.in/session' \
 --header 'x-merchantid: 34436' \
 --header 'Content-Type: application/json' \
 --header 'version: 2024-05-01' \
