@@ -1,4 +1,4 @@
-curl --location --request POST 'https://smartgateway.hdfcbank.com/txns' \
+curl --location --request POST 'https://smartgateway.hdfc.bank.in/txns' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'x-merchantid: 34436' \
 --header 'x-routing-id: customer_id' \
