@@ -85,6 +85,7 @@ class CheckoutViewController: UIViewController {
         // And all the API calls requiring API key should always be done from server
         request.addValue("Basic \(Data("<YOUR_API_KEY>".utf8).base64EncodedString())", forHTTPHeaderField: "Authorization")
         request.addValue("<MERCHANT_ID>", forHTTPHeaderField: "x-merchantid")
+        request.addValue("<CLIENT_ID>", forHTTPHeaderField: "x-routing-id")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 
         request.httpMethod = "POST"
