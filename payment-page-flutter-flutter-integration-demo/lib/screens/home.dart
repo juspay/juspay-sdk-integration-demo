@@ -96,6 +96,7 @@ class _HomeScreenState extends State<HomeScreen> {
           "action": "initiate",
           "merchantId": "<MERCHANT_ID>",
           "clientId": "<CLIENT_ID>",
+          "xRoutingId": "<X_ROUTING_ID>",
           "environment": "production"
         }
       };
