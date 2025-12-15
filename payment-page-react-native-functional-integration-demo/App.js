@@ -32,6 +32,7 @@ const App = () => {
         action: 'initiate',
         merchantId: '<MERCHANT_ID>',
         clientId: '<CLIENT_ID>',
+        XRoutingId: '<X_ROUTING_ID>',
         environment: 'production',
       },
     };
