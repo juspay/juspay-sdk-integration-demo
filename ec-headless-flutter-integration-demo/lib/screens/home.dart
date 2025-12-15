@@ -11,6 +11,7 @@ void initiateHyperSDK() async {
         "action": "initiate",
         "merchantId": "<merchant-id>",
         "clientId": "<client-id>",
+        "xRoutingId": "<x-routing-id>",
         "environment": "production"
       }
     };
