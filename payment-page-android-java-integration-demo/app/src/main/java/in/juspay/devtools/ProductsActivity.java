@@ -79,8 +79,9 @@ public class ProductsActivity extends AppCompatActivity {
         try {
             // generating inner payload
             innerPayload.put("action", "initiate");
-            innerPayload.put("merchantId", "<MERCHANT_ID>");    // Put your Merchant ID here
+            innerPayload.put("merchantId", "<MERCHANT_ID>");      // Put your Merchant ID here
             innerPayload.put("clientId", "<CLIENT_ID>");          // Put your Client ID here
+            innerPayload.put("xRoutingId", "<X_ROUTING_ID>");     // Put your X-Routing ID here
             innerPayload.put("environment", "production");
             sdkPayload.put("requestId",  ""+ UUID.randomUUID());
             sdkPayload.put("service", "in.juspay.hyperpay");
