@@ -69,6 +69,7 @@ class ProductsActivity : AppCompatActivity() {
             innerPayload.put("action", "initiate")
             innerPayload.put("merchantId", "<MERCHANT_ID>")   //Your Merchant ID here
             innerPayload.put("clientId", "<CLIENT_ID>")       //Your Client ID here
+            innerPayload.put("xRoutingId", "<X_ROUTING_ID>")    //Your X Routing ID here
             innerPayload.put("environment", "production")
             sdkPayload.put("requestId", "" + UUID.randomUUID())
             sdkPayload.put("service", "in.juspay.hyperpay")
