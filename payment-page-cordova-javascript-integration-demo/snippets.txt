@@ -30,6 +30,7 @@ function createInitiatePayload() {
             action: "initiate",
             merchantId: "<your_merchant_id>",
             clientId: "<your_client_id>",
+            xRoutingId: "x_routing_id>",
             environment: "production"
         }
     };
