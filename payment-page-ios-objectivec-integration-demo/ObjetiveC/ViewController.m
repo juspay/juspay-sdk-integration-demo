@@ -31,6 +31,7 @@
         @"action": @"initiate",
         @"merchantId": @"<MERCHANT_ID>",
         @"clientId": @"<CLIENT_ID>",
+        @"x-routing-id": @"<CLIENT_ID>",
         @"environment": @"production"
     };
 
@@ -52,6 +53,7 @@
     //Payload received from Session API call
     NSDictionary *sdkProcessPayload = @{
         @"clientId": @"<your_client_id>",
+        @"x-routing-id": @"<your_client_id>",
         @"amount": @"1.0",
         @"merchantId": @"<your_merchant_id>",
         @"clientAuthToken": @"tkn_xxxxxxxxxxxxxxxxxxxxx",

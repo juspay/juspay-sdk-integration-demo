@@ -47,6 +47,7 @@ class ProductsViewController: UIViewController {
             "action": "initiate",
             "merchantId": "testhdfc1",
             "clientId": "hdfcmaster",
+            "xRoutingId": "x-routing-id-value",
             "environment": "sandbox"
         ];
         
