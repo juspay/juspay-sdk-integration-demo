@@ -1,0 +1,44 @@
+buildscript {
+    ext.kotlin_version = '1.6.0'
+
+    //Add the clientId ext property
+    // block:start:client-id-extention
+    // In android/build.gradle ext block add clientConfigs instead of clientId
+    ext {
+        clientConfigs = [
+            <client_id>: {
+                return [
+                        tenantName: "<tenant_name>"
+                ]
+            }
+        ]
+        hyperSDKVersion = "2.2.3"
+    }
+    // block:end:client-id-extention
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+    project.evaluationDependsOn(':app')
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
