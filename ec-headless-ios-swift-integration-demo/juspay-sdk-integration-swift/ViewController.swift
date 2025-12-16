@@ -35,6 +35,7 @@ class ViewController: UIViewController {
             "merchantId": "<MERCHANT_ID>",
             "clientId": "<CLIENT_ID>",
             "customerId": "<CUSTOMER_ID>",
+            "xRoutingId": "<X_ROUTING_ID>",
             "environment": "prod"
         ];
 
