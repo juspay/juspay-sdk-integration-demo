@@ -1,22 +1,51 @@
 {
-  "order_id" : ":order_id",
-  "txn_id"   : ":txn_id",
-  "status"   : "PENDING_VBV",
-  "payment"  : {
-   "authentication": {
-   "method": "POST",
-   "url": "https://api.juspay.in/v2/txns/:id/authenticate",
-   "params": {
-           "id"                    : "8646a7a0xxxxxxxxxx95fec00340a507",
-           "challenge_id"          : "ch_xyz",
-           "auth_method"           : "OTP",
-           "card_isin"             : "424242",
-           "card_issuer_bank_name" : "AXIS BANK LTD",
-           "times_otp_sent"        : 2,
-           "max_otp_send_limit"    : 4,
-           "current_attempt"       : 1,
-           "max_attempts"          : 4,
-   }
-   }
-  }
+    "gateway": "CYBERSOURCE",
+    "payment": {
+        "authentication": {
+            "method": "GET",
+            "url": "https://smartgateway.hdfcuat.bank.in/v2/txns/:txn_uuid/authenticate",
+            "params": {
+                "card_issuer_bank_name": "Axis Bank",
+                "id": "txn_uuid",
+                "fallback_url": "https://smartgateway.hdfcuat.bank.in/v2/pay/start/testhdfc1/moz3C1sYSVgAxme31pL?cardIssuerBankName%3DAxis%20Bank%26cardType%3DCREDIT%26paymentMethod%3DVISA%26paymentMethodType%3DCARD",
+                "challenge_id": "ch_xyz",
+                "resend_otp_allowed": true,
+                "auth_type": "OTP",
+                "submit_otp_allowed": true,
+                "card_isin": "44**06",
+                "card_brand": "VISA"
+            }
+        }
+    },
+    "status": "PENDING_VBV",
+    "id": "moz3C1sYSVgAxme31pL",
+    "payment_info": {
+        "card": {
+            "extended_card_type": "CREDIT",
+            "token_type": "ALT_ID",
+            "tokens": [],
+            "last_four_digits": "2986",
+            "card_reference": "",
+            "payment_account_reference": "V00100****0002347651786",
+            "card_type": "CREDIT",
+            "card_issuer": "Axis Bank",
+            "expiry_month": "03",
+            "card_fingerprint": "2j965k6pta***5ppvqnoeki",
+            "saved_to_locker": false,
+            "using_token": false,
+            "using_saved_card": false,
+            "name_on_card": "PRATHAMESH",
+            "card_isin": "44***6",
+            "expiry_year": "2027",
+            "card_brand": "VISA",
+            "card_issuer_country": "INDIA"
+        },
+        "payment_method": "VISA",
+        "payment_method_type": "CARD"
+    },
+    "resp_message": "",
+    "created": "2026-01-09T05:54:10Z",
+    "resp_code": "",
+    "order_id": "DOTP312312",
+    "txn_id": "testhdfc1-DOTP1234-1"
 }
