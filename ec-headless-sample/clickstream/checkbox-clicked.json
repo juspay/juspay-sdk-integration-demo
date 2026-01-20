@@ -1,0 +1,11 @@
+{
+  "category": "action",
+  "subcategory": "system",
+  "label": "checkbox_clicked",
+  "value": {
+      "checkbox_details": {
+          "checkbox_name": "save_card",
+          "state": "selected"
+      }
+  }
+}

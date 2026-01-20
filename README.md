@@ -3,6 +3,25 @@
 ### What is this repository for? ###
 
 * This repo is being used for Juspay Documentation made using tesseract repo
+* This directory contains demo integration project for Juspay's suite of products
+
+Refer to our [Developer Docs](https://docs.juspay.in/) for details around the integration process.
+
+### Maintained Examples
+
+| Folder Name                  | Product                                  | Platform                                   |
+|------------------------------|------------------------------------------|--------------------------------------------|
+| api-reference                | Collection of APIs used across products  | Agnostic                                   |
+| ec-headless-sample           | Express Checkout SDK                     | Andriod, iOS, Flutter, React, Cordova      |
+| payment-page-android         | Payment Page                             | Android                                    |
+| payment-page-ios             | Payment Page                             | iOS                                        |
+| payment-page-web             | Payment Page                             | Web                                        |
+| payment-page-flutter         | Payment Page                             | Flutter                                    |
+| payment-page-cordova         | Payment page                             | Cordova                                    |
+| payment-page-react-native    | Payment page                             | React Native                               |
+| payment-page-payment-locking | Payment locking feature for Payment Page | Andriod, iOS, Flutter, React, Cordova      |
+| payv3-forms                  | payv3                                    | Web                                        |
+| payment-page-sample-payload  | Sample payload for payment page          | Andriod, iOS, Flutter, React, Cordova, Web |
 
 ### How do I get set up? ###
 

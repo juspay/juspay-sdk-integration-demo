@@ -1,0 +1,30 @@
+<html>
+    <head>
+    </head>
+    <body>
+    </body>
+    <script type="text/javascript">
+       var microAppId = 'in.juspay.inappupi';
+        document.title = microAppId;
+        window.JBridge = top.JBridge;
+        window.Android = top.Android;
+        window.DUIGatekeeper = window.JBridge;
+        window.__OS = "IOS";
+        window.__DEVICE_DETAILS = JSON.parse(JBridge.deviceDetails());
+        
+        var headID = document.getElementsByTagName("head")[0];
+        var newScript = document.createElement('script');
+        newScript.type = 'text/javascript';
+        newScript.id = microAppId;
+        var innerHTML = "";
+        if (parseInt(JBridge.getValueFromPlistForKey("dev_build"))) {
+            innerHTML = JBridge.loadFileInDUI('payments-in.juspay.inappupi-v1-index_bundle.js');
+        }
+        if (innerHTML.length == 0) {
+            innerHTML = JBridge.loadFileInDUI('payments-in.juspay.inappupi-v1-index_bundle.jsa');
+        }
+        newScript.innerHTML = innerHTML;
+        headID.appendChild(newScript);
+    </script>
+</html>
+

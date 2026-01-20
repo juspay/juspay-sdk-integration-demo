@@ -1,0 +1,8 @@
+{
+   "category":"action",
+   "subcategory":"user",
+   "label":"cvv_changed",
+   "value":{
+      "AddCardScreen":"XXX"
+   }
+}

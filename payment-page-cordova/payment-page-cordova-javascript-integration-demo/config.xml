@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>DevTools Cordova</name>
+    <description>Juspay SDK Integration Demo</description>
+    <author email="arbinda.prasad@juspay.in" href="https://juspay.in">
+        Juspay SDK Team
+    </author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <!-- <access origin="https://sandbox.juspay.in/session" subdomains="true" /> -->
+    <access origin="*" />
+    <!-- <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" /> -->
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <preference name="AndroidInsecureFileModeEnabled" value="true" />
+    <preference name="AndroidXEnabled" value="true" />
+    <preference name="loadUrlTimeoutValue" value="700000" />
+</widget>

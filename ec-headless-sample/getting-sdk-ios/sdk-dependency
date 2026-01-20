@@ -1,0 +1,4 @@
+# Adding Hyper SDK dependecy
+  # block:start:adding-hyper-sdk-pod
+  pod 'HyperSDK', '2.1.15'
+  # block:end:adding-hyper-sdk-pod

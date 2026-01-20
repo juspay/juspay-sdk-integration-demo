@@ -1,0 +1,20 @@
+{
+    "service": "in.juspay.hyperapi",
+    "requestId": "6fd3bb9a-4583-42f5-a16c-71109906e1f3",
+    "payload": {
+        "action": "upiTxn",
+        "availableApps": [
+            {
+                "packageName": "com.myairtelapp",
+                "appName": "Airtel"
+            },
+            {
+                "packageName": "com.phonepe.app",
+                "appName": "PhonePe"
+            }
+        ]
+    },
+    "errorMessage": "",
+    "errorCode": "",
+    "error": false
+}

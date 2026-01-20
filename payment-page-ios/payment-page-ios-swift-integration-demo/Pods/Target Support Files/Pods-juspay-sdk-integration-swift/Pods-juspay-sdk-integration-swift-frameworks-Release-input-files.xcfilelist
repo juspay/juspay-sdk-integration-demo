@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-juspay-sdk-integration-swift/Pods-juspay-sdk-integration-swift-frameworks.sh
+${PODS_ROOT}/HyperSDK/HyperSDK.framework
+${PODS_ROOT}/JuspaySafeBrowser/JuspaySafeBrowser.framework
+${PODS_ROOT}/Salvator/Salvator.framework

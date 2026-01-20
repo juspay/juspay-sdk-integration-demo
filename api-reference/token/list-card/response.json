@@ -1,0 +1,35 @@
+{
+  "customer_id": "cth_6MXbUUSECcxrswgT",
+  "merchantId": "guest",
+  "cards": [{
+          "card_token": "tkn_24c960735fd64cb9b8c0221102392914",
+          "card_reference": "e46b3e15384db06d446fed103cfeec24",
+          "card_number": "4335-XXXXXXXX-2216",
+          "card_isin": "433587",
+          "card_exp_year": "2023",
+          "card_exp_month": "04",
+          "card_type": "CREDIT",
+          "card_issuer": "SBI",
+          "card_brand": "VISA",
+          "nickname": "",
+          "name_on_card": "name",
+          "expired": false,
+          "card_fingerprint": "6uvve3h71mpgrr88848hr4vsat",
+          "juspay_bank_code": "JP_SBI",
+          "card_sub_type": "NA",
+          "card_issuer_country": "INDIA",
+          "tokenize_support": false,
+          "provider_category": "CONTAINER",
+          "provider": "JUSPAY",
+          "token": {
+              "card_reference": "e46b3e15384db06d446fed103cfeec24",
+              "last_four_digits": null,
+              "card_fingerprint": "6uvve3h71mpgrr88848hr4vsat",
+              "card_isin": "441962",
+              "expiry_month": "04",
+              "expiry_year": "2023",
+              "par": "4ufhxxw6uvve3h71mpgrr88848hr4vsat23r",
+              "tokenization_status": "ACTIVE"
+          }
+      }]
+}

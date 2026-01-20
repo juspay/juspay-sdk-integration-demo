@@ -1,0 +1,6 @@
+framework module Pods_juspay_sdk_integration_swift {
+  umbrella header "Pods-juspay-sdk-integration-swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

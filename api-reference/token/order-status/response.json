@@ -1,0 +1,28 @@
+{
+  "card": {
+      "expiry_year": "2023",
+      "saved_to_locker": false,
+      "expiry_month": "06",
+      "name_on_card": "test",
+      "card_issuer": "Axis Bank",
+      "last_four_digits": "5449",
+      "using_saved_card": true,
+      "card_fingerprint": "41d30s3jus955dj9yyhe5is91",
+      "card_isin": "526731",
+      "card_type": "DEBIT",
+      "card_brand": "MASTERCARD",
+      "card_sub_type": null,
+      "tokenization_user_consent": true,
+  "token": {
+    "card_reference": "77efb38f3721930e60dby754865619",
+    "last_four_digits": "7656",
+    "card_fingerprint": "41d30s3jus955dj9yyhe5is91",
+    "card_isin": "525876",
+    "expiry_year": "2023",
+    "expiry_month": "06",
+    "par": "6fgd63jus955dj9yyheg4gh6",
+    "tokenization_status": "ACTIVE"
+  },
+      "using_token": false
+  }
+}

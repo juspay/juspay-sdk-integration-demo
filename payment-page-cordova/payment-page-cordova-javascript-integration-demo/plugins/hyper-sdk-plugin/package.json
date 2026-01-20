@@ -1,0 +1,28 @@
+{
+  "name": "hyper-sdk-plugin",
+  "version": "2.0.22",
+  "description": "Cordova plugin for HyperSDK which enables payment orchestration via different dynamic modules. More details available at https://developer.juspay.in/v2.0/docs/introduction . Some part of module depends heavily on native functionalities and are not updatable dynamically.",
+  "cordova": {
+    "id": "hyper-sdk-plugin",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "xml2js": "^0.4.17"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/juspay/hyper-sdk-cordova.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Juspay Technologies PVT LTD",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/juspay/hyper-sdk-cordova#readme"
+}

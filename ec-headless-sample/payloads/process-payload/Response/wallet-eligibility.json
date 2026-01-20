@@ -1,0 +1,31 @@
+{
+    "requestId": "7b6b21a3-0148-4188-98de-eb2ff3f862f5",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "action": "eligibility",
+        "wallets": [
+            {
+                "status": "SUCCESS",
+                "paymentMethodType": "WALLET",
+                "paymentMethod": "SIMPL",
+                "isEligible": true,
+                "gatewayErrorMessage": "pending_dues",
+                "gatewayErrorCode": "pending_dues",
+                "eligibilityStrategy": "USER",
+                "description": "SIMPL PayLater",
+                "balance": 0
+            },
+            {
+                "status": "SUCCESS",
+                "paymentMethodType": "WALLET",
+                "paymentMethod": "LAZYPAY",
+                "isEligible": true,
+                "eligibilityStrategy": "TRANSACTION",
+                "description": "Lazy Pay Wallet"
+            }
+        ]
+    },
+    "error": false,
+    "errorCode": "",
+    "errorMessage": ""
+}

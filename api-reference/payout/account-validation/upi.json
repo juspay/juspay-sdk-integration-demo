@@ -1,0 +1,23 @@
+{
+  "validateResp": {
+    "subCode": "200",
+    "status": "SUCCESS",
+    "message": "VPA verification successful",
+    "data": {
+      "nameAtBank": "JOHN SNOW",
+      "accountExists": "YES"
+    }
+  },
+  "uniqueId": "ravibene5",
+  "status": "VALID",
+  "remark": "VPA verification successful",
+  "nameAtBank": "JOHN SNOW",
+  "fulfillmentMethod": "CFGEN_UPI",
+  "beneDetails": {
+    "details": {
+      "vpa": "success@upi",
+      "name": "Shubham Kumar"
+    },
+    "type": "UPI_ID"
+  }
+}

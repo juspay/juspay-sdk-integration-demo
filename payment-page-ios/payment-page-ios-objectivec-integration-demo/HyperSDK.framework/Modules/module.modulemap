@@ -1,0 +1,6 @@
+framework module HyperSDK {
+  umbrella header "HyperSDK.h"
+
+  export *
+  module * { export * }
+}

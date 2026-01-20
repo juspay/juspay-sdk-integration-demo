@@ -1,0 +1,31 @@
+{
+  "requestId": "6fd3bb9a-4583-42f5-a16c-71109906e1f3",
+  "service": "in.juspay.hyperapi",
+  "payload": {
+      "paymentMethods": [
+          {
+              "paymentMethodType": "CARD",
+              "paymentMethod": "VISA",
+              "description": "Visa"
+          },
+          {
+              "paymentMethodType": "CARD",
+              "paymentMethod": "MASTER",
+              "description": "Master Card"
+          },
+          {
+              "paymentMethodType": "NB",
+              "paymentMethod": "NB_HDFC",
+              "description": "HDFC"
+          },
+          {
+              "paymentMethodType": "WALLET",
+              "paymentMethod": "PAYTM",
+              "description": "Paytm"
+          }
+      ]
+  },
+  "error": false,
+  "errorCode": "",
+  "errorMessage": ""
+}

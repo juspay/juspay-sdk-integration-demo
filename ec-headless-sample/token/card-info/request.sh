@@ -1,0 +1,1 @@
+curl --location --request GET 'https://api.juspay.in/cardbins/541919?options.check_mandate_support=true&merchant_id=bbstaging&options.check_atm_pin_auth_support=true&options.check_direct_otp_support=true&options.check_tokenize_support=true'

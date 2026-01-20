@@ -1,0 +1,3 @@
+if hyperInstance?.isInitialised() ?? false {
+     hyperInstance.process(processPayload)               
+}
