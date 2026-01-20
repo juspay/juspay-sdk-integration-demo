@@ -8,9 +8,6 @@ use Juspay\Model\OrderSession;
 
 $config = ServerEnv::$config;
 
-$inputJSON = file_get_contents('php://input');
-$input = json_decode($inputJSON, true);
-header('Content-Type: application/json');
 $orderId = uniqid();
 $amount = mt_rand(1,100);
 try {
@@ -37,5 +34,6 @@ try {
     $response = array("message" => $e->getErrorMessage());
     error_log($e->getErrorMessage());
 }
+header('Content-Type: application/json');
 echo json_encode($response);
 ?>

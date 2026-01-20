@@ -27,35 +27,12 @@ function getOrder($orderId, $config) {
    }
 }
 
-function orderStatusMessage ($order) {
-    $response = array("order_id" => $order->orderId);
-    switch ($order->status) {
-        case "CHARGED":
-            $response += ["message" => "order payment done successfully"];
-            break;
-        case "PENDING":
-        case "PENDING_VBV":
-            $response += ["message" => "order payment pending"];
-            break;
-        case "AUTHENTICATION_FAILED":
-            $response += ["message" => "authentication failed"];
-            break;
-        case "AUTHORIZATION_FAILED":
-            $response += ["message"=> "order payment authorization failed"];
-            break;
-        default:
-            $response += ["message"=> "order status " . $order->status];
-    }
-    $response += ["order_status"=> $order->status];
-    return $response;
-}
-
 // POST ROUTE
 if (isset($_POST["order_id"])) {
     try {
         $orderId = $_POST["order_id"];
         $order = getOrder($orderId, $config);
-        $response = orderStatusMessage($order);
+        $response =  $order->__get("*");
         
     }
     catch (JuspayException $e ) {
@@ -66,7 +43,7 @@ if (isset($_POST["order_id"])) {
 } else if (isset($_GET["order_id"])) { // GET ROUTE
     $orderId = $_GET["order_id"];
     $order = getOrder($orderId, $config);
-    $response = orderStatusMessage($order);
+    $response =  $order->__get("*");
 } else {
     http_response_code(400);
     $response = array('message' => 'order id not found');
@@ -74,4 +51,3 @@ if (isset($_POST["order_id"])) {
 header('Content-Type: application/json');
 echo json_encode($response);
 ?>
-
