@@ -120,4 +120,3 @@ public class ProductsActivity extends AppCompatActivity {
         }
     }
 }
-
