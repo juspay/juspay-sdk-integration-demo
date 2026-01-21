@@ -8,7 +8,7 @@
     "signature": "<Generated signature for signature payload>",
     "signaturePayload": "<Stringified signature payload>",
     "environment": "sandbox",
-    "issuingPsp": "YES_BIZ",
+    "issuingPsp": "YES_BIZ",  // VALUES CAN BE AXIS_BIZ OR BHIM AS PER THE PLUGIN INTEGRATION
     "shouldCreateCustomer": true,
     "logLevel": 1
   }
