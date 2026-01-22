@@ -1,0 +1,12 @@
+{
+    "service": "in.juspay.hyperapi",
+    "requestId": "87df247f-7b84-43a3-ac5d-1c5523dd26af",
+    "payload": {
+        "action": "walletTxn",
+        "status": "CHARGED",
+        "orderId": "hyperorder45314"
+    },
+    "errorMessage": "",
+    "errorCode": "",
+    "error": false
+}

@@ -1,0 +1,28 @@
+{
+   "status": "NEW",
+   "id": "testing-order-one",
+   "order_id": "testing-order-one",
+   "payment_links": {
+       "web": "https://api.juspay.in/orders/ordeh_cc7177bf16d/payment-page",
+       "expiry": null
+   },
+   "sdk_payload": {
+       "requestId": "8162c92851c8bd9",
+       "service": "in.juspay.hyperpay",
+       "payload": {
+           "clientId": "your_client_id",
+           "amount": "1230.0",
+           "codAdvancePaymentAmount": "123.0",
+           "merchantId": "Merchant",
+           "clientAuthToken": "tkn_20f89d52522335",
+           "clientAuthTokenExpiry": "2024-02-14T10:36:13Z",
+           "environment": "production",
+           "action": "paymentPage",
+           "customerId": "testing-customer-one",
+           "currency": "INR",
+           "customerPhone": "9876543210",
+           "customerEmail": "test@mail.com",
+           "orderId": "testing-order-one"
+       }
+   }
+}

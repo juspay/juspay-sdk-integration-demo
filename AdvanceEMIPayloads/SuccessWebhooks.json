@@ -1,0 +1,171 @@
+{
+    "event_name": "ORDER_SUCCEEDED",
+    "content": {
+        "order": {
+            "payment_method": "VISA",
+            "customer_phone": "9123412345",
+            "payment_gateway_response": {
+                "network_error_message": null,
+                "txn_id": "Merchant-M20240603x89974-1",
+                "rrn": null,
+                "auth_id_code": null,
+                "resp_message": "SUCCESS",
+                "epg_txn_id": "323263066",
+                "resp_code": "1",
+                "created": "2024-06-03T08:13:02Z",
+                "network_error_code": null
+            },
+            "udf8": "",
+            "txn_id": "Merchant-M20240603x89974-1",
+            "order_id": "M20240603x89974",
+            "gateway_reference_id": "OT",
+            "maximum_eligible_refund_amount": 16000,
+            "udf9": "",
+            "txn_detail": {
+                "response_message": "Transaction is successful",
+                "txn_id": "Merchant-M20240603x89974-1",
+                "order_id": "M20240603x89974",
+                "error_code": null,
+                "txn_flow_type": "EMI",
+                "status": "CHARGED",
+                "express_checkout": false,
+                "gateway_id": 74,
+                "error_message": "",
+                "offer_deduction_amount": 7256.67,
+                "tax_amount": null,
+                "currency": "INR",
+                "txn_amount": 69999,
+                "created": "2024-06-03T08:12:58Z",
+                "gateway": "PINELABS",
+                "surcharge_amount": null,
+                "txn_uuid": "mozi5cXScdXdSrHxRcSj",
+                "net_amount": 69999,
+                "redirect": true,
+                "metadata": {
+                    "payment_channel": "MWEB"
+                },
+                "response_code": "TXN_SUCCESS"
+            },
+            "customer_id": "129615484",
+            "amount": 69999,
+            "udf4": "",
+            "status": "CHARGED",
+            "udf5": "",
+            "udf6": "",
+            "status_id": 21,
+            "offers": [
+                {
+                    "offer_code": "JUNHDDFYEC97",
+                    "offer_id": "91c7e185-cc0c-4562-b721-62b5fb36daae",
+                    "status": "AVAILED",
+                    "benefits": [
+                        {
+                            "amount": 4256.67,
+                            "type": "EMI_DISCOUNT",
+                            "calculation_info": {
+                                "calculation_rule": "PERCENTAGE",
+                                "emi_type": "NO_COST",
+                                "value": 100
+                            }
+                        },
+                        {
+                            "amount": 3000,
+                            "type": "DISCOUNT",
+                            "calculation_info": {
+                                "calculation_rule": "ABSOLUTE",
+                                "value": 3000
+                            }
+                        }
+                    ],
+                    "metadata": "{"minimum_order_amount":"53999.00"}"
+                }
+            ],
+            "udf7": "",
+            "resp_message": "Transaction is successful",
+            "emi_tenure": 9,
+            "product_id": "",
+            "refunded": false,
+            "udf10": "",
+            "gateway_id": 74,
+            "udf1": "M1125H86481005807",
+            "udf2": "",
+            "emi_type": "JUSPAY_NO_COST_EMI",
+            "udf3": "",
+            "date_created": "2024-06-03T08:12:58Z",
+            "id": "ordeh_5e3de000b32",
+            "merchant_id": "merchant",
+            "return_url": "https://payment-in.merchant.com/callback/juspay/M20240603x89974",
+            "effective_amount": 62742.33,
+            "currency": "INR",
+            "auth_type": "THREE_DS",
+            "customer_email": "1111111",
+            "resp_code": "TXN_SUCCESS",
+            "card": {
+                "saved_to_locker": "false",
+                "extended_card_type": "CREDIT",
+                "card_isin": "485498",
+                "payment_account_reference": "V00100139242447365594867",
+                "name_on_card": "name",
+                "card_brand": "VISA",
+                "last_four_digits": "4334",
+                "card_issuer": "HDFC Bank",
+                "card_type": "CREDIT",
+                "tokens": [],
+                "expiry_month": "11",
+                "card_issuer_country": "INDIA",
+                "tokenization_user_consent": "FILTERED",
+                "card_reference": "cref_089267c473864799bb5b",
+                "expiry_year": "2025",
+                "using_saved_card": "false",
+                "using_token": "false",
+                "token_type": "CARD",
+                "card_fingerprint": "795mr5tkie9igucc9fagrc",
+                "juspay_bank_code": "JP_HDFC"
+            },
+            "payment_method_type": "CARD",
+            "txn_uuid": "mozi5cXScdXdSrHxRcSj",
+            "resp_category": null,
+            "payment_links": {
+                "mobile": "FILTERED",
+                "web": "https://payments.juspay.in/payment-page/order/ordeh_5e3d5aae000b32",
+                "iframe": "https://payments.juspay.in/payment-page/order/ordeh_5e3d5aae000b32"
+            },
+            "amount_refunded": 0,
+            "basket": [
+                {
+                    "shippingDestinationType": null,
+                    "productName": null,
+                    "sellerType": null,
+                    "customParams": null,
+                    "productRisk": null,
+                    "sku": null,
+                    "id": "5011105273",
+                    "productCode": null,
+                    "quantity": 1,
+                    "description": null,
+                    "category": null,
+                    "unitPrice": "FILTERED",
+                    "passenger": null,
+                    "productUrl": null
+                }
+            ],
+            "bank_error_code": "",
+            "emi_bank": "HDFC",
+            "metadata": {
+                "JUSPAY:gateway_reference_id": "OT",
+                "payment_page_client_id": "merchant",
+                "payment_links": {
+                    "mobile": "FILTERED",
+                    "web": "https://payments.juspay.in/payment-page/order/ordeh_5e3d5aae000b32",
+                    "iframe": "https://payments.juspay.in/payment-page/order/ordeh_5e3d5aae000b32"
+                },
+                "payment_locking": {
+                    "offer_details": "{}"
+                }
+            },
+            "bank_error_message": ""
+        }
+    },
+    "date_created": "2024-06-03T08:13:19Z",
+    "id": "evt_V2_4d5ec1742245bebe774da58f664140"
+}

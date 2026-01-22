@@ -1,0 +1,22 @@
+{
+    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+    "service": "in.juspay.hyperapi",
+    "payload": {
+        "action": "cardTxn",
+        "orderId": "hyperorder45314",
+        "clientAuthToken": "tkn_0e37edc631d647fdb606ab48ccfc4213",
+        "paymentMethod": "MASTERCARD",
+        "cardNumber": "4**************4",
+        "cardExpMonth": "05",
+        "cardExpYear": "25",
+        "cardSecurityCode": "***",
+        "saveToLocker": true,
+        "nameOnCard": "Test Customer",
+        "emiBank": "HDFC",
+        "isEmi": true,
+        "supportedGatewayId": [74,21],
+        "emiType": "STANDARD_EMI",
+        "emiTenure": 3,
+        "offers": ["3a8fc1dc-2ace-4f15-8bae-16b376785692"]"
+    }
+}

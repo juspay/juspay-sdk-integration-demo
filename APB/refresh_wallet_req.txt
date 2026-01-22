@@ -1,0 +1,8 @@
+{
+  "payload": {
+    "action": "refreshWalletBalances",
+    "clientAuthToken": "tkn_5df953fad0114b7a8a579a184fc471f7",
+    },
+  "requestId": "13125bc8-6153-41d0-812f-f3b2f7bce91f",
+  "service": "in.juspay.hyperapi"
+}

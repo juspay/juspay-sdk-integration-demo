@@ -1,0 +1,129 @@
+{
+  "payer_app_name": "com.phonepe.app",
+  "payment_method": "PAY",
+  "customer_phone": "FILTERED",
+  "payment_gateway_response": {
+    "network_error_message": null,
+    "txn_id": "Merchant-1155679785-1",
+    "rrn": "",
+    "auth_id_code": "NA",
+    "resp_message": "User dropped and did not complete the two factor authentication",
+    "gateway_response": {
+      "payment_status": "FILTERED",
+      "payment_method": {
+        "upi": {
+          "channel": "FILTERED"
+        }
+      },
+      "cf_payment_id": 284813300,
+      "order_id": "Merchant-1155679785-1",
+      "entity": "payment",
+      "payment_message": "FILTERED",
+      "payment_time": "FILTERED",
+      "payment_currency": "FILTERED",
+      "payment_amount": "FILTERED",
+      "payment_group": "FILTERED",
+      "order_amount": "FILTERED",
+      "payment_completion_time": "FILTERED",
+      "is_captured": "FILTERED"
+    },
+    "epg_txn_id": "284813300",
+    "resp_code": "USER_DROPPED",
+    "created": "2024-07-16T06:40:02Z",
+    "network_error_code": null
+  },
+  "udf8": "",
+  "txn_id": "Merchant-1155679785-1",
+  "order_id": "1155679785",
+  "gateway_reference_id": "Ref1",
+  "udf9": "",
+  "txn_detail": {
+    "response_message": "User did not complete authentication",
+    "txn_id": "Merchant-1155679785-1",
+    "order_id": "1155679785",
+    "error_code": "USER_DROPPED",
+    "source_object": "UPI_PAY",
+    "txn_flow_type": "INTENT",
+    "txn_object_type": "TPV_PAYMENT",
+    "status": "AUTHORIZATION_FAILED",
+    "express_checkout": false,
+    "gateway_id": 70,
+    "error_message": "User dropped and did not complete the two factor authentication",
+    "offer_deduction_amount": null,
+    "tax_amount": null,
+    "currency": "INR",
+    "txn_amount_breakup": [
+      {
+        "amount": 10000,
+        "method": "ADD",
+        "sno": "FILTERED",
+        "name": "BASE"
+      }
+    ],
+    "txn_amount": 10000,
+    "created": "2024-07-16T06:39:39Z",
+    "gateway": "GOCASHFREE",
+    "surcharge_amount": null,
+    "txn_uuid": "mozPBTQgx4YWkY",
+    "net_amount": 10000,
+    "redirect": true,
+    "metadata": {
+      "payment_channel": "ANDROID"
+    },
+    "response_code": "USER_DECLINED"
+  },
+  "customer_id": "JP26541198",
+  "amount": 10000,
+  "udf4": "",
+  "status": "AUTHORIZATION_FAILED",
+  "udf5": "",
+  "udf6": "",
+  "status_id": 27,
+  "offers": [],
+  "udf7": "",
+  "resp_message": "User did not complete authentication",
+  "product_id": "",
+  "refunded": false,
+  "udf10": "",
+  "gateway_id": 70,
+  "udf1": "ANDROID",
+  "udf2": "",
+  "udf3": "",
+  "date_created": "2024-07-16T06:39:39Z",
+  "id": "ordeh_a5bc6160ba0f14c71d3ea",
+  "merchant_id": "Merchant",
+  "return_url": "https://payment.in/payment/juspay/1155679785",
+  "effective_amount": 10000,
+  "currency": "INR",
+  "auth_type": "",
+  "customer_email": "1111111",
+  "resp_code": "USER_DECLINED",
+  "upi": {
+    "txn_flow_type": "INTENT",
+    "payer_app": "com.phonepe.app"
+  },
+  "payment_method_type": "UPI",
+  "additional_info": {},
+  "txn_uuid": "mozPBTQgx4YWkY",
+  "resp_category": "USER_DROPPED",
+  "payment_links": {
+    "mobile": "https://payments.juspay.in/payment-page/order/ordeh_a5bc6160ba0f14c71d3ea",
+    "web": "https://payments.juspay.in/payment-page/order/ordeh_a5bc6160ba0f14c71d3ea",
+    "iframe": "https://payments.juspay.in/payment-page/order/ordeh_a5bc6160ba0f14c71d3ea"
+  },
+  "amount_refunded": 0,
+  "bank_error_code": "USER_DROPPED",
+  "metadata": {
+    "bank_account_details": "FILTERED",
+    "webhook_url": "FILTERED",
+    "JUSPAY:gateway_reference_id": "Ref1",
+    "payment_page_client_id": "Merchant",
+    "payment_links": {
+      "mobile": "https://payments.juspay.in/payment-page/order/ordeh_a5bc6160ba0f14c71d3ea",
+      "web": "https://payments.juspay.in/payment-page/order/ordeh_a5bc6160ba0f14c71d3ea",
+      "iframe": "https://payments.juspay.in/payment-page/order/ordeh_a5bc6160ba0f14c71d3ea"
+    },
+    "payment_locking": "FILTERED"
+  },
+  "bank_error_message": "User dropped and did not complete the two factor authentication"
+}

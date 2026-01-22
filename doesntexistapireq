@@ -1,0 +1,5 @@
+curl -X POST \ https://sandbox.juspay.in/txns \
+-H 'Authorization: Basic apikeyvalue' \
+-H 'Content-Type: application/x-www-form-urlencoded' \
+-H 'cache-control: no-cache' \
+-d 'merchant_id=merchantid&payment_method_type=WALLET&payment_method=SIMPL&red irect_after_payment=true&format=json&order_id=ORD1573633065'

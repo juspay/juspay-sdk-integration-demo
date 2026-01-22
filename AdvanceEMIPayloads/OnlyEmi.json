@@ -1,0 +1,18 @@
+{
+    "payment_filter": {
+        "allowDefaultOptions": false,
+        "options": [],
+        "emiOptions": {
+        "standardEmi" : {
+          "enable" : true
+        },
+        "lowCostEmi" : {
+          "enable" : true
+        },
+        "noCostEmi" : {
+          "enable" : true
+        }
+      }
+
+     }
+}

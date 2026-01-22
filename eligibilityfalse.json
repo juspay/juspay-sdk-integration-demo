@@ -1,0 +1,31 @@
+{
+    "service": "in.juspay.hyperapi",
+    "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+    "payload": {
+                "action": "eligibility",
+                "apps": [
+                    {
+                        "paymentMethodsEligibility": [
+                            {
+                                "description": "cred-eligibility",
+                                "isEligible": false,
+                                "layout": {
+                                    "bannerText": "CRED offers you the most rewarding experience, pay seamlessly using your CRED coins.",
+                                    "ctaText": "CRED pay",
+                                    "icon": "https://d704ayip06922.cloudfront.net/prod-rewards-assets-data/8271e0702a8911ecb92ec74c5090c4d1.png",
+                                    "subText": "pay seamlessly using your CRED coins.",
+                                    "title": "CRED pay"
+                                },
+                                "paymentMethod": "CRED",
+                                "paymentMethodType": "WALLET"
+                            }
+                        ]
+                    }
+                ],
+                "consumerFinance": [],
+                "wallets": []
+            },
+    "errorMessage": "",
+    "errorCode": "",
+    "error": false
+}

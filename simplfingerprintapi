@@ -1,0 +1,7 @@
+...
+maven { url "http://maven.getsimpl.com"}
+}
+Then add the Simpl Fingerprinting SDK as a dependency. dependencies {
+compile "com.simpl.android:fingerprintSDK:1.1.4"
+}
+{

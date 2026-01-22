@@ -1,0 +1,3 @@
+implementation 'in.juspay:hypersdk:2.1.11', 
+
+implementation 'com.simpl.android:fingerprintSDK:1.1.4'

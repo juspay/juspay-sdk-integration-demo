@@ -1,0 +1,12 @@
+{
+    "txn_uuid": "eulh6Mpq7K8",
+    "txn_id": "merchantid-12345-1",
+    "status": "CHARGED",
+    "payment": {
+        "authentication": {
+            "url": "https://sandbox.juspay.in/pay/finish/merchantid/eulh6Mpq7K8",
+            "method": "GET"
+        }
+    },
+    "order_id": "12345"
+}

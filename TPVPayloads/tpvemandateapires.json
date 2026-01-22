@@ -1,0 +1,52 @@
+{
+  	"payment_methods":
+      [
+    	{
+      	"payment_method_type": "CARD",
+      	"payment_method": "VISA",
+      	"description": "Visa"
+          	},
+    	{
+      	"payment_method_type": "NB",
+      	"payment_method": "NB_ICICI",
+      	"description": "Master Card"
+    	},
+    	{
+      	"payment_method_type": "NB",
+      	"payment_method": "NB_HDFC",
+      	"description": "HDFC"
+        	},
+    	{
+      	"payment_method_type": "WALLET",
+      	"payment_method": "PAYTM",
+      	"description": "Paytm",
+    	}
+      ],
+“tpv_payment_methods” : [
+{
+      	"payment_method_type": "NB",
+      	"payment_method": "JP_HDFC",
+      	"description": "HDFC Bank",
+    	},
+{
+      	"payment_method_type": "NB",
+      	"payment_method": "JP_AXIS",
+      	"description": "Axis Bank",
+    	},
+	{
+		"payment_method_type": "UPI",
+      	"payment_method": "COLLECT",
+      	"description": "UPI",
+	}
+
+],
+“tpv_emandate_payment_methods” : [
+
+	{
+		"payment_method_type": "UPI",
+      	"payment_method": "COLLECT",
+      	"description": "UPI",
+	}
+
+   ]
+}

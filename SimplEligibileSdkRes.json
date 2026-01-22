@@ -1,0 +1,25 @@
+{
+    "requestId": "06235270-5dc6-87cb-bb0566dad56c",
+    "service": "in.juspay.ec",
+    "payload": {
+        "action": "eligibility",
+        "consumerFinance": [
+            {
+                "customerId": "7c717f87-6a0b-81fc-852394e50e6d",
+                "paymentMethodsEligibility": [
+                    {
+                        "balance": 1000,
+                        "description": "SIMPL",
+                        "eligibilityStrategy": "USER",
+                        "gatewayErrorCode": "linking_required",
+                        "gatewayErrorMessage": "linking_required",
+                        "isEligible": true,
+                        "paymentMethod": "SIMPL",
+                        "paymentMethodType": "WALLET",
+                        "status": "SUCCESS"
+                    }
+                ]
+            }
+        ]
+    }
+}

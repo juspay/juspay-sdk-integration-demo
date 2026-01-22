@@ -1,0 +1,11 @@
+  "status": "ERROR",
+   "error_code": "invalid_request",
+   "error_message": "Split settlement amount is not equal to order amount",
+   "error_info": {
+       "category": "USER_ERROR",
+       "request_id": "d228d-9ca-40c-9aee-680d",
+       "developer_message": "Split settlement amount is not equal to order amount",
+       "user_message": "Invalid request params. Please verify your input.",
+       "code": "INVALID_INPUT"
+   }
+}
