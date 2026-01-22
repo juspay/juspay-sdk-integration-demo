@@ -5,6 +5,7 @@ curl -X POST 'https://api.juspay.in/txns' \
 -d 'merchant_id=merchant' \
 -d 'payment_method_type=UPI' \
 -d 'payment_method=COLLECT' \
+-d 'payment_channel=ANDROID_APP| ANDROID_WEB | IOS_APP | IOS_WEB | DESKTOP' \
 -d 'upi_vpa=9483407288@paytm' \
 -d 'redirect_after_payment=true' \
 -d 'format=json' \
