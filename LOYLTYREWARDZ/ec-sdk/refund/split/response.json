@@ -1,0 +1,42 @@
+{
+  "order_id": "ord_1712586805",
+  "status": "SUCCESS",
+  "amount": 10300,
+  "sent_to_gateway": true,
+  "unique_request_id": "udit_juspay_ord_1712586805",
+  "gateway": "RAZORPAY",
+  "created": "2024-04-09T12:08:20Z",
+  "initiated_by": "API",
+  "split_refund_details": [
+      {
+          "status": "SUCCESS",
+          "amount": 56,
+          "sent_to_gateway": true,
+          "unique_request_id": "udit_juspay_ord_1712586805",
+          "gateway": "RAZORPAY",
+          "refund_source": "RAZORPAY",
+          "txn_id": "udit_juspay-ord_1712586805-1-1",
+          "reference_id": "udit_juspay_ord_1712586805",
+          "refund_type": "STANDARD"
+      },
+      {
+          "status": "SUCCESS",
+          "amount": 10244,
+          "sent_to_gateway": true,
+          "unique_request_id": "udit_juspay_ord_1712586805-1",
+          "gateway": "LOYLTYREWARDZ",
+          "refund_source": "LOYLTYREWARDZ",
+          "txn_id": "udit_juspay-ord_1712586805-1-2",
+          "refund_type": "STANDARD"
+      }
+  ],
+  "refund_source": "RAZORPAY",
+  "refund_arn": null,
+  "error_message": null,
+  "epg_txn_id": "7a282d9c-f4a1-4f12-be2c-82147e54d2e0",
+  "txn_id": "udit_juspay-ord_1712586805-1-1",
+  "authorization_id": null,
+  "reference_id": "udit_juspay_ord_1712586805",
+  "response_code": null,
+  "refund_type": "STANDARD"
+}
