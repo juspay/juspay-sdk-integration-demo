@@ -1,0 +1,19 @@
+{
+  "requestId": "bab1bfb5-d4dd-48da-aa69-1e993a89dddc",
+  "service": "in.juspay.ec",
+  "payload": {
+    "action": "cardTxn",
+    "orderId": "DW-DW-61jcPnvRkQ",
+    "endUrls": [
+      "https://sandbox.juspay.in/end"
+    ],
+    "paymentMethod": "VISA",
+    "cardNumber": "4111111111111111",
+    "cardExpMonth": "06",
+    "cardExpYear": "23",
+    "cardSecurityCode": "123",
+    "offers": [
+      "0acf0515-b0b3-45fc-ad57-3e7bd2e7389c"
+    ]
+  }
+}
