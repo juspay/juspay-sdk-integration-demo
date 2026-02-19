@@ -1,4 +1,4 @@
-curl --location --request POST 'https://api.juspay.in/v1/offers/list' \
+curl --location --request POST 'https://smartgateway.hdfc.bank.in/v1/offers/list' \
 --header 'Authorization: <API KEY>' \
 --header 'Content-Type: application/json' \
 --header 'x-routing-id: customer_1122'\
