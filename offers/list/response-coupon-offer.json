@@ -1,0 +1,71 @@
+{
+    "offers": [
+        {
+            "offer_rules": {
+                "amount": {
+                    "currency": "INR",
+                    "amount_info": [],
+                    "min_order_amount": "1.00"
+                },
+                "payment_instrument": [
+                    {
+                        "variant": [],
+                        "payment_method": [],
+                        "payment_method_type": "CARD",
+                        "app": [],
+                        "type": [],
+                        "issuer": []
+                    }
+                ],
+                "gateways": [],
+                "filters": {
+                    "whitelist": [],
+                    "blacklist": []
+                },
+                "txn_type": [
+                    "ORDER"
+                ]
+            },
+            "order_breakup": {
+                "final_order_amount": "11900.00",
+                "offer_amount": "100.00",
+                "order_amount": "12000.00",
+                "applicable_order_amount": "12000.00",
+                "discount_amount": "100.00",
+                "merchant_discount_amount": "0.00",
+                "cashback_amount": "0.00",
+                "benefits": [
+                    {
+                        "amount_info": [],
+                        "type": "DISCOUNT",
+                        "calculation_rule": "ABSOLUTE",
+                        "value": 100
+                    }
+                ]
+            },
+            "offer_id": "2f23b007-4fdd-4526-b037-e3c95e571464",
+            "status": "ELIGIBLE",
+            "reason": [],
+            "offer_code": "Coupon_Offer",
+            "offer_description": {
+                "sponsored_by": "com.abipbl.upi",
+                "title": "Coupon Offer Demo",
+                "description": "",
+                "tnc": ""
+            },
+            "ui_configs": {
+                "offer_display_priority": 0,
+                "auto_apply": "false",
+                "should_validate": "true",
+                "is_hidden": "false"
+            },
+            "application_mode": "ORDER",
+            "eligible_saved_payment_methods": [
+                "card_number_identifier",
+                "card_tkn_identifier"
+            ],
+            "actions": []
+        }
+    ],
+    "best_offer_combinations": []
+}

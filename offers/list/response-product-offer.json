@@ -1,0 +1,97 @@
+{
+    "offers": [
+        {
+            "offer_rules": {
+                "amount": {
+                    "currency": "INR",
+                    "amount_info": [],
+                    "min_order_amount": "1.00"
+                },
+                "order_basket": [
+                    {
+                        "mode": "WHITELIST",
+                        "active": true,
+                        "rule_type": "ELIGIBILITY"
+                    },
+                    {
+                        "mode": "WHITELIST",
+                        "rule_type": "APPLICABILITY"
+                    }
+                ],
+                "payment_instrument": [],
+                "gateways": [],
+                "filters": {
+                    "whitelist": [],
+                    "blacklist": []
+                },
+                "txn_type": [
+                    "ORDER"
+                ]
+            },
+            "order_breakup": {
+                "final_order_amount": "11800.00",
+                "offer_amount": "200.00",
+                "product_discounts": [
+                    {
+                        "product_id": "id1",
+                        "product_quantity": 1,
+                        "product_applicable_quantity": 1,
+                        "unit_price": "10000.00",
+                        "discount_amount": "100.00",
+                        "cashback_amount": "0.00",
+                        "merchant_discount_amount": "0.00"
+                    },
+                    {
+                        "product_id": "id2",
+                        "product_quantity": 1,
+                        "product_applicable_quantity": 1,
+                        "unit_price": "2000.00",
+                        "discount_amount": "100.00",
+                        "cashback_amount": "0.00",
+                        "merchant_discount_amount": "0.00"
+                    }
+                ],
+                "order_amount": "12000.00",
+                "applicable_order_amount": "12000.00",
+                "discount_amount": "200.00",
+                "merchant_discount_amount": "0.00",
+                "cashback_amount": "0.00",
+                "benefits": [
+                    {
+                        "amount_info": [],
+                        "type": "DISCOUNT",
+                        "calculation_rule": "ABSOLUTE",
+                        "value": 100
+                    }
+                ]
+            },
+            "offer_id": "004c1ff3-339c-44d1-868f-43a58bd205af",
+            "status": "ELIGIBLE",
+            "reason": [],
+            "offer_code": "Product_Offer",
+            "offer_description": {
+                "sponsored_by": "com.msf.angelmobile",
+                "title": "Product Offer Demo",
+                "description": "",
+                "tnc": ""
+            },
+            "ui_configs": {
+                "offer_display_priority": 0,
+                "auto_apply": "false",
+                "should_validate": "true",
+                "is_hidden": "false"
+            },
+            "application_mode": "PRODUCT",
+            "eligible_saved_payment_methods": [
+                "card_number_identifier",
+                "card_tkn_identifier",
+                "MOBIKWIK",
+                "navyamotaiah@oksbi",
+                "com.google.android.apps.nbu.paisa.user",
+                "ZESTMONEY",
+                "AXIS_BANK_NB"
+            ],
+            "actions": []
+        }
+    ]
+}

@@ -1,0 +1,178 @@
+{
+    "best_offer_combinations": [
+    {
+        "payment_method_reference": "card_number_identifier",
+        "offers": [
+            {
+                "offer_id": "e975d78c-5139-45b5-b30c-dc4afb05cca9",
+                "cashback_amount": "0.00",
+                "discount_amount": "100.00",
+                "merchant_discount_amount": "0.00",
+                "total_offered_amount": "100.00"
+            }
+        ],
+        "order_breakup": {
+            "order_amount": "12000.00",
+            "applicable_order_amount": "12000.00",
+            "final_order_amount": "11900.00",
+            "discount_amount": "100.00",
+            "merchant_discount_amount": "0.00",
+            "cashback_amount": "0.00",
+            "offer_amount": "100.00",
+            "benefits": [
+                {
+                    "amount_info": [],
+                    "type": "DISCOUNT",
+                    "calculation_rule": "ABSOLUTE",
+                    "value": 100
+                }
+            ]
+        }
+    },
+    {
+        "payment_method_reference": "MOBIKWIK",
+        "offers": [
+            {
+                "offer_id": "e975d78c-5139-45b5-b30c-dc4afb05cca9",
+                "cashback_amount": "0.00",
+                "discount_amount": "100.00",
+                "merchant_discount_amount": "0.00",
+                "total_offered_amount": "100.00"
+            }
+        ],
+        "order_breakup": {
+            "order_amount": "12000.00",
+            "applicable_order_amount": "12000.00",
+            "final_order_amount": "11900.00",
+            "discount_amount": "100.00",
+            "merchant_discount_amount": "0.00",
+            "cashback_amount": "0.00",
+            "offer_amount": "100.00",
+            "benefits": [
+                {
+                    "amount_info": [],
+                    "type": "DISCOUNT",
+                    "calculation_rule": "ABSOLUTE",
+                    "value": 100
+                }
+            ]
+        }
+    },
+    {
+        "payment_method_reference": "navyamotaiah@oksbi",
+        "offers": [
+            {
+                "offer_id": "e975d78c-5139-45b5-b30c-dc4afb05cca9",
+                "cashback_amount": "0.00",
+                "discount_amount": "100.00",
+                "merchant_discount_amount": "0.00",
+                "total_offered_amount": "100.00"
+            }
+        ],
+        "order_breakup": {
+            "order_amount": "12000.00",
+            "applicable_order_amount": "12000.00",
+            "final_order_amount": "11900.00",
+            "discount_amount": "100.00",
+            "merchant_discount_amount": "0.00",
+            "cashback_amount": "0.00",
+            "offer_amount": "100.00",
+            "benefits": [
+                {
+                    "amount_info": [],
+                    "type": "DISCOUNT",
+                    "calculation_rule": "ABSOLUTE",
+                    "value": 100
+                }
+            ]
+        }
+    },
+    {
+        "payment_method_reference": "com.google.android.apps.nbu.paisa.user",
+        "offers": [
+            {
+                "offer_id": "e975d78c-5139-45b5-b30c-dc4afb05cca9",
+                "cashback_amount": "0.00",
+                "discount_amount": "100.00",
+                "merchant_discount_amount": "0.00",
+                "total_offered_amount": "100.00"
+            }
+        ],
+        "order_breakup": {
+            "order_amount": "12000.00",
+            "applicable_order_amount": "12000.00",
+            "final_order_amount": "11900.00",
+            "discount_amount": "100.00",
+            "merchant_discount_amount": "0.00",
+            "cashback_amount": "0.00",
+            "offer_amount": "100.00",
+            "benefits": [
+                {
+                    "amount_info": [],
+                    "type": "DISCOUNT",
+                    "calculation_rule": "ABSOLUTE",
+                    "value": 100
+                }
+            ]
+        }
+    },
+    {
+        "payment_method_reference": "ZESTMONEY",
+        "offers": [
+            {
+                "offer_id": "e975d78c-5139-45b5-b30c-dc4afb05cca9",
+                "cashback_amount": "0.00",
+                "discount_amount": "100.00",
+                "merchant_discount_amount": "0.00",
+                "total_offered_amount": "100.00"
+            }
+        ],
+        "order_breakup": {
+            "order_amount": "12000.00",
+            "applicable_order_amount": "12000.00",
+            "final_order_amount": "11900.00",
+            "discount_amount": "100.00",
+            "merchant_discount_amount": "0.00",
+            "cashback_amount": "0.00",
+            "offer_amount": "100.00",
+            "benefits": [
+                {
+                    "amount_info": [],
+                    "type": "DISCOUNT",
+                    "calculation_rule": "ABSOLUTE",
+                    "value": 100
+                }
+            ]
+        }
+    },
+    {
+        "payment_method_reference": "AXIS_BANK_NB",
+        "offers": [
+            {
+                "offer_id": "e975d78c-5139-45b5-b30c-dc4afb05cca9",
+                "cashback_amount": "0.00",
+                "discount_amount": "100.00",
+                "merchant_discount_amount": "0.00",
+                "total_offered_amount": "100.00"
+            }
+        ],
+        "order_breakup": {
+            "order_amount": "12000.00",
+            "applicable_order_amount": "12000.00",
+            "final_order_amount": "11900.00",
+            "discount_amount": "100.00",
+            "merchant_discount_amount": "0.00",
+            "cashback_amount": "0.00",
+            "offer_amount": "100.00",
+            "benefits": [
+                {
+                    "amount_info": [],
+                    "type": "DISCOUNT",
+                    "calculation_rule": "ABSOLUTE",
+                    "value": 100
+                }
+            ]
+        }
+    }
+]
+}
