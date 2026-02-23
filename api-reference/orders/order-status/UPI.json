@@ -13,9 +13,9 @@
     "return_url": "https://api.juspay.in",
     "product_id": "",
     "payment_links": {
-        "iframe": "https://api.juspay.in/merchant/ipay/ordeh_ce50b4861d2b4b3e9bf3r3r2rid3",
-        "web": "https://api.juspay.in/merchant/pay/ordeh_ce50b4861d2b4b3e9bf3r3r2rid3",
-        "mobile": "https://api.juspay.in/merchant/pay/ordeh_ce50b4861d2b4b3e9bf3r3r2rid3?mobile=true"
+        "iframe": "https://smartgateway.hdfcuat.bank.in/merchant/ipay/ordeh_ce50b4861d2b4b3e9bf3r3r2rid3",
+        "web": "https://smartgateway.hdfcuat.bank.in/merchant/pay/ordeh_ce50b4861d2b4b3e9bf3r3r2rid3",
+        "mobile": "https://smartgateway.hdfcuat.bank.in/merchant/pay/ordeh_ce50b4861d2b4b3e9bf3r3r2rid3?mobile=true"
     },
     "udf1": "",
     "udf2": "",
