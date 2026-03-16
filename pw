@@ -1,0 +1,20 @@
+{
+    "requestId": "14974b2dcf7247209ed212167e18bf74",
+    "service": "in.juspay.hyperpay",
+    "payload": {
+        "action": "paymentPage",
+        "amount": "13.0",
+        "clientAuthToken": "<token>",
+        "clientAuthTokenExpiry": "2024-07-25T10:23:07Z",
+        "clientId": "test",
+        "currency": "INR",
+        "customerEmail": "dummy@gmail.com",
+        "customerId": "dummy",
+        "environment": "sandbox",
+        "merchantId": "azhar_test",
+        "orderId": "order_1721902088",
+        "service": "in.juspay.hyperpay",
+        "features": { paymentWidget: { enable: true } }
+    },
+    "expiry": "2024-07-28T10:08:07Z"
+  }
