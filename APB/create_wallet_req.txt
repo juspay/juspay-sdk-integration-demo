@@ -1,0 +1,12 @@
+{
+  "requestId": "eee6f65e-23dc-42e1-ad7c-ec3cddd64ac9",
+  "service": "in.juspay.hyperapi",
+  "payload": {
+    "action": "createWallet",
+    "clientAuthToken": "tkn_07d482be22f842c1abbf5742206efeef",
+    "sdkWalletIdentifier": "A1XS6O9EI6PZEL",
+    "walletName": "AMAZONPAY",
+    "mobileNumber": "7224996066", (OPTIONAL)
+    "gatewayReferenceId": "amazonpaylater_test" (OPTIONAL)
+  }
+}
