@@ -1,0 +1,25 @@
+// block:start:cards-payv3-cardbins-retry
+<script>
+  var juspay_form = Juspay.Setup({
+      payment_form: "#payment_form_1",
+
+      /* Set `cardbins_retry_enabled` to `true` to enable automatic CardBins retry when network connectivity is restored. */
+      cardbins_retry_enabled: true,
+
+      /* Set `cardbins_manual_retry` to `true` to enable manual CardBins retry support in PayV3. */
+      cardbins_manual_retry: true
+  });
+</script>
+// block:end:cards-payv3-cardbins-retry
+
+// block:start:cards-payv3-cardbins-manual-retry
+<script>
+  juspay_form.retryCardbins("#payment_form_1")
+      .then(function(response) {
+          console.log("CardBins retry succeeded", response);
+      })
+      .catch(function(error) {
+          console.log("CardBins retry failed", error);
+      });
+</script>
+// block:end:cards-payv3-cardbins-manual-retry
