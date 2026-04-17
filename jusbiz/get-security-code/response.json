@@ -1,0 +1,9 @@
+{
+    "status": "SUCCESS",
+    "response": {
+        "cardImage": "{base64-encoded-cardImage}",
+        "securityCode": "119"
+    },
+    "message": "Security Code Fetched Successfully",
+    "payoutId": "Juspay123456789"
+}

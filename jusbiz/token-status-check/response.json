@@ -1,0 +1,105 @@
+{
+    "status": "SUCCESS",
+    "response": {
+        "authRemaining": 0,
+        "settlementDetails": [
+            {
+                "transactionReferenceNumber": "VT241100337000160000007",
+                "transactionDateTime": "2024-04-24T00:00:00",
+                "supplierName": "VAYUDOOT HOLIDAYS",
+                "billingAmount": "20.00",
+                "sourceCurrencyCode": "INR",
+                "transactionTypeDetail": "Purchase",
+                "supplierISOCurrencyCode": "IND",
+                "sourceAmount": "20.00",
+                "transactionTypeCode": "Debit",
+                "billingCurrencyCode": "INR"
+            },
+            {
+                "transactionReferenceNumber": "VT241190347000090000062",
+                "transactionDateTime": "2024-04-27T00:00:00",
+                "supplierName": "VAYUDOOT HOLIDAYS",
+                "billingAmount": "20.00",
+                "sourceCurrencyCode": "INR",
+                "transactionTypeDetail": "Payment",
+                "supplierISOCurrencyCode": "IND",
+                "sourceAmount": "20.00",
+                "transactionTypeCode": "Credit",
+                "billingCurrencyCode": "INR"
+            }
+        ],
+        "expiry": "09/2025",
+        "state": "REDEEMED",
+        "orderAmount": "20.0",
+        "payoutAmount": "20.0",
+        "authList": [
+            {
+                "tranTime": "2024-04-24T04:07:52",
+                "merchantCategoryCode": "7011",
+                "tranAmount": 20.00,
+                "merchantCity": "DELHI",
+                "tranStatus": "AuthorizationSuccess",
+                "supplierName": "VAYUDOOT HOLIDAYS",
+                "tranCurrency": "INR",
+                "tranId": "394115148722473",
+                "merchantCountry": "IND",
+                "errorMessage": "Do not honor"
+            },
+            {
+                "tranTime": "2024-04-21T08:10:59",
+                "merchantCategoryCode": "7011",
+                "tranAmount": 25.00,
+                "merchantCity": "DELHI",
+                "tranStatus": "AuthorizationFailure",
+                "supplierName": "VAYUDOOT HOLIDAYS",
+                "tranCurrency": "INR",
+                "tranId": "394112294591405",
+                "merchantCountry": "IND",
+                "errorMessage": "Spend Velocity restriction"
+            }
+        ],
+        "rules": {
+            "mccAllow": null,
+            "mccBlock": [
+                {
+                    "max": "7000",
+                    "min": "6000"
+                },
+                {
+                    "max": "9000",
+                    "min": "8000"
+                },
+            ],
+            "blockPayments": [
+                "ATM","ECOM"
+            ],
+            "amountRange": {
+                "max": "21",
+                "min": "3"
+            },
+            "exactAmountApply": [
+                "1"
+            ]
+        },
+        "authPerformed": 1,
+        "endDate": "2024-09-25",
+        "token": "4817XXXXXXXX8569",
+        "cardLastFourDigits": "0602",
+        "startDate": "2024-04-23",
+        "currency": "INR",
+        "cardNetwork": "VISA",
+        "balanceAmount": "0.0",
+        "gst": "0.0",
+        "redeemedAmount": "20.0",
+        "cardIssuerBankName": "IndusInd",
+        "userDefinedFields": {
+            "udf1": "XYZ",
+            "udf2": "XYZ",
+            "udf3": "XYZ",
+            "udf4": "XYZ",
+            "udf5": "XYZ"
+        }
+    },
+    "message": "Virtual Token Fetched Successfully",
+    "payoutId": "Juspay123456789"
+}

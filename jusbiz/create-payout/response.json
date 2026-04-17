@@ -1,0 +1,28 @@
+{
+    "status": "SUCCESS",
+    "response": {
+        "expiry": "09/2025",
+        "state": "ISSUED",
+        "payoutAmount": "20.0",
+        "token": "4817XXXXXXXX8569",
+        "cardImage": "{base64-card-image}",
+        "currency": "INR",
+        "cardNetwork": "VISA",
+        "redeemedAmount": "0.00",
+        "cardIssuerBankName": "IndusInd",
+        "userDefinedFields": {
+            "udf1": "XYZ",
+            "udf2": "XYZ",
+            "udf3": "XYZ",
+            "udf4": "XYZ",
+            "udf5": "XYZ",
+            "udf6": "XYZ",
+            "udf7": "XYZ",
+            "udf8": "XYZ",
+            "udf9": "XYZ",
+            "udf10": "XYZ"
+        }
+    },
+    "message": "Creation of Virtual Token Succeeded",
+    "payoutId": "ZELeJuspay123456789D2yQF4"
+}
