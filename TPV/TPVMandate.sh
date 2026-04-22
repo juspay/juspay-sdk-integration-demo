@@ -14,7 +14,7 @@ curl --location 'https://smartgateway.hdfcuat.bank.in/session' \
     "currency": "INR",
     "return_url": "https://www.google.com",
     "order_type" : "TPV_PAYMENT",
-  "metadata.bank_account_details" : "[{\"bank_account_number\":\"83748239234872\",\"bank_ifsc\":\"HDFC0876543\"}]",
+  "metadata.bank_account_details" : "[{\"bank_account_number\":\"00011111111623\",\"bank_ifsc\":\"JUS0011222\"}]",
   "options.create_mandate" : "REQUIRED",
   "mandate.max_amount" : "300"
 }'
