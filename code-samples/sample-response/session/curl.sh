@@ -3,7 +3,6 @@ curl --location 'https://smartgateway.hdfcuat.bank.in/session' \
 --header 'Content-Type: application/json' \
 --header 'x-merchantid: merchant_id' \
 --header 'x-customerid: customer_id' \
---header 'Authorization: Basic MjMzQTJBRjQ2REI0NTNCOTQ0Q0JBMUFCNDlGOTIyOg==' \
 --data-raw '{
     "order_id": " testing-order-one",
     "amount": "10.0",
