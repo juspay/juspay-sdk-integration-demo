@@ -11,7 +11,7 @@ curl --location 'https://smartgateway.hdfcuat.bank.in/orders' \
 --data-urlencode 'customer_phone=7076607677' \
 --data-urlencode 'customer_email=abc@gmail.com' \
 --data-urlencode 'merchant_id=<merchant_id>' \
---data-urlencode 'metadata.bank_account_details=[{"bank_account_number":"50100101674487"}]' \
+--data-urlencode 'metadata.bank_account_details=[{"bank_account_number":"00011111111623"}]' \
 --data-urlencode 'order_type=TPV_PAYMENT' \
 --data-urlencode 'options.create_mandate=REQUIRED' \
 --data-urlencode 'mandate.max_amount=1000.00' 
