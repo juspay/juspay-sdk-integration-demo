@@ -1,7 +1,7 @@
 curl --location --request POST 'https://smartgateway.hdfcuat.bank.in/session' \
 --header 'x-merchantid: testhdfc1' \
 --header 'Content-Type: application/json' \
---header 'Authorization: Basic MEVG************************************Og==' \
+--header 'Authorization: Basic <Base64 API key>' \
 --data-raw '{
     "order_id": "JP_1724825386",
     "amount": "10.0",
