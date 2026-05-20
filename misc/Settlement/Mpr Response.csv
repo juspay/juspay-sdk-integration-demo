@@ -1,0 +1,11 @@
+TID,SG MID,Merchant Order ID,SG Txn ID,SG Refund ID,Txn Date,Settlement Date,Txn
+Type,Txn Amount,Txn Fee,GST,Net Amount,Txn Currency,Settlement Currency,Payment
+Mode,Payment Sub Mode,Payment Instrument,Payment Sub Instrument Type,Card
+Category,Auth Code,Card Number / VPA,Issuing Bank,ARN,UTR,Udf 1,Udf 2,Udf 3,Udf
+4,Udf 5,Udf 6,Udf 7,Udf 8,Udf 9,Udf 10
+"4058161","40419","DON-1770464586-10001","DON-1770464586-10001",,"2026-02-07T17:13:3
+0Z","2026-02-08T00:00:00Z","SALE",49732.0,0.0,0.0,49732.0,,"INR","NB",,"NET
+BANKING","REDIRECT_DEBIT",,"263830090845",,"HDFC Bank",,,,,,,,,,,,
+"4058161","40419","DON-1770435553-10001","DON-1770435553-10001",,"2026-02-07T09:09:3
+7Z","2026-02-08T00:00:00Z","SALE",7000.0,0.0,0.0,7000.0,,"INR","NB",,"NET
+BANKING","REDIRECT_DEBIT",,"PC776924195499260",,"Karur Vysya Bank",,,,,,,,,,,,
