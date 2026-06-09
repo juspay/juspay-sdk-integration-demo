@@ -9,8 +9,8 @@ buildscript {
         // block:end:assets-plugin-maven-url
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:7.0.0"
-        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.30'
+        classpath "com.android.tools.build:gradle:8.1.4"
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.22'
 
         // Adding the class path for Assets plugin
         // block:start:assets-class-path
