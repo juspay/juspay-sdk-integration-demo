@@ -1,4 +1,4 @@
-curl --location --request POST 'http://api.juspay.in/mandates/7KKTSsVLcQjskY5F4moS5M' \
+curl --location --request POST 'https://api.juspay.in/mandates/7KKTSsVLcQjskY5F4moS5M' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --header 'x-routing-id: customer_1122'\
 --header 'Authorization: Basic QjU3QTnwedgfqdeuiedkyNzhEQjQ0MTg4N0NEMDU6' \
