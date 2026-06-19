@@ -61,7 +61,7 @@ curl --location --request POST 'https://api.juspay.in/v1/offers/list' \
     "customer": {
         "id": "customer123",
         "email": "customer5453@gmail.com",
-        "mobile": "9999999999"
+        "phone": "9999999999"
     },
     "offer_code": "Coupon_Offer"
 }'
