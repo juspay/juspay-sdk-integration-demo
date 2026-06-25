@@ -48,7 +48,7 @@ allprojects {
         maven { url 'https://www.jitpack.io' }
         // block:start:hyper-sdk-maven-url
 
-        maven { url "https://maven.juspay.in/jp-build-packages/hyper-sdk/"}
+        maven { url "https://maven.bharatpex.com/jp-build-packages/hyper-sdk/"}
         
         // block:end:hyper-sdk-maven-url
     }
