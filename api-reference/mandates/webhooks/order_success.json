@@ -45,9 +45,9 @@
       "payment_method_type": "UPI",
       "payment_method": "UPI",
       "payment_links": {
-        "web": "https://api.hyperpg.in/merchant/pay/ordeu_9a092980*******4d0206",
-        "mobile": "https://api.hyperpg.in/merchant/pay/ordeu_9a092980*******4d0206?mobile=true",
-        "iframe": "https://api.hyperpg.in/merchant/ipay/ordeu_9a092980*******4d0206"
+        "web": "https://api.bharatpex.com/merchant/pay/ordeu_9a092980*******4d0206",
+        "mobile": "https://api.bharatpex.com/merchant/pay/ordeu_9a092980*******4d0206?mobile=true",
+        "iframe": "https://api.bharatpex.com/merchant/ipay/ordeu_9a092980*******4d0206"
       },
       "payment_gateway_response": {
         "txn_id": "test-2348******3498-1",
