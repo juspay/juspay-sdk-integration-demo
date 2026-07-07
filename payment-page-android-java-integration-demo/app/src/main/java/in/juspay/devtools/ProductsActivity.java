@@ -1,4 +1,4 @@
-package in.juspay.devtools;
+package in.bharatpex.devtools;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
@@ -11,9 +11,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 import org.json.JSONObject;
 import java.util.UUID;
-import in.juspay.hyperinteg.HyperServiceHolder;
-import in.juspay.hypersdk.data.JuspayResponseHandler;
-import in.juspay.hypersdk.ui.HyperPaymentsCallbackAdapter;
+import in.bharatpex.hyperinteg.HyperServiceHolder;
+import in.bharatpex.hypersdk.data.BharatpexResponseHandler;
+import in.bharatpex.hypersdk.ui.HyperPaymentsCallbackAdapter;
 
 public class ProductsActivity extends AppCompatActivity {
     private Button proceedButton;
@@ -62,7 +62,7 @@ public class ProductsActivity extends AppCompatActivity {
     private HyperPaymentsCallbackAdapter createHyperPaymentsCallbackAdapter() {
         return new HyperPaymentsCallbackAdapter() {
             @Override
-            public void onEvent(JSONObject jsonObject, JuspayResponseHandler responseHandler) {
+            public void onEvent(JSONObject jsonObject, BharatPeXResponseHandler responseHandler) {
                 Intent redirect = new Intent(ProductsActivity.this, ResponsePage.class);
                 redirect.putExtra("responsePayload", jsonObject.toString());
                 System.out.println("jsonObject>>> " +jsonObject);
@@ -147,7 +147,7 @@ public class ProductsActivity extends AppCompatActivity {
     // block:end:create-hyper-callback
 
     //block:start:call-initiate
-    //This function initiate the Juspay SDK
+    //This function initiate the BharatPeX SDK
     private void initiatePaymentsSDK() {
         if(!hyperServicesHolder.isInitialised()){
             initiatePayload = createInitiatePayload();
@@ -175,7 +175,7 @@ public class ProductsActivity extends AppCompatActivity {
             innerPayload.put("xRoutingId", "<X_ROUTING_ID>");      // Put your X-Routing ID here
             innerPayload.put("environment", "production");
             sdkPayload.put("requestId",  ""+ UUID.randomUUID());
-            sdkPayload.put("service", "in.juspay.hyperpay");
+            sdkPayload.put("service", "in.bharatpex.hyperpay");
             sdkPayload.put("payload", innerPayload);
 
         } catch (Exception e) {
