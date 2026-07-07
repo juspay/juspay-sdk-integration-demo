@@ -4,7 +4,7 @@
   "status": "PENDING_VBV",
   "payment": {
     "authentication": {
-      "url": "https://api.hyperpg.in/v2/pay/finish/merchant_id/eulmN9X8JpeCxxxxxJq/2621",
+      "url": "https://api.bharatpex.com/v2/pay/finish/merchant_id/eulmN9X8JpeCxxxxxJq/2621",
       "method": "GET"
     }
   },
