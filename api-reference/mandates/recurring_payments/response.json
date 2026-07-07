@@ -5,7 +5,7 @@
   "payment": {
     "authentication": {
       "method": "GET",
-      "url": "https://api.hyperpg.in/pay/finish/guest/8646a7a029974fa99995fec00340a507"
+      "url": "https://api.bharatpex.com/pay/finish/guest/8646a7a029974fa99995fec00340a507"
     }
   }
 }
