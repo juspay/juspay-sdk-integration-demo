@@ -5,6 +5,7 @@ curl --location 'https://smartgateway.hdfc.bank.in/txns' \
 --data-urlencode 'merchant_id=merchant_id' \
 --data-urlencode 'payment_method_type=UPI' \
 --data-urlencode 'payment_method=UPI_COLLECT' \
+--data-urlencode 'payment_channel=ANDROID_APP | ANDROID_WEB | IOS_APP | IOS_WEB | DESKTOP' \
 --data-urlencode 'txn_type=UPI_COLLECT' \
 --data-urlencode 'upi_vpa=test@hdfcbank' \
 --data-urlencode 'redirect_after_payment=true' \
