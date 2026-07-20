@@ -14,12 +14,12 @@ import org.json.JSONObject;
 import okhttp3.*;
 import java.io.IOException;
 import java.util.Base64;
-import in.juspay.hyperinteg.HyperServiceHolder;
+import in.bharatpex.hyperinteg.BharatPeXPaymentServiceHolder;
 
 public class CheckoutActivity extends AppCompatActivity {
 
     private Button processButton;
-    private HyperServiceHolder hyperServicesHolder;
+    private BharatPeXPaymentServiceHolder bharatpexPaymentServicesHolder;
     private CoordinatorLayout coordinatorLayout;
     static ProgressDialog dialog;
     private String amountString;
@@ -40,7 +40,7 @@ public class CheckoutActivity extends AppCompatActivity {
 
         updatingUI();
 
-        hyperServicesHolder = new HyperServiceHolder(this);
+        bharatpexPaymentServicesHolder = new BharatPeXPaymentServiceHolder(this);
         processButton = findViewById(R.id.rectangle_9);
         processButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,12 +64,12 @@ public class CheckoutActivity extends AppCompatActivity {
 
     //block:start:process-sdk
     private void startPayments(JSONObject sdk_payload) {
-        // Make sure to use the same hyperServices instance which was created in
+        // Make sure to use the same bharatpexServices instance which was created in
         // ProductsActivity.java
 
         Helper helper = new Helper();
         helper.showSnackbar("Process Called!", coordinatorLayout);
-        hyperServicesHolder.process(sdk_payload);
+        bharatpexPaymentServicesHolder.process(sdk_payload);
 
     }
     //block:end:process-sdk
@@ -112,7 +112,7 @@ public class CheckoutActivity extends AppCompatActivity {
         String authorization = "Basic " + Base64.getEncoder().encodeToString(apiKey.getBytes());
         Request request =
                 new Request.Builder()
-                        .url("https://api.juspay.in/session")
+                        .url("https://api.bharatpex.com/session")
                         .method("POST", requestBody)
                         .addHeader("x-merchantid", merchantId)
                         .addHeader("Authorization", authorization)
@@ -152,7 +152,7 @@ public class CheckoutActivity extends AppCompatActivity {
     //block:start:onBackPressed
     @Override
     public void onBackPressed() {
-        boolean handleBackpress = hyperServicesHolder.onBackPressed();
+        boolean handleBackpress = bharatpexPaymentServicesHolder.onBackPressed();
         if(!handleBackpress) {
             super.onBackPressed();
         }
@@ -205,7 +205,7 @@ public class CheckoutActivity extends AppCompatActivity {
 
 
     - onActivityResult
-    - Handling onActivityResult hook and passing data to HyperServices Instance, to handle App Switch
+    - Handling onActivityResult hook and passing data to bharatpexServices Instance, to handle App Switch
     @Override
     public void onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         // block:start:onActivityResult
@@ -215,7 +215,7 @@ public class CheckoutActivity extends AppCompatActivity {
 
         // In case super.onActivityResult is NOT available please use following:
         // if (data != null) {
-        //    hyperServices.onActivityResult(requestCode, resultCode, data);
+        //    bharatpexPaymentServices.onActivityResult(requestCode, resultCode, data);
         // }
 
         // block:end:onActivityResult
@@ -225,7 +225,7 @@ public class CheckoutActivity extends AppCompatActivity {
 
 
     - onRequestPermissionsResult
-    - Handling onRequestPermissionsResult hook and passing data to HyperServices Instance, to OTP reading permissions
+    - Handling onRequestPermissionsResult hook and passing data to bharatpexServices Instance, to OTP reading permissions
     @Override
     public void onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         // block:start:onRequestPermissionsResult
@@ -234,7 +234,7 @@ public class CheckoutActivity extends AppCompatActivity {
         // super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
         // In case super.onActivityResult is NOT available please use following:
-        // hyperServices.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        // bharatpexPaymentServices.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
         // block:end:onRequestPermissionsResult
     }
