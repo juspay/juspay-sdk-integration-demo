@@ -1,7 +1,7 @@
-package `in`.juspay.devtools
+package `in`.bharatpex.devtools
 
-import `in`.juspay.hypersdk.data.JuspayResponseHandler
-import `in`.juspay.hypersdk.ui.HyperPaymentsCallbackAdapter
+import `in`.bharatpex.hypersdk.data.BharatPeXPaymentResponseHandler
+import `in`.bharatpex.hypersdk.ui.BharatPeXPaymentsCallbackAdapter
 import android.app.ProgressDialog
 import android.content.Intent
 import android.os.Bundle
@@ -13,7 +13,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import com.google.android.material.snackbar.Snackbar
-import `in`.juspay.hyperinteg.HyperServiceHolder
+import `in`.bharatpex.hyperinteg.BharatPeXPaymentServiceHolder
 import okhttp3.*
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import org.json.JSONObject
@@ -22,7 +22,7 @@ import java.util.*
 
 class CheckoutActivity : AppCompatActivity() {
     var processButton: Button? = null
-    var hyperServicesHolder: HyperServiceHolder? = null
+    var bharatpexPaymentServicesHolder: BharatPeXPaymentServiceHolder? = null
     var coordinatorLayout: CoordinatorLayout? = null
     var amountString: String? = null
     var item1Price = 0
@@ -46,7 +46,7 @@ class CheckoutActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         updatingUI()
-        hyperServicesHolder = HyperServiceHolder(this)
+        bharatpexPaymentServicesHolder = BharatPeXPaymentServiceHolder(this)
         processButton = findViewById(R.id.rectangle_9)
         processButton?.setOnClickListener(View.OnClickListener {
             dialog!!.show()
@@ -59,13 +59,13 @@ class CheckoutActivity : AppCompatActivity() {
         backImage?.setOnClickListener(View.OnClickListener { onBackPressed() })
     }
     
-    // Calling process on hyperService to open the Hypercheckout screen
+    // Calling process on bharatpexPaymentService to open the BharatPeX checkout screen
     // block:start:process-sdk
     fun startPayments(sdk_payload: JSONObject?) {
-        // Make sure to use the same hyperServices instance which was created in
+        // Make sure to use the same bharatpexPaymentServices instance which was created in
         // ProductsActivity.java
         showSnackbar("Process Called!")
-        hyperServicesHolder?.process(sdk_payload)
+        bharatpexPaymentServicesHolder?.process(sdk_payload)
     }
     // block:end:process-sdk
 
@@ -104,14 +104,14 @@ class CheckoutActivity : AppCompatActivity() {
         val requestBody: RequestBody = RequestBody.create(mediaType, payload.toString())
         val authorization = "Basic " + Base64.getEncoder().encodeToString(apiKey.toByteArray())
         val request: Request = Request.Builder()
-            .url("https://api.juspay.in/session")
+            .url("https://api.bharatpex.com/session")
             .method("POST", requestBody)
             .addHeader("x-merchantid", merchantId)
             .addHeader("Authorization", authorization)
             .addHeader("Content-Type", "application/json")
             .build()
         // NOTE: DON'T COPY THIS CODE IN YOUR CLIENT APP
-        // Juspay API should be called from your server, client app should only fetch the sdk_payload from your server
+        // BharatPeX API should be called from your server, client app should only fetch the sdk_payload from your server
         client.newCall(request).enqueue(object : Callback {
 
 
@@ -141,7 +141,7 @@ class CheckoutActivity : AppCompatActivity() {
 
     //block:start:onBackPressed
     override fun onBackPressed() {
-        val handleBackpress: Boolean = hyperServicesHolder?.onBackPressed() == true
+        val handleBackpress: Boolean = bharatpexPaymentServicesHolder?.onBackPressed() == true
         if (handleBackpress) {
             super.onBackPressed()
         }
@@ -156,7 +156,7 @@ class CheckoutActivity : AppCompatActivity() {
 
 
     - onActivityResult
-    - Handling onActivityResult hook and passing data to HyperServices Instance, to handle App Switch
+    - Handling onActivityResult hook and passing data to bharatpexPaymentServices Instance, to handle App Switch
     @Override
     public void onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         // block:start:onActivityResult
@@ -166,7 +166,7 @@ class CheckoutActivity : AppCompatActivity() {
 
         // In case super.onActivityResult is NOT available please use following:
         // if (data != null) {
-        //    hyperServices.onActivityResult(requestCode, resultCode, data);
+        //    bharatpexPaymentServices.onActivityResult(requestCode, resultCode, data);
         // }
 
         // block:end:onActivityResult
@@ -176,7 +176,7 @@ class CheckoutActivity : AppCompatActivity() {
 
 
     - onRequestPermissionsResult
-    - Handling onRequestPermissionsResult hook and passing data to HyperServices Instance, to OTP reading permissions
+    - Handling onRequestPermissionsResult hook and passing data to bharatpexPaymentServices Instance, to OTP reading permissions
     @Override
     public void onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         // block:start:onRequestPermissionsResult
@@ -185,7 +185,7 @@ class CheckoutActivity : AppCompatActivity() {
         // super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
         // In case super.onActivityResult is NOT available please use following:
-        // hyperServices.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        // bharatpexPaymentServices.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
         // block:end:onRequestPermissionsResult
     }
