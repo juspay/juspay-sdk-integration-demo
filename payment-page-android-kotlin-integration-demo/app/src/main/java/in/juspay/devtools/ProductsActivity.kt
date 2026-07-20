@@ -1,4 +1,4 @@
-package `in`.juspay.devtools
+package `in`.bharatpex.devtools
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,9 +9,9 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import com.google.android.material.snackbar.Snackbar
-import `in`.juspay.hyperinteg.HyperServiceHolder
-import `in`.juspay.hypersdk.data.JuspayResponseHandler
-import `in`.juspay.hypersdk.ui.HyperPaymentsCallbackAdapter
+import `in`.bharatpex.hyperinteg.BharatPeXPaymentServiceHolder
+import `in`.bharatpex.bharatpexpaymentsdksdk.data.BharatPeXResponseHandler
+import `in`.bharatpex.bharatpexpaymentsdksdk.ui.BharatPeXPaymentsCallbackAdapter
 import org.json.JSONObject
 import java.util.*
 
@@ -19,7 +19,7 @@ class ProductsActivity : AppCompatActivity() {
     var proceedButton: Button? = null
     var itemCountTv1: TextView? = null
     var itemCountTv2: TextView? = null
-    var hyperServicesHolder: HyperServiceHolder? = null
+    var bharatpexPaymentServicesHolder: BharatPeXPaymentServiceHolder? = null
     var initiatePayload: JSONObject? = null
     var coordinatorLayout: CoordinatorLayout? = null
     var item1Count = 1
@@ -33,11 +33,11 @@ class ProductsActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        //block:start:create-hyper-services-instance
+        //block:start:create-bharatpexPayment-services-instance
 
-        hyperServicesHolder = HyperServiceHolder(this)
+        bharatpexPaymentServicesHolder = BharatPeXPaymentServiceHolder(this)
         
-        //block:end:create-hyper-services-instance
+        //block:end:create-bharatpexPayment-services-instance
         
         initiatePaymentsSDK()
         proceedButton = findViewById(R.id.rectangle_8)
@@ -72,7 +72,7 @@ class ProductsActivity : AppCompatActivity() {
             innerPayload.put("xRoutingId", "<X_ROUTING_ID>")    //Your X Routing ID here
             innerPayload.put("environment", "production")
             sdkPayload.put("requestId", "" + UUID.randomUUID())
-            sdkPayload.put("service", "in.juspay.hyperpay")
+            sdkPayload.put("service", "hyperpay")
             sdkPayload.put("payload", innerPayload)
         } catch (e: Exception) {
             e.printStackTrace()
@@ -83,19 +83,19 @@ class ProductsActivity : AppCompatActivity() {
 
     //block:start:initiate-sdk
     private fun initiatePaymentsSDK() {
-        if (!hyperServicesHolder!!.isInitialised) {
+        if (!bharatpexPaymentServicesHolder!!.isInitialised) {
             initiatePayload = createInitiatePayload()
-            hyperServicesHolder!!.setCallback(createHyperPaymentsCallbackAdapter())
-            hyperServicesHolder!!.initiate(createInitiatePayload())
+            bharatpexPaymentServicesHolder!!.setCallback(createBharatPeXPaymentsCallbackAdapter())
+            bharatpexPaymentServicesHolder!!.initiate(createInitiatePayload())
             showSnackbar("Initiate Called!")
         }
     }
     //block:end:initiate-sdk
 
-    //block:start:create-hyper-callback
-    private fun createHyperPaymentsCallbackAdapter(): HyperPaymentsCallbackAdapter {
-        return object : HyperPaymentsCallbackAdapter() {
-            override fun onEvent(jsonObject: JSONObject, responseHandler: JuspayResponseHandler?) {
+    //block:start:create-bharatpexPayment-callback
+    private fun createBharatPeXPaymentsCallbackAdapter(): BharatPeXPaymentsCallbackAdapter {
+        return object : BharatPeXPaymentsCallbackAdapter() {
+            override fun onEvent(jsonObject: JSONObject, responseHandler: BharatPeXPaymentResponseHandler?) {
                 val redirect = Intent(this@ProductsActivity, ResponsePage::class.java)
                 redirect.putExtra("responsePayload", jsonObject.toString())
                 try {
@@ -167,7 +167,7 @@ class ProductsActivity : AppCompatActivity() {
             }
         }
     }
-    // block:end:create-hyper-callback
+    // block:end:create-bharatpexPayment-callback
 
     fun showSnackbar(message: String?) {
         coordinatorLayout = findViewById(R.id.coordinatorLayout2)
