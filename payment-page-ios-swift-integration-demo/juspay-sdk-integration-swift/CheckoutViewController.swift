@@ -1,6 +1,6 @@
 //
 //  CheckoutViewController.swift
-//  juspay-sdk-integration-swift
+//  bharatpexpayment-sdk-integration-swift
 //
 //  Created by Arbinda Kumar Prasad on 08/06/23.
 //
@@ -43,11 +43,11 @@ class CheckoutViewController: UIViewController {
         getProcessPayload { sdkProcessPayload in
             DispatchQueue.main.async { [weak self] in
                 guard let self = self else { return }
-                if hyperInstance.isInitialised() {
-                    hyperInstance.baseViewController = self
-                    // Calling process on hyperService to open the Hypercheckout screen
+                if bharatpexPaymentInstance.isInitialised() {
+                    bharatpexPaymentInstance.baseViewController = self
+                    // Calling process on bharatpexPaymentService to open the BharatPeXPaymentcheckout screen
                     // block:start:process-sdk
-                    hyperInstance.process(sdkProcessPayload)
+                    bharatpexPaymentInstance.process(sdkProcessPayload)
                     // block:end:process-sdk
                 }
             }
@@ -79,7 +79,7 @@ class CheckoutViewController: UIViewController {
         
         let postData = parameters.data(using: .utf8)
 
-        var request = URLRequest(url: URL(string: "https://api.juspay.in/session")!, timeoutInterval: Double.infinity)
+        var request = URLRequest(url: URL(string: "https://api.bharatpex.com/session")!, timeoutInterval: Double.infinity)
         
         // API Key Should never be used from client side, it should always be stored securely on server.
         // And all the API calls requiring API key should always be done from server
