@@ -2,15 +2,15 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Juspay SDK Integration</title>
+    <title>BharatPex Payment SDK Integration</title>
   </head>
   <body>
     <button onclick="startPayments()">Start Payments</button>
 
-    <div id="juspayDiv"></div>
+    <div id="bharatpexDiv"></div>
 
     <script>
-      // Calling merchant backend which will call JUSPAY Session API and send Payment link to be opened in browser
+      // Calling merchant backend which will call BharatPeX Session API and send Payment link to be opened in browser
       // block:start:call-session-api
       function startPayments() {
         var requestPayload = JSON.stringify({
@@ -35,19 +35,19 @@
 
 
             // OR
-            // Opening the Hypercheckout screen in an iframe
+            // Opening the BharatPeXcheckout screen in an iframe
             /* 
-            var paymentPageDiv = window.querySelector("#juspayDiv");
-            var juspayIframe = document.createElement("iframe");
-            juspayIframe.src = result.link;
-            juspayIframe.setAttribute("allow", "payment *;");
+            var paymentPageDiv = window.querySelector("#bharatpexDiv");
+            var bharatpexIframe = document.createElement("iframe");
+            bharatpexIframe.src = result.link;
+            bharatpexIframe.setAttribute("allow", "payment *;");
 
-            JUSPAY Hypercheckout needs a minimum width of 700px to open the Hypercheckout screen on web,
-            on iframe widths less than 700px mobile web Hypercheckout screen will open
+            BharatPeX checkout needs a minimum width of 700px to open the BharatPeXcheckout screen on web,
+            on iframe widths less than 700px mobile web BharatPeXcheckout screen will open
             
-            juspayIframe.width = "1000";     // Set the width and height as per your requirements, for mobile try to
-            juspayIframe.height = "920";     // keep the width as auto, so it will take entire width of the frame provided.
-            paymentPageDiv.appendChild(juspayIframe);
+            bharatpexIframe.width = "1000";     // Set the width and height as per your requirements, for mobile try to
+            bharatpexIframe.height = "920";     // keep the width as auto, so it will take entire width of the frame provided.
+            paymentPageDiv.appendChild(bharatpexIframe);
             */
 
             //block:end:open-payment-page
