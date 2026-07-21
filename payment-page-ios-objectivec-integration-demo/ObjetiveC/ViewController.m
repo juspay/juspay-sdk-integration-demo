@@ -8,16 +8,16 @@
 
 #import "ViewController.h"
 
-// Importing Hyper SDK
-// block:start:import-hyper-sdk
-#import <HyperSDK/HyperSDK.h>
-// block:end:import-hyper-sdk
+// Importing BharatPeXPayment SDK
+// block:start:import-bharatpexpayment-sdk
+#import <BharatPeXPaymentSDK/BharatPeXPaymentSDK.h>
+// block:end:import-bharatpexpayment-sdk
 
 @interface ViewController ()
 
-// Declaring HyperServices property
-@property (nonatomic, strong) HyperServices *hyperInstance;
-@property (nonatomic, copy) HyperSDKCallback hyperCallbackHandler;
+// Declaring BharatPeXPaymentServices property
+@property (nonatomic, strong) BharatPeXPaymentServices *bharatpexpaymentInstance;
+@property (nonatomic, copy) BharatPeXPaymentSDKCallback bharatpexpaymentCallbackHandler;
 
 @end
 
@@ -37,7 +37,7 @@
 
     NSDictionary *sdkPayload = @{
         @"requestId": @"12398b5571d74c3388a74004bc24370c",
-        @"service": @"in.juspay.hyperpay",
+        @"service": @"in.juspay.bharatpexpaymentpay",
         @"payload": innerPayload
     };
 
@@ -73,7 +73,7 @@
     
     NSDictionary *sdkPayload = @{
         @"requestId": NSUUID.UUID.UUIDString,
-        @"service": @"in.juspay.hyperpay",
+        @"service": @"hyperpay",
         @"payload": sdkProcessPayload
     };
 
@@ -85,12 +85,12 @@
     
     [super viewDidLoad];
     
-    //block:start:create-hyper-services-instance
-    self.hyperInstance = [[HyperServices alloc] init];
-    //block:end:create-hyper-services-instance
+    //block:start:create-bharatpexpayment-services-instance
+    self.bharatpexpaymentInstance = [[BharatPeXPaymentServices alloc] init];
+    //block:end:create-bharatpexpayment-services-instance
     
-    //block:start:create-hyper-callback
-    self.hyperCallbackHandler = ^(NSDictionary<NSString *,id> * _Nullable response) {
+    //block:start:create-bharatpexpayment-callback
+    self.bharatpexpaymentCallbackHandler = ^(NSDictionary<NSString *,id> * _Nullable response) {
         NSDictionary *data = response;
         NSString *event = data[@"event"];
         
@@ -98,7 +98,7 @@
             // hide loader
         }
         // Handle Process Result
-        // This case will reach once the Hypercheckout screen closes
+        // This case will reach once the BharatPeXPaymentcheckout screen closes
         // block:start:handle-process-result
 
         else if ([event isEqualToString:@"process_result"]) {
@@ -143,23 +143,23 @@
         }
         // block:end:handle-process-result
     };
-    //block:end:create-hyper-callback
+    //block:end:create-bharatpexpayment-callback
     
 }
 
 
 - (IBAction)initiatePayments:(id)sender {
-    // Calling initiate on hyperService instance to boot up payment engine.
+    // Calling initiate on bharatpexpaymentService instance to boot up payment engine.
     // block:start:initiate-sdk
     NSDictionary *initPayload = [self createInitiatePayload];
-    [self.hyperInstance initiate:self payload:initPayload callback:self.hyperCallbackHandler];
+    [self.bharatpexpaymentInstance initiate:self payload:initPayload callback:self.bharatpexpaymentCallbackHandler];
     // block:end:initiate-sdk
 }
 - (IBAction)startPayments:(id)sender {
-    // Calling process on hyperService to open the Hypercheckout screen
+    // Calling process on bharatpexpaymentService to open the BharatPeXPaymentcheckout screen
     // block:start:process-sdk
     NSDictionary *processPayload = [self createProcessPayload];
-    [self.hyperInstance process:processPayload];
+    [self.bharatpexpaymentInstance process:processPayload];
     // block:end:process-sdk
 }
 
