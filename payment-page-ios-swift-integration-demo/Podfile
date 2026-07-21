@@ -1,18 +1,18 @@
 use_frameworks!
 
 
-target 'juspay-sdk-integration-swift' do
-  # Adding Hyper SDK dependecy
-  # block:start:adding-hyper-sdk-pod
-  pod 'HyperSDK', '2.1.31'
-  # block:end:adding-hyper-sdk-pod
+target 'bharatpex-sdk-integration-swift' do
+  # Adding BharatPeX Payment SDK dependecy
+  # block:start:adding-bharatpex-sdk-pod
+  pod 'BharatPeXSDK', '2.2.13'
+  # block:end:adding-bharatpex-sdk-pod
 end
 
 
-# Adding Hyper SDK dependecy
+# Adding BharatPeX Payment SDK dependecy
 # block:start:adding-plugin-installation-script
 post_install do |installer|
- fuse_path = "./Pods/HyperSDK/Fuse.rb"
+ fuse_path = "./Pods/BharatPeXPaymentSDK/Fuse.rb"
  clean_assets = true # Pass true to re-download all the assets
  if File.exist?(fuse_path)
    if system("ruby", fuse_path.to_s, clean_assets.to_s)

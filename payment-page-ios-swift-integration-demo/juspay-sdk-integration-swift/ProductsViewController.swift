@@ -1,22 +1,22 @@
 //
 //  ProductsViewController.swift
-//  juspay-sdk-integration-swift
+//  bharatpex-sdk-integration-swift
 //
 //  Created by Arbinda Kumar Prasad on 08/06/23.
 //
 
 import UIKit
 
-// Importing Hyper SDK
-// block:start:import-hyper-sdk
-import HyperSDK
-// block:end:import-hyper-sdk
+// Importing BharatPeXPayment SDK
+// block:start:import-bharatpexPayment-sdk
+import BharatPeXPaymentSDK
+// block:end:import-bharatpexPayment-sdk
 
 
-// Creating an object of HyperServices class.
-// block:start:create-hyper-services-instance
-let hyperInstance = HyperServices();
-// block:end:create-hyper-services-instance
+// Creating an object of BharatPeXPaymentServices class.
+// block:start:create-bharatpexpayment-services-instance
+let bharatpexPaymentInstance = BharatPeXPaymentServices();
+// block:end:create-bharatpexPayment-services-instance
 
 var p1Price = 1
 var p2Price = 2
@@ -30,12 +30,12 @@ class ProductsViewController: UIViewController {
         p1Outlet.text = "\(p1Qnty)"
         p2Outlet.text = "\(p2Qnty)"
 
-        // Calling initiate on hyperService instance to boot up payment engine.
+        // Calling initiate on bharatpexPaymentService instance to boot up payment engine.
         // block:start:initiate-sdk
-        hyperInstance.initiate(
+        bharatpexPaymentInstance.initiate(
             self,
             payload: createInitiatePayload(),
-            callback: hyperCallbackHandler
+            callback: bharatpexPaymentCallbackHandler
         )
         // block:end:initiate-sdk
     }
@@ -53,7 +53,7 @@ class ProductsViewController: UIViewController {
         
         let sdkPayload : [String: Any] = [
             "requestId": UUID().uuidString,
-            "service": "in.juspay.hyperpay",
+            "service": "hyperpay",
             "payload": innerPayload
         ]
         
@@ -67,16 +67,16 @@ class ProductsViewController: UIViewController {
     @IBOutlet weak var p2Outlet: UITextView!
 
 
-    // Creating HyperPaymentsCallbackAdapter
-    // This callback will get all events from hyperService instance
-    // block:start:create-hyper-callback
-    func hyperCallbackHandler(response: [String: Any]?) {
+    // Creating BharatPeXPaymentsCallbackAdapter
+    // This callback will get all events from bharatpexPaymentService instance
+    // block:start:create-bharatpexPayment-callback
+    func bharatpexPaymentCallbackHandler(response: [String: Any]?) {
         if let data = response, let event = data["event"] as? String {
             if event == "hide_loader" {
                 // hide loader
             }
             // Handle Process Result
-            // This case will reach once the Hypercheckout screen closes
+            // This case will reach once the BharatPeXPaymentcheckout screen closes
             // block:start:handle-process-result
             else if event == "process_result" {
                 let error = data["error"] as? Bool ?? false
@@ -142,7 +142,7 @@ class ProductsViewController: UIViewController {
             // block:end:handle-process-result
         }
     }
-    // block:end:create-hyper-callback
+    // block:end:create-bharatpexPayment-callback
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "statusSegue" {
