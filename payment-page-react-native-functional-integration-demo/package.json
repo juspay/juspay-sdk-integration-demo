@@ -1,5 +1,5 @@
 {
-  "name": "juspayintegrationexamplern",
+  "name": "bharatpexintegrationexamplern",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -13,7 +13,7 @@
     "@react-navigation/native": "^6.0.10",
     "@react-navigation/native-stack": "^6.6.1",
     "@react-navigation/stack": "^6.2.1",
-    "hyper-sdk-react": "^2.1.1",
+    "bharatpexpayment-sdk-react": "^2.1.1",
     "react": "17.0.2",
     "react-native": "0.68.0",
     "react-native-gesture-handler": "^2.3.2",
@@ -33,7 +33,7 @@
   },
   //block:start:add-dependency-ios
 
-  "hyperSdkIOSVersion": "2.2.2.8",
+  "bharatpexPaymentSdkIOSVersion": "2.2.2.8",
   
   //block:end:add-dependency-ios
   "jest": {
