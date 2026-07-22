@@ -5,8 +5,8 @@ buildscript {
     ext {
           // block:start:add-ext-property
         ....
-        clientId = "<clientId shared by Juspay team>"
-        hyperSDKVersion = "2.1.13"
+        clientId = "<clientId shared by BharatPeX team>"
+        bharatpexPaymentSDKVersion = "2.2.13"
          // block:end:add-ext-property
         ....
     }
@@ -20,7 +20,7 @@ allprojects {
     repositories {
         ....
         ....
-        maven { url "https://maven.juspay.in/jp-build-packages/hyper-sdk/" }
+        maven { url "https://api.bharatpex.com/payments-sdk/" }
     }
 }
 // block:end:client-id-extention

@@ -8,7 +8,7 @@
   .........
 
   App.addListener('backButton', async (data) => {
-    const { onBackPressed } = await HyperServices.onBackPressed();
+    const { onBackPressed } = await BharatPeXPaymentServices.onBackPressed();
     if (!onBackPressed) {
       window.history.back();
     }
@@ -16,16 +16,16 @@
     // block:end:onBackPressed
 
 
-  // Calling process on hyperSDK to open the checkout screen
+  // Calling process on bharatpexPaymentSDK to open the checkout screen
   // block:start:process-sdk
 
-  await HyperServices.process(processPayload);
+  await BharatPeXPaymentServices.process(processPayload);
   // block:end:process-sdk
 }
 
-// Listen to events from HyperSDK
+// Listen to events from BharatPeXPaymentSDK
 // block:start:callbacklistener
-HyperServices.addListener('HyperEvent', async (data) => {
+BharatPeXPaymentServices.addListener('BharatPeXPaymentEvent', async (data) => {
    var event = data["event"];
    switch (event) {
       case "show_loader": {
