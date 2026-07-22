@@ -1,3 +1,3 @@
-if (hyperInstance.isInitialised()){
-    hyperInstance.process(processPayload);
+if (bharatpexPaymentInstance.isInitialised()){
+    bharatpexPaymentInstance.process(processPayload);
 }

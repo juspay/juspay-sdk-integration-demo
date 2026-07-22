@@ -1,5 +1,5 @@
  - onActivityResult
-    - Handling onActivityResult hook and passing data to HyperServices Instance, to handle App Switch
+    - Handling onActivityResult hook and passing data to BharatPeXpaymentServices Instance, to handle App Switch
     @Override
     public void onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         // block:start:onActivityResult
@@ -9,7 +9,7 @@
 
         // In case super.onActivityResult is NOT available please use following:
         // if (data != null) {
-        //    hyperServices.onActivityResult(requestCode, resultCode, data);
+        //    bharatpexPaymentServices.onActivityResult(requestCode, resultCode, data);
         // }
 
         // block:end:onActivityResult

@@ -1,5 +1,5 @@
-// block:start:create-hyper-services-instance
+// block:start:create-bharatpexpayment-services-instance
 
-HyperSdkReact.createHyperServices();
+BharatPeXPaymentSdkReact.createBharatPeXPaymentServices();
 
-// block:end:create-hyper-services-instance
+// block:end:create-bharatpexpayment-services-instance
