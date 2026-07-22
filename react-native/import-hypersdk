@@ -1,5 +1,5 @@
-//block:start:import-hyper-sdk
+//block:start:import-bharatpexpayment-sdk
 
-import HyperSdkReact from 'hyper-sdk-react';
+import HyperSdkReact from 'bharatpexpayment-sdk-react';
 
-//block:end:import-hyper-sdk
+//block:end:import-bharatpexpayment-sdk
