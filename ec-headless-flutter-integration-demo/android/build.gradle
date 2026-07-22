@@ -5,8 +5,8 @@ buildscript {
     
     ext {
         ....
-        clientId = "<clientId shared by Juspay team>"
-        hyperSDKVersion = "2.1.13"
+        clientId = "<clientId shared by BharatPeX team>"
+        bharatpexPaymentSDKVersion = "2.1.13"
         ....
     }
     // block:end:client-id-extention
