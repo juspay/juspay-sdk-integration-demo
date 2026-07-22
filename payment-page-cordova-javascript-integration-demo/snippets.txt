@@ -1,15 +1,15 @@
 //block:start:add-merchant-config-android
 
-clientId = <clientId> shared by Juspay Team
+clientId = <clientId> shared by BharatPeX Team
 
 //block:end:add-merchant-config-android
 
 
-//block:start:create-hyper-services-instance
+//block:start:create-bharatpexpayment-services-instance
 
-hyperSDKRef = cordova.plugins.HyperSDKPlugin
+bharatpexPaymentSDKRef = cordova.plugins.BharatPeXPaymentSDKPlugin
 
-//block:end:create-hyper-services-instance
+//block:end:create-bharatpexpayment-services-instance
 
 
 //block:start:create-initiate-payload
@@ -25,7 +25,7 @@ function uuidv4() {
 function createInitiatePayload() {
     return {
         requestId: uuidv4(),
-        service: "in.juspay.hyperpay",
+        service: "hyperpay",
         payload: {
             action: "initiate",
             merchantId: "<your_merchant_id>",
@@ -39,9 +39,9 @@ function createInitiatePayload() {
 //block:end:create-initiate-payload
 
 
-//block:start:create-hyper-callback
+//block:start:create-bharatpexpayment-callback
 
-var hyperSDKCallback = function (response) {
+var bharatpexPaymentSDKCallback = function (response) {
   try {
     const data = JSON.parse(resp);
     var event = data.event || '';
@@ -159,12 +159,12 @@ var hyperSDKCallback = function (response) {
   }
 }
 
-//block:end:create-hyper-callback
+//block:end:create-bharatpexpayment-callback
 
 
 //block:start:initiate-sdk
 
-hyperSDKRef.initiate(JSON.stringify(createInitiatePayload()), hyperSDKCallback);
+bharatpexPaymentSDKRef.initiate(JSON.stringify(createInitiatePayload()), bharatpexPaymentSDKCallback);
 
 //block:end:initiate-sdk
 
@@ -183,6 +183,6 @@ hyperSDKRef.initiate(JSON.stringify(createInitiatePayload()), hyperSDKCallback);
 
 var processPayload = await fetch getProcessSDKPayload();
 
-hyperSDKRef.process(processPayload);
+bharatpexPaymentSDKRef.process(processPayload);
 
 //block:end:process-sdk
