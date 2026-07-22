@@ -10,7 +10,7 @@ buildscript {
         // block:start:add-ext-property
 
         clientId = "<CLIENT_ID>"
-        hyperSDKVersion = "2.1.20"
+        bharatpexPaymentSDKVersion = "2.2.13"
         
         // block:end:add-ext-property
     }
@@ -46,10 +46,10 @@ allprojects {
         }
         google()
         maven { url 'https://www.jitpack.io' }
-        // block:start:hyper-sdk-maven-url
+        // block:start:bharatpexpayment-sdk-maven-url
 
-        maven { url "https://maven.bharatpex.com/jp-build-packages/hyper-sdk/"}
+        maven { url "https://maven.bharatpex.com/jp-build-packages/bharatpexpayment-sdk/"}
         
-        // block:end:hyper-sdk-maven-url
+        // block:end:bharatpexpayment-sdk-maven-url
     }
 }

@@ -4,7 +4,7 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 platform :ios, '11.0'
 install! 'cocoapods', :deterministic_uuids => false
 
-target 'juspayIntegrationExampleRN' do
+target 'bharatpexIntegrationExampleRN' do
   config = use_native_modules!
 
   # Flags change depending on the env values.
@@ -19,7 +19,7 @@ target 'juspayIntegrationExampleRN' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'juspayIntegrationExampleRNTests' do
+  target 'bharatpexIntegrationExampleRNTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -34,7 +34,7 @@ target 'juspayIntegrationExampleRN' do
   post_install do |installer|
     react_native_post_install(installer)
     __apply_Xcode_12_5_M1_post_install_workaround(installer)
-    fuse_path = "./Pods/HyperSDK/Fuse.rb"
+    fuse_path = "./Pods/BharatPeXPaymentSDK/Fuse.rb"
     clean_assets = false # Pass true to re-download all the assets
     if File.exist?(fuse_path)
       if system("ruby", fuse_path.to_s, clean_assets.to_s)
