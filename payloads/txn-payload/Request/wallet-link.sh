@@ -1,6 +1,6 @@
 {
   "requestId": "d3aec4b3-3cf5-45a1-b999-9b06d94af678",
-  "service": "in.juspay.hyperapi",
+  "service": "hyperapi",
   "payload": {
     "action": "walletTxn",
     "orderId": "hyperorder45314",
