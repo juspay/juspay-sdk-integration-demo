@@ -6,7 +6,7 @@ buildscript {
     ext {
         ....
         clientId = "<clientId shared by BharatPeX team>"
-        bharatpexPaymentSDKVersion = "2.1.13"
+        bharatpexPaymentSDKVersion = "2.2.13"
         ....
     }
     // block:end:client-id-extention
