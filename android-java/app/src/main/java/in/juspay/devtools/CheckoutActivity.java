@@ -2,8 +2,8 @@
 {
     //block:start:process-sdk-call
 
-    if (bharatpexInstance.isInitialised()){
-    bharatpexInstance.process(processPayload);
+    if (bharatpexPaymentInstance.isInitialised()){
+    bharatpexPaymentInstance.process(processPayload);
 }
     //block:end:process-sdk-call
 
@@ -11,8 +11,8 @@
 
     // block:start:create-bharatpex-callback
     
-    private BharatPeXPaymentsCallbackAdapter createBharatPeXPaymentsCallbackAdapter() {
-        return new BharatPeXPaymentsCallbackAdapter() {
+    private BharatPeXPaymentCallbackAdapter createBharatPeXPaymentCallbackAdapter() {
+        return new BharatPeXPaymentCallbackAdapter() {
             @Override
             public void onEvent(JSONObject jsonObject, BharatPeXResponseHandler responseHandler) {
                 Intent redirect = new Intent(CheckoutActivity.this, ResponsePage.class);
@@ -110,7 +110,7 @@
     
     @Override
     public void onBackPressed() {
-        boolean handleBackpress = bharatpexServicesHolder.onBackPressed();
+        boolean handleBackpress = bharatpexPaymentServicesHolder.onBackPressed();
         if(!handleBackpress) {
             super.onBackPressed();
         }
@@ -137,7 +137,7 @@
 
         // In case super.onActivityResult is NOT available please use following:
         // if (data != null) {
-        //    bharatpexServices.onActivityResult(requestCode, resultCode, data);
+        //    bharatpexPaymentServices.onActivityResult(requestCode, resultCode, data);
         // }
 
         // block:end:onActivityResult
@@ -156,7 +156,7 @@
         // super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
         // In case super.onActivityResult is NOT available please use following:
-        // bharatpexServices.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        // bharatpexPaymentServices.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
         // block:end:onRequestPermissionsResult
     }

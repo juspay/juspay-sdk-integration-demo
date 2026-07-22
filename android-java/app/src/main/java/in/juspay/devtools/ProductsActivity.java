@@ -1,4 +1,4 @@
-package in.bharatpex.devtools;
+package in.bharatpexpayment.devtools;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
@@ -10,13 +10,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 import org.json.JSONObject;
 import java.util.UUID;
-import in.bharatpex.hyperinteg.BharatPeXServiceHolder;
+import in.bharatpexpayment.hyperinteg.BharatPeXServiceHolder;
 
 
 public class ProductsActivity extends AppCompatActivity {
     private Button proceedButton;
     private TextView itemCountTv1, itemCountTv2;
-    private BharatPeXServiceHolder bharatpexServicesHolder;
+    private BharatPeXServiceHolder bharatpexPaymentServicesHolder;
     private JSONObject initiatePayload;
     protected CoordinatorLayout coordinatorLayout;
     private int item1Count = 1, item2Count = 0, item1Price = 1, item2Price = 1;
@@ -30,11 +30,11 @@ public class ProductsActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        //block:start:create-bharatpex-services-instance
+        //block:start:create-bharatpexpayment-services-instance
         
-        bharatpexServicesHolder = new BharatPeXServiceHolder(this);
+        bharatpexPaymentServicesHolder = new BharatPeXServiceHolder(this);
 
-        //block:end:create-bharatpex-services-instance
+        //block:end:create-bharatpexpayment-services-instance
         initiatePaymentsSDK();
         proceedButton = findViewById(R.id.rectangle_8);
         itemCountTv1 = findViewById(R.id.some_id);
@@ -60,11 +60,11 @@ public class ProductsActivity extends AppCompatActivity {
     //block:start:call-initiate
     //This function initiate the BharatPeX SDK
     private void initiatePaymentsSDK() {
-        if(!bharatpexServicesHolder.isInitiated()){
+        if(!bharatpexPaymentServicesHolder.isInitiated()){
             initiatePayload = createInitiatePayload();
-            BharatPeXPaymentsCallbackAdapter callbackAdapter = createBharatPeXPaymentsCallbackAdapter()
-            bharatpexServicesHolder.setCallback(callbackAdapter);
-            bharatpexServicesHolder.initiate(initiatePayload);
+            BharatPeXPaymentCallbackAdapter callbackAdapter = createBharatPeXPaymentCallbackAdapter()
+            bharatpexPaymentServicesHolder.setCallback(callbackAdapter);
+            bharatpexPaymentServicesHolder.initiate(initiatePayload);
             //Showing snackbar
             Helper helper = new Helper();
             CoordinatorLayout coordinatorLayout = findViewById(R.id.coordinatorLayout2);
