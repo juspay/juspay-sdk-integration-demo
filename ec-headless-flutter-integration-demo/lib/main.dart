@@ -1,16 +1,16 @@
-// Importing Hyper SDK
-// block:start:import-hyper-sdk
+// Importing BhratPeXPayment SDK
+// block:start:import-bharatpexpayment-sdk
 
-import 'package:hypersdkflutter/hypersdkflutter.dart';
-// block:end:import-hyper-sdk
+import 'package:bharatpexpaymentsdkflutter/bharatpexpaymentsdkflutter.dart';
+// block:end:import-bharatpexpayment-sdk
 
 ....
 
 class MyApp extends StatelessWidget {
   // Create Juspay Object
-  // // block:start:create-hyper-sdk-instance
+  // // block:start:create-bharatpexpayment-sdk-instance
 
-  final hyperSDK = HyperSDK();
-  // // block:end:create-hyper-sdk-instance
+  final bharatPeXPaymentSDK = BhratPeXPaymentSDK();
+  // // block:end:create-bharatpexpayment-sdk-instance
   ....
 }
