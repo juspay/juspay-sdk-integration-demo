@@ -1,17 +1,17 @@
 
-  # Adding Hyper SDK dependecy
-  # block:start:adding-hyper-sdk-pod
+  # Adding BharatPexPayment SDK dependecy
+  # block:start:adding-bharatpexpayment-sdk-pod
 
-  pod 'HyperSDK', '2.1.23'
-  # block:end:adding-hyper-sdk-pod
+  pod 'BharatPexPayment', '2.1.23'
+  # block:end:adding-bharatpexpayment-sdk-pod
 end
 
 
-# Adding Hyper SDK dependecy
+# Adding BharatPexPayment SDK dependecy
 # block:start:adding-plugin-installation-script
 
 post_install do |installer|
-  fuse_path = "./Pods/HyperSDK/Fuse.rb"
+  fuse_path = "./Pods/BharatPexPayment/Fuse.rb"
   clean_assets = false # Pass true to re-download all the assets
   if File.exist?(fuse_path)
     if system("ruby", fuse_path.to_s, clean_assets.to_s)
