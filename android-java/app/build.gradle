@@ -45,7 +45,7 @@ dependencies {
 //block:start:add-sdk-implementation
 bharatpexPaymentSdkPlugin {
     clientId = "<CLIENT_ID>"
-    sdkVersion = "2.1.20"
+    sdkVersion = "2.2.13"
 }
 //block:end:add-sdk-implementation
 
