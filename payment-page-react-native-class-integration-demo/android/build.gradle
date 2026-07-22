@@ -10,7 +10,7 @@ buildscript {
         // block:start:add-ext-property
         kotlin_version = '1.6.10'
         clientId = "<CLIENT_ID>"
-        bharatpexPaymentSDKVersion = "2.1.20"
+        bharatpexPaymentSDKVersion = "2.2.13"
 
         // block:end:add-ext-property
     }
