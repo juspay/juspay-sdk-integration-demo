@@ -4,7 +4,7 @@
 
     onWillPop: () async {
       if (Platform.isAndroid) {
-        var backpressResult = await widget.hyperSDK.onBackPress();
+        var backpressResult = await widget.bharatpexPaymentSDK.onBackPress();
 
         if (backpressResult.toLowerCase() == "true") {
           return false;
@@ -18,17 +18,17 @@
     // block:end:onBackPressed
 
 
-  // Calling process on hyperSDK to open the checkout screen
+  // Calling process on bharatpexPaymentSDK to open the checkout screen
   // block:start:process-sdk
 
-  await widget.hyperSDK.process(processPayload, hyperSDKCallbackHandler);
+  await widget.bharatpexPaymentSDK.process(processPayload, bharatpexPaymentSDKCallbackHandler);
   // block:end:process-sdk
 }
 
-// Define handler for callbacks from hyperSDK
+// Define handler for callbacks from bharatpexPaymentSDK
 // block:start:callback-handler
 
-void hyperSDKCallbackHandler(MethodCall methodCall) {
+void bharatpexPaymentSDKCallbackHandler(MethodCall methodCall) {
   switch (methodCall.method) {
     case "hide_loader":
       setState(() {
