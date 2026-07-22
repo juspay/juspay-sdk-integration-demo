@@ -1,12 +1,12 @@
-void initiateHyperSDK() async {
-  // Check whether hyperSDK is already initialised
-  if (!await widget.hyperSDK.isInitialised()) {
+void initiateBharatPexPaymentSDK() async {
+  // Check whether bharatpexPaymentSDK is already initialised
+  if (!await widget.bharatpexPaymentSDK.isInitialised()) {
     // Getting initiate payload
     // block:start:get-initiate-payload
     
     var initiatePayload = {
       "requestId": const Uuid().v4(),
-      "service": "in.juspay.hyperapi",
+      "service": "hyperapi",
       "payload": {
         "action": "initiate",
         "merchantId": "<merchant-id>",
@@ -17,10 +17,10 @@ void initiateHyperSDK() async {
     };
     // block:end:get-initiate-payload
 
-    // Calling initiate on hyperSDK instance to boot up payment engine.
+    // Calling initiate on bharatpexPaymentSDK instance to boot up payment engine.
     // block:start:initiate-sdk
 
-    await widget.hyperSDK.initiate(initiatePayload, initiateCallbackHandler);
+    await widget.bharatpexPaymentSDK.initiate(initiatePayload, initiateCallbackHandler);
     // block:end:initiate-sdk
   }
 }
