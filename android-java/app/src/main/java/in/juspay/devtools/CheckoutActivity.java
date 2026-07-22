@@ -2,19 +2,19 @@
 {
     //block:start:process-sdk-call
 
-    if (hyperInstance.isInitialised()){
-    hyperInstance.process(processPayload);
+    if (bharatpexInstance.isInitialised()){
+    bharatpexInstance.process(processPayload);
 }
     //block:end:process-sdk-call
 
 
 
-    // block:start:create-hyper-callback
+    // block:start:create-bharatpex-callback
     
-    private HyperPaymentsCallbackAdapter createHyperPaymentsCallbackAdapter() {
-        return new HyperPaymentsCallbackAdapter() {
+    private BharatPeXPaymentsCallbackAdapter createBharatPeXPaymentsCallbackAdapter() {
+        return new BharatPeXPaymentsCallbackAdapter() {
             @Override
-            public void onEvent(JSONObject jsonObject, JuspayResponseHandler responseHandler) {
+            public void onEvent(JSONObject jsonObject, BharatPeXResponseHandler responseHandler) {
                 Intent redirect = new Intent(CheckoutActivity.this, ResponsePage.class);
                 redirect.putExtra("responsePayload", jsonObject.toString());
                 System.out.println(jsonObject);
@@ -35,7 +35,7 @@
                         }
                     }
                     // Handle Process Result
-                    // This case will reach once the Hypercheckout screen closes
+                    // This case will reach once the BharatPeXcheckout screen closes
                     // block:start:handle-process-result
                     else if (event.equals("process_result")) {
                         boolean error = jsonObject.optBoolean("error");
@@ -102,7 +102,7 @@
             }
         };
     }
-    // block:end:create-hyper-callback
+    // block:end:create-bharatpex-callback
 
 
 
@@ -110,7 +110,7 @@
     
     @Override
     public void onBackPressed() {
-        boolean handleBackpress = hyperServicesHolder.onBackPressed();
+        boolean handleBackpress = bharatpexServicesHolder.onBackPressed();
         if(!handleBackpress) {
             super.onBackPressed();
         }
@@ -127,7 +127,7 @@
 
 
     - onActivityResult
-    - Handling onActivityResult hook and passing data to HyperServices Instance, to handle App Switch
+    - Handling onActivityResult hook and passing data to BharatPeXServices Instance, to handle App Switch
     @Override
     public void onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         // block:start:onActivityResult
@@ -137,7 +137,7 @@
 
         // In case super.onActivityResult is NOT available please use following:
         // if (data != null) {
-        //    hyperServices.onActivityResult(requestCode, resultCode, data);
+        //    bharatpexServices.onActivityResult(requestCode, resultCode, data);
         // }
 
         // block:end:onActivityResult
@@ -147,7 +147,7 @@
 
 
     - onRequestPermissionsResult
-    - Handling onRequestPermissionsResult hook and passing data to HyperServices Instance, to OTP reading permissions
+    - Handling onRequestPermissionsResult hook and passing data to BharatPeXServices Instance, to OTP reading permissions
     @Override
     public void onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         // block:start:onRequestPermissionsResult
@@ -156,7 +156,7 @@
         // super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
         // In case super.onActivityResult is NOT available please use following:
-        // hyperServices.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        // bharatpexServices.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
         // block:end:onRequestPermissionsResult
     }

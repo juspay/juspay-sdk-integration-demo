@@ -1,4 +1,4 @@
-package in.juspay.devtools;
+package in.bharatpex.devtools;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
@@ -10,13 +10,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 import org.json.JSONObject;
 import java.util.UUID;
-import in.juspay.hyperinteg.HyperServiceHolder;
+import in.bharatpex.hyperinteg.BharatPeXServiceHolder;
 
 
 public class ProductsActivity extends AppCompatActivity {
     private Button proceedButton;
     private TextView itemCountTv1, itemCountTv2;
-    private HyperServiceHolder hyperServicesHolder;
+    private BharatPeXServiceHolder bharatpexServicesHolder;
     private JSONObject initiatePayload;
     protected CoordinatorLayout coordinatorLayout;
     private int item1Count = 1, item2Count = 0, item1Price = 1, item2Price = 1;
@@ -30,11 +30,11 @@ public class ProductsActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        //block:start:create-hyper-services-instance
+        //block:start:create-bharatpex-services-instance
         
-        hyperServicesHolder = new HyperServiceHolder(this);
+        bharatpexServicesHolder = new BharatPeXServiceHolder(this);
 
-        //block:end:create-hyper-services-instance
+        //block:end:create-bharatpex-services-instance
         initiatePaymentsSDK();
         proceedButton = findViewById(R.id.rectangle_8);
         itemCountTv1 = findViewById(R.id.some_id);
@@ -58,13 +58,13 @@ public class ProductsActivity extends AppCompatActivity {
 
     
     //block:start:call-initiate
-    //This function initiate the Juspay SDK
+    //This function initiate the BharatPeX SDK
     private void initiatePaymentsSDK() {
-        if(!hyperServicesHolder.isInitiated()){
+        if(!bharatpexServicesHolder.isInitiated()){
             initiatePayload = createInitiatePayload();
-            HyperPaymentsCallbackAdapter callbackAdapter = createHyperPaymentsCallbackAdapter()
-            hyperServicesHolder.setCallback(callbackAdapter);
-            hyperServicesHolder.initiate(initiatePayload);
+            BharatPeXPaymentsCallbackAdapter callbackAdapter = createBharatPeXPaymentsCallbackAdapter()
+            bharatpexServicesHolder.setCallback(callbackAdapter);
+            bharatpexServicesHolder.initiate(initiatePayload);
             //Showing snackbar
             Helper helper = new Helper();
             CoordinatorLayout coordinatorLayout = findViewById(R.id.coordinatorLayout2);
@@ -89,7 +89,7 @@ public class ProductsActivity extends AppCompatActivity {
             innerPayload.put("xRoutingId", "<XROUTING_ID>");      // Put your X-Routing ID here
             innerPayload.put("environment", "prod");
             sdkPayload.put("requestId",  ""+ UUID.randomUUID());
-            sdkPayload.put("service", "in.juspay.hyperapi");
+            sdkPayload.put("service", "hyperapi");
             sdkPayload.put("payload", innerPayload);
 
         } catch (Exception e) {
