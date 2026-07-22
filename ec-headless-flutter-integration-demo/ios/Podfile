@@ -5,7 +5,7 @@ post_install do |installer|
   # // Add iOS post-install script
   # // block:start:ios-post-install
   
-  fuse_path = "./Pods/HyperSDK/Fuse.rb"
+  fuse_path = "./Pods/BharatPeXPaymentSDK/Fuse.rb"
   clean_assets = true
   if File.exist?(fuse_path)
     if system("ruby", fuse_path.to_s, clean_assets.to_s)
