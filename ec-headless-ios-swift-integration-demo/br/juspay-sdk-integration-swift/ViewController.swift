@@ -1,23 +1,23 @@
 //
 //  ViewController.swift
-//  juspay-sdk-integration-swift
+//  bharatpex-sdk-integration-swift
 //
 //
 import UIKit
 
-// Importing HyperSDK
-// block:start:import-global-juspay-payments-sdk
-import HyperSDK
-// block:end:import-global-juspay-payments-sdk
+// Importing BharatePeXSDK
+// block:start:import-global-bharatpex-payments-sdk
+import BharatePeXSDK
+// block:end:import-global-bharatpex-payments-sdk
 
 
 class ViewController: UIViewController {
 
-    // Create an instance of HyperServices
-    // block:start:create-global-juspay-payments-services-instance
+    // Create an instance of BharatPeXPaymentServices
+    // block:start:create-global-bharatpex-payments-services-instance
 
-    let hyperInstance = HyperServices(tenantId: "TENANT_NAME", clientId: "CLIENT_ID" )
-    // block:end:create-global-juspay-payments-services-instance
+    let bharatpexPaymentInstance = BharatPeXPaymentServices(tenantId: "TENANT_NAME", clientId: "CLIENT_ID" )
+    // block:end:create-global-bharatpex-payments-services-instance
 
     
     override func viewDidLoad() {
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
 
         let sdkPayload : [String: Any] = [
             "requestId": UUID().uuidString,
-            "service": "in.juspay.hyperapi",
+            "service": "hyperapi",
             "payload": innerPayload
         ]
 
@@ -47,11 +47,11 @@ class ViewController: UIViewController {
     }
     // block:end:create-initiate-payload
 
-    // Creating GlobalJuspayPaymentsCallback
-    // This callback will get all events from globalJuspay Instance
-    // block:start:create-hyper-callback
+    // Creating GlobalBharatPeXPaymentsCallback
+    // This callback will get all events from globalBharatPeX Instance
+    // block:start:create-bharatpexpayment-callback
 
-    func hyperCallbackHandler(response : (Optional<Dictionary<String, Any>>)) {
+    func bharatpexPaymentCallbackHandler(response : (Optional<Dictionary<String, Any>>)) {
         if let data = response, let event = data["event"] as? String {
             if (event == "hide_loader") {
                 // hide loader
@@ -108,16 +108,16 @@ class ViewController: UIViewController {
 
     }
 
-    // block:end:create-hyper-callback
+    // block:end:create-bharatpexpayment-callback
 
     
     @IBAction func initiatePayments(_ sender: Any) {
-        // Calling initiate on hyperService instance to boot up payment engine.
+        // Calling initiate on bharatpexPaymentService instance to boot up payment engine.
         // block:start:initiate-sdk
-        self.hyperInstance.initiate(
+        self.bharatpexPaymentInstance.initiate(
             self,
             payload: createInitiatePayload(),
-            callback: hyperCallbackHandler
+            callback: bharatpexPaymentCallbackHandler
         )
         // block:end:initiate-sdk
     }
@@ -126,8 +126,8 @@ class ViewController: UIViewController {
     // Creating process payload JSON object
     // block:start:process-sdk-call
 
-    if self.hyperInstance?.isInitialised() ?? false {
-     self.hyperInstance?.process(processPayload)
+    if self.bharatpexPaymentInstance?.isInitialised() ?? false {
+     self.bharatpexPaymentInstance?.process(processPayload)
     }
     // block:end:process-sdk-call
     
