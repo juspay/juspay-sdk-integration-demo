@@ -1,0 +1,14 @@
+{
+    "error_message": "Notification dispatch failed.",
+    "status": "ERROR",
+    "error_code": "NOTIFICATION_ERROR",
+    "error_info": {
+        "user_message": "Invalid request params. Please verify your input.",
+        "request_id": "9xxxxb1-cxx5-4xx1-bxxa-bxxxxxxc",
+        "href": "NA",
+        "developer_message": "Notification dispatch failed.",
+        "code": "INVALID_INPUT",
+        "category": "USER_ERROR"
+    },
+    "status_id": -1
+}
