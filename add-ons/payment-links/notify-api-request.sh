@@ -8,6 +8,5 @@ curl --location 'https://smartgateway.hdfc.bank.in/paymentLink/notify' \
 --data '{
     "send_mail" : true,
     "send_sms" : true,
-    "send_whatsapp" : false,
     "order_id" : "TestingOrderID"
 }'
