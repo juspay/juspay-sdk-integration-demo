@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hyperpg SDK Integration</title>
+  </head>
+  <body>
+    <button onclick="startPayments()">Start Payments</button>
+
+    <div id="hyperpg"></div>
+
+    <script>
+      // Calling merchant backend which will call HYPERPG Session API and send Payment link to be opened in browser
+      // block:start:call-session-api
+      function startPayments() {
+        var requestPayload = JSON.stringify({
+          amount: "1.0",
+        });
+        var requestOptions = {
+          method: "POST",
+          headers: {
+            Authorization: "Basic <merchant api auth token>",
+            "Content-Type": "application/json",
+          },
+          body: requestPayload,
+        };
+
+        fetch("https://api.<merchantwebsite>.com/makePayment", requestOptions)
+          .then((response) => response.json())
+          .then((result) => {
+            //block:start:open-payment-page
+
+            // Redirecting to payment link which is received from merchant server after Session API S2S call
+            window.location.replace(result.link);
+
+
+            // OR
+            // Opening the Hypercheckout screen in an iframe
+            /*
+            var paymentPageDiv = window.querySelector("#hyperpgDiv");
+            var hyperpgIframe = document.createElement("iframe");
+            hyperpgIframe.src = result.link;
+            hyperpgIframe.setAttribute("allow", "payment *;");
+
+            HYPERPG Hypercheckout needs a minimum width of 700px to open the Hypercheckout screen on web,
+            on iframe widths less than 700px mobile web Hypercheckout screen will open
+
+            hyperpgIframe.width = "1000";     // Set the width and height as per your requirements, for mobile try to
+            hyperpgIframe.height = "920";     // keep the width as auto, so it will take entire width of the frame provided.
+            paymentPageDiv.appendChild(hyperpgIframe);
+            */
+
+            //block:end:open-payment-page
+          })
+          .catch((error) => console.log("error", error));
+      }
+      // block:end:call-session-api
+    </script>
+  </body>
+</html>
