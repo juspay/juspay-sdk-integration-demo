@@ -1,0 +1,19 @@
+curl --location 'https://api.hyperpg.in/txns' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'x-merchantid: mandate_juspay' \
+--data-urlencode 'order.order_id=test_123' \
+--data-urlencode 'order.amount=1' \
+--data-urlencode 'order.currency=INR' \
+--data-urlencode 'order.customer_id=cst_3uh6gumy3esndhdr' \
+--data-urlencode 'order.options.create_mandate=REQUIRED' \
+--data-urlencode 'order.mandate_max_amount=16' \
+--data-urlencode 'payment_method=UPI_COLLECT' \
+--data-urlencode 'payment_method_type=UPI' \
+--data-urlencode 'sdk_params=false' \
+--data-urlencode 'format=json' \
+--data-urlencode 'mandate_type=EMANDATE' \
+--data-urlencode 'should_create_mandate=true' \
+--data-urlencode 'redirect_after_payment=true' \
+--data-urlencode 'merchant_id=test_merchant' \
+--data-urlencode 'order_id=test_123' \
+--data-urlencode 'order.mutual_fund_details=[{"memberId":"ABCDE","userId":"ABCDEFGHIJ","mfPartner":"BSE","folioNumber":"190983010","orderNumber":"order_zer12345ssss","amount":"800","schemeCode":"LT","amcCode":"UYTIUI","panNumber":"TYLIO7823U","investmentType":"LUMPSUM"},{"memberId":"ABCDE","userId":"ABCDEFGHIJ","mfPartner":"BSE","folioNumber":"190983010","orderNumber":"order_zer12345sssss","amount":"800.00","schemeCode":"LT","amcCode":"UYTIUI","panNumber":"TYLIO7823U","investmentType":"LUMPSUM"}]'

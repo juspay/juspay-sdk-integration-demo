@@ -1,0 +1,18 @@
+{
+  "start_date": "1659312000",
+  "rule_type": "ON",
+  "revokable_by_customer": true,
+  "response_message": "Mandate is Paused.",
+  "pause_start_date": "2022-09-26T11:47:01Z",
+  "pause_end_date": "2022-09-30T00:00:00Z",
+  "max_amount": 100,
+  "mandate_type": "EMANDATE",
+  "mandate_token": "42040d2b1d8e41k4jd9q40de80988357e",
+  "mandate_status": "PAUSED",
+  "mandate_id": "gksEbj93j24Z5Cbw4MWUa",
+  "last_activated_at": "2022-09-26T11:47:01Z",
+  "frequency": "ASPRESENTED",
+  "end_date": "1690848000",
+  "block_fund": false,
+  "amount_rule": "VARIABLE"
+}
