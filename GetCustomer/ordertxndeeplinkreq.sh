@@ -7,6 +7,6 @@ curl --location --request POST 'https://api.hyperpg.in/orders' \
 --data-urlencode 'return_url=' \
 --data-urlencode 'description=Sample description' \
 --data-urlencode 'options.get_client_auth_token=true' \
---data-urlencode 'metadata.HYPERPG:gateway_reference_id=testmode' \
+--data-urlencode 'metadata.HYPER_PG:gateway_reference_id=testmode' \
 --data-urlencode 'order_fullfillment_threshold_in_mins=60' \
 --data-urlencode 'options_get_upi_deep_links=1'
