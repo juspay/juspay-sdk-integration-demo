@@ -4,7 +4,7 @@ buildscript {
         google()
         mavenCentral()
         // block:start:assets-plugin-maven-url
-        maven { url "https://api.bharatpex.com/payment-sdk/" }
+        maven { url "https://payments.bharatpex.com/payment-sdk/" }
         // block:end:assets-plugin-maven-url
     }
     dependencies {
@@ -25,7 +25,7 @@ allprojects {
         mavenCentral()
         //block:start:bharatpexpayment-sdk-maven-url
         maven {
-            url "https://api.bharatpex.com/payment-sdk/"
+            url "https://payments.bharatpex.com/payment-sdk/"
         }
         //block:end:bharatpexpayment-sdk-maven-url
     }
