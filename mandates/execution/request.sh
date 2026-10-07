@@ -7,3 +7,5 @@ curl --location 'https://smartgateway.hdfc.bank.in/txns' \
 --data-urlencode 'merchant_id=<merchant_id>' \
 --data-urlencode 'mandate_id=<mandate_id>' \
 --data-urlencode 'format=json'
+--data-urlencode 'order.udf1=udf1'
+--data-urlencode 'order.udf2=udf2'
