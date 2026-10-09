@@ -4,14 +4,14 @@ buildscript {
         google()
         mavenCentral()
         // block:start:assets-plugin-maven-url
-        maven { url "https://payments.bharatpex.com/payment-sdk/" }
+        maven { url "https://payments.bharatpex.com/payment-sdk/hyper-sdk/" }
         // block:end:assets-plugin-maven-url
     }
     dependencies {
         classpath "com.android.tools.build:gradle:7.0.0"
 
         // block:start:assets-class-path
-        classpath 'com.bharatpex:bharatpexpaymentsdk.plugin:2.2.13'
+        classpath 'com.bharatpex:bharatpexpaymentsdk.plugin:2.2.15'
         // block:end:assets-class-path
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -25,7 +25,7 @@ allprojects {
         mavenCentral()
         //block:start:bharatpexpayment-sdk-maven-url
         maven {
-            url "https://payments.bharatpex.com/payment-sdk/"
+            url "https://payments.bharatpex.com/payment-sdk/hyper-sdk/"
         }
         //block:end:bharatpexpayment-sdk-maven-url
     }

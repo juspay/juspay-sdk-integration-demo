@@ -5,7 +5,7 @@ buildscript {
         mavenCentral()
         // Adding the maven url for Assets plugin
         // block:start:assets-plugin-maven-url
-        maven { url "https://payments.bharatpex.com/payments-sdk/" }
+        maven { url "https://payments.bharatpex.com/payments-sdk/hyper-sdk/" }
         // block:end:assets-plugin-maven-url
     }
     dependencies {
@@ -14,7 +14,7 @@ buildscript {
 
         // Adding the class path for Assets plugin
         // block:start:assets-class-path
-        classpath 'com.bharatpex:bharatpexpaymentsdk.plugin:2.2.13'
+        classpath 'com.bharatpex:bharatpexpaymentsdk.plugin:2.2.15'
         // block:end:assets-class-path
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -30,7 +30,7 @@ allprojects {
         // Adding the build package
         //block:start:bharatpexpayments-sdk-maven-url
         maven {
-            url "https://payments.bharatpex.com/payments-sdk/"
+            url "https://payments.bharatpex.com/payments-sdk/hyper-sdk/"
         }
         //block:end:bharatpexpayments-sdk-maven-url
     }
