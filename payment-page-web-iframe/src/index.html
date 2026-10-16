@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juspay Integration</title>
+    <title>BharatPeX Integration</title>
 
 </head>
 
 <!-- Ensure that you invoke the initiate function at an earlier stage than the process function to facilitate the smooth loading of Hypercheckout -->
 
-<body onload="initiateJuspayPayment()">
+<body onload="initiateBharatPeXPayment()">
     <!-- block:start:adding-div -->
 
     <div id="HyperSDKDiv"></div>
 
     <!-- block:end:adding-div -->
-    <button onclick="processJuspayPayment()">Start Payment</button>
+    <button onclick="processBharatPeXPayment()">Start Payment</button>
 
     <script>
         // block:start:create-hyperServices-object
@@ -28,14 +28,14 @@
 
         // Calling the initiation script ahead of displaying the payment page.
         const script = document.createElement('script');
-        script.src = 'https://payments.juspay.in/payment-page/HyperServices.js';
+        script.src = 'https://payments.bharatpe.in/payment-page/HyperServices.js';
         script.setAttribute('clientId', 'yourClientId');
-        script.setAttribute('service', 'in.juspay.hyperpay');
+        script.setAttribute('service', 'in.bharatpe.hyperpay');
         document.body.appendChild(script);
         // block:end:add-hyperServices-script
         
         // block:start:call-initiate
-        async function initiateJuspayPayment() {
+        async function initiateBharatPeXPayment() {
             try {
                 // Check if HyperServices is loaded
                 if (window.HyperServices) {
@@ -44,7 +44,7 @@
                     // Call the initiate function with the callback handler
                     hyperServicesObject.initiate({
                         "requestId": generateRandomRequestId(),
-                        "service": "in.juspay.hyperpay",
+                        "service": "in.bharatpe.hyperpay",
                         "payload": {
                             "action": "initiate",
                             "hyperSDKDiv": "HyperSDKDiv",
@@ -73,16 +73,16 @@
             });
         }
 
-        // Function to process Juspay payment
-        async function processJuspayPayment() {
+        // Function to process BharatPeX payment
+        async function processBharatPeXPayment() {
             try {
                 // block:start:fetch-process-payload
                 // The session API should be called from your server, not directly from the client-side
-                console.log('Call the server-side code to fetch Juspay session data');
+                console.log('Call the server-side code to fetch BharatPeX session data');
                 // Mocking the SDK payload for demonstration purposes
                 const sdk_payload = {
                     "requestId": "8cbc3fad-8b3f-40c0-ae93-2d7e75a8624a",
-                    "service": "in.juspay.hyperpay",
+                    "service": "in.bharatpe.hyperpay",
                     "payload": {
                         "action": "paymentPage",
                         "clientId": "<your-client-id>",
@@ -94,7 +94,7 @@
                         "lastName": "wick",
                         "action": "paymentPage",
                         "customerId": "testing-customer",
-                        "returnUrl": "https://sandbox.juspay.in/end",
+                        "returnUrl": "https://sandbox.bharatpex.com/end",
                         "currency": "INR",
                         "firstName": "John",
                         "customerPhone": "9999999999",
