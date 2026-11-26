@@ -1,4 +1,4 @@
-curl --location --request POST 'https://api.juspay.in/session' \
+curl --location --request POST 'https://api.eu1.juspay.io/session' \
 --header 'Authorization: Basic base_64_encoded_api_key==' \
 --header 'x-merchantid: your_merchant_id' \
 --header 'x-routing-id: customer_1122'\
